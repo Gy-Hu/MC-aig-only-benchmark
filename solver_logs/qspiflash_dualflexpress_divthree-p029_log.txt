@@ -1,0 +1,40 @@
+File: ./hwmcc19/single/aig/wolf/2019C/qspiflash_dualflexpress_divthree-p029.aig
+Command: ~/coding_env/abc/abc -c "&r ./hwmcc19/single/aig/wolf/2019C/qspiflash_dualflexpress_divthree-p029.aig; &put; fold; pdr -v"
+Started at: Fri 11 Apr 2025 07:00:55 AM CST
+----------------------------------------
+ABC command line: "&r ./hwmcc19/single/aig/wolf/2019C/qspiflash_dualflexpress_divthree-p029.aig; &put; fold; pdr -v".
+
+Warning: The last 22 outputs are interpreted as constraints.
+Converted 5 1-valued FFs and 258 DC-valued FFs.
+Warning: The number of inputs does not match the number of input names.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 2                                                                 1     2      0.00 sec
+  2 : 0 5 8                                                               3    11      0.00 sec
+  3 : 0 10 18 19                                                          6    27      0.01 sec
+  4 : 0 9 18 22 50                                                        4    35      0.03 sec
+  5 : 0 9 17 23 26 58                                                     5    35      0.05 sec
+  6 : 0 9 17 22 14 8 38                                                   0    35      0.05 sec
+  7 : 0 9 17 22 14 10 6 39                                                5    35      0.06 sec
+  8 : 0 9 17 22 14 5 4 6 40                                               4    35      0.07 sec
+  9 : 0 9 17 22 14 4 3 4 3 43                                             4    35      0.07 sec
+ 10 : 0 9 17 22 14 4 2 3 1 4 46                                           4    35      0.08 sec
+ 11 : 0 9 17 22 14 4 2 3 1 0 0 46                                         0    35      0.08 sec
+Invariant F[9] : 46 clauses with 27 flops (out of 158) (cex = 0, ave = 29.36)
+Verification of invariant with 46 clauses was successful.  Time =     0.00 sec
+Block =   36  Oblig =   267  Clause =   175  Call =  2208 (sat=62.2%)  Cex =   0  Start =   3
+SAT solving =     0.05 sec ( 59.76 %)
+  unsat     =     0.00 sec (  4.65 %)
+  sat       =     0.05 sec ( 55.11 %)
+Generalize  =     0.04 sec ( 40.71 %)
+Push clause =     0.02 sec ( 23.95 %)
+Ternary sim =     0.01 sec (  7.79 %)
+Containment =     0.00 sec (  0.16 %)
+CNF compute =     0.00 sec (  1.77 %)
+Refinement  =     0.00 sec (  0.00 %)
+TOTAL       =     0.09 sec (100.00 %)
+Property proved.  Time =     0.10 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 11 Apr 2025 07:00:55 AM CST
+========================================

@@ -1,0 +1,43 @@
+File: ./hwmcc11/single/bobsmrisc.aig
+Command: ~/coding_env/abc/abc -c "&r ./hwmcc11/single/bobsmrisc.aig; &put; fold; pdr -v"
+Started at: Fri 11 Apr 2025 03:25:40 PM CST
+----------------------------------------
+ABC command line: "&r ./hwmcc11/single/bobsmrisc.aig; &put; fold; pdr -v".
+
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 658                                                               1   628      1.79 sec
+  2 : 0 532 1741                                                          4  1318     11.26 sec
+  3 : 0 540 1166 2135                                                     8  1323     20.49 sec
+  4 : 0 528 1193 929 1381                                                35  1326     23.75 sec
+  5 : 0 527 1205 944 140 1455                                            52  1341     27.36 sec
+  6 : 0 527 1205 941 131 146 1446                                         6  1341     30.30 sec
+  7 : 0 527 1205 921 50 12 23 1431                                        4  1341     32.45 sec
+  8 : 0 527 1205 921 49 11 12 32 1432                                    10  1341     34.73 sec
+  9 : 0 527 1205 921 49 10 4 23 42 1433                                  20  1341     37.10 sec
+ 10 : 0 527 1205 921 49 10 3 3 2 17 1432                                  4  1341     39.10 sec
+ 11 : 0 527 1205 921 49 10 3 2 1 1 4 1429                                 0  1341     41.00 sec
+ 12 : 0 527 1205 921 49 10 3 2 1 1 4 20 1429                              2  1341     43.08 sec
+ 13 : 0 527 1205 921 49 10 3 2 1 1 4 4 26 1434                            5  1341     45.41 sec
+ 14 : 0 527 1205 921 49 10 3 2 1 1 4 4 25 39 1441                        20  1341     47.76 sec
+ 15 : 0 527 1205 921 49 10 3 2 1 1 4 3 2 9 23 1442                        7  1341     49.91 sec
+ 16 : 0 527 1205 921 49 10 3 2 1 1 4 3 1 1 0 0 1439                       0  1341     50.91 sec
+Invariant F[14] : 1439 clauses with 1341 flops (out of 1803) (cex = 0, ave = 36.18)
+Verification of invariant with 1439 clauses was successful.  Time =     2.89 sec
+Block = 4179  Oblig =  7131  Clause =  4823  Call = 80917 (sat=63.5%)  Cex =   0  Start = 247
+SAT solving =    33.54 sec ( 62.33 %)
+  unsat     =    14.53 sec ( 27.00 %)
+  sat       =    19.01 sec ( 35.33 %)
+Generalize  =     7.07 sec ( 13.15 %)
+Push clause =    13.91 sec ( 25.85 %)
+Ternary sim =    12.51 sec ( 23.25 %)
+Containment =     0.37 sec (  0.68 %)
+CNF compute =     0.37 sec (  0.68 %)
+Refinement  =     0.00 sec (  0.00 %)
+TOTAL       =    53.81 sec (100.00 %)
+Property proved.  Time =    53.83 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 11 Apr 2025 03:26:34 PM CST
+========================================

@@ -1,0 +1,41 @@
+File: ./hwmcc11/single/bobcohdoptdcd4.aig
+Command: ~/coding_env/abc/abc -c "&r ./hwmcc11/single/bobcohdoptdcd4.aig; &put; fold; pdr -v"
+Started at: Fri 11 Apr 2025 02:36:17 PM CST
+----------------------------------------
+ABC command line: "&r ./hwmcc11/single/bobcohdoptdcd4.aig; &put; fold; pdr -v".
+
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 2                                                                 1     2      0.00 sec
+  2 : 0 15 18                                                             4    30      0.01 sec
+  3 : 0 13 10 10                                                          1    32      0.01 sec
+  4 : 0 43 105 184 205                                                   39    51      0.15 sec
+  5 : 0 24 60 164 395 327                                                17    53      0.41 sec
+  6 : 0 21 34 74 298 374 209                                             15    53      0.57 sec
+  7 : 0 22 34 85 325 588 1007 915                                       158    54      2.02 sec
+  8 : 0 22 30 56 153 399 988 1487 923                                    53    54      3.70 sec
+  9 : 0 22 30 49 115 166 424 1074 1350 620                               42    54      4.74 sec
+ 10 : 0 22 30 49 109 141 242 342 854 1065 543                            27    54      5.49 sec
+ 11 : 0 22 30 49 109 142 238 262 528 938 864 530                         35    54      6.29 sec
+ 12 : 0 22 30 49 109 137 213 138 123 237 536 680 443                      9    54      6.65 sec
+ 13 : 0 22 30 49 109 137 212 138 107 117 135 429 482 339                 10    54      6.87 sec
+ 14 : 0 22 30 49 109 137 210 134 95 94 36 15 5 0 846                      0    54      7.00 sec
+Invariant F[13] : 846 clauses with 54 flops (out of 54) (cex = 0, ave = 27.82)
+Verification of invariant with 846 clauses was successful.  Time =     0.01 sec
+Block =   57  Oblig = 10955  Clause =  6831  Call =118860 (sat=55.8%)  Cex =   0  Start = 389
+SAT solving =     6.03 sec ( 85.93 %)
+  unsat     =     1.70 sec ( 24.23 %)
+  sat       =     4.33 sec ( 61.70 %)
+Generalize  =     4.13 sec ( 58.88 %)
+Push clause =     2.15 sec ( 30.55 %)
+Ternary sim =     0.15 sec (  2.14 %)
+Containment =     0.05 sec (  0.76 %)
+CNF compute =     0.15 sec (  2.11 %)
+Refinement  =     0.00 sec (  0.00 %)
+TOTAL       =     7.02 sec (100.00 %)
+Property proved.  Time =     7.03 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 11 Apr 2025 02:36:24 PM CST
+========================================

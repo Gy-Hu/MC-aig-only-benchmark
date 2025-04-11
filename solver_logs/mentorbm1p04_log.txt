@@ -1,0 +1,32 @@
+File: ./hwmcc11/single/mentorbm1p04.aig
+Command: ~/coding_env/abc/abc -c "&r ./hwmcc11/single/mentorbm1p04.aig; &put; fold; pdr -v"
+Started at: Fri 11 Apr 2025 03:05:56 PM CST
+----------------------------------------
+ABC command line: "&r ./hwmcc11/single/mentorbm1p04.aig; &put; fold; pdr -v".
+
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 1                                                                 1     1      0.08 sec
+  2 : 0 3 3                                                               3     5      0.09 sec
+  3 : 0 2 2 1                                                             0     5      0.09 sec
+  4 : 0 2 2 1 2                                                           2     6      0.09 sec
+  5 : 0 2 2 0 0 2                                                         0     6      0.11 sec
+Invariant F[3] : 2 clauses with 3 flops (out of 4377) (cex = 0, ave = 149.83)
+Verification of invariant with 2 clauses was successful.  Time =     0.00 sec
+Block =    3  Oblig =    11  Clause =     8  Call =    43 (sat=53.5%)  Cex =   0  Start =   0
+SAT solving =     0.00 sec (  2.26 %)
+  unsat     =     0.00 sec (  0.06 %)
+  sat       =     0.00 sec (  2.19 %)
+Generalize  =     0.01 sec (  6.19 %)
+Push clause =     0.00 sec (  1.45 %)
+Ternary sim =     0.00 sec (  2.25 %)
+Containment =     0.00 sec (  0.00 %)
+CNF compute =     0.00 sec (  3.51 %)
+Refinement  =     0.00 sec (  0.00 %)
+TOTAL       =     0.14 sec (100.00 %)
+Property proved.  Time =     0.15 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 11 Apr 2025 03:05:57 PM CST
+========================================

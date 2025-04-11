@@ -1,0 +1,40 @@
+File: ./hwmcc19/single/aig/wolf/2018A/zipcpu-busdelay-p18.aig
+Command: ~/coding_env/abc/abc -c "&r ./hwmcc19/single/aig/wolf/2018A/zipcpu-busdelay-p18.aig; &put; fold; pdr -v"
+Started at: Fri 11 Apr 2025 07:27:59 AM CST
+----------------------------------------
+ABC command line: "&r ./hwmcc19/single/aig/wolf/2018A/zipcpu-busdelay-p18.aig; &put; fold; pdr -v".
+
+Warning: The last 32 outputs are interpreted as constraints.
+Converted 1 1-valued FFs and 367 DC-valued FFs.
+Warning: The number of inputs does not match the number of input names.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 5                                                                 1     7      0.00 sec
+  2 : 0 3 8                                                               2    11      0.00 sec
+  3 : 0 2 4 7                                                             2    13      0.01 sec
+  4 : 0 5 4 7 37                                                          6    34      0.01 sec
+  5 : 0 3 2 2 3 24                                                        0    34      0.01 sec
+  6 : 0 3 2 2 3 6 25                                                      2    34      0.02 sec
+  7 : 0 4 3 4 5 7 8 64                                                    8    43      0.03 sec
+  8 : 0 4 3 3 5 4 6 2 49                                                  0    43      0.04 sec
+  9 : 0 4 3 3 5 4 6 2 6 49                                                2    43      0.04 sec
+ 10 : 0 4 3 3 5 4 6 2 2 3 55                                              4    43      0.06 sec
+ 11 : 0 4 3 3 5 4 6 2 2 0 0 52                                            0    43      0.07 sec
+Invariant F[9] : 52 clauses with 36 flops (out of 146) (cex = 0, ave = 68.48)
+Verification of invariant with 52 clauses was successful.  Time =     0.00 sec
+Block =   25  Oblig =   594  Clause =   138  Call =  1603 (sat=59.7%)  Cex =   0  Start =   1
+SAT solving =     0.03 sec ( 37.30 %)
+  unsat     =     0.00 sec (  3.04 %)
+  sat       =     0.03 sec ( 34.27 %)
+Generalize  =     0.04 sec ( 50.11 %)
+Push clause =     0.01 sec (  8.69 %)
+Ternary sim =     0.02 sec ( 20.77 %)
+Containment =     0.00 sec (  0.76 %)
+CNF compute =     0.00 sec (  2.71 %)
+Refinement  =     0.00 sec (  0.00 %)
+TOTAL       =     0.07 sec (100.00 %)
+Property proved.  Time =     0.08 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 11 Apr 2025 07:27:59 AM CST
+========================================

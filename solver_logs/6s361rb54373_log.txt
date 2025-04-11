@@ -1,0 +1,36 @@
+File: ./hwmcc13/single/6s361rb54373.aig
+Command: ~/coding_env/abc/abc -c "&r ./hwmcc13/single/6s361rb54373.aig; &put; fold; pdr -v"
+Started at: Fri 11 Apr 2025 12:40:13 PM CST
+----------------------------------------
+ABC command line: "&r ./hwmcc13/single/6s361rb54373.aig; &put; fold; pdr -v".
+
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 2                                                                 1     2      2.21 sec
+  2 : 0 8 9                                                               5    21      2.21 sec
+  3 : 0 3 3 6                                                             0    21      2.21 sec
+  4 : 0 6 4 7 30                                                          7    62      2.24 sec
+  5 : 0 7 5 7 31 672                                                      8    75      2.87 sec
+  6 : 0 4 3 5 28 1 669                                                    0    75      2.88 sec
+  7 : 0 4 3 5 28 1 2 667                                                  0    75      2.89 sec
+  8 : 0 5 8 7 32 6 3 3 712                                                9    96      3.03 sec
+  9 : 0 4 6 5 10 1 1 0 0 709                                              0    96      3.04 sec
+Invariant F[7] : 709 clauses with 95 flops (out of 186401) (cex = 0, ave = 18.48)
+Verification of invariant with 709 clauses was successful.  Time =     0.00 sec
+Block =    9  Oblig =  1559  Clause =   796  Call = 12582 (sat=63.0%)  Cex =   0  Start =  37
+SAT solving =     0.43 sec ( 13.82 %)
+  unsat     =     0.03 sec (  0.84 %)
+  sat       =     0.41 sec ( 12.98 %)
+Generalize  =     0.69 sec ( 21.82 %)
+Push clause =     0.06 sec (  1.75 %)
+Ternary sim =     0.27 sec (  8.67 %)
+Containment =     0.00 sec (  0.09 %)
+CNF compute =     0.03 sec (  0.81 %)
+Refinement  =     0.00 sec (  0.00 %)
+TOTAL       =     3.14 sec (100.00 %)
+Property proved.  Time =     4.05 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 11 Apr 2025 12:40:20 PM CST
+========================================

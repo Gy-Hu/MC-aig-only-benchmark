@@ -1,0 +1,34 @@
+File: ./hwmcc08/viscoherencep2.aig
+Command: ~/coding_env/abc/abc -c "&r ./hwmcc08/viscoherencep2.aig; &put; fold; pdr -v"
+Started at: Fri 11 Apr 2025 11:13:53 AM CST
+----------------------------------------
+ABC command line: "&r ./hwmcc08/viscoherencep2.aig; &put; fold; pdr -v".
+
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 1                                                                 1     1      0.00 sec
+  2 : 0 2 2                                                               2     3      0.01 sec
+  3 : 0 2 5 4                                                             3     8      0.01 sec
+  4 : 0 12 16 19 36                                                       6    24      0.03 sec
+  5 : 0 12 16 15 5 30                                                     0    24      0.04 sec
+  6 : 0 12 16 15 4 2 34                                                   2    24      0.04 sec
+  7 : 0 12 16 15 4 0 0 34                                                 0    24      0.05 sec
+Invariant F[5] : 34 clauses with 23 flops (out of 37) (cex = 0, ave = 17.10)
+Verification of invariant with 34 clauses was successful.  Time =     0.00 sec
+Block =    7  Oblig =   151  Clause =    90  Call =   879 (sat=61.2%)  Cex =   0  Start =   0
+SAT solving =     0.03 sec ( 51.68 %)
+  unsat     =     0.01 sec ( 11.17 %)
+  sat       =     0.02 sec ( 40.52 %)
+Generalize  =     0.02 sec ( 36.06 %)
+Push clause =     0.01 sec ( 18.76 %)
+Ternary sim =     0.00 sec (  6.38 %)
+Containment =     0.00 sec (  0.08 %)
+CNF compute =     0.00 sec (  2.28 %)
+Refinement  =     0.00 sec (  0.00 %)
+TOTAL       =     0.06 sec (100.00 %)
+Property proved.  Time =     0.06 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 11 Apr 2025 11:13:53 AM CST
+========================================

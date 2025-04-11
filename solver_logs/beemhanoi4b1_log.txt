@@ -1,0 +1,28 @@
+File: ./hwmcc15/beemhanoi4b1.aig
+Command: ~/coding_env/abc/abc -c "&r ./hwmcc15/beemhanoi4b1.aig; &put; fold; pdr -v"
+Started at: Fri 11 Apr 2025 10:47:10 AM CST
+----------------------------------------
+ABC command line: "&r ./hwmcc15/beemhanoi4b1.aig; &put; fold; pdr -v".
+
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 1                                                                 1     2      0.02 sec
+  2 : 0 1 1                                                               1    14      0.03 sec
+  3 : 0 1 5 4                                                             5    66      0.38 sec
+  4 : 0 1 11 44 41                                                       23   131      4.61 sec
+  5 : 0 1 11 42 43 3                                                      3   132      5.14 sec
+  6 : 0 1 16 82 153 208 198                                             135   167     39.89 sec
+  7 : 0 1 16 65 150 197 197 5                                             2   167     40.71 sec
+  8 : 0 1 16 65 150 200 229 124 121                                      80   167     63.31 sec
+  9 : 0 1 16 65 150 200 221 118 112 10                                    2   167     64.10 sec
+ 10 : 0 1 25 157 691 1753 3163 4437 5237 5426 5011                     4355   248   2715.77 sec
+ 11 : 0 1 25 132 639 1660 2770 3747 4339 4403 3929 981                    2   248   2752.58 sec
+ 12 : 0 1 25 132 635 1653 2716 3707 4367 4550 4196 1633 872             273   248   3017.94 sec
+ 13 : 0 1 25 132 635 1653 2714 3697 4346 4484 4093 1423 614 282           0   248   3050.69 sec
+ 14 : ... 1 25 132 635 1653 2714 3697 4346 4484 4093 1423 638 314 132    35   248   3100.01 sec
+ 15 : ... 132 635 1653 2714 3697 4346 4484 4093 1422 623 278 106 39       4   248   3130.85 sec
+----------------------------------------
+STATUS: TIMEOUT (exceeded 3600 seconds)
+Finished at: Fri 11 Apr 2025 11:47:10 AM CST
+========================================

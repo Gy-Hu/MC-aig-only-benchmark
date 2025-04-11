@@ -1,0 +1,32 @@
+File: ./avr/opensource/h_b05/h_b05.aig
+Command: ~/coding_env/abc/abc -c "&r ./avr/opensource/h_b05/h_b05.aig; &put; fold; pdr -v"
+Started at: Fri 11 Apr 2025 04:02:34 PM CST
+----------------------------------------
+ABC command line: "&r ./avr/opensource/h_b05/h_b05.aig; &put; fold; pdr -v".
+
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 1                                                                 1     1      0.01 sec
+  2 : 0 1 19                                                              2    21      0.05 sec
+  3 : 0 1 18 19                                                           1    22      0.07 sec
+  4 : 0 3 22 28 28                                                        6    27      0.23 sec
+  5 : 0 1 7 1 2 26                                                        0    27      0.24 sec
+  6 : 0 1 7 1 2 11 22                                                     1    27      0.25 sec
+  7 : 0 1 7 1 2 11 18 8                                                   9    27      0.29 sec
+Block =   66  Oblig =   181  Clause =    92  Call =   611 (sat=58.4%)  Cex =   0  Start =   0
+SAT solving =     0.13 sec ( 43.47 %)
+  unsat     =     0.00 sec (  0.67 %)
+  sat       =     0.13 sec ( 42.80 %)
+Generalize  =     0.16 sec ( 53.62 %)
+Push clause =     0.06 sec ( 20.65 %)
+Ternary sim =     0.09 sec ( 29.86 %)
+Containment =     0.00 sec (  0.03 %)
+CNF compute =     0.01 sec (  4.96 %)
+Refinement  =     0.00 sec (  0.18 %)
+TOTAL       =     0.30 sec (100.00 %)
+Output 0 of miter "./avr/opensource/h_b05/h_b05" was asserted in frame 7.  Time =     0.30 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 11 Apr 2025 04:02:34 PM CST
+========================================

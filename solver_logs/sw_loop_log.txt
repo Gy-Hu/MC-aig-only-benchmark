@@ -1,0 +1,46 @@
+File: ./avr/crafted/sw_loop/sw_loop.aig
+Command: ~/coding_env/abc/abc -c "&r ./avr/crafted/sw_loop/sw_loop.aig; &put; fold; pdr -v"
+Started at: Fri 11 Apr 2025 04:12:27 PM CST
+----------------------------------------
+ABC command line: "&r ./avr/crafted/sw_loop/sw_loop.aig; &put; fold; pdr -v".
+
+Error occurred when reading signal names. Signal names ignored.
+Converted 2 1-valued FFs and 0 DC-valued FFs.
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 1                                                                 1     1      0.00 sec
+  2 : 0 2 3                                                               2     4      0.00 sec
+  3 : 0 1 3 5                                                             2     9      0.00 sec
+  4 : 0 1 4 8 9                                                           6    14      0.01 sec
+  5 : 0 1 1 2 2 6                                                         0    14      0.01 sec
+  6 : 0 1 1 2 2 4 9                                                       5    14      0.01 sec
+  7 : 0 4 9 11 8 8 5 19                                                  16    14      0.02 sec
+  8 : 0 1 1 2 4 4 4 6 13                                                  0    14      0.02 sec
+  9 : 0 1 1 2 4 4 3 6 3 10                                                0    14      0.02 sec
+ 10 : 0 1 1 2 4 4 3 6 6 6 13                                              6    14      0.02 sec
+ 11 : 0 1 1 2 4 4 3 6 3 1 1 15                                            0    14      0.02 sec
+ 12 : 0 1 1 2 4 4 3 6 3 1 1 1 14                                          0    14      0.02 sec
+ 13 : 0 1 1 2 4 4 3 6 3 1 1 1 2 12                                        0    14      0.02 sec
+ 14 : 0 1 1 2 4 4 3 6 3 1 1 1 2 2 10                                      0    14      0.03 sec
+ 15 : 0 1 1 2 4 4 3 6 3 1 1 1 2 3 6 16                                    6    14      0.03 sec
+ 16 : 0 1 1 2 4 4 4 7 8 8 6 3 6 4 6 7 20                                 24    14      0.04 sec
+ 17 : 0 1 1 2 4 4 3 4 2 0 0 0 0 0 0 0 0 22                                0    14      0.04 sec
+Invariant F[9] : 22 clauses with 14 flops (out of 14) (cex = 0, ave = 10.77)
+Verification of invariant with 22 clauses was successful.  Time =     0.00 sec
+Block =    9  Oblig =   284  Clause =   151  Call =  1522 (sat=61.3%)  Cex =   0  Start =   0
+SAT solving =     0.02 sec ( 37.99 %)
+  unsat     =     0.00 sec (  4.12 %)
+  sat       =     0.02 sec ( 33.87 %)
+Generalize  =     0.01 sec ( 23.17 %)
+Push clause =     0.01 sec ( 14.30 %)
+Ternary sim =     0.00 sec (  1.86 %)
+Containment =     0.00 sec (  0.10 %)
+CNF compute =     0.00 sec (  1.50 %)
+Refinement  =     0.00 sec (  0.00 %)
+TOTAL       =     0.05 sec (100.00 %)
+Property proved.  Time =     0.05 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 11 Apr 2025 04:12:27 PM CST
+========================================

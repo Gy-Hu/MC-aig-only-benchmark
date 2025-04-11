@@ -1,0 +1,38 @@
+File: ./hwmcc20/aig-1.8/zipversa_composecrc_prf-p15.aig
+Command: ~/coding_env/abc/abc -c "&r ./hwmcc20/aig-1.8/zipversa_composecrc_prf-p15.aig; &put; fold; pdr -v"
+Started at: Fri 11 Apr 2025 05:52:02 PM CST
+----------------------------------------
+ABC command line: "&r ./hwmcc20/aig-1.8/zipversa_composecrc_prf-p15.aig; &put; fold; pdr -v".
+
+Converted 69 1-valued FFs and 171 DC-valued FFs.
+Warning: The number of inputs does not match the number of input names.
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 1                                                                 1     1      0.01 sec
+  2 : 0 2 4                                                               2     6      0.01 sec
+  3 : 0 3 4 8                                                             5    10      0.01 sec
+  4 : 0 1 1 1 5                                                           0    10      0.01 sec
+  5 : 0 3 3 3 3 21                                                        5    19      0.01 sec
+  6 : 0 2 2 3 6 6 30                                                      4    19      0.02 sec
+  7 : 0 2 2 3 6 6 2 33                                                    2    20      0.02 sec
+  8 : 0 2 2 3 6 6 1 2 35                                                  3    22      0.02 sec
+  9 : 0 2 2 3 6 6 0 0 0 35                                                0    22      0.02 sec
+Invariant F[6] : 35 clauses with 20 flops (out of 317) (cex = 0, ave = 24.16)
+Verification of invariant with 35 clauses was successful.  Time =     0.00 sec
+Block =   20  Oblig =   101  Clause =    69  Call =   585 (sat=54.5%)  Cex =   0  Start =   0
+SAT solving =     0.01 sec ( 23.25 %)
+  unsat     =     0.00 sec (  2.27 %)
+  sat       =     0.01 sec ( 20.98 %)
+Generalize  =     0.01 sec ( 18.27 %)
+Push clause =     0.00 sec (  7.79 %)
+Ternary sim =     0.00 sec (  5.09 %)
+Containment =     0.00 sec (  0.09 %)
+CNF compute =     0.00 sec (  2.05 %)
+Refinement  =     0.00 sec (  0.00 %)
+TOTAL       =     0.03 sec (100.00 %)
+Property proved.  Time =     0.04 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 11 Apr 2025 05:52:02 PM CST
+========================================

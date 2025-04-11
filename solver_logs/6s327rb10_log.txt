@@ -1,0 +1,37 @@
+File: ./hwmcc13/single/6s327rb10.aig
+Command: ~/coding_env/abc/abc -c "&r ./hwmcc13/single/6s327rb10.aig; &put; fold; pdr -v"
+Started at: Fri 11 Apr 2025 01:11:23 PM CST
+----------------------------------------
+ABC command line: "&r ./hwmcc13/single/6s327rb10.aig; &put; fold; pdr -v".
+
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 2                                                                 1     2      0.01 sec
+  2 : 0 16 16                                                             8    21      0.02 sec
+  3 : 0 6 5 11                                                            0    21      0.02 sec
+  4 : 0 6 5 2 9                                                           0    21      0.02 sec
+  5 : 0 6 5 2 2 7                                                         0    21      0.02 sec
+  6 : 0 6 5 2 2 1 6                                                       0    21      0.02 sec
+  7 : 0 6 5 2 2 1 1 5                                                     0    21      0.02 sec
+  8 : 0 6 5 2 2 1 1 1 4                                                   0    21      0.03 sec
+  9 : 0 6 5 2 3 2 5 1 1 46                                                8    56      0.04 sec
+ 10 : 0 6 5 2 2 1 5 1 1 0 46                                              0    56      0.04 sec
+Invariant F[9] : 46 clauses with 55 flops (out of 3290) (cex = 0, ave = 7.93)
+Verification of invariant with 46 clauses was successful.  Time =     0.00 sec
+Block =    8  Oblig =   134  Clause =    81  Call =   781 (sat=48.3%)  Cex =   0  Start =   0
+SAT solving =     0.01 sec ( 27.26 %)
+  unsat     =     0.00 sec (  1.72 %)
+  sat       =     0.01 sec ( 25.54 %)
+Generalize  =     0.01 sec ( 19.86 %)
+Push clause =     0.01 sec ( 12.92 %)
+Ternary sim =     0.00 sec (  2.68 %)
+Containment =     0.00 sec (  0.05 %)
+CNF compute =     0.00 sec (  5.62 %)
+Refinement  =     0.00 sec (  0.00 %)
+TOTAL       =     0.05 sec (100.00 %)
+Property proved.  Time =     0.06 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 11 Apr 2025 01:11:23 PM CST
+========================================

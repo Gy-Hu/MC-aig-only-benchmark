@@ -1,0 +1,46 @@
+File: ./hwmcc11/single/pdtvsarmultip32.aig
+Command: ~/coding_env/abc/abc -c "&r ./hwmcc11/single/pdtvsarmultip32.aig; &put; fold; pdr -v"
+Started at: Fri 11 Apr 2025 02:49:20 PM CST
+----------------------------------------
+ABC command line: "&r ./hwmcc11/single/pdtvsarmultip32.aig; &put; fold; pdr -v".
+
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 10                                                                1    10      0.00 sec
+  2 : 0 11 26                                                             3    18      0.01 sec
+  3 : 0 5 2 14                                                            0    18      0.01 sec
+  4 : 0 5 2 2 12                                                          0    18      0.01 sec
+  5 : 0 5 2 2 7 17                                                        4    20      0.02 sec
+  6 : 0 5 2 2 7 27 94                                                     3    24      0.04 sec
+  7 : 0 5 2 2 7 17 51 65                                                  4    27      0.06 sec
+  8 : 0 5 2 2 7 14 13 60 91                                               3    28      0.09 sec
+  9 : 0 5 2 2 7 14 13 37 213 499                                          4    31      0.41 sec
+ 10 : 0 5 2 2 7 14 13 35 150 413 535                                      4    31      0.72 sec
+ 11 : 0 5 2 2 7 14 13 35 147 277 387 597                                  4    32      1.08 sec
+ 12 : 0 5 2 2 7 14 13 35 147 281 439 772 1028                             5    32      2.19 sec
+ 13 : 0 5 2 2 7 14 13 35 147 275 472 596 1373 2195                        5    32      5.03 sec
+ 14 : 0 5 2 2 7 14 13 35 146 268 470 572 945 1468 2990                    5    32      8.26 sec
+ 15 : 0 5 2 2 7 14 13 35 145 267 470 557 894 609 507 3040                 4    32      9.70 sec
+ 16 : 0 5 2 2 7 14 13 35 145 267 470 555 888 561 230 544 3301             4    32     11.40 sec
+ 17 : 0 5 2 2 7 14 13 35 145 267 470 549 889 543 172 150 115 3449         4    32     12.43 sec
+ 18 : ... 5 2 2 7 14 13 35 145 267 470 549 889 539 167 134 11 9 3461      4    32     13.20 sec
+ 19 : ... 5 2 2 7 14 13 35 145 267 470 549 889 539 167 131 8 1 0 3464     0    32     13.91 sec
+Invariant F[18] : 3464 clauses with 31 flops (out of 130) (cex = 0, ave = 19.74)
+Verification of invariant with 3464 clauses was successful.  Time =     0.24 sec
+Block = 4252  Oblig = 14005  Clause =  9484  Call =178646 (sat=70.4%)  Cex =   0  Start = 572
+SAT solving =    11.65 sec ( 82.29 %)
+  unsat     =     2.91 sec ( 20.59 %)
+  sat       =     8.74 sec ( 61.70 %)
+Generalize  =     7.92 sec ( 55.90 %)
+Push clause =     4.77 sec ( 33.66 %)
+Ternary sim =     0.48 sec (  3.42 %)
+Containment =     0.14 sec (  0.99 %)
+CNF compute =     0.39 sec (  2.77 %)
+Refinement  =     0.00 sec (  0.00 %)
+TOTAL       =    14.16 sec (100.00 %)
+Property proved.  Time =    14.17 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 11 Apr 2025 02:49:34 PM CST
+========================================

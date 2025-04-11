@@ -1,0 +1,32 @@
+File: ./hwmcc08/pdtvishuffman2.aig
+Command: ~/coding_env/abc/abc -c "&r ./hwmcc08/pdtvishuffman2.aig; &put; fold; pdr -v"
+Started at: Fri 11 Apr 2025 11:15:32 AM CST
+----------------------------------------
+ABC command line: "&r ./hwmcc08/pdtvishuffman2.aig; &put; fold; pdr -v".
+
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 8                                                                 1     8      0.00 sec
+  2 : 0 3 12                                                              1    14      0.00 sec
+  3 : 0 3 10 24                                                           1    14      0.01 sec
+  4 : 0 3 10 1 23                                                         0    14      0.01 sec
+  5 : 0 3 10 1 0 23                                                       0    14      0.01 sec
+Invariant F[4] : 23 clauses with 12 flops (out of 56) (cex = 0, ave = 11.00)
+Verification of invariant with 23 clauses was successful.  Time =     0.00 sec
+Block =   37  Oblig =    37  Clause =    37  Call =   225 (sat=56.4%)  Cex =   0  Start =   0
+SAT solving =     0.00 sec ( 12.00 %)
+  unsat     =     0.00 sec (  1.29 %)
+  sat       =     0.00 sec ( 10.71 %)
+Generalize  =     0.00 sec (  4.67 %)
+Push clause =     0.00 sec (  4.49 %)
+Ternary sim =     0.00 sec (  5.40 %)
+Containment =     0.00 sec (  0.02 %)
+CNF compute =     0.00 sec (  0.66 %)
+Refinement  =     0.00 sec (  0.00 %)
+TOTAL       =     0.02 sec (100.00 %)
+Property proved.  Time =     0.02 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 11 Apr 2025 11:15:32 AM CST
+========================================

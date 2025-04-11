@@ -1,0 +1,33 @@
+File: ./hwmcc19/single/aig/wolf/2018D/picorv32-check-p17.aig
+Command: ~/coding_env/abc/abc -c "&r ./hwmcc19/single/aig/wolf/2018D/picorv32-check-p17.aig; &put; fold; pdr -v"
+Started at: Fri 11 Apr 2025 07:30:46 AM CST
+----------------------------------------
+ABC command line: "&r ./hwmcc19/single/aig/wolf/2018D/picorv32-check-p17.aig; &put; fold; pdr -v".
+
+Warning: The last 2 outputs are interpreted as constraints.
+Converted 1 1-valued FFs and 1860 DC-valued FFs.
+Warning: The number of inputs does not match the number of input names.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 1                                                                 1     1      0.03 sec
+  2 : 0 5 9                                                               4    13      0.03 sec
+  3 : 0 5 3 71                                                            2    77      0.06 sec
+  4 : 0 5 3 0 71                                                          0    77      0.06 sec
+Invariant F[3] : 71 clauses with 75 flops (out of 1492) (cex = 0, ave = 7.33)
+Verification of invariant with 71 clauses was successful.  Time =     0.00 sec
+Block =    4  Oblig =   150  Clause =    79  Call =   597 (sat=61.3%)  Cex =   0  Start =   1
+SAT solving =     0.02 sec ( 29.01 %)
+  unsat     =     0.00 sec (  1.64 %)
+  sat       =     0.02 sec ( 27.37 %)
+Generalize  =     0.02 sec ( 33.07 %)
+Push clause =     0.00 sec (  2.72 %)
+Ternary sim =     0.00 sec (  5.09 %)
+Containment =     0.00 sec (  0.04 %)
+CNF compute =     0.00 sec (  2.79 %)
+Refinement  =     0.00 sec (  0.00 %)
+TOTAL       =     0.07 sec (100.00 %)
+Property proved.  Time =     0.08 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 11 Apr 2025 07:30:46 AM CST
+========================================

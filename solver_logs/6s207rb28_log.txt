@@ -1,0 +1,30 @@
+File: ./hwmcc-appr/6s207rb28.aig
+Command: ~/coding_env/abc/abc -c "&r ./hwmcc-appr/6s207rb28.aig; &put; fold; pdr -v"
+Started at: Fri 11 Apr 2025 01:27:20 AM CST
+----------------------------------------
+ABC command line: "&r ./hwmcc-appr/6s207rb28.aig; &put; fold; pdr -v".
+
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 1                                                                 1     1      0.04 sec
+  2 : 0 56 68                                                             5    92      0.22 sec
+  3 : 0 101 89 172                                                       34   336      0.97 sec
+  4 : 0 81 64 35 148                                                      0   336      1.05 sec
+  5 : 0 245 777 2751 8007 10306                                         251  2119    358.01 sec
+Block =    4  Oblig = 37803  Clause = 22127  Call =294629 (sat=64.4%)  Cex =   0  Start = 979
+SAT solving =   181.48 sec ( 50.69 %)
+  unsat     =    13.91 sec (  3.89 %)
+  sat       =   167.56 sec ( 46.80 %)
+Generalize  =   213.07 sec ( 59.51 %)
+Push clause =     0.15 sec (  0.04 %)
+Ternary sim =    34.80 sec (  9.72 %)
+Containment =    98.27 sec ( 27.45 %)
+CNF compute =    10.98 sec (  3.07 %)
+Refinement  =     0.00 sec (  0.00 %)
+TOTAL       =   358.02 sec (100.00 %)
+Output 0 of miter "./hwmcc-appr/6s207rb28" was asserted in frame 9.  Time =   358.05 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 11 Apr 2025 01:33:19 AM CST
+========================================

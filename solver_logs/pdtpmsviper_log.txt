@@ -1,0 +1,35 @@
+File: ./hwmcc11/single/pdtpmsviper.aig
+Command: ~/coding_env/abc/abc -c "&r ./hwmcc11/single/pdtpmsviper.aig; &put; fold; pdr -v"
+Started at: Fri 11 Apr 2025 02:55:49 PM CST
+----------------------------------------
+ABC command line: "&r ./hwmcc11/single/pdtpmsviper.aig; &put; fold; pdr -v".
+
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 137                                                               1   137      0.03 sec
+  2 : 0 254 428                                                           3   434      0.23 sec
+  3 : 0 195 543 313                                                      15   481      1.66 sec
+  4 : 0 194 487 3303 3544                                               160   580     67.82 sec
+  5 : 0 188 456 3126 2418 694                                             7   580     76.40 sec
+  6 : 0 188 456 2988 1777 775 888                                        29   580     94.08 sec
+  7 : 0 188 456 2956 1580 345 302 878                                     7   580    101.93 sec
+  8 : 0 188 456 2955 1569 330 6 0 1088                                    0   580    107.67 sec
+Invariant F[7] : 1088 clauses with 580 flops (out of 580) (cex = 0, ave = 121.85)
+Verification of invariant with 1088 clauses was successful.  Time =     1.92 sec
+Block =  690  Oblig = 14738  Clause =  8714  Call =146177 (sat=49.7%)  Cex =   0  Start = 481
+SAT solving =    87.75 sec ( 80.07 %)
+  unsat     =    42.92 sec ( 39.17 %)
+  sat       =    44.83 sec ( 40.91 %)
+Generalize  =    68.66 sec ( 62.65 %)
+Push clause =    23.71 sec ( 21.64 %)
+Ternary sim =     7.25 sec (  6.61 %)
+Containment =     3.83 sec (  3.50 %)
+CNF compute =     2.66 sec (  2.43 %)
+Refinement  =     0.00 sec (  0.00 %)
+TOTAL       =   109.59 sec (100.00 %)
+Property proved.  Time =   109.61 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 11 Apr 2025 02:57:39 PM CST
+========================================

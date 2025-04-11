@@ -1,0 +1,45 @@
+File: ./hwmcc20/aig/arbitrated_top_n3_w32_d16_e0.aig
+Command: ~/coding_env/abc/abc -c "&r ./hwmcc20/aig/arbitrated_top_n3_w32_d16_e0.aig; &put; fold; pdr -v"
+Started at: Fri 11 Apr 2025 06:32:41 PM CST
+----------------------------------------
+ABC command line: "&r ./hwmcc20/aig/arbitrated_top_n3_w32_d16_e0.aig; &put; fold; pdr -v".
+
+Warning: The last 10 outputs are interpreted as constraints.
+Converted 1 1-valued FFs and 1636 DC-valued FFs.
+Warning: The number of inputs does not match the number of input names.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 6                                                                 1     8      0.03 sec
+  2 : 0 5 14                                                              2    14      0.06 sec
+  3 : 0 18 39 236                                                        11   230      1.31 sec
+  4 : 0 12 22 57 222                                                      4   235      1.53 sec
+  5 : 0 12 23 36 46 242                                                   5   235      1.86 sec
+  6 : 0 12 22 36 41 88 258                                                5   235      2.39 sec
+  7 : 0 12 22 37 43 84 294 482                                           14   267      4.70 sec
+  8 : 0 12 22 33 36 71 209 435 396                                       11   269      6.68 sec
+  9 : 0 12 22 33 36 62 189 374 599 730                                   18   301     11.93 sec
+ 10 : 0 12 22 33 36 62 184 398 684 1290 1141                             23   333     23.43 sec
+ 11 : 0 12 22 35 40 63 172 373 593 1136 2103 1593                        65   365     41.42 sec
+ 12 : 0 12 22 35 40 63 170 363 543 1027 1784 1882 1178                   20   397     52.81 sec
+ 13 : 0 12 22 35 40 63 168 364 552 1047 1811 1967 2699 2131              79   429     83.95 sec
+ 14 : 0 12 22 35 40 63 163 346 541 984 1573 1499 2283 3099 1816          45   461    110.07 sec
+ 15 : ... 22 35 40 63 161 346 538 965 1512 1384 2342 3321 3961 3059      41   493    163.75 sec
+ 16 : ... 35 40 63 161 346 538 962 1506 1328 2308 3007 3376 4212 2430   120   525    208.04 sec
+ 17 : ... 63 170 383 651 1167 1864 1838 2942 3899 4941 6997 7655 6238   753   556    453.40 sec
+ 18 : ... 1015 1437 2118 2759 2860 3835 4224 4550 4057 4467 3669 1041  1552   560    602.65 sec
+Block = 2502  Oblig = 91771  Clause = 60753  Call =1209479 (sat=71.6%)  Cex =   0  Start =4013
+SAT solving =   479.28 sec ( 79.53 %)
+  unsat     =    54.06 sec (  8.97 %)
+  sat       =   425.22 sec ( 70.56 %)
+Generalize  =   414.79 sec ( 68.83 %)
+Push clause =    50.76 sec (  8.42 %)
+Ternary sim =     6.41 sec (  1.06 %)
+Containment =    18.47 sec (  3.06 %)
+CNF compute =    15.44 sec (  2.56 %)
+Refinement  =     0.00 sec (  0.00 %)
+TOTAL       =   602.66 sec (100.00 %)
+Output 0 of miter "./hwmcc20/aig/arbitrated_top_n3_w32_d16_e0" was asserted in frame 18.  Time =   602.68 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 11 Apr 2025 06:42:44 PM CST
+========================================

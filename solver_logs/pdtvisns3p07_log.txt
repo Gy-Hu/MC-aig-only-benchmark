@@ -1,0 +1,40 @@
+File: ./hwmcc11/single/pdtvisns3p07.aig
+Command: ~/coding_env/abc/abc -c "&r ./hwmcc11/single/pdtvisns3p07.aig; &put; fold; pdr -v"
+Started at: Fri 11 Apr 2025 02:43:42 PM CST
+----------------------------------------
+ABC command line: "&r ./hwmcc11/single/pdtvisns3p07.aig; &put; fold; pdr -v".
+
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 1                                                                 1     1      0.01 sec
+  2 : 0 2 2                                                               2     3      0.01 sec
+  3 : 0 1 1 1                                                             0     3      0.01 sec
+  4 : 0 27 81 92 67                                                      41    86      0.23 sec
+  5 : 0 20 63 84 46 20                                                    0    86      0.25 sec
+  6 : 0 21 81 144 218 178 155                                            48    97      0.99 sec
+  7 : 0 20 77 133 193 133 74 65                                           0    97      1.09 sec
+  8 : 0 20 78 134 208 172 167 134 139                                    34    97      1.69 sec
+  9 : 0 20 78 132 190 146 77 20 11 118                                    0    97      1.80 sec
+ 10 : 0 20 78 132 189 147 76 21 14 21 106                                 8    97      1.92 sec
+ 11 : 0 20 78 132 189 146 72 16 2 12 12 103                               0    97      2.02 sec
+ 12 : 0 20 78 132 189 146 72 16 2 12 13 34 114                            6    97      2.16 sec
+ 13 : 0 20 78 131 190 146 72 16 2 0 0 0 0 135                             0    97      2.26 sec
+Invariant F[9] : 135 clauses with 79 flops (out of 117) (cex = 0, ave = 25.62)
+Verification of invariant with 135 clauses was successful.  Time =     0.01 sec
+Block =   20  Oblig =  2349  Clause =  1257  Call = 18848 (sat=73.0%)  Cex =   0  Start =  56
+SAT solving =     1.87 sec ( 82.13 %)
+  unsat     =     0.24 sec ( 10.68 %)
+  sat       =     1.63 sec ( 71.45 %)
+Generalize  =     1.21 sec ( 52.91 %)
+Push clause =     0.71 sec ( 31.23 %)
+Ternary sim =     0.13 sec (  5.73 %)
+Containment =     0.00 sec (  0.16 %)
+CNF compute =     0.05 sec (  2.11 %)
+Refinement  =     0.00 sec (  0.00 %)
+TOTAL       =     2.28 sec (100.00 %)
+Property proved.  Time =     2.29 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 11 Apr 2025 02:43:45 PM CST
+========================================

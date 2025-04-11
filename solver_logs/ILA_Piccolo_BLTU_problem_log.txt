@@ -1,0 +1,25 @@
+File: ./hwmcc24/2024/hku/refinement_checking/bv/ILA_Piccolo_BLTU_problem.aig
+Command: ~/coding_env/abc/abc -c "&r ./hwmcc24/2024/hku/refinement_checking/bv/ILA_Piccolo_BLTU_problem.aig; &put; fold; pdr -v"
+Started at: Fri 11 Apr 2025 08:40:25 PM CST
+----------------------------------------
+ABC command line: "&r ./hwmcc24/2024/hku/refinement_checking/bv/ILA_Piccolo_BLTU_problem.aig; &put; fold; pdr -v".
+
+Warning: The last output is interpreted as a constraint.
+Converted 31 1-valued FFs and 7754 DC-valued FFs.
+Warning: The number of inputs does not match the number of input names.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 1                                                                 1     1      0.14 sec
+  2 : 0 3 4                                                               2     4      0.36 sec
+  3 : 0 4 9 14                                                            5    18      1.91 sec
+  4 : 0 10 15 17 28                                                       8    47      6.48 sec
+  5 : 0 9 19 36 40 45                                                    26    83     12.11 sec
+  6 : 0 6 11 5 6 12 46                                                    0    83     12.28 sec
+  7 : 0 6 11 5 6 12 4 42                                                  0    83     12.44 sec
+  8 : 0 7 16 28 69 117 205 323 309                                      116   166     63.45 sec
+  9 : 0 5 10 13 16 12 17 70 114 151                                       0   166     64.34 sec
+ 10 : 0 10 19 21 24 20 26 78 144 95 98                                   34   180     72.78 sec
+----------------------------------------
+STATUS: TIMEOUT (exceeded 3600 seconds)
+Finished at: Fri 11 Apr 2025 09:40:25 PM CST
+========================================

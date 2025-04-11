@@ -1,0 +1,39 @@
+File: ./hwmcc11/single/bobsynth13neg.aig
+Command: ~/coding_env/abc/abc -c "&r ./hwmcc11/single/bobsynth13neg.aig; &put; fold; pdr -v"
+Started at: Fri 11 Apr 2025 03:47:01 PM CST
+----------------------------------------
+ABC command line: "&r ./hwmcc11/single/bobsynth13neg.aig; &put; fold; pdr -v".
+
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 1                                                                 1     1      0.01 sec
+  2 : 0 6 6                                                               4    10      0.02 sec
+  3 : 0 3 2 4                                                             0    10      0.02 sec
+  4 : 0 3 2 1 3                                                           0    10      0.02 sec
+  5 : 0 3 2 2 2 11                                                        4    17      0.02 sec
+  6 : 0 3 2 1 1 1 9                                                       0    17      0.02 sec
+  7 : 0 10 12 9 9 21 35 56                                               23    55      0.07 sec
+  8 : 0 3 4 3 4 8 12 15 47                                                0    55      0.07 sec
+  9 : 0 3 4 3 4 8 12 15 15 35                                             2    58      0.08 sec
+ 10 : 0 18 34 30 33 21 23 28 35 32 71                                    45    94      0.16 sec
+ 11 : 0 6 18 18 17 20 18 22 26 15 24 60                                   0    94      0.17 sec
+ 12 : 0 6 18 18 17 20 19 38 73 105 161 171 211                           86   107      0.56 sec
+ 13 : 0 4 17 17 16 20 18 31 37 48 86 114 105 156                          0   107      0.61 sec
+ 14 : 0 9 28 37 49 83 158 278 253 272 321 329 354 282 434               151   149      2.50 sec
+Block =    8  Oblig =  7111  Clause =  3230  Call = 37673 (sat=65.4%)  Cex =   0  Start = 120
+SAT solving =     1.82 sec ( 72.53 %)
+  unsat     =     0.22 sec (  8.77 %)
+  sat       =     1.60 sec ( 63.76 %)
+Generalize  =     1.77 sec ( 70.37 %)
+Push clause =     0.11 sec (  4.31 %)
+Ternary sim =     0.19 sec (  7.36 %)
+Containment =     0.05 sec (  2.13 %)
+CNF compute =     0.07 sec (  2.80 %)
+Refinement  =     0.00 sec (  0.06 %)
+TOTAL       =     2.51 sec (100.00 %)
+Output 0 of miter "./hwmcc11/single/bobsynth13neg" was asserted in frame 18.  Time =     2.53 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 11 Apr 2025 03:47:03 PM CST
+========================================

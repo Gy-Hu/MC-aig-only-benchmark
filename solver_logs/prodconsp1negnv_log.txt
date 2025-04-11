@@ -1,0 +1,36 @@
+File: ./hwmcc11/single/prodconsp1negnv.aig
+Command: ~/coding_env/abc/abc -c "&r ./hwmcc11/single/prodconsp1negnv.aig; &put; fold; pdr -v"
+Started at: Fri 11 Apr 2025 03:16:09 PM CST
+----------------------------------------
+ABC command line: "&r ./hwmcc11/single/prodconsp1negnv.aig; &put; fold; pdr -v".
+
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 6                                                                 1     6      0.00 sec
+  2 : 0 9 17                                                              3    20      0.01 sec
+  3 : 0 6 9 24                                                            3    27      0.01 sec
+  4 : 0 6 11 28 44                                                        5    29      0.03 sec
+  5 : 0 6 9 14 16 34                                                      3    29      0.04 sec
+  6 : 0 6 9 12 10 24 48                                                   6    30      0.06 sec
+  7 : 0 6 8 12 10 21 29 73                                                4    41      0.08 sec
+  8 : 0 6 8 12 10 23 30 50 80                                             8    43      0.12 sec
+  9 : 0 6 8 12 10 19 30 56 54 88                                          9    46      0.17 sec
+ 10 : 0 6 8 12 10 19 34 66 80 90 133                                     21    52      0.28 sec
+ 11 : 0 6 8 10 13 21 32 58 79 93 65 126                                  25    54      0.35 sec
+Block =  257  Oblig =  1244  Clause =   667  Call =  8568 (sat=66.2%)  Cex =   0  Start =  23
+SAT solving =     0.25 sec ( 68.35 %)
+  unsat     =     0.03 sec (  7.44 %)
+  sat       =     0.22 sec ( 60.90 %)
+Generalize  =     0.23 sec ( 62.94 %)
+Push clause =     0.05 sec ( 13.04 %)
+Ternary sim =     0.05 sec ( 13.82 %)
+Containment =     0.00 sec (  0.83 %)
+CNF compute =     0.01 sec (  2.13 %)
+Refinement  =     0.00 sec (  0.03 %)
+TOTAL       =     0.36 sec (100.00 %)
+Output 0 of miter "./hwmcc11/single/prodconsp1negnv" was asserted in frame 26.  Time =     0.37 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 11 Apr 2025 03:16:09 PM CST
+========================================

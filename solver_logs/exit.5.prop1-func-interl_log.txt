@@ -1,0 +1,52 @@
+File: ./hwmcc19/single/aig/beem/exit.5.prop1-func-interl.aig
+Command: ~/coding_env/abc/abc -c "&r ./hwmcc19/single/aig/beem/exit.5.prop1-func-interl.aig; &put; fold; pdr -v"
+Started at: Fri 11 Apr 2025 06:44:32 AM CST
+----------------------------------------
+ABC command line: "&r ./hwmcc19/single/aig/beem/exit.5.prop1-func-interl.aig; &put; fold; pdr -v".
+
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 1                                                                 1     1      0.00 sec
+  2 : 0 1 1                                                               1     2      0.00 sec
+  3 : 0 6 6 6                                                             5    12      0.01 sec
+  4 : 0 4 4 4 4                                                           5    13      0.01 sec
+  5 : 0 4 4 2 2 3                                                         1    13      0.02 sec
+  6 : 0 18 32 40 49 60 62                                                37    46      0.25 sec
+  7 : 0 12 13 17 26 33 31 28                                              1    46      0.27 sec
+  8 : 0 12 12 21 39 81 137 147 199                                       61    53      0.94 sec
+  9 : 0 12 12 20 25 19 31 36 47 98                                        0    53      0.98 sec
+ 10 : 0 12 12 44 83 103 164 186 218 262 773                             106    58      4.22 sec
+ 11 : 0 12 12 44 61 61 83 81 78 103 190 574                               0    58      4.43 sec
+ 12 : 0 12 12 44 61 59 79 80 75 99 186 166 458                           14    58      4.61 sec
+ 13 : 0 12 12 44 61 59 79 80 75 101 203 246 175 632                      62    58      5.29 sec
+ 14 : 0 12 12 44 61 59 79 80 73 91 72 61 43 38 799                        0    58      5.47 sec
+ 15 : 0 12 12 44 61 59 79 80 73 91 71 57 43 35 15 784                     0    58      5.61 sec
+ 16 : 0 12 12 44 61 59 79 80 73 96 105 146 149 133 123 97 1098           92    58      7.07 sec
+ 17 : 0 12 12 44 61 59 79 80 71 95 83 84 68 32 18 6 1 1091                0    58      7.30 sec
+ 18 : 0 12 12 44 61 59 79 80 71 95 82 80 63 31 17 6 1 3 1088              0    58      7.47 sec
+ 19 : 0 12 12 44 61 59 79 80 71 95 82 80 63 31 17 6 1 3 6 1082            0    58      7.64 sec
+ 20 : 0 12 12 44 61 59 79 80 71 95 82 80 63 31 17 6 1 3 6 7 1075          0    58      7.81 sec
+ 21 : ... 12 12 44 61 59 79 80 71 95 82 80 63 31 17 6 1 3 6 7 7 1067      0    58      7.98 sec
+ 22 : ... 12 44 61 59 79 80 71 94 82 80 63 31 18 6 1 3 6 7 7 6 1061       0    58      8.14 sec
+ 23 : ... 12 44 61 59 79 80 71 94 82 80 63 31 18 6 1 3 6 7 7 6 3 1057     0    58      8.30 sec
+ 24 : ... 44 61 59 79 80 71 94 82 80 64 31 17 6 1 3 6 7 8 6 3 1 1108     15    58      8.59 sec
+ 25 : ... 61 59 79 80 71 92 79 79 64 28 14 4 0 0 0 0 0 0 0 0 0 1090       0    58      8.77 sec
+Invariant F[16] : 1090 clauses with 58 flops (out of 246) (cex = 0, ave = 66.61)
+Verification of invariant with 1090 clauses was successful.  Time =     0.05 sec
+Block =   13  Oblig =  6039  Clause =  3748  Call =100067 (sat=43.4%)  Cex =   0  Start = 320
+SAT solving =     7.35 sec ( 83.29 %)
+  unsat     =     2.48 sec ( 28.13 %)
+  sat       =     4.87 sec ( 55.17 %)
+Generalize  =     4.80 sec ( 54.32 %)
+Push clause =     2.58 sec ( 29.27 %)
+Ternary sim =     0.30 sec (  3.43 %)
+Containment =     0.06 sec (  0.69 %)
+CNF compute =     0.21 sec (  2.41 %)
+Refinement  =     0.00 sec (  0.00 %)
+TOTAL       =     8.83 sec (100.00 %)
+Property proved.  Time =     8.86 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 11 Apr 2025 06:44:41 AM CST
+========================================

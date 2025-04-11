@@ -1,0 +1,55 @@
+File: ./hwmcc20/aig-1.8/zipcpu-busdelay-p36.aig
+Command: ~/coding_env/abc/abc -c "&r ./hwmcc20/aig-1.8/zipcpu-busdelay-p36.aig; &put; fold; pdr -v"
+Started at: Fri 11 Apr 2025 06:10:03 PM CST
+----------------------------------------
+ABC command line: "&r ./hwmcc20/aig-1.8/zipcpu-busdelay-p36.aig; &put; fold; pdr -v".
+
+Converted 1 1-valued FFs and 367 DC-valued FFs.
+Warning: The number of inputs does not match the number of input names.
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 1                                                                 1     1      0.00 sec
+  2 : 0 5 9                                                               2    13      0.01 sec
+  3 : 0 14 43 59                                                          9    57      0.03 sec
+  4 : 0 13 32 53 64                                                       7    61      0.05 sec
+  5 : 0 13 31 53 82 98                                                    9    63      0.09 sec
+  6 : 0 13 31 45 61 114 104                                              12    66      0.14 sec
+  7 : 0 13 31 42 37 101 132 99                                           18    68      0.20 sec
+  8 : 0 13 31 47 47 93 132 210 224                                       19    69      0.44 sec
+  9 : 0 13 31 48 55 95 89 154 260 203                                    29    69      0.63 sec
+ 10 : 0 13 31 50 50 79 62 81 144 224 196                                 19    70      0.75 sec
+ 11 : 0 13 31 50 48 80 56 66 86 198 214 162                               9    70      0.90 sec
+ 12 : 0 13 31 50 47 75 56 65 85 197 267 335 324                          39    70      1.29 sec
+ 13 : 0 13 31 50 47 75 56 60 86 172 148 228 279 264                      22    70      1.47 sec
+ 14 : 0 13 31 50 47 75 56 60 86 175 153 200 293 316 358                  35    70      1.80 sec
+ 15 : 0 13 31 50 47 75 56 60 83 161 139 102 139 216 289 406              20    70      2.06 sec
+ 16 : 0 13 31 50 47 75 56 60 83 161 137 101 111 154 248 373 335          55    70      2.39 sec
+ 17 : ... 13 31 50 47 75 54 60 83 161 137 100 108 110 188 345 456 391    15    70      2.81 sec
+ 18 : ... 50 47 75 54 60 83 161 137 100 108 110 173 256 369 480 489      21    70      3.31 sec
+ 19 : ... 47 75 54 60 83 161 137 100 108 98 143 226 189 352 410 726      31    70      3.87 sec
+ 20 : ... 75 54 60 83 161 135 100 106 100 141 213 140 212 383 481 753    30    70      4.40 sec
+ 21 : ... 54 60 83 161 135 100 106 98 141 210 119 140 142 235 360 789     2    70      4.61 sec
+ 22 : ... 83 161 135 100 106 98 141 209 120 139 138 252 439 495 806      33    70      5.38 sec
+ 23 : ... 161 135 100 106 98 141 179 105 128 106 116 100 80 107 1262      4    70      5.64 sec
+ 24 : ... 135 100 106 98 141 179 103 128 106 116 97 74 97 123 1172        6    70      5.86 sec
+ 25 : ... 100 106 98 141 179 104 136 125 151 159 129 154 188 209 1320    43    70      6.71 sec
+ 26 : ... 161 135 100 106 98 141 179 87 97 92 75 47 19 0 0 0 0 1655       0    70      7.00 sec
+Invariant F[22] : 1655 clauses with 66 flops (out of 660) (cex = 0, ave = 47.90)
+Verification of invariant with 1655 clauses was successful.  Time =     0.04 sec
+Block =   29  Oblig = 10417  Clause =  6392  Call =150242 (sat=64.7%)  Cex =   0  Start = 487
+SAT solving =     5.79 sec ( 82.19 %)
+  unsat     =     1.17 sec ( 16.64 %)
+  sat       =     4.62 sec ( 65.55 %)
+Generalize  =     3.86 sec ( 54.74 %)
+Push clause =     2.34 sec ( 33.27 %)
+Ternary sim =     0.21 sec (  3.01 %)
+Containment =     0.09 sec (  1.34 %)
+CNF compute =     0.21 sec (  3.00 %)
+Refinement  =     0.00 sec (  0.00 %)
+TOTAL       =     7.05 sec (100.00 %)
+Property proved.  Time =     7.06 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 11 Apr 2025 06:10:10 PM CST
+========================================

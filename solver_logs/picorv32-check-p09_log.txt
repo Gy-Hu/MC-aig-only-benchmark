@@ -1,0 +1,36 @@
+File: ./hwmcc24/2019/wolf/2018D/picorv32-check-p09.aig
+Command: ~/coding_env/abc/abc -c "&r ./hwmcc24/2019/wolf/2018D/picorv32-check-p09.aig; &put; fold; pdr -v"
+Started at: Fri 11 Apr 2025 08:34:58 PM CST
+----------------------------------------
+ABC command line: "&r ./hwmcc24/2019/wolf/2018D/picorv32-check-p09.aig; &put; fold; pdr -v".
+
+Warning: The last 2 outputs are interpreted as constraints.
+Converted 1 1-valued FFs and 1860 DC-valued FFs.
+Warning: The number of inputs does not match the number of input names.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 4                                                                 1     6      0.03 sec
+  2 : 0 6 23                                                              3    20      0.03 sec
+  3 : 0 5 8 15                                                            0    20      0.04 sec
+  4 : 0 5 9 3 21                                                          4    21      0.04 sec
+  5 : 0 5 7 3 2 18                                                        0    21      0.04 sec
+  6 : 0 5 7 3 2 2 20                                                      3    21      0.04 sec
+  7 : 0 5 7 3 2 0 0 20                                                    0    21      0.05 sec
+Invariant F[5] : 20 clauses with 17 flops (out of 1427) (cex = 0, ave = 10.62)
+Verification of invariant with 20 clauses was successful.  Time =     0.00 sec
+Block =    7  Oblig =    70  Clause =    43  Call =   396 (sat=54.5%)  Cex =   0  Start =   0
+SAT solving =     0.01 sec ( 15.20 %)
+  unsat     =     0.00 sec (  1.66 %)
+  sat       =     0.01 sec ( 13.54 %)
+Generalize  =     0.01 sec ( 11.09 %)
+Push clause =     0.00 sec (  7.98 %)
+Ternary sim =     0.00 sec (  3.14 %)
+Containment =     0.00 sec (  0.02 %)
+CNF compute =     0.00 sec (  2.77 %)
+Refinement  =     0.00 sec (  0.00 %)
+TOTAL       =     0.06 sec (100.00 %)
+Property proved.  Time =     0.06 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 11 Apr 2025 08:34:58 PM CST
+========================================

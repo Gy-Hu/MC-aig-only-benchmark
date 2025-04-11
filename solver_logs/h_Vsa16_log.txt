@@ -1,0 +1,32 @@
+File: ./avr/opensource/h_Vsa16/h_Vsa16.aig
+Command: ~/coding_env/abc/abc -c "&r ./avr/opensource/h_Vsa16/h_Vsa16.aig; &put; fold; pdr -v"
+Started at: Fri 11 Apr 2025 04:11:14 PM CST
+----------------------------------------
+ABC command line: "&r ./avr/opensource/h_Vsa16/h_Vsa16.aig; &put; fold; pdr -v".
+
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 19                                                                1    19      0.01 sec
+  2 : 0 3 20                                                              2    21      0.01 sec
+  3 : 0 1 1 19                                                            0    21      0.01 sec
+  4 : 0 1 1 2 21                                                          2    25      0.01 sec
+  5 : 0 1 1 1 0 21                                                        0    25      0.01 sec
+Invariant F[4] : 21 clauses with 25 flops (out of 172) (cex = 0, ave = 1.69)
+Verification of invariant with 21 clauses was successful.  Time =     0.00 sec
+Block =   24  Oblig =    29  Clause =    27  Call =   175 (sat=28.6%)  Cex =   0  Start =   0
+SAT solving =     0.00 sec (  5.06 %)
+  unsat     =     0.00 sec (  0.34 %)
+  sat       =     0.00 sec (  4.71 %)
+Generalize  =     0.00 sec (  3.60 %)
+Push clause =     0.00 sec (  4.71 %)
+Ternary sim =     0.00 sec (  0.38 %)
+Containment =     0.00 sec (  0.02 %)
+CNF compute =     0.00 sec (  5.30 %)
+Refinement  =     0.00 sec (  0.00 %)
+TOTAL       =     0.02 sec (100.00 %)
+Property proved.  Time =     0.03 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 11 Apr 2025 04:11:14 PM CST
+========================================

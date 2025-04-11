@@ -1,0 +1,37 @@
+File: ./hwmcc24/2024/hku/refinement_checking/bv/ILA_Piccolo_SW_sanity.aig
+Command: ~/coding_env/abc/abc -c "&r ./hwmcc24/2024/hku/refinement_checking/bv/ILA_Piccolo_SW_sanity.aig; &put; fold; pdr -v"
+Started at: Fri 11 Apr 2025 08:37:22 PM CST
+----------------------------------------
+ABC command line: "&r ./hwmcc24/2024/hku/refinement_checking/bv/ILA_Piccolo_SW_sanity.aig; &put; fold; pdr -v".
+
+Warning: The last output is interpreted as a constraint.
+Converted 31 1-valued FFs and 7754 DC-valued FFs.
+Warning: The number of inputs does not match the number of input names.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 11                                                                1    11      0.48 sec
+  2 : 0 5 34                                                              2    35      3.77 sec
+  3 : 0 3 9 36                                                            3    43      5.17 sec
+  4 : 0 3 6 3 28                                                          0    43      5.24 sec
+  5 : 0 8 15 22 24 62                                                     9    66      9.95 sec
+  6 : 0 11 17 22 43 43 88                                                14    86     16.39 sec
+  7 : 0 9 10 14 22 39 49 74                                               4    87     19.24 sec
+  8 : 0 9 16 21 33 48 45 26 97                                           16    90     24.82 sec
+  9 : 0 7 9 11 22 42 35 30 78 117                                        11   123     48.41 sec
+ 10 : 0 7 9 12 23 34 28 22 75 123 190                                    18   215     62.22 sec
+Block =  154  Oblig =  1550  Clause =   681  Call =  7060 (sat=59.1%)  Cex =   0  Start =  19
+SAT solving =    22.62 sec ( 36.35 %)
+  unsat     =     0.46 sec (  0.74 %)
+  sat       =    22.16 sec ( 35.61 %)
+Generalize  =    41.92 sec ( 67.37 %)
+Push clause =     4.16 sec (  6.68 %)
+Ternary sim =    32.09 sec ( 51.56 %)
+Containment =     0.18 sec (  0.28 %)
+CNF compute =     0.51 sec (  0.82 %)
+Refinement  =     0.01 sec (  0.01 %)
+TOTAL       =    62.23 sec (100.00 %)
+Output 0 of miter "./hwmcc24/2024/hku/refinement_checking/bv/ILA_Piccolo_SW_sanity" was asserted in frame 10.  Time =    62.30 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 11 Apr 2025 08:38:25 PM CST
+========================================

@@ -1,0 +1,29 @@
+File: ./hwmcc24/2024/hku/refinement_checking/bv/ILA_Flute_SUB_sanity.aig
+Command: ~/coding_env/abc/abc -c "&r ./hwmcc24/2024/hku/refinement_checking/bv/ILA_Flute_SUB_sanity.aig; &put; fold; pdr -v"
+Started at: Fri 11 Apr 2025 08:37:46 PM CST
+----------------------------------------
+ABC command line: "&r ./hwmcc24/2024/hku/refinement_checking/bv/ILA_Flute_SUB_sanity.aig; &put; fold; pdr -v".
+
+Warning: The last output is interpreted as a constraint.
+Converted 548 1-valued FFs and 173794 DC-valued FFs.
+Warning: The number of inputs does not match the number of input names.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 24                                                                1    24      2.93 sec
+  2 : 0 5 26                                                              2    27      3.43 sec
+  3 : 0 7 24 55                                                           4    67     18.21 sec
+  4 : 0 4 6 2 43                                                          0    67     18.78 sec
+  5 : 0 4 5 2 4 39                                                        0    67     19.32 sec
+  6 : 0 6 20 59 284 358 496                                              47   384    554.31 sec
+  7 : 0 5 16 22 84 150 127 281                                            0   384    574.80 sec
+  8 : 0 5 16 22 105 249 399 556 747                                     131   468   1315.39 sec
+  9 : 0 4 11 12 83 126 191 249 289 444                                    0   468   1336.29 sec
+ 10 : 0 4 11 11 83 125 195 294 477 422 859                               44   589   1711.41 sec
+ 11 : 0 4 11 11 83 118 148 159 189 188 388 602                            0   589   1728.01 sec
+ 12 : 0 4 12 17 95 134 187 231 266 315 571 1045 576                     545   693   2534.67 sec
+ 13 : 0 4 9 4 49 91 104 122 155 130 344 427 406 455                      16   693   2640.22 sec
+ 14 : 0 4 9 4 49 91 103 122 155 127 333 406 344 143 321                   2   693   2670.09 sec
+----------------------------------------
+STATUS: TIMEOUT (exceeded 3600 seconds)
+Finished at: Fri 11 Apr 2025 09:37:47 PM CST
+========================================

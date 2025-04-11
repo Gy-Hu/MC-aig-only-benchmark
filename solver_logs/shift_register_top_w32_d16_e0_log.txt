@@ -1,0 +1,45 @@
+File: ./hwmcc20/aig-1.8/shift_register_top_w32_d16_e0.aig
+Command: ~/coding_env/abc/abc -c "&r ./hwmcc20/aig-1.8/shift_register_top_w32_d16_e0.aig; &put; fold; pdr -v"
+Started at: Fri 11 Apr 2025 06:07:59 PM CST
+----------------------------------------
+ABC command line: "&r ./hwmcc20/aig-1.8/shift_register_top_w32_d16_e0.aig; &put; fold; pdr -v".
+
+Converted 1 1-valued FFs and 556 DC-valued FFs.
+Warning: The number of inputs does not match the number of input names.
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 5                                                                 1     7      0.01 sec
+  2 : 0 11 74                                                             2    74      0.03 sec
+  3 : 0 11 76 69                                                          2    74      0.07 sec
+  4 : 0 12 27 150 152                                                     8   108      0.19 sec
+  5 : 0 12 24 141 146 75                                                  3   108      0.25 sec
+  6 : 0 13 25 145 89 280 281                                             14   174      0.59 sec
+  7 : 0 13 24 143 21 148 328 77                                           5   174      0.69 sec
+  8 : 0 14 25 146 28 162 278 375 410                                     27   238      1.29 sec
+  9 : 0 14 25 145 22 153 203 280 158 338                                  2   238      1.45 sec
+ 10 : 0 14 25 145 22 153 203 280 95 318 104                               6   238      1.62 sec
+ 11 : 0 14 25 149 25 156 209 287 106 164 186 168                         39   243      1.90 sec
+ 12 : 0 14 24 147 23 150 203 282 95 78 107 144 89                         0   243      2.02 sec
+ 13 : 0 14 24 147 23 150 203 282 137 235 321 379 420 514                 17   388      3.50 sec
+ 14 : 0 15 29 149 30 157 207 283 104 229 307 296 399 530 641             39   423      4.92 sec
+ 15 : 0 8 13 70 17 139 143 392 38 141 174 271 455 504 718 247            20   424      5.64 sec
+ 16 : 0 8 13 70 16 139 143 392 38 141 174 270 454 490 572 447 243        18   428      6.38 sec
+ 17 : ... 13 70 16 139 143 392 38 141 174 270 454 496 513 408 522 528    18   491      7.76 sec
+ 18 : ... 16 139 143 392 38 141 174 270 454 494 476 304 464 520 114      29   491      8.38 sec
+Block = 1004  Oblig =  9917  Clause =  6447  Call =112094 (sat=72.7%)  Cex =   0  Start = 362
+SAT solving =     7.32 sec ( 87.27 %)
+  unsat     =     1.06 sec ( 12.58 %)
+  sat       =     6.27 sec ( 74.69 %)
+Generalize  =     4.67 sec ( 55.69 %)
+Push clause =     2.64 sec ( 31.43 %)
+Ternary sim =     0.17 sec (  2.06 %)
+Containment =     0.03 sec (  0.40 %)
+CNF compute =     0.20 sec (  2.43 %)
+Refinement  =     0.00 sec (  0.01 %)
+TOTAL       =     8.39 sec (100.00 %)
+Output 0 of miter "./hwmcc20/aig-1.8/shift_register_top_w32_d16_e0" was asserted in frame 37.  Time =     8.41 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 11 Apr 2025 06:08:08 PM CST
+========================================

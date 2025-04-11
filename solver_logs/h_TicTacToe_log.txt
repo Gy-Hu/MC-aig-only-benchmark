@@ -1,0 +1,33 @@
+File: ./avr/opensource/h_TicTacToe/h_TicTacToe.aig
+Command: ~/coding_env/abc/abc -c "&r ./avr/opensource/h_TicTacToe/h_TicTacToe.aig; &put; fold; pdr -v"
+Started at: Fri 11 Apr 2025 04:02:09 PM CST
+----------------------------------------
+ABC command line: "&r ./avr/opensource/h_TicTacToe/h_TicTacToe.aig; &put; fold; pdr -v".
+
+Converted 1 1-valued FFs and 0 DC-valued FFs.
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 8                                                                 1    11      0.00 sec
+  2 : 0 5 14                                                              1    22      0.01 sec
+  3 : 0 5 11 15                                                           1    22      0.01 sec
+  4 : 0 5 11 2 15                                                         1    22      0.01 sec
+  5 : 0 5 11 2 0 15                                                       0    22      0.02 sec
+Invariant F[4] : 15 clauses with 22 flops (out of 24) (cex = 0, ave = 11.09)
+Verification of invariant with 15 clauses was successful.  Time =     0.00 sec
+Block =   33  Oblig =    33  Clause =    33  Call =   404 (sat=80.2%)  Cex =   0  Start =   0
+SAT solving =     0.01 sec ( 38.85 %)
+  unsat     =     0.00 sec (  4.79 %)
+  sat       =     0.01 sec ( 34.06 %)
+Generalize  =     0.01 sec ( 26.63 %)
+Push clause =     0.00 sec (  9.74 %)
+Ternary sim =     0.00 sec (  1.77 %)
+Containment =     0.00 sec (  0.01 %)
+CNF compute =     0.00 sec (  1.33 %)
+Refinement  =     0.00 sec (  0.00 %)
+TOTAL       =     0.02 sec (100.00 %)
+Property proved.  Time =     0.03 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 11 Apr 2025 04:02:09 PM CST
+========================================

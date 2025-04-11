@@ -1,0 +1,45 @@
+File: ./hwmcc19/single/aig/mann/data-integrity/unsafe/shift_register_top_w64_d16_e0.aig
+Command: ~/coding_env/abc/abc -c "&r ./hwmcc19/single/aig/mann/data-integrity/unsafe/shift_register_top_w64_d16_e0.aig; &put; fold; pdr -v"
+Started at: Fri 11 Apr 2025 06:40:14 AM CST
+----------------------------------------
+ABC command line: "&r ./hwmcc19/single/aig/mann/data-integrity/unsafe/shift_register_top_w64_d16_e0.aig; &put; fold; pdr -v".
+
+Warning: The last 5 outputs are interpreted as constraints.
+Converted 1 1-valued FFs and 1100 DC-valued FFs.
+Warning: The number of inputs does not match the number of input names.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 6                                                                 1     8      0.01 sec
+  2 : 0 2 134                                                             2   137      0.05 sec
+  3 : 0 3 134 142                                                         5   139      0.13 sec
+  4 : 0 3 134 265 270                                                     4   203      0.38 sec
+  5 : 0 3 134 263 266 142                                                 6   206      0.51 sec
+  6 : 0 3 134 267 273 679 658                                            11   334      1.70 sec
+  7 : 0 3 134 265 266 365 619 313                                         2   334      1.98 sec
+  8 : 0 3 134 265 266 365 426 505 252                                    10   342      2.46 sec
+  9 : 0 3 134 265 266 365 526 809 900 912                                10   523      5.15 sec
+ 10 : 0 3 134 266 269 371 538 673 671 955 182                            29   526      5.76 sec
+ 11 : 0 3 134 266 269 360 533 454 325 918 387 149                         6   526      6.28 sec
+ 12 : 0 3 134 266 269 360 533 454 327 936 1155 910 1376                  12   719     10.57 sec
+ 13 : 0 3 134 266 269 360 533 454 325 828 694 751 1317 292                6   719     11.47 sec
+ 14 : 0 3 134 266 269 360 533 454 325 828 694 751 899 822 435             8   719     12.95 sec
+ 15 : ... 134 266 269 360 533 454 325 828 695 753 834 1123 1276 1143     16   860     16.94 sec
+ 16 : ... 266 269 360 533 454 325 828 591 448 461 438 813 1373 682        9   860     18.91 sec
+ 17 : ... 269 360 533 454 325 828 591 448 462 469 844 1647 1620 1157     21   952     24.24 sec
+ 18 : ... 360 533 454 325 828 591 448 429 428 741 945 1431 1194 219      25   954     25.70 sec
+Block = 2279  Oblig = 22435  Clause = 14612  Call =263853 (sat=74.1%)  Cex =   0  Start = 862
+SAT solving =    21.72 sec ( 84.50 %)
+  unsat     =     2.76 sec ( 10.75 %)
+  sat       =    18.96 sec ( 73.76 %)
+Generalize  =    15.22 sec ( 59.21 %)
+Push clause =     7.03 sec ( 27.35 %)
+Ternary sim =     0.73 sec (  2.86 %)
+Containment =     0.23 sec (  0.90 %)
+CNF compute =     0.79 sec (  3.08 %)
+Refinement  =     0.00 sec (  0.01 %)
+TOTAL       =    25.71 sec (100.00 %)
+Output 0 of miter "./hwmcc19/single/aig/mann/data-integrity/unsafe/shift_register_top_w64_d16_e0" was asserted in frame 32.  Time =    25.73 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 11 Apr 2025 06:40:40 AM CST
+========================================

@@ -1,0 +1,35 @@
+File: ./hwmcc13/single/6s218b1246.aig
+Command: ~/coding_env/abc/abc -c "&r ./hwmcc13/single/6s218b1246.aig; &put; fold; pdr -v"
+Started at: Fri 11 Apr 2025 12:32:25 PM CST
+----------------------------------------
+ABC command line: "&r ./hwmcc13/single/6s218b1246.aig; &put; fold; pdr -v".
+
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 2                                                                 1     2      0.25 sec
+  2 : 0 4 5                                                               3     6      0.26 sec
+  3 : 0 1 2 3                                                             0     6      0.26 sec
+  4 : 0 8 7 5 17                                                         11    19      0.27 sec
+  5 : 0 2 1 1 1 15                                                        0    19      0.27 sec
+  6 : 0 2 1 1 1 1 14                                                      0    19      0.27 sec
+  7 : 0 2 1 1 1 1 1 13                                                    0    19      0.27 sec
+  8 : 0 2 1 1 1 1 1 1 12                                                  0    19      0.27 sec
+  9 : 0 2 1 1 1 1 1 1 2 10                                                0    19      0.28 sec
+ 10 : 0 35 17 18 12 9 7 7 11 11 102                                      28   133      0.93 sec
+Block =    7  Oblig =   489  Clause =   249  Call =  1733 (sat=33.3%)  Cex =   0  Start =   0
+SAT solving =     0.29 sec ( 28.91 %)
+  unsat     =     0.06 sec (  6.02 %)
+  sat       =     0.23 sec ( 22.89 %)
+Generalize  =     0.40 sec ( 39.78 %)
+Push clause =     0.00 sec (  0.34 %)
+Ternary sim =     0.18 sec ( 18.31 %)
+Containment =     0.00 sec (  0.27 %)
+CNF compute =     0.03 sec (  2.99 %)
+Refinement  =     0.04 sec (  4.36 %)
+TOTAL       =     1.00 sec (100.00 %)
+Output 0 of miter "./hwmcc13/single/6s218b1246" was asserted in frame 10.  Time =     1.18 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 11 Apr 2025 12:32:26 PM CST
+========================================

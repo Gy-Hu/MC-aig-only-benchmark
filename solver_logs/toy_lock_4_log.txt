@@ -1,0 +1,38 @@
+File: ./avr/crafted/toy_lock_4/toy_lock_4.aig
+Command: ~/coding_env/abc/abc -c "&r ./avr/crafted/toy_lock_4/toy_lock_4.aig; &put; fold; pdr -v"
+Started at: Fri 11 Apr 2025 04:11:15 PM CST
+----------------------------------------
+ABC command line: "&r ./avr/crafted/toy_lock_4/toy_lock_4.aig; &put; fold; pdr -v".
+
+Converted 2 1-valued FFs and 0 DC-valued FFs.
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 24                                                                1    24      0.00 sec
+  2 : 0 78 155                                                            8    77      0.05 sec
+  3 : 0 74 968 897                                                       36    99      1.14 sec
+  4 : 0 46 868 4754 5948                                                 27   100     15.33 sec
+  5 : 0 46 709 5036 14236 18870                                          18   100    105.32 sec
+  6 : 0 46 709 4997 1771 19824 4665                                      11   100    124.31 sec
+  7 : 0 46 709 4997 1292 13856 11007 13635                               15   100    196.87 sec
+  8 : 0 46 709 4984 1090 683 743 7598 17734                              16   100    233.47 sec
+  9 : 0 46 709 4984 1090 650 155 4561 7743 17190                          6   100    264.88 sec
+ 10 : 0 46 709 4984 1090 650 8 0 0 0 25352                                0   100    282.44 sec
+Invariant F[7] : 25352 clauses with 100 flops (out of 100) (cex = 0, ave = 19.49)
+Verification of invariant with 25352 clauses was successful.  Time =     3.06 sec
+Block = 5741  Oblig = 99361  Clause = 60862  Call =1315065 (sat=59.0%)  Cex =   0  Start =4359
+SAT solving =   178.46 sec ( 62.51 %)
+  unsat     =    71.69 sec ( 25.11 %)
+  sat       =   106.77 sec ( 37.40 %)
+Generalize  =   138.56 sec ( 48.53 %)
+Push clause =    90.33 sec ( 31.64 %)
+Ternary sim =     2.20 sec (  0.77 %)
+Containment =    24.09 sec (  8.44 %)
+CNF compute =    21.49 sec (  7.53 %)
+Refinement  =     0.00 sec (  0.00 %)
+TOTAL       =   285.51 sec (100.00 %)
+Property proved.  Time =   285.52 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 11 Apr 2025 04:16:01 PM CST
+========================================

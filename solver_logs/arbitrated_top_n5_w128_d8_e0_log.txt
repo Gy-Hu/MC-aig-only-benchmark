@@ -1,0 +1,36 @@
+File: ./hwmcc20/aig/arbitrated_top_n5_w128_d8_e0.aig
+Command: ~/coding_env/abc/abc -c "&r ./hwmcc20/aig/arbitrated_top_n5_w128_d8_e0.aig; &put; fold; pdr -v"
+Started at: Fri 11 Apr 2025 06:32:06 PM CST
+----------------------------------------
+ABC command line: "&r ./hwmcc20/aig/arbitrated_top_n5_w128_d8_e0.aig; &put; fold; pdr -v".
+
+Warning: The last 16 outputs are interpreted as constraints.
+Converted 1 1-valued FFs and 5335 DC-valued FFs.
+Warning: The number of inputs does not match the number of input names.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 5                                                                 1     7      0.13 sec
+  2 : 0 9 16                                                              6    20      0.38 sec
+  3 : 0 24 33 314                                                        11   330      8.79 sec
+  4 : 0 14 24 37 445                                                      5   461     13.25 sec
+  5 : 0 14 23 30 214 1062                                                 4   588     33.91 sec
+  6 : 0 14 23 29 211 1026 1057                                            7   715     61.84 sec
+  7 : 0 14 25 28 43 766 1224 1687                                        10   844    114.23 sec
+  8 : 0 14 25 28 42 113 943 2236 2181                                    18   971    191.39 sec
+  9 : 0 14 29 33 47 77 486 1687 3137 3152                                18  1077    317.20 sec
+Block = 3207  Oblig = 17449  Clause = 11007  Call =125853 (sat=63.3%)  Cex =   0  Start = 405
+SAT solving =   236.24 sec ( 74.47 %)
+  unsat     =     7.50 sec (  2.37 %)
+  sat       =   228.73 sec ( 72.11 %)
+Generalize  =   193.11 sec ( 60.88 %)
+Push clause =    23.36 sec (  7.36 %)
+Ternary sim =    20.90 sec (  6.59 %)
+Containment =     1.07 sec (  0.34 %)
+CNF compute =     0.91 sec (  0.29 %)
+Refinement  =     0.00 sec (  0.00 %)
+TOTAL       =   317.22 sec (100.00 %)
+Output 0 of miter "./hwmcc20/aig/arbitrated_top_n5_w128_d8_e0" was asserted in frame 10.  Time =   317.26 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 11 Apr 2025 06:37:23 PM CST
+========================================

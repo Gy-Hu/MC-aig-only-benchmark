@@ -1,0 +1,37 @@
+File: ./hwmcc-appr/6s206rb103.aig
+Command: ~/coding_env/abc/abc -c "&r ./hwmcc-appr/6s206rb103.aig; &put; fold; pdr -v"
+Started at: Fri 11 Apr 2025 01:27:22 AM CST
+----------------------------------------
+ABC command line: "&r ./hwmcc-appr/6s206rb103.aig; &put; fold; pdr -v".
+
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 4                                                                 1     4      0.10 sec
+  2 : 0 5 8                                                               2     9      0.10 sec
+  3 : 0 1 1 8                                                             1    10      0.10 sec
+  4 : 0 1 1 1 7                                                           0    10      0.10 sec
+  5 : 0 1 1 1 1 8                                                         2    10      0.10 sec
+  6 : 0 1 1 1 1 1 7                                                       0    10      0.10 sec
+  7 : 0 1 1 1 1 1 1 8                                                     2    10      0.10 sec
+  8 : 0 1 1 1 1 1 1 1 7                                                   0    10      0.10 sec
+  9 : 0 1 1 1 1 1 1 1 1 8                                                 2    10      0.10 sec
+ 10 : 0 1 1 1 1 1 1 1 1 0 8                                               0    10      0.10 sec
+Invariant F[9] : 8 clauses with 10 flops (out of 28643) (cex = 0, ave = 2.37)
+Verification of invariant with 8 clauses was successful.  Time =     0.00 sec
+Block =   12  Oblig =    27  Clause =    20  Call =   177 (sat=46.9%)  Cex =   0  Start =   0
+SAT solving =     0.00 sec (  1.05 %)
+  unsat     =     0.00 sec (  0.13 %)
+  sat       =     0.00 sec (  0.92 %)
+Generalize  =     0.00 sec (  0.72 %)
+Push clause =     0.00 sec (  0.84 %)
+Ternary sim =     0.00 sec (  0.45 %)
+Containment =     0.00 sec (  0.00 %)
+CNF compute =     0.00 sec (  0.26 %)
+Refinement  =     0.00 sec (  0.00 %)
+TOTAL       =     0.12 sec (100.00 %)
+Property proved.  Time =     0.15 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 11 Apr 2025 01:27:22 AM CST
+========================================

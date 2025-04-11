@@ -1,0 +1,31 @@
+File: ./hwmcc08/139443p0.aig
+Command: ~/coding_env/abc/abc -c "&r ./hwmcc08/139443p0.aig; &put; fold; pdr -v"
+Started at: Fri 11 Apr 2025 11:19:13 AM CST
+----------------------------------------
+ABC command line: "&r ./hwmcc08/139443p0.aig; &put; fold; pdr -v".
+
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 28                                                                1    28      0.06 sec
+  2 : 0 22 46                                                             2    68      0.16 sec
+  3 : 0 22 17 1                                                           0    68      0.17 sec
+  4 : 0 22 17 0 1                                                         0    68      0.18 sec
+Invariant F[3] : 1 clauses with 1 flops (out of 311) (cex = 0, ave = 289.18)
+Verification of invariant with 1 clauses was successful.  Time =     0.00 sec
+Block =   66  Oblig =    69  Clause =    68  Call =   534 (sat=57.1%)  Cex =   0  Start =   1
+SAT solving =     0.05 sec ( 28.70 %)
+  unsat     =     0.01 sec (  3.47 %)
+  sat       =     0.05 sec ( 25.23 %)
+Generalize  =     0.04 sec ( 20.41 %)
+Push clause =     0.01 sec (  7.60 %)
+Ternary sim =     0.10 sec ( 54.74 %)
+Containment =     0.00 sec (  0.17 %)
+CNF compute =     0.00 sec (  1.64 %)
+Refinement  =     0.00 sec (  0.00 %)
+TOTAL       =     0.19 sec (100.00 %)
+Property proved.  Time =     0.19 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 11 Apr 2025 11:19:13 AM CST
+========================================

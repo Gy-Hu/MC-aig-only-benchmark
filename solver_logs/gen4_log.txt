@@ -1,0 +1,30 @@
+File: ./avr/industry/gen4/gen4.aig
+Command: ~/coding_env/abc/abc -c "&r ./avr/industry/gen4/gen4.aig; &put; fold; pdr -v"
+Started at: Fri 11 Apr 2025 04:20:57 PM CST
+----------------------------------------
+ABC command line: "&r ./avr/industry/gen4/gen4.aig; &put; fold; pdr -v".
+
+Converted 0 1-valued FFs and 864 DC-valued FFs.
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 865                                                               1   867      2.10 sec
+  2 : 0 0 865                                                             0   867      2.10 sec
+Invariant F[1] : 865 clauses with 867 flops (out of 867) (cex = 0, ave = 5.00)
+Verification of invariant with 865 clauses was successful.  Time =     0.00 sec
+Block =  865  Oblig =   865  Clause =   865  Call =  6054 (sat=71.4%)  Cex =   0  Start =  16
+SAT solving =     0.80 sec ( 37.82 %)
+  unsat     =     0.08 sec (  3.92 %)
+  sat       =     0.72 sec ( 33.89 %)
+Generalize  =     0.46 sec ( 21.91 %)
+Push clause =     0.01 sec (  0.30 %)
+Ternary sim =     1.01 sec ( 47.67 %)
+Containment =     0.01 sec (  0.41 %)
+CNF compute =     0.01 sec (  0.35 %)
+Refinement  =     0.00 sec (  0.00 %)
+TOTAL       =     2.12 sec (100.00 %)
+Property proved.  Time =     2.12 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 11 Apr 2025 04:20:59 PM CST
+========================================

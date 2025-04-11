@@ -1,0 +1,41 @@
+File: ./avr/crafted/sw_ball2004_2/sw_ball2004_2.aig
+Command: ~/coding_env/abc/abc -c "&r ./avr/crafted/sw_ball2004_2/sw_ball2004_2.aig; &put; fold; pdr -v"
+Started at: Fri 11 Apr 2025 04:11:14 PM CST
+----------------------------------------
+ABC command line: "&r ./avr/crafted/sw_ball2004_2/sw_ball2004_2.aig; &put; fold; pdr -v".
+
+Error occurred when reading signal names. Signal names ignored.
+Converted 2 1-valued FFs and 40 DC-valued FFs.
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 1                                                                 1     1      0.00 sec
+  2 : 0 2 2                                                               2     3      0.00 sec
+  3 : 0 3 5 5                                                             6    10      0.00 sec
+  4 : 0 1 1 1 3                                                           0    10      0.01 sec
+  5 : 0 1 1 1 1 2                                                         0    10      0.01 sec
+  6 : 0 1 2 3 7 8 16                                                      8    31      0.01 sec
+  7 : 0 1 1 2 1 234 242 1223                                              6    51      0.81 sec
+  8 : 0 1 1 2 1 193 2 197 911                                             0    51      0.85 sec
+  9 : 0 1 1 2 1 188 2 198 205 720                                         4    51      0.88 sec
+ 10 : 0 1 1 2 1 186 2 193 198 192 1090                                    4    51      1.16 sec
+ 11 : 0 1 1 2 1 185 2 10 13 6 6 1098                                      4    51      1.21 sec
+ 12 : 0 1 1 2 1 185 2 10 11 0 0 0 1101                                    0    51      1.23 sec
+Invariant F[9] : 1101 clauses with 50 flops (out of 52) (cex = 0, ave = 19.62)
+Verification of invariant with 1101 clauses was successful.  Time =     0.01 sec
+Block =    8  Oblig =  3956  Clause =  2313  Call = 43573 (sat=67.4%)  Cex =   0  Start = 140
+SAT solving =     0.98 sec ( 78.15 %)
+  unsat     =     0.14 sec ( 11.34 %)
+  sat       =     0.84 sec ( 66.80 %)
+Generalize  =     0.89 sec ( 70.85 %)
+Push clause =     0.15 sec ( 11.95 %)
+Ternary sim =     0.04 sec (  2.89 %)
+Containment =     0.01 sec (  0.83 %)
+CNF compute =     0.04 sec (  3.25 %)
+Refinement  =     0.00 sec (  0.00 %)
+TOTAL       =     1.25 sec (100.00 %)
+Property proved.  Time =     1.26 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 11 Apr 2025 04:11:15 PM CST
+========================================

@@ -1,0 +1,37 @@
+File: ./hwmcc14/single/oski3ub3i.aig
+Command: ~/coding_env/abc/abc -c "&r ./hwmcc14/single/oski3ub3i.aig; &put; fold; pdr -v"
+Started at: Fri 11 Apr 2025 02:31:50 PM CST
+----------------------------------------
+ABC command line: "&r ./hwmcc14/single/oski3ub3i.aig; &put; fold; pdr -v".
+
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 1                                                                 1     1      0.04 sec
+  2 : 0 1 1                                                               1     2      0.05 sec
+  3 : 0 1 1 1                                                             1     4      0.06 sec
+  4 : 0 1 1 2 4                                                           2     7      0.26 sec
+  5 : 0 1 1 1 2 1                                                         0     7      0.28 sec
+  6 : 0 1 1 14 57 259 473                                                 7   360     64.20 sec
+  7 : 0 1 1 1 1 1 27 122                                                  0   360     64.26 sec
+  8 : 0 1 1 1 1 1 27 48 74                                                0   360     64.37 sec
+  9 : 0 1 1 1 1 1 29 56 184 223                                           8   368     87.89 sec
+ 10 : 0 1 1 1 1 1 1 1 1 31 123                                            0   368     87.98 sec
+ 11 : 0 1 1 1 1 1 1 1 1 31 54 69                                          0   368     88.11 sec
+ 12 : 0 1 1 1 1 1 1 1 1 32 57 148 186                                    22   373    107.58 sec
+Block =   11  Oblig =  2368  Clause =  1419  Call = 14698 (sat=68.0%)  Cex =   0  Start =  44
+SAT solving =    23.57 sec ( 21.90 %)
+  unsat     =     1.74 sec (  1.62 %)
+  sat       =    21.83 sec ( 20.29 %)
+Generalize  =   102.28 sec ( 95.06 %)
+Push clause =     0.74 sec (  0.69 %)
+Ternary sim =    79.71 sec ( 74.08 %)
+Containment =     0.90 sec (  0.84 %)
+CNF compute =     0.77 sec (  0.72 %)
+Refinement  =     0.00 sec (  0.00 %)
+TOTAL       =   107.59 sec (100.00 %)
+Output 0 of miter "./hwmcc14/single/oski3ub3i" was asserted in frame 14.  Time =   107.62 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 11 Apr 2025 02:33:38 PM CST
+========================================

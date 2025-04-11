@@ -1,0 +1,55 @@
+File: ./hwmcc19/single/aig/wolf/2019C/dspfilters_fastfir_second-p09.aig
+Command: ~/coding_env/abc/abc -c "&r ./hwmcc19/single/aig/wolf/2019C/dspfilters_fastfir_second-p09.aig; &put; fold; pdr -v"
+Started at: Fri 11 Apr 2025 07:22:52 AM CST
+----------------------------------------
+ABC command line: "&r ./hwmcc19/single/aig/wolf/2019C/dspfilters_fastfir_second-p09.aig; &put; fold; pdr -v".
+
+Warning: The last 407 outputs are interpreted as constraints.
+Converted 0 1-valued FFs and 39 DC-valued FFs.
+Warning: The number of inputs does not match the number of input names.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 136                                                               1   136      0.61 sec
+  2 : 0 106 150                                                           2   187      1.24 sec
+  3 : 0 119 117 271                                                       3   297      3.50 sec
+  4 : 0 115 105 154 368                                                   4   329      5.99 sec
+  5 : 0 132 109 146 193 539                                              16   433     10.23 sec
+  6 : 0 131 151 203 553 774 3239                                          8   505     58.91 sec
+  7 : 0 131 151 178 544 542 1072 3218                                     7   511     80.66 sec
+  8 : 0 131 151 178 523 480 937 669 3049                                  6   518     90.58 sec
+  9 : 0 131 151 178 523 472 910 581 569 2919                              5   576     98.89 sec
+ 10 : 0 131 151 178 523 470 913 601 555 568 3311                          7   589    116.77 sec
+ 11 : 0 131 151 178 521 470 912 591 526 544 531 3601                      7   589    132.34 sec
+ 12 : 0 131 151 178 521 470 910 586 525 506 440 171 3403                  0   589    135.56 sec
+ 13 : 0 131 151 178 521 470 910 585 525 506 439 171 85 3318               0   589    138.53 sec
+ 14 : 0 131 151 178 521 470 910 585 525 506 439 171 85 44 3274            0   589    141.48 sec
+ 15 : 0 131 151 178 521 470 910 585 525 506 439 171 85 44 27 3247         0   589    144.41 sec
+ 16 : ... 151 178 521 470 910 585 525 506 439 171 85 44 27 12 3235        0   589    147.33 sec
+ 17 : ... 178 521 470 910 585 525 506 439 171 85 44 27 12 773 2461        0   589    150.76 sec
+ 18 : ... 521 470 910 585 525 506 439 171 85 44 27 12 773 774 2331        3   591    163.76 sec
+ 19 : ... 470 910 585 524 506 440 171 85 44 27 12 773 785 699 2643        4   609    184.22 sec
+ 20 : ... 910 585 524 506 440 170 85 44 27 12 773 815 642 517 3420        6   627    213.36 sec
+ 21 : ... 585 524 506 440 169 86 44 27 12 773 884 745 503 293 6071        8   631    279.54 sec
+ 22 : ... 586 524 506 440 169 86 44 27 12 773 879 602 451 194 17 5167     0   631    285.19 sec
+ 23 : ... 524 506 440 169 86 44 27 12 773 879 601 451 193 17 3 5163       0   631    290.40 sec
+ 24 : ... 524 506 440 169 86 44 27 12 773 879 601 451 193 17 3 1 5162     0   631    295.55 sec
+ 25 : ... 506 440 169 86 44 27 12 773 879 601 451 193 17 3 1 1 5161       0   631    300.75 sec
+ 26 : ... 506 440 169 86 44 27 12 773 879 601 451 193 17 3 1 1 0 5161     0   631    305.93 sec
+Invariant F[25] : 5161 clauses with 617 flops (out of 1105) (cex = 0, ave = 393.15)
+Verification of invariant with 5161 clauses was successful.  Time =     0.59 sec
+Block = 4346  Oblig = 25918  Clause = 16322  Call =446654 (sat=56.3%)  Cex =   0  Start =1461
+SAT solving =   205.21 sec ( 66.95 %)
+  unsat     =    38.63 sec ( 12.60 %)
+  sat       =   166.58 sec ( 54.34 %)
+Generalize  =   157.58 sec ( 51.41 %)
+Push clause =    73.40 sec ( 23.95 %)
+Ternary sim =    40.97 sec ( 13.37 %)
+Containment =    17.22 sec (  5.62 %)
+CNF compute =     5.46 sec (  1.78 %)
+Refinement  =     0.00 sec (  0.00 %)
+TOTAL       =   306.54 sec (100.00 %)
+Property proved.  Time =   306.59 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 11 Apr 2025 07:27:59 AM CST
+========================================

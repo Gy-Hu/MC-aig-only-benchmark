@@ -1,0 +1,31 @@
+File: ./avr/opensource/vcegar_QF_BV_itc99_b13_p22/vcegar_QF_BV_itc99_b13_p22.aig
+Command: ~/coding_env/abc/abc -c "&r ./avr/opensource/vcegar_QF_BV_itc99_b13_p22/vcegar_QF_BV_itc99_b13_p22.aig; &put; fold; pdr -v"
+Started at: Fri 11 Apr 2025 04:07:17 PM CST
+----------------------------------------
+ABC command line: "&r ./avr/opensource/vcegar_QF_BV_itc99_b13_p22/vcegar_QF_BV_itc99_b13_p22.aig; &put; fold; pdr -v".
+
+Converted 1 1-valued FFs and 0 DC-valued FFs.
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 8                                                                 1     8      0.00 sec
+  2 : 0 8 8                                                               1     9      0.00 sec
+  3 : 0 8 0 8                                                             0     9      0.00 sec
+Invariant F[2] : 8 clauses with 9 flops (out of 29) (cex = 0, ave = 2.00)
+Verification of invariant with 8 clauses was successful.  Time =     0.00 sec
+Block =   16  Oblig =    16  Clause =    16  Call =    67 (sat=59.7%)  Cex =   0  Start =   0
+SAT solving =     0.00 sec (  3.67 %)
+  unsat     =     0.00 sec (  0.18 %)
+  sat       =     0.00 sec (  3.50 %)
+Generalize  =     0.00 sec (  0.86 %)
+Push clause =     0.00 sec (  1.67 %)
+Ternary sim =     0.00 sec (  0.22 %)
+Containment =     0.00 sec (  0.01 %)
+CNF compute =     0.00 sec (  0.33 %)
+Refinement  =     0.00 sec (  0.00 %)
+TOTAL       =     0.01 sec (100.00 %)
+Property proved.  Time =     0.01 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 11 Apr 2025 04:07:17 PM CST
+========================================

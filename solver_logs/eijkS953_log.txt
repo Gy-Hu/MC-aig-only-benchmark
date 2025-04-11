@@ -1,0 +1,38 @@
+File: ./hwmcc08/eijkS953.aig
+Command: ~/coding_env/abc/abc -c "&r ./hwmcc08/eijkS953.aig; &put; fold; pdr -v"
+Started at: Fri 11 Apr 2025 11:18:46 AM CST
+----------------------------------------
+ABC command line: "&r ./hwmcc08/eijkS953.aig; &put; fold; pdr -v".
+
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 46                                                                1    46      0.00 sec
+  2 : 0 73 96                                                             6    97      0.02 sec
+  3 : 0 11 35 95                                                          4    97      0.02 sec
+  4 : 0 7 12 17 105                                                       3    97      0.03 sec
+  5 : 0 7 12 6 52 90                                                      4    98      0.03 sec
+  6 : 0 7 12 6 21 83 90                                                   6    98      0.05 sec
+  7 : 0 7 12 6 15 16 45 120                                               3    98      0.06 sec
+  8 : 0 7 12 6 15 7 13 127 86                                             4   105      0.08 sec
+  9 : 0 7 12 6 15 7 13 56 141 194                                         6   105      0.16 sec
+ 10 : 0 7 12 6 15 7 13 45 30 172 162                                      5   105      0.23 sec
+ 11 : 0 7 12 6 15 7 13 45 30 0 0 296                                      0   105      0.26 sec
+Invariant F[9] : 296 clauses with 105 flops (out of 105) (cex = 0, ave = 6.24)
+Verification of invariant with 296 clauses was successful.  Time =     0.01 sec
+Block =  259  Oblig =  1038  Clause =   713  Call =  5693 (sat=52.6%)  Cex =   0  Start =  13
+SAT solving =     0.20 sec ( 72.06 %)
+  unsat     =     0.06 sec ( 21.92 %)
+  sat       =     0.14 sec ( 50.14 %)
+Generalize  =     0.11 sec ( 38.43 %)
+Push clause =     0.09 sec ( 32.74 %)
+Ternary sim =     0.01 sec (  3.41 %)
+Containment =     0.00 sec (  0.27 %)
+CNF compute =     0.01 sec (  2.08 %)
+Refinement  =     0.00 sec (  0.00 %)
+TOTAL       =     0.27 sec (100.00 %)
+Property proved.  Time =     0.28 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 11 Apr 2025 11:18:46 AM CST
+========================================

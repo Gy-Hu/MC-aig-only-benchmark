@@ -1,0 +1,38 @@
+File: ./hwmcc24/2019/mann/data-integrity/unsafe/circular_pointer_top_w64_d8_e0.aig
+Command: ~/coding_env/abc/abc -c "&r ./hwmcc24/2019/mann/data-integrity/unsafe/circular_pointer_top_w64_d8_e0.aig; &put; fold; pdr -v"
+Started at: Fri 11 Apr 2025 08:26:11 PM CST
+----------------------------------------
+ABC command line: "&r ./hwmcc24/2019/mann/data-integrity/unsafe/circular_pointer_top_w64_d8_e0.aig; &put; fold; pdr -v".
+
+Warning: The last 3 outputs are interpreted as constraints.
+Converted 1 1-valued FFs and 662 DC-valued FFs.
+Warning: The number of inputs does not match the number of input names.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 2                                                                 1     4      0.01 sec
+  2 : 0 7 142                                                             3   149      0.19 sec
+  3 : 0 4 135 290                                                         2   212      0.70 sec
+  4 : 0 5 137 431 644                                                     7   276      2.32 sec
+  5 : 0 5 136 427 849 877                                                 5   344      5.02 sec
+  6 : 0 6 138 431 671 1457 1636                                           9   411     10.97 sec
+  7 : 0 6 138 430 594 1008 1930 1745                                      5   471     17.29 sec
+  8 : 0 6 138 430 594 1006 1753 3307 2890                                12   534     32.95 sec
+  9 : 0 7 140 438 607 1024 1649 2453 4611 3354                           27   597     53.40 sec
+ 10 : 0 6 139 438 618 1030 1507 2173 2193 6594 4885                      34   661     90.12 sec
+ 11 : 0 7 145 323 779 960 1556 2144 2608 4381 5704 1657                  52   661    106.52 sec
+Block = 8172  Oblig = 36332  Clause = 26326  Call =412435 (sat=79.6%)  Cex =   0  Start =1342
+SAT solving =    81.71 sec ( 76.70 %)
+  unsat     =     7.29 sec (  6.85 %)
+  sat       =    74.42 sec ( 69.86 %)
+Generalize  =    68.71 sec ( 64.50 %)
+Push clause =    11.35 sec ( 10.65 %)
+Ternary sim =     6.13 sec (  5.75 %)
+Containment =     2.72 sec (  2.55 %)
+CNF compute =     2.63 sec (  2.47 %)
+Refinement  =     0.00 sec (  0.00 %)
+TOTAL       =   106.53 sec (100.00 %)
+Output 0 of miter "./hwmcc24/2019/mann/data-integrity/unsafe/circular_pointer_top_w64_d8_e0" was asserted in frame 14.  Time =   106.54 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 11 Apr 2025 08:27:58 PM CST
+========================================

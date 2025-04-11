@@ -1,0 +1,33 @@
+File: ./hwmcc11/single/bobsynth01neg.aig
+Command: ~/coding_env/abc/abc -c "&r ./hwmcc11/single/bobsynth01neg.aig; &put; fold; pdr -v"
+Started at: Fri 11 Apr 2025 03:46:06 PM CST
+----------------------------------------
+ABC command line: "&r ./hwmcc11/single/bobsynth01neg.aig; &put; fold; pdr -v".
+
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 1                                                                 1     1      0.01 sec
+  2 : 0 12 11                                                             6    16      0.02 sec
+  3 : 0 6 6 6                                                             0    16      0.02 sec
+  4 : 0 6 8 11 16                                                         7    19      0.02 sec
+  5 : 0 6 7 5 1 14                                                        0    19      0.03 sec
+  6 : 0 6 7 5 1 0 14                                                      0    19      0.03 sec
+Invariant F[5] : 14 clauses with 13 flops (out of 3015) (cex = 0, ave = 11.69)
+Verification of invariant with 14 clauses was successful.  Time =     0.00 sec
+Block =    3  Oblig =    77  Clause =    46  Call =   312 (sat=55.4%)  Cex =   0  Start =   0
+SAT solving =     0.01 sec ( 18.66 %)
+  unsat     =     0.00 sec (  4.62 %)
+  sat       =     0.01 sec ( 14.04 %)
+Generalize  =     0.00 sec ( 13.12 %)
+Push clause =     0.00 sec (  7.01 %)
+Ternary sim =     0.00 sec (  2.29 %)
+Containment =     0.00 sec (  0.02 %)
+CNF compute =     0.00 sec (  2.03 %)
+Refinement  =     0.00 sec (  0.00 %)
+TOTAL       =     0.04 sec (100.00 %)
+Property proved.  Time =     0.04 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 11 Apr 2025 03:46:06 PM CST
+========================================

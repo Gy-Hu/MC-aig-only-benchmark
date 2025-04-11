@@ -1,0 +1,35 @@
+File: ./hwmcc20/aig-1.8/zipcpu-pfcache-p20.aig
+Command: ~/coding_env/abc/abc -c "&r ./hwmcc20/aig-1.8/zipcpu-pfcache-p20.aig; &put; fold; pdr -v"
+Started at: Fri 11 Apr 2025 05:16:33 PM CST
+----------------------------------------
+ABC command line: "&r ./hwmcc20/aig-1.8/zipcpu-pfcache-p20.aig; &put; fold; pdr -v".
+
+Converted 6 1-valued FFs and 2860 DC-valued FFs.
+Warning: The number of inputs does not match the number of input names.
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 6                                                                 1     8      0.03 sec
+  2 : 0 10 19                                                             3    28      0.04 sec
+  3 : 0 11 15 53                                                          3    60      0.07 sec
+  4 : 0 8 10 4 53                                                         3    60      0.08 sec
+  5 : 0 8 10 2 3 46                                                       0    60      0.08 sec
+  6 : 0 8 10 2 3 0 46                                                     0    60      0.08 sec
+Invariant F[5] : 46 clauses with 46 flops (out of 3208) (cex = 0, ave = 62.64)
+Verification of invariant with 46 clauses was successful.  Time =     0.00 sec
+Block =   26  Oblig =   135  Clause =    89  Call =   639 (sat=52.7%)  Cex =   0  Start =   0
+SAT solving =     0.02 sec ( 26.21 %)
+  unsat     =     0.00 sec (  1.63 %)
+  sat       =     0.02 sec ( 24.58 %)
+Generalize  =     0.03 sec ( 29.74 %)
+Push clause =     0.01 sec (  8.46 %)
+Ternary sim =     0.01 sec ( 13.81 %)
+Containment =     0.00 sec (  0.14 %)
+CNF compute =     0.00 sec (  3.54 %)
+Refinement  =     0.00 sec (  0.00 %)
+TOTAL       =     0.09 sec (100.00 %)
+Property proved.  Time =     0.10 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 11 Apr 2025 05:16:34 PM CST
+========================================

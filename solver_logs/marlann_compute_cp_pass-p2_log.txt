@@ -1,0 +1,40 @@
+File: ./hwmcc20/aig-1.8/marlann_compute_cp_pass-p2.aig
+Command: ~/coding_env/abc/abc -c "&r ./hwmcc20/aig-1.8/marlann_compute_cp_pass-p2.aig; &put; fold; pdr -v"
+Started at: Fri 11 Apr 2025 05:34:05 PM CST
+----------------------------------------
+ABC command line: "&r ./hwmcc20/aig-1.8/marlann_compute_cp_pass-p2.aig; &put; fold; pdr -v".
+
+Converted 1 1-valued FFs and 1151 DC-valued FFs.
+Warning: The number of inputs does not match the number of input names.
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 12                                                                1    14      0.01 sec
+  2 : 0 27 30                                                            10    40      0.01 sec
+  3 : 0 5 3 27                                                            0    40      0.02 sec
+  4 : 0 5 3 3 24                                                          0    40      0.02 sec
+  5 : 0 5 7 7 8 37                                                        5    56      0.03 sec
+  6 : 0 5 7 7 7 11 69                                                     5    56      0.04 sec
+  7 : 0 5 7 7 7 11 9 60                                                   0    56      0.04 sec
+  8 : 0 5 7 7 7 11 9 9 51                                                 0    56      0.05 sec
+  9 : 0 5 7 7 7 11 9 9 9 42                                               0    56      0.05 sec
+ 10 : 0 5 9 9 9 13 11 11 11 11 250                                       10    86      0.13 sec
+ 11 : 0 5 9 9 9 13 11 11 11 11 0 250                                      0    86      0.14 sec
+Invariant F[10] : 250 clauses with 86 flops (out of 1155) (cex = 0, ave = 12.28)
+Verification of invariant with 250 clauses was successful.  Time =     0.00 sec
+Block =   36  Oblig =   637  Clause =   362  Call =  4136 (sat=58.4%)  Cex =   0  Start =   8
+SAT solving =     0.08 sec ( 53.98 %)
+  unsat     =     0.00 sec (  3.27 %)
+  sat       =     0.08 sec ( 50.71 %)
+Generalize  =     0.08 sec ( 52.79 %)
+Push clause =     0.02 sec ( 10.15 %)
+Ternary sim =     0.01 sec (  8.91 %)
+Containment =     0.00 sec (  0.26 %)
+CNF compute =     0.00 sec (  2.86 %)
+Refinement  =     0.00 sec (  0.00 %)
+TOTAL       =     0.15 sec (100.00 %)
+Property proved.  Time =     0.16 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 11 Apr 2025 05:34:05 PM CST
+========================================

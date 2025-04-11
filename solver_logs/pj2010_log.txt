@@ -1,0 +1,31 @@
+File: ./hwmcc1517/pj2010.aig
+Command: ~/coding_env/abc/abc -c "&r ./hwmcc1517/pj2010.aig; &put; fold; pdr -v"
+Started at: Fri 11 Apr 2025 08:52:39 AM CST
+----------------------------------------
+ABC command line: "&r ./hwmcc1517/pj2010.aig; &put; fold; pdr -v".
+
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 1                                                                 1     1      0.05 sec
+  2 : 0 1 1                                                               1     2      0.06 sec
+  3 : 0 1 1 2                                                             1     6      0.06 sec
+  4 : 0 1 1 0 2                                                           0     6      0.07 sec
+Invariant F[3] : 2 clauses with 5 flops (out of 355) (cex = 0, ave = 33.25)
+Verification of invariant with 2 clauses was successful.  Time =     0.00 sec
+Block =    4  Oblig =     4  Clause =     4  Call =    30 (sat=53.3%)  Cex =   0  Start =   0
+SAT solving =     0.01 sec (  8.08 %)
+  unsat     =     0.00 sec (  0.31 %)
+  sat       =     0.01 sec (  7.77 %)
+Generalize  =     0.02 sec ( 19.68 %)
+Push clause =     0.00 sec (  5.76 %)
+Ternary sim =     0.00 sec (  2.32 %)
+Containment =     0.00 sec (  0.00 %)
+CNF compute =     0.02 sec ( 21.40 %)
+Refinement  =     0.00 sec (  0.00 %)
+TOTAL       =     0.08 sec (100.00 %)
+Property proved.  Time =     0.09 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 11 Apr 2025 08:52:39 AM CST
+========================================

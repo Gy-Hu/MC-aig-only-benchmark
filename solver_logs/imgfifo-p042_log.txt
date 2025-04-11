@@ -1,0 +1,34 @@
+File: ./others/vgasim-imgfifo/aig/imgfifo-p042.aig
+Command: ~/coding_env/abc/abc -c "&r ./others/vgasim-imgfifo/aig/imgfifo-p042.aig; &put; fold; pdr -v"
+Started at: Fri 11 Apr 2025 11:29:39 AM CST
+----------------------------------------
+ABC command line: "&r ./others/vgasim-imgfifo/aig/imgfifo-p042.aig; &put; fold; pdr -v".
+
+Warning: The last 44 outputs are interpreted as constraints.
+Converted 28 1-valued FFs and 414 DC-valued FFs.
+Warning: The number of inputs does not match the number of input names.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 4                                                                 1     5      0.01 sec
+  2 : 0 25 26                                                             2    32      0.02 sec
+  3 : 0 25 24 43                                                          2    35      0.04 sec
+  4 : 0 25 4 1 63                                                         1    36      0.04 sec
+  5 : 0 25 4 1 0 63                                                       0    36      0.05 sec
+Invariant F[4] : 63 clauses with 31 flops (out of 610) (cex = 0, ave = 55.83)
+Verification of invariant with 63 clauses was successful.  Time =     0.00 sec
+Block =   11  Oblig =   154  Clause =    93  Call =   590 (sat=51.2%)  Cex =   0  Start =   0
+SAT solving =     0.02 sec ( 30.21 %)
+  unsat     =     0.00 sec (  0.89 %)
+  sat       =     0.02 sec ( 29.32 %)
+Generalize  =     0.02 sec ( 36.57 %)
+Push clause =     0.01 sec ( 12.07 %)
+Ternary sim =     0.01 sec ( 20.54 %)
+Containment =     0.00 sec (  0.23 %)
+CNF compute =     0.00 sec (  1.75 %)
+Refinement  =     0.00 sec (  0.00 %)
+TOTAL       =     0.05 sec (100.00 %)
+Property proved.  Time =     0.06 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 11 Apr 2025 11:29:39 AM CST
+========================================

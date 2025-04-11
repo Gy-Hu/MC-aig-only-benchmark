@@ -1,0 +1,54 @@
+File: ./hwmcc19/single/aig/wolf/2019C/dspfilters_fastfir_second-p32.aig
+Command: ~/coding_env/abc/abc -c "&r ./hwmcc19/single/aig/wolf/2019C/dspfilters_fastfir_second-p32.aig; &put; fold; pdr -v"
+Started at: Fri 11 Apr 2025 06:48:31 AM CST
+----------------------------------------
+ABC command line: "&r ./hwmcc19/single/aig/wolf/2019C/dspfilters_fastfir_second-p32.aig; &put; fold; pdr -v".
+
+Warning: The last 407 outputs are interpreted as constraints.
+Converted 0 1-valued FFs and 39 DC-valued FFs.
+Warning: The number of inputs does not match the number of input names.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 138                                                               1   138      0.61 sec
+  2 : 0 80 132                                                            2   163      1.03 sec
+  3 : 0 95 93 272                                                         4   274      3.26 sec
+  4 : 0 96 64 127 472                                                     5   333      6.07 sec
+  5 : 0 107 84 208 318 751                                                7   510     14.00 sec
+  6 : 0 129 97 165 317 358 949                                            9   561     22.58 sec
+  7 : 0 130 100 122 294 367 493 1403                                      9   564     37.19 sec
+  8 : 0 130 100 130 494 607 1100 1852 5865                                9   575    142.94 sec
+  9 : 0 130 100 124 541 521 1081 1691 2137 7107                          10   583    218.21 sec
+ 10 : 0 130 100 123 500 392 985 1482 1834 1459 6275                       7   583    241.45 sec
+ 11 : 0 130 100 123 500 384 969 1432 1770 1137 1166 6064                  9   612    262.19 sec
+ 12 : 0 130 100 123 500 379 964 1418 1751 1086 1129 900 6285              7   615    288.45 sec
+ 13 : 0 130 100 123 500 378 963 1420 1761 1080 1194 983 776 7097          9   634    328.21 sec
+ 14 : ... 100 123 500 378 963 1420 1757 1063 1147 841 612 326 6638        0   634    335.76 sec
+ 15 : ... 123 500 378 963 1420 1757 1063 1147 838 609 321 112 6524        0   634    342.87 sec
+ 16 : ... 123 500 378 963 1420 1757 1063 1147 838 609 321 112 20 6504     0   634    349.76 sec
+ 17 : ... 378 963 1420 1757 1063 1147 838 609 321 112 20 1432 5072        0   634    357.65 sec
+ 18 : ... 963 1420 1757 1063 1147 838 609 321 112 20 1432 1242 4354       3   635    374.28 sec
+ 19 : ... 1420 1756 1063 1147 838 609 321 112 20 1432 1255 1061 4537      4   641    404.01 sec
+ 20 : ... 1756 1063 1147 837 608 322 112 20 1432 1259 1066 1002 4882      7   654    441.03 sec
+ 21 : ... 1061 1144 826 584 305 107 20 1434 1271 1092 1012 888 5931       8   668    490.53 sec
+ 22 : ... 1144 826 584 305 108 20 1433 1281 1074 984 847 843 7481        12   673    557.93 sec
+ 23 : ... 826 584 304 108 20 1433 1310 1052 1022 742 693 354 9688        16   682    648.83 sec
+ 24 : ... 826 584 304 108 20 1433 1308 986 1004 592 434 174 13 8495       0   682    661.51 sec
+ 25 : ... 826 584 304 108 20 1433 1308 984 1004 592 433 173 13 0 8479     0   682    673.30 sec
+Invariant F[24] : 8479 clauses with 663 flops (out of 1105) (cex = 0, ave = 427.51)
+Verification of invariant with 8479 clauses was successful.  Time =     1.15 sec
+Block = 7841  Oblig = 54009  Clause = 33959  Call =836262 (sat=57.2%)  Cex =   0  Start =2749
+SAT solving =   424.03 sec ( 62.87 %)
+  unsat     =    85.77 sec ( 12.72 %)
+  sat       =   338.26 sec ( 50.15 %)
+Generalize  =   337.14 sec ( 49.99 %)
+Push clause =   141.23 sec ( 20.94 %)
+Ternary sim =    84.71 sec ( 12.56 %)
+Containment =    65.83 sec (  9.76 %)
+CNF compute =    13.74 sec (  2.04 %)
+Refinement  =     0.00 sec (  0.00 %)
+TOTAL       =   674.47 sec (100.00 %)
+Property proved.  Time =   674.52 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 11 Apr 2025 06:59:45 AM CST
+========================================

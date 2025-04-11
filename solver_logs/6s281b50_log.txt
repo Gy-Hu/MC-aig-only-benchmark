@@ -1,0 +1,32 @@
+File: ./hwmcc13/single/6s281b50.aig
+Command: ~/coding_env/abc/abc -c "&r ./hwmcc13/single/6s281b50.aig; &put; fold; pdr -v"
+Started at: Fri 11 Apr 2025 12:05:52 PM CST
+----------------------------------------
+ABC command line: "&r ./hwmcc13/single/6s281b50.aig; &put; fold; pdr -v".
+
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 2                                                                 1     2      2.56 sec
+  2 : 0 3139 3168                                                         4  3171    190.50 sec
+  3 : 0 3141 3150 51                                                      4  3184    196.28 sec
+  4 : 0 3126 3623 502 7311                                                7  3194    796.00 sec
+  5 : 0 2105 2592 499 0 7308                                              0  3194    809.43 sec
+Invariant F[4] : 7308 clauses with 3192 flops (out of 177235) (cex = 0, ave = 46.25)
+Verification of invariant with 7308 clauses was successful.  Time =     7.50 sec
+Block =    8  Oblig = 40303  Clause = 14587  Call =134150 (sat=58.6%)  Cex =   0  Start = 445
+SAT solving =   219.09 sec ( 26.82 %)
+  unsat     =    44.75 sec (  5.48 %)
+  sat       =   174.35 sec ( 21.34 %)
+Generalize  =   680.51 sec ( 83.29 %)
+Push clause =    20.51 sec (  2.51 %)
+Ternary sim =   513.61 sec ( 62.86 %)
+Containment =     5.65 sec (  0.69 %)
+CNF compute =     5.52 sec (  0.68 %)
+Refinement  =     0.00 sec (  0.00 %)
+TOTAL       =   817.03 sec (100.00 %)
+Property proved.  Time =   818.19 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 11 Apr 2025 12:19:33 PM CST
+========================================

@@ -1,0 +1,30 @@
+File: ./hwmcc08/pdtvisheap06.aig
+Command: ~/coding_env/abc/abc -c "&r ./hwmcc08/pdtvisheap06.aig; &put; fold; pdr -v"
+Started at: Fri 11 Apr 2025 11:18:48 AM CST
+----------------------------------------
+ABC command line: "&r ./hwmcc08/pdtvisheap06.aig; &put; fold; pdr -v".
+
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 1                                                                 1     2      0.00 sec
+  2 : 0 1 1                                                               1     4      0.00 sec
+  3 : 0 1 0 1                                                             0     4      0.01 sec
+Invariant F[2] : 1 clauses with 4 flops (out of 33) (cex = 0, ave = 4.00)
+Verification of invariant with 1 clauses was successful.  Time =     0.00 sec
+Block =    2  Oblig =     2  Clause =     2  Call =    14 (sat=57.1%)  Cex =   0  Start =   0
+SAT solving =     0.00 sec (  1.38 %)
+  unsat     =     0.00 sec (  0.12 %)
+  sat       =     0.00 sec (  1.26 %)
+Generalize  =     0.00 sec (  1.09 %)
+Push clause =     0.00 sec (  1.06 %)
+Ternary sim =     0.00 sec (  0.14 %)
+Containment =     0.00 sec (  0.00 %)
+CNF compute =     0.00 sec (  1.35 %)
+Refinement  =     0.00 sec (  0.00 %)
+TOTAL       =     0.01 sec (100.00 %)
+Property proved.  Time =     0.02 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 11 Apr 2025 11:18:48 AM CST
+========================================

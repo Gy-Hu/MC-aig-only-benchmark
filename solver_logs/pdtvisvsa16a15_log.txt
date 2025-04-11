@@ -1,0 +1,31 @@
+File: ./hwmcc08/pdtvisvsa16a15.aig
+Command: ~/coding_env/abc/abc -c "&r ./hwmcc08/pdtvisvsa16a15.aig; &put; fold; pdr -v"
+Started at: Fri 11 Apr 2025 11:18:18 AM CST
+----------------------------------------
+ABC command line: "&r ./hwmcc08/pdtvisvsa16a15.aig; &put; fold; pdr -v".
+
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 3                                                                 1     3      0.01 sec
+  2 : 0 3 37                                                              1    15      0.01 sec
+  3 : 0 3 15 40                                                           1    15      0.02 sec
+  4 : 0 3 15 0 40                                                         0    15      0.02 sec
+Invariant F[3] : 40 clauses with 15 flops (out of 236) (cex = 0, ave = 4.00)
+Verification of invariant with 40 clauses was successful.  Time =     0.00 sec
+Block =   58  Oblig =    58  Clause =    58  Call =   429 (sat=68.3%)  Cex =   0  Start =   0
+SAT solving =     0.01 sec ( 20.77 %)
+  unsat     =     0.00 sec (  1.41 %)
+  sat       =     0.01 sec ( 19.36 %)
+Generalize  =     0.00 sec ( 14.47 %)
+Push clause =     0.00 sec (  4.34 %)
+Ternary sim =     0.00 sec (  1.06 %)
+Containment =     0.00 sec (  0.03 %)
+CNF compute =     0.00 sec (  1.01 %)
+Refinement  =     0.00 sec (  0.00 %)
+TOTAL       =     0.03 sec (100.00 %)
+Property proved.  Time =     0.03 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 11 Apr 2025 11:18:18 AM CST
+========================================

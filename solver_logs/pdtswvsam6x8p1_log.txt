@@ -1,0 +1,38 @@
+File: ./hwmcc11/single/pdtswvsam6x8p1.aig
+Command: ~/coding_env/abc/abc -c "&r ./hwmcc11/single/pdtswvsam6x8p1.aig; &put; fold; pdr -v"
+Started at: Fri 11 Apr 2025 03:54:41 PM CST
+----------------------------------------
+ABC command line: "&r ./hwmcc11/single/pdtswvsam6x8p1.aig; &put; fold; pdr -v".
+
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 1                                                                 1     1      0.01 sec
+  2 : 0 2 2                                                               2     4      0.01 sec
+  3 : 0 1 1 1                                                             0     4      0.01 sec
+  4 : 0 3 7 7 6                                                           8    12      0.02 sec
+  5 : 0 3 5 4 3 3                                                         0    12      0.02 sec
+  6 : 0 3 5 4 5 9 6                                                       5    12      0.03 sec
+  7 : 0 3 5 4 5 7 8 6                                                     4    12      0.04 sec
+  8 : 0 3 5 4 5 8 7 7 12                                                  7    12      0.05 sec
+  9 : 0 3 5 4 5 6 2 3 4 7                                                 0    12      0.05 sec
+ 10 : 0 3 5 4 7 11 8 6 5 10 23                                            9    14      0.08 sec
+ 11 : 0 3 5 4 6 5 5 1 0 0 0 13                                            0    14      0.09 sec
+Invariant F[8] : 13 clauses with 12 flops (out of 128) (cex = 0, ave = 8.47)
+Verification of invariant with 13 clauses was successful.  Time =     0.00 sec
+Block =    7  Oblig =   208  Clause =   105  Call =  1069 (sat=63.0%)  Cex =   0  Start =   0
+SAT solving =     0.05 sec ( 50.76 %)
+  unsat     =     0.01 sec ( 10.69 %)
+  sat       =     0.04 sec ( 40.07 %)
+Generalize  =     0.04 sec ( 42.50 %)
+Push clause =     0.01 sec ( 15.45 %)
+Ternary sim =     0.01 sec ( 10.22 %)
+Containment =     0.00 sec (  0.03 %)
+CNF compute =     0.00 sec (  3.70 %)
+Refinement  =     0.00 sec (  0.00 %)
+TOTAL       =     0.10 sec (100.00 %)
+Property proved.  Time =     0.10 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 11 Apr 2025 03:54:41 PM CST
+========================================

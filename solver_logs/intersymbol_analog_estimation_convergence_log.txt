@@ -1,0 +1,49 @@
+File: ./hwmcc20/aig-1.8/intersymbol_analog_estimation_convergence.aig
+Command: ~/coding_env/abc/abc -c "&r ./hwmcc20/aig-1.8/intersymbol_analog_estimation_convergence.aig; &put; fold; pdr -v"
+Started at: Fri 11 Apr 2025 05:15:02 PM CST
+----------------------------------------
+ABC command line: "&r ./hwmcc20/aig-1.8/intersymbol_analog_estimation_convergence.aig; &put; fold; pdr -v".
+
+Converted 0 1-valued FFs and 43 DC-valued FFs.
+Warning: The number of inputs does not match the number of input names.
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 14                                                                1    14      0.01 sec
+  2 : 0 1 14                                                              1    15      0.01 sec
+  3 : 0 1 2 17                                                            2    36      0.02 sec
+  4 : 0 2 3 5 24                                                          4    41      0.11 sec
+  5 : 0 1 2 4 5 23                                                        3    47      0.17 sec
+  6 : 0 1 22 89 263 630 747                                              21    55     16.51 sec
+  7 : 0 1 9 15 9 8 22 96                                                  1    55     16.59 sec
+  8 : 0 1 9 14 8 8 19 4 90                                                1    55     16.64 sec
+  9 : 0 1 9 14 8 8 19 4 9 81                                              1    55     16.70 sec
+ 10 : 0 1 9 14 8 8 19 4 9 2 80                                            1    55     16.75 sec
+ 11 : 0 1 9 14 8 8 19 4 9 2 1 80                                          1    55     16.81 sec
+ 12 : 0 1 9 14 8 8 19 4 9 2 1 1 80                                        1    55     16.86 sec
+ 13 : 0 1 9 14 8 8 19 4 9 2 1 1 1 80                                      1    55     16.92 sec
+ 14 : 0 1 9 14 8 8 19 4 9 2 1 1 1 1 80                                    1    55     16.97 sec
+ 15 : 0 1 9 14 8 8 19 4 9 2 1 1 1 1 1 80                                  1    55     17.02 sec
+ 16 : 0 1 9 14 8 8 19 4 9 2 1 1 1 1 1 1 80                                1    55     17.08 sec
+ 17 : 0 1 9 14 8 8 19 4 9 2 1 1 1 1 1 1 1 80                              1    55     17.13 sec
+ 18 : 0 1 9 14 8 8 19 4 9 2 1 1 1 1 1 1 1 1 80                            1    55     17.18 sec
+ 19 : 0 1 9 14 8 8 19 4 9 2 1 1 1 1 1 1 1 1 1 80                          1    55     17.23 sec
+ 20 : 0 1 9 14 8 8 19 4 9 2 1 1 1 1 1 1 1 1 1 0 80                        0    55     17.28 sec
+Invariant F[19] : 80 clauses with 48 flops (out of 61) (cex = 0, ave = 38.20)
+Verification of invariant with 80 clauses was successful.  Time =     0.03 sec
+Block =   60  Oblig =  2710  Clause =  1770  Call = 37508 (sat=48.2%)  Cex =   0  Start = 118
+SAT solving =    16.10 sec ( 92.94 %)
+  unsat     =     5.71 sec ( 32.96 %)
+  sat       =    10.39 sec ( 59.98 %)
+Generalize  =    14.82 sec ( 85.55 %)
+Push clause =     0.80 sec (  4.63 %)
+Ternary sim =     0.47 sec (  2.70 %)
+Containment =     0.04 sec (  0.23 %)
+CNF compute =     0.12 sec (  0.71 %)
+Refinement  =     0.00 sec (  0.00 %)
+TOTAL       =    17.33 sec (100.00 %)
+Property proved.  Time =    17.34 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 11 Apr 2025 05:15:20 PM CST
+========================================

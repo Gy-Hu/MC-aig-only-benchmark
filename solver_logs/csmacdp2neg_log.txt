@@ -1,0 +1,32 @@
+File: ./hwmcc11/single/csmacdp2neg.aig
+Command: ~/coding_env/abc/abc -c "&r ./hwmcc11/single/csmacdp2neg.aig; &put; fold; pdr -v"
+Started at: Fri 11 Apr 2025 03:19:02 PM CST
+----------------------------------------
+ABC command line: "&r ./hwmcc11/single/csmacdp2neg.aig; &put; fold; pdr -v".
+
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 15                                                                1    15      0.02 sec
+  2 : 0 16 22                                                             2    26      0.05 sec
+  3 : 0 25 61 87                                                          9    75      0.28 sec
+  4 : 0 20 51 118 289                                                     5   144      1.06 sec
+  5 : 0 20 58 157 649 930                                                 9   185      6.40 sec
+  6 : 0 19 55 172 867 4621 6785                                          23   230     81.28 sec
+  7 : 0 19 57 209 1059 7155 21510 29289                                 190   238    968.27 sec
+Block =21559  Oblig = 92076  Clause = 62342  Call =1846665 (sat=59.0%)  Cex =   0  Start =6081
+SAT solving =   580.31 sec ( 59.93 %)
+  unsat     =   137.93 sec ( 14.25 %)
+  sat       =   442.38 sec ( 45.69 %)
+Generalize  =   666.36 sec ( 68.82 %)
+Push clause =     2.85 sec (  0.29 %)
+Ternary sim =    37.19 sec (  3.84 %)
+Containment =   220.09 sec ( 22.73 %)
+CNF compute =    57.35 sec (  5.92 %)
+Refinement  =     0.00 sec (  0.00 %)
+TOTAL       =   968.28 sec (100.00 %)
+Output 0 of miter "./hwmcc11/single/csmacdp2neg" was asserted in frame 7.  Time =   968.30 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 11 Apr 2025 03:35:11 PM CST
+========================================

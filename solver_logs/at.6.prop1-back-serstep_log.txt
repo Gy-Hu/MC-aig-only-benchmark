@@ -1,0 +1,29 @@
+File: ./hwmcc20/aig/at.6.prop1-back-serstep.aig
+Command: ~/coding_env/abc/abc -c "&r ./hwmcc20/aig/at.6.prop1-back-serstep.aig; &put; fold; pdr -v"
+Started at: Fri 11 Apr 2025 06:33:43 PM CST
+----------------------------------------
+ABC command line: "&r ./hwmcc20/aig/at.6.prop1-back-serstep.aig; &put; fold; pdr -v".
+
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 1                                                                 1     5      0.00 sec
+  2 : 0 5 5                                                               4    34      0.02 sec
+  3 : 0 5 2456 2201                                                     247   112     25.39 sec
+  4 : 0 5 3429 4204 514                                                1517   113     57.38 sec
+Block =    4  Oblig = 14686  Clause =  8182  Call =344752 (sat=53.0%)  Cex =   0  Start =1148
+SAT solving =    45.56 sec ( 79.39 %)
+  unsat     =    13.04 sec ( 22.72 %)
+  sat       =    32.52 sec ( 56.67 %)
+Generalize  =    49.25 sec ( 85.82 %)
+Push clause =     0.66 sec (  1.15 %)
+Ternary sim =     1.38 sec (  2.41 %)
+Containment =     4.27 sec (  7.44 %)
+CNF compute =     2.35 sec (  4.09 %)
+Refinement  =     0.01 sec (  0.01 %)
+TOTAL       =    57.39 sec (100.00 %)
+Output 0 of miter "./hwmcc20/aig/at.6.prop1-back-serstep" was asserted in frame 689.  Time =    57.41 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 11 Apr 2025 06:34:40 PM CST
+========================================

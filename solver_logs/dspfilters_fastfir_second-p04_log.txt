@@ -1,0 +1,40 @@
+File: ./hwmcc19/single/aig/wolf/2019C/dspfilters_fastfir_second-p04.aig
+Command: ~/coding_env/abc/abc -c "&r ./hwmcc19/single/aig/wolf/2019C/dspfilters_fastfir_second-p04.aig; &put; fold; pdr -v"
+Started at: Fri 11 Apr 2025 06:52:48 AM CST
+----------------------------------------
+ABC command line: "&r ./hwmcc19/single/aig/wolf/2019C/dspfilters_fastfir_second-p04.aig; &put; fold; pdr -v".
+
+Warning: The last 407 outputs are interpreted as constraints.
+Converted 0 1-valued FFs and 39 DC-valued FFs.
+Warning: The number of inputs does not match the number of input names.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 112                                                               1   112      0.49 sec
+  2 : 0 50 113                                                            2   126      0.77 sec
+  3 : 0 41 88 673                                                         2   278      7.01 sec
+  4 : 0 41 67 334 608                                                     1   278     10.14 sec
+  5 : 0 41 66 333 499 764                                                 3   287     18.69 sec
+  6 : 0 41 66 332 412 95 651                                              0   287     19.26 sec
+  7 : 0 41 66 332 412 95 349 302                                          0   287     19.94 sec
+  8 : 0 41 66 332 412 95 349 205 711                                      3   319     28.39 sec
+  9 : 0 41 66 332 412 93 351 193 24 642                                   2   319     29.41 sec
+ 10 : 0 41 66 332 412 93 351 193 21 1 639                                 0   319     30.26 sec
+ 11 : 0 41 66 332 412 93 351 193 21 1 0 639                               0   319     31.06 sec
+Invariant F[10] : 639 clauses with 266 flops (out of 1105) (cex = 0, ave = 270.25)
+Verification of invariant with 639 clauses was successful.  Time =     0.04 sec
+Block = 1160  Oblig =  3382  Clause =  2436  Call = 46197 (sat=60.4%)  Cex =   0  Start = 145
+SAT solving =    20.76 sec ( 66.73 %)
+  unsat     =     2.66 sec (  8.56 %)
+  sat       =    18.10 sec ( 58.17 %)
+Generalize  =    17.34 sec ( 55.72 %)
+Push clause =     5.21 sec ( 16.74 %)
+Ternary sim =     5.97 sec ( 19.19 %)
+Containment =     0.26 sec (  0.82 %)
+CNF compute =     0.36 sec (  1.14 %)
+Refinement  =     0.00 sec (  0.00 %)
+TOTAL       =    31.11 sec (100.00 %)
+Property proved.  Time =    31.13 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 11 Apr 2025 06:53:19 AM CST
+========================================

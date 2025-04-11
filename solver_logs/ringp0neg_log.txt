@@ -1,0 +1,29 @@
+File: ./hwmcc08/ringp0neg.aig
+Command: ~/coding_env/abc/abc -c "&r ./hwmcc08/ringp0neg.aig; &put; fold; pdr -v"
+Started at: Fri 11 Apr 2025 11:15:15 AM CST
+----------------------------------------
+ABC command line: "&r ./hwmcc08/ringp0neg.aig; &put; fold; pdr -v".
+
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 1                                                                 1     1      0.00 sec
+  2 : 0 3 4                                                               3     5      0.00 sec
+  3 : 0 7 8 8                                                             6    12      0.01 sec
+  4 : 0 8 10 13 13                                                        8    15      0.01 sec
+Block =   19  Oblig =    97  Clause =    45  Call =   308 (sat=72.7%)  Cex =   0  Start =   0
+SAT solving =     0.00 sec ( 21.15 %)
+  unsat     =     0.00 sec (  1.07 %)
+  sat       =     0.00 sec ( 20.08 %)
+Generalize  =     0.00 sec ( 18.69 %)
+Push clause =     0.00 sec (  2.44 %)
+Ternary sim =     0.00 sec (  3.29 %)
+Containment =     0.00 sec (  0.03 %)
+CNF compute =     0.00 sec (  0.79 %)
+Refinement  =     0.00 sec (  0.09 %)
+TOTAL       =     0.02 sec (100.00 %)
+Output 0 of miter "./hwmcc08/ringp0neg" was asserted in frame 9.  Time =     0.02 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 11 Apr 2025 11:15:15 AM CST
+========================================

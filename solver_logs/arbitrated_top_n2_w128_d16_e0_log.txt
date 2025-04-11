@@ -1,0 +1,45 @@
+File: ./hwmcc19/single/aig/mann/data-integrity/unsafe/arbitrated_top_n2_w128_d16_e0.aig
+Command: ~/coding_env/abc/abc -c "&r ./hwmcc19/single/aig/mann/data-integrity/unsafe/arbitrated_top_n2_w128_d16_e0.aig; &put; fold; pdr -v"
+Started at: Fri 11 Apr 2025 06:40:45 AM CST
+----------------------------------------
+ABC command line: "&r ./hwmcc19/single/aig/mann/data-integrity/unsafe/arbitrated_top_n2_w128_d16_e0.aig; &put; fold; pdr -v".
+
+Warning: The last 7 outputs are interpreted as constraints.
+Converted 1 1-valued FFs and 4272 DC-valued FFs.
+Warning: The number of inputs does not match the number of input names.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 8                                                                 1    10      0.11 sec
+  2 : 0 11 143                                                            4   146      1.83 sec
+  3 : 0 5 13 662                                                          3   669     10.74 sec
+  4 : 0 12 26 54 669                                                     14   678     11.83 sec
+  5 : 0 10 19 33 65 691                                                   7   679     13.51 sec
+  6 : 0 10 19 33 60 113 729                                               9   679     16.54 sec
+  7 : 0 10 19 32 56 107 507 1239                                         14   807     33.10 sec
+  8 : 0 10 19 32 55 101 869 1852 2359                                    14   935     93.88 sec
+  9 : 0 10 18 31 55 92 542 2252 3747 3306                                18  1063    216.32 sec
+ 10 : 0 10 18 31 55 93 280 2158 3812 6471 5366                           19  1191    448.52 sec
+ 11 : 0 13 26 43 64 98 276 1422 3077 5440 6594 4238                      60  1319    617.32 sec
+ 12 : 0 10 20 36 64 93 148 917 1688 4876 5414 6148 4202                  18  1446    802.82 sec
+ 13 : 0 10 20 36 64 100 163 824 1575 4407 5163 5195 6792 5130           133  1574   1032.86 sec
+ 14 : 0 10 20 36 64 98 145 648 1205 3857 4640 4743 6113 8751 6591        66  1702   1381.24 sec
+ 15 : ... 36 64 98 143 636 1096 3305 4236 4183 5807 8585 10879 6885      38  1830   1837.31 sec
+ 16 : ... 64 98 139 624 1067 3222 3945 4073 5533 8450 9408 10570 8287    74  1958   2366.30 sec
+ 17 : ... 623 1065 3153 3703 3401 4568 6692 8686 10949 14705 10498       33  2086   3179.46 sec
+ 18 : ... 637 1092 3176 3708 3394 4372 6312 7706 9776 10671 9111 2643    53  2086   3346.45 sec
+Block =10207  Oblig =148674  Clause =100132  Call =2041782 (sat=72.2%)  Cex =   0  Start =6761
+SAT solving =  2805.78 sec ( 83.84 %)
+  unsat     =   195.99 sec (  5.86 %)
+  sat       =  2609.79 sec ( 77.99 %)
+Generalize  =  2227.92 sec ( 66.58 %)
+Push clause =   541.37 sec ( 16.18 %)
+Ternary sim =    52.20 sec (  1.56 %)
+Containment =    37.99 sec (  1.14 %)
+CNF compute =    41.88 sec (  1.25 %)
+Refinement  =     0.00 sec (  0.00 %)
+TOTAL       =  3346.46 sec (100.00 %)
+Output 0 of miter "./hwmcc19/single/aig/mann/data-integrity/unsafe/arbitrated_top_n2_w128_d16_e0" was asserted in frame 21.  Time =  3346.52 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 11 Apr 2025 07:36:32 AM CST
+========================================

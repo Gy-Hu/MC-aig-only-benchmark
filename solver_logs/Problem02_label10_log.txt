@@ -1,0 +1,34 @@
+File: ./hwmcc24/2024/sosylab/eca-rers2012/Problem02_label10.aig
+Command: ~/coding_env/abc/abc -c "&r ./hwmcc24/2024/sosylab/eca-rers2012/Problem02_label10.aig; &put; fold; pdr -v"
+Started at: Fri 11 Apr 2025 10:36:45 PM CST
+----------------------------------------
+ABC command line: "&r ./hwmcc24/2024/sosylab/eca-rers2012/Problem02_label10.aig; &put; fold; pdr -v".
+
+Converted 0 1-valued FFs and 227 DC-valued FFs.
+Warning: The number of inputs does not match the number of input names.
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 2                                                                 1     3      0.01 sec
+  2 : 0 2 3                                                               2     5      0.02 sec
+  3 : 0 1 2 34                                                            2    38      0.10 sec
+  4 : 0 1 2 1 35                                                          2    39      0.11 sec
+  5 : 0 1 2 0 0 35                                                        0    39      0.12 sec
+Invariant F[3] : 35 clauses with 39 flops (out of 230) (cex = 0, ave = 200.32)
+Verification of invariant with 35 clauses was successful.  Time =     0.00 sec
+Block =    5  Oblig =    73  Clause =    40  Call =   372 (sat=45.2%)  Cex =   0  Start =   0
+SAT solving =     0.04 sec ( 28.07 %)
+  unsat     =     0.01 sec (  4.51 %)
+  sat       =     0.03 sec ( 23.56 %)
+Generalize  =     0.09 sec ( 67.32 %)
+Push clause =     0.01 sec (  7.58 %)
+Ternary sim =     0.05 sec ( 42.69 %)
+Containment =     0.00 sec (  0.10 %)
+CNF compute =     0.01 sec (  6.04 %)
+Refinement  =     0.00 sec (  0.00 %)
+TOTAL       =     0.13 sec (100.00 %)
+Property proved.  Time =     0.13 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 11 Apr 2025 10:36:45 PM CST
+========================================

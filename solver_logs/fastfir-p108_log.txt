@@ -1,0 +1,41 @@
+File: ./others/fastfir/aig/fastfir-p108.aig
+Command: ~/coding_env/abc/abc -c "&r ./others/fastfir/aig/fastfir-p108.aig; &put; fold; pdr -v"
+Started at: Fri 11 Apr 2025 11:38:18 AM CST
+----------------------------------------
+ABC command line: "&r ./others/fastfir/aig/fastfir-p108.aig; &put; fold; pdr -v".
+
+Warning: The last 342 outputs are interpreted as constraints.
+Converted 34 1-valued FFs and 39 DC-valued FFs.
+Warning: The number of inputs does not match the number of input names.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 28                                                                1    28      0.09 sec
+  2 : 0 30 13                                                             2    37      0.15 sec
+  3 : 0 29 1 5                                                            0    37      0.16 sec
+  4 : 0 29 1 1 87                                                         3    96      0.55 sec
+  5 : 0 29 1 1 45 150                                                     2    96      1.02 sec
+  6 : 0 29 1 1 23 71 234                                                  3    96      1.71 sec
+  7 : 0 29 1 1 1 1 1 169                                                  1    96      1.82 sec
+  8 : 0 29 1 1 1 1 1 46 233                                               2    98      2.30 sec
+  9 : 0 29 1 1 1 1 1 24 48 286                                            3   103      2.81 sec
+ 10 : 0 29 1 1 1 1 1 1 1 1 258                                            1   103      2.93 sec
+ 11 : 0 29 1 1 1 1 1 1 1 1 45 298                                         2   103      3.29 sec
+ 12 : 0 29 1 1 1 1 1 1 1 1 22 0 298                                       0   103      3.32 sec
+Invariant F[11] : 298 clauses with 99 flops (out of 262) (cex = 0, ave = 168.12)
+Verification of invariant with 298 clauses was successful.  Time =     0.01 sec
+Block =  333  Oblig =  1044  Clause =   733  Call =  7890 (sat=45.8%)  Cex =   0  Start =  18
+SAT solving =     1.68 sec ( 50.28 %)
+  unsat     =     0.24 sec (  7.12 %)
+  sat       =     1.44 sec ( 43.16 %)
+Generalize  =     1.66 sec ( 49.75 %)
+Push clause =     0.25 sec (  7.41 %)
+Ternary sim =     0.94 sec ( 28.05 %)
+Containment =     0.03 sec (  0.85 %)
+CNF compute =     0.03 sec (  0.94 %)
+Refinement  =     0.00 sec (  0.00 %)
+TOTAL       =     3.34 sec (100.00 %)
+Property proved.  Time =     3.35 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 11 Apr 2025 11:38:21 AM CST
+========================================

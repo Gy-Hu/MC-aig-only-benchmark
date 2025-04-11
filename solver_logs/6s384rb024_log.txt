@@ -1,0 +1,32 @@
+File: ./hwmcc14/single/6s384rb024.aig
+Command: ~/coding_env/abc/abc -c "&r ./hwmcc14/single/6s384rb024.aig; &put; fold; pdr -v"
+Started at: Fri 11 Apr 2025 02:32:32 PM CST
+----------------------------------------
+ABC command line: "&r ./hwmcc14/single/6s384rb024.aig; &put; fold; pdr -v".
+
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 1                                                                 1     1      0.05 sec
+  2 : 0 3 3                                                               3     4      0.05 sec
+  3 : 0 1 1 2                                                             0     4      0.05 sec
+  4 : 0 2 2 2 7                                                           4     7      0.05 sec
+  5 : 0 2 0 0 0 7                                                         0     7      0.05 sec
+Invariant F[2] : 7 clauses with 7 flops (out of 14952) (cex = 0, ave = 6.10)
+Verification of invariant with 7 clauses was successful.  Time =     0.00 sec
+Block =    3  Oblig =    22  Clause =    15  Call =    80 (sat=41.2%)  Cex =   0  Start =   0
+SAT solving =     0.00 sec (  0.76 %)
+  unsat     =     0.00 sec (  0.06 %)
+  sat       =     0.00 sec (  0.71 %)
+Generalize  =     0.00 sec (  1.13 %)
+Push clause =     0.00 sec (  0.29 %)
+Ternary sim =     0.00 sec (  0.69 %)
+Containment =     0.00 sec (  0.00 %)
+CNF compute =     0.00 sec (  0.20 %)
+Refinement  =     0.00 sec (  0.00 %)
+TOTAL       =     0.06 sec (100.00 %)
+Property proved.  Time =     0.08 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 11 Apr 2025 02:32:32 PM CST
+========================================

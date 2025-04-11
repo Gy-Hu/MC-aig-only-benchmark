@@ -1,0 +1,35 @@
+File: ./hwmcc08/eijkS349.aig
+Command: ~/coding_env/abc/abc -c "&r ./hwmcc08/eijkS349.aig; &put; fold; pdr -v"
+Started at: Fri 11 Apr 2025 11:18:43 AM CST
+----------------------------------------
+ABC command line: "&r ./hwmcc08/eijkS349.aig; &put; fold; pdr -v".
+
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 20                                                                1    20      0.00 sec
+  2 : 0 68 99                                                             5    53      0.02 sec
+  3 : 0 47 174 189                                                        6    53      0.08 sec
+  4 : 0 45 105 263 150                                                    5    53      0.16 sec
+  5 : 0 41 90 58 224 154                                                  4    53      0.21 sec
+  6 : 0 41 89 48 164 274 266                                              6    53      0.34 sec
+  7 : 0 41 89 48 111 8 67 416                                             3    53      0.40 sec
+  8 : 0 41 89 48 111 1 0 0 485                                            0    53      0.43 sec
+Invariant F[6] : 485 clauses with 53 flops (out of 53) (cex = 0, ave = 9.81)
+Verification of invariant with 485 clauses was successful.  Time =     0.01 sec
+Block =  105  Oblig =  1668  Clause =  1065  Call = 12385 (sat=62.6%)  Cex =   0  Start =  37
+SAT solving =     0.37 sec ( 81.73 %)
+  unsat     =     0.12 sec ( 25.85 %)
+  sat       =     0.25 sec ( 55.88 %)
+Generalize  =     0.22 sec ( 49.24 %)
+Push clause =     0.15 sec ( 32.76 %)
+Ternary sim =     0.01 sec (  1.78 %)
+Containment =     0.00 sec (  0.28 %)
+CNF compute =     0.01 sec (  1.35 %)
+Refinement  =     0.00 sec (  0.00 %)
+TOTAL       =     0.45 sec (100.00 %)
+Property proved.  Time =     0.46 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 11 Apr 2025 11:18:43 AM CST
+========================================

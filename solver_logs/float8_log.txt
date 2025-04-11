@@ -1,0 +1,31 @@
+File: ./hwmcc24/2024/sosylab/floats-cbmc-regression/float8.aig
+Command: ~/coding_env/abc/abc -c "&r ./hwmcc24/2024/sosylab/floats-cbmc-regression/float8.aig; &put; fold; pdr -v"
+Started at: Fri 11 Apr 2025 10:52:03 PM CST
+----------------------------------------
+ABC command line: "&r ./hwmcc24/2024/sosylab/floats-cbmc-regression/float8.aig; &put; fold; pdr -v".
+
+Converted 0 1-valued FFs and 34 DC-valued FFs.
+Warning: The number of inputs does not match the number of input names.
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 2                                                                 1     3      0.02 sec
+  2 : 0 0 2                                                               0     3      0.20 sec
+Invariant F[1] : 2 clauses with 3 flops (out of 37) (cex = 0, ave = 3.00)
+Verification of invariant with 2 clauses was successful.  Time =     0.16 sec
+Block =    2  Oblig =     2  Clause =     2  Call =    11 (sat=45.5%)  Cex =   0  Start =   0
+SAT solving =     0.18 sec ( 48.92 %)
+  unsat     =     0.17 sec ( 45.87 %)
+  sat       =     0.01 sec (  3.05 %)
+Generalize  =     0.01 sec (  3.44 %)
+Push clause =     0.17 sec ( 46.32 %)
+Ternary sim =     0.00 sec (  0.01 %)
+Containment =     0.00 sec (  0.00 %)
+CNF compute =     0.00 sec (  1.32 %)
+Refinement  =     0.00 sec (  0.00 %)
+TOTAL       =     0.37 sec (100.00 %)
+Property proved.  Time =     0.37 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 11 Apr 2025 10:52:04 PM CST
+========================================

@@ -1,0 +1,33 @@
+File: ./hwmcc24/2024/sosylab/nla-digbench-scaling/freire1_valuebound1.aig
+Command: ~/coding_env/abc/abc -c "&r ./hwmcc24/2024/sosylab/nla-digbench-scaling/freire1_valuebound1.aig; &put; fold; pdr -v"
+Started at: Fri 11 Apr 2025 10:16:02 PM CST
+----------------------------------------
+ABC command line: "&r ./hwmcc24/2024/sosylab/nla-digbench-scaling/freire1_valuebound1.aig; &put; fold; pdr -v".
+
+Converted 0 1-valued FFs and 163 DC-valued FFs.
+Warning: The number of inputs does not match the number of input names.
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 3                                                                 1     4      0.13 sec
+  2 : 0 3 4                                                               2     6      0.30 sec
+  3 : 0 1 5 136                                                           2   114      7.39 sec
+  4 : 0 1 2 0 136                                                         0   114      8.20 sec
+Invariant F[3] : 136 clauses with 112 flops (out of 166) (cex = 0, ave = 157.99)
+Verification of invariant with 136 clauses was successful.  Time =     0.76 sec
+Block =    7  Oblig =   278  Clause =   144  Call =  2194 (sat=52.4%)  Cex =   0  Start =   6
+SAT solving =     6.75 sec ( 75.18 %)
+  unsat     =     1.40 sec ( 15.65 %)
+  sat       =     5.34 sec ( 59.52 %)
+Generalize  =     6.20 sec ( 69.10 %)
+Push clause =     1.08 sec ( 11.98 %)
+Ternary sim =     0.74 sec (  8.21 %)
+Containment =     0.00 sec (  0.03 %)
+CNF compute =     0.13 sec (  1.48 %)
+Refinement  =     0.00 sec (  0.00 %)
+TOTAL       =     8.97 sec (100.00 %)
+Property proved.  Time =     9.00 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 11 Apr 2025 10:16:11 PM CST
+========================================

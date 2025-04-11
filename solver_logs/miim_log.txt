@@ -1,0 +1,32 @@
+File: ./hwmcc20/aig-1.8/miim.aig
+Command: ~/coding_env/abc/abc -c "&r ./hwmcc20/aig-1.8/miim.aig; &put; fold; pdr -v"
+Started at: Fri 11 Apr 2025 05:37:20 PM CST
+----------------------------------------
+ABC command line: "&r ./hwmcc20/aig-1.8/miim.aig; &put; fold; pdr -v".
+
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 1                                                                 1     1      0.00 sec
+  2 : 0 2 2                                                               2     3      0.00 sec
+  3 : 0 3 2 5                                                             4     7      0.00 sec
+  4 : 0 2 1 1 5                                                           1     7      0.01 sec
+  5 : 0 2 1 1 0 5                                                         0     7      0.01 sec
+Invariant F[4] : 5 clauses with 7 flops (out of 36) (cex = 0, ave = 15.00)
+Verification of invariant with 5 clauses was successful.  Time =     0.00 sec
+Block =    4  Oblig =    16  Clause =    12  Call =    64 (sat=43.8%)  Cex =   0  Start =   0
+SAT solving =     0.00 sec (  3.86 %)
+  unsat     =     0.00 sec (  0.76 %)
+  sat       =     0.00 sec (  3.09 %)
+Generalize  =     0.00 sec (  3.07 %)
+Push clause =     0.00 sec (  2.24 %)
+Ternary sim =     0.00 sec (  0.98 %)
+Containment =     0.00 sec (  0.01 %)
+CNF compute =     0.00 sec (  1.67 %)
+Refinement  =     0.00 sec (  0.00 %)
+TOTAL       =     0.02 sec (100.00 %)
+Property proved.  Time =     0.02 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 11 Apr 2025 05:37:20 PM CST
+========================================

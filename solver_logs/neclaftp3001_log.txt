@@ -1,0 +1,29 @@
+File: ./hwmcc11/single/neclaftp3001.aig
+Command: ~/coding_env/abc/abc -c "&r ./hwmcc11/single/neclaftp3001.aig; &put; fold; pdr -v"
+Started at: Fri 11 Apr 2025 03:52:08 PM CST
+----------------------------------------
+ABC command line: "&r ./hwmcc11/single/neclaftp3001.aig; &put; fold; pdr -v".
+
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 1                                                                 1     1      0.03 sec
+  2 : 0 2 2                                                               2     6      0.05 sec
+  3 : 0 2 2 1                                                             1     8      0.12 sec
+  4 : 0 5 9 7 1                                                          14    10      0.27 sec
+Block =    4  Oblig =    53  Clause =    22  Call =   208 (sat=63.0%)  Cex =   0  Start =   0
+SAT solving =     0.20 sec ( 71.48 %)
+  unsat     =     0.05 sec ( 18.38 %)
+  sat       =     0.15 sec ( 53.10 %)
+Generalize  =     0.20 sec ( 68.66 %)
+Push clause =     0.02 sec (  5.43 %)
+Ternary sim =     0.02 sec (  5.28 %)
+Containment =     0.00 sec (  0.01 %)
+CNF compute =     0.01 sec (  2.54 %)
+Refinement  =     0.00 sec (  0.54 %)
+TOTAL       =     0.28 sec (100.00 %)
+Output 0 of miter "./hwmcc11/single/neclaftp3001" was asserted in frame 13.  Time =     0.31 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 11 Apr 2025 03:52:09 PM CST
+========================================

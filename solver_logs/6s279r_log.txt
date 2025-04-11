@@ -1,0 +1,24 @@
+File: ./hwmcc13/single/6s279r.aig
+Command: ~/coding_env/abc/abc -c "&r ./hwmcc13/single/6s279r.aig; &put; fold; pdr -v"
+Started at: Fri 11 Apr 2025 12:31:50 PM CST
+----------------------------------------
+ABC command line: "&r ./hwmcc13/single/6s279r.aig; &put; fold; pdr -v".
+
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 1                                                                 1     1      0.01 sec
+  2 : 0 4 5                                                               3     7      0.01 sec
+  3 : 0 12 16 21                                                         12    28      0.02 sec
+  4 : 0 4 7 12 10                                                         0    28      0.02 sec
+  5 : 0 4 7 12 11 28                                                      5    32      0.03 sec
+  6 : 0 4 11 23 24 35 36                                                 22    51      0.06 sec
+  7 : 0 4 260 36 294 1047 1107 1585                                      22   798      2.84 sec
+  8 : 0 4 263 27 303 807 1073 1674 364                                   21   803      3.60 sec
+  9 : 0 4 263 343 1422 3755 4265 8989 11764 11792                        48  1179     94.19 sec
+ 10 : 0 4 263 303 788 3084 3750 5429 10846 12091 2531                   150  1189    111.41 sec
+ 11 : 0 4 263 303 782 3039 3501 4446 7053 7208 11725 3329                59  1189    134.64 sec
+----------------------------------------
+STATUS: TIMEOUT (exceeded 3600 seconds)
+Finished at: Fri 11 Apr 2025 01:31:50 PM CST
+========================================

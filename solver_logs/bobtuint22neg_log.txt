@@ -1,0 +1,31 @@
+File: ./hwmcc11/single/bobtuint22neg.aig
+Command: ~/coding_env/abc/abc -c "&r ./hwmcc11/single/bobtuint22neg.aig; &put; fold; pdr -v"
+Started at: Fri 11 Apr 2025 02:46:04 PM CST
+----------------------------------------
+ABC command line: "&r ./hwmcc11/single/bobtuint22neg.aig; &put; fold; pdr -v".
+
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 1                                                                 1     1      0.00 sec
+  2 : 0 1 1                                                               1     2      0.00 sec
+  3 : 0 1 2 2                                                             2     3      0.01 sec
+  4 : 0 1 1 0 2                                                           0     3      0.01 sec
+Invariant F[3] : 2 clauses with 3 flops (out of 212) (cex = 0, ave = 3.25)
+Verification of invariant with 2 clauses was successful.  Time =     0.00 sec
+Block =    3  Oblig =     6  Clause =     5  Call =    30 (sat=56.7%)  Cex =   0  Start =   0
+SAT solving =     0.00 sec (  2.29 %)
+  unsat     =     0.00 sec (  0.09 %)
+  sat       =     0.00 sec (  2.20 %)
+Generalize  =     0.00 sec (  2.11 %)
+Push clause =     0.00 sec (  0.99 %)
+Ternary sim =     0.00 sec (  0.21 %)
+Containment =     0.00 sec (  0.01 %)
+CNF compute =     0.00 sec (  1.16 %)
+Refinement  =     0.00 sec (  0.00 %)
+TOTAL       =     0.01 sec (100.00 %)
+Property proved.  Time =     0.02 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 11 Apr 2025 02:46:04 PM CST
+========================================

@@ -1,0 +1,30 @@
+File: ./hwmcc08/pdtpmsrotate32.aig
+Command: ~/coding_env/abc/abc -c "&r ./hwmcc08/pdtpmsrotate32.aig; &put; fold; pdr -v"
+Started at: Fri 11 Apr 2025 11:13:36 AM CST
+----------------------------------------
+ABC command line: "&r ./hwmcc08/pdtpmsrotate32.aig; &put; fold; pdr -v".
+
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 64                                                                1    64      0.01 sec
+  2 : 0 64 249                                                            2   130      0.06 sec
+  3 : 0 64 0 249                                                          0   130      0.06 sec
+Invariant F[2] : 249 clauses with 130 flops (out of 130) (cex = 0, ave = 3.04)
+Verification of invariant with 249 clauses was successful.  Time =     0.00 sec
+Block =  249  Oblig =   377  Clause =   313  Call =  1577 (sat=58.2%)  Cex =   0  Start =   2
+SAT solving =     0.04 sec ( 52.09 %)
+  unsat     =     0.01 sec ( 10.06 %)
+  sat       =     0.03 sec ( 42.03 %)
+Generalize  =     0.03 sec ( 39.41 %)
+Push clause =     0.01 sec (  8.47 %)
+Ternary sim =     0.01 sec ( 11.96 %)
+Containment =     0.00 sec (  0.18 %)
+CNF compute =     0.00 sec (  1.81 %)
+Refinement  =     0.00 sec (  0.00 %)
+TOTAL       =     0.07 sec (100.00 %)
+Property proved.  Time =     0.08 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 11 Apr 2025 11:13:36 AM CST
+========================================

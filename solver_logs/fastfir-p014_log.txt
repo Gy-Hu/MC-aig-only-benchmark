@@ -1,0 +1,36 @@
+File: ./others/fastfir/aig/fastfir-p014.aig
+Command: ~/coding_env/abc/abc -c "&r ./others/fastfir/aig/fastfir-p014.aig; &put; fold; pdr -v"
+Started at: Fri 11 Apr 2025 11:36:57 AM CST
+----------------------------------------
+ABC command line: "&r ./others/fastfir/aig/fastfir-p014.aig; &put; fold; pdr -v".
+
+Warning: The last 342 outputs are interpreted as constraints.
+Converted 34 1-valued FFs and 39 DC-valued FFs.
+Warning: The number of inputs does not match the number of input names.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 10                                                                1    10      0.06 sec
+  2 : 0 11 23                                                             2    32      0.18 sec
+  3 : 0 28 35 453                                                         3   133      3.71 sec
+  4 : 0 28 34 722 761                                                     3   141     12.05 sec
+  5 : 0 28 34 668 385 986                                                 2   141     18.55 sec
+  6 : 0 28 34 668 365 585 948                                             3   141     23.78 sec
+  7 : 0 28 34 668 365 494 0 937                                           0   141     24.56 sec
+Invariant F[6] : 937 clauses with 132 flops (out of 262) (cex = 0, ave = 89.04)
+Verification of invariant with 937 clauses was successful.  Time =     0.06 sec
+Block = 1104  Oblig =  3795  Clause =  2732  Call = 55375 (sat=49.8%)  Cex =   0  Start = 178
+SAT solving =    16.72 sec ( 67.91 %)
+  unsat     =     1.82 sec (  7.37 %)
+  sat       =    14.91 sec ( 60.53 %)
+Generalize  =    14.95 sec ( 60.72 %)
+Push clause =     2.31 sec (  9.37 %)
+Ternary sim =     3.82 sec ( 15.51 %)
+Containment =     0.19 sec (  0.77 %)
+CNF compute =     0.18 sec (  0.75 %)
+Refinement  =     0.00 sec (  0.00 %)
+TOTAL       =    24.62 sec (100.00 %)
+Property proved.  Time =    24.64 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 11 Apr 2025 11:37:22 AM CST
+========================================

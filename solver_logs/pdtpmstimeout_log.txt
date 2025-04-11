@@ -1,0 +1,22 @@
+File: ./hwmcc11/single/pdtpmstimeout.aig
+Command: ~/coding_env/abc/abc -c "&r ./hwmcc11/single/pdtpmstimeout.aig; &put; fold; pdr -v"
+Started at: Fri 11 Apr 2025 03:29:23 PM CST
+----------------------------------------
+ABC command line: "&r ./hwmcc11/single/pdtpmstimeout.aig; &put; fold; pdr -v".
+
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 33                                                                1    33      0.01 sec
+  2 : 0 68 140                                                            3    59      0.05 sec
+  3 : 0 87 248 294                                                       10    62      0.25 sec
+  4 : 0 83 258 617 590                                                   10    73      1.11 sec
+  5 : 0 83 260 670 1805 1515                                             41    80      5.48 sec
+  6 : 0 81 259 690 2441 6265 5040                                        69    80     38.58 sec
+  7 : 0 81 252 660 2402 8127 14534 9822                                 221    80    170.56 sec
+  8 : 0 81 243 627 2253 8008 16735 17844 9538                           468    80    384.96 sec
+  9 : 0 81 243 641 2372 9310 24741 40680 43259 22423                   2089    80   2249.14 sec
+----------------------------------------
+STATUS: TIMEOUT (exceeded 3600 seconds)
+Finished at: Fri 11 Apr 2025 04:29:23 PM CST
+========================================

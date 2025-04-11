@@ -1,0 +1,27 @@
+File: ./x-epic-2024/aig/a18-p0.aig
+Command: ~/coding_env/abc/abc -c "&r ./x-epic-2024/aig/a18-p0.aig; &put; fold; pdr -v"
+Started at: Fri 11 Apr 2025 06:37:23 PM CST
+----------------------------------------
+ABC command line: "&r ./x-epic-2024/aig/a18-p0.aig; &put; fold; pdr -v".
+
+Warning: The last 71 outputs are interpreted as constraints.
+Converted 173 1-valued FFs and 503 DC-valued FFs.
+Warning: The number of inputs does not match the number of flop names.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 1                                                                 1     1      0.01 sec
+  2 : 0 2 2                                                               2     3      0.01 sec
+  3 : 0 114 562 509                                                      48   241      1.94 sec
+  4 : 0 35 236 568 549                                                   18   276      3.79 sec
+  5 : 0 33 211 565 1949 1712                                             57   346     13.06 sec
+  6 : 0 33 204 513 1879 5416 4157                                       102   388     46.41 sec
+  7 : 0 33 203 502 1692 4634 10925 7803                                  69   397    151.92 sec
+  8 : 0 33 203 500 1664 3904 8425 17609 11192                           134   405    381.63 sec
+  9 : 0 33 200 501 1649 3798 6947 11949 24503 13916                     248   408    796.93 sec
+ 10 : 0 33 199 502 1645 3756 6655 8651 13210 25920 12477                137   409   1232.01 sec
+ 11 : 0 33 199 500 1645 3752 6596 8195 8933 14506 29025 16783            65   409   1912.71 sec
+ 12 : ... 33 199 500 1644 3740 6545 8005 8228 10002 18408 35575 21186   137   410   3048.32 sec
+----------------------------------------
+STATUS: TIMEOUT (exceeded 3600 seconds)
+Finished at: Fri 11 Apr 2025 07:37:23 PM CST
+========================================

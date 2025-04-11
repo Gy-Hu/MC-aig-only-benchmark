@@ -1,0 +1,20 @@
+File: ./hwmcc24/2024/hku/refinement_checking/bv/ILA_Ridecore_SRAI_sanity.aig
+Command: ~/coding_env/abc/abc -c "&r ./hwmcc24/2024/hku/refinement_checking/bv/ILA_Ridecore_SRAI_sanity.aig; &put; fold; pdr -v"
+Started at: Fri 11 Apr 2025 08:43:28 PM CST
+----------------------------------------
+ABC command line: "&r ./hwmcc24/2024/hku/refinement_checking/bv/ILA_Ridecore_SRAI_sanity.aig; &put; fold; pdr -v".
+
+Warning: The last output is interpreted as a constraint.
+Converted 9 1-valued FFs and 16374 DC-valued FFs.
+Warning: The number of inputs does not match the number of input names.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 204                                                               1   206     21.70 sec
+  2 : 0 190 166                                                           3   278     45.51 sec
+  3 : 0 204 109 376                                                      20   405     87.52 sec
+  4 : 0 77 59 182 348                                                     4   438     97.11 sec
+  5 : 0 77 64 171 1352 1921                                              18   718    830.09 sec
+----------------------------------------
+STATUS: TIMEOUT (exceeded 3600 seconds)
+Finished at: Fri 11 Apr 2025 09:43:28 PM CST
+========================================

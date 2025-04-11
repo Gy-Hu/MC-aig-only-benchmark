@@ -1,0 +1,53 @@
+File: ./hwmcc19/single/aig/wolf/2019C/qspiflash_dualflexpress_divthree-p099.aig
+Command: ~/coding_env/abc/abc -c "&r ./hwmcc19/single/aig/wolf/2019C/qspiflash_dualflexpress_divthree-p099.aig; &put; fold; pdr -v"
+Started at: Fri 11 Apr 2025 07:09:47 AM CST
+----------------------------------------
+ABC command line: "&r ./hwmcc19/single/aig/wolf/2019C/qspiflash_dualflexpress_divthree-p099.aig; &put; fold; pdr -v".
+
+Warning: The last 22 outputs are interpreted as constraints.
+Converted 5 1-valued FFs and 258 DC-valued FFs.
+Warning: The number of inputs does not match the number of input names.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 1                                                                 1     1      0.00 sec
+  2 : 0 5 9                                                               2    15      0.01 sec
+  3 : 0 8 16 23                                                           6    35      0.02 sec
+  4 : 0 5 10 1 15                                                         0    35      0.02 sec
+  5 : 0 5 10 1 1 14                                                       0    35      0.02 sec
+  6 : 0 8 30 53 38 27 91                                                 26    55      0.13 sec
+  7 : 0 8 27 26 15 7 9 83                                                 0    55      0.14 sec
+  8 : 0 8 27 26 15 7 9 6 77                                               0    55      0.15 sec
+  9 : 0 13 45 54 49 25 24 29 32 127                                      35    70      0.26 sec
+ 10 : 0 10 33 38 28 13 19 20 22 19 111                                    0    70      0.27 sec
+ 11 : 0 10 33 37 27 13 19 20 22 19 4 107                                  0    70      0.29 sec
+ 12 : 0 10 33 37 27 13 19 20 22 19 4 1 106                                0    70      0.30 sec
+ 13 : 0 10 33 37 27 13 19 20 23 29 23 22 12 137                          21    70      0.37 sec
+ 14 : 0 10 33 37 27 13 19 20 23 23 9 8 4 8 129                            0    70      0.38 sec
+ 15 : 0 10 33 37 27 13 19 20 23 23 9 8 4 8 1 128                          0    70      0.40 sec
+ 16 : ... 81 120 177 272 340 441 581 791 825 971 1096 1168 990 1962     498    88     11.23 sec
+ 17 : ... 29 34 80 141 144 180 181 245 236 283 291 392 327 336 1854       0    88     12.00 sec
+ 18 : ... 34 86 170 195 228 269 360 350 419 514 672 600 627 765 2539    105   130     16.44 sec
+ 19 : ... 64 120 138 162 139 165 191 231 243 337 306 264 153 243 1928    16   130     17.29 sec
+ 20 : ... 128 167 138 158 142 238 229 317 225 276 130 189 122 1735       16   130     17.95 sec
+ 21 : ... 130 149 139 152 140 221 227 313 221 257 128 184 115 47 1364     0   130     18.20 sec
+ 22 : ... 148 139 152 140 213 227 313 221 249 128 184 115 47 27 1332      0   130     18.44 sec
+ 23 : ... 139 152 140 213 227 313 221 245 128 184 115 47 27 1 1331        0   130     18.66 sec
+ 24 : ... 139 152 140 213 227 313 221 245 128 184 115 47 27 1 0 1328      0   130     18.89 sec
+Invariant F[23] : 1328 clauses with 129 flops (out of 183) (cex = 0, ave = 45.60)
+Verification of invariant with 1328 clauses was successful.  Time =     0.02 sec
+Block =   53  Oblig = 27029  Clause = 14013  Call =283636 (sat=60.7%)  Cex =   0  Start = 933
+SAT solving =    13.97 sec ( 73.84 %)
+  unsat     =     2.62 sec ( 13.83 %)
+  sat       =    11.35 sec ( 60.01 %)
+Generalize  =    11.78 sec ( 62.30 %)
+Push clause =     2.90 sec ( 15.31 %)
+Ternary sim =     0.77 sec (  4.08 %)
+Containment =     0.79 sec (  4.18 %)
+CNF compute =     0.77 sec (  4.09 %)
+Refinement  =     0.00 sec (  0.00 %)
+TOTAL       =    18.91 sec (100.00 %)
+Property proved.  Time =    18.93 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 11 Apr 2025 07:10:06 AM CST
+========================================

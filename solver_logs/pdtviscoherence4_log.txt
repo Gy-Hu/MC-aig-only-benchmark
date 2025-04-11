@@ -1,0 +1,36 @@
+File: ./hwmcc11/single/pdtviscoherence4.aig
+Command: ~/coding_env/abc/abc -c "&r ./hwmcc11/single/pdtviscoherence4.aig; &put; fold; pdr -v"
+Started at: Fri 11 Apr 2025 03:50:00 PM CST
+----------------------------------------
+ABC command line: "&r ./hwmcc11/single/pdtviscoherence4.aig; &put; fold; pdr -v".
+
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 2                                                                 1     2      0.00 sec
+  2 : 0 7 7                                                               4    15      0.01 sec
+  3 : 0 9 14 16                                                           4    21      0.02 sec
+  4 : 0 8 21 29 41                                                        7    26      0.06 sec
+  5 : 0 9 20 31 36 47                                                     6    27      0.10 sec
+  6 : 0 9 20 28 19 9 43                                                   0    27      0.11 sec
+  7 : 0 9 20 28 20 11 8 59                                                5    27      0.15 sec
+  8 : 0 9 20 28 18 5 6 4 61                                               4    27      0.17 sec
+  9 : 0 9 20 28 17 2 0 0 0 65                                             0    27      0.18 sec
+Invariant F[6] : 65 clauses with 26 flops (out of 37) (cex = 0, ave = 17.78)
+Verification of invariant with 65 clauses was successful.  Time =     0.00 sec
+Block =   14  Oblig =   307  Clause =   189  Call =  2119 (sat=59.6%)  Cex =   0  Start =   3
+SAT solving =     0.13 sec ( 69.63 %)
+  unsat     =     0.03 sec ( 16.09 %)
+  sat       =     0.10 sec ( 53.54 %)
+Generalize  =     0.09 sec ( 45.41 %)
+Push clause =     0.05 sec ( 29.02 %)
+Ternary sim =     0.02 sec (  8.42 %)
+Containment =     0.00 sec (  0.05 %)
+CNF compute =     0.00 sec (  2.21 %)
+Refinement  =     0.00 sec (  0.00 %)
+TOTAL       =     0.19 sec (100.00 %)
+Property proved.  Time =     0.19 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 11 Apr 2025 03:50:00 PM CST
+========================================

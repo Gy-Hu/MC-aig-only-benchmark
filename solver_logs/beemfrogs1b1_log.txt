@@ -1,0 +1,35 @@
+File: ./hwmcc13/single/beemfrogs1b1.aig
+Command: ~/coding_env/abc/abc -c "&r ./hwmcc13/single/beemfrogs1b1.aig; &put; fold; pdr -v"
+Started at: Fri 11 Apr 2025 01:31:07 PM CST
+----------------------------------------
+ABC command line: "&r ./hwmcc13/single/beemfrogs1b1.aig; &put; fold; pdr -v".
+
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 1                                                                 1     2      0.02 sec
+  2 : 0 1 1                                                               1     3      0.03 sec
+  3 : 0 1 1 1                                                             1    10      0.04 sec
+  4 : 0 1 3 18 13                                                        11    25      0.34 sec
+  5 : 0 1 3 17 13 1                                                       1    28      0.38 sec
+  6 : 0 1 3 20 70 148 137                                                57    36      4.75 sec
+  7 : 0 1 3 19 66 133 115 26                                              1    36      5.07 sec
+  8 : 0 1 6 34 238 666 915 892 781                                      546    47     58.97 sec
+  9 : 0 1 5 21 176 441 566 489 504 541                                    1    47     64.21 sec
+ 10 : 0 1 21 131 674 1453 2152 2449 2780 2913 2385                     1051    51    325.76 sec
+Block =   10  Oblig = 24529  Clause = 15820  Call =509907 (sat=65.4%)  Cex =   0  Start =1696
+SAT solving =   293.38 sec ( 90.06 %)
+  unsat     =    87.02 sec ( 26.71 %)
+  sat       =   206.37 sec ( 63.35 %)
+Generalize  =   277.30 sec ( 85.12 %)
+Push clause =     8.85 sec (  2.72 %)
+Ternary sim =     2.81 sec (  0.86 %)
+Containment =     9.11 sec (  2.80 %)
+CNF compute =     6.43 sec (  1.97 %)
+Refinement  =     0.00 sec (  0.00 %)
+TOTAL       =   325.77 sec (100.00 %)
+Output 0 of miter "./hwmcc13/single/beemfrogs1b1" was asserted in frame 50.  Time =   325.79 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 11 Apr 2025 01:36:33 PM CST
+========================================

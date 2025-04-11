@@ -1,0 +1,37 @@
+File: ./hwmcc24/2024/yosyshq/appnote_123/cv32e40x/yosyshq_appnote_123_cv32e40x-p315.aig
+Command: ~/coding_env/abc/abc -c "&r ./hwmcc24/2024/yosyshq/appnote_123/cv32e40x/yosyshq_appnote_123_cv32e40x-p315.aig; &put; fold; pdr -v"
+Started at: Fri 11 Apr 2025 09:36:38 PM CST
+----------------------------------------
+ABC command line: "&r ./hwmcc24/2024/yosyshq/appnote_123/cv32e40x/yosyshq_appnote_123_cv32e40x-p315.aig; &put; fold; pdr -v".
+
+Warning: The last 18 outputs are interpreted as constraints.
+Converted 1499 1-valued FFs and 89725 DC-valued FFs.
+Warning: The number of inputs does not match the number of flop names.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 2                                                                 1     2      0.10 sec
+  2 : 0 4 6                                                               3    12      0.11 sec
+  3 : 0 4 3 5                                                             1    13      0.11 sec
+  4 : 0 4 3 2 4                                                           1    13      0.12 sec
+  5 : 0 4 3 2 1 6                                                         2    13      0.12 sec
+  6 : 0 4 3 2 1 2 5                                                       1    13      0.13 sec
+  7 : 0 4 3 2 1 2 1 15                                                    3    24      0.16 sec
+  8 : 0 3 3 2 1 1 0 0 15                                                  0    24      0.16 sec
+Invariant F[6] : 15 clauses with 19 flops (out of 6021) (cex = 0, ave = 33.19)
+Verification of invariant with 15 clauses was successful.  Time =     0.00 sec
+Block =   11  Oblig =    44  Clause =    28  Call =   249 (sat=53.8%)  Cex =   0  Start =   0
+SAT solving =     0.03 sec ( 15.78 %)
+  unsat     =     0.00 sec (  0.80 %)
+  sat       =     0.03 sec ( 14.98 %)
+Generalize  =     0.03 sec ( 17.74 %)
+Push clause =     0.01 sec (  8.43 %)
+Ternary sim =     0.01 sec (  8.53 %)
+Containment =     0.00 sec (  0.01 %)
+CNF compute =     0.01 sec (  6.58 %)
+Refinement  =     0.00 sec (  0.00 %)
+TOTAL       =     0.17 sec (100.00 %)
+Property proved.  Time =     0.21 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 11 Apr 2025 09:36:41 PM CST
+========================================

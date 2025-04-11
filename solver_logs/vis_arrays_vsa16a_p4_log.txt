@@ -1,0 +1,31 @@
+File: ./avr/opensource/vis_arrays_vsa16a_p4/vis_arrays_vsa16a_p4.aig
+Command: ~/coding_env/abc/abc -c "&r ./avr/opensource/vis_arrays_vsa16a_p4/vis_arrays_vsa16a_p4.aig; &put; fold; pdr -v"
+Started at: Fri 11 Apr 2025 04:06:06 PM CST
+----------------------------------------
+ABC command line: "&r ./avr/opensource/vis_arrays_vsa16a_p4/vis_arrays_vsa16a_p4.aig; &put; fold; pdr -v".
+
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 32                                                                1    32      0.01 sec
+  2 : 0 32 129                                                            1    37      0.02 sec
+  3 : 0 32 129 256                                                        1    38      0.08 sec
+  4 : 0 32 129 0 256                                                      0    38      0.08 sec
+Invariant F[3] : 256 clauses with 38 flops (out of 172) (cex = 0, ave = 7.00)
+Verification of invariant with 256 clauses was successful.  Time =     0.00 sec
+Block =  417  Oblig =   417  Clause =   417  Call =  3978 (sat=83.0%)  Cex =   0  Start =  10
+SAT solving =     0.06 sec ( 68.10 %)
+  unsat     =     0.00 sec (  2.22 %)
+  sat       =     0.06 sec ( 65.89 %)
+Generalize  =     0.05 sec ( 55.99 %)
+Push clause =     0.01 sec (  7.76 %)
+Ternary sim =     0.00 sec (  3.87 %)
+Containment =     0.00 sec (  0.12 %)
+CNF compute =     0.00 sec (  1.98 %)
+Refinement  =     0.00 sec (  0.00 %)
+TOTAL       =     0.09 sec (100.00 %)
+Property proved.  Time =     0.09 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 11 Apr 2025 04:06:06 PM CST
+========================================

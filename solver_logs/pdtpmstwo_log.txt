@@ -1,0 +1,30 @@
+File: ./hwmcc11/single/pdtpmstwo.aig
+Command: ~/coding_env/abc/abc -c "&r ./hwmcc11/single/pdtpmstwo.aig; &put; fold; pdr -v"
+Started at: Fri 11 Apr 2025 03:47:00 PM CST
+----------------------------------------
+ABC command line: "&r ./hwmcc11/single/pdtpmstwo.aig; &put; fold; pdr -v".
+
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 35                                                                1    33      0.00 sec
+  2 : 0 41 61                                                             4    68      0.01 sec
+  3 : 0 0 0 70                                                            0    68      0.01 sec
+Invariant F[1] : 70 clauses with 66 flops (out of 104) (cex = 0, ave = 30.76)
+Verification of invariant with 70 clauses was successful.  Time =     0.00 sec
+Block =   54  Oblig =   132  Clause =   102  Call =   457 (sat=38.5%)  Cex =   0  Start =   0
+SAT solving =     0.00 sec ( 20.15 %)
+  unsat     =     0.00 sec (  4.80 %)
+  sat       =     0.00 sec ( 15.35 %)
+Generalize  =     0.00 sec ( 18.90 %)
+Push clause =     0.00 sec (  4.46 %)
+Ternary sim =     0.00 sec ( 10.10 %)
+Containment =     0.00 sec (  0.42 %)
+CNF compute =     0.00 sec (  2.46 %)
+Refinement  =     0.00 sec (  0.00 %)
+TOTAL       =     0.02 sec (100.00 %)
+Property proved.  Time =     0.02 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 11 Apr 2025 03:47:00 PM CST
+========================================

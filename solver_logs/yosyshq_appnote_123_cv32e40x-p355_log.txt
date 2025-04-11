@@ -1,0 +1,41 @@
+File: ./hwmcc24/2024/yosyshq/appnote_123/cv32e40x/yosyshq_appnote_123_cv32e40x-p355.aig
+Command: ~/coding_env/abc/abc -c "&r ./hwmcc24/2024/yosyshq/appnote_123/cv32e40x/yosyshq_appnote_123_cv32e40x-p355.aig; &put; fold; pdr -v"
+Started at: Fri 11 Apr 2025 09:31:07 PM CST
+----------------------------------------
+ABC command line: "&r ./hwmcc24/2024/yosyshq/appnote_123/cv32e40x/yosyshq_appnote_123_cv32e40x-p355.aig; &put; fold; pdr -v".
+
+Warning: The last 18 outputs are interpreted as constraints.
+Converted 1499 1-valued FFs and 89725 DC-valued FFs.
+Warning: The number of inputs does not match the number of flop names.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 3                                                                 1     4      0.10 sec
+  2 : 0 3 2                                                               1     6      0.10 sec
+  3 : 0 3 1 5                                                             1    10      0.11 sec
+  4 : 0 3 1 2 4                                                           1    11      0.11 sec
+  5 : 0 3 1 3 3 12                                                        4    25      0.17 sec
+  6 : 0 3 1 1 1 4 9                                                       1    25      0.18 sec
+  7 : 0 3 1 1 1 38 43 85                                                 15   168      1.93 sec
+  8 : 0 3 1 1 1 35 21 33 52                                               0   168      2.03 sec
+  9 : 0 3 1 1 1 36 24 36 16 50                                            5   170      2.36 sec
+ 10 : 0 3 1 1 1 36 22 33 9 1 51                                           0   170      2.48 sec
+ 11 : 0 3 1 1 1 36 22 33 9 1 4 52                                         3   171      2.65 sec
+ 12 : 0 3 1 1 1 36 22 33 9 1 0 0 54                                       0   171      2.77 sec
+Invariant F[10] : 54 clauses with 89 flops (out of 6019) (cex = 0, ave = 108.49)
+Verification of invariant with 54 clauses was successful.  Time =     0.01 sec
+Block =   15  Oblig =   358  Clause =   202  Call =  2783 (sat=57.7%)  Cex =   0  Start =   5
+SAT solving =     1.95 sec ( 70.02 %)
+  unsat     =     0.09 sec (  3.09 %)
+  sat       =     1.87 sec ( 66.94 %)
+Generalize  =     1.57 sec ( 56.15 %)
+Push clause =     0.59 sec ( 21.05 %)
+Ternary sim =     0.25 sec (  8.79 %)
+Containment =     0.00 sec (  0.12 %)
+CNF compute =     0.11 sec (  4.12 %)
+Refinement  =     0.00 sec (  0.00 %)
+TOTAL       =     2.79 sec (100.00 %)
+Property proved.  Time =     2.84 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 11 Apr 2025 09:31:14 PM CST
+========================================

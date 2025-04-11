@@ -1,0 +1,36 @@
+File: ./others/vgasim-imgfifo/aig/imgfifo-p091.aig
+Command: ~/coding_env/abc/abc -c "&r ./others/vgasim-imgfifo/aig/imgfifo-p091.aig; &put; fold; pdr -v"
+Started at: Fri 11 Apr 2025 11:34:45 AM CST
+----------------------------------------
+ABC command line: "&r ./others/vgasim-imgfifo/aig/imgfifo-p091.aig; &put; fold; pdr -v".
+
+Warning: The last 44 outputs are interpreted as constraints.
+Converted 28 1-valued FFs and 414 DC-valued FFs.
+Warning: The number of inputs does not match the number of input names.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 13                                                                1    14      0.01 sec
+  2 : 0 17 35                                                             3    36      0.02 sec
+  3 : 0 17 12 61                                                          1    40      0.04 sec
+  4 : 0 18 30 32 131                                                      4    74      0.11 sec
+  5 : 0 18 25 21 21 156                                                   4    87      0.16 sec
+  6 : 0 18 25 21 34 29 215                                                5    87      0.25 sec
+  7 : 0 18 25 21 13 1 0 197                                               0    87      0.26 sec
+Invariant F[6] : 197 clauses with 77 flops (out of 608) (cex = 0, ave = 131.65)
+Verification of invariant with 197 clauses was successful.  Time =     0.00 sec
+Block =  182  Oblig =   510  Clause =   371  Call =  2967 (sat=50.8%)  Cex =   0  Start =   7
+SAT solving =     0.13 sec ( 48.99 %)
+  unsat     =     0.01 sec (  4.62 %)
+  sat       =     0.12 sec ( 44.37 %)
+Generalize  =     0.13 sec ( 49.50 %)
+Push clause =     0.03 sec ( 11.18 %)
+Ternary sim =     0.07 sec ( 24.65 %)
+Containment =     0.00 sec (  1.16 %)
+CNF compute =     0.01 sec (  2.55 %)
+Refinement  =     0.00 sec (  0.00 %)
+TOTAL       =     0.27 sec (100.00 %)
+Property proved.  Time =     0.27 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 11 Apr 2025 11:34:45 AM CST
+========================================

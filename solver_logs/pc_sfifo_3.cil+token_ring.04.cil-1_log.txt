@@ -1,0 +1,37 @@
+File: ./hwmcc24/2024/sosylab/combinations/pc_sfifo_3.cil+token_ring.04.cil-1.aig
+Command: ~/coding_env/abc/abc -c "&r ./hwmcc24/2024/sosylab/combinations/pc_sfifo_3.cil+token_ring.04.cil-1.aig; &put; fold; pdr -v"
+Started at: Fri 11 Apr 2025 10:39:44 PM CST
+----------------------------------------
+ABC command line: "&r ./hwmcc24/2024/sosylab/combinations/pc_sfifo_3.cil+token_ring.04.cil-1.aig; &put; fold; pdr -v".
+
+Converted 0 1-valued FFs and 1572 DC-valued FFs.
+Warning: The number of inputs does not match the number of input names.
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 3                                                                 1     4      0.06 sec
+  2 : 0 2 4                                                               2     6      0.12 sec
+  3 : 0 3 4 6                                                             3     7      0.32 sec
+  4 : 0 2 453 31 461                                                      3   465     31.99 sec
+  5 : 0 2 470 29 14 580                                                   4   647     40.25 sec
+  6 : 0 2 1111 67 206 1221 3178                                          15  1375    331.19 sec
+  7 : 0 2 1117 68 89 425 565 2529                                         8  1380    367.21 sec
+  8 : 0 2 1117 68 86 8 2 0 2787                                           0  1380    374.93 sec
+Invariant F[7] : 2787 clauses with 1380 flops (out of 1575) (cex = 0, ave = 1538.00)
+Verification of invariant with 2787 clauses was successful.  Time =     1.59 sec
+Block =   10  Oblig = 14674  Clause =  6230  Call =134312 (sat=40.9%)  Cex =   0  Start = 445
+SAT solving =   265.22 sec ( 70.44 %)
+  unsat     =    53.84 sec ( 14.30 %)
+  sat       =   211.38 sec ( 56.14 %)
+Generalize  =   291.46 sec ( 77.41 %)
+Push clause =    20.83 sec (  5.53 %)
+Ternary sim =    54.72 sec ( 14.53 %)
+Containment =    17.11 sec (  4.54 %)
+CNF compute =     6.57 sec (  1.74 %)
+Refinement  =     0.00 sec (  0.00 %)
+TOTAL       =   376.53 sec (100.00 %)
+Property proved.  Time =   376.57 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 11 Apr 2025 10:46:01 PM CST
+========================================

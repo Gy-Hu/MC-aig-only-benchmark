@@ -1,0 +1,36 @@
+File: ./hwmcc20/aig-1.8/zipcpu-busdelay-p43.aig
+Command: ~/coding_env/abc/abc -c "&r ./hwmcc20/aig-1.8/zipcpu-busdelay-p43.aig; &put; fold; pdr -v"
+Started at: Fri 11 Apr 2025 05:33:40 PM CST
+----------------------------------------
+ABC command line: "&r ./hwmcc20/aig-1.8/zipcpu-busdelay-p43.aig; &put; fold; pdr -v".
+
+Converted 1 1-valued FFs and 367 DC-valued FFs.
+Warning: The number of inputs does not match the number of input names.
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 1                                                                 1     1      0.01 sec
+  2 : 0 9 14                                                              3    21      0.01 sec
+  3 : 0 6 14 27                                                           4    49      0.02 sec
+  4 : 0 6 14 24 38                                                        4    55      0.03 sec
+  5 : 0 6 14 33 26 50                                                     6    62      0.06 sec
+  6 : 0 6 14 30 15 1 50                                                   0    62      0.07 sec
+  7 : 0 6 14 30 14 1 0 50                                                 0    62      0.07 sec
+Invariant F[6] : 50 clauses with 48 flops (out of 660) (cex = 0, ave = 49.73)
+Verification of invariant with 50 clauses was successful.  Time =     0.00 sec
+Block =   15  Oblig =   215  Clause =   134  Call =  1592 (sat=68.0%)  Cex =   0  Start =   3
+SAT solving =     0.05 sec ( 56.28 %)
+  unsat     =     0.00 sec (  3.88 %)
+  sat       =     0.04 sec ( 52.40 %)
+Generalize  =     0.04 sec ( 48.01 %)
+Push clause =     0.01 sec ( 15.33 %)
+Ternary sim =     0.01 sec (  6.85 %)
+Containment =     0.00 sec (  0.25 %)
+CNF compute =     0.00 sec (  2.56 %)
+Refinement  =     0.00 sec (  0.00 %)
+TOTAL       =     0.08 sec (100.00 %)
+Property proved.  Time =     0.09 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 11 Apr 2025 05:33:40 PM CST
+========================================

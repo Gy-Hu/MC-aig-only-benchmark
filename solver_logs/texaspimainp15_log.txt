@@ -1,0 +1,31 @@
+File: ./hwmcc11/single/texaspimainp15.aig
+Command: ~/coding_env/abc/abc -c "&r ./hwmcc11/single/texaspimainp15.aig; &put; fold; pdr -v"
+Started at: Fri 11 Apr 2025 03:32:41 PM CST
+----------------------------------------
+ABC command line: "&r ./hwmcc11/single/texaspimainp15.aig; &put; fold; pdr -v".
+
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 1                                                                 1     1      0.01 sec
+  2 : 0 2 2                                                               2     8      0.01 sec
+  3 : 0 1 1 5                                                             2    11      0.01 sec
+  4 : 0 1 1 0 4                                                           0    11      0.02 sec
+Invariant F[3] : 4 clauses with 8 flops (out of 239) (cex = 0, ave = 15.20)
+Verification of invariant with 4 clauses was successful.  Time =     0.00 sec
+Block =    6  Oblig =    15  Clause =     8  Call =    78 (sat=41.0%)  Cex =   0  Start =   0
+SAT solving =     0.00 sec (  6.02 %)
+  unsat     =     0.00 sec (  2.24 %)
+  sat       =     0.00 sec (  3.78 %)
+Generalize  =     0.00 sec (  7.19 %)
+Push clause =     0.00 sec (  1.90 %)
+Ternary sim =     0.00 sec (  2.66 %)
+Containment =     0.00 sec (  0.00 %)
+CNF compute =     0.00 sec (  1.73 %)
+Refinement  =     0.00 sec (  0.00 %)
+TOTAL       =     0.02 sec (100.00 %)
+Property proved.  Time =     0.03 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 11 Apr 2025 03:32:41 PM CST
+========================================

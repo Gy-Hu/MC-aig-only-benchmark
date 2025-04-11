@@ -1,0 +1,48 @@
+File: ./hwmcc24/2024/hku/x-epic/a16-p148.aig
+Command: ~/coding_env/abc/abc -c "&r ./hwmcc24/2024/hku/x-epic/a16-p148.aig; &put; fold; pdr -v"
+Started at: Fri 11 Apr 2025 08:55:16 PM CST
+----------------------------------------
+ABC command line: "&r ./hwmcc24/2024/hku/x-epic/a16-p148.aig; &put; fold; pdr -v".
+
+Warning: The last 71 outputs are interpreted as constraints.
+Converted 173 1-valued FFs and 503 DC-valued FFs.
+Warning: The number of inputs does not match the number of flop names.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 1                                                                 1     1      0.01 sec
+  2 : 0 45 50                                                             5    60      0.06 sec
+  3 : 0 44 82 114                                                         9   100      0.22 sec
+  4 : 0 43 72 272 287                                                    14   178      0.98 sec
+  5 : 0 43 72 257 1230 1106                                              16   240      5.98 sec
+  6 : 0 43 68 218 967 2644 1863                                          18   277     17.64 sec
+  7 : 0 43 68 214 911 2023 4794 3109                                     32   325     47.06 sec
+  8 : 0 43 66 213 905 1917 3321 7492 4402                                28   352     99.88 sec
+  9 : 0 43 66 213 901 1910 3029 4348 6974 3359                           19   371    138.10 sec
+ 10 : 0 43 66 213 901 1908 3009 4209 2749 5798 3432                      11   377    169.86 sec
+ 11 : 0 43 66 213 901 1901 3009 4186 2425 1396 4492 4036                 10   377    194.87 sec
+ 12 : 0 43 66 213 901 1901 3009 4186 2413 1147 329 940 7230               3   377    214.58 sec
+ 13 : 0 43 66 213 901 1901 3009 4186 2413 1143 328 97 616 7455            3   377    229.75 sec
+ 14 : 0 43 66 213 901 1901 3009 4186 2413 1140 325 98 13 231 7827         2   377    244.34 sec
+ 15 : ... 66 213 901 1901 3009 4186 2413 1140 325 98 12 18 259 7789       3   377    258.24 sec
+ 16 : ... 213 901 1901 3009 4186 2413 1140 325 98 12 17 11 225 7811       2   377    272.14 sec
+ 17 : ... 213 901 1901 3009 4186 2413 1140 325 98 12 17 11 3 3 8028       0   377    286.13 sec
+ 18 : ... 901 1901 3009 4186 2413 1140 325 98 12 17 11 3 3 126 7903       2   377    299.90 sec
+ 19 : ... 901 1901 3009 4186 2413 1139 325 98 12 17 11 3 3 0 0 8023       0   377    313.83 sec
+Invariant F[17] : 8023 clauses with 313 flops (out of 439) (cex = 0, ave = 94.87)
+Verification of invariant with 8023 clauses was successful.  Time =     2.41 sec
+Block =   18  Oblig = 41144  Clause = 26286  Call =788909 (sat=60.1%)  Cex =   0  Start =2621
+SAT solving =   266.01 sec ( 84.11 %)
+  unsat     =   108.79 sec ( 34.40 %)
+  sat       =   157.22 sec ( 49.71 %)
+Generalize  =   123.68 sec ( 39.11 %)
+Push clause =   167.39 sec ( 52.93 %)
+Ternary sim =     5.64 sec (  1.78 %)
+Containment =    10.09 sec (  3.19 %)
+CNF compute =     9.70 sec (  3.07 %)
+Refinement  =     0.00 sec (  0.00 %)
+TOTAL       =   316.25 sec (100.00 %)
+Property proved.  Time =   316.27 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 11 Apr 2025 09:00:33 PM CST
+========================================

@@ -1,0 +1,32 @@
+File: ./others/fastfir/aig/fastfir-p004.aig
+Command: ~/coding_env/abc/abc -c "&r ./others/fastfir/aig/fastfir-p004.aig; &put; fold; pdr -v"
+Started at: Fri 11 Apr 2025 11:38:30 AM CST
+----------------------------------------
+ABC command line: "&r ./others/fastfir/aig/fastfir-p004.aig; &put; fold; pdr -v".
+
+Warning: The last 342 outputs are interpreted as constraints.
+Converted 34 1-valued FFs and 39 DC-valued FFs.
+Warning: The number of inputs does not match the number of input names.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 13                                                                1    13      0.08 sec
+  2 : 0 11 27                                                             2    30      0.19 sec
+  3 : 0 141 155 446                                                      11   282      3.28 sec
+  4 : 0 160 179 472 912                                                  17   339     10.51 sec
+  5 : 0 177 204 506 617 921                                               8   356     15.29 sec
+  6 : 0 204 219 449 445 752 1560                                          7   386     27.58 sec
+  7 : 0 244 254 456 414 787 1098 1850                                    28   526     42.53 sec
+  8 : 0 264 274 441 443 755 843 1010 2361                                19   549     60.47 sec
+  9 : 0 287 282 466 484 810 833 923 1401 2716                            28   563     84.56 sec
+ 10 : 0 338 310 558 589 964 991 934 1248 2095 3601                       42   686    137.06 sec
+ 11 : 0 411 378 843 855 1499 1647 1709 2188 3797 6378 12841              41   749    446.76 sec
+ 12 : 0 428 401 619 688 1302 1546 1659 2100 3512 6776 7707 16861         29   765    760.88 sec
+ 13 : ... 409 611 677 1340 1678 1728 2235 3712 6834 7873 11425 18048     18   778   1124.70 sec
+ 14 : ... 447 579 895 1076 1009 1354 2351 3778 4985 7634 8578 10494      18   785   1245.56 sec
+ 15 : ... 577 878 1041 953 1292 2033 2974 3486 4433 5389 5491 9367       22   791   1380.26 sec
+ 16 : ... 886 1081 995 1437 2205 3212 3840 4812 5879 7150 8992 15029     30   791   1815.66 sec
+ 17 : ... 1102 1594 2425 3428 3992 4861 5756 7005 8389 9681 17945        28   791   2347.83 sec
+----------------------------------------
+STATUS: TIMEOUT (exceeded 3600 seconds)
+Finished at: Fri 11 Apr 2025 12:38:30 PM CST
+========================================

@@ -1,0 +1,35 @@
+File: ./hwmcc11/single/mentorbm1p12.aig
+Command: ~/coding_env/abc/abc -c "&r ./hwmcc11/single/mentorbm1p12.aig; &put; fold; pdr -v"
+Started at: Fri 11 Apr 2025 03:18:35 PM CST
+----------------------------------------
+ABC command line: "&r ./hwmcc11/single/mentorbm1p12.aig; &put; fold; pdr -v".
+
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 1                                                                 1     1      0.03 sec
+  2 : 0 3 3                                                               3     5      0.04 sec
+  3 : 0 1 1 2                                                             0     5      0.04 sec
+  4 : 0 1 1 1 1                                                           0     5      0.04 sec
+  5 : 0 25 32 26 20 31                                                   25   113      0.32 sec
+  6 : 0 13 12 16 13 7 25                                                  0   113      0.33 sec
+  7 : 0 13 12 16 13 7 8 17                                                0   113      0.35 sec
+  8 : 0 13 13 31 47 58 33 26 56                                          44   148      0.80 sec
+  9 : 0 13 12 26 38 54 21 15 12 48                                        0   148      0.84 sec
+ 10 : 0 97 165 261 396 868 1632 1058 109 144 401                       1037   379     27.67 sec
+Block =    5  Oblig = 11054  Clause =  5219  Call = 95669 (sat=71.1%)  Cex =   0  Start = 317
+SAT solving =    16.21 sec ( 58.56 %)
+  unsat     =     1.19 sec (  4.31 %)
+  sat       =    15.02 sec ( 54.25 %)
+Generalize  =    18.71 sec ( 67.59 %)
+Push clause =     0.12 sec (  0.43 %)
+Ternary sim =     3.14 sec ( 11.34 %)
+Containment =     4.39 sec ( 15.84 %)
+CNF compute =     0.96 sec (  3.47 %)
+Refinement  =     0.00 sec (  0.01 %)
+TOTAL       =    27.68 sec (100.00 %)
+Output 0 of miter "./hwmcc11/single/mentorbm1p12" was asserted in frame 12.  Time =    27.71 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 11 Apr 2025 03:19:02 PM CST
+========================================

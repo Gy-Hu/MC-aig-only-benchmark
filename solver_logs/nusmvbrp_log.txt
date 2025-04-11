@@ -1,0 +1,50 @@
+File: ./hwmcc11/single/nusmvbrp.aig
+Command: ~/coding_env/abc/abc -c "&r ./hwmcc11/single/nusmvbrp.aig; &put; fold; pdr -v"
+Started at: Fri 11 Apr 2025 03:47:00 PM CST
+----------------------------------------
+ABC command line: "&r ./hwmcc11/single/nusmvbrp.aig; &put; fold; pdr -v".
+
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 1                                                                 1     2      0.00 sec
+  2 : 0 7 6                                                               3    11      0.00 sec
+  3 : 0 11 17 12                                                          5    25      0.01 sec
+  4 : 0 11 12 9 4                                                         0    25      0.01 sec
+  5 : 0 11 12 9 9 5                                                       6    26      0.01 sec
+  6 : 0 14 13 9 8 21 23                                                  10    34      0.03 sec
+  7 : 0 15 13 8 6 22 24 18                                               10    34      0.04 sec
+  8 : 0 15 13 8 5 8 30 34 32                                              7    38      0.06 sec
+  9 : 0 15 13 8 5 8 20 34 44 31                                          13    38      0.08 sec
+ 10 : 0 15 13 8 5 8 21 15 20 35 37                                        7    38      0.09 sec
+ 11 : 0 18 15 9 6 10 25 30 49 86 115 122                                 32    43      0.20 sec
+ 12 : 0 18 15 9 5 8 20 20 20 34 49 47 110                                 6    43      0.22 sec
+ 13 : 0 18 15 9 5 8 20 19 17 36 53 48 73 118                             11    43      0.27 sec
+ 14 : 0 18 15 9 5 8 20 19 17 36 43 36 51 76 89                            9    43      0.30 sec
+ 15 : 0 18 15 9 5 8 20 19 17 35 42 35 47 70 68 73                         8    43      0.34 sec
+ 16 : 0 18 15 9 5 8 17 19 17 35 42 32 39 66 75 94 86                     15    43      0.42 sec
+ 17 : 0 18 15 9 5 8 17 19 16 35 41 24 26 44 78 130 154 154               34    43      0.58 sec
+ 18 : 0 18 15 9 5 8 17 19 16 35 41 22 23 30 37 30 16 20 217               9    43      0.63 sec
+ 19 : 0 18 15 9 5 8 17 19 16 35 41 22 23 29 36 21 11 7 3 228              5    43      0.66 sec
+ 20 : 0 18 15 9 5 8 17 19 16 35 41 22 23 29 36 21 11 6 2 2 230            5    43      0.68 sec
+ 21 : 0 18 15 9 5 8 17 19 16 35 41 22 23 29 36 21 9 5 1 1 3 226           0    43      0.70 sec
+ 22 : 0 18 15 9 5 8 17 19 16 35 41 22 23 29 36 21 9 6 2 1 3 1 234         6    43      0.72 sec
+ 23 : ... 18 15 9 5 8 17 19 16 35 41 22 23 29 36 21 9 3 0 0 0 0 0 235     0    43      0.74 sec
+Invariant F[18] : 235 clauses with 39 flops (out of 52) (cex = 0, ave = 27.19)
+Verification of invariant with 235 clauses was successful.  Time =     0.00 sec
+Block =   75  Oblig =  2376  Clause =  1255  Call = 20427 (sat=58.4%)  Cex =   0  Start =  54
+SAT solving =     0.59 sec ( 78.65 %)
+  unsat     =     0.12 sec ( 15.64 %)
+  sat       =     0.47 sec ( 63.01 %)
+Generalize  =     0.38 sec ( 50.01 %)
+Push clause =     0.24 sec ( 31.32 %)
+Ternary sim =     0.04 sec (  4.74 %)
+Containment =     0.00 sec (  0.35 %)
+CNF compute =     0.01 sec (  1.97 %)
+Refinement  =     0.00 sec (  0.00 %)
+TOTAL       =     0.75 sec (100.00 %)
+Property proved.  Time =     0.76 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 11 Apr 2025 03:47:01 PM CST
+========================================

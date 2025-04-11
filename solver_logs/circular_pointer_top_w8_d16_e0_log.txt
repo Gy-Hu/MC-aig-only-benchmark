@@ -1,0 +1,46 @@
+File: ./hwmcc1920sat/circular_pointer_top_w8_d16_e0.aig
+Command: ~/coding_env/abc/abc -c "&r ./hwmcc1920sat/circular_pointer_top_w8_d16_e0.aig; &put; fold; pdr -v"
+Started at: Fri 11 Apr 2025 04:00:33 PM CST
+----------------------------------------
+ABC command line: "&r ./hwmcc1920sat/circular_pointer_top_w8_d16_e0.aig; &put; fold; pdr -v".
+
+Warning: The last 3 outputs are interpreted as constraints.
+Converted 1 1-valued FFs and 170 DC-valued FFs.
+Warning: The number of inputs does not match the number of input names.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 2                                                                 1     4      0.00 sec
+  2 : 0 10 39                                                             4    51      0.02 sec
+  3 : 0 5 29 59                                                           3    64      0.05 sec
+  4 : 0 4 27 75 102                                                       5    71      0.12 sec
+  5 : 0 4 26 67 127 148                                                   4    78      0.26 sec
+  6 : 0 4 26 68 111 310 320                                               8    85      0.70 sec
+  7 : 0 4 26 68 109 296 443 293                                           8    92      1.16 sec
+  8 : 0 4 26 68 109 300 422 698 535                                      24   100      2.43 sec
+  9 : 0 4 26 68 109 273 398 622 888 643                                  16   106      3.88 sec
+ 10 : 0 4 26 69 107 270 390 511 697 1257 796                             68   113      6.30 sec
+ 11 : 0 4 26 69 107 270 381 489 622 1108 1597 1035                       47   120     10.00 sec
+ 12 : 0 4 26 69 107 255 360 459 562 845 1065 1608 804                    21   128     12.41 sec
+ 13 : 0 4 26 70 109 258 363 472 600 931 1112 1476 2057 1289             185   134     18.35 sec
+ 14 : 0 4 26 52 99 144 359 433 505 746 911 1054 1551 2377 1356           40   141     24.42 sec
+ 15 : ... 4 26 52 99 144 359 433 505 740 825 884 1387 1686 2501 1193     43   148     30.04 sec
+ 16 : ... 52 99 144 359 433 505 742 828 862 1394 1591 2235 3223 1947     51   155     41.44 sec
+ 17 : ... 144 359 433 503 739 836 808 1358 1415 1859 3268 4084 2864      23   162     59.16 sec
+ 18 : ... 362 441 514 761 936 918 1487 1585 2093 3349 3769 5158 2405    406   170     84.50 sec
+ 19 : ... 353 470 649 845 775 1064 1216 1494 1856 2370 3381 3704 754    102   170     95.06 sec
+Block = 4591  Oblig = 47875  Clause = 32777  Call =731244 (sat=73.2%)  Cex =   0  Start =2414
+SAT solving =    78.98 sec ( 83.08 %)
+  unsat     =    18.87 sec ( 19.85 %)
+  sat       =    60.11 sec ( 63.23 %)
+Generalize  =    61.36 sec ( 64.55 %)
+Push clause =    21.70 sec ( 22.82 %)
+Ternary sim =     1.28 sec (  1.35 %)
+Containment =     2.37 sec (  2.49 %)
+CNF compute =     3.83 sec (  4.03 %)
+Refinement  =     0.00 sec (  0.00 %)
+TOTAL       =    95.07 sec (100.00 %)
+Output 0 of miter "./hwmcc1920sat/circular_pointer_top_w8_d16_e0" was asserted in frame 31.  Time =    95.08 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 11 Apr 2025 04:02:09 PM CST
+========================================

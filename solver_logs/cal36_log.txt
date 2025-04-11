@@ -1,0 +1,30 @@
+File: ./avr/industry/cal36/cal36.aig
+Command: ~/coding_env/abc/abc -c "&r ./avr/industry/cal36/cal36.aig; &put; fold; pdr -v"
+Started at: Fri 11 Apr 2025 04:36:17 PM CST
+----------------------------------------
+ABC command line: "&r ./avr/industry/cal36/cal36.aig; &put; fold; pdr -v".
+
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 1                                                                 1     1      0.01 sec
+  2 : 0 1 76                                                              1    78      0.09 sec
+  3 : 0 1 0 76                                                            0    78      0.09 sec
+Invariant F[2] : 76 clauses with 78 flops (out of 143) (cex = 0, ave = 16.78)
+Verification of invariant with 76 clauses was successful.  Time =     0.00 sec
+Block =   77  Oblig =    77  Clause =    77  Call =   677 (sat=56.6%)  Cex =   0  Start =   1
+SAT solving =     0.04 sec ( 43.62 %)
+  unsat     =     0.01 sec (  5.50 %)
+  sat       =     0.04 sec ( 38.12 %)
+Generalize  =     0.03 sec ( 30.42 %)
+Push clause =     0.00 sec (  2.12 %)
+Ternary sim =     0.03 sec ( 28.57 %)
+Containment =     0.00 sec (  0.02 %)
+CNF compute =     0.00 sec (  1.08 %)
+Refinement  =     0.00 sec (  0.00 %)
+TOTAL       =     0.10 sec (100.00 %)
+Property proved.  Time =     0.10 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 11 Apr 2025 04:36:17 PM CST
+========================================

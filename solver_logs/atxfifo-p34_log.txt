@@ -1,0 +1,33 @@
+File: ./others/atxfifo/aig/atxfifo-p34.aig
+Command: ~/coding_env/abc/abc -c "&r ./others/atxfifo/aig/atxfifo-p34.aig; &put; fold; pdr -v"
+Started at: Fri 11 Apr 2025 11:29:11 AM CST
+----------------------------------------
+ABC command line: "&r ./others/atxfifo/aig/atxfifo-p34.aig; &put; fold; pdr -v".
+
+Warning: The last 12 outputs are interpreted as constraints.
+Converted 4 1-valued FFs and 57 DC-valued FFs.
+Warning: The number of inputs does not match the number of input names.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 6                                                                 1     6      0.00 sec
+  2 : 0 6 2                                                               1     9      0.00 sec
+  3 : 0 6 1 2                                                             1    10      0.00 sec
+  4 : 0 6 1 0 2                                                           0    10      0.01 sec
+Invariant F[3] : 2 clauses with 4 flops (out of 112) (cex = 0, ave = 9.56)
+Verification of invariant with 2 clauses was successful.  Time =     0.00 sec
+Block =    9  Oblig =     9  Clause =     9  Call =    49 (sat=65.3%)  Cex =   0  Start =   0
+SAT solving =     0.00 sec (  3.56 %)
+  unsat     =     0.00 sec (  0.17 %)
+  sat       =     0.00 sec (  3.39 %)
+Generalize  =     0.00 sec (  0.68 %)
+Push clause =     0.00 sec (  2.15 %)
+Ternary sim =     0.00 sec (  1.23 %)
+Containment =     0.00 sec (  0.01 %)
+CNF compute =     0.00 sec (  0.39 %)
+Refinement  =     0.00 sec (  0.00 %)
+TOTAL       =     0.01 sec (100.00 %)
+Property proved.  Time =     0.02 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 11 Apr 2025 11:29:11 AM CST
+========================================

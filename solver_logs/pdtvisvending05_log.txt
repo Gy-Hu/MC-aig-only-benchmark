@@ -1,0 +1,36 @@
+File: ./hwmcc08/pdtvisvending05.aig
+Command: ~/coding_env/abc/abc -c "&r ./hwmcc08/pdtvisvending05.aig; &put; fold; pdr -v"
+Started at: Fri 11 Apr 2025 11:15:50 AM CST
+----------------------------------------
+ABC command line: "&r ./hwmcc08/pdtvisvending05.aig; &put; fold; pdr -v".
+
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 1                                                                 1     1      0.00 sec
+  2 : 0 4 10                                                              3    10      0.01 sec
+  3 : 0 4 4 8                                                             1    10      0.01 sec
+  4 : 0 5 10 14 15                                                        6    12      0.02 sec
+  5 : 0 5 8 9 10 12                                                       2    12      0.02 sec
+  6 : 0 5 8 11 12 14 17                                                   9    12      0.03 sec
+  7 : 0 5 8 9 8 5 3 21                                                    0    12      0.03 sec
+  8 : 0 5 8 9 11 8 6 7 23                                                 7    12      0.04 sec
+  9 : 0 4 7 8 8 4 1 0 0 30                                                0    12      0.05 sec
+Invariant F[7] : 30 clauses with 12 flops (out of 34) (cex = 0, ave = 8.68)
+Verification of invariant with 30 clauses was successful.  Time =     0.00 sec
+Block =   22  Oblig =   145  Clause =    94  Call =  1121 (sat=62.1%)  Cex =   0  Start =   0
+SAT solving =     0.03 sec ( 52.90 %)
+  unsat     =     0.01 sec ( 12.20 %)
+  sat       =     0.02 sec ( 40.70 %)
+Generalize  =     0.02 sec ( 36.15 %)
+Push clause =     0.01 sec ( 18.93 %)
+Ternary sim =     0.00 sec (  4.20 %)
+Containment =     0.00 sec (  0.03 %)
+CNF compute =     0.00 sec (  1.80 %)
+Refinement  =     0.00 sec (  0.00 %)
+TOTAL       =     0.06 sec (100.00 %)
+Property proved.  Time =     0.06 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 11 Apr 2025 11:15:50 AM CST
+========================================

@@ -1,0 +1,26 @@
+File: ./hwmcc24/2024/hku/refinement_checking/bv/ILA_Piccolo_SRLI_sanity.aig
+Command: ~/coding_env/abc/abc -c "&r ./hwmcc24/2024/hku/refinement_checking/bv/ILA_Piccolo_SRLI_sanity.aig; &put; fold; pdr -v"
+Started at: Fri 11 Apr 2025 08:51:53 PM CST
+----------------------------------------
+ABC command line: "&r ./hwmcc24/2024/hku/refinement_checking/bv/ILA_Piccolo_SRLI_sanity.aig; &put; fold; pdr -v".
+
+Warning: The last output is interpreted as a constraint.
+Converted 31 1-valued FFs and 7754 DC-valued FFs.
+Warning: The number of inputs does not match the number of input names.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 13                                                                1    13      0.65 sec
+  2 : 0 9 177                                                             2   121     11.83 sec
+  3 : 0 7 101 215                                                         4   133     19.92 sec
+  4 : 0 6 4 2 242                                                         0   133     20.02 sec
+  5 : 0 7 12 21 124 241                                                  21   156     29.29 sec
+  6 : 0 11 16 17 24 117 218                                              21   161     37.18 sec
+  7 : 0 4 7 5 4 10 18 64                                                  2   162     37.80 sec
+  8 : 0 5 8 5 4 13 10 26 76                                              10   168     41.12 sec
+  9 : 0 5 8 5 4 12 9 23 37 47                                             1   169     41.97 sec
+ 10 : 0 6 11 10 5 14 15 31 85 171 430                                    29   244     94.55 sec
+ 11 : 0 6 11 8 5 8 6 16 60 126 314 22983                                  4  2273   1231.14 sec
+----------------------------------------
+STATUS: TIMEOUT (exceeded 3600 seconds)
+Finished at: Fri 11 Apr 2025 09:51:53 PM CST
+========================================

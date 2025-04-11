@@ -1,0 +1,36 @@
+File: ./hwmcc14/single/oski1rub03i.aig
+Command: ~/coding_env/abc/abc -c "&r ./hwmcc14/single/oski1rub03i.aig; &put; fold; pdr -v"
+Started at: Fri 11 Apr 2025 02:23:15 PM CST
+----------------------------------------
+ABC command line: "&r ./hwmcc14/single/oski1rub03i.aig; &put; fold; pdr -v".
+
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 1                                                                 1     1      0.19 sec
+  2 : 0 1 1                                                               1     2      0.28 sec
+  3 : 0 1 1 1                                                             1     4      0.39 sec
+  4 : 0 1 1 48 142                                                        2   184     23.51 sec
+  5 : 0 1 1 44 83 55                                                      0   184     24.92 sec
+  6 : 0 1 1 44 83 98 1616                                                 2   564    324.91 sec
+  7 : 0 1 1 44 83 90 3 1585                                               0   564    328.05 sec
+  8 : 0 1 1 44 83 90 3 1 1584                                             0   564    331.16 sec
+  9 : 0 1 1 44 83 90 3 1 0 1584                                           0   564    334.14 sec
+Invariant F[8] : 1584 clauses with 520 flops (out of 13594) (cex = 0, ave = 2070.41)
+Verification of invariant with 1584 clauses was successful.  Time =     0.29 sec
+Block =   55  Oblig =  3508  Clause =  1851  Call = 21826 (sat=55.3%)  Cex =   0  Start =  69
+SAT solving =   144.29 sec ( 43.14 %)
+  unsat     =     6.08 sec (  1.82 %)
+  sat       =   138.22 sec ( 41.33 %)
+Generalize  =   296.88 sec ( 88.77 %)
+Push clause =    12.17 sec (  3.64 %)
+Ternary sim =   164.30 sec ( 49.12 %)
+Containment =     1.52 sec (  0.46 %)
+CNF compute =     3.20 sec (  0.96 %)
+Refinement  =     0.00 sec (  0.00 %)
+TOTAL       =   334.45 sec (100.00 %)
+Property proved.  Time =   334.59 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 11 Apr 2025 02:28:50 PM CST
+========================================

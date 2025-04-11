@@ -1,0 +1,47 @@
+File: ./hwmcc20/aig-1.8/qspiflash_qflexpress_divfive-p029.aig
+Command: ~/coding_env/abc/abc -c "&r ./hwmcc20/aig-1.8/qspiflash_qflexpress_divfive-p029.aig; &put; fold; pdr -v"
+Started at: Fri 11 Apr 2025 05:48:01 PM CST
+----------------------------------------
+ABC command line: "&r ./hwmcc20/aig-1.8/qspiflash_qflexpress_divfive-p029.aig; &put; fold; pdr -v".
+
+Converted 5 1-valued FFs and 260 DC-valued FFs.
+Warning: The number of inputs does not match the number of input names.
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 1                                                                 1     1      0.00 sec
+  2 : 0 4 9                                                               4    10      0.01 sec
+  3 : 0 2 1 6                                                             0    10      0.01 sec
+  4 : 0 2 1 1 5                                                           0    10      0.01 sec
+  5 : 0 2 1 1 3 2                                                         0    10      0.01 sec
+  6 : 0 3 6 6 16 24 33                                                   17    31      0.03 sec
+  7 : 0 3 4 4 3 10 7 21                                                   0    31      0.03 sec
+  8 : 0 3 4 4 3 10 6 4 17                                                 0    31      0.04 sec
+  9 : 0 3 4 4 3 10 6 4 2 15                                               0    31      0.04 sec
+ 10 : 0 3 4 4 3 10 6 4 2 1 14                                             0    31      0.04 sec
+ 11 : 0 4 13 15 15 34 49 33 17 18 15 166                                 26    92      0.26 sec
+ 12 : 0 4 13 15 11 20 26 26 4 13 5 2 161                                  0    92      0.27 sec
+ 13 : 0 4 14 37 33 68 133 152 112 142 116 100 85 479                     52   106      1.13 sec
+ 14 : 0 4 12 12 5 38 53 43 18 19 14 3 18 8 282                            0   106      1.16 sec
+ 15 : 0 4 12 12 5 38 49 41 15 19 12 3 14 6 5 277                          0   106      1.17 sec
+ 16 : 0 4 12 12 5 38 49 41 15 19 12 3 13 6 5 7 267                        0   106      1.19 sec
+ 17 : 0 4 12 12 5 38 49 41 15 19 12 3 13 6 5 8 3 271                      4   106      1.21 sec
+ 18 : 0 4 12 12 5 38 49 39 15 19 12 3 13 6 5 1 0 0 277                    0   106      1.22 sec
+Invariant F[16] : 277 clauses with 103 flops (out of 546) (cex = 0, ave = 39.01)
+Verification of invariant with 277 clauses was successful.  Time =     0.00 sec
+Block =   23  Oblig =  3680  Clause =  1604  Call = 26286 (sat=58.7%)  Cex =   0  Start =  79
+SAT solving =     0.88 sec ( 71.40 %)
+  unsat     =     0.13 sec ( 10.32 %)
+  sat       =     0.75 sec ( 61.07 %)
+Generalize  =     0.82 sec ( 66.37 %)
+Push clause =     0.12 sec (  9.50 %)
+Ternary sim =     0.11 sec (  8.79 %)
+Containment =     0.01 sec (  1.04 %)
+CNF compute =     0.03 sec (  2.34 %)
+Refinement  =     0.00 sec (  0.00 %)
+TOTAL       =     1.23 sec (100.00 %)
+Property proved.  Time =     1.24 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 11 Apr 2025 05:48:02 PM CST
+========================================

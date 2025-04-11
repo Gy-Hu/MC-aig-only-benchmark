@@ -1,0 +1,38 @@
+File: ./hwmcc1920sat/circular_pointer_top_w128_d8_e0.aig
+Command: ~/coding_env/abc/abc -c "&r ./hwmcc1920sat/circular_pointer_top_w128_d8_e0.aig; &put; fold; pdr -v"
+Started at: Fri 11 Apr 2025 03:58:58 PM CST
+----------------------------------------
+ABC command line: "&r ./hwmcc1920sat/circular_pointer_top_w128_d8_e0.aig; &put; fold; pdr -v".
+
+Warning: The last 3 outputs are interpreted as constraints.
+Converted 1 1-valued FFs and 1302 DC-valued FFs.
+Warning: The number of inputs does not match the number of input names.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 2                                                                 1     4      0.02 sec
+  2 : 0 9 272                                                             3   274      0.68 sec
+  3 : 0 6 268 615                                                         4   402      3.01 sec
+  4 : 0 6 267 621 1245                                                    4   529      8.94 sec
+  5 : 0 7 270 367 1796 1928                                              10   657     21.13 sec
+  6 : 0 7 270 363 1789 3174 2955                                          6   790     45.23 sec
+  7 : 0 7 270 363 1792 2413 4180 3166                                     9   919     71.54 sec
+  8 : 0 7 270 363 1790 2168 2925 6276 5401                               16  1046    132.83 sec
+  9 : 0 8 272 366 1864 2184 2519 4305 8393 7699                          15  1174    227.92 sec
+ 10 : 0 9 275 373 1889 1488 2730 3835 7461 11500 8563                    42  1302    367.91 sec
+ 11 : 0 9 280 393 1940 1496 2683 3895 7339 5942 10777 1912              101  1302    415.55 sec
+Block =16240  Oblig = 64619  Clause = 46475  Call =725245 (sat=80.8%)  Cex =   0  Start =2359
+SAT solving =   318.47 sec ( 76.64 %)
+  unsat     =    22.41 sec (  5.39 %)
+  sat       =   296.06 sec ( 71.24 %)
+Generalize  =   260.19 sec ( 62.61 %)
+Push clause =    50.48 sec ( 12.15 %)
+Ternary sim =    26.02 sec (  6.26 %)
+Containment =     8.82 sec (  2.12 %)
+CNF compute =     8.49 sec (  2.04 %)
+Refinement  =     0.00 sec (  0.00 %)
+TOTAL       =   415.55 sec (100.00 %)
+Output 0 of miter "./hwmcc1920sat/circular_pointer_top_w128_d8_e0" was asserted in frame 20.  Time =   415.58 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 11 Apr 2025 04:05:53 PM CST
+========================================

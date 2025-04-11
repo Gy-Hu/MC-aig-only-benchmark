@@ -1,0 +1,23 @@
+File: ./hwmcc1920ns/picorv32-pcregs-p0.aig
+Command: ~/coding_env/abc/abc -c "&r ./hwmcc1920ns/picorv32-pcregs-p0.aig; &put; fold; pdr -v"
+Started at: Fri 11 Apr 2025 06:52:50 PM CST
+----------------------------------------
+ABC command line: "&r ./hwmcc1920ns/picorv32-pcregs-p0.aig; &put; fold; pdr -v".
+
+Converted 0 1-valued FFs and 2113 DC-valued FFs.
+Warning: The number of inputs does not match the number of input names.
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 1                                                                 1     1      0.04 sec
+  2 : 0 4 4                                                               3     7      0.05 sec
+  3 : 0 2 2 3                                                             0     7      0.05 sec
+  4 : 0 2 1 1 2                                                           0     7      0.05 sec
+  5 : 0 3 12 20 46 76                                                    14    81      0.27 sec
+  6 : 0 3 7 16 31 26 46                                                   0    81      0.28 sec
+  7 : 0 11 21 44 90 107 86 231                                           33   151      1.51 sec
+  8 : 0 10 8 18 64 78 64 51 245                                          14   187      1.83 sec
+----------------------------------------
+STATUS: TIMEOUT (exceeded 3600 seconds)
+Finished at: Fri 11 Apr 2025 07:52:50 PM CST
+========================================

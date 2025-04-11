@@ -1,0 +1,38 @@
+File: ./hwmcc-appr/6s216rb0.aig
+Command: ~/coding_env/abc/abc -c "&r ./hwmcc-appr/6s216rb0.aig; &put; fold; pdr -v"
+Started at: Fri 11 Apr 2025 01:27:20 AM CST
+----------------------------------------
+ABC command line: "&r ./hwmcc-appr/6s216rb0.aig; &put; fold; pdr -v".
+
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 1                                                                 1     1      0.01 sec
+  2 : 0 2 2                                                               2     4      0.01 sec
+  3 : 0 41 74 84                                                         45    92      0.11 sec
+  4 : 0 14 16 5 74                                                        0    92      0.11 sec
+  5 : 0 14 16 5 6 68                                                      0    92      0.12 sec
+  6 : 0 14 16 5 6 27 41                                                   0    92      0.12 sec
+  7 : 0 14 16 8 9 32 33 40                                               21   109      0.17 sec
+  8 : 0 2 4 4 2 5 6 16 66                                                 0   109      0.17 sec
+  9 : 0 6 8 8 6 6 14 27 38 102                                           16   149      0.29 sec
+ 10 : 0 4 7 8 6 7 11 16 29 28 92                                         11   150      0.32 sec
+ 11 : 0 4 7 8 6 7 11 15 28 27 20 70                                       0   150      0.34 sec
+ 12 : 0 4 7 8 6 7 11 15 31 46 58 85 230                                  18   250      0.93 sec
+ 13 : 0 7 13 20 27 38 38 56 76 127 121 71 65 219                        116   310      1.76 sec
+Block =    8  Oblig =  2764  Clause =  1115  Call = 10379 (sat=57.5%)  Cex =   0  Start =  27
+SAT solving =     0.99 sec ( 56.27 %)
+  unsat     =     0.07 sec (  3.82 %)
+  sat       =     0.93 sec ( 52.44 %)
+Generalize  =     1.13 sec ( 63.93 %)
+Push clause =     0.13 sec (  7.25 %)
+Ternary sim =     0.35 sec ( 19.93 %)
+Containment =     0.03 sec (  1.82 %)
+CNF compute =     0.06 sec (  3.13 %)
+Refinement  =     0.00 sec (  0.03 %)
+TOTAL       =     1.77 sec (100.00 %)
+Output 0 of miter "./hwmcc-appr/6s216rb0" was asserted in frame 14.  Time =     1.78 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 11 Apr 2025 01:27:22 AM CST
+========================================

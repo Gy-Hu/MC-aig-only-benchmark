@@ -1,0 +1,39 @@
+File: ./hwmcc11/single/prodconspold4.aig
+Command: ~/coding_env/abc/abc -c "&r ./hwmcc11/single/prodconspold4.aig; &put; fold; pdr -v"
+Started at: Fri 11 Apr 2025 03:19:40 PM CST
+----------------------------------------
+ABC command line: "&r ./hwmcc11/single/prodconspold4.aig; &put; fold; pdr -v".
+
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 5                                                                 1     5      0.00 sec
+  2 : 0 10 12                                                             5    17      0.01 sec
+  3 : 0 8 16 22                                                           5    25      0.01 sec
+  4 : 0 8 16 22 27                                                        4    25      0.02 sec
+  5 : 0 8 14 25 46 39                                                     5    29      0.05 sec
+  6 : 0 8 14 27 32 33 40                                                  6    33      0.07 sec
+  7 : 0 8 14 22 26 24 33 42                                               7    34      0.09 sec
+  8 : 0 8 14 22 24 22 25 26 40                                            3    34      0.10 sec
+  9 : 0 8 14 22 31 33 44 53 68 96                                        20    47      0.20 sec
+ 10 : 0 8 11 19 18 22 28 36 57 69 88                                     10    47      0.25 sec
+ 11 : 0 8 11 20 20 23 28 46 62 80 71 95                                  17    49      0.33 sec
+ 12 : 0 8 10 11 12 14 14 20 29 38 37 33 103                              10    49      0.37 sec
+ 13 : 0 8 10 11 12 14 14 20 25 43 47 51 51 115                           11    49      0.43 sec
+ 14 : 0 8 11 12 12 14 15 24 29 38 44 42 42 35 93                         24    49      0.47 sec
+Block =  223  Oblig =  1559  Clause =   834  Call = 12151 (sat=66.0%)  Cex =   0  Start =  33
+SAT solving =     0.34 sec ( 72.91 %)
+  unsat     =     0.04 sec (  8.99 %)
+  sat       =     0.30 sec ( 63.92 %)
+Generalize  =     0.29 sec ( 62.32 %)
+Push clause =     0.08 sec ( 17.29 %)
+Ternary sim =     0.05 sec ( 10.78 %)
+Containment =     0.00 sec (  0.62 %)
+CNF compute =     0.01 sec (  2.04 %)
+Refinement  =     0.00 sec (  0.02 %)
+TOTAL       =     0.47 sec (100.00 %)
+Output 0 of miter "./hwmcc11/single/prodconspold4" was asserted in frame 27.  Time =     0.48 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 11 Apr 2025 03:19:40 PM CST
+========================================

@@ -1,0 +1,30 @@
+File: ./avr/industry/gen47/gen47.aig
+Command: ~/coding_env/abc/abc -c "&r ./avr/industry/gen47/gen47.aig; &put; fold; pdr -v"
+Started at: Fri 11 Apr 2025 05:14:29 PM CST
+----------------------------------------
+ABC command line: "&r ./avr/industry/gen47/gen47.aig; &put; fold; pdr -v".
+
+Converted 0 1-valued FFs and 514 DC-valued FFs.
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 513                                                               1   515      0.55 sec
+  2 : 0 0 513                                                             0   515      0.55 sec
+Invariant F[1] : 513 clauses with 515 flops (out of 517) (cex = 0, ave = 5.99)
+Verification of invariant with 513 clauses was successful.  Time =     0.00 sec
+Block =  513  Oblig =   513  Clause =   513  Call =  4102 (sat=62.5%)  Cex =   0  Start =  11
+SAT solving =     0.34 sec ( 60.64 %)
+  unsat     =     0.01 sec (  1.09 %)
+  sat       =     0.34 sec ( 59.55 %)
+Generalize  =     0.26 sec ( 46.97 %)
+Push clause =     0.00 sec (  0.77 %)
+Ternary sim =     0.12 sec ( 21.82 %)
+Containment =     0.00 sec (  0.28 %)
+CNF compute =     0.00 sec (  0.75 %)
+Refinement  =     0.00 sec (  0.00 %)
+TOTAL       =     0.56 sec (100.00 %)
+Property proved.  Time =     0.57 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 11 Apr 2025 05:14:29 PM CST
+========================================

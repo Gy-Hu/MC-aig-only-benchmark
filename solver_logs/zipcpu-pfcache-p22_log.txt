@@ -1,0 +1,41 @@
+File: ./hwmcc20/aig-1.8/zipcpu-pfcache-p22.aig
+Command: ~/coding_env/abc/abc -c "&r ./hwmcc20/aig-1.8/zipcpu-pfcache-p22.aig; &put; fold; pdr -v"
+Started at: Fri 11 Apr 2025 05:49:21 PM CST
+----------------------------------------
+ABC command line: "&r ./hwmcc20/aig-1.8/zipcpu-pfcache-p22.aig; &put; fold; pdr -v".
+
+Converted 6 1-valued FFs and 2860 DC-valued FFs.
+Warning: The number of inputs does not match the number of input names.
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 7                                                                 1     8      0.03 sec
+  2 : 0 5 15                                                              2    16      0.04 sec
+  3 : 0 7 15 50                                                           3    61      0.05 sec
+  4 : 0 3 4 6 43                                                          0    61      0.05 sec
+  5 : 0 3 4 6 9 43                                                        2    65      0.06 sec
+  6 : 0 8 20 25 39 45 132                                                19   118      0.18 sec
+  7 : 0 4 4 3 4 9 13 108                                                  1   119      0.19 sec
+  8 : 0 4 4 3 4 9 13 18 97                                                3   120      0.20 sec
+  9 : 0 4 4 3 4 9 13 22 18 107                                            6   120      0.23 sec
+ 10 : 0 4 4 3 4 9 13 20 15 6 99                                           0   120      0.24 sec
+ 11 : 0 4 4 3 4 9 16 24 22 17 19 138                                     16   131      0.31 sec
+ 12 : 0 4 4 3 4 8 13 17 11 2 0 0 131                                      0   131      0.32 sec
+Invariant F[10] : 131 clauses with 120 flops (out of 3208) (cex = 0, ave = 77.92)
+Verification of invariant with 131 clauses was successful.  Time =     0.00 sec
+Block =   46  Oblig =   665  Clause =   415  Call =  4538 (sat=58.1%)  Cex =   0  Start =  10
+SAT solving =     0.17 sec ( 53.21 %)
+  unsat     =     0.01 sec (  3.64 %)
+  sat       =     0.16 sec ( 49.57 %)
+Generalize  =     0.18 sec ( 55.85 %)
+Push clause =     0.04 sec ( 10.99 %)
+Ternary sim =     0.05 sec ( 15.67 %)
+Containment =     0.00 sec (  0.65 %)
+CNF compute =     0.01 sec (  3.44 %)
+Refinement  =     0.00 sec (  0.00 %)
+TOTAL       =     0.33 sec (100.00 %)
+Property proved.  Time =     0.34 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 11 Apr 2025 05:49:21 PM CST
+========================================

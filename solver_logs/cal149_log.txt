@@ -1,0 +1,34 @@
+File: ./hwmcc1920cal/cal149.aig
+Command: ~/coding_env/abc/abc -c "&r ./hwmcc1920cal/cal149.aig; &put; fold; pdr -v"
+Started at: Fri 11 Apr 2025 06:48:25 PM CST
+----------------------------------------
+ABC command line: "&r ./hwmcc1920cal/cal149.aig; &put; fold; pdr -v".
+
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 1                                                                 1     1      0.09 sec
+  2 : 0 1 32                                                              1    33      0.25 sec
+  3 : 0 1 163 298                                                         7   328      3.10 sec
+  4 : 0 1 120 143 424                                                     6   359      6.40 sec
+  5 : 0 1 69 93 91 548                                                    6   359      8.97 sec
+  6 : 0 1 28 19 23 16 556                                                 6   360     10.28 sec
+  7 : 0 1 19 0 0 0 0 543                                                  0   360     10.82 sec
+Invariant F[3] : 543 clauses with 359 flops (out of 718) (cex = 0, ave = 32.07)
+Verification of invariant with 543 clauses was successful.  Time =     0.35 sec
+Block =  141  Oblig =  1692  Clause =  1078  Call = 20831 (sat=33.1%)  Cex =   0  Start =  66
+SAT solving =     9.36 sec ( 83.71 %)
+  unsat     =     5.67 sec ( 50.73 %)
+  sat       =     3.69 sec ( 32.98 %)
+Generalize  =     6.25 sec ( 55.87 %)
+Push clause =     2.39 sec ( 21.40 %)
+Ternary sim =     0.41 sec (  3.66 %)
+Containment =     0.02 sec (  0.14 %)
+CNF compute =     0.25 sec (  2.24 %)
+Refinement  =     0.00 sec (  0.00 %)
+TOTAL       =    11.18 sec (100.00 %)
+Property proved.  Time =    11.20 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 11 Apr 2025 06:48:36 PM CST
+========================================

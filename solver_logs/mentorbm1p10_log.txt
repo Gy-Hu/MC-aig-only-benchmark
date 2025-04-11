@@ -1,0 +1,41 @@
+File: ./hwmcc11/single/mentorbm1p10.aig
+Command: ~/coding_env/abc/abc -c "&r ./hwmcc11/single/mentorbm1p10.aig; &put; fold; pdr -v"
+Started at: Fri 11 Apr 2025 03:57:23 PM CST
+----------------------------------------
+ABC command line: "&r ./hwmcc11/single/mentorbm1p10.aig; &put; fold; pdr -v".
+
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 1                                                                 1     1      0.03 sec
+  2 : 0 2 2                                                               2     3      0.03 sec
+  3 : 0 1 1 1                                                             0     3      0.03 sec
+  4 : 0 2 6 5 19                                                          6    48      0.11 sec
+  5 : 0 2 4 2 1 17                                                        0    48      0.12 sec
+  6 : 0 23 78 97 80 63 185                                               50   151      1.56 sec
+  7 : 0 17 25 34 47 28 36 169                                             0   151      1.61 sec
+  8 : 0 17 24 34 46 27 33 11 157                                          0   151      1.66 sec
+  9 : 0 17 33 60 77 69 114 125 142 424                                   98   263      5.00 sec
+ 10 : 0 17 27 43 45 33 39 49 47 55 388                                    0   263      5.11 sec
+ 11 : 0 17 27 43 45 33 35 50 46 62 47 376                                10   264      5.32 sec
+ 12 : 0 17 27 43 45 38 61 79 78 91 79 71 457                             72   275      6.66 sec
+ 13 : 0 16 26 51 54 49 99 136 176 190 192 194 186 802                   131   379     14.43 sec
+ 14 : ... 53 122 180 414 625 876 1003 1107 1003 1091 1125 1091 2265     523   546     91.83 sec
+ 15 : 0 12 16 53 47 127 150 175 209 389 331 379 550 754 551 2024          0   546     93.17 sec
+ 16 : ... 1120 1706 2634 3857 5169 6818 7375 6999 5336 2619 1488 3850  3346   924    920.31 sec
+Block =   10  Oblig =112910  Clause = 56902  Call =1170662 (sat=69.5%)  Cex =   0  Start =3895
+SAT solving =   308.56 sec ( 33.53 %)
+  unsat     =    31.81 sec (  3.46 %)
+  sat       =   276.74 sec ( 30.07 %)
+Generalize  =   347.49 sec ( 37.76 %)
+Push clause =     2.97 sec (  0.32 %)
+Ternary sim =    35.03 sec (  3.81 %)
+Containment =   483.69 sec ( 52.56 %)
+CNF compute =    31.11 sec (  3.38 %)
+Refinement  =     0.00 sec (  0.00 %)
+TOTAL       =   920.32 sec (100.00 %)
+Output 0 of miter "./hwmcc11/single/mentorbm1p10" was asserted in frame 27.  Time =   920.38 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 11 Apr 2025 04:12:44 PM CST
+========================================

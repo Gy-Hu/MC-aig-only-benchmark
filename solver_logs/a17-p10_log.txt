@@ -1,0 +1,44 @@
+File: ./x-epic-2024/aig/a17-p10.aig
+Command: ~/coding_env/abc/abc -c "&r ./x-epic-2024/aig/a17-p10.aig; &put; fold; pdr -v"
+Started at: Fri 11 Apr 2025 06:40:15 PM CST
+----------------------------------------
+ABC command line: "&r ./x-epic-2024/aig/a17-p10.aig; &put; fold; pdr -v".
+
+Warning: The last 9 outputs are interpreted as constraints.
+Converted 42 1-valued FFs and 2640 DC-valued FFs.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 1                                                                 1     1      0.05 sec
+  2 : 0 2 3                                                               2     4      0.05 sec
+  3 : 0 1 4 35                                                            2    38      0.06 sec
+  4 : 0 4 19 58 78                                                        9   110      0.23 sec
+  5 : 0 3 7 21 44 86                                                      4   115      0.51 sec
+  6 : 0 3 10 27 32 74 176                                                20   219      1.07 sec
+  7 : 0 3 7 12 25 54 54 127                                               0   219      1.11 sec
+  8 : 0 3 9 15 75 315 355 504 931                                       135   298      6.54 sec
+  9 : 0 3 9 11 27 149 113 134 218 525                                     8   300      7.09 sec
+ 10 : 0 3 9 11 21 145 96 100 72 123 411                                   0   300      7.24 sec
+ 11 : 0 3 9 11 21 145 91 106 90 153 153 463                              26   301      8.30 sec
+ 12 : 0 3 9 11 21 144 90 97 60 85 83 39 437                               0   301      8.50 sec
+ 13 : 0 3 9 11 21 144 90 97 60 85 82 38 43 394                            0   301      8.65 sec
+ 14 : 0 3 9 11 21 144 90 97 60 85 82 38 43 45 349                         0   301      8.79 sec
+ 15 : 0 3 9 11 21 144 90 97 60 85 84 43 48 54 67 429                     22   305      9.42 sec
+ 16 : 0 3 9 11 21 144 80 87 55 42 32 63 9 10 0 0 495                      0   305      9.54 sec
+Invariant F[14] : 495 clauses with 270 flops (out of 1879) (cex = 0, ave = 82.56)
+Verification of invariant with 495 clauses was successful.  Time =     0.01 sec
+Block =  260  Oblig =  5349  Clause =  2857  Call = 44941 (sat=65.4%)  Cex =   0  Start = 141
+SAT solving =     6.40 sec ( 66.89 %)
+  unsat     =     0.43 sec (  4.45 %)
+  sat       =     5.97 sec ( 62.45 %)
+Generalize  =     6.47 sec ( 67.65 %)
+Push clause =     1.30 sec ( 13.56 %)
+Ternary sim =     1.51 sec ( 15.83 %)
+Containment =     0.15 sec (  1.58 %)
+CNF compute =     0.33 sec (  3.42 %)
+Refinement  =     0.00 sec (  0.00 %)
+TOTAL       =     9.56 sec (100.00 %)
+Property proved.  Time =     9.59 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 11 Apr 2025 06:40:25 PM CST
+========================================

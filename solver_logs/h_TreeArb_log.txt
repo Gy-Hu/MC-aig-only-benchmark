@@ -1,0 +1,44 @@
+File: ./hwmcc20/aig-1.8/h_TreeArb.aig
+Command: ~/coding_env/abc/abc -c "&r ./hwmcc20/aig-1.8/h_TreeArb.aig; &put; fold; pdr -v"
+Started at: Fri 11 Apr 2025 05:40:27 PM CST
+----------------------------------------
+ABC command line: "&r ./hwmcc20/aig-1.8/h_TreeArb.aig; &put; fold; pdr -v".
+
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 7                                                                 1     7      0.00 sec
+  2 : 0 16 16                                                             5    21      0.01 sec
+  3 : 0 5 5 12                                                            0    21      0.01 sec
+  4 : 0 5 5 5 7                                                           0    21      0.01 sec
+  5 : 0 5 5 9 13 16                                                       8    31      0.01 sec
+  6 : 0 5 3 2 2 7 8                                                       0    31      0.02 sec
+  7 : 0 5 3 2 2 7 17 38                                                   3    35      0.03 sec
+  8 : 0 5 3 2 2 8 35 94 103                                               7    36      0.08 sec
+  9 : 0 5 3 2 2 5 16 34 40 77                                             2    36      0.09 sec
+ 10 : 0 5 3 2 2 5 16 38 54 45 73                                         11    37      0.12 sec
+ 11 : 0 5 3 2 2 5 16 39 49 58 54 76                                       9    37      0.16 sec
+ 12 : 0 5 3 2 2 5 14 24 27 48 41 36 74                                    9    37      0.19 sec
+ 13 : 0 5 3 2 2 5 12 22 25 43 33 30 27 75                                 7    37      0.21 sec
+ 14 : 0 5 3 2 2 5 12 22 25 43 29 27 22 15 70                              1    37      0.22 sec
+ 15 : 0 5 3 2 2 5 12 22 25 43 29 27 22 15 13 63                           3    37      0.24 sec
+ 16 : 0 5 3 2 2 5 12 22 25 43 29 27 22 15 12 9 60                         8    37      0.25 sec
+ 17 : 0 5 3 2 2 5 12 22 25 43 29 27 22 13 9 0 0 72                        0    37      0.27 sec
+Invariant F[15] : 72 clauses with 37 flops (out of 37) (cex = 0, ave = 10.27)
+Verification of invariant with 72 clauses was successful.  Time =     0.00 sec
+Block =  107  Oblig =   852  Clause =   476  Call =  5561 (sat=65.8%)  Cex =   0  Start =  11
+SAT solving =     0.21 sec ( 74.63 %)
+  unsat     =     0.02 sec (  7.69 %)
+  sat       =     0.18 sec ( 66.94 %)
+Generalize  =     0.09 sec ( 34.39 %)
+Push clause =     0.11 sec ( 40.26 %)
+Ternary sim =     0.01 sec (  3.51 %)
+Containment =     0.00 sec (  0.11 %)
+CNF compute =     0.01 sec (  2.20 %)
+Refinement  =     0.00 sec (  0.00 %)
+TOTAL       =     0.27 sec (100.00 %)
+Property proved.  Time =     0.28 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 11 Apr 2025 05:40:28 PM CST
+========================================

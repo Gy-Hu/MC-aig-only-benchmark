@@ -1,0 +1,34 @@
+File: ./hwmcc20/aig/cal122.aig
+Command: ~/coding_env/abc/abc -c "&r ./hwmcc20/aig/cal122.aig; &put; fold; pdr -v"
+Started at: Fri 11 Apr 2025 06:25:15 PM CST
+----------------------------------------
+ABC command line: "&r ./hwmcc20/aig/cal122.aig; &put; fold; pdr -v".
+
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 1                                                                 1     1      0.15 sec
+  2 : 0 1 32                                                              1    33      0.41 sec
+  3 : 0 1 176 268                                                         7   324      3.31 sec
+  4 : 0 1 181 231 448                                                     7   357      8.48 sec
+  5 : 0 1 161 330 338 1016                                                7   379     23.36 sec
+  6 : 0 1 25 53 82 46 1006                                                6   379     27.35 sec
+  7 : 0 1 20 0 0 0 0 934                                                  0   379     28.07 sec
+Invariant F[3] : 934 clauses with 374 flops (out of 718) (cex = 0, ave = 45.70)
+Verification of invariant with 934 clauses was successful.  Time =     0.64 sec
+Block =  171  Oblig =  3514  Clause =  2222  Call = 50290 (sat=32.7%)  Cex =   0  Start = 165
+SAT solving =    24.39 sec ( 84.90 %)
+  unsat     =    14.44 sec ( 50.27 %)
+  sat       =     9.95 sec ( 34.64 %)
+Generalize  =    17.44 sec ( 60.71 %)
+Push clause =     3.84 sec ( 13.36 %)
+Ternary sim =     0.82 sec (  2.85 %)
+Containment =     0.07 sec (  0.25 %)
+CNF compute =     0.62 sec (  2.18 %)
+Refinement  =     0.00 sec (  0.00 %)
+TOTAL       =    28.72 sec (100.00 %)
+Property proved.  Time =    28.74 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 11 Apr 2025 06:25:44 PM CST
+========================================

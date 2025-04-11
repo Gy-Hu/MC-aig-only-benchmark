@@ -1,0 +1,34 @@
+File: ./hwmcc11/single/eijkbs3330.aig
+Command: ~/coding_env/abc/abc -c "&r ./hwmcc11/single/eijkbs3330.aig; &put; fold; pdr -v"
+Started at: Fri 11 Apr 2025 02:59:01 PM CST
+----------------------------------------
+ABC command line: "&r ./hwmcc11/single/eijkbs3330.aig; &put; fold; pdr -v".
+
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 103                                                               1    87      0.03 sec
+  2 : 0 151 476                                                           6   236      0.17 sec
+  3 : 0 110 696 1683                                                     18   237      1.14 sec
+  4 : 0 109 367 1738 1783                                                69   239      2.78 sec
+  5 : 0 109 367 235 523 2341                                             22   239      3.90 sec
+  6 : 0 109 367 235 101 240 2453                                          9   239      4.58 sec
+  7 : 0 109 367 235 101 0 0 2606                                          0   239      4.93 sec
+Invariant F[5] : 2606 clauses with 239 flops (out of 246) (cex = 0, ave = 9.65)
+Verification of invariant with 2606 clauses was successful.  Time =     0.04 sec
+Block = 2829  Oblig =  6599  Clause =  5129  Call = 54947 (sat=64.5%)  Cex =   0  Start = 169
+SAT solving =     3.96 sec ( 79.62 %)
+  unsat     =     1.29 sec ( 25.98 %)
+  sat       =     2.67 sec ( 53.64 %)
+Generalize  =     2.66 sec ( 53.44 %)
+Push clause =     1.33 sec ( 26.67 %)
+Ternary sim =     0.31 sec (  6.16 %)
+Containment =     0.04 sec (  0.86 %)
+CNF compute =     0.09 sec (  1.81 %)
+Refinement  =     0.00 sec (  0.00 %)
+TOTAL       =     4.97 sec (100.00 %)
+Property proved.  Time =     4.98 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 11 Apr 2025 02:59:06 PM CST
+========================================

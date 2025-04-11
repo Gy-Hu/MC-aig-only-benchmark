@@ -1,0 +1,27 @@
+File: ./hwmcc15/oski15a14b08s.aig
+Command: ~/coding_env/abc/abc -c "&r ./hwmcc15/oski15a14b08s.aig; &put; fold; pdr -v"
+Started at: Fri 11 Apr 2025 09:40:10 AM CST
+----------------------------------------
+ABC command line: "&r ./hwmcc15/oski15a14b08s.aig; &put; fold; pdr -v".
+
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 4                                                                 1     4      0.06 sec
+  2 : 0 1 6                                                               1    11      0.07 sec
+  3 : 0 1 1 6                                                             1    11      0.08 sec
+  4 : 0 1 1 2 6                                                           1    11      0.10 sec
+  5 : 0 1 1 3 7 11                                                        4    15      0.21 sec
+  6 : 0 1 1 1 1 2 11                                                      1    15      0.23 sec
+  7 : 0 1 1 1 1 2 5 10                                                    2    15      0.27 sec
+  8 : 0 1 1 1 1 2 3 3 10                                                  1    15      0.30 sec
+  9 : 0 1 1 1 1 3 8 11 16 203                                             8   135      4.25 sec
+ 10 : 0 1 1 1 1 1 4 4 6 9 383                                             7   235      8.26 sec
+ 11 : 0 1 1 1 1 1 1 3 3 7 5 372                                           1   235      8.33 sec
+ 12 : 0 1 1 1 1 1 1 9 5 11 15 23 803                                     10   374     18.42 sec
+ 13 : 0 1 1 1 1 1 1 9 6 7 17 128 185 18199                              166   827    758.97 sec
+ 14 : 0 1 1 1 1 1 1 6 2 3 4 5 17 146 17313                                3   827    763.04 sec
+----------------------------------------
+STATUS: TIMEOUT (exceeded 3600 seconds)
+Finished at: Fri 11 Apr 2025 10:40:10 AM CST
+========================================

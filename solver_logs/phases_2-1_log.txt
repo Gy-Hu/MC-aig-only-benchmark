@@ -1,0 +1,30 @@
+File: ./hwmcc24/2024/sosylab/loop-acceleration/phases_2-1.aig
+Command: ~/coding_env/abc/abc -c "&r ./hwmcc24/2024/sosylab/loop-acceleration/phases_2-1.aig; &put; fold; pdr -v"
+Started at: Fri 11 Apr 2025 10:46:01 PM CST
+----------------------------------------
+ABC command line: "&r ./hwmcc24/2024/sosylab/loop-acceleration/phases_2-1.aig; &put; fold; pdr -v".
+
+Converted 0 1-valued FFs and 99 DC-valued FFs.
+Warning: The number of inputs does not match the number of input names.
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 2                                                                 1     3      0.03 sec
+  2 : 0 1 2                                                               1     4      0.03 sec
+  3 : 0 1 23 24                                                           4    36      0.47 sec
+Block =    4  Oblig =    78  Clause =    48  Call =   363 (sat=65.8%)  Cex =   0  Start =   0
+SAT solving =     0.20 sec ( 42.47 %)
+  unsat     =     0.02 sec (  4.22 %)
+  sat       =     0.18 sec ( 38.26 %)
+Generalize  =     0.39 sec ( 81.80 %)
+Push clause =     0.01 sec (  1.45 %)
+Ternary sim =     0.21 sec ( 44.47 %)
+Containment =     0.00 sec (  0.03 %)
+CNF compute =     0.01 sec (  1.63 %)
+Refinement  =     0.00 sec (  0.04 %)
+TOTAL       =     0.48 sec (100.00 %)
+Output 0 of miter "./hwmcc24/2024/sosylab/loop-acceleration/phases_2-1" was asserted in frame 3.  Time =     0.49 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 11 Apr 2025 10:46:02 PM CST
+========================================

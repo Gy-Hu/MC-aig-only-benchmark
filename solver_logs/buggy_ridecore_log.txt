@@ -1,0 +1,19 @@
+File: ./hwmcc1920ns/buggy_ridecore.aig
+Command: ~/coding_env/abc/abc -c "&r ./hwmcc1920ns/buggy_ridecore.aig; &put; fold; pdr -v"
+Started at: Fri 11 Apr 2025 07:46:01 PM CST
+----------------------------------------
+ABC command line: "&r ./hwmcc1920ns/buggy_ridecore.aig; &put; fold; pdr -v".
+
+Warning: The last 3 outputs are interpreted as constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 64                                                                1    64      0.45 sec
+  2 : 0 1228 1230                                                         5  1259     30.01 sec
+  3 : 0 1884 1435 4325                                                   67  2799    474.55 sec
+  4 : 0 709 594 1363 1882                                                 9  2907    543.53 sec
+  5 : 0 730 709 1645 1475 3147                                           57  3272    889.35 sec
+  6 : 0 86 243 1193 494 1392 1983                                        17  3317    960.05 sec
+----------------------------------------
+STATUS: TIMEOUT (exceeded 3600 seconds)
+Finished at: Fri 11 Apr 2025 08:46:01 PM CST
+========================================

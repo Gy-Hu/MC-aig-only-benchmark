@@ -1,0 +1,34 @@
+File: ./avr/industry/cal150/cal150.aig
+Command: ~/coding_env/abc/abc -c "&r ./avr/industry/cal150/cal150.aig; &put; fold; pdr -v"
+Started at: Fri 11 Apr 2025 05:11:33 PM CST
+----------------------------------------
+ABC command line: "&r ./avr/industry/cal150/cal150.aig; &put; fold; pdr -v".
+
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 1                                                                 1     1      0.08 sec
+  2 : 0 1 32                                                              1    33      0.22 sec
+  3 : 0 1 142 240                                                         7   300      2.46 sec
+  4 : 0 1 127 108 355                                                     8   337      5.11 sec
+  5 : 0 1 87 90 86 406                                                    6   347      7.41 sec
+  6 : 0 1 83 89 97 62 678                                                 8   387     11.88 sec
+  7 : 0 1 34 8 0 0 0 671                                                  0   387     13.21 sec
+Invariant F[4] : 671 clauses with 379 flops (out of 718) (cex = 0, ave = 32.43)
+Verification of invariant with 671 clauses was successful.  Time =     0.27 sec
+Block =  123  Oblig =  2055  Clause =  1245  Call = 22753 (sat=35.0%)  Cex =   0  Start =  72
+SAT solving =    11.08 sec ( 82.12 %)
+  unsat     =     6.74 sec ( 50.00 %)
+  sat       =     4.33 sec ( 32.12 %)
+Generalize  =     7.10 sec ( 52.64 %)
+Push clause =     2.66 sec ( 19.71 %)
+Ternary sim =     0.60 sec (  4.41 %)
+Containment =     0.03 sec (  0.19 %)
+CNF compute =     0.30 sec (  2.21 %)
+Refinement  =     0.00 sec (  0.00 %)
+TOTAL       =    13.49 sec (100.00 %)
+Property proved.  Time =    13.50 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 11 Apr 2025 05:11:47 PM CST
+========================================

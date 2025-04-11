@@ -1,0 +1,31 @@
+File: ./hwmcc11/single/pdtvsar8multip14.aig
+Command: ~/coding_env/abc/abc -c "&r ./hwmcc11/single/pdtvsar8multip14.aig; &put; fold; pdr -v"
+Started at: Fri 11 Apr 2025 03:57:00 PM CST
+----------------------------------------
+ABC command line: "&r ./hwmcc11/single/pdtvsar8multip14.aig; &put; fold; pdr -v".
+
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 2                                                                 1     2      0.01 sec
+  2 : 0 2 10                                                              1    16      0.01 sec
+  3 : 0 2 1 10                                                            1    16      0.01 sec
+  4 : 0 2 1 0 10                                                          0    16      0.01 sec
+Invariant F[3] : 10 clauses with 15 flops (out of 195) (cex = 0, ave = 16.00)
+Verification of invariant with 10 clauses was successful.  Time =     0.00 sec
+Block =   13  Oblig =    13  Clause =    13  Call =   130 (sat=71.5%)  Cex =   0  Start =   0
+SAT solving =     0.00 sec ( 10.01 %)
+  unsat     =     0.00 sec (  1.13 %)
+  sat       =     0.00 sec (  8.88 %)
+Generalize  =     0.00 sec (  8.65 %)
+Push clause =     0.00 sec (  2.54 %)
+Ternary sim =     0.00 sec (  0.77 %)
+Containment =     0.00 sec (  0.00 %)
+CNF compute =     0.00 sec (  2.51 %)
+Refinement  =     0.00 sec (  0.00 %)
+TOTAL       =     0.02 sec (100.00 %)
+Property proved.  Time =     0.02 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 11 Apr 2025 03:57:00 PM CST
+========================================

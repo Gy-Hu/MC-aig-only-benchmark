@@ -1,0 +1,42 @@
+File: ./avr/crafted/diagonal/diagonal.aig
+Command: ~/coding_env/abc/abc -c "&r ./avr/crafted/diagonal/diagonal.aig; &put; fold; pdr -v"
+Started at: Fri 11 Apr 2025 04:12:27 PM CST
+----------------------------------------
+ABC command line: "&r ./avr/crafted/diagonal/diagonal.aig; &put; fold; pdr -v".
+
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 4                                                                 1     5      0.00 sec
+  2 : 0 5 6                                                               2     8      0.00 sec
+  3 : 0 3 2 5                                                             1     8      0.00 sec
+  4 : 0 3 2 6 8                                                           3     8      0.01 sec
+  5 : 0 3 2 2 2 7                                                         1     8      0.01 sec
+  6 : 0 4 6 5 6 14 13                                                     9     8      0.01 sec
+  7 : 0 1 1 2 4 7 7 9                                                     1     8      0.01 sec
+  8 : 0 1 1 2 4 9 11 17 19                                               10     8      0.02 sec
+  9 : 0 1 1 2 1 2 2 2 7 12                                                1     8      0.02 sec
+ 10 : 0 1 1 2 1 2 2 2 8 10 9                                              3     8      0.02 sec
+ 11 : 0 1 1 2 1 2 2 2 2 3 9 12                                            1     8      0.03 sec
+ 12 : 0 1 1 2 1 2 2 2 2 3 9 12 12                                         3     8      0.03 sec
+ 13 : 0 1 1 2 1 2 2 2 2 3 9 4 6 15                                        1     8      0.03 sec
+ 14 : 0 1 1 2 1 2 2 2 2 3 11 8 9 19 16                                    9     8      0.04 sec
+ 15 : 0 1 1 2 1 2 2 2 2 2 1 2 2 2 0 9                                     0     8      0.04 sec
+Invariant F[14] : 9 clauses with 8 flops (out of 8) (cex = 0, ave = 5.02)
+Verification of invariant with 9 clauses was successful.  Time =     0.00 sec
+Block =   77  Oblig =   223  Clause =   159  Call =  1398 (sat=64.2%)  Cex =   0  Start =   0
+SAT solving =     0.02 sec ( 42.33 %)
+  unsat     =     0.00 sec (  6.61 %)
+  sat       =     0.02 sec ( 35.71 %)
+Generalize  =     0.01 sec ( 24.32 %)
+Push clause =     0.01 sec ( 16.04 %)
+Ternary sim =     0.00 sec (  1.67 %)
+Containment =     0.00 sec (  0.05 %)
+CNF compute =     0.00 sec (  1.33 %)
+Refinement  =     0.00 sec (  0.00 %)
+TOTAL       =     0.05 sec (100.00 %)
+Property proved.  Time =     0.06 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 11 Apr 2025 04:12:27 PM CST
+========================================

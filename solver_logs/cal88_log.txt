@@ -1,0 +1,33 @@
+File: ./avr/industry/cal88/cal88.aig
+Command: ~/coding_env/abc/abc -c "&r ./avr/industry/cal88/cal88.aig; &put; fold; pdr -v"
+Started at: Fri 11 Apr 2025 04:26:38 PM CST
+----------------------------------------
+ABC command line: "&r ./avr/industry/cal88/cal88.aig; &put; fold; pdr -v".
+
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 1                                                                 1     1      0.08 sec
+  2 : 0 1 48                                                              1    51      0.20 sec
+  3 : 0 1 248 445                                                         6   403      4.40 sec
+  4 : 0 1 87 89 440                                                       5   405      5.93 sec
+  5 : 0 1 64 53 49 532                                                    5   408      7.77 sec
+  6 : 0 1 48 11 0 0 542                                                   0   408      8.48 sec
+Invariant F[4] : 542 clauses with 407 flops (out of 660) (cex = 0, ave = 29.85)
+Verification of invariant with 542 clauses was successful.  Time =     0.57 sec
+Block =  143  Oblig =  1414  Clause =   891  Call = 15359 (sat=35.6%)  Cex =   0  Start =  48
+SAT solving =     7.43 sec ( 81.99 %)
+  unsat     =     4.91 sec ( 54.18 %)
+  sat       =     2.52 sec ( 27.81 %)
+Generalize  =     4.61 sec ( 50.90 %)
+Push clause =     2.40 sec ( 26.53 %)
+Ternary sim =     0.33 sec (  3.62 %)
+Containment =     0.01 sec (  0.14 %)
+CNF compute =     0.17 sec (  1.92 %)
+Refinement  =     0.00 sec (  0.00 %)
+TOTAL       =     9.06 sec (100.00 %)
+Property proved.  Time =     9.07 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 11 Apr 2025 04:26:47 PM CST
+========================================

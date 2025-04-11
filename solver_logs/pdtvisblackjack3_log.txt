@@ -1,0 +1,38 @@
+File: ./hwmcc08/pdtvisblackjack3.aig
+Command: ~/coding_env/abc/abc -c "&r ./hwmcc08/pdtvisblackjack3.aig; &put; fold; pdr -v"
+Started at: Fri 11 Apr 2025 11:17:30 AM CST
+----------------------------------------
+ABC command line: "&r ./hwmcc08/pdtvisblackjack3.aig; &put; fold; pdr -v".
+
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 1                                                                 1     1      0.01 sec
+  2 : 0 1 1                                                               1     5      0.01 sec
+  3 : 0 29 37 45                                                         12    48      0.05 sec
+  4 : 0 36 61 62 68                                                      24    86      0.12 sec
+  5 : 0 9 12 1 8 83                                                       0    86      0.12 sec
+  6 : 0 9 13 2 8 17 75                                                    6    87      0.13 sec
+  7 : 0 7 9 2 6 16 3 74                                                   0    87      0.14 sec
+  8 : 0 7 9 2 6 16 4 5 81                                                 5    87      0.15 sec
+  9 : 0 7 9 2 6 16 3 3 1 80                                               0    87      0.16 sec
+ 10 : 0 7 9 2 6 16 3 3 1 1 81                                             2    87      0.16 sec
+ 11 : 0 7 9 2 6 16 3 2 1 0 0 81                                           0    87      0.17 sec
+Invariant F[9] : 81 clauses with 83 flops (out of 104) (cex = 0, ave = 14.11)
+Verification of invariant with 81 clauses was successful.  Time =     0.00 sec
+Block =    7  Oblig =   591  Clause =   296  Call =  3020 (sat=45.4%)  Cex =   0  Start =   6
+SAT solving =     0.10 sec ( 56.99 %)
+  unsat     =     0.02 sec ( 12.52 %)
+  sat       =     0.08 sec ( 44.46 %)
+Generalize  =     0.08 sec ( 46.47 %)
+Push clause =     0.03 sec ( 19.19 %)
+Ternary sim =     0.02 sec ( 11.98 %)
+Containment =     0.00 sec (  0.22 %)
+CNF compute =     0.01 sec (  4.00 %)
+Refinement  =     0.00 sec (  0.00 %)
+TOTAL       =     0.18 sec (100.00 %)
+Property proved.  Time =     0.19 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 11 Apr 2025 11:17:30 AM CST
+========================================

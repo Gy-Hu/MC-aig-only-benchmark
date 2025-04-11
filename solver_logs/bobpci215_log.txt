@@ -1,0 +1,32 @@
+File: ./hwmcc11/single/bobpci215.aig
+Command: ~/coding_env/abc/abc -c "&r ./hwmcc11/single/bobpci215.aig; &put; fold; pdr -v"
+Started at: Fri 11 Apr 2025 03:19:40 PM CST
+----------------------------------------
+ABC command line: "&r ./hwmcc11/single/bobpci215.aig; &put; fold; pdr -v".
+
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 132                                                               1   132      0.21 sec
+  2 : 0 60 132                                                            4   174      0.28 sec
+  3 : 0 9 6 174                                                           3   178      0.76 sec
+  4 : 0 7 4 8 171                                                         3   181      0.90 sec
+  5 : 0 2 2 5 4 168                                                       3   181      1.27 sec
+  6 : 0 2 2 5 4 9 176                                                     6   191      1.38 sec
+  7 : 0 3 4 7 5 11 6 177                                                 11   193      1.39 sec
+Block =  208  Oblig =   382  Clause =   246  Call =  1831 (sat=28.6%)  Cex =   0  Start =   1
+SAT solving =     1.30 sec ( 93.13 %)
+  unsat     =     1.26 sec ( 89.92 %)
+  sat       =     0.04 sec (  3.21 %)
+Generalize  =     0.02 sec (  1.12 %)
+Push clause =     0.02 sec (  1.10 %)
+Ternary sim =     0.05 sec (  3.74 %)
+Containment =     0.00 sec (  0.02 %)
+CNF compute =     0.00 sec (  0.16 %)
+Refinement  =     0.00 sec (  0.02 %)
+TOTAL       =     1.40 sec (100.00 %)
+Output 0 of miter "./hwmcc11/single/bobpci215" was asserted in frame 15.  Time =     1.40 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 11 Apr 2025 03:19:42 PM CST
+========================================

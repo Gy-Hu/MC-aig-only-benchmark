@@ -1,0 +1,35 @@
+File: ./avr/opensource/vis_arrays_vsaR_p09/vis_arrays_vsaR_p09.aig
+Command: ~/coding_env/abc/abc -c "&r ./avr/opensource/vis_arrays_vsaR_p09/vis_arrays_vsaR_p09.aig; &put; fold; pdr -v"
+Started at: Fri 11 Apr 2025 04:02:34 PM CST
+----------------------------------------
+ABC command line: "&r ./avr/opensource/vis_arrays_vsaR_p09/vis_arrays_vsaR_p09.aig; &put; fold; pdr -v".
+
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 10                                                                1    10      0.00 sec
+  2 : 0 10 22                                                             1    18      0.01 sec
+  3 : 0 10 12 35                                                          1    24      0.02 sec
+  4 : 0 10 12 30 45                                                       1    24      0.04 sec
+  5 : 0 10 12 30 23 45                                                    1    24      0.05 sec
+  6 : 0 10 12 30 22 18 45                                                 1    24      0.06 sec
+  7 : 0 10 12 30 22 18 4 45                                               1    24      0.07 sec
+  8 : 0 10 12 30 22 18 4 0 45                                             0    24      0.07 sec
+Invariant F[7] : 45 clauses with 24 flops (out of 66) (cex = 0, ave = 10.06)
+Verification of invariant with 45 clauses was successful.  Time =     0.00 sec
+Block =  142  Oblig =   142  Clause =   142  Call =  1949 (sat=81.7%)  Cex =   0  Start =   3
+SAT solving =     0.06 sec ( 61.60 %)
+  unsat     =     0.00 sec (  2.50 %)
+  sat       =     0.06 sec ( 59.11 %)
+Generalize  =     0.04 sec ( 42.91 %)
+Push clause =     0.02 sec ( 18.50 %)
+Ternary sim =     0.00 sec (  1.35 %)
+Containment =     0.00 sec (  0.03 %)
+CNF compute =     0.00 sec (  2.08 %)
+Refinement  =     0.00 sec (  0.00 %)
+TOTAL       =     0.09 sec (100.00 %)
+Property proved.  Time =     0.10 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 11 Apr 2025 04:02:34 PM CST
+========================================

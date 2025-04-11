@@ -1,0 +1,35 @@
+File: ./hwmcc08/pdtvisheap05.aig
+Command: ~/coding_env/abc/abc -c "&r ./hwmcc08/pdtvisheap05.aig; &put; fold; pdr -v"
+Started at: Fri 11 Apr 2025 11:15:59 AM CST
+----------------------------------------
+ABC command line: "&r ./hwmcc08/pdtvisheap05.aig; &put; fold; pdr -v".
+
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 5                                                                 1     6      0.00 sec
+  2 : 0 2 5                                                               1     7      0.00 sec
+  3 : 0 2 2 7                                                             1     7      0.01 sec
+  4 : 0 2 2 2 6                                                           1     7      0.01 sec
+  5 : 0 2 2 2 2 7                                                         1     7      0.01 sec
+  6 : 0 2 2 2 2 2 6                                                       1     7      0.01 sec
+  7 : 0 2 2 2 2 2 1 5                                                     0     7      0.01 sec
+  8 : 0 2 2 2 2 2 1 0 5                                                   0     7      0.01 sec
+Invariant F[7] : 5 clauses with 7 flops (out of 33) (cex = 0, ave = 3.00)
+Verification of invariant with 5 clauses was successful.  Time =     0.00 sec
+Block =   16  Oblig =    16  Clause =    16  Call =   152 (sat=63.2%)  Cex =   0  Start =   0
+SAT solving =     0.00 sec (  9.61 %)
+  unsat     =     0.00 sec (  0.95 %)
+  sat       =     0.00 sec (  8.66 %)
+Generalize  =     0.00 sec (  2.66 %)
+Push clause =     0.00 sec (  7.26 %)
+Ternary sim =     0.00 sec (  0.40 %)
+Containment =     0.00 sec (  0.00 %)
+CNF compute =     0.00 sec (  2.32 %)
+Refinement  =     0.00 sec (  0.00 %)
+TOTAL       =     0.02 sec (100.00 %)
+Property proved.  Time =     0.02 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 11 Apr 2025 11:15:59 AM CST
+========================================

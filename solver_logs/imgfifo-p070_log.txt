@@ -1,0 +1,35 @@
+File: ./others/vgasim-imgfifo/aig/imgfifo-p070.aig
+Command: ~/coding_env/abc/abc -c "&r ./others/vgasim-imgfifo/aig/imgfifo-p070.aig; &put; fold; pdr -v"
+Started at: Fri 11 Apr 2025 11:34:44 AM CST
+----------------------------------------
+ABC command line: "&r ./others/vgasim-imgfifo/aig/imgfifo-p070.aig; &put; fold; pdr -v".
+
+Warning: The last 44 outputs are interpreted as constraints.
+Converted 28 1-valued FFs and 414 DC-valued FFs.
+Warning: The number of inputs does not match the number of input names.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 5                                                                 1     6      0.01 sec
+  2 : 0 26 31                                                             2    40      0.03 sec
+  3 : 0 26 27 29                                                          3    44      0.05 sec
+  4 : 0 23 9 9 39                                                         1    44      0.05 sec
+  5 : 0 23 9 10 5 41                                                      3    46      0.06 sec
+  6 : 0 23 9 6 2 0 44                                                     0    46      0.07 sec
+Invariant F[5] : 44 clauses with 35 flops (out of 610) (cex = 0, ave = 63.84)
+Verification of invariant with 44 clauses was successful.  Time =     0.00 sec
+Block =   22  Oblig =   140  Clause =    94  Call =   691 (sat=59.2%)  Cex =   0  Start =   0
+SAT solving =     0.03 sec ( 42.27 %)
+  unsat     =     0.00 sec (  1.19 %)
+  sat       =     0.03 sec ( 41.08 %)
+Generalize  =     0.03 sec ( 32.94 %)
+Push clause =     0.02 sec ( 20.64 %)
+Ternary sim =     0.01 sec ( 15.65 %)
+Containment =     0.00 sec (  0.17 %)
+CNF compute =     0.00 sec (  2.68 %)
+Refinement  =     0.00 sec (  0.00 %)
+TOTAL       =     0.08 sec (100.00 %)
+Property proved.  Time =     0.08 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 11 Apr 2025 11:34:44 AM CST
+========================================

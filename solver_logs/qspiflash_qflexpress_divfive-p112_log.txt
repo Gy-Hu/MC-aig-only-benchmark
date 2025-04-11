@@ -1,0 +1,41 @@
+File: ./hwmcc24/2019/wolf/2019C/qspiflash_qflexpress_divfive-p112.aig
+Command: ~/coding_env/abc/abc -c "&r ./hwmcc24/2019/wolf/2019C/qspiflash_qflexpress_divfive-p112.aig; &put; fold; pdr -v"
+Started at: Fri 11 Apr 2025 08:34:21 PM CST
+----------------------------------------
+ABC command line: "&r ./hwmcc24/2019/wolf/2019C/qspiflash_qflexpress_divfive-p112.aig; &put; fold; pdr -v".
+
+Warning: The last 23 outputs are interpreted as constraints.
+Converted 5 1-valued FFs and 260 DC-valued FFs.
+Warning: The number of inputs does not match the number of input names.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 2                                                                 1     2      0.00 sec
+  2 : 0 3 7                                                               2     8      0.00 sec
+  3 : 0 2 2 4                                                             0     8      0.01 sec
+  4 : 0 13 28 46 93                                                      11    43      0.06 sec
+  5 : 0 11 14 19 12 49                                                    0    43      0.07 sec
+  6 : 0 11 14 19 12 13 36                                                 0    43      0.07 sec
+  7 : 0 11 20 29 22 46 57 158                                            12    99      0.19 sec
+  8 : 0 11 19 16 10 43 28 26 115                                          0    99      0.20 sec
+  9 : 0 11 19 16 9 41 29 22 15 116                                        5    99      0.22 sec
+ 10 : 0 11 18 11 6 43 28 12 11 15 104                                     0    99      0.23 sec
+ 11 : 0 11 18 11 6 43 28 12 11 16 16 142                                  4   100      0.26 sec
+ 12 : 0 11 18 11 6 43 28 12 11 7 0 0 127                                  0   100      0.27 sec
+Invariant F[10] : 127 clauses with 97 flops (out of 168) (cex = 0, ave = 30.48)
+Verification of invariant with 127 clauses was successful.  Time =     0.00 sec
+Block =   22  Oblig =   964  Clause =   493  Call =  6512 (sat=60.6%)  Cex =   0  Start =  16
+SAT solving =     0.19 sec ( 68.50 %)
+  unsat     =     0.01 sec (  5.10 %)
+  sat       =     0.18 sec ( 63.40 %)
+Generalize  =     0.16 sec ( 57.20 %)
+Push clause =     0.05 sec ( 18.98 %)
+Ternary sim =     0.02 sec (  8.80 %)
+Containment =     0.00 sec (  0.34 %)
+CNF compute =     0.01 sec (  2.02 %)
+Refinement  =     0.00 sec (  0.00 %)
+TOTAL       =     0.28 sec (100.00 %)
+Property proved.  Time =     0.29 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 11 Apr 2025 08:34:21 PM CST
+========================================

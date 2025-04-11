@@ -1,0 +1,31 @@
+File: ./avr/opensource/pj_icram/pj_icram.aig
+Command: ~/coding_env/abc/abc -c "&r ./avr/opensource/pj_icram/pj_icram.aig; &put; fold; pdr -v"
+Started at: Fri 11 Apr 2025 04:10:33 PM CST
+----------------------------------------
+ABC command line: "&r ./avr/opensource/pj_icram/pj_icram.aig; &put; fold; pdr -v".
+
+Converted 1 1-valued FFs and 4138 DC-valued FFs.
+Warning: The number of inputs does not match the number of input names.
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 1379                                                              1   533     39.54 sec
+  2 : 0 0 1379                                                            0   533     39.59 sec
+Invariant F[1] : 1379 clauses with 533 flops (out of 4140) (cex = 0, ave = 14.33)
+Verification of invariant with 1379 clauses was successful.  Time =     0.02 sec
+Block = 1379  Oblig =  1379  Clause =  1379  Call = 16828 (sat=83.6%)  Cex =   0  Start =  50
+SAT solving =    16.42 sec ( 41.43 %)
+  unsat     =     0.04 sec (  0.10 %)
+  sat       =    16.38 sec ( 41.33 %)
+Generalize  =    13.26 sec ( 33.46 %)
+Push clause =     0.04 sec (  0.11 %)
+Ternary sim =    19.29 sec ( 48.68 %)
+Containment =     0.03 sec (  0.07 %)
+CNF compute =     0.08 sec (  0.20 %)
+Refinement  =     0.00 sec (  0.00 %)
+TOTAL       =    39.63 sec (100.00 %)
+Property proved.  Time =    39.66 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 11 Apr 2025 04:11:13 PM CST
+========================================

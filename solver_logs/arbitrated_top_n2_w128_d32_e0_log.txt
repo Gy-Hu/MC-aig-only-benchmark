@@ -1,0 +1,29 @@
+File: ./hwmcc20/aig/arbitrated_top_n2_w128_d32_e0.aig
+Command: ~/coding_env/abc/abc -c "&r ./hwmcc20/aig/arbitrated_top_n2_w128_d32_e0.aig; &put; fold; pdr -v"
+Started at: Fri 11 Apr 2025 06:26:46 PM CST
+----------------------------------------
+ABC command line: "&r ./hwmcc20/aig/arbitrated_top_n2_w128_d32_e0.aig; &put; fold; pdr -v".
+
+Warning: The last 7 outputs are interpreted as constraints.
+Converted 1 1-valued FFs and 8377 DC-valued FFs.
+Warning: The number of inputs does not match the number of input names.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 7                                                                 1     9      0.22 sec
+  2 : 0 7 23                                                              3    25      0.78 sec
+  3 : 0 9 22 558                                                          4   566     24.57 sec
+  4 : 0 7 19 28 678                                                       3   685     31.06 sec
+  5 : 0 7 20 29 58 699                                                    5   687     36.06 sec
+  6 : 0 7 19 27 50 206 923                                                8   814     55.47 sec
+  7 : 0 7 19 29 50 87 619 1799                                           10   943    126.38 sec
+  8 : 0 6 17 26 50 82 495 1147 1887                                      12  1070    191.18 sec
+  9 : 0 6 17 26 52 80 500 1518 3347 3830                                 17  1197    569.71 sec
+ 10 : 0 6 17 26 57 85 488 1265 2612 3458 2435                            17  1325    744.95 sec
+ 11 : 0 6 17 25 46 81 490 1264 2428 4375 5245 5356                       44  1453   1426.70 sec
+ 12 : 0 6 17 25 46 80 465 1255 2356 3136 3935 5831 3694                  14  1581   1806.91 sec
+ 13 : 0 6 17 25 46 79 464 1252 2318 2934 3789 5231 6151 5702             30  1709   2557.80 sec
+ 14 : 0 6 17 25 46 79 462 1247 2272 2701 3176 3797 5568 8148 6043        23  1837   3505.07 sec
+----------------------------------------
+STATUS: TIMEOUT (exceeded 3600 seconds)
+Finished at: Fri 11 Apr 2025 07:26:46 PM CST
+========================================

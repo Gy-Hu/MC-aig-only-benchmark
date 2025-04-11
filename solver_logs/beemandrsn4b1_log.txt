@@ -1,0 +1,40 @@
+File: ./hwmcc15/beemandrsn4b1.aig
+Command: ~/coding_env/abc/abc -c "&r ./hwmcc15/beemandrsn4b1.aig; &put; fold; pdr -v"
+Started at: Fri 11 Apr 2025 10:39:39 AM CST
+----------------------------------------
+ABC command line: "&r ./hwmcc15/beemandrsn4b1.aig; &put; fold; pdr -v".
+
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 1                                                                 1     4      0.00 sec
+  2 : 0 4 4                                                               2    23      0.01 sec
+  3 : 0 4 247 228                                                        17    65      1.71 sec
+  4 : 0 4 339 1452 1089                                                 363    65     15.63 sec
+  5 : 0 4 339 1383 1953 895                                             187    65     29.01 sec
+  6 : 0 4 339 1403 1970 2654 1802                                       499    65     59.66 sec
+  7 : 0 4 339 1395 1686 1321 1908 1012                                   71    65     66.95 sec
+  8 : 0 4 339 1395 1644 1160 1433 1869 1507                             243    65     84.88 sec
+  9 : 0 4 339 1395 1639 1025 575 639 1268 1843                           73    65     94.91 sec
+ 10 : 0 4 339 1395 1639 1005 431 290 435 1307 1710                      157    65    103.28 sec
+ 11 : 0 4 339 1395 1639 967 367 120 93 246 725 2163                      56    65    108.19 sec
+ 12 : 0 4 339 1395 1639 967 363 110 46 55 156 473 2516                   46    65    112.72 sec
+ 13 : 0 4 339 1395 1639 967 350 90 17 4 0 0 0 2938                        0    65    114.92 sec
+Invariant F[10] : 2938 clauses with 65 flops (out of 94) (cex = 0, ave = 94.00)
+Verification of invariant with 2938 clauses was successful.  Time =     0.90 sec
+Block =   12  Oblig = 21127  Clause = 13439  Call =856456 (sat=71.7%)  Cex =   0  Start =2849
+SAT solving =    95.87 sec ( 82.77 %)
+  unsat     =    24.16 sec ( 20.86 %)
+  sat       =    71.71 sec ( 61.91 %)
+Generalize  =    91.23 sec ( 78.76 %)
+Push clause =    18.16 sec ( 15.68 %)
+Ternary sim =     1.17 sec (  1.01 %)
+Containment =     1.01 sec (  0.87 %)
+CNF compute =     6.66 sec (  5.75 %)
+Refinement  =     0.00 sec (  0.00 %)
+TOTAL       =   115.83 sec (100.00 %)
+Property proved.  Time =   115.84 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 11 Apr 2025 10:41:35 AM CST
+========================================

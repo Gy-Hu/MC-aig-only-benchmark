@@ -1,0 +1,31 @@
+File: ./avr/opensource/swap_three/swap_three.aig
+Command: ~/coding_env/abc/abc -c "&r ./avr/opensource/swap_three/swap_three.aig; &put; fold; pdr -v"
+Started at: Fri 11 Apr 2025 04:06:05 PM CST
+----------------------------------------
+ABC command line: "&r ./avr/opensource/swap_three/swap_three.aig; &put; fold; pdr -v".
+
+Converted 6 1-valued FFs and 0 DC-valued FFs.
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 19                                                                1    19      0.00 sec
+  2 : 0 38 57                                                             3    60      0.00 sec
+  3 : 0 2 0 57                                                            0    60      0.01 sec
+Invariant F[2] : 57 clauses with 60 flops (out of 60) (cex = 0, ave = 1.05)
+Verification of invariant with 57 clauses was successful.  Time =     0.00 sec
+Block =   38  Oblig =   133  Clause =    95  Call =   331 (sat=36.3%)  Cex =   0  Start =   0
+SAT solving =     0.00 sec (  8.50 %)
+  unsat     =     0.00 sec (  0.16 %)
+  sat       =     0.00 sec (  8.34 %)
+Generalize  =     0.00 sec (  3.32 %)
+Push clause =     0.00 sec (  2.00 %)
+Ternary sim =     0.00 sec (  0.86 %)
+Containment =     0.00 sec (  0.11 %)
+CNF compute =     0.00 sec (  0.53 %)
+Refinement  =     0.00 sec (  0.00 %)
+TOTAL       =     0.01 sec (100.00 %)
+Property proved.  Time =     0.02 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 11 Apr 2025 04:06:05 PM CST
+========================================

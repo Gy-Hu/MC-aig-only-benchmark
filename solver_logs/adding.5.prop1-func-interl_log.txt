@@ -1,0 +1,33 @@
+File: ./hwmcc19/single/aig/beem/adding.5.prop1-func-interl.aig
+Command: ~/coding_env/abc/abc -c "&r ./hwmcc19/single/aig/beem/adding.5.prop1-func-interl.aig; &put; fold; pdr -v"
+Started at: Fri 11 Apr 2025 06:43:30 AM CST
+----------------------------------------
+ABC command line: "&r ./hwmcc19/single/aig/beem/adding.5.prop1-func-interl.aig; &put; fold; pdr -v".
+
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 1                                                                 1     1      0.00 sec
+  2 : 0 5 5                                                               3    11      0.00 sec
+  3 : 0 11 13 5                                                           8    17      0.01 sec
+  4 : 0 9 11 10 6                                                         4    19      0.01 sec
+  5 : 0 9 12 26 39 51                                                    19    41      0.05 sec
+  6 : 0 11 33 82 155 143 192                                             71    46      0.29 sec
+  7 : 0 11 31 69 113 124 98 106                                           0    46      0.32 sec
+  8 : 0 14 44 102 210 352 530 591 800                                   126    53      2.01 sec
+Block =    7  Oblig =  4410  Clause =  2742  Call = 40156 (sat=69.4%)  Cex =   0  Start = 130
+SAT solving =     1.67 sec ( 83.04 %)
+  unsat     =     0.25 sec ( 12.62 %)
+  sat       =     1.42 sec ( 70.42 %)
+Generalize  =     1.64 sec ( 81.29 %)
+Push clause =     0.05 sec (  2.43 %)
+Ternary sim =     0.06 sec (  2.76 %)
+Containment =     0.02 sec (  1.01 %)
+CNF compute =     0.04 sec (  2.21 %)
+Refinement  =     0.00 sec (  0.00 %)
+TOTAL       =     2.02 sec (100.00 %)
+Output 0 of miter "./hwmcc19/single/aig/beem/adding.5.prop1-func-interl" was asserted in frame 42.  Time =     2.02 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 11 Apr 2025 06:43:32 AM CST
+========================================

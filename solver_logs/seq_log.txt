@@ -1,0 +1,33 @@
+File: ./avr/opensource/seq/seq.aig
+Command: ~/coding_env/abc/abc -c "&r ./avr/opensource/seq/seq.aig; &put; fold; pdr -v"
+Started at: Fri 11 Apr 2025 04:06:06 PM CST
+----------------------------------------
+ABC command line: "&r ./avr/opensource/seq/seq.aig; &put; fold; pdr -v".
+
+Converted 1 1-valued FFs and 0 DC-valued FFs.
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 94                                                                1    94      0.01 sec
+  2 : 0 95 189                                                            2   193      0.04 sec
+  3 : 0 2 2 194                                                           2   198      0.05 sec
+  4 : 0 2 2 5 195                                                         2   198      0.05 sec
+  5 : 0 2 2 1 0 195                                                       0   198      0.05 sec
+Invariant F[4] : 195 clauses with 198 flops (out of 202) (cex = 0, ave = 43.73)
+Verification of invariant with 195 clauses was successful.  Time =     0.00 sec
+Block =  195  Oblig =   397  Clause =   297  Call =  1520 (sat=29.7%)  Cex =   0  Start =   1
+SAT solving =     0.01 sec (  9.73 %)
+  unsat     =     0.00 sec (  0.50 %)
+  sat       =     0.01 sec (  9.23 %)
+Generalize  =     0.03 sec ( 53.32 %)
+Push clause =     0.00 sec (  5.05 %)
+Ternary sim =     0.03 sec ( 51.33 %)
+Containment =     0.00 sec (  2.52 %)
+CNF compute =     0.00 sec (  2.97 %)
+Refinement  =     0.00 sec (  0.00 %)
+TOTAL       =     0.06 sec (100.00 %)
+Property proved.  Time =     0.06 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 11 Apr 2025 04:06:06 PM CST
+========================================

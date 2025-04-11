@@ -1,0 +1,33 @@
+File: ./hwmcc24/2019/beem/elevator.3.prop1-back-serstep.aig
+Command: ~/coding_env/abc/abc -c "&r ./hwmcc24/2019/beem/elevator.3.prop1-back-serstep.aig; &put; fold; pdr -v"
+Started at: Fri 11 Apr 2025 08:30:04 PM CST
+----------------------------------------
+ABC command line: "&r ./hwmcc24/2019/beem/elevator.3.prop1-back-serstep.aig; &put; fold; pdr -v".
+
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 1                                                                 1     2      0.01 sec
+  2 : 0 1 1                                                               1    10      0.01 sec
+  3 : 0 2 7 7                                                             4   103      0.09 sec
+  4 : 0 2 6 6 2                                                           1   103      0.10 sec
+  5 : 0 2 6 6 6 2                                                         6   104      0.12 sec
+  6 : 0 2 6 4 0 0 3                                                       0   104      0.13 sec
+Invariant F[4] : 3 clauses with 7 flops (out of 281) (cex = 0, ave = 280.71)
+Verification of invariant with 3 clauses was successful.  Time =     0.00 sec
+Block =    5  Oblig =    40  Clause =    23  Call =   710 (sat=64.5%)  Cex =   0  Start =   1
+SAT solving =     0.10 sec ( 69.25 %)
+  unsat     =     0.01 sec (  6.28 %)
+  sat       =     0.09 sec ( 62.97 %)
+Generalize  =     0.09 sec ( 66.94 %)
+Push clause =     0.02 sec ( 11.15 %)
+Ternary sim =     0.01 sec (  5.62 %)
+Containment =     0.00 sec (  0.04 %)
+CNF compute =     0.01 sec (  5.97 %)
+Refinement  =     0.00 sec (  0.00 %)
+TOTAL       =     0.14 sec (100.00 %)
+Property proved.  Time =     0.14 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 11 Apr 2025 08:30:04 PM CST
+========================================

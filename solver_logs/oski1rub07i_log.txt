@@ -1,0 +1,32 @@
+File: ./hwmcc14/single/oski1rub07i.aig
+Command: ~/coding_env/abc/abc -c "&r ./hwmcc14/single/oski1rub07i.aig; &put; fold; pdr -v"
+Started at: Fri 11 Apr 2025 02:33:58 PM CST
+----------------------------------------
+ABC command line: "&r ./hwmcc14/single/oski1rub07i.aig; &put; fold; pdr -v".
+
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 1                                                                 1     1      0.19 sec
+  2 : 0 1 1                                                               1     2      0.29 sec
+  3 : 0 1 1 35                                                            1    39      2.60 sec
+  4 : 0 1 1 35 146                                                        1    46     13.13 sec
+  5 : 0 1 1 35 0 146                                                      0    46     13.71 sec
+Invariant F[4] : 146 clauses with 45 flops (out of 13594) (cex = 0, ave = 267.27)
+Verification of invariant with 146 clauses was successful.  Time =     0.08 sec
+Block =  183  Oblig =   183  Clause =   183  Call =  1494 (sat=66.1%)  Cex =   0  Start =   3
+SAT solving =    10.60 sec ( 76.78 %)
+  unsat     =     0.33 sec (  2.40 %)
+  sat       =    10.27 sec ( 74.38 %)
+Generalize  =     9.47 sec ( 68.62 %)
+Push clause =     1.02 sec (  7.38 %)
+Ternary sim =     2.31 sec ( 16.73 %)
+Containment =     0.00 sec (  0.01 %)
+CNF compute =     0.26 sec (  1.85 %)
+Refinement  =     0.00 sec (  0.00 %)
+TOTAL       =    13.80 sec (100.00 %)
+Property proved.  Time =    13.90 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 11 Apr 2025 02:34:12 PM CST
+========================================

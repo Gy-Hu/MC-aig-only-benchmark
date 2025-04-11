@@ -1,0 +1,31 @@
+File: ./avr/opensource/vis_QF_BV_bcuvis32/vis_QF_BV_bcuvis32.aig
+Command: ~/coding_env/abc/abc -c "&r ./avr/opensource/vis_QF_BV_bcuvis32/vis_QF_BV_bcuvis32.aig; &put; fold; pdr -v"
+Started at: Fri 11 Apr 2025 04:07:18 PM CST
+----------------------------------------
+ABC command line: "&r ./avr/opensource/vis_QF_BV_bcuvis32/vis_QF_BV_bcuvis32.aig; &put; fold; pdr -v".
+
+Converted 1 1-valued FFs and 0 DC-valued FFs.
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 1                                                                 1     1      0.00 sec
+  2 : 0 1 1                                                               1     2      0.00 sec
+  3 : 0 1 0 1                                                             0     2      0.00 sec
+Invariant F[2] : 1 clauses with 2 flops (out of 11) (cex = 0, ave = 3.00)
+Verification of invariant with 1 clauses was successful.  Time =     0.00 sec
+Block =    2  Oblig =     2  Clause =     2  Call =    12 (sat=50.0%)  Cex =   0  Start =   0
+SAT solving =     0.00 sec (  0.78 %)
+  unsat     =     0.00 sec (  0.07 %)
+  sat       =     0.00 sec (  0.71 %)
+Generalize  =     0.00 sec (  0.33 %)
+Push clause =     0.00 sec (  0.34 %)
+Ternary sim =     0.00 sec (  0.07 %)
+Containment =     0.00 sec (  0.00 %)
+CNF compute =     0.00 sec (  0.22 %)
+Refinement  =     0.00 sec (  0.00 %)
+TOTAL       =     0.01 sec (100.00 %)
+Property proved.  Time =     0.01 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 11 Apr 2025 04:07:18 PM CST
+========================================

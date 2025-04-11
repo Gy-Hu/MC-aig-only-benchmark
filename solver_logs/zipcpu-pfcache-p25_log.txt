@@ -1,0 +1,42 @@
+File: ./hwmcc19/single/aig/wolf/2018D/zipcpu-pfcache-p25.aig
+Command: ~/coding_env/abc/abc -c "&r ./hwmcc19/single/aig/wolf/2018D/zipcpu-pfcache-p25.aig; &put; fold; pdr -v"
+Started at: Fri 11 Apr 2025 07:30:43 AM CST
+----------------------------------------
+ABC command line: "&r ./hwmcc19/single/aig/wolf/2018D/zipcpu-pfcache-p25.aig; &put; fold; pdr -v".
+
+Warning: The last 35 outputs are interpreted as constraints.
+Converted 6 1-valued FFs and 2860 DC-valued FFs.
+Warning: The number of inputs does not match the number of input names.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 6                                                                 1     7      0.01 sec
+  2 : 0 8 14                                                              3    22      0.01 sec
+  3 : 0 10 22 104                                                         3   109      0.05 sec
+  4 : 0 4 4 8 88                                                          1   109      0.06 sec
+  5 : 0 4 4 8 12 95                                                       3   115      0.07 sec
+  6 : 0 4 19 44 111 151 592                                               8   281      0.72 sec
+  7 : 0 4 19 41 99 120 111 740                                            8   352      1.01 sec
+  8 : 0 4 19 41 99 119 152 113 790                                        6   356      1.27 sec
+  9 : 0 4 19 41 99 119 112 114 99 749                                     4   356      1.38 sec
+ 10 : 0 4 19 41 99 119 112 114 98 99 686                                  5   356      1.50 sec
+ 11 : 0 4 19 41 99 119 112 114 100 96 96 818                              6   356      1.76 sec
+ 12 : 0 4 19 41 99 119 112 114 101 55 85 3 968                            7   356      1.97 sec
+ 13 : 0 4 19 41 99 119 112 112 99 7 0 0 0 859                             0   356      2.02 sec
+Invariant F[10] : 859 clauses with 319 flops (out of 715) (cex = 0, ave = 80.96)
+Verification of invariant with 859 clauses was successful.  Time =     0.01 sec
+Block =   44  Oblig =  3242  Clause =  1934  Call = 29151 (sat=58.7%)  Cex =   0  Start =  92
+SAT solving =     1.44 sec ( 70.89 %)
+  unsat     =     0.10 sec (  5.07 %)
+  sat       =     1.34 sec ( 65.82 %)
+Generalize  =     1.29 sec ( 63.41 %)
+Push clause =     0.36 sec ( 17.66 %)
+Ternary sim =     0.18 sec (  8.89 %)
+Containment =     0.04 sec (  2.19 %)
+CNF compute =     0.06 sec (  3.04 %)
+Refinement  =     0.00 sec (  0.00 %)
+TOTAL       =     2.04 sec (100.00 %)
+Property proved.  Time =     2.05 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 11 Apr 2025 07:30:46 AM CST
+========================================

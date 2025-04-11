@@ -1,0 +1,59 @@
+File: ./hwmcc19/single/aig/wolf/2019C/qspiflash_dualflexpress_divthree-p159.aig
+Command: ~/coding_env/abc/abc -c "&r ./hwmcc19/single/aig/wolf/2019C/qspiflash_dualflexpress_divthree-p159.aig; &put; fold; pdr -v"
+Started at: Fri 11 Apr 2025 07:00:35 AM CST
+----------------------------------------
+ABC command line: "&r ./hwmcc19/single/aig/wolf/2019C/qspiflash_dualflexpress_divthree-p159.aig; &put; fold; pdr -v".
+
+Warning: The last 22 outputs are interpreted as constraints.
+Converted 5 1-valued FFs and 258 DC-valued FFs.
+Warning: The number of inputs does not match the number of input names.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 1                                                                 1     1      0.00 sec
+  2 : 0 9 12                                                              3    18      0.01 sec
+  3 : 0 1 8 44                                                            2    46      0.01 sec
+  4 : 0 1 5 15 27                                                         3    46      0.02 sec
+  5 : 0 1 5 16 48 75                                                      7    60      0.05 sec
+  6 : 0 1 4 1 1 1 61                                                      0    60      0.05 sec
+  7 : 0 1 4 1 1 1 1 60                                                    0    60      0.06 sec
+  8 : 0 1 4 1 1 1 1 6 66                                                  2    60      0.06 sec
+  9 : 0 1 4 1 2 1 1 8 23 99                                               9    61      0.08 sec
+ 10 : 0 1 4 1 1 1 1 1 5 2 78                                              0    61      0.09 sec
+ 11 : 0 1 4 1 1 1 1 1 5 2 12 103                                          4    61      0.10 sec
+ 12 : 0 1 4 1 1 1 1 1 1 1 8 13 111                                        6    62      0.12 sec
+ 13 : 0 1 4 1 1 1 1 1 1 1 2 3 8 92                                        0    62      0.12 sec
+ 14 : 0 1 4 1 1 1 1 1 3 1 3 3 54 160 345                                114   108      0.43 sec
+ 15 : 0 1 4 1 1 1 1 1 1 1 1 1 1 1 5 269                                   0   108      0.44 sec
+ 16 : 0 1 4 1 1 1 1 1 1 1 1 1 1 1 5 5 264                                 0   108      0.44 sec
+ 17 : 0 1 4 1 1 1 1 1 1 1 1 1 3 1 8 11 41 324                            20   108      0.49 sec
+ 18 : 0 1 4 1 1 1 1 1 1 1 1 1 1 1 1 1 4 14 298                            4   108      0.50 sec
+ 19 : 0 1 4 1 1 1 1 1 1 1 1 1 1 1 1 1 1 4 22 285                          4   108      0.51 sec
+ 20 : 0 1 4 1 1 1 1 1 1 1 1 1 1 1 1 1 4 6 9 17 316                       28   108      0.54 sec
+ 21 : 0 1 4 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 287                       0   108      0.55 sec
+ 22 : 0 1 4 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 6 299                     3   108      0.55 sec
+ 23 : 0 1 4 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 2 12 295                  2   109      0.56 sec
+ 24 : 0 1 4 4 2 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 4 5 13 13 316              33   109      0.59 sec
+ 25 : 0 1 4 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 2 296               0   109      0.59 sec
+ 26 : 0 1 4 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 2 8 316             6   109      0.60 sec
+ 27 : 0 1 4 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 4 7 300           0   109      0.61 sec
+ 28 : 0 1 4 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 4 7 5 323         4   109      0.62 sec
+ 29 : ... 1 4 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 3 2 1 1 314     2   109      0.63 sec
+ 30 : ... 4 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 3 2 1 0 0 309     0   109      0.63 sec
+Invariant F[28] : 309 clauses with 105 flops (out of 170) (cex = 0, ave = 35.45)
+Verification of invariant with 309 clauses was successful.  Time =     0.00 sec
+Block =  164  Oblig =  2160  Clause =  1149  Call = 17153 (sat=42.9%)  Cex =   0  Start =  44
+SAT solving =     0.42 sec ( 64.76 %)
+  unsat     =     0.06 sec (  9.01 %)
+  sat       =     0.36 sec ( 55.75 %)
+Generalize  =     0.39 sec ( 59.93 %)
+Push clause =     0.08 sec ( 12.13 %)
+Ternary sim =     0.07 sec ( 10.11 %)
+Containment =     0.01 sec (  1.07 %)
+CNF compute =     0.02 sec (  2.58 %)
+Refinement  =     0.00 sec (  0.00 %)
+TOTAL       =     0.65 sec (100.00 %)
+Property proved.  Time =     0.66 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 11 Apr 2025 07:00:36 AM CST
+========================================

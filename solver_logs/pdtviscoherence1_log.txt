@@ -1,0 +1,33 @@
+File: ./hwmcc08/pdtviscoherence1.aig
+Command: ~/coding_env/abc/abc -c "&r ./hwmcc08/pdtviscoherence1.aig; &put; fold; pdr -v"
+Started at: Fri 11 Apr 2025 11:19:12 AM CST
+----------------------------------------
+ABC command line: "&r ./hwmcc08/pdtviscoherence1.aig; &put; fold; pdr -v".
+
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 1                                                                 1     1      0.01 sec
+  2 : 0 10 8                                                              4    13      0.01 sec
+  3 : 0 9 3 4                                                             0    13      0.01 sec
+  4 : 0 9 4 4 6                                                           4    17      0.02 sec
+  5 : 0 9 4 8 9 21                                                        6    17      0.04 sec
+  6 : 0 9 5 4 6 9 27                                                      6    19      0.06 sec
+  7 : 0 9 5 4 6 8 3 27                                                    3    19      0.06 sec
+  8 : 0 13 13 15 31 38 44 34 67                                          42    30      0.28 sec
+Block =    7  Oblig =   524  Clause =   271  Call =  2621 (sat=59.4%)  Cex =   0  Start =   4
+SAT solving =     0.19 sec ( 67.18 %)
+  unsat     =     0.04 sec ( 13.05 %)
+  sat       =     0.15 sec ( 54.13 %)
+Generalize  =     0.18 sec ( 62.88 %)
+Push clause =     0.02 sec (  5.53 %)
+Ternary sim =     0.03 sec ( 10.29 %)
+Containment =     0.00 sec (  0.12 %)
+CNF compute =     0.01 sec (  1.76 %)
+Refinement  =     0.00 sec (  0.05 %)
+TOTAL       =     0.28 sec (100.00 %)
+Output 0 of miter "./hwmcc08/pdtviscoherence1" was asserted in frame 18.  Time =     0.29 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 11 Apr 2025 11:19:13 AM CST
+========================================

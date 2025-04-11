@@ -1,0 +1,30 @@
+File: ./hwmcc08/pdtvisns2p3.aig
+Command: ~/coding_env/abc/abc -c "&r ./hwmcc08/pdtvisns2p3.aig; &put; fold; pdr -v"
+Started at: Fri 11 Apr 2025 11:15:53 AM CST
+----------------------------------------
+ABC command line: "&r ./hwmcc08/pdtvisns2p3.aig; &put; fold; pdr -v".
+
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 4                                                                 1     4      0.01 sec
+  2 : 0 3 7                                                               1     6      0.01 sec
+  3 : 0 3 0 7                                                             0     6      0.01 sec
+Invariant F[2] : 7 clauses with 6 flops (out of 75) (cex = 0, ave = 3.00)
+Verification of invariant with 7 clauses was successful.  Time =     0.00 sec
+Block =   10  Oblig =    10  Clause =    10  Call =    60 (sat=58.3%)  Cex =   0  Start =   0
+SAT solving =     0.00 sec (  7.98 %)
+  unsat     =     0.00 sec (  3.22 %)
+  sat       =     0.00 sec (  4.76 %)
+Generalize  =     0.00 sec (  5.14 %)
+Push clause =     0.00 sec (  3.61 %)
+Ternary sim =     0.00 sec (  0.25 %)
+Containment =     0.00 sec (  0.00 %)
+CNF compute =     0.00 sec (  1.96 %)
+Refinement  =     0.00 sec (  0.00 %)
+TOTAL       =     0.02 sec (100.00 %)
+Property proved.  Time =     0.02 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 11 Apr 2025 11:15:53 AM CST
+========================================

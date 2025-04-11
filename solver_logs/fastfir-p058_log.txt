@@ -1,0 +1,37 @@
+File: ./others/fastfir/aig/fastfir-p058.aig
+Command: ~/coding_env/abc/abc -c "&r ./others/fastfir/aig/fastfir-p058.aig; &put; fold; pdr -v"
+Started at: Fri 11 Apr 2025 11:48:26 AM CST
+----------------------------------------
+ABC command line: "&r ./others/fastfir/aig/fastfir-p058.aig; &put; fold; pdr -v".
+
+Warning: The last 342 outputs are interpreted as constraints.
+Converted 34 1-valued FFs and 39 DC-valued FFs.
+Warning: The number of inputs does not match the number of input names.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 4                                                                 1     4      0.04 sec
+  2 : 0 1 5                                                               1     6      0.05 sec
+  3 : 0 1 1 46                                                            2    49      0.22 sec
+  4 : 0 1 1 1 70                                                          1    49      0.32 sec
+  5 : 0 1 1 1 24 117                                                      2    54      0.65 sec
+  6 : 0 1 1 1 1 24 158                                                    2    54      0.92 sec
+  7 : 0 1 1 1 1 1 23 176                                                  2    54      1.11 sec
+  8 : 0 1 1 1 1 1 0 0 176                                                 0    54      1.12 sec
+Invariant F[6] : 176 clauses with 54 flops (out of 221) (cex = 0, ave = 162.45)
+Verification of invariant with 176 clauses was successful.  Time =     0.01 sec
+Block =  178  Oblig =   322  Clause =   250  Call =  2103 (sat=51.9%)  Cex =   0  Start =   3
+SAT solving =     0.51 sec ( 44.77 %)
+  unsat     =     0.06 sec (  5.42 %)
+  sat       =     0.44 sec ( 39.35 %)
+Generalize  =     0.48 sec ( 42.54 %)
+Push clause =     0.04 sec (  3.58 %)
+Ternary sim =     0.39 sec ( 34.48 %)
+Containment =     0.01 sec (  0.47 %)
+CNF compute =     0.01 sec (  0.71 %)
+Refinement  =     0.00 sec (  0.00 %)
+TOTAL       =     1.13 sec (100.00 %)
+Property proved.  Time =     1.14 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 11 Apr 2025 11:48:27 AM CST
+========================================

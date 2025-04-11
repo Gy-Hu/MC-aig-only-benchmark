@@ -1,0 +1,39 @@
+File: ./hwmcc08/eijkS832.aig
+Command: ~/coding_env/abc/abc -c "&r ./hwmcc08/eijkS832.aig; &put; fold; pdr -v"
+Started at: Fri 11 Apr 2025 11:15:17 AM CST
+----------------------------------------
+ABC command line: "&r ./hwmcc08/eijkS832.aig; &put; fold; pdr -v".
+
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 38                                                                1    25      0.01 sec
+  2 : 0 66 89                                                             3    54      0.03 sec
+  3 : 0 22 71 90                                                          3    57      0.05 sec
+  4 : 0 19 29 71 121                                                      3    57      0.08 sec
+  5 : 0 19 24 27 68 131                                                   3    58      0.11 sec
+  6 : 0 19 24 25 2 9 154                                                  1    58      0.12 sec
+  7 : 0 19 24 25 2 9 77 143                                               2    59      0.16 sec
+  8 : 0 19 24 25 2 9 28 95 171                                            2    62      0.21 sec
+  9 : 0 19 24 25 2 9 28 35 111 181                                        3    62      0.28 sec
+ 10 : 0 19 24 25 2 9 28 30 20 113 200                                     2    62      0.35 sec
+ 11 : 0 19 24 25 2 9 28 30 20 9 31 210                                    4    62      0.39 sec
+ 12 : 0 19 24 25 2 9 28 30 18 7 0 0 220                                   0    62      0.41 sec
+Invariant F[10] : 220 clauses with 62 flops (out of 62) (cex = 0, ave = 6.20)
+Verification of invariant with 220 clauses was successful.  Time =     0.01 sec
+Block =  550  Oblig =   925  Clause =   769  Call =  7089 (sat=56.1%)  Cex =   0  Start =  16
+SAT solving =     0.34 sec ( 79.47 %)
+  unsat     =     0.11 sec ( 25.66 %)
+  sat       =     0.23 sec ( 53.81 %)
+Generalize  =     0.18 sec ( 41.56 %)
+Push clause =     0.16 sec ( 37.17 %)
+Ternary sim =     0.02 sec (  5.52 %)
+Containment =     0.00 sec (  0.13 %)
+CNF compute =     0.01 sec (  1.31 %)
+Refinement  =     0.00 sec (  0.00 %)
+TOTAL       =     0.43 sec (100.00 %)
+Property proved.  Time =     0.43 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 11 Apr 2025 11:15:18 AM CST
+========================================

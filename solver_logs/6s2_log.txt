@@ -1,0 +1,39 @@
+File: ./hwmcc11/single/6s2.aig
+Command: ~/coding_env/abc/abc -c "&r ./hwmcc11/single/6s2.aig; &put; fold; pdr -v"
+Started at: Fri 11 Apr 2025 02:35:30 PM CST
+----------------------------------------
+ABC command line: "&r ./hwmcc11/single/6s2.aig; &put; fold; pdr -v".
+
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 2                                                                 1     2      0.01 sec
+  2 : 0 12 12                                                             3    26      0.04 sec
+  3 : 0 12 29 26                                                          8    60      0.12 sec
+  4 : 0 9 19 106 319                                                      9   163      1.79 sec
+  5 : 0 6 14 86 98 399                                                    4   170      2.45 sec
+  6 : 0 6 14 41 87 182 334                                                6   199      2.96 sec
+  7 : 0 6 14 46 107 213 137 561                                          15   280      5.10 sec
+  8 : 0 6 14 46 60 106 67 108 528                                         6   283      5.53 sec
+  9 : 0 6 14 46 60 101 52 46 85 544                                       5   285      5.90 sec
+ 10 : 0 6 14 46 60 101 51 22 19 45 572                                    4   285      6.14 sec
+ 11 : 0 6 14 46 60 101 51 18 11 32 32 633                                12   287      6.67 sec
+ 12 : 0 6 14 46 59 98 43 9 0 0 0 0 634                                    0   287      6.78 sec
+Invariant F[8] : 634 clauses with 247 flops (out of 781) (cex = 0, ave = 73.24)
+Verification of invariant with 634 clauses was successful.  Time =     0.01 sec
+Block =  158  Oblig =  3230  Clause =  1500  Call = 21470 (sat=61.6%)  Cex =   0  Start =  66
+SAT solving =     5.16 sec ( 75.96 %)
+  unsat     =     0.26 sec (  3.82 %)
+  sat       =     4.90 sec ( 72.14 %)
+Generalize  =     4.65 sec ( 68.35 %)
+Push clause =     0.93 sec ( 13.69 %)
+Ternary sim =     0.50 sec (  7.42 %)
+Containment =     0.05 sec (  0.79 %)
+CNF compute =     0.25 sec (  3.64 %)
+Refinement  =     0.00 sec (  0.00 %)
+TOTAL       =     6.80 sec (100.00 %)
+Property proved.  Time =     6.82 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 11 Apr 2025 02:35:37 PM CST
+========================================

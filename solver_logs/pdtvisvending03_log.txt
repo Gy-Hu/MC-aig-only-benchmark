@@ -1,0 +1,31 @@
+File: ./hwmcc08/pdtvisvending03.aig
+Command: ~/coding_env/abc/abc -c "&r ./hwmcc08/pdtvisvending03.aig; &put; fold; pdr -v"
+Started at: Fri 11 Apr 2025 11:15:31 AM CST
+----------------------------------------
+ABC command line: "&r ./hwmcc08/pdtvisvending03.aig; &put; fold; pdr -v".
+
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 2                                                                 1     2      0.00 sec
+  2 : 0 2 5                                                               1     7      0.00 sec
+  3 : 0 2 5 8                                                             1     7      0.01 sec
+  4 : 0 2 5 0 8                                                           0     7      0.01 sec
+Invariant F[3] : 8 clauses with 7 flops (out of 34) (cex = 0, ave = 7.27)
+Verification of invariant with 8 clauses was successful.  Time =     0.00 sec
+Block =   15  Oblig =    15  Clause =    15  Call =   118 (sat=72.9%)  Cex =   0  Start =   0
+SAT solving =     0.00 sec ( 12.80 %)
+  unsat     =     0.00 sec (  1.98 %)
+  sat       =     0.00 sec ( 10.82 %)
+Generalize  =     0.00 sec (  8.47 %)
+Push clause =     0.00 sec (  4.10 %)
+Ternary sim =     0.00 sec (  0.95 %)
+Containment =     0.00 sec (  0.01 %)
+CNF compute =     0.00 sec (  1.54 %)
+Refinement  =     0.00 sec (  0.00 %)
+TOTAL       =     0.02 sec (100.00 %)
+Property proved.  Time =     0.02 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 11 Apr 2025 11:15:31 AM CST
+========================================

@@ -1,0 +1,30 @@
+File: ./hwmcc15/oski15a10b11s.aig
+Command: ~/coding_env/abc/abc -c "&r ./hwmcc15/oski15a10b11s.aig; &put; fold; pdr -v"
+Started at: Fri 11 Apr 2025 09:35:46 AM CST
+----------------------------------------
+ABC command line: "&r ./hwmcc15/oski15a10b11s.aig; &put; fold; pdr -v".
+
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 2                                                                 1     2      0.14 sec
+  2 : 0 102 152                                                           2   153      2.20 sec
+  3 : 0 65 132 122                                                        6   190      3.36 sec
+  4 : 0 47 86 72 45                                                       0   190      3.48 sec
+  5 : 0 65 183 383 817 809                                               18   582     31.75 sec
+Block =   62  Oblig =  3805  Clause =  2374  Call = 24587 (sat=61.4%)  Cex =   0  Start =  79
+SAT solving =    15.31 sec ( 48.18 %)
+  unsat     =     1.22 sec (  3.85 %)
+  sat       =    14.08 sec ( 44.33 %)
+Generalize  =    25.08 sec ( 78.92 %)
+Push clause =     0.25 sec (  0.79 %)
+Ternary sim =    11.01 sec ( 34.65 %)
+Containment =     1.43 sec (  4.51 %)
+CNF compute =     0.75 sec (  2.35 %)
+Refinement  =     0.00 sec (  0.01 %)
+TOTAL       =    31.77 sec (100.00 %)
+Output 0 of miter "./hwmcc15/oski15a10b11s" was asserted in frame 5.  Time =    31.84 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 11 Apr 2025 09:36:18 AM CST
+========================================

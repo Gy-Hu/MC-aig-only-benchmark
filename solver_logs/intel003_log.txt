@@ -1,0 +1,34 @@
+File: ./hwmcc1517/intel003.aig
+Command: ~/coding_env/abc/abc -c "&r ./hwmcc1517/intel003.aig; &put; fold; pdr -v"
+Started at: Fri 11 Apr 2025 07:52:39 AM CST
+----------------------------------------
+ABC command line: "&r ./hwmcc1517/intel003.aig; &put; fold; pdr -v".
+
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 1                                                                 1     1      0.00 sec
+  2 : 0 10 10                                                             3    19      0.01 sec
+  3 : 0 9 13 9                                                            4    23      0.01 sec
+  4 : 0 8 10 6 5                                                          0    23      0.01 sec
+  5 : 0 8 10 6 3 8                                                        3    23      0.02 sec
+  6 : 0 9 14 15 11 8 34                                                   8    35      0.04 sec
+  7 : 0 9 13 10 6 0 0 32                                                  0    35      0.04 sec
+Invariant F[5] : 32 clauses with 30 flops (out of 87) (cex = 0, ave = 40.23)
+Verification of invariant with 32 clauses was successful.  Time =     0.00 sec
+Block =    5  Oblig =   182  Clause =    96  Call =   973 (sat=56.4%)  Cex =   0  Start =   0
+SAT solving =     0.03 sec ( 48.84 %)
+  unsat     =     0.00 sec (  9.08 %)
+  sat       =     0.02 sec ( 39.76 %)
+Generalize  =     0.02 sec ( 42.63 %)
+Push clause =     0.01 sec ( 12.87 %)
+Ternary sim =     0.01 sec (  9.61 %)
+Containment =     0.00 sec (  0.18 %)
+CNF compute =     0.00 sec (  2.25 %)
+Refinement  =     0.00 sec (  0.00 %)
+TOTAL       =     0.05 sec (100.00 %)
+Property proved.  Time =     0.06 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 11 Apr 2025 07:52:39 AM CST
+========================================

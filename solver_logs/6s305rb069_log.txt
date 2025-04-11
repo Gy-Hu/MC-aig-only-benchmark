@@ -1,0 +1,41 @@
+File: ./hwmcc13/single/6s305rb069.aig
+Command: ~/coding_env/abc/abc -c "&r ./hwmcc13/single/6s305rb069.aig; &put; fold; pdr -v"
+Started at: Fri 11 Apr 2025 12:53:57 PM CST
+----------------------------------------
+ABC command line: "&r ./hwmcc13/single/6s305rb069.aig; &put; fold; pdr -v".
+
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 1                                                                 1     1      0.04 sec
+  2 : 0 18 22                                                             8    27      0.05 sec
+  3 : 0 7 8 14                                                            0    27      0.05 sec
+  4 : 0 13 12 8 26                                                        7    46      0.06 sec
+  5 : 0 9 10 6 6 21                                                       1    47      0.06 sec
+  6 : 0 9 10 6 6 5 18                                                     2    47      0.06 sec
+  7 : 0 9 10 6 6 4 3 15                                                   0    47      0.07 sec
+  8 : 0 9 10 6 6 4 3 3 12                                                 0    47      0.07 sec
+  9 : 0 9 10 6 6 4 3 3 1 11                                               0    47      0.07 sec
+ 10 : 0 73 103 86 140 211 179 180 173 169 1071                          158   762      4.63 sec
+ 11 : 0 45 53 31 63 115 49 19 11 22 20 1031                               0   762      4.73 sec
+ 12 : 0 63 71 46 71 121 69 39 32 42 43 55 1132                           56   811      5.40 sec
+ 13 : 0 57 60 31 10 8 11 3 3 9 6 17 18 739                                0   811      5.45 sec
+ 14 : 0 57 60 31 10 8 11 3 3 9 6 17 18 0 739                              0   811      5.49 sec
+Invariant F[13] : 739 clauses with 671 flops (out of 8000) (cex = 0, ave = 142.12)
+Verification of invariant with 739 clauses was successful.  Time =     0.01 sec
+Block =    7  Oblig =  5323  Clause =  2734  Call = 30044 (sat=41.2%)  Cex =   0  Start =  92
+SAT solving =     2.80 sec ( 50.77 %)
+  unsat     =     0.33 sec (  5.97 %)
+  sat       =     2.47 sec ( 44.80 %)
+Generalize  =     3.19 sec ( 57.99 %)
+Push clause =     0.25 sec (  4.48 %)
+Ternary sim =     0.89 sec ( 16.09 %)
+Containment =     0.36 sec (  6.50 %)
+CNF compute =     0.27 sec (  4.83 %)
+Refinement  =     0.00 sec (  0.00 %)
+TOTAL       =     5.51 sec (100.00 %)
+Property proved.  Time =     5.54 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 11 Apr 2025 12:54:03 PM CST
+========================================

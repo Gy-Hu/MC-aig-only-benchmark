@@ -1,0 +1,35 @@
+File: ./avr/opensource/vcegar_QF_BV_pj_icu_icctl_p2/vcegar_QF_BV_pj_icu_icctl_p2.aig
+Command: ~/coding_env/abc/abc -c "&r ./avr/opensource/vcegar_QF_BV_pj_icu_icctl_p2/vcegar_QF_BV_pj_icu_icctl_p2.aig; &put; fold; pdr -v"
+Started at: Fri 11 Apr 2025 04:06:06 PM CST
+----------------------------------------
+ABC command line: "&r ./avr/opensource/vcegar_QF_BV_pj_icu_icctl_p2/vcegar_QF_BV_pj_icu_icctl_p2.aig; &put; fold; pdr -v".
+
+Converted 2 1-valued FFs and 0 DC-valued FFs.
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 6                                                                 1     6      0.00 sec
+  2 : 0 9 16                                                              2    14      0.01 sec
+  3 : 0 3 2 21                                                            2    14      0.01 sec
+  4 : 0 3 2 2 26                                                          2    14      0.01 sec
+  5 : 0 3 2 2 2 35                                                        2    14      0.01 sec
+  6 : 0 3 2 2 2 1 46                                                      2    14      0.02 sec
+  7 : 0 3 2 2 2 1 0 46                                                    0    14      0.02 sec
+Invariant F[6] : 46 clauses with 14 flops (out of 41) (cex = 0, ave = 2.07)
+Verification of invariant with 46 clauses was successful.  Time =     0.00 sec
+Block =   39  Oblig =    86  Clause =    64  Call =   435 (sat=46.0%)  Cex =   0  Start =   0
+SAT solving =     0.01 sec ( 32.41 %)
+  unsat     =     0.00 sec (  7.12 %)
+  sat       =     0.01 sec ( 25.29 %)
+Generalize  =     0.01 sec ( 18.05 %)
+Push clause =     0.00 sec ( 14.65 %)
+Ternary sim =     0.00 sec (  1.07 %)
+Containment =     0.00 sec (  0.01 %)
+CNF compute =     0.00 sec (  4.31 %)
+Refinement  =     0.00 sec (  0.00 %)
+TOTAL       =     0.03 sec (100.00 %)
+Property proved.  Time =     0.03 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 11 Apr 2025 04:06:06 PM CST
+========================================

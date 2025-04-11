@@ -1,0 +1,34 @@
+File: ./hwmcc08/pdtvisvsa16a10.aig
+Command: ~/coding_env/abc/abc -c "&r ./hwmcc08/pdtvisvsa16a10.aig; &put; fold; pdr -v"
+Started at: Fri 11 Apr 2025 11:18:56 AM CST
+----------------------------------------
+ABC command line: "&r ./hwmcc08/pdtvisvsa16a10.aig; &put; fold; pdr -v".
+
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 2                                                                 1     2      0.01 sec
+  2 : 0 19 18                                                             3    26      0.02 sec
+  3 : 0 19 35 33                                                          3    59      0.04 sec
+  4 : 0 19 148 86 255                                                     4    60      0.33 sec
+  5 : 0 19 148 86 65 193                                                  2    61      0.36 sec
+  6 : 0 19 148 86 64 64 256                                               2    61      0.49 sec
+  7 : 0 19 148 86 64 64 0 256                                             0    61      0.52 sec
+Invariant F[6] : 256 clauses with 61 flops (out of 236) (cex = 0, ave = 20.57)
+Verification of invariant with 256 clauses was successful.  Time =     0.00 sec
+Block =  163  Oblig =   930  Clause =   638  Call = 10435 (sat=73.8%)  Cex =   0  Start =  31
+SAT solving =     0.42 sec ( 78.73 %)
+  unsat     =     0.03 sec (  5.71 %)
+  sat       =     0.39 sec ( 73.02 %)
+Generalize  =     0.37 sec ( 69.89 %)
+Push clause =     0.07 sec ( 13.51 %)
+Ternary sim =     0.03 sec (  5.50 %)
+Containment =     0.00 sec (  0.16 %)
+CNF compute =     0.02 sec (  2.85 %)
+Refinement  =     0.00 sec (  0.00 %)
+TOTAL       =     0.53 sec (100.00 %)
+Property proved.  Time =     0.53 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 11 Apr 2025 11:18:57 AM CST
+========================================

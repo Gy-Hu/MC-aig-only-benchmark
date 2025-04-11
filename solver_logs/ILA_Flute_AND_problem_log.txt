@@ -1,0 +1,23 @@
+File: ./hwmcc24/2024/hku/refinement_checking/bv/ILA_Flute_AND_problem.aig
+Command: ~/coding_env/abc/abc -c "&r ./hwmcc24/2024/hku/refinement_checking/bv/ILA_Flute_AND_problem.aig; &put; fold; pdr -v"
+Started at: Fri 11 Apr 2025 08:42:31 PM CST
+----------------------------------------
+ABC command line: "&r ./hwmcc24/2024/hku/refinement_checking/bv/ILA_Flute_AND_problem.aig; &put; fold; pdr -v".
+
+Warning: The last output is interpreted as a constraint.
+Converted 548 1-valued FFs and 173794 DC-valued FFs.
+Warning: The number of inputs does not match the number of input names.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 1                                                                 1     1      2.30 sec
+  2 : 0 6 7                                                               2     7      3.10 sec
+  3 : 0 6 15 19                                                           5    30      6.43 sec
+  4 : 0 3 3 1 20                                                          0    30      6.58 sec
+  5 : 0 3 3 1 1 19                                                        0    30      6.67 sec
+  6 : 0 3 3 1 1 1 18                                                      0    30      6.74 sec
+  7 : 0 6 15 90 666 736 298 479                                         600   499   1146.16 sec
+  8 : 0 3 7 8 16 70 149 165 271                                           0   499   1158.75 sec
+----------------------------------------
+STATUS: TIMEOUT (exceeded 3600 seconds)
+Finished at: Fri 11 Apr 2025 09:42:31 PM CST
+========================================

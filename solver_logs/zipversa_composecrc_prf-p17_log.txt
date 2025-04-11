@@ -1,0 +1,37 @@
+File: ./hwmcc20/aig-1.8/zipversa_composecrc_prf-p17.aig
+Command: ~/coding_env/abc/abc -c "&r ./hwmcc20/aig-1.8/zipversa_composecrc_prf-p17.aig; &put; fold; pdr -v"
+Started at: Fri 11 Apr 2025 06:10:03 PM CST
+----------------------------------------
+ABC command line: "&r ./hwmcc20/aig-1.8/zipversa_composecrc_prf-p17.aig; &put; fold; pdr -v".
+
+Converted 69 1-valued FFs and 171 DC-valued FFs.
+Warning: The number of inputs does not match the number of input names.
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 1                                                                 1     1      0.01 sec
+  2 : 0 2 4                                                               2     6      0.01 sec
+  3 : 0 3 4 8                                                             5     9      0.01 sec
+  4 : 0 1 1 1 4                                                           0     9      0.01 sec
+  5 : 0 3 3 3 3 18                                                        5    17      0.01 sec
+  6 : 0 2 2 3 4 3 20                                                      2    19      0.01 sec
+  7 : 0 2 2 3 4 3 1 21                                                    2    19      0.02 sec
+  8 : 0 2 2 3 4 3 0 0 22                                                  0    19      0.02 sec
+Invariant F[6] : 22 clauses with 19 flops (out of 317) (cex = 0, ave = 23.09)
+Verification of invariant with 22 clauses was successful.  Time =     0.00 sec
+Block =   15  Oblig =    69  Clause =    48  Call =   351 (sat=53.0%)  Cex =   0  Start =   0
+SAT solving =     0.00 sec ( 14.85 %)
+  unsat     =     0.00 sec (  1.48 %)
+  sat       =     0.00 sec ( 13.37 %)
+Generalize  =     0.00 sec ( 11.49 %)
+Push clause =     0.00 sec (  5.32 %)
+Ternary sim =     0.00 sec (  4.22 %)
+Containment =     0.00 sec (  0.04 %)
+CNF compute =     0.00 sec (  1.64 %)
+Refinement  =     0.00 sec (  0.00 %)
+TOTAL       =     0.03 sec (100.00 %)
+Property proved.  Time =     0.03 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 11 Apr 2025 06:10:03 PM CST
+========================================

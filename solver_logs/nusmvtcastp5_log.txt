@@ -1,0 +1,49 @@
+File: ./hwmcc11/single/nusmvtcastp5.aig
+Command: ~/coding_env/abc/abc -c "&r ./hwmcc11/single/nusmvtcastp5.aig; &put; fold; pdr -v"
+Started at: Fri 11 Apr 2025 03:20:53 PM CST
+----------------------------------------
+ABC command line: "&r ./hwmcc11/single/nusmvtcastp5.aig; &put; fold; pdr -v".
+
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 1                                                                 1     1      0.01 sec
+  2 : 0 8 12                                                              5    25      0.02 sec
+  3 : 0 3 4 6                                                             0    25      0.02 sec
+  4 : 0 3 4 3 3                                                           0    25      0.02 sec
+  5 : 0 3 4 3 1 2                                                         0    25      0.02 sec
+  6 : 0 10 7 13 22 23 110                                                10    69      0.28 sec
+  7 : 0 7 4 9 9 12 37 96                                                  6    72      0.31 sec
+  8 : 0 7 4 9 9 12 27 34 79                                               2    72      0.34 sec
+  9 : 0 7 4 9 9 12 25 29 11 68                                            0    72      0.35 sec
+ 10 : 0 7 4 9 9 12 25 29 11 16 70                                         2    72      0.38 sec
+ 11 : 0 7 4 9 9 13 34 34 25 28 21 160                                    11    82      0.62 sec
+ 12 : 0 7 4 9 9 9 15 21 14 12 14 16 159                                   3    82      0.67 sec
+ 13 : 0 7 4 9 9 9 15 21 14 12 9 11 8 151                                  0    82      0.69 sec
+ 14 : 0 7 4 9 9 9 15 21 14 12 9 11 8 18 194                               6    86      0.81 sec
+ 15 : 0 7 4 9 9 9 15 21 19 14 12 14 11 43 100 490                        12   101      1.67 sec
+ 16 : 0 7 4 9 9 9 15 21 18 14 10 10 9 41 59 54 408                        0   101      1.72 sec
+ 17 : 0 7 4 9 9 9 15 21 18 14 10 10 9 41 59 51 29 383                     1   101      1.77 sec
+ 18 : 0 7 4 9 9 9 15 21 18 14 10 10 9 41 59 51 29 27 373                  2   106      1.84 sec
+ 19 : 0 7 4 9 9 9 15 21 18 14 10 10 9 41 59 51 29 16 19 363               1   106      1.89 sec
+ 20 : 0 7 4 9 9 9 15 21 18 14 10 10 9 41 59 51 29 16 20 14 362            3   106      1.96 sec
+ 21 : 0 7 4 9 9 9 15 21 18 14 10 10 9 41 59 40 34 18 11 7 12 365          1   106      2.01 sec
+ 22 : ... 7 4 9 9 9 15 21 18 14 10 10 9 40 59 40 35 19 13 9 26 34 473     8   109      2.31 sec
+ 23 : 0 7 4 9 9 9 15 21 18 14 10 10 9 40 27 3 8 4 8 6 6 10 14 529         1   109      2.36 sec
+ 24 : ... 28 45 58 51 31 23 19 44 34 14 26 22 43 26 20 18 24 37 725      79   117      3.76 sec
+Block =  118  Oblig =  3661  Clause =  1706  Call = 33759 (sat=52.9%)  Cex =   0  Start = 101
+SAT solving =     2.37 sec ( 62.79 %)
+  unsat     =     0.39 sec ( 10.33 %)
+  sat       =     1.98 sec ( 52.46 %)
+Generalize  =     2.47 sec ( 65.44 %)
+Push clause =     0.52 sec ( 13.92 %)
+Ternary sim =     0.77 sec ( 20.36 %)
+Containment =     0.13 sec (  3.37 %)
+CNF compute =     0.09 sec (  2.30 %)
+Refinement  =     0.00 sec (  0.01 %)
+TOTAL       =     3.77 sec (100.00 %)
+Output 0 of miter "./hwmcc11/single/nusmvtcastp5" was asserted in frame 26.  Time =     3.79 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 11 Apr 2025 03:20:57 PM CST
+========================================

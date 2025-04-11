@@ -1,0 +1,30 @@
+File: ./hwmcc20/aig/arbitrated_top_n4_w64_d32_e0.aig
+Command: ~/coding_env/abc/abc -c "&r ./hwmcc20/aig/arbitrated_top_n4_w64_d32_e0.aig; &put; fold; pdr -v"
+Started at: Fri 11 Apr 2025 06:30:32 PM CST
+----------------------------------------
+ABC command line: "&r ./hwmcc20/aig/arbitrated_top_n4_w64_d32_e0.aig; &put; fold; pdr -v".
+
+Warning: The last 13 outputs are interpreted as constraints.
+Converted 1 1-valued FFs and 8361 DC-valued FFs.
+Warning: The number of inputs does not match the number of input names.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 9                                                                 1    11      0.28 sec
+  2 : 0 20 95                                                             5   129      3.62 sec
+  3 : 0 15 36 243                                                         5   278     13.31 sec
+  4 : 0 10 24 105 246                                                     4   278     19.06 sec
+  5 : 0 10 24 38 160 438                                                  4   341     37.26 sec
+  6 : 0 9 22 35 147 367 489                                               8   404     63.57 sec
+  7 : 0 9 22 34 131 322 594 852                                          22   467    125.66 sec
+  8 : 0 10 33 55 153 356 591 1290 1264                                  108   537    251.52 sec
+  9 : 0 9 29 42 123 316 419 1108 1659 1235                               51   600    388.73 sec
+ 10 : 0 9 29 41 101 312 318 1167 1877 2475 2343                          15   663    714.84 sec
+ 11 : 0 9 29 41 100 313 291 1036 1623 1794 2518 1591                     31   726    880.38 sec
+ 12 : 0 9 29 41 100 313 286 1024 1206 2051 2031 2654 1926                81   789   1164.05 sec
+ 13 : 0 9 29 41 100 313 287 1011 1121 1857 1799 2053 3204 2673           58   852   1555.00 sec
+ 14 : ... 9 29 41 103 315 308 1047 1146 2089 2185 2512 3422 4767 4144   242   915   2386.54 sec
+ 15 : ... 41 102 288 268 891 912 1744 1576 1741 2453 3894 4952 4203      55   978   3046.85 sec
+----------------------------------------
+STATUS: TIMEOUT (exceeded 3600 seconds)
+Finished at: Fri 11 Apr 2025 07:30:32 PM CST
+========================================

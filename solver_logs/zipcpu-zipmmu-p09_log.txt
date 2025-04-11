@@ -1,0 +1,34 @@
+File: ./hwmcc20/aig-1.8/zipcpu-zipmmu-p09.aig
+Command: ~/coding_env/abc/abc -c "&r ./hwmcc20/aig-1.8/zipcpu-zipmmu-p09.aig; &put; fold; pdr -v"
+Started at: Fri 11 Apr 2025 05:47:56 PM CST
+----------------------------------------
+ABC command line: "&r ./hwmcc20/aig-1.8/zipcpu-zipmmu-p09.aig; &put; fold; pdr -v".
+
+Converted 2 1-valued FFs and 684 DC-valued FFs.
+Warning: The number of inputs does not match the number of input names.
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 1                                                                 1     1      0.01 sec
+  2 : 0 2 5                                                               2     8      0.01 sec
+  3 : 0 1 1 292                                                           2    97      0.18 sec
+  4 : 0 1 1 2 290                                                         0    97      0.19 sec
+  5 : 0 1 1 2 0 290                                                       0    97      0.19 sec
+Invariant F[4] : 290 clauses with 95 flops (out of 795) (cex = 0, ave = 42.43)
+Verification of invariant with 290 clauses was successful.  Time =     0.00 sec
+Block =  150  Oblig =   445  Clause =   298  Call =  3242 (sat=63.8%)  Cex =   0  Start =   7
+SAT solving =     0.13 sec ( 65.10 %)
+  unsat     =     0.01 sec (  2.87 %)
+  sat       =     0.13 sec ( 62.23 %)
+Generalize  =     0.14 sec ( 68.77 %)
+Push clause =     0.00 sec (  2.28 %)
+Ternary sim =     0.02 sec ( 12.01 %)
+Containment =     0.00 sec (  0.19 %)
+CNF compute =     0.00 sec (  2.32 %)
+Refinement  =     0.00 sec (  0.00 %)
+TOTAL       =     0.20 sec (100.00 %)
+Property proved.  Time =     0.21 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 11 Apr 2025 05:47:56 PM CST
+========================================

@@ -1,0 +1,28 @@
+File: ./hwmcc08/139443p0neg.aig
+Command: ~/coding_env/abc/abc -c "&r ./hwmcc08/139443p0neg.aig; &put; fold; pdr -v"
+Started at: Fri 11 Apr 2025 11:13:51 AM CST
+----------------------------------------
+ABC command line: "&r ./hwmcc08/139443p0neg.aig; &put; fold; pdr -v".
+
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 28                                                                1    28      0.06 sec
+  2 : 0 28 42                                                             3    59      0.15 sec
+  3 : 0 27 77 201                                                         4   137      0.85 sec
+Block =  210  Oblig =   422  Clause =   317  Call =  2750 (sat=64.5%)  Cex =   0  Start =   7
+SAT solving =     0.35 sec ( 40.34 %)
+  unsat     =     0.03 sec (  3.23 %)
+  sat       =     0.32 sec ( 37.11 %)
+Generalize  =     0.42 sec ( 48.53 %)
+Push clause =     0.01 sec (  1.24 %)
+Ternary sim =     0.42 sec ( 49.38 %)
+Containment =     0.01 sec (  1.03 %)
+CNF compute =     0.01 sec (  1.09 %)
+Refinement  =     0.00 sec (  0.01 %)
+TOTAL       =     0.86 sec (100.00 %)
+Output 0 of miter "./hwmcc08/139443p0neg" was asserted in frame 3.  Time =     0.86 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 11 Apr 2025 11:13:52 AM CST
+========================================

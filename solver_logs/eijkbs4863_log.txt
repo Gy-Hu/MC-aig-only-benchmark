@@ -1,0 +1,32 @@
+File: ./hwmcc11/single/eijkbs4863.aig
+Command: ~/coding_env/abc/abc -c "&r ./hwmcc11/single/eijkbs4863.aig; &put; fold; pdr -v"
+Started at: Fri 11 Apr 2025 03:31:24 PM CST
+----------------------------------------
+ABC command line: "&r ./hwmcc11/single/eijkbs4863.aig; &put; fold; pdr -v".
+
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 64                                                                1    64      0.06 sec
+  2 : 0 297 410                                                          25   256      0.58 sec
+  3 : 0 44 187 307                                                        0   256      0.79 sec
+  4 : 0 45 196 108 490                                                   16   256      1.41 sec
+  5 : 0 34 0 0 0 596                                                      0   256      1.81 sec
+Invariant F[2] : 596 clauses with 256 flops (out of 256) (cex = 0, ave = 34.98)
+Verification of invariant with 596 clauses was successful.  Time =     0.13 sec
+Block =  188  Oblig =  1586  Clause =  1008  Call =  7041 (sat=47.4%)  Cex =   0  Start =  21
+SAT solving =     1.57 sec ( 80.87 %)
+  unsat     =     1.10 sec ( 56.75 %)
+  sat       =     0.47 sec ( 24.12 %)
+Generalize  =     0.90 sec ( 46.44 %)
+Push clause =     0.65 sec ( 33.53 %)
+Ternary sim =     0.11 sec (  5.78 %)
+Containment =     0.01 sec (  0.33 %)
+CNF compute =     0.02 sec (  0.94 %)
+Refinement  =     0.00 sec (  0.00 %)
+TOTAL       =     1.94 sec (100.00 %)
+Property proved.  Time =     1.95 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 11 Apr 2025 03:31:26 PM CST
+========================================

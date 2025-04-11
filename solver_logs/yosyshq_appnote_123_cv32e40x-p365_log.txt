@@ -1,0 +1,31 @@
+File: ./hwmcc24/2024/yosyshq/appnote_123/cv32e40x/yosyshq_appnote_123_cv32e40x-p365.aig
+Command: ~/coding_env/abc/abc -c "&r ./hwmcc24/2024/yosyshq/appnote_123/cv32e40x/yosyshq_appnote_123_cv32e40x-p365.aig; &put; fold; pdr -v"
+Started at: Fri 11 Apr 2025 09:53:09 PM CST
+----------------------------------------
+ABC command line: "&r ./hwmcc24/2024/yosyshq/appnote_123/cv32e40x/yosyshq_appnote_123_cv32e40x-p365.aig; &put; fold; pdr -v".
+
+Warning: The last 18 outputs are interpreted as constraints.
+Converted 1499 1-valued FFs and 89725 DC-valued FFs.
+Warning: The number of inputs does not match the number of flop names.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 2                                                                 1     3      0.10 sec
+  2 : 0 3 5                                                               2    10      0.10 sec
+  3 : 0 3 1 6                                                             1    11      0.11 sec
+  4 : 0 3 1 1 6                                                           1    11      0.11 sec
+  5 : 0 3 1 1 1 6                                                         2    12      0.11 sec
+  6 : 0 3 1 1 1 2 5                                                       1    13      0.11 sec
+  7 : 0 3 1 1 1 65 42 92                                                 22   154      1.92 sec
+  8 : 0 3 1 1 1 51 21 37 55                                               0   154      1.99 sec
+  9 : 0 3 1 1 1 51 21 35 8 47                                             0   154      2.08 sec
+ 10 : 0 3 1 1 1 57 27 74 19 23 64                                        39   173      3.01 sec
+ 11 : 0 3 1 1 1 46 13 30 26 53 6 58                                       0   173      3.11 sec
+ 12 : 0 3 1 1 1 46 13 29 26 53 6 5 53                                     0   173      3.20 sec
+ 13 : 0 3 1 1 1 64 15 124 216 610 768 1289 1319 2084                    587   721     77.67 sec
+ 14 : 0 3 1 1 1 58 13 71 55 219 242 458 505 701 1103                      0   721     79.68 sec
+ 15 : 0 3 1 1 1 58 13 70 53 200 208 440 479 679 291 812                   0   721     81.21 sec
+ 16 : 0 3 1 1 1 58 14 72 60 208 268 557 677 1308 1192 1144 1354         865   848    160.68 sec
+----------------------------------------
+STATUS: TIMEOUT (exceeded 3600 seconds)
+Finished at: Fri 11 Apr 2025 10:53:09 PM CST
+========================================

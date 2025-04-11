@@ -1,0 +1,35 @@
+File: ./hwmcc11/single/prodconspold1.aig
+Command: ~/coding_env/abc/abc -c "&r ./hwmcc11/single/prodconspold1.aig; &put; fold; pdr -v"
+Started at: Fri 11 Apr 2025 03:44:43 PM CST
+----------------------------------------
+ABC command line: "&r ./hwmcc11/single/prodconspold1.aig; &put; fold; pdr -v".
+
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 5                                                                 1     5      0.00 sec
+  2 : 0 9 12                                                              4    16      0.01 sec
+  3 : 0 7 15 20                                                           5    24      0.01 sec
+  4 : 0 7 14 23 34                                                        4    26      0.03 sec
+  5 : 0 7 16 22 32 44                                                     7    32      0.05 sec
+  6 : 0 7 15 14 10 17 38                                                  1    32      0.06 sec
+  7 : 0 7 15 14 10 17 32 47                                               5    32      0.08 sec
+  8 : 0 7 15 14 10 20 48 46 71                                           15    35      0.12 sec
+  9 : 0 5 8 9 10 11 36 29 36 60                                           3    35      0.14 sec
+ 10 : 0 6 10 14 15 15 45 44 60 50 62                                     24    41      0.20 sec
+Block =  148  Oblig =   817  Clause =   430  Call =  5252 (sat=67.3%)  Cex =   0  Start =  13
+SAT solving =     0.14 sec ( 65.83 %)
+  unsat     =     0.01 sec (  6.60 %)
+  sat       =     0.12 sec ( 59.23 %)
+Generalize  =     0.13 sec ( 60.47 %)
+Push clause =     0.03 sec ( 13.21 %)
+Ternary sim =     0.03 sec ( 13.41 %)
+Containment =     0.00 sec (  0.43 %)
+CNF compute =     0.00 sec (  2.11 %)
+Refinement  =     0.00 sec (  0.04 %)
+TOTAL       =     0.21 sec (100.00 %)
+Output 0 of miter "./hwmcc11/single/prodconspold1" was asserted in frame 26.  Time =     0.21 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 11 Apr 2025 03:44:43 PM CST
+========================================

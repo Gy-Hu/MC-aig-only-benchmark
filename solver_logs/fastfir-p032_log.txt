@@ -1,0 +1,38 @@
+File: ./others/fastfir/aig/fastfir-p032.aig
+Command: ~/coding_env/abc/abc -c "&r ./others/fastfir/aig/fastfir-p032.aig; &put; fold; pdr -v"
+Started at: Fri 11 Apr 2025 11:51:37 AM CST
+----------------------------------------
+ABC command line: "&r ./others/fastfir/aig/fastfir-p032.aig; &put; fold; pdr -v".
+
+Warning: The last 342 outputs are interpreted as constraints.
+Converted 34 1-valued FFs and 39 DC-valued FFs.
+Warning: The number of inputs does not match the number of input names.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 32                                                                1    32      0.09 sec
+  2 : 0 37 213                                                            3    57      0.82 sec
+  3 : 0 37 181 118                                                        3    63      1.19 sec
+  4 : 0 37 131 83 249                                                     3   118      2.16 sec
+  5 : 0 37 129 51 159 237                                                 3   118      2.78 sec
+  6 : 0 37 129 47 68 68 300                                               3   118      3.33 sec
+  7 : 0 37 129 46 55 35 57 344                                            2   118      3.93 sec
+  8 : 0 37 129 46 55 35 34 40 287                                         2   118      4.23 sec
+  9 : 0 37 129 46 55 35 34 0 0 287                                        0   118      4.34 sec
+Invariant F[7] : 287 clauses with 114 flops (out of 251) (cex = 0, ave = 77.76)
+Verification of invariant with 287 clauses was successful.  Time =     0.01 sec
+Block =  699  Oblig =  1168  Clause =   958  Call = 11188 (sat=58.2%)  Cex =   0  Start =  30
+SAT solving =     2.55 sec ( 58.61 %)
+  unsat     =     0.19 sec (  4.25 %)
+  sat       =     2.37 sec ( 54.36 %)
+Generalize  =     1.76 sec ( 40.33 %)
+Push clause =     0.74 sec ( 17.10 %)
+Ternary sim =     1.08 sec ( 24.73 %)
+Containment =     0.02 sec (  0.43 %)
+CNF compute =     0.03 sec (  0.61 %)
+Refinement  =     0.00 sec (  0.00 %)
+TOTAL       =     4.35 sec (100.00 %)
+Property proved.  Time =     4.36 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 11 Apr 2025 11:51:42 AM CST
+========================================

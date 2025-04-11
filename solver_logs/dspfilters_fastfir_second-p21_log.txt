@@ -1,0 +1,36 @@
+File: ./hwmcc20/aig-1.8/dspfilters_fastfir_second-p21.aig
+Command: ~/coding_env/abc/abc -c "&r ./hwmcc20/aig-1.8/dspfilters_fastfir_second-p21.aig; &put; fold; pdr -v"
+Started at: Fri 11 Apr 2025 05:45:18 PM CST
+----------------------------------------
+ABC command line: "&r ./hwmcc20/aig-1.8/dspfilters_fastfir_second-p21.aig; &put; fold; pdr -v".
+
+Converted 0 1-valued FFs and 39 DC-valued FFs.
+Warning: The number of inputs does not match the number of input names.
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 18                                                                1    19      0.13 sec
+  2 : 0 72 96                                                             2    98      0.98 sec
+  3 : 0 72 105 86                                                         3   141      1.94 sec
+  4 : 0 72 105 63 676                                                     3   372     11.48 sec
+  5 : 0 72 105 62 236 737                                                 2   372     16.45 sec
+  6 : 0 72 105 62 236 3 734                                               0   372     16.88 sec
+  7 : 0 72 105 62 236 3 0 734                                             0   372     17.24 sec
+Invariant F[6] : 734 clauses with 309 flops (out of 1136) (cex = 0, ave = 231.31)
+Verification of invariant with 734 clauses was successful.  Time =     0.06 sec
+Block =  516  Oblig =  1817  Clause =  1214  Call = 21837 (sat=52.2%)  Cex =   0  Start =  67
+SAT solving =    11.24 sec ( 64.92 %)
+  unsat     =     1.67 sec (  9.62 %)
+  sat       =     9.58 sec ( 55.30 %)
+Generalize  =    11.11 sec ( 64.18 %)
+Push clause =     1.37 sec (  7.90 %)
+Ternary sim =     3.38 sec ( 19.52 %)
+Containment =     0.16 sec (  0.91 %)
+CNF compute =     0.18 sec (  1.06 %)
+Refinement  =     0.00 sec (  0.00 %)
+TOTAL       =    17.32 sec (100.00 %)
+Property proved.  Time =    17.33 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 11 Apr 2025 05:45:36 PM CST
+========================================

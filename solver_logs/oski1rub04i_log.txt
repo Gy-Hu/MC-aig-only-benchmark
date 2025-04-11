@@ -1,0 +1,38 @@
+File: ./hwmcc14/single/oski1rub04i.aig
+Command: ~/coding_env/abc/abc -c "&r ./hwmcc14/single/oski1rub04i.aig; &put; fold; pdr -v"
+Started at: Fri 11 Apr 2025 02:04:45 PM CST
+----------------------------------------
+ABC command line: "&r ./hwmcc14/single/oski1rub04i.aig; &put; fold; pdr -v".
+
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 1                                                                 1     1      0.18 sec
+  2 : 0 1 1                                                               1     2      0.27 sec
+  3 : 0 1 1 6                                                             2    10      0.69 sec
+  4 : 0 1 1 7 7                                                           2    14      1.42 sec
+  5 : 0 1 1 9 478 626                                                     4   455    126.29 sec
+  6 : 0 1 1 30 559 3385 3475                                             19   917   1054.62 sec
+  7 : 0 1 1 12 1 1 57 829                                                 0   917   1056.15 sec
+  8 : 0 1 1 12 1 1 57 244 585                                             0   917   1059.81 sec
+  9 : 0 1 1 12 1 1 58 397 2895 3439                                     104  1052   1949.60 sec
+ 10 : 0 1 1 12 1 1 1 1 1 1 1135                                           0  1052   1950.89 sec
+ 11 : 0 1 1 12 1 1 1 1 1 1 102 1033                                       0  1052   1952.66 sec
+ 12 : 0 1 1 12 1 1 1 1 1 1 102 308 725                                    0  1052   1957.13 sec
+ 13 : 0 1 1 12 1 1 1 1 2 2 135 399 2226 2700                            105  1105   2559.02 sec
+Block =   48  Oblig = 27396  Clause = 17744  Call =178866 (sat=72.5%)  Cex =   0  Start = 589
+SAT solving =  1534.68 sec ( 59.97 %)
+  unsat     =    54.32 sec (  2.12 %)
+  sat       =  1480.36 sec ( 57.85 %)
+Generalize  =  2237.70 sec ( 87.44 %)
+Push clause =    32.43 sec (  1.27 %)
+Ternary sim =   799.02 sec ( 31.22 %)
+Containment =    48.88 sec (  1.91 %)
+CNF compute =    28.00 sec (  1.09 %)
+Refinement  =     0.02 sec (  0.00 %)
+TOTAL       =  2559.05 sec (100.00 %)
+Output 0 of miter "./hwmcc14/single/oski1rub04i" was asserted in frame 14.  Time =  2559.24 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 11 Apr 2025 02:47:24 PM CST
+========================================

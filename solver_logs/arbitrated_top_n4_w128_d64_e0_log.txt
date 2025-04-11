@@ -1,0 +1,24 @@
+File: ./hwmcc1920ns/arbitrated_top_n4_w128_d64_e0.aig
+Command: ~/coding_env/abc/abc -c "&r ./hwmcc1920ns/arbitrated_top_n4_w128_d64_e0.aig; &put; fold; pdr -v"
+Started at: Fri 11 Apr 2025 08:01:20 PM CST
+----------------------------------------
+ABC command line: "&r ./hwmcc1920ns/arbitrated_top_n4_w128_d64_e0.aig; &put; fold; pdr -v".
+
+Warning: The last 13 outputs are interpreted as constraints.
+Converted 1 1-valued FFs and 33018 DC-valued FFs.
+Warning: The number of inputs does not match the number of input names.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 8                                                                 1    10      1.37 sec
+  2 : 0 17 30                                                             4    37      5.71 sec
+  3 : 0 19 49 433                                                        10   477    124.38 sec
+  4 : 0 11 33 166 433                                                     3   477    167.52 sec
+  5 : 0 11 32 33 75 698                                                   6   604    249.56 sec
+  6 : 0 10 31 44 91 440 826                                              19   731    425.92 sec
+  7 : 0 10 30 39 70 200 439 1076                                         11   858    681.77 sec
+  8 : 0 10 30 39 52 187 435 1328 1800                                     9   985   1494.29 sec
+  9 : 0 10 30 39 52 189 582 1669 2444 2417                               23  1112   2943.06 sec
+----------------------------------------
+STATUS: TIMEOUT (exceeded 3600 seconds)
+Finished at: Fri 11 Apr 2025 09:01:20 PM CST
+========================================

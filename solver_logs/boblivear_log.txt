@@ -1,0 +1,48 @@
+File: ./hwmcc-appr/boblivear.aig
+Command: ~/coding_env/abc/abc -c "&r ./hwmcc-appr/boblivear.aig; &put; fold; pdr -v"
+Started at: Fri 11 Apr 2025 01:27:20 AM CST
+----------------------------------------
+ABC command line: "&r ./hwmcc-appr/boblivear.aig; &put; fold; pdr -v".
+
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 4                                                                 1     5      0.00 sec
+  2 : 0 12 49                                                             2    36      0.01 sec
+  3 : 0 6 6 38                                                            2    37      0.01 sec
+  4 : 0 6 5 14 19                                                         0    37      0.01 sec
+  5 : 0 6 10 41 99 187                                                   11    53      0.09 sec
+  6 : 0 6 9 32 61 112 152                                                14    53      0.16 sec
+  7 : 0 8 13 33 59 144 590 648                                           85    61      0.85 sec
+  8 : 0 7 15 33 59 141 610 943 599                                      105    64      1.56 sec
+  9 : 0 7 16 33 57 120 339 440 525 437                                   11    64      1.77 sec
+ 10 : 0 7 18 33 57 120 337 437 654 709 738                              258    66      2.70 sec
+ 11 : 0 7 18 33 57 120 334 329 265 343 521 805                            4    66      3.08 sec
+ 12 : 0 7 18 33 57 120 334 329 263 317 484 511 389                        5    66      3.30 sec
+ 13 : 0 7 18 33 57 120 334 329 263 317 470 508 102 295                    2    66      3.49 sec
+ 14 : 0 7 18 33 57 120 334 329 263 317 470 508 96 14 286                  1    66      3.67 sec
+ 15 : 0 7 18 33 57 120 334 329 263 317 471 516 116 57 41 368             10    66      3.95 sec
+ 16 : 0 7 18 33 57 120 334 329 263 315 462 505 129 37 25 14 358           1    66      4.15 sec
+ 17 : ... 7 18 33 57 120 334 329 263 315 462 505 129 37 26 13 15 368      4    66      4.36 sec
+ 18 : ... 7 18 33 57 120 334 329 263 315 462 505 129 37 25 7 7 3 365      0    66      4.56 sec
+ 19 : ... 18 33 57 120 334 329 263 315 462 505 129 37 25 7 7 3 7 360      1    66      4.75 sec
+ 20 : ... 33 57 120 334 329 263 315 462 505 129 37 25 7 7 3 8 5 378       5    66      4.96 sec
+ 21 : ... 33 57 120 334 329 263 315 462 505 129 37 25 7 5 0 0 0 0 377     0    66      5.16 sec
+Invariant F[17] : 377 clauses with 62 flops (out of 77) (cex = 0, ave = 46.36)
+Verification of invariant with 377 clauses was successful.  Time =     0.00 sec
+Block =  444  Oblig =  6750  Clause =  4289  Call = 97717 (sat=68.6%)  Cex =   0  Start = 314
+SAT solving =     4.61 sec ( 89.23 %)
+  unsat     =     0.81 sec ( 15.59 %)
+  sat       =     3.81 sec ( 73.64 %)
+Generalize  =     2.12 sec ( 41.07 %)
+Push clause =     2.64 sec ( 50.96 %)
+Ternary sim =     0.07 sec (  1.42 %)
+Containment =     0.03 sec (  0.55 %)
+CNF compute =     0.09 sec (  1.68 %)
+Refinement  =     0.00 sec (  0.00 %)
+TOTAL       =     5.17 sec (100.00 %)
+Property proved.  Time =     5.18 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 11 Apr 2025 01:27:25 AM CST
+========================================

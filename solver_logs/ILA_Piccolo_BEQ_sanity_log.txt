@@ -1,0 +1,45 @@
+File: ./hwmcc24/2024/hku/refinement_checking/bv/ILA_Piccolo_BEQ_sanity.aig
+Command: ~/coding_env/abc/abc -c "&r ./hwmcc24/2024/hku/refinement_checking/bv/ILA_Piccolo_BEQ_sanity.aig; &put; fold; pdr -v"
+Started at: Fri 11 Apr 2025 08:39:48 PM CST
+----------------------------------------
+ABC command line: "&r ./hwmcc24/2024/hku/refinement_checking/bv/ILA_Piccolo_BEQ_sanity.aig; &put; fold; pdr -v".
+
+Warning: The last output is interpreted as a constraint.
+Converted 31 1-valued FFs and 7754 DC-valued FFs.
+Warning: The number of inputs does not match the number of input names.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 12                                                                1    12      0.57 sec
+  2 : 0 8 174                                                             2   119      6.85 sec
+  3 : 0 7 104 304                                                         7   131     22.54 sec
+  4 : 0 6 70 2 304                                                        0   131     23.03 sec
+  5 : 0 8 89 29 138 315                                                  15   157     34.68 sec
+  6 : 0 5 11 12 11 18 279                                                 0   157     35.00 sec
+  7 : 0 5 11 12 11 18 119 196                                             3   157     37.31 sec
+  8 : 0 5 11 11 11 21 26 143 213                                         15   164     43.73 sec
+  9 : 0 3 10 11 10 19 21 41 55 78                                         1   226     49.91 sec
+ 10 : 0 3 10 11 11 20 30 58 83 120 543                                   29   275    104.06 sec
+ 11 : 0 2 7 7 5 8 13 34 79 101 474 296                                    3   293    119.19 sec
+ 12 : 0 2 7 7 5 8 13 34 79 100 463 230 332                                4   309    139.47 sec
+ 13 : 0 2 7 7 5 8 13 34 79 100 461 37 15 334                              4   319    149.17 sec
+ 14 : 0 2 7 7 5 8 13 34 79 100 344 150 10 3 286                           7   321    154.48 sec
+ 15 : 0 2 7 7 5 8 13 34 79 100 344 149 6 2 2 285                          0   321    159.05 sec
+ 16 : 0 2 7 7 5 8 13 34 79 100 344 149 6 2 2 0 285                        0   321    162.65 sec
+Invariant F[15] : 285 clauses with 121 flops (out of 6002) (cex = 0, ave = 1383.49)
+Verification of invariant with 285 clauses was successful.  Time =     0.02 sec
+Block = 1333  Oblig =  3189  Clause =  2046  Call = 27156 (sat=57.7%)  Cex =   0  Start =  79
+SAT solving =    85.97 sec ( 52.84 %)
+  unsat     =     1.51 sec (  0.93 %)
+  sat       =    84.46 sec ( 51.92 %)
+Generalize  =    82.95 sec ( 50.99 %)
+Push clause =    30.14 sec ( 18.53 %)
+Ternary sim =    58.93 sec ( 36.22 %)
+Containment =     0.64 sec (  0.40 %)
+CNF compute =     1.38 sec (  0.85 %)
+Refinement  =     0.00 sec (  0.00 %)
+TOTAL       =   162.68 sec (100.00 %)
+Property proved.  Time =   162.77 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 11 Apr 2025 08:42:31 PM CST
+========================================

@@ -1,0 +1,35 @@
+File: ./avr/industry/cal145/cal145.aig
+Command: ~/coding_env/abc/abc -c "&r ./avr/industry/cal145/cal145.aig; &put; fold; pdr -v"
+Started at: Fri 11 Apr 2025 05:08:02 PM CST
+----------------------------------------
+ABC command line: "&r ./avr/industry/cal145/cal145.aig; &put; fold; pdr -v".
+
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 1                                                                 1     1      0.42 sec
+  2 : 0 1 32                                                              1    33      0.90 sec
+  3 : 0 1 141 209                                                         6   269      3.55 sec
+  4 : 0 1 102 110 278                                                     6   318      5.72 sec
+  5 : 0 1 84 104 71 327                                                   7   342      8.05 sec
+  6 : 0 1 78 103 99 94 697                                                7   370     16.78 sec
+  7 : 0 1 27 9 10 7 8 643                                                 6   372     19.82 sec
+  8 : 0 1 19 0 0 0 0 0 612                                                0   372     20.32 sec
+Invariant F[3] : 612 clauses with 370 flops (out of 718) (cex = 0, ave = 39.53)
+Verification of invariant with 612 clauses was successful.  Time =     0.59 sec
+Block =  141  Oblig =  2111  Clause =  1296  Call = 28134 (sat=31.4%)  Cex =   0  Start =  90
+SAT solving =    17.68 sec ( 84.53 %)
+  unsat     =    11.72 sec ( 56.05 %)
+  sat       =     5.96 sec ( 28.48 %)
+Generalize  =     9.85 sec ( 47.08 %)
+Push clause =     3.07 sec ( 14.67 %)
+Ternary sim =     0.64 sec (  3.07 %)
+Containment =     0.03 sec (  0.15 %)
+CNF compute =     0.39 sec (  1.87 %)
+Refinement  =     0.00 sec (  0.00 %)
+TOTAL       =    20.92 sec (100.00 %)
+Property proved.  Time =    20.94 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 11 Apr 2025 05:08:23 PM CST
+========================================

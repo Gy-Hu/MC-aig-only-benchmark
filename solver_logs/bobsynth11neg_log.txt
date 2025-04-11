@@ -1,0 +1,36 @@
+File: ./hwmcc11/single/bobsynth11neg.aig
+Command: ~/coding_env/abc/abc -c "&r ./hwmcc11/single/bobsynth11neg.aig; &put; fold; pdr -v"
+Started at: Fri 11 Apr 2025 03:34:13 PM CST
+----------------------------------------
+ABC command line: "&r ./hwmcc11/single/bobsynth11neg.aig; &put; fold; pdr -v".
+
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 1                                                                 1     1      0.03 sec
+  2 : 0 2 2                                                               2     3      0.03 sec
+  3 : 0 1 1 1                                                             0     3      0.03 sec
+  4 : 0 7 8 5 15                                                          9    19      0.04 sec
+  5 : 0 5 5 4 4 17                                                        4    20      0.05 sec
+  6 : 0 5 5 4 3 1 16                                                      0    20      0.05 sec
+  7 : 0 5 5 4 3 1 1 15                                                    0    20      0.05 sec
+  8 : 0 9 25 24 22 25 50 62 149                                          37    70      0.32 sec
+  9 : 0 6 15 8 12 15 25 45 33 118                                         0    70      0.33 sec
+ 10 : 0 6 15 8 12 15 24 41 32 13 105                                      0    70      0.34 sec
+ 11 : 0 11 26 17 31 29 33 55 56 42 15 127                                53    76      0.44 sec
+Block =    6  Oblig =  1037  Clause =   545  Call =  6002 (sat=60.2%)  Cex =   0  Start =  14
+SAT solving =     0.29 sec ( 62.62 %)
+  unsat     =     0.04 sec (  7.73 %)
+  sat       =     0.25 sec ( 54.89 %)
+Generalize  =     0.25 sec ( 55.39 %)
+Push clause =     0.04 sec (  8.64 %)
+Ternary sim =     0.03 sec (  6.82 %)
+Containment =     0.00 sec (  0.25 %)
+CNF compute =     0.01 sec (  2.32 %)
+Refinement  =     0.00 sec (  0.31 %)
+TOTAL       =     0.46 sec (100.00 %)
+Output 0 of miter "./hwmcc11/single/bobsynth11neg" was asserted in frame 17.  Time =     0.47 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 11 Apr 2025 03:34:14 PM CST
+========================================

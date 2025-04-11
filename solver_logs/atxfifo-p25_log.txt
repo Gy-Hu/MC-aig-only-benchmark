@@ -1,0 +1,37 @@
+File: ./others/atxfifo/aig/atxfifo-p25.aig
+Command: ~/coding_env/abc/abc -c "&r ./others/atxfifo/aig/atxfifo-p25.aig; &put; fold; pdr -v"
+Started at: Fri 11 Apr 2025 11:19:31 AM CST
+----------------------------------------
+ABC command line: "&r ./others/atxfifo/aig/atxfifo-p25.aig; &put; fold; pdr -v".
+
+Warning: The last 12 outputs are interpreted as constraints.
+Converted 4 1-valued FFs and 57 DC-valued FFs.
+Warning: The number of inputs does not match the number of input names.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 6                                                                 1     6      0.00 sec
+  2 : 0 6 3                                                               1    11      0.00 sec
+  3 : 0 6 1 12                                                            1    11      0.01 sec
+  4 : 0 6 1 1 19                                                          2    19      0.01 sec
+  5 : 0 6 1 1 5 19                                                        1    19      0.01 sec
+  6 : 0 10 6 6 5 14 83                                                    6    57      0.04 sec
+  7 : 0 10 6 6 5 9 5 77                                                   1    58      0.04 sec
+  8 : 0 10 6 6 5 9 5 0 77                                                 0    58      0.04 sec
+Invariant F[7] : 77 clauses with 54 flops (out of 112) (cex = 0, ave = 22.62)
+Verification of invariant with 77 clauses was successful.  Time =     0.00 sec
+Block =   59  Oblig =   248  Clause =   136  Call =  1428 (sat=56.2%)  Cex =   0  Start =   1
+SAT solving =     0.02 sec ( 46.61 %)
+  unsat     =     0.00 sec (  5.30 %)
+  sat       =     0.02 sec ( 41.31 %)
+Generalize  =     0.02 sec ( 40.78 %)
+Push clause =     0.00 sec (  8.49 %)
+Ternary sim =     0.00 sec (  7.05 %)
+Containment =     0.00 sec (  0.26 %)
+CNF compute =     0.00 sec (  1.99 %)
+Refinement  =     0.00 sec (  0.00 %)
+TOTAL       =     0.05 sec (100.00 %)
+Property proved.  Time =     0.06 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 11 Apr 2025 11:19:31 AM CST
+========================================

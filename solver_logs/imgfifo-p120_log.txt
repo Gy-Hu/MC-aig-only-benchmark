@@ -1,0 +1,39 @@
+File: ./others/vgasim-imgfifo/aig/imgfifo-p120.aig
+Command: ~/coding_env/abc/abc -c "&r ./others/vgasim-imgfifo/aig/imgfifo-p120.aig; &put; fold; pdr -v"
+Started at: Fri 11 Apr 2025 11:30:18 AM CST
+----------------------------------------
+ABC command line: "&r ./others/vgasim-imgfifo/aig/imgfifo-p120.aig; &put; fold; pdr -v".
+
+Warning: The last 44 outputs are interpreted as constraints.
+Converted 28 1-valued FFs and 414 DC-valued FFs.
+Warning: The number of inputs does not match the number of input names.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 5                                                                 1     6      0.01 sec
+  2 : 0 20 35                                                             3    43      0.03 sec
+  3 : 0 20 18 53                                                          1    47      0.05 sec
+  4 : 0 33 51 50 138                                                      9    96      0.15 sec
+  5 : 0 21 25 20 20 115                                                   3    97      0.22 sec
+  6 : 0 21 25 20 26 36 162                                                5    97      0.34 sec
+  7 : 0 21 25 20 19 22 24 165                                             4    97      0.37 sec
+  8 : 0 21 25 20 19 15 27 19 202                                          5    97      0.43 sec
+  9 : 0 21 25 20 19 9 6 5 9 204                                           5    98      0.53 sec
+ 10 : 0 21 25 20 19 9 5 2 2 0 190                                         0    98      0.54 sec
+Invariant F[9] : 190 clauses with 82 flops (out of 608) (cex = 0, ave = 130.74)
+Verification of invariant with 190 clauses was successful.  Time =     0.00 sec
+Block =  200  Oblig =  1983  Clause =   515  Call =  5504 (sat=57.8%)  Cex =   0  Start =  14
+SAT solving =     0.23 sec ( 41.49 %)
+  unsat     =     0.02 sec (  2.88 %)
+  sat       =     0.21 sec ( 38.61 %)
+Generalize  =     0.34 sec ( 61.74 %)
+Push clause =     0.05 sec (  9.93 %)
+Ternary sim =     0.20 sec ( 36.87 %)
+Containment =     0.01 sec (  1.08 %)
+CNF compute =     0.01 sec (  1.87 %)
+Refinement  =     0.00 sec (  0.00 %)
+TOTAL       =     0.55 sec (100.00 %)
+Property proved.  Time =     0.55 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 11 Apr 2025 11:30:19 AM CST
+========================================

@@ -1,0 +1,46 @@
+File: ./hwmcc20/aig-1.8/simple_alu.aig
+Command: ~/coding_env/abc/abc -c "&r ./hwmcc20/aig-1.8/simple_alu.aig; &put; fold; pdr -v"
+Started at: Fri 11 Apr 2025 05:30:55 PM CST
+----------------------------------------
+ABC command line: "&r ./hwmcc20/aig-1.8/simple_alu.aig; &put; fold; pdr -v".
+
+Converted 1 1-valued FFs and 4 DC-valued FFs.
+Warning: The number of inputs does not match the number of input names.
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 20                                                                1    21      0.00 sec
+  2 : 0 6 25                                                              2    22      0.00 sec
+  3 : 0 2 1 21                                                            1    22      0.00 sec
+  4 : 0 2 1 1 21                                                          1    22      0.01 sec
+  5 : 0 2 1 1 1 21                                                        1    22      0.01 sec
+  6 : 0 2 1 1 1 1 21                                                      1    22      0.01 sec
+  7 : 0 2 1 1 1 1 1 21                                                    1    22      0.01 sec
+  8 : 0 2 1 1 1 1 1 1 21                                                  1    22      0.01 sec
+  9 : 0 2 1 1 1 1 1 1 1 21                                                1    22      0.01 sec
+ 10 : 0 2 1 1 1 1 1 1 1 1 21                                              1    22      0.01 sec
+ 11 : 0 2 1 1 1 1 1 1 1 1 1 21                                            1    22      0.01 sec
+ 12 : 0 2 1 1 1 1 1 1 1 1 1 1 21                                          1    22      0.01 sec
+ 13 : 0 2 1 1 1 1 1 1 1 1 1 1 1 21                                        1    22      0.01 sec
+ 14 : 0 2 1 1 1 1 1 1 1 1 1 1 1 1 21                                      1    22      0.01 sec
+ 15 : 0 2 1 1 1 1 1 1 1 1 1 1 1 1 1 21                                    1    22      0.02 sec
+ 16 : 0 2 1 1 1 1 1 1 1 1 1 1 1 1 1 1 21                                  1    22      0.02 sec
+ 17 : 0 2 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 21                                0    22      0.02 sec
+Invariant F[16] : 21 clauses with 22 flops (out of 22) (cex = 0, ave = 2.30)
+Verification of invariant with 21 clauses was successful.  Time =     0.00 sec
+Block =   43  Oblig =    46  Clause =    45  Call =   607 (sat=37.1%)  Cex =   0  Start =   0
+SAT solving =     0.00 sec ( 11.04 %)
+  unsat     =     0.00 sec (  0.33 %)
+  sat       =     0.00 sec ( 10.71 %)
+Generalize  =     0.00 sec (  1.40 %)
+Push clause =     0.00 sec (  9.17 %)
+Ternary sim =     0.00 sec (  1.12 %)
+Containment =     0.00 sec (  0.02 %)
+CNF compute =     0.00 sec (  1.15 %)
+Refinement  =     0.00 sec (  0.00 %)
+TOTAL       =     0.03 sec (100.00 %)
+Property proved.  Time =     0.03 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 11 Apr 2025 05:30:55 PM CST
+========================================

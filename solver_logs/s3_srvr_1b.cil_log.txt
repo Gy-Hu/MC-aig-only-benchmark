@@ -1,0 +1,38 @@
+File: ./hwmcc24/2024/sosylab/openssl-simplified/s3_srvr_1b.cil.aig
+Command: ~/coding_env/abc/abc -c "&r ./hwmcc24/2024/sosylab/openssl-simplified/s3_srvr_1b.cil.aig; &put; fold; pdr -v"
+Started at: Fri 11 Apr 2025 10:46:03 PM CST
+----------------------------------------
+ABC command line: "&r ./hwmcc24/2024/sosylab/openssl-simplified/s3_srvr_1b.cil.aig; &put; fold; pdr -v".
+
+Converted 0 1-valued FFs and 99 DC-valued FFs.
+Warning: The number of inputs does not match the number of input names.
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 2                                                                 1     3      0.00 sec
+  2 : 0 2 3                                                               2     5      0.01 sec
+  3 : 0 1 3 38                                                            2    41      0.03 sec
+  4 : 0 1 3 4 37                                                          2    43      0.04 sec
+  5 : 0 1 3 2 1 37                                                        0    43      0.04 sec
+  6 : 0 1 3 2 1 2 42                                                      2    46      0.05 sec
+  7 : 0 1 3 2 1 1 1 41                                                    0    46      0.05 sec
+  8 : 0 1 3 2 1 1 1 1 43                                                  3    78      0.06 sec
+  9 : 0 1 3 2 1 1 0 0 0 43                                                0    78      0.06 sec
+Invariant F[6] : 43 clauses with 77 flops (out of 102) (cex = 0, ave = 88.63)
+Verification of invariant with 43 clauses was successful.  Time =     0.00 sec
+Block =    7  Oblig =   100  Clause =    56  Call =   811 (sat=39.0%)  Cex =   0  Start =   0
+SAT solving =     0.03 sec ( 44.36 %)
+  unsat     =     0.01 sec ( 11.86 %)
+  sat       =     0.02 sec ( 32.50 %)
+Generalize  =     0.03 sec ( 45.11 %)
+Push clause =     0.01 sec ( 17.82 %)
+Ternary sim =     0.01 sec ( 14.95 %)
+Containment =     0.00 sec (  0.12 %)
+CNF compute =     0.00 sec (  5.18 %)
+Refinement  =     0.00 sec (  0.00 %)
+TOTAL       =     0.08 sec (100.00 %)
+Property proved.  Time =     0.08 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 11 Apr 2025 10:46:03 PM CST
+========================================

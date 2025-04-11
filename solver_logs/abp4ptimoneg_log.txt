@@ -1,0 +1,43 @@
+File: ./hwmcc11/single/abp4ptimoneg.aig
+Command: ~/coding_env/abc/abc -c "&r ./hwmcc11/single/abp4ptimoneg.aig; &put; fold; pdr -v"
+Started at: Fri 11 Apr 2025 03:47:34 PM CST
+----------------------------------------
+ABC command line: "&r ./hwmcc11/single/abp4ptimoneg.aig; &put; fold; pdr -v".
+
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 10                                                                1    10      0.00 sec
+  2 : 0 6 14                                                              4    17      0.01 sec
+  3 : 0 6 4 10                                                            0    17      0.01 sec
+  4 : 0 6 4 1 9                                                           0    17      0.01 sec
+  5 : 0 6 4 1 2 7                                                         0    17      0.01 sec
+  6 : 0 6 4 1 2 2 5                                                       0    17      0.01 sec
+  7 : 0 8 8 8 16 26 34 62                                                11    36      0.06 sec
+  8 : 0 5 4 4 5 8 11 23 42                                                1    36      0.06 sec
+  9 : 0 5 4 4 5 6 11 29 48 65                                             6    41      0.10 sec
+ 10 : 0 5 4 4 5 5 10 22 41 45 56                                          4    41      0.12 sec
+ 11 : 0 5 4 4 5 8 18 30 56 80 91 128                                     12    51      0.26 sec
+ 12 : 0 5 4 4 5 7 16 26 45 64 91 138 115                                 18    53      0.37 sec
+ 13 : 0 5 4 4 5 7 16 27 48 66 122 204 226 228                            33    57      0.68 sec
+ 14 : 0 5 4 4 5 7 16 24 36 45 67 112 149 250 191                         11    57      0.86 sec
+ 15 : 0 5 4 4 5 7 16 24 38 48 69 117 160 284 296 278                     27    58      1.22 sec
+ 16 : 0 5 4 4 5 7 16 20 32 44 57 79 111 160 214 223 225                   8    59      1.40 sec
+ 17 : 0 5 4 4 5 8 17 27 37 56 89 113 159 217 286 366 399 441             58    64      2.32 sec
+ 18 : 0 5 4 4 5 10 18 29 42 64 98 106 155 192 246 293 364 447 262        33    66      2.75 sec
+Block =  789  Oblig =  5880  Clause =  3479  Call = 55519 (sat=67.0%)  Cex =   0  Start = 174
+SAT solving =     2.16 sec ( 78.10 %)
+  unsat     =     0.30 sec ( 10.78 %)
+  sat       =     1.86 sec ( 67.32 %)
+Generalize  =     1.86 sec ( 67.45 %)
+Push clause =     0.42 sec ( 15.19 %)
+Ternary sim =     0.22 sec (  8.05 %)
+Containment =     0.06 sec (  2.14 %)
+CNF compute =     0.06 sec (  2.15 %)
+Refinement  =     0.00 sec (  0.00 %)
+TOTAL       =     2.76 sec (100.00 %)
+Output 0 of miter "./hwmcc11/single/abp4ptimoneg" was asserted in frame 20.  Time =     2.77 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 11 Apr 2025 03:47:37 PM CST
+========================================

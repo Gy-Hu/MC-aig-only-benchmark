@@ -1,0 +1,35 @@
+File: ./hwmcc15/beemfrogs4f1.aig
+Command: ~/coding_env/abc/abc -c "&r ./hwmcc15/beemfrogs4f1.aig; &put; fold; pdr -v"
+Started at: Fri 11 Apr 2025 09:40:40 AM CST
+----------------------------------------
+ABC command line: "&r ./hwmcc15/beemfrogs4f1.aig; &put; fold; pdr -v".
+
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 1                                                                 1     2      0.01 sec
+  2 : 0 2 2                                                               2     5      0.02 sec
+  3 : 0 1 1 1                                                             0     5      0.02 sec
+  4 : 0 1 1 2 2                                                           2    13      0.04 sec
+  5 : 0 1 1 1 1 1                                                         0    13      0.05 sec
+  6 : 0 9 50 83 80 60 51                                                 55    60      1.98 sec
+  7 : 0 9 44 60 60 55 42 11                                               0    60      2.11 sec
+  8 : 0 20 143 492 1251 2338 3519 3911 3023                            1137    68    208.93 sec
+  9 : 0 20 132 369 895 1745 2767 3355 2692 514                            0    68    221.12 sec
+ 10 : 0 21 143 433 1132 2225 3698 5041 5026 2038 312                   2295    68    386.61 sec
+Block =    6  Oblig = 37809  Clause = 22446  Call =757460 (sat=58.3%)  Cex =   0  Start =2519
+SAT solving =   321.90 sec ( 83.26 %)
+  unsat     =    89.46 sec ( 23.14 %)
+  sat       =   232.44 sec ( 60.12 %)
+Generalize  =   303.68 sec ( 78.55 %)
+Push clause =    22.01 sec (  5.69 %)
+Ternary sim =     6.81 sec (  1.76 %)
+Containment =    23.62 sec (  6.11 %)
+CNF compute =    11.67 sec (  3.02 %)
+Refinement  =     0.00 sec (  0.00 %)
+TOTAL       =   386.62 sec (100.00 %)
+Output 0 of miter "./hwmcc15/beemfrogs4f1" was asserted in frame 52.  Time =   386.64 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 11 Apr 2025 09:47:06 AM CST
+========================================

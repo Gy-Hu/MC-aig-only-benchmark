@@ -1,0 +1,29 @@
+File: ./hwmcc13/single/beembrdg2f1.aig
+Command: ~/coding_env/abc/abc -c "&r ./hwmcc13/single/beembrdg2f1.aig; &put; fold; pdr -v"
+Started at: Fri 11 Apr 2025 01:49:20 PM CST
+----------------------------------------
+ABC command line: "&r ./hwmcc13/single/beembrdg2f1.aig; &put; fold; pdr -v".
+
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 1                                                                 1     2      0.00 sec
+  2 : 0 1 1                                                               1     4      0.00 sec
+  3 : 0 2 17 16                                                           4    41      0.03 sec
+  4 : 0 2 19 10 17                                                        4    45      0.04 sec
+  5 : 0 3 42 126 200 225                                                 30    57      0.83 sec
+  6 : 0 3 8 58 144 108 135                                                1    57      0.87 sec
+  7 : 0 3 8 61 160 138 112 120                                           21    59      1.12 sec
+  8 : 0 3 13 76 203 239 320 441 549                                      45    59      3.73 sec
+  9 : 0 3 13 74 124 104 170 190 287 330                                   2    59      3.92 sec
+ 10 : 0 3 13 74 117 93 165 185 201 149 225                                3    59      4.03 sec
+ 11 : 0 3 13 74 117 93 165 190 218 197 93 261                            46    59      4.56 sec
+ 12 : 0 3 13 74 117 92 167 212 309 501 593 744 880                      269    59     10.88 sec
+ 13 : ... 8 52 180 366 643 1078 1950 3098 5041 7535 13016 15089 15383  3482    59    885.09 sec
+ 14 : ... 125 246 361 789 1625 2299 3014 4126 10991 10277 13691 15558   623    59   1493.56 sec
+ 15 : ... 241 339 710 1364 1846 2193 2890 9005 6854 9528 12850 5323     261    59   1623.15 sec
+ 16 : ... 353 727 1403 1919 2275 2904 8178 6331 8752 13310 10366 7993   315    59   1915.12 sec
+----------------------------------------
+STATUS: TIMEOUT (exceeded 3600 seconds)
+Finished at: Fri 11 Apr 2025 02:49:20 PM CST
+========================================

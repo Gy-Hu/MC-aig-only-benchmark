@@ -1,0 +1,29 @@
+File: ./hwmcc11/single/bobsynthetic2.aig
+Command: ~/coding_env/abc/abc -c "&r ./hwmcc11/single/bobsynthetic2.aig; &put; fold; pdr -v"
+Started at: Fri 11 Apr 2025 03:55:05 PM CST
+----------------------------------------
+ABC command line: "&r ./hwmcc11/single/bobsynthetic2.aig; &put; fold; pdr -v".
+
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 1                                                                 1     1      0.29 sec
+  2 : 0 363 364                                                           2   200    200.35 sec
+  3 : 0 3 367 365                                                         2   200    204.59 sec
+  4 : 0 3 6 404 401                                                       5   200    232.12 sec
+Block =    4  Oblig =  1242  Clause =   822  Call =  7626 (sat=35.9%)  Cex =   0  Start =  23
+SAT solving =     4.53 sec (  1.95 %)
+  unsat     =     1.15 sec (  0.50 %)
+  sat       =     3.38 sec (  1.46 %)
+Generalize  =   228.43 sec ( 98.41 %)
+Push clause =     0.98 sec (  0.42 %)
+Ternary sim =   226.69 sec ( 97.66 %)
+Containment =     0.08 sec (  0.03 %)
+CNF compute =     0.07 sec (  0.03 %)
+Refinement  =     0.00 sec (  0.00 %)
+TOTAL       =   232.13 sec (100.00 %)
+Output 0 of miter "./hwmcc11/single/bobsynthetic2" was asserted in frame 4.  Time =   232.14 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 11 Apr 2025 03:58:58 PM CST
+========================================

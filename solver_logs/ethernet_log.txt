@@ -1,0 +1,33 @@
+File: ./avr/opensource/ethernet/ethernet.aig
+Command: ~/coding_env/abc/abc -c "&r ./avr/opensource/ethernet/ethernet.aig; &put; fold; pdr -v"
+Started at: Fri 11 Apr 2025 04:08:48 PM CST
+----------------------------------------
+ABC command line: "&r ./avr/opensource/ethernet/ethernet.aig; &put; fold; pdr -v".
+
+Converted 11 1-valued FFs and 8 DC-valued FFs.
+Warning: The number of inputs does not match the number of input names.
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 8                                                                 1     8      0.01 sec
+  2 : 0 14 16                                                             3    23      0.01 sec
+  3 : 0 12 16 21                                                          5    36      0.02 sec
+  4 : 0 19 29 49 63                                                      12    56      0.12 sec
+  5 : 0 9 15 29 46 49                                                    11    58      0.15 sec
+  6 : 0 10 15 32 47 43 52                                                12    60      0.22 sec
+Block =   36  Oblig =   446  Clause =   268  Call =  1893 (sat=62.4%)  Cex =   0  Start =   3
+SAT solving =     0.14 sec ( 60.33 %)
+  unsat     =     0.01 sec (  3.36 %)
+  sat       =     0.13 sec ( 56.98 %)
+Generalize  =     0.14 sec ( 59.97 %)
+Push clause =     0.02 sec ( 10.85 %)
+Ternary sim =     0.03 sec ( 15.07 %)
+Containment =     0.00 sec (  0.15 %)
+CNF compute =     0.01 sec (  2.55 %)
+Refinement  =     0.00 sec (  0.06 %)
+TOTAL       =     0.23 sec (100.00 %)
+Output 0 of miter "./avr/opensource/ethernet/ethernet" was asserted in frame 6.  Time =     0.23 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 11 Apr 2025 04:08:48 PM CST
+========================================

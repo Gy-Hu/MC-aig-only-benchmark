@@ -1,0 +1,32 @@
+File: ./hwmcc11/single/pdtpmsgigamax.aig
+Command: ~/coding_env/abc/abc -c "&r ./hwmcc11/single/pdtpmsgigamax.aig; &put; fold; pdr -v"
+Started at: Fri 11 Apr 2025 03:24:58 PM CST
+----------------------------------------
+ABC command line: "&r ./hwmcc11/single/pdtpmsgigamax.aig; &put; fold; pdr -v".
+
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 29                                                                1    29      0.01 sec
+  2 : 0 35 76                                                             4    69      0.03 sec
+  3 : 0 35 38 146                                                         2    84      0.07 sec
+  4 : 0 35 37 43 178                                                      4    92      0.10 sec
+  5 : 0 35 37 7 0 183                                                     0    92      0.11 sec
+Invariant F[4] : 183 clauses with 89 flops (out of 123) (cex = 0, ave = 20.31)
+Verification of invariant with 183 clauses was successful.  Time =     0.00 sec
+Block =  196  Oblig =   367  Clause =   295  Call =  2185 (sat=60.0%)  Cex =   0  Start =   4
+SAT solving =     0.08 sec ( 67.23 %)
+  unsat     =     0.01 sec (  7.10 %)
+  sat       =     0.07 sec ( 60.13 %)
+Generalize  =     0.06 sec ( 51.16 %)
+Push clause =     0.02 sec ( 17.03 %)
+Ternary sim =     0.01 sec (  7.95 %)
+Containment =     0.00 sec (  0.19 %)
+CNF compute =     0.00 sec (  2.00 %)
+Refinement  =     0.00 sec (  0.00 %)
+TOTAL       =     0.12 sec (100.00 %)
+Property proved.  Time =     0.13 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 11 Apr 2025 03:24:58 PM CST
+========================================

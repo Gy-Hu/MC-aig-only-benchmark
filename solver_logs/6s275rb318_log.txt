@@ -1,0 +1,32 @@
+File: ./hwmcc-appr/6s275rb318.aig
+Command: ~/coding_env/abc/abc -c "&r ./hwmcc-appr/6s275rb318.aig; &put; fold; pdr -v"
+Started at: Fri 11 Apr 2025 01:27:20 AM CST
+----------------------------------------
+ABC command line: "&r ./hwmcc-appr/6s275rb318.aig; &put; fold; pdr -v".
+
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 2                                                                 1     2      0.01 sec
+  2 : 0 9 11                                                              3    13      0.01 sec
+  3 : 0 17 7 19                                                           4    23      0.02 sec
+  4 : 0 49 17 60 156                                                     11    82      0.07 sec
+  5 : 0 48 16 0 0 155                                                     0    82      0.08 sec
+Invariant F[3] : 155 clauses with 82 flops (out of 3196) (cex = 0, ave = 15.30)
+Verification of invariant with 155 clauses was successful.  Time =     0.00 sec
+Block =    8  Oblig =   459  Clause =   285  Call =  2101 (sat=62.0%)  Cex =   0  Start =   5
+SAT solving =     0.04 sec ( 49.25 %)
+  unsat     =     0.00 sec (  5.20 %)
+  sat       =     0.04 sec ( 44.05 %)
+Generalize  =     0.04 sec ( 48.46 %)
+Push clause =     0.01 sec (  5.70 %)
+Ternary sim =     0.01 sec (  7.86 %)
+Containment =     0.00 sec (  0.25 %)
+CNF compute =     0.00 sec (  2.12 %)
+Refinement  =     0.00 sec (  0.00 %)
+TOTAL       =     0.09 sec (100.00 %)
+Property proved.  Time =     0.09 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 11 Apr 2025 01:27:20 AM CST
+========================================

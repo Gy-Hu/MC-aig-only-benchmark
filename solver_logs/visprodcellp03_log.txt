@@ -1,0 +1,37 @@
+File: ./hwmcc08/visprodcellp03.aig
+Command: ~/coding_env/abc/abc -c "&r ./hwmcc08/visprodcellp03.aig; &put; fold; pdr -v"
+Started at: Fri 11 Apr 2025 11:13:27 AM CST
+----------------------------------------
+ABC command line: "&r ./hwmcc08/visprodcellp03.aig; &put; fold; pdr -v".
+
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 1                                                                 1     1      0.01 sec
+  2 : 0 2 2                                                               2    10      0.01 sec
+  3 : 0 2 2 8                                                             3    16      0.01 sec
+  4 : 0 2 2 6 10                                                          3    18      0.02 sec
+  5 : 0 2 2 4 4 12                                                        3    19      0.02 sec
+  6 : 0 2 2 4 2 2 13                                                      3    19      0.03 sec
+  7 : 0 2 2 4 2 2 4 15                                                    3    21      0.03 sec
+  8 : 0 2 2 4 2 2 2 1 15                                                  0    21      0.03 sec
+  9 : 0 2 2 4 2 2 2 1 3 15                                                3    21      0.04 sec
+ 10 : 0 2 2 4 2 2 2 0 0 0 17                                              0    21      0.04 sec
+Invariant F[7] : 17 clauses with 20 flops (out of 78) (cex = 0, ave = 26.13)
+Verification of invariant with 17 clauses was successful.  Time =     0.00 sec
+Block =    8  Oblig =    63  Clause =    39  Call =   488 (sat=55.5%)  Cex =   0  Start =   0
+SAT solving =     0.02 sec ( 39.17 %)
+  unsat     =     0.00 sec (  9.65 %)
+  sat       =     0.01 sec ( 29.52 %)
+Generalize  =     0.01 sec ( 29.00 %)
+Push clause =     0.01 sec ( 20.06 %)
+Ternary sim =     0.00 sec (  6.49 %)
+Containment =     0.00 sec (  0.03 %)
+CNF compute =     0.00 sec (  5.39 %)
+Refinement  =     0.00 sec (  0.00 %)
+TOTAL       =     0.05 sec (100.00 %)
+Property proved.  Time =     0.05 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 11 Apr 2025 11:13:27 AM CST
+========================================

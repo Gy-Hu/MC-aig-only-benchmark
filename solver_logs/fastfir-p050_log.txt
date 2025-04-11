@@ -1,0 +1,42 @@
+File: ./others/fastfir/aig/fastfir-p050.aig
+Command: ~/coding_env/abc/abc -c "&r ./others/fastfir/aig/fastfir-p050.aig; &put; fold; pdr -v"
+Started at: Fri 11 Apr 2025 11:50:45 AM CST
+----------------------------------------
+ABC command line: "&r ./others/fastfir/aig/fastfir-p050.aig; &put; fold; pdr -v".
+
+Warning: The last 342 outputs are interpreted as constraints.
+Converted 34 1-valued FFs and 39 DC-valued FFs.
+Warning: The number of inputs does not match the number of input names.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 12                                                                1    12      0.09 sec
+  2 : 0 12 26                                                             2    31      0.24 sec
+  3 : 0 11 4 6                                                            1    31      0.27 sec
+  4 : 0 11 12 11 54                                                       5    44      0.61 sec
+  5 : 0 11 11 10 18 53                                                    1    45      0.75 sec
+  6 : 0 11 11 10 74 53 526                                                6   176      5.03 sec
+  7 : 0 11 11 10 66 58 529 915                                           10   184     13.14 sec
+  8 : 0 11 11 10 66 58 720 293 1602                                       5   193     24.56 sec
+  9 : 0 11 11 10 66 52 700 60 440 1418                                    3   193     27.91 sec
+ 10 : 0 11 11 10 66 52 700 9 403 440 1314                                 4   194     32.68 sec
+ 11 : 0 11 11 10 66 52 700 1 394 431 275 1517                             4   194     38.80 sec
+ 12 : 0 11 11 10 66 52 700 1 394 429 215 63 1679                          4   194     42.95 sec
+ 13 : 0 11 11 10 66 52 700 1 394 429 213 0 0 1645                         0   194     43.86 sec
+Invariant F[11] : 1645 clauses with 192 flops (out of 303) (cex = 0, ave = 88.31)
+Verification of invariant with 1645 clauses was successful.  Time =     0.12 sec
+Block = 1546  Oblig =  6317  Clause =  4286  Call =110111 (sat=44.9%)  Cex =   0  Start = 356
+SAT solving =    30.76 sec ( 69.92 %)
+  unsat     =     4.07 sec (  9.24 %)
+  sat       =    26.69 sec ( 60.67 %)
+Generalize  =    27.50 sec ( 62.52 %)
+Push clause =     5.02 sec ( 11.40 %)
+Ternary sim =     5.69 sec ( 12.93 %)
+Containment =     0.50 sec (  1.13 %)
+CNF compute =     0.43 sec (  0.98 %)
+Refinement  =     0.00 sec (  0.00 %)
+TOTAL       =    43.99 sec (100.00 %)
+Property proved.  Time =    44.01 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 11 Apr 2025 11:51:29 AM CST
+========================================

@@ -1,0 +1,28 @@
+File: ./hwmcc20/aig-1.8/mul7.aig
+Command: ~/coding_env/abc/abc -c "&r ./hwmcc20/aig-1.8/mul7.aig; &put; fold; pdr -v"
+Started at: Fri 11 Apr 2025 06:25:00 PM CST
+----------------------------------------
+ABC command line: "&r ./hwmcc20/aig-1.8/mul7.aig; &put; fold; pdr -v".
+
+Converted 2 1-valued FFs and 0 DC-valued FFs.
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 512                                                               1   512      0.50 sec
+  2 : 0 852 757                                                           3   980   1473.22 sec
+Block = 1024  Oblig =  2048  Clause =  1609  Call =  4439 (sat=58.3%)  Cex =   0  Start =  10
+SAT solving =  1448.44 sec ( 98.32 %)
+  unsat     =     6.84 sec (  0.46 %)
+  sat       =  1441.60 sec ( 97.85 %)
+Generalize  =   532.69 sec ( 36.16 %)
+Push clause =   640.65 sec ( 43.49 %)
+Ternary sim =    18.86 sec (  1.28 %)
+Containment =     0.10 sec (  0.01 %)
+CNF compute =     0.77 sec (  0.05 %)
+Refinement  =     0.01 sec (  0.00 %)
+TOTAL       =  1473.25 sec (100.00 %)
+Output 0 of miter "./hwmcc20/aig-1.8/mul7" was asserted in frame 2.  Time =  1473.42 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 11 Apr 2025 06:49:34 PM CST
+========================================

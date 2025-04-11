@@ -1,0 +1,30 @@
+File: ./hwmcc19/single/aig/beem/frogs.2.prop1-back-serstep.aig
+Command: ~/coding_env/abc/abc -c "&r ./hwmcc19/single/aig/beem/frogs.2.prop1-back-serstep.aig; &put; fold; pdr -v"
+Started at: Fri 11 Apr 2025 06:45:31 AM CST
+----------------------------------------
+ABC command line: "&r ./hwmcc19/single/aig/beem/frogs.2.prop1-back-serstep.aig; &put; fold; pdr -v".
+
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 1                                                                 1     2      0.02 sec
+  2 : 0 1 1                                                               1     4      0.03 sec
+  3 : 0 1 4 4                                                             3    22      0.12 sec
+  4 : 0 1 11 25 15                                                       15    36      0.60 sec
+  5 : 0 1 23 55 34 1                                                     36    44      1.35 sec
+Block =    5  Oblig =   239  Clause =   116  Call =  2913 (sat=47.6%)  Cex =   0  Start =   8
+SAT solving =     1.21 sec ( 88.63 %)
+  unsat     =     0.44 sec ( 32.42 %)
+  sat       =     0.77 sec ( 56.20 %)
+Generalize  =     1.11 sec ( 81.76 %)
+Push clause =     0.05 sec (  3.71 %)
+Ternary sim =     0.03 sec (  2.45 %)
+Containment =     0.00 sec (  0.07 %)
+CNF compute =     0.02 sec (  1.58 %)
+Refinement  =     0.00 sec (  0.03 %)
+TOTAL       =     1.36 sec (100.00 %)
+Output 0 of miter "./hwmcc19/single/aig/beem/frogs.2.prop1-back-serstep" was asserted in frame 16.  Time =     1.37 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 11 Apr 2025 06:45:32 AM CST
+========================================

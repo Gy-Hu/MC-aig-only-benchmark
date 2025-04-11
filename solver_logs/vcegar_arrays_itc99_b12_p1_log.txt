@@ -1,0 +1,35 @@
+File: ./avr/opensource/vcegar_arrays_itc99_b12_p1/vcegar_arrays_itc99_b12_p1.aig
+Command: ~/coding_env/abc/abc -c "&r ./avr/opensource/vcegar_arrays_itc99_b12_p1/vcegar_arrays_itc99_b12_p1.aig; &put; fold; pdr -v"
+Started at: Fri 11 Apr 2025 04:07:18 PM CST
+----------------------------------------
+ABC command line: "&r ./avr/opensource/vcegar_arrays_itc99_b12_p1/vcegar_arrays_itc99_b12_p1.aig; &put; fold; pdr -v".
+
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 2                                                                 1     2      0.01 sec
+  2 : 0 2 2                                                               1     2      0.01 sec
+  3 : 0 3 8 10                                                            3    10      0.02 sec
+  4 : 0 3 4 5 3                                                           0    10      0.02 sec
+  5 : 0 7 8 11 13 12                                                     10    15      0.05 sec
+  6 : 0 1 2 7 7 8 5                                                       1    15      0.06 sec
+  7 : 0 1 2 7 9 17 15 9                                                  12    25      0.09 sec
+  8 : 0 1 2 7 8 11 7 12 7                                                 3    25      0.11 sec
+  9 : 0 1 2 7 9 14 14 34 40 35                                           17    31      0.28 sec
+ 10 : 0 6 10 11 8 18 34 65 77 53 29                                      56    48      0.56 sec
+Block =   12  Oblig =   827  Clause =   412  Call =  4021 (sat=56.3%)  Cex =   0  Start =   9
+SAT solving =     0.40 sec ( 70.37 %)
+  unsat     =     0.06 sec ( 10.94 %)
+  sat       =     0.34 sec ( 59.43 %)
+Generalize  =     0.36 sec ( 63.85 %)
+Push clause =     0.04 sec (  7.71 %)
+Ternary sim =     0.05 sec (  8.64 %)
+Containment =     0.00 sec (  0.11 %)
+CNF compute =     0.01 sec (  2.52 %)
+Refinement  =     0.00 sec (  0.05 %)
+TOTAL       =     0.57 sec (100.00 %)
+Output 0 of miter "./avr/opensource/vcegar_arrays_itc99_b12_p1/vcegar_arrays_itc99_b12_p1" was asserted in frame 16.  Time =     0.58 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 11 Apr 2025 04:07:18 PM CST
+========================================

@@ -1,0 +1,26 @@
+File: ./hwmcc1517/intel013.aig
+Command: ~/coding_env/abc/abc -c "&r ./hwmcc1517/intel013.aig; &put; fold; pdr -v"
+Started at: Fri 11 Apr 2025 08:11:22 AM CST
+----------------------------------------
+ABC command line: "&r ./hwmcc1517/intel013.aig; &put; fold; pdr -v".
+
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 1                                                                 1     1      0.20 sec
+  2 : 0 1 1                                                               1     3      0.32 sec
+  3 : 0 1 7 80                                                            2   101     65.19 sec
+  4 : 0 1 6 2 83                                                          2   109     69.14 sec
+  5 : 0 1 6 1 5 107                                                       2   141     90.93 sec
+  6 : 0 1 6 1 1 3 111                                                     2   156     96.71 sec
+  7 : 0 1 6 1 1 2 5 112                                                   2   160    100.11 sec
+  8 : 0 1 6 1 1 1 8 87 2799                                               4  1762   2737.77 sec
+  9 : 0 1 6 1 1 1 1 1 1 2229                                              0  1762   2739.66 sec
+ 10 : 0 1 6 1 1 1 1 1 1 1 2227                                            0  1762   2741.69 sec
+ 11 : 0 1 6 1 1 1 1 1 1 1 17 2210                                         0  1762   2743.43 sec
+ 12 : 0 1 6 1 1 1 1 1 1 1 17 53 2502                                      3  1821   3038.03 sec
+ 13 : 0 1 6 1 1 1 1 1 1 1 1 1 17 2417                                     0  1821   3040.04 sec
+----------------------------------------
+STATUS: TIMEOUT (exceeded 3600 seconds)
+Finished at: Fri 11 Apr 2025 09:11:22 AM CST
+========================================

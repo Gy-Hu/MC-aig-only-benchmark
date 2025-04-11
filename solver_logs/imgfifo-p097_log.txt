@@ -1,0 +1,32 @@
+File: ./others/vgasim-imgfifo/aig/imgfifo-p097.aig
+Command: ~/coding_env/abc/abc -c "&r ./others/vgasim-imgfifo/aig/imgfifo-p097.aig; &put; fold; pdr -v"
+Started at: Fri 11 Apr 2025 11:30:47 AM CST
+----------------------------------------
+ABC command line: "&r ./others/vgasim-imgfifo/aig/imgfifo-p097.aig; &put; fold; pdr -v".
+
+Warning: The last 44 outputs are interpreted as constraints.
+Converted 28 1-valued FFs and 414 DC-valued FFs.
+Warning: The number of inputs does not match the number of input names.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 21                                                                1    21      0.01 sec
+  2 : 0 21 2                                                              1    25      0.01 sec
+  3 : 0 21 0 2                                                            0    25      0.01 sec
+Invariant F[2] : 2 clauses with 4 flops (out of 608) (cex = 0, ave = 16.00)
+Verification of invariant with 2 clauses was successful.  Time =     0.00 sec
+Block =   23  Oblig =    23  Clause =    23  Call =    97 (sat=70.1%)  Cex =   0  Start =   0
+SAT solving =     0.00 sec ( 10.84 %)
+  unsat     =     0.00 sec (  0.12 %)
+  sat       =     0.00 sec ( 10.71 %)
+Generalize  =     0.00 sec (  0.92 %)
+Push clause =     0.00 sec (  6.92 %)
+Ternary sim =     0.00 sec ( 11.13 %)
+Containment =     0.00 sec (  0.03 %)
+CNF compute =     0.00 sec (  0.39 %)
+Refinement  =     0.00 sec (  0.00 %)
+TOTAL       =     0.02 sec (100.00 %)
+Property proved.  Time =     0.03 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 11 Apr 2025 11:30:47 AM CST
+========================================

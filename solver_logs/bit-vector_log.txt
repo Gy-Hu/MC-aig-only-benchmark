@@ -1,0 +1,31 @@
+File: ./avr/opensource/bit-vector/bit-vector.aig
+Command: ~/coding_env/abc/abc -c "&r ./avr/opensource/bit-vector/bit-vector.aig; &put; fold; pdr -v"
+Started at: Fri 11 Apr 2025 04:02:09 PM CST
+----------------------------------------
+ABC command line: "&r ./avr/opensource/bit-vector/bit-vector.aig; &put; fold; pdr -v".
+
+Converted 3 1-valued FFs and 0 DC-valued FFs.
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 1                                                                 1     1      0.00 sec
+  2 : 0 1 2                                                               2     2      0.00 sec
+  3 : 0 0 0 2                                                             0     2      0.00 sec
+Invariant F[1] : 2 clauses with 2 flops (out of 6) (cex = 0, ave = 2.00)
+Verification of invariant with 2 clauses was successful.  Time =     0.00 sec
+Block =    2  Oblig =     4  Clause =     3  Call =    14 (sat=28.6%)  Cex =   0  Start =   0
+SAT solving =     0.00 sec (  0.54 %)
+  unsat     =     0.00 sec (  0.02 %)
+  sat       =     0.00 sec (  0.53 %)
+Generalize  =     0.00 sec (  0.14 %)
+Push clause =     0.00 sec (  0.17 %)
+Ternary sim =     0.00 sec (  0.12 %)
+Containment =     0.00 sec (  0.01 %)
+CNF compute =     0.00 sec (  0.08 %)
+Refinement  =     0.00 sec (  0.00 %)
+TOTAL       =     0.01 sec (100.00 %)
+Property proved.  Time =     0.01 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 11 Apr 2025 04:02:10 PM CST
+========================================

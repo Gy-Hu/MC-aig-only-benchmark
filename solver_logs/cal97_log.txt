@@ -1,0 +1,35 @@
+File: ./hwmcc1920cal/cal97.aig
+Command: ~/coding_env/abc/abc -c "&r ./hwmcc1920cal/cal97.aig; &put; fold; pdr -v"
+Started at: Fri 11 Apr 2025 06:49:09 PM CST
+----------------------------------------
+ABC command line: "&r ./hwmcc1920cal/cal97.aig; &put; fold; pdr -v".
+
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 1                                                                 1     1      2.55 sec
+  2 : 0 1 48                                                              1    49      7.66 sec
+  3 : 0 1 193 303                                                         7   374     16.71 sec
+  4 : 0 1 173 169 443                                                     6   422     27.03 sec
+  5 : 0 1 152 222 167 631                                                 8   458     39.93 sec
+  6 : 0 1 101 109 165 187 1253                                            7   485     58.45 sec
+  7 : 0 1 51 7 3 1 2 987                                                  6   485     65.09 sec
+  8 : 0 1 50 5 0 0 0 0 990                                                0   485     65.95 sec
+Invariant F[4] : 990 clauses with 484 flops (out of 718) (cex = 0, ave = 58.80)
+Verification of invariant with 990 clauses was successful.  Time =     0.89 sec
+Block =  219  Oblig =  3683  Clause =  2274  Call = 53735 (sat=29.8%)  Cex =   0  Start = 175
+SAT solving =    60.81 sec ( 90.96 %)
+  unsat     =    48.57 sec ( 72.66 %)
+  sat       =    12.24 sec ( 18.31 %)
+Generalize  =    20.14 sec ( 30.13 %)
+Push clause =     5.44 sec (  8.13 %)
+Ternary sim =     1.17 sec (  1.75 %)
+Containment =     0.11 sec (  0.16 %)
+CNF compute =     0.79 sec (  1.18 %)
+Refinement  =     0.00 sec (  0.00 %)
+TOTAL       =    66.85 sec (100.00 %)
+Property proved.  Time =    66.87 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 11 Apr 2025 06:50:16 PM CST
+========================================

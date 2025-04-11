@@ -1,0 +1,32 @@
+File: ./hwmcc20/aig-1.8/gen31.aig
+Command: ~/coding_env/abc/abc -c "&r ./hwmcc20/aig-1.8/gen31.aig; &put; fold; pdr -v"
+Started at: Fri 11 Apr 2025 06:01:40 PM CST
+----------------------------------------
+ABC command line: "&r ./hwmcc20/aig-1.8/gen31.aig; &put; fold; pdr -v".
+
+Converted 0 1-valued FFs and 769 DC-valued FFs.
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 1                                                                 1     1      0.04 sec
+  2 : 0 1 513                                                             2   515      0.57 sec
+  3 : 0 1 256 514                                                         2   515      0.96 sec
+  4 : 0 1 0 0 514                                                         0   515      0.99 sec
+Invariant F[2] : 514 clauses with 515 flops (out of 772) (cex = 0, ave = 5.59)
+Verification of invariant with 514 clauses was successful.  Time =     0.01 sec
+Block =  646  Oblig =   896  Clause =   771  Call =  4940 (sat=52.0%)  Cex =   0  Start =  12
+SAT solving =     0.46 sec ( 46.15 %)
+  unsat     =     0.10 sec ( 10.34 %)
+  sat       =     0.36 sec ( 35.81 %)
+Generalize  =     0.27 sec ( 26.86 %)
+Push clause =     0.08 sec (  7.78 %)
+Ternary sim =     0.38 sec ( 37.27 %)
+Containment =     0.00 sec (  0.32 %)
+CNF compute =     0.01 sec (  1.00 %)
+Refinement  =     0.00 sec (  0.00 %)
+TOTAL       =     1.01 sec (100.00 %)
+Property proved.  Time =     1.01 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 11 Apr 2025 06:01:41 PM CST
+========================================

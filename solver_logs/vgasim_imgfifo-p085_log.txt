@@ -1,0 +1,42 @@
+File: ./hwmcc19/single/aig/wolf/2019C/vgasim_imgfifo-p085.aig
+Command: ~/coding_env/abc/abc -c "&r ./hwmcc19/single/aig/wolf/2019C/vgasim_imgfifo-p085.aig; &put; fold; pdr -v"
+Started at: Fri 11 Apr 2025 07:11:26 AM CST
+----------------------------------------
+ABC command line: "&r ./hwmcc19/single/aig/wolf/2019C/vgasim_imgfifo-p085.aig; &put; fold; pdr -v".
+
+Warning: The last 44 outputs are interpreted as constraints.
+Converted 17 1-valued FFs and 472 DC-valued FFs.
+Warning: The number of inputs does not match the number of input names.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 2                                                                 1     2      0.01 sec
+  2 : 0 1 3                                                               1     4      0.01 sec
+  3 : 0 1 2 3                                                             1     6      0.01 sec
+  4 : 0 1 3 3 18                                                          3    32      0.02 sec
+  5 : 0 1 2 4 5 23                                                        3    37      0.03 sec
+  6 : 0 1 2 3 4 2 15                                                      0    37      0.03 sec
+  7 : 0 1 2 3 4 2 2 19                                                    2    43      0.03 sec
+  8 : 0 1 2 3 4 2 3 4 24                                                  3    48      0.04 sec
+  9 : 0 1 2 3 4 2 2 3 1 19                                                0    48      0.05 sec
+ 10 : 0 1 2 3 4 2 2 3 1 2 18                                              1    48      0.05 sec
+ 11 : 0 1 2 3 4 2 2 3 1 3 4 31                                            4    79      0.07 sec
+ 12 : 0 1 2 1 2 2 2 3 1 3 3 2 32                                          1    81      0.07 sec
+ 13 : 0 1 2 1 2 2 2 3 1 3 3 2 0 32                                        0    81      0.08 sec
+Invariant F[12] : 32 clauses with 79 flops (out of 566) (cex = 0, ave = 90.88)
+Verification of invariant with 32 clauses was successful.  Time =     0.00 sec
+Block =   33  Oblig =   102  Clause =    74  Call =   916 (sat=62.4%)  Cex =   0  Start =   0
+SAT solving =     0.04 sec ( 50.07 %)
+  unsat     =     0.00 sec (  3.21 %)
+  sat       =     0.04 sec ( 46.86 %)
+Generalize  =     0.04 sec ( 40.78 %)
+Push clause =     0.02 sec ( 18.85 %)
+Ternary sim =     0.01 sec ( 10.22 %)
+Containment =     0.00 sec (  0.11 %)
+CNF compute =     0.00 sec (  5.44 %)
+Refinement  =     0.00 sec (  0.00 %)
+TOTAL       =     0.09 sec (100.00 %)
+Property proved.  Time =     0.09 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 11 Apr 2025 07:11:26 AM CST
+========================================

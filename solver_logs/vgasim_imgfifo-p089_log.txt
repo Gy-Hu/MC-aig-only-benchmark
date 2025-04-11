@@ -1,0 +1,42 @@
+File: ./hwmcc20/aig-1.8/vgasim_imgfifo-p089.aig
+Command: ~/coding_env/abc/abc -c "&r ./hwmcc20/aig-1.8/vgasim_imgfifo-p089.aig; &put; fold; pdr -v"
+Started at: Fri 11 Apr 2025 05:47:08 PM CST
+----------------------------------------
+ABC command line: "&r ./hwmcc20/aig-1.8/vgasim_imgfifo-p089.aig; &put; fold; pdr -v".
+
+Converted 17 1-valued FFs and 472 DC-valued FFs.
+Warning: The number of inputs does not match the number of input names.
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 13                                                                1    13      0.01 sec
+  2 : 0 13 25                                                             1    27      0.01 sec
+  3 : 0 26 42 80                                                          4    67      0.06 sec
+  4 : 0 18 41 47 89                                                       7    89      0.12 sec
+  5 : 0 15 18 5 2 70                                                      0    89      0.13 sec
+  6 : 0 15 18 5 1 14 69                                                   1    89      0.13 sec
+  7 : 0 15 18 5 1 14 29 113                                               3    89      0.18 sec
+  8 : 0 15 18 5 1 2 1 12 86                                               1    89      0.19 sec
+  9 : 0 21 37 28 22 27 53 83 244 1032                                    12   205      2.13 sec
+ 10 : 0 3 32 21 14 18 26 40 96 83 626                                     3   205      2.28 sec
+ 11 : 0 3 32 21 14 18 25 40 80 56 41 608                                  2   205      2.36 sec
+ 12 : 0 3 32 21 14 18 25 39 76 54 25 23 615                               2   205      2.42 sec
+ 13 : 0 3 32 21 14 18 25 39 75 54 25 2 0 612                              0   205      2.45 sec
+Invariant F[12] : 612 clauses with 183 flops (out of 882) (cex = 0, ave = 121.59)
+Verification of invariant with 612 clauses was successful.  Time =     0.00 sec
+Block =  393  Oblig =  3460  Clause =  1871  Call = 25011 (sat=55.8%)  Cex =   0  Start =  76
+SAT solving =     1.56 sec ( 63.28 %)
+  unsat     =     0.16 sec (  6.35 %)
+  sat       =     1.40 sec ( 56.92 %)
+Generalize  =     1.67 sec ( 67.78 %)
+Push clause =     0.19 sec (  7.54 %)
+Ternary sim =     0.34 sec ( 13.77 %)
+Containment =     0.13 sec (  5.09 %)
+CNF compute =     0.07 sec (  2.83 %)
+Refinement  =     0.00 sec (  0.00 %)
+TOTAL       =     2.47 sec (100.00 %)
+Property proved.  Time =     2.48 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 11 Apr 2025 05:47:11 PM CST
+========================================

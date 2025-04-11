@@ -1,0 +1,43 @@
+File: ./hwmcc11/single/bobsynth06neg.aig
+Command: ~/coding_env/abc/abc -c "&r ./hwmcc11/single/bobsynth06neg.aig; &put; fold; pdr -v"
+Started at: Fri 11 Apr 2025 02:38:30 PM CST
+----------------------------------------
+ABC command line: "&r ./hwmcc11/single/bobsynth06neg.aig; &put; fold; pdr -v".
+
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 1                                                                 1     1      0.01 sec
+  2 : 0 2 2                                                               2     3      0.02 sec
+  3 : 0 1 1 1                                                             0     3      0.02 sec
+  4 : 0 7 8 18 35                                                         9    28      0.03 sec
+  5 : 0 6 8 6 5 30                                                        0    28      0.03 sec
+  6 : 0 6 8 6 5 1 29                                                      0    28      0.03 sec
+  7 : 0 17 40 65 115 130 166 281                                         58   111      0.51 sec
+  8 : 0 9 22 32 59 83 93 88 207                                           0   111      0.55 sec
+  9 : 0 9 22 32 59 82 91 88 25 182                                        0   111      0.58 sec
+ 10 : 0 20 57 112 204 241 249 246 159 122 367                           163   136      1.42 sec
+ 11 : 0 12 19 28 53 58 93 47 63 93 65 285                                 0   136      1.47 sec
+ 12 : 0 12 19 28 53 56 93 46 63 93 65 19 266                              0   136      1.51 sec
+ 13 : 0 12 19 28 53 56 93 46 63 93 65 19 8 260                            2   136      1.55 sec
+ 14 : 0 12 19 28 53 56 97 59 84 117 113 130 168 145 420                 111   136      2.07 sec
+ 15 : 0 12 17 28 52 54 83 52 71 76 82 101 90 97 83 392                    0   136      2.16 sec
+ 16 : 0 12 17 28 52 54 83 52 71 76 82 98 87 94 80 29 361                  0   136      2.23 sec
+ 17 : 0 12 17 28 52 54 83 52 71 76 82 97 86 94 80 29 5 357                0   136      2.30 sec
+ 18 : ... 49 96 134 180 198 310 372 443 622 832 821 739 361 21 25 467   684   154      6.77 sec
+Block =    8  Oblig = 13175  Clause =  7146  Call = 95959 (sat=63.2%)  Cex =   0  Start = 312
+SAT solving =     5.05 sec ( 74.43 %)
+  unsat     =     0.71 sec ( 10.47 %)
+  sat       =     4.34 sec ( 63.95 %)
+Generalize  =     4.55 sec ( 67.09 %)
+Push clause =     0.55 sec (  8.12 %)
+Ternary sim =     0.38 sec (  5.53 %)
+Containment =     0.20 sec (  2.93 %)
+CNF compute =     0.21 sec (  3.05 %)
+Refinement  =     0.00 sec (  0.03 %)
+TOTAL       =     6.78 sec (100.00 %)
+Output 0 of miter "./hwmcc11/single/bobsynth06neg" was asserted in frame 31.  Time =     6.80 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 11 Apr 2025 02:38:37 PM CST
+========================================

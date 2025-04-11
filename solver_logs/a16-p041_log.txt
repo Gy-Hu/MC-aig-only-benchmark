@@ -1,0 +1,35 @@
+File: ./hwmcc24/2024/hku/x-epic/a16-p041.aig
+Command: ~/coding_env/abc/abc -c "&r ./hwmcc24/2024/hku/x-epic/a16-p041.aig; &put; fold; pdr -v"
+Started at: Fri 11 Apr 2025 09:00:20 PM CST
+----------------------------------------
+ABC command line: "&r ./hwmcc24/2024/hku/x-epic/a16-p041.aig; &put; fold; pdr -v".
+
+Warning: The last 71 outputs are interpreted as constraints.
+Converted 173 1-valued FFs and 503 DC-valued FFs.
+Warning: The number of inputs does not match the number of flop names.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 1                                                                 1     1      0.01 sec
+  2 : 0 4 4                                                               2     5      0.01 sec
+  3 : 0 39 24 35                                                         18    66      0.07 sec
+  4 : 0 38 22 4 34                                                        2    67      0.08 sec
+  5 : 0 38 22 3 2 36                                                      3    68      0.09 sec
+  6 : 0 38 22 3 0 0 37                                                    0    68      0.10 sec
+Invariant F[4] : 37 clauses with 44 flops (out of 439) (cex = 0, ave = 130.88)
+Verification of invariant with 37 clauses was successful.  Time =     0.00 sec
+Block =    5  Oblig =   177  Clause =   106  Call =   798 (sat=61.0%)  Cex =   0  Start =   1
+SAT solving =     0.05 sec ( 47.56 %)
+  unsat     =     0.00 sec (  2.09 %)
+  sat       =     0.05 sec ( 45.47 %)
+Generalize  =     0.05 sec ( 45.86 %)
+Push clause =     0.02 sec ( 17.11 %)
+Ternary sim =     0.02 sec ( 16.15 %)
+Containment =     0.00 sec (  0.23 %)
+CNF compute =     0.01 sec (  5.55 %)
+Refinement  =     0.00 sec (  0.00 %)
+TOTAL       =     0.10 sec (100.00 %)
+Property proved.  Time =     0.11 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 11 Apr 2025 09:00:21 PM CST
+========================================

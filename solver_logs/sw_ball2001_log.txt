@@ -1,0 +1,39 @@
+File: ./avr/crafted/sw_ball2001/sw_ball2001.aig
+Command: ~/coding_env/abc/abc -c "&r ./avr/crafted/sw_ball2001/sw_ball2001.aig; &put; fold; pdr -v"
+Started at: Fri 11 Apr 2025 04:11:15 PM CST
+----------------------------------------
+ABC command line: "&r ./avr/crafted/sw_ball2001/sw_ball2001.aig; &put; fold; pdr -v".
+
+Error occurred when reading signal names. Signal names ignored.
+Converted 2 1-valued FFs and 12 DC-valued FFs.
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 1                                                                 1     1      0.00 sec
+  2 : 0 2 2                                                               2     3      0.00 sec
+  3 : 0 2 3 6                                                             3    11      0.00 sec
+  4 : 0 3 5 5 7                                                           6    13      0.01 sec
+  5 : 0 4 3 2 3 8                                                         5    14      0.01 sec
+  6 : 0 4 3 2 1 1 8                                                       0    14      0.01 sec
+  7 : 0 4 3 3 1 12 11 24                                                 13    20      0.02 sec
+  8 : 0 4 3 3 1 6 9 6 20                                                  0    20      0.02 sec
+  9 : 0 4 3 3 1 6 10 6 11 28                                              7    20      0.03 sec
+ 10 : 0 4 3 3 1 0 0 0 0 0 38                                              0    20      0.03 sec
+Invariant F[5] : 38 clauses with 20 flops (out of 23) (cex = 0, ave = 14.82)
+Verification of invariant with 38 clauses was successful.  Time =     0.00 sec
+Block =    7  Oblig =   170  Clause =    87  Call =  1177 (sat=56.8%)  Cex =   0  Start =   0
+SAT solving =     0.02 sec ( 45.13 %)
+  unsat     =     0.00 sec (  8.94 %)
+  sat       =     0.01 sec ( 36.20 %)
+Generalize  =     0.01 sec ( 35.05 %)
+Push clause =     0.00 sec ( 11.26 %)
+Ternary sim =     0.00 sec (  2.54 %)
+Containment =     0.00 sec (  0.06 %)
+CNF compute =     0.00 sec (  1.77 %)
+Refinement  =     0.00 sec (  0.00 %)
+TOTAL       =     0.04 sec (100.00 %)
+Property proved.  Time =     0.04 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 11 Apr 2025 04:11:15 PM CST
+========================================

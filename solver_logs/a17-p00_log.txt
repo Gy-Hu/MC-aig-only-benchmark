@@ -1,0 +1,22 @@
+File: ./x-epic-2024/aig/a17-p00.aig
+Command: ~/coding_env/abc/abc -c "&r ./x-epic-2024/aig/a17-p00.aig; &put; fold; pdr -v"
+Started at: Fri 11 Apr 2025 06:45:36 PM CST
+----------------------------------------
+ABC command line: "&r ./x-epic-2024/aig/a17-p00.aig; &put; fold; pdr -v".
+
+Warning: The last 9 outputs are interpreted as constraints.
+Converted 42 1-valued FFs and 2640 DC-valued FFs.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 1                                                                 1     1      0.04 sec
+  2 : 0 2 3                                                               2     4      0.05 sec
+  3 : 0 3 10 18                                                           6    26      0.08 sec
+  4 : 0 3 7 11 33                                                         6    39      0.23 sec
+  5 : 0 3 10 21 23 59                                                    18    81      0.36 sec
+  6 : 0 3 9 16 21 36 62                                                   6    94      0.46 sec
+  7 : 0 4 12 43 100 291 348 663                                          78   349      5.26 sec
+  8 : 0 4 11 34 66 124 293 243 451                                        3   349      5.58 sec
+----------------------------------------
+STATUS: TIMEOUT (exceeded 3600 seconds)
+Finished at: Fri 11 Apr 2025 07:45:36 PM CST
+========================================
