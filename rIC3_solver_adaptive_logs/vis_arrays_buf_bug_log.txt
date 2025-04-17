@@ -1,0 +1,86 @@
+File: ./hwmcc19/single/aig/goel/opensource/vis_arrays_buf_bug/vis_arrays_buf_bug.aig
+Command: ~/coding_env/rIC3-adaptive/target/release/rIC3 -e ic3 --ic3-adaptive-ordering ./hwmcc19/single/aig/goel/opensource/vis_arrays_buf_bug/vis_arrays_buf_bug.aig
+Started at: Thu 17 Apr 2025 06:37:16 PM CST
+----------------------------------------
+the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc19/single/aig/goel/opensource/vis_arrays_buf_bug/vis_arrays_buf_bug.aig
+==========================================
+ADAPTIVE ORDERING IS ENABLED FOR THIS RUN
+==========================================
+
+=== Latch Flip Rates (Total cycles: 1000, Seeds: 5) ===
+Latch    Flip Rate (%)
+-------- ------------
+23 84.00       
+24 93.00       
+25 66.00       
+26 90.00       
+27 82.00       
+28 90.00       
+29 57.00       
+30 87.00       
+31 75.00       
+32 92.00       
+33 78.00       
+34 37.00       
+35 64.00       
+36 55.00       
+37 52.00       
+38 50.00       
+39 92.00       
+40 50.00       
+41 50.00       
+42 87.00       
+43 95.00       
+44 87.00       
+=======================================
+
+[ADAPTIVE] Strategy change: Topo
+[ADAPTIVE] Strategy change: Default
+[ADAPTIVE] Strategy change: Low Flip First
+[ADAPTIVE] Strategy change: Default
+[ADAPTIVE] Strategy change: Topo
+[ADAPTIVE] Strategy change: Default
+[ADAPTIVE] Strategy change: High Flip First
+[ADAPTIVE] Strategy change: Default
+[ADAPTIVE] Strategy change: Topo
+[ADAPTIVE] Strategy change: Default
+[ADAPTIVE] Strategy change: Reverse Topo
+[ADAPTIVE] Strategy change: Topo
+[ADAPTIVE] Strategy change: Default
+[ADAPTIVE] Strategy change: Reverse Topo
+[ADAPTIVE] Strategy change: Default
+[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 35, 2154]
+22 5 6 11 18 33 53 89 146 206 385 784 1343 1269 
+SolverStatistic {
+    num_solve: 118916,
+    avg_decide_var: 0.837600,
+    num_simplify_subsume: 1308,
+    num_simplify_self_subsume: 1102,
+}
+Statistic {
+    case: vis_arrays_buf_bug.aig,
+    time: 3.21s,
+    num_mic: 7459,
+    avg_mic_cube_len: 8.772221,
+    avg_po_cube_len: 16.513491,
+    mic_drop: success: 13579, fail: 49049, success rate: 21.68%,
+    num_down: 62628,
+    num_down_sat: 101669,
+    ctp: success: 0, fail: 471, success rate: 0.00%,
+    num_get_bad: 32,
+    overall_block_time: 3.154712884s,
+    block_get_bad_time: 3.514542ms,
+    block_get_predecessor_time: 52.507444ms,
+    block_blocked_time: 502.451935ms,
+    block_mic_time: 2.389381012s,
+    block_push_time: 9.299093ms,
+    overall_propagate_time: 51.186569ms,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: unsafe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Thu 17 Apr 2025 06:37:20 PM CST
+========================================

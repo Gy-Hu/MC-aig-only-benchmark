@@ -59,12 +59,12 @@ process_file() {
     # Run rIC3 solver with timeout
     {
         echo "File: $FILE"
-        echo "Command: ~/coding_env/rIC3/target/release/rIC3 -e ic3 --ic3-adaptive-ordering $FILE"
+        echo "Command: ~/coding_env/rIC3-adaptive/target/release/rIC3 -e ic3 --ic3-adaptive-ordering $FILE"
         echo "Started at: $(date)"
         echo "----------------------------------------"
         
         # Run the solver with timeout and capture output
-        timeout 3600 ~/coding_env/rIC3/target/release/rIC3 -e ic3 --ic3-adaptive-ordering "$FILE" 2>&1
+        timeout 3600 ~/coding_env/rIC3-adaptive/target/release/rIC3 -e ic3 --ic3-adaptive-ordering "$FILE" 2>&1
         
         # Check if the command timed out
         if [ $? -eq 124 ]; then
