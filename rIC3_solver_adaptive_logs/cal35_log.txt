@@ -1,12 +1,11 @@
-File: ./hwmcc1920/aig-1.8/cal35.aig
-Command: ~/coding_env/rIC3-adaptive/target/release/rIC3 -e ic3 --ic3-adaptive-ordering ./hwmcc1920/aig-1.8/cal35.aig
-Started at: Thu 17 Apr 2025 03:34:40 PM CST
+File: ./hwmcc1920cal/cal35.aig
+Command: ~/coding_env/rIC3-adaptive/target/release/rIC3 -e ic3 --ic3-adaptive-ordering ./hwmcc1920cal/cal35.aig
+Started at: Fri 18 Apr 2025 06:46:07 AM CST
 ----------------------------------------
-the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc1920/aig-1.8/cal35.aig
+the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc1920cal/cal35.aig
 ==========================================
 ADAPTIVE ORDERING IS ENABLED FOR THIS RUN
 ==========================================
-Warning: property not found, moved 1 outputs to bad properties
 
 === Latch Flip Rates (Total cycles: 1000, Seeds: 5) ===
 Latch    Flip Rate (%)
@@ -156,13 +155,11 @@ Latch    Flip Rate (%)
 416 12.00       
 =======================================
 
-[ADAPTIVE] Strategy change: Reverse Topo
-[ADAPTIVE] Strategy change: Default
 [0, 0, 0, 0, 77]
 91 1 0 77 
 SolverStatistic {
-    num_solve: 557,
-    avg_decide_var: 0.632099,
+    num_solve: 556,
+    avg_decide_var: 0.629728,
     num_simplify_subsume: 0,
     num_simplify_self_subsume: 0,
 }
@@ -170,20 +167,20 @@ Statistic {
     case: cal35.aig,
     time: 0.10s,
     num_mic: 78,
-    avg_mic_cube_len: 5.166667,
+    avg_mic_cube_len: 5.141026,
     avg_po_cube_len: 14.334764,
-    mic_drop: success: 92, fail: 310, success rate: 22.89%,
-    num_down: 402,
-    num_down_sat: 401,
+    mic_drop: success: 91, fail: 310, success rate: 22.69%,
+    num_down: 401,
+    num_down_sat: 400,
     ctp: success: 0, fail: 77, success rate: 0.00%,
     num_get_bad: 80,
-    overall_block_time: 57.649244ms,
-    block_get_bad_time: 33.064231ms,
+    overall_block_time: 58.358614ms,
+    block_get_bad_time: 33.542774ms,
     block_get_predecessor_time: 0ns,
-    block_blocked_time: 1.689358ms,
-    block_mic_time: 9.735331ms,
-    block_push_time: 1.402µs,
-    overall_propagate_time: 1.674584ms,
+    block_blocked_time: 1.8556ms,
+    block_mic_time: 9.524739ms,
+    block_push_time: 1.576µs,
+    overall_propagate_time: 1.739543ms,
     xor_gen: success: 0, fail: 0, success rate: NaN%,
     num_auxiliary_var: 0,
     test: success: 0, fail: 0, success rate: NaN%,
@@ -191,5 +188,5 @@ Statistic {
 result: safe
 ----------------------------------------
 STATUS: COMPLETED
-Finished at: Thu 17 Apr 2025 03:34:40 PM CST
+Finished at: Fri 18 Apr 2025 06:46:07 AM CST
 ========================================

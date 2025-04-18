@@ -1,0 +1,84 @@
+File: ./hwmcc08/nusmvsyncarb10p2.aig
+Command: ~/coding_env/rIC3-adaptive/target/release/rIC3 -e ic3 --ic3-adaptive-ordering ./hwmcc08/nusmvsyncarb10p2.aig
+Started at: Thu 17 Apr 2025 10:37:57 PM CST
+----------------------------------------
+the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc08/nusmvsyncarb10p2.aig
+==========================================
+ADAPTIVE ORDERING IS ENABLED FOR THIS RUN
+==========================================
+Warning: property not found, moved 1 outputs to bad properties
+
+=== Latch Flip Rates (Total cycles: 1000, Seeds: 5) ===
+Latch    Flip Rate (%)
+-------- ------------
+11 9.00        
+12 10.00       
+13 10.00       
+14 10.00       
+15 9.00        
+16 10.00       
+17 10.00       
+18 10.00       
+19 9.00        
+20 10.00       
+21 10.00       
+22 10.00       
+23 8.00        
+24 10.00       
+25 9.00        
+26 10.00       
+27 9.00        
+28 10.00       
+29 10.00       
+30 90.00       
+=======================================
+
+[ADAPTIVE] Strategy change: Reverse Topo
+[ADAPTIVE] Strategy change: Default
+[ADAPTIVE] Strategy change: Topo
+[ADAPTIVE] Strategy change: Default
+[ADAPTIVE] Strategy change: Low Flip First
+[ADAPTIVE] Strategy change: Default
+[ADAPTIVE] Strategy change: Topo
+[ADAPTIVE] Strategy change: Reverse Topo
+[ADAPTIVE] Strategy change: Default
+[ADAPTIVE] Strategy change: High Flip First
+[ADAPTIVE] Strategy change: Default
+[ADAPTIVE] Strategy change: Low Flip First
+[ADAPTIVE] Strategy change: Default
+[ADAPTIVE] Strategy change: High Flip First
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 25, 45]
+20 1 2 2 3 3 3 4 5 9 4 1 0 45 
+SolverStatistic {
+    num_solve: 791,
+    avg_decide_var: 0.842771,
+    num_simplify_subsume: 0,
+    num_simplify_self_subsume: 0,
+}
+Statistic {
+    case: nusmvsyncarb10p2.aig,
+    time: 0.01s,
+    num_mic: 92,
+    avg_mic_cube_len: 2.000000,
+    avg_po_cube_len: 10.390957,
+    mic_drop: success: 3, fail: 181, success rate: 1.63%,
+    num_down: 184,
+    num_down_sat: 161,
+    ctp: success: 0, fail: 339, success rate: 0.00%,
+    num_get_bad: 57,
+    overall_block_time: 5.009462ms,
+    block_get_bad_time: 2.723335ms,
+    block_get_predecessor_time: 165.876µs,
+    block_blocked_time: 240.933µs,
+    block_mic_time: 551.92µs,
+    block_push_time: 71.097µs,
+    overall_propagate_time: 894.924µs,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: safe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Thu 17 Apr 2025 10:37:58 PM CST
+========================================

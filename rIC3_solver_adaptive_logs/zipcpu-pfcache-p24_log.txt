@@ -1,11 +1,12 @@
-File: ./hwmcc1920/aig/zipcpu-pfcache-p24.aig
-Command: ~/coding_env/rIC3-adaptive/target/release/rIC3 -e ic3 --ic3-adaptive-ordering ./hwmcc1920/aig/zipcpu-pfcache-p24.aig
-Started at: Thu 17 Apr 2025 05:01:41 PM CST
+File: ./hwmcc20/aig-1.8/zipcpu-pfcache-p24.aig
+Command: ~/coding_env/rIC3-adaptive/target/release/rIC3 -e ic3 --ic3-adaptive-ordering ./hwmcc20/aig-1.8/zipcpu-pfcache-p24.aig
+Started at: Fri 18 Apr 2025 05:33:53 AM CST
 ----------------------------------------
-the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc1920/aig/zipcpu-pfcache-p24.aig
+the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc20/aig-1.8/zipcpu-pfcache-p24.aig
 ==========================================
 ADAPTIVE ORDERING IS ENABLED FOR THIS RUN
 ==========================================
+Warning: property not found, moved 1 outputs to bad properties
 
 === Latch Flip Rates (Total cycles: 1000, Seeds: 5) ===
 Latch    Flip Rate (%)
@@ -3216,50 +3217,61 @@ Latch    Flip Rate (%)
 3269 1.00        
 3270 4.00        
 3271 0.00        
+3272 100.00      
 =======================================
 
+[ADAPTIVE] Strategy change: High Flip First
+[ADAPTIVE] Strategy change: Default
 [ADAPTIVE] Strategy change: Topo
+[ADAPTIVE] Strategy change: Default
+[ADAPTIVE] Strategy change: Topo
+[ADAPTIVE] Strategy change: Default
 [ADAPTIVE] Strategy change: Low Flip First
 [ADAPTIVE] Strategy change: Default
-[ADAPTIVE] Strategy change: Topo
-[ADAPTIVE] Strategy change: Default
-[ADAPTIVE] Strategy change: High Flip First
 [ADAPTIVE] Strategy change: Low Flip First
 [ADAPTIVE] Strategy change: Default
 [ADAPTIVE] Strategy change: Reverse Topo
 [ADAPTIVE] Strategy change: Low Flip First
-[ADAPTIVE] Strategy change: Default
-[ADAPTIVE] Strategy change: Low Flip First
-[ADAPTIVE] Strategy change: Default
-[ADAPTIVE] Strategy change: Low Flip First
-[ADAPTIVE] Strategy change: Default
 [ADAPTIVE] Strategy change: High Flip First
-[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 393]
-304 3 8 7 14 12 12 10 9 5 3 6 5 6 7 5 8 9 21 14 6 8 3 1 0 50 26 36 47 192 0 
+[ADAPTIVE] Strategy change: Default
+[ADAPTIVE] Strategy change: Reverse Topo
+[ADAPTIVE] Strategy change: High Flip First
+[ADAPTIVE] Strategy change: Default
+[ADAPTIVE] Strategy change: Low Flip First
+[ADAPTIVE] Strategy change: Default
+[ADAPTIVE] Strategy change: Topo
+[ADAPTIVE] Strategy change: Default
+[ADAPTIVE] Strategy change: Reverse Topo
+[ADAPTIVE] Strategy change: Default
+[ADAPTIVE] Strategy change: Topo
+[ADAPTIVE] Strategy change: Default
+[ADAPTIVE] Strategy change: Low Flip First
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 219, 216]
+305 3 11 22 26 14 14 13 13 6 7 7 7 7 4 8 18 19 34 30 30 6 13 5 0 242 
 SolverStatistic {
-    num_solve: 18174,
-    avg_decide_var: 0.100429,
+    num_solve: 19306,
+    avg_decide_var: 0.109253,
     num_simplify_subsume: 0,
     num_simplify_self_subsume: 0,
 }
 Statistic {
     case: zipcpu-pfcache-p24.aig,
-    time: 0.55s,
-    num_mic: 1182,
-    avg_mic_cube_len: 6.451777,
-    avg_po_cube_len: 77.771434,
-    mic_drop: success: 1259, fail: 6137, success rate: 17.02%,
-    num_down: 7396,
-    num_down_sat: 8073,
-    ctp: success: 0, fail: 3523, success rate: 0.00%,
+    time: 0.57s,
+    num_mic: 1138,
+    avg_mic_cube_len: 7.342707,
+    avg_po_cube_len: 79.670812,
+    mic_drop: success: 1182, fail: 7024, success rate: 14.40%,
+    num_down: 8206,
+    num_down_sat: 8808,
+    ctp: success: 0, fail: 3547, success rate: 0.00%,
     num_get_bad: 67,
-    overall_block_time: 215.194226ms,
-    block_get_bad_time: 16.705791ms,
-    block_get_predecessor_time: 29.091877ms,
-    block_blocked_time: 36.266009ms,
-    block_mic_time: 98.441594ms,
-    block_push_time: 5.095306ms,
-    overall_propagate_time: 80.85791ms,
+    overall_block_time: 237.200034ms,
+    block_get_bad_time: 17.380671ms,
+    block_get_predecessor_time: 28.742632ms,
+    block_blocked_time: 39.00404ms,
+    block_mic_time: 121.99016ms,
+    block_push_time: 2.267896ms,
+    overall_propagate_time: 96.939026ms,
     xor_gen: success: 0, fail: 0, success rate: NaN%,
     num_auxiliary_var: 0,
     test: success: 0, fail: 0, success rate: NaN%,
@@ -3267,5 +3279,5 @@ Statistic {
 result: safe
 ----------------------------------------
 STATUS: COMPLETED
-Finished at: Thu 17 Apr 2025 05:01:41 PM CST
+Finished at: Fri 18 Apr 2025 05:33:54 AM CST
 ========================================

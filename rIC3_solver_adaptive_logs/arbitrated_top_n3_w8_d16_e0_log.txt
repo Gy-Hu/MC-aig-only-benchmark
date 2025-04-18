@@ -1,12 +1,11 @@
-File: ./hwmcc1920/aig-1.8/arbitrated_top_n3_w8_d16_e0.aig
-Command: ~/coding_env/rIC3-adaptive/target/release/rIC3 -e ic3 --ic3-adaptive-ordering ./hwmcc1920/aig-1.8/arbitrated_top_n3_w8_d16_e0.aig
-Started at: Thu 17 Apr 2025 04:56:51 PM CST
+File: ./hwmcc20/aig/arbitrated_top_n3_w8_d16_e0.aig
+Command: ~/coding_env/rIC3-adaptive/target/release/rIC3 -e ic3 --ic3-adaptive-ordering ./hwmcc20/aig/arbitrated_top_n3_w8_d16_e0.aig
+Started at: Fri 18 Apr 2025 06:22:42 AM CST
 ----------------------------------------
-the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc1920/aig-1.8/arbitrated_top_n3_w8_d16_e0.aig
+the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc20/aig/arbitrated_top_n3_w8_d16_e0.aig
 ==========================================
 ADAPTIVE ORDERING IS ENABLED FOR THIS RUN
 ==========================================
-Warning: property not found, moved 1 outputs to bad properties
 
 === Latch Flip Rates (Total cycles: 1000, Seeds: 5) ===
 Latch    Flip Rate (%)
@@ -472,55 +471,49 @@ Latch    Flip Rate (%)
 518 0.00        
 519 0.00        
 520 0.00        
-521 100.00      
 =======================================
 
-[ADAPTIVE] Strategy change: Reverse Topo
-[ADAPTIVE] Strategy change: Topo
+[ADAPTIVE] Strategy change: Low Flip First
 [ADAPTIVE] Strategy change: Reverse Topo
 [ADAPTIVE] Strategy change: Default
+[ADAPTIVE] Strategy change: Reverse Topo
+[ADAPTIVE] Strategy change: Default
+[ADAPTIVE] Strategy change: Low Flip First
 [ADAPTIVE] Strategy change: High Flip First
 [ADAPTIVE] Strategy change: Default
+[ADAPTIVE] Strategy change: Low Flip First
+[ADAPTIVE] Strategy change: Default
 [ADAPTIVE] Strategy change: Topo
+[ADAPTIVE] Strategy change: Reverse Topo
 [ADAPTIVE] Strategy change: Low Flip First
 [ADAPTIVE] Strategy change: Default
 [ADAPTIVE] Strategy change: High Flip First
-[ADAPTIVE] Strategy change: Default
-[ADAPTIVE] Strategy change: Topo
-[ADAPTIVE] Strategy change: Default
-[ADAPTIVE] Strategy change: High Flip First
-[ADAPTIVE] Strategy change: Default
-[ADAPTIVE] Strategy change: High Flip First
-[ADAPTIVE] Strategy change: Topo
-[ADAPTIVE] Strategy change: Reverse Topo
-[ADAPTIVE] Strategy change: Topo
-[ADAPTIVE] Strategy change: Low Flip First
-[1, 1, 1, 1, 7, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 70, 2241]
-2 12 24 25 43 68 73 92 112 134 177 178 264 326 451 564 921 1165 
+[1, 1, 1, 1, 1, 1, 9, 12, 6, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2652]
+1 9 18 29 49 64 106 103 128 126 232 165 240 279 463 543 722 1081 
 SolverStatistic {
-    num_solve: 162189,
-    avg_decide_var: 0.379281,
-    num_simplify_subsume: 3610,
-    num_simplify_self_subsume: 4585,
+    num_solve: 202939,
+    avg_decide_var: 0.425602,
+    num_simplify_subsume: 7284,
+    num_simplify_self_subsume: 7999,
 }
 Statistic {
     case: arbitrated_top_n3_w8_d16_e0.aig,
-    time: 6.68s,
-    num_mic: 6885,
-    avg_mic_cube_len: 13.088744,
-    avg_po_cube_len: 29.567656,
-    mic_drop: success: 14641, fail: 73688, success rate: 16.58%,
-    num_down: 88329,
-    num_down_sat: 131936,
-    ctp: success: 0, fail: 4908, success rate: 0.00%,
-    num_get_bad: 432,
-    overall_block_time: 5.806281745s,
-    block_get_bad_time: 119.498766ms,
-    block_get_predecessor_time: 106.531655ms,
-    block_blocked_time: 522.236198ms,
-    block_mic_time: 4.634167183s,
-    block_push_time: 25.485853ms,
-    overall_propagate_time: 765.074441ms,
+    time: 8.23s,
+    num_mic: 8021,
+    avg_mic_cube_len: 13.318040,
+    avg_po_cube_len: 29.790217,
+    mic_drop: success: 18580, fail: 85957, success rate: 17.77%,
+    num_down: 104537,
+    num_down_sat: 167306,
+    ctp: success: 0, fail: 5530, success rate: 0.00%,
+    num_get_bad: 397,
+    overall_block_time: 7.043696466s,
+    block_get_bad_time: 119.384235ms,
+    block_get_predecessor_time: 130.205996ms,
+    block_blocked_time: 603.793682ms,
+    block_mic_time: 5.757347594s,
+    block_push_time: 25.331567ms,
+    overall_propagate_time: 1.071598404s,
     xor_gen: success: 0, fail: 0, success rate: NaN%,
     num_auxiliary_var: 0,
     test: success: 0, fail: 0, success rate: NaN%,
@@ -528,5 +521,5 @@ Statistic {
 result: unsafe
 ----------------------------------------
 STATUS: COMPLETED
-Finished at: Thu 17 Apr 2025 04:56:58 PM CST
+Finished at: Fri 18 Apr 2025 06:22:50 AM CST
 ========================================

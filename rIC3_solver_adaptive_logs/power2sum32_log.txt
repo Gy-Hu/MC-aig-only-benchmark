@@ -1,0 +1,102 @@
+File: ./hwmcc15/power2sum32.aig
+Command: ~/coding_env/rIC3-adaptive/target/release/rIC3 -e ic3 --ic3-adaptive-ordering ./hwmcc15/power2sum32.aig
+Started at: Thu 17 Apr 2025 08:16:03 PM CST
+----------------------------------------
+the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc15/power2sum32.aig
+==========================================
+ADAPTIVE ORDERING IS ENABLED FOR THIS RUN
+==========================================
+Warning: property not found, moved 1 outputs to bad properties
+
+=== Latch Flip Rates (Total cycles: 1000, Seeds: 5) ===
+Latch    Flip Rate (%)
+-------- ------------
+13 1.00        
+14 1.00        
+15 1.00        
+16 1.00        
+17 1.00        
+18 96.00       
+19 99.00       
+20 0.00        
+21 99.00       
+22 99.00       
+23 99.00       
+24 0.00        
+25 99.00       
+26 99.00       
+27 99.00       
+28 0.00        
+29 100.00      
+30 99.00       
+31 0.00        
+32 99.00       
+33 99.00       
+34 99.00       
+35 99.00       
+36 99.00       
+37 99.00       
+38 99.00       
+39 99.00       
+=======================================
+
+[ADAPTIVE] Strategy change: Reverse Topo
+[ADAPTIVE] Strategy change: Default
+[ADAPTIVE] Strategy change: Topo
+[ADAPTIVE] Strategy change: High Flip First
+[ADAPTIVE] Strategy change: Default
+[ADAPTIVE] Strategy change: Low Flip First
+[ADAPTIVE] Strategy change: Topo
+[ADAPTIVE] Strategy change: Default
+[ADAPTIVE] Strategy change: Topo
+[ADAPTIVE] Strategy change: Default
+[ADAPTIVE] Strategy change: Reverse Topo
+[ADAPTIVE] Strategy change: Default
+[ADAPTIVE] Strategy change: Reverse Topo
+[ADAPTIVE] Strategy change: Default
+[ADAPTIVE] Strategy change: High Flip First
+[ADAPTIVE] Strategy change: Default
+[ADAPTIVE] Strategy change: Topo
+[ADAPTIVE] Strategy change: High Flip First
+[ADAPTIVE] Strategy change: Default
+[ADAPTIVE] Strategy change: Topo
+[ADAPTIVE] Strategy change: Default
+[ADAPTIVE] Strategy change: Low Flip First
+[ADAPTIVE] Strategy change: Reverse Topo
+[ADAPTIVE] Strategy change: Default
+[ADAPTIVE] Strategy change: Reverse Topo
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 208]
+27 12 8 11 5 1 1 6 2 1 1 1 1 1 5 1 1 1 1 1 1 1 4 0 37 0 
+SolverStatistic {
+    num_solve: 3534,
+    avg_decide_var: 0.590339,
+    num_simplify_subsume: 0,
+    num_simplify_self_subsume: 0,
+}
+Statistic {
+    case: power2sum32.aig,
+    time: 0.03s,
+    num_mic: 227,
+    avg_mic_cube_len: 6.057269,
+    avg_po_cube_len: 24.848702,
+    mic_drop: success: 186, fail: 1162, success rate: 13.80%,
+    num_down: 1348,
+    num_down_sat: 1965,
+    ctp: success: 0, fail: 309, success rate: 0.00%,
+    num_get_bad: 34,
+    overall_block_time: 20.869308ms,
+    block_get_bad_time: 1.406878ms,
+    block_get_predecessor_time: 1.782961ms,
+    block_blocked_time: 2.901192ms,
+    block_mic_time: 10.250387ms,
+    block_push_time: 1.566205ms,
+    overall_propagate_time: 4.361244ms,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: safe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Thu 17 Apr 2025 08:16:03 PM CST
+========================================

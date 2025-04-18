@@ -1,0 +1,55 @@
+File: ./hwmcc24/2024/sosylab/floats-cdfpl/newton_1_5.aig
+Command: ~/coding_env/rIC3-adaptive/target/release/rIC3 -e ic3 --ic3-adaptive-ordering ./hwmcc24/2024/sosylab/floats-cdfpl/newton_1_5.aig
+Started at: Fri 18 Apr 2025 11:28:22 AM CST
+----------------------------------------
+the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc24/2024/sosylab/floats-cdfpl/newton_1_5.aig
+==========================================
+ADAPTIVE ORDERING IS ENABLED FOR THIS RUN
+==========================================
+abc preprocess timeout
+
+=== Latch Flip Rates (Total cycles: 1000, Seeds: 5) ===
+Latch    Flip Rate (%)
+-------- ------------
+2909 0.00        
+2910 100.00      
+2911 48.00       
+2912 49.00       
+=======================================
+
+[ADAPTIVE] Strategy change: Low Flip First
+[1, 1]
+2 0 
+SolverStatistic {
+    num_solve: 1,
+    avg_decide_var: 1.000125,
+    num_simplify_subsume: 0,
+    num_simplify_self_subsume: 0,
+}
+Statistic {
+    case: newton_1_5.aig,
+    time: 2.63s,
+    num_mic: 0,
+    avg_mic_cube_len: NaN,
+    avg_po_cube_len: 2.500000,
+    mic_drop: success: 0, fail: 0, success rate: NaN%,
+    num_down: 0,
+    num_down_sat: 0,
+    ctp: success: 0, fail: 0, success rate: NaN%,
+    num_get_bad: 2,
+    overall_block_time: 1.288846411s,
+    block_get_bad_time: 976.550321ms,
+    block_get_predecessor_time: 17.541946ms,
+    block_blocked_time: 278.993658ms,
+    block_mic_time: 0ns,
+    block_push_time: 0ns,
+    overall_propagate_time: 195ns,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: unsafe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 18 Apr 2025 11:28:31 AM CST
+========================================

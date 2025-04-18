@@ -1,11 +1,12 @@
-File: ./hwmcc1920/aig/zipcpu-pfcache-p02.aig
-Command: ~/coding_env/rIC3-adaptive/target/release/rIC3 -e ic3 --ic3-adaptive-ordering ./hwmcc1920/aig/zipcpu-pfcache-p02.aig
-Started at: Thu 17 Apr 2025 05:01:01 PM CST
+File: ./hwmcc20/aig-1.8/zipcpu-pfcache-p02.aig
+Command: ~/coding_env/rIC3-adaptive/target/release/rIC3 -e ic3 --ic3-adaptive-ordering ./hwmcc20/aig-1.8/zipcpu-pfcache-p02.aig
+Started at: Fri 18 Apr 2025 05:18:45 AM CST
 ----------------------------------------
-the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc1920/aig/zipcpu-pfcache-p02.aig
+the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc20/aig-1.8/zipcpu-pfcache-p02.aig
 ==========================================
 ADAPTIVE ORDERING IS ENABLED FOR THIS RUN
 ==========================================
+Warning: property not found, moved 1 outputs to bad properties
 
 === Latch Flip Rates (Total cycles: 1000, Seeds: 5) ===
 Latch    Flip Rate (%)
@@ -3216,44 +3217,46 @@ Latch    Flip Rate (%)
 3269 1.00        
 3270 4.00        
 3271 0.00        
+3272 100.00      
 =======================================
 
-[ADAPTIVE] Strategy change: Reverse Topo
-[ADAPTIVE] Strategy change: Default
-[ADAPTIVE] Strategy change: Reverse Topo
-[ADAPTIVE] Strategy change: Default
-[ADAPTIVE] Strategy change: Topo
-[ADAPTIVE] Strategy change: Default
-[ADAPTIVE] Strategy change: Topo
-[ADAPTIVE] Strategy change: Default
 [ADAPTIVE] Strategy change: Low Flip First
+[ADAPTIVE] Strategy change: Topo
 [ADAPTIVE] Strategy change: Default
-[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 181]
-304 5 3 1 0 14 5 5 4 4 6 5 85 0 
+[ADAPTIVE] Strategy change: Topo
+[ADAPTIVE] Strategy change: Default
+[ADAPTIVE] Strategy change: High Flip First
+[ADAPTIVE] Strategy change: Default
+[ADAPTIVE] Strategy change: High Flip First
+[ADAPTIVE] Strategy change: Default
+[ADAPTIVE] Strategy change: Topo
+[ADAPTIVE] Strategy change: Default
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 70, 83]
+305 5 9 8 6 9 2 2 5 1 0 83 
 SolverStatistic {
-    num_solve: 2742,
-    avg_decide_var: 0.105250,
+    num_solve: 2423,
+    avg_decide_var: 0.115294,
     num_simplify_subsume: 0,
     num_simplify_self_subsume: 0,
 }
 Statistic {
     case: zipcpu-pfcache-p02.aig,
-    time: 0.25s,
-    num_mic: 320,
-    avg_mic_cube_len: 3.693750,
-    avg_po_cube_len: 78.811667,
-    mic_drop: success: 145, fail: 1009, success rate: 12.56%,
-    num_down: 1154,
-    num_down_sat: 995,
-    ctp: success: 0, fail: 230, success rate: 0.00%,
-    num_get_bad: 30,
-    overall_block_time: 49.148321ms,
-    block_get_bad_time: 6.144789ms,
-    block_get_predecessor_time: 13.965065ms,
-    block_blocked_time: 9.709009ms,
-    block_mic_time: 8.822144ms,
-    block_push_time: 3.242958ms,
-    overall_propagate_time: 3.599011ms,
+    time: 0.29s,
+    num_mic: 277,
+    avg_mic_cube_len: 4.227437,
+    avg_po_cube_len: 84.882917,
+    mic_drop: success: 138, fail: 1013, success rate: 11.99%,
+    num_down: 1151,
+    num_down_sat: 1064,
+    ctp: success: 0, fail: 273, success rate: 0.00%,
+    num_get_bad: 28,
+    overall_block_time: 52.85043ms,
+    block_get_bad_time: 6.522979ms,
+    block_get_predecessor_time: 13.345674ms,
+    block_blocked_time: 10.385082ms,
+    block_mic_time: 13.003477ms,
+    block_push_time: 2.024115ms,
+    overall_propagate_time: 4.050371ms,
     xor_gen: success: 0, fail: 0, success rate: NaN%,
     num_auxiliary_var: 0,
     test: success: 0, fail: 0, success rate: NaN%,
@@ -3261,5 +3264,5 @@ Statistic {
 result: safe
 ----------------------------------------
 STATUS: COMPLETED
-Finished at: Thu 17 Apr 2025 05:01:02 PM CST
+Finished at: Fri 18 Apr 2025 05:18:46 AM CST
 ========================================

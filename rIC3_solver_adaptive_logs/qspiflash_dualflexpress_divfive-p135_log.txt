@@ -1,11 +1,12 @@
-File: ./hwmcc1920/aig/qspiflash_dualflexpress_divfive-p135.aig
-Command: ~/coding_env/rIC3-adaptive/target/release/rIC3 -e ic3 --ic3-adaptive-ordering ./hwmcc1920/aig/qspiflash_dualflexpress_divfive-p135.aig
-Started at: Thu 17 Apr 2025 05:02:28 PM CST
+File: ./hwmcc20/aig-1.8/qspiflash_dualflexpress_divfive-p135.aig
+Command: ~/coding_env/rIC3-adaptive/target/release/rIC3 -e ic3 --ic3-adaptive-ordering ./hwmcc20/aig-1.8/qspiflash_dualflexpress_divfive-p135.aig
+Started at: Fri 18 Apr 2025 05:53:34 AM CST
 ----------------------------------------
-the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc1920/aig/qspiflash_dualflexpress_divfive-p135.aig
+the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc20/aig-1.8/qspiflash_dualflexpress_divfive-p135.aig
 ==========================================
 ADAPTIVE ORDERING IS ENABLED FOR THIS RUN
 ==========================================
+Warning: property not found, moved 1 outputs to bad properties
 
 === Latch Flip Rates (Total cycles: 1000, Seeds: 5) ===
 Latch    Flip Rate (%)
@@ -607,6 +608,7 @@ Latch    Flip Rate (%)
 707 100.00      
 708 100.00      
 709 100.00      
+710 100.00      
 =======================================
 
 [ADAPTIVE] Strategy change: High Flip First
@@ -615,42 +617,52 @@ Latch    Flip Rate (%)
 [ADAPTIVE] Strategy change: Default
 [ADAPTIVE] Strategy change: High Flip First
 [ADAPTIVE] Strategy change: Default
+[ADAPTIVE] Strategy change: Topo
+[ADAPTIVE] Strategy change: Low Flip First
+[ADAPTIVE] Strategy change: Topo
+[ADAPTIVE] Strategy change: Default
+[ADAPTIVE] Strategy change: High Flip First
+[ADAPTIVE] Strategy change: Default
 [ADAPTIVE] Strategy change: Reverse Topo
 [ADAPTIVE] Strategy change: Default
 [ADAPTIVE] Strategy change: High Flip First
-[ADAPTIVE] Strategy change: Topo
+[ADAPTIVE] Strategy change: Default
+[ADAPTIVE] Strategy change: Low Flip First
 [ADAPTIVE] Strategy change: Default
 [ADAPTIVE] Strategy change: Topo
+[ADAPTIVE] Strategy change: Default
 [ADAPTIVE] Strategy change: Reverse Topo
 [ADAPTIVE] Strategy change: Default
-[ADAPTIVE] Strategy change: Topo
+[ADAPTIVE] Strategy change: Low Flip First
 [ADAPTIVE] Strategy change: Default
-[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1028, 401]
-79 2 10 13 16 26 31 28 36 33 35 18 40 28 40 30 34 26 39 50 101 66 10 14 4 5 2 12 2 0 403 
+[ADAPTIVE] Strategy change: Reverse Topo
+[ADAPTIVE] Strategy change: Topo
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 623, 137]
+80 13 12 10 19 21 26 23 27 21 22 10 6 5 4 2 2 8 10 5 13 12 6 3 4 5 5 12 6 4 1 0 140 
 SolverStatistic {
-    num_solve: 47178,
-    avg_decide_var: 0.434460,
+    num_solve: 20078,
+    avg_decide_var: 0.428992,
     num_simplify_subsume: 0,
     num_simplify_self_subsume: 0,
 }
 Statistic {
     case: qspiflash_dualflexpress_divfive-p135.aig,
-    time: 0.80s,
-    num_mic: 2390,
-    avg_mic_cube_len: 8.138075,
-    avg_po_cube_len: 36.327715,
-    mic_drop: success: 1978, fail: 17049, success rate: 10.40%,
-    num_down: 19027,
-    num_down_sat: 29739,
-    ctp: success: 0, fail: 4601, success rate: 0.00%,
-    num_get_bad: 54,
-    overall_block_time: 614.235012ms,
-    block_get_bad_time: 3.562223ms,
-    block_get_predecessor_time: 79.173462ms,
-    block_blocked_time: 66.776695ms,
-    block_mic_time: 390.41291ms,
-    block_push_time: 17.293412ms,
-    overall_propagate_time: 116.646493ms,
+    time: 0.40s,
+    num_mic: 1147,
+    avg_mic_cube_len: 6.129032,
+    avg_po_cube_len: 34.814621,
+    mic_drop: success: 1079, fail: 5726, success rate: 15.86%,
+    num_down: 6805,
+    num_down_sat: 8699,
+    ctp: success: 0, fail: 3262, success rate: 0.00%,
+    num_get_bad: 67,
+    overall_block_time: 229.297616ms,
+    block_get_bad_time: 5.129231ms,
+    block_get_predecessor_time: 34.242705ms,
+    block_blocked_time: 32.586856ms,
+    block_mic_time: 121.403076ms,
+    block_push_time: 7.433899ms,
+    overall_propagate_time: 98.183536ms,
     xor_gen: success: 0, fail: 0, success rate: NaN%,
     num_auxiliary_var: 0,
     test: success: 0, fail: 0, success rate: NaN%,
@@ -658,5 +670,5 @@ Statistic {
 result: safe
 ----------------------------------------
 STATUS: COMPLETED
-Finished at: Thu 17 Apr 2025 05:02:28 PM CST
+Finished at: Fri 18 Apr 2025 05:53:34 AM CST
 ========================================

@@ -1,0 +1,68 @@
+File: ./hwmcc11/single/pdtvisgigamax1.aig
+Command: ~/coding_env/rIC3-adaptive/target/release/rIC3 -e ic3 --ic3-adaptive-ordering ./hwmcc11/single/pdtvisgigamax1.aig
+Started at: Fri 18 Apr 2025 03:22:51 AM CST
+----------------------------------------
+the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc11/single/pdtvisgigamax1.aig
+==========================================
+ADAPTIVE ORDERING IS ENABLED FOR THIS RUN
+==========================================
+Warning: property not found, moved 1 outputs to bad properties
+
+=== Latch Flip Rates (Total cycles: 1000, Seeds: 5) ===
+Latch    Flip Rate (%)
+-------- ------------
+23 14.00       
+24 9.00        
+25 16.00       
+26 0.00        
+27 42.00       
+28 15.00       
+29 0.00        
+30 0.00        
+31 14.00       
+32 56.00       
+33 85.00       
+34 3.00        
+35 0.00        
+36 21.00       
+37 0.00        
+38 1.00        
+=======================================
+
+[ADAPTIVE] Strategy change: Low Flip First
+[ADAPTIVE] Strategy change: Default
+[0, 0, 0, 1, 6]
+16 3 0 6 
+SolverStatistic {
+    num_solve: 77,
+    avg_decide_var: 0.747537,
+    num_simplify_subsume: 0,
+    num_simplify_self_subsume: 0,
+}
+Statistic {
+    case: pdtvisgigamax1.aig,
+    time: 0.01s,
+    num_mic: 12,
+    avg_mic_cube_len: 3.250000,
+    avg_po_cube_len: 10.028571,
+    mic_drop: success: 1, fail: 38, success rate: 2.56%,
+    num_down: 39,
+    num_down_sat: 49,
+    ctp: success: 0, fail: 2, success rate: 0.00%,
+    num_get_bad: 6,
+    overall_block_time: 1.374235ms,
+    block_get_bad_time: 290.86µs,
+    block_get_predecessor_time: 142.581µs,
+    block_blocked_time: 228.62µs,
+    block_mic_time: 497.294µs,
+    block_push_time: 45.482µs,
+    overall_propagate_time: 198.794µs,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: safe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 18 Apr 2025 03:22:51 AM CST
+========================================

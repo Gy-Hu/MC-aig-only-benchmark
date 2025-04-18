@@ -1,8 +1,8 @@
-File: ./hwmcc1920/fraig/paper_v3.aig
-Command: ~/coding_env/rIC3-adaptive/target/release/rIC3 -e ic3 --ic3-adaptive-ordering ./hwmcc1920/fraig/paper_v3.aig
-Started at: Thu 17 Apr 2025 02:42:01 PM CST
+File: ./hwmcc20/aig-1.8/paper_v3.aig
+Command: ~/coding_env/rIC3-adaptive/target/release/rIC3 -e ic3 --ic3-adaptive-ordering ./hwmcc20/aig-1.8/paper_v3.aig
+Started at: Fri 18 Apr 2025 06:03:20 AM CST
 ----------------------------------------
-the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc1920/fraig/paper_v3.aig
+the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc20/aig-1.8/paper_v3.aig
 ==========================================
 ADAPTIVE ORDERING IS ENABLED FOR THIS RUN
 ==========================================
@@ -29,51 +29,56 @@ Latch    Flip Rate (%)
 17 50.00       
 =======================================
 
-[ADAPTIVE] Strategy change: Topo
-[ADAPTIVE] Strategy change: Default
-[ADAPTIVE] Strategy change: Low Flip First
-[ADAPTIVE] Strategy change: Default
-[ADAPTIVE] Strategy change: Topo
-[ADAPTIVE] Strategy change: Default
-[ADAPTIVE] Strategy change: Topo
-[ADAPTIVE] Strategy change: Low Flip First
-[ADAPTIVE] Strategy change: Default
-[ADAPTIVE] Strategy change: High Flip First
-[ADAPTIVE] Strategy change: Default
-[ADAPTIVE] Strategy change: Low Flip First
 [ADAPTIVE] Strategy change: Reverse Topo
 [ADAPTIVE] Strategy change: Default
-[ADAPTIVE] Strategy change: High Flip First
+[ADAPTIVE] Strategy change: Reverse Topo
+[ADAPTIVE] Strategy change: Topo
+[ADAPTIVE] Strategy change: Default
+[ADAPTIVE] Strategy change: Low Flip First
+[ADAPTIVE] Strategy change: Default
+[ADAPTIVE] Strategy change: Topo
 [ADAPTIVE] Strategy change: Default
 [ADAPTIVE] Strategy change: High Flip First
+[ADAPTIVE] Strategy change: Default
 [ADAPTIVE] Strategy change: Reverse Topo
+[ADAPTIVE] Strategy change: Low Flip First
+[ADAPTIVE] Strategy change: Default
+[ADAPTIVE] Strategy change: Topo
+[ADAPTIVE] Strategy change: Default
+[ADAPTIVE] Strategy change: Topo
+[ADAPTIVE] Strategy change: Default
+[ADAPTIVE] Strategy change: Topo
+[ADAPTIVE] Strategy change: Default
+[ADAPTIVE] Strategy change: Topo
+[ADAPTIVE] Strategy change: Default
+[ADAPTIVE] Strategy change: Topo
 [ADAPTIVE] Strategy change: Default
 [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 310, 8]
 16 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 2 0 8 
 SolverStatistic {
-    num_solve: 3095,
+    num_solve: 3374,
     avg_decide_var: inf,
     num_simplify_subsume: 0,
     num_simplify_self_subsume: 0,
 }
 Statistic {
     case: paper_v3.aig,
-    time: 0.06s,
-    num_mic: 349,
-    avg_mic_cube_len: 4.148997,
-    avg_po_cube_len: 11.505858,
-    mic_drop: success: 287, fail: 1072, success rate: 21.12%,
-    num_down: 1359,
-    num_down_sat: 1664,
-    ctp: success: 0, fail: 120, success rate: 0.00%,
+    time: 0.05s,
+    num_mic: 350,
+    avg_mic_cube_len: 4.145714,
+    avg_po_cube_len: 11.662323,
+    mic_drop: success: 296, fail: 1074, success rate: 21.61%,
+    num_down: 1370,
+    num_down_sat: 1943,
+    ctp: success: 0, fail: 119, success rate: 0.00%,
     num_get_bad: 29,
-    overall_block_time: 40.53517ms,
-    block_get_bad_time: 23.602007ms,
-    block_get_predecessor_time: 3.045263ms,
-    block_blocked_time: 2.641188ms,
-    block_mic_time: 7.724453ms,
-    block_push_time: 98.514µs,
-    overall_propagate_time: 2.518003ms,
+    overall_block_time: 41.980564ms,
+    block_get_bad_time: 23.832827ms,
+    block_get_predecessor_time: 3.257702ms,
+    block_blocked_time: 2.657711ms,
+    block_mic_time: 8.666664ms,
+    block_push_time: 102.095µs,
+    overall_propagate_time: 2.507344ms,
     xor_gen: success: 0, fail: 0, success rate: NaN%,
     num_auxiliary_var: 0,
     test: success: 0, fail: 0, success rate: NaN%,
@@ -81,5 +86,5 @@ Statistic {
 result: safe
 ----------------------------------------
 STATUS: COMPLETED
-Finished at: Thu 17 Apr 2025 02:42:01 PM CST
+Finished at: Fri 18 Apr 2025 06:03:20 AM CST
 ========================================

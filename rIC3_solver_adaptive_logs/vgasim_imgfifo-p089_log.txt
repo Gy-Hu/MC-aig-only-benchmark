@@ -1,11 +1,12 @@
-File: ./hwmcc1920/fraig/vgasim_imgfifo-p089.aig
-Command: ~/coding_env/rIC3-adaptive/target/release/rIC3 -e ic3 --ic3-adaptive-ordering ./hwmcc1920/fraig/vgasim_imgfifo-p089.aig
-Started at: Thu 17 Apr 2025 01:41:35 PM CST
+File: ./hwmcc20/aig-1.8/vgasim_imgfifo-p089.aig
+Command: ~/coding_env/rIC3-adaptive/target/release/rIC3 -e ic3 --ic3-adaptive-ordering ./hwmcc20/aig-1.8/vgasim_imgfifo-p089.aig
+Started at: Fri 18 Apr 2025 05:45:31 AM CST
 ----------------------------------------
-the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc1920/fraig/vgasim_imgfifo-p089.aig
+the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc20/aig-1.8/vgasim_imgfifo-p089.aig
 ==========================================
 ADAPTIVE ORDERING IS ENABLED FOR THIS RUN
 ==========================================
+Warning: property not found, moved 1 outputs to bad properties
 
 === Latch Flip Rates (Total cycles: 1000, Seeds: 5) ===
 Latch    Flip Rate (%)
@@ -890,43 +891,43 @@ Latch    Flip Rate (%)
 1095 0.00        
 1096 0.00        
 1097 0.00        
+1098 100.00      
 =======================================
 
-[ADAPTIVE] Strategy change: Topo
-[ADAPTIVE] Strategy change: Default
-[ADAPTIVE] Strategy change: Topo
-[ADAPTIVE] Strategy change: Default
-[ADAPTIVE] Strategy change: Topo
+[ADAPTIVE] Strategy change: High Flip First
 [ADAPTIVE] Strategy change: Default
 [ADAPTIVE] Strategy change: Low Flip First
 [ADAPTIVE] Strategy change: Default
-[ADAPTIVE] Strategy change: Reverse Topo
-[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 612]
-343 17 33 51 90 164 54 14 0 247 
+[ADAPTIVE] Strategy change: Low Flip First
+[ADAPTIVE] Strategy change: Default
+[ADAPTIVE] Strategy change: Low Flip First
+[ADAPTIVE] Strategy change: Default
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 120, 199]
+344 18 16 45 49 31 12 8 4 2 2 2 1 0 199 
 SolverStatistic {
-    num_solve: 9861,
-    avg_decide_var: 0.191571,
+    num_solve: 5175,
+    avg_decide_var: 0.205826,
     num_simplify_subsume: 0,
     num_simplify_self_subsume: 0,
 }
 Statistic {
     case: vgasim_imgfifo-p089.aig,
-    time: 0.42s,
-    num_mic: 1087,
-    avg_mic_cube_len: 5.440662,
-    avg_po_cube_len: 143.727151,
-    mic_drop: success: 849, fail: 4737, success rate: 15.20%,
-    num_down: 5586,
-    num_down_sat: 5546,
-    ctp: success: 0, fail: 1047, success rate: 0.00%,
-    num_get_bad: 265,
-    overall_block_time: 305.096327ms,
-    block_get_bad_time: 50.823207ms,
-    block_get_predecessor_time: 53.030504ms,
-    block_blocked_time: 40.742359ms,
-    block_mic_time: 86.267649ms,
-    block_push_time: 1.413669ms,
-    overall_propagate_time: 24.566072ms,
+    time: 0.30s,
+    num_mic: 527,
+    avg_mic_cube_len: 3.702087,
+    avg_po_cube_len: 143.190592,
+    mic_drop: success: 247, fail: 1626, success rate: 13.19%,
+    num_down: 1873,
+    num_down_sat: 1651,
+    ctp: success: 0, fail: 1802, success rate: 0.00%,
+    num_get_bad: 166,
+    overall_block_time: 159.264449ms,
+    block_get_bad_time: 40.946675ms,
+    block_get_predecessor_time: 25.188262ms,
+    block_blocked_time: 23.259101ms,
+    block_mic_time: 28.73162ms,
+    block_push_time: 721.076µs,
+    overall_propagate_time: 23.381139ms,
     xor_gen: success: 0, fail: 0, success rate: NaN%,
     num_auxiliary_var: 0,
     test: success: 0, fail: 0, success rate: NaN%,
@@ -934,5 +935,5 @@ Statistic {
 result: safe
 ----------------------------------------
 STATUS: COMPLETED
-Finished at: Thu 17 Apr 2025 01:41:36 PM CST
+Finished at: Fri 18 Apr 2025 05:45:31 AM CST
 ========================================

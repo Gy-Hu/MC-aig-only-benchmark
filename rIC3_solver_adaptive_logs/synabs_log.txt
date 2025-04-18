@@ -1,0 +1,77 @@
+File: ./avr/opensource/synabs/synabs.aig
+Command: ~/coding_env/rIC3-adaptive/target/release/rIC3 -e ic3 --ic3-adaptive-ordering ./avr/opensource/synabs/synabs.aig
+Started at: Fri 18 Apr 2025 03:45:21 AM CST
+----------------------------------------
+the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/avr/opensource/synabs/synabs.aig
+==========================================
+ADAPTIVE ORDERING IS ENABLED FOR THIS RUN
+==========================================
+
+=== Latch Flip Rates (Total cycles: 1000, Seeds: 5) ===
+Latch    Flip Rate (%)
+-------- ------------
+3 50.00       
+4 50.00       
+5 50.00       
+6 50.00       
+7 100.00      
+8 1.00        
+9 1.00        
+10 98.00       
+11 1.00        
+12 100.00      
+13 1.00        
+14 1.00        
+15 98.00       
+16 1.00        
+17 100.00      
+18 1.00        
+19 1.00        
+20 98.00       
+21 1.00        
+22 100.00      
+=======================================
+
+[ADAPTIVE] Strategy change: Reverse Topo
+[ADAPTIVE] Strategy change: Default
+[ADAPTIVE] Strategy change: High Flip First
+[ADAPTIVE] Strategy change: Default
+[ADAPTIVE] Strategy change: Topo
+[ADAPTIVE] Strategy change: Default
+[ADAPTIVE] Strategy change: Topo
+[ADAPTIVE] Strategy change: Default
+[0, 0, 0, 0, 0, 0, 0, 11, 2]
+20 2 2 1 1 1 0 2 
+SolverStatistic {
+    num_solve: 79,
+    avg_decide_var: inf,
+    num_simplify_subsume: 0,
+    num_simplify_self_subsume: 0,
+}
+Statistic {
+    case: synabs.aig,
+    time: 0.00s,
+    num_mic: 12,
+    avg_mic_cube_len: 2.000000,
+    avg_po_cube_len: 12.162162,
+    mic_drop: success: 1, fail: 23, success rate: 4.17%,
+    num_down: 24,
+    num_down_sat: 18,
+    ctp: success: 0, fail: 11, success rate: 0.00%,
+    num_get_bad: 9,
+    overall_block_time: 293.688µs,
+    block_get_bad_time: 58.515µs,
+    block_get_predecessor_time: 60.725µs,
+    block_blocked_time: 51.627µs,
+    block_mic_time: 47.835µs,
+    block_push_time: 10.251µs,
+    overall_propagate_time: 59.172µs,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: safe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 18 Apr 2025 03:45:21 AM CST
+========================================

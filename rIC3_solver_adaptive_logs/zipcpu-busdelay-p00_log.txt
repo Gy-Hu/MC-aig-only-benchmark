@@ -1,11 +1,12 @@
-File: ./hwmcc1920/aig/zipcpu-busdelay-p00.aig
-Command: ~/coding_env/rIC3-adaptive/target/release/rIC3 -e ic3 --ic3-adaptive-ordering ./hwmcc1920/aig/zipcpu-busdelay-p00.aig
-Started at: Thu 17 Apr 2025 05:01:34 PM CST
+File: ./hwmcc20/aig-1.8/zipcpu-busdelay-p00.aig
+Command: ~/coding_env/rIC3-adaptive/target/release/rIC3 -e ic3 --ic3-adaptive-ordering ./hwmcc20/aig-1.8/zipcpu-busdelay-p00.aig
+Started at: Fri 18 Apr 2025 05:30:45 AM CST
 ----------------------------------------
-the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc1920/aig/zipcpu-busdelay-p00.aig
+the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc20/aig-1.8/zipcpu-busdelay-p00.aig
 ==========================================
 ADAPTIVE ORDERING IS ENABLED FOR THIS RUN
 ==========================================
+Warning: property not found, moved 1 outputs to bad properties
 
 === Latch Flip Rates (Total cycles: 1000, Seeds: 5) ===
 Latch    Flip Rate (%)
@@ -668,72 +669,80 @@ Latch    Flip Rate (%)
 765 85.00       
 766 20.00       
 767 97.00       
+768 100.00      
 =======================================
 
 [ADAPTIVE] Strategy change: High Flip First
 [ADAPTIVE] Strategy change: Low Flip First
 [ADAPTIVE] Strategy change: Default
-[ADAPTIVE] Strategy change: Low Flip First
-[ADAPTIVE] Strategy change: Reverse Topo
-[ADAPTIVE] Strategy change: Default
-[ADAPTIVE] Strategy change: Topo
-[ADAPTIVE] Strategy change: Default
-[ADAPTIVE] Strategy change: Low Flip First
-[ADAPTIVE] Strategy change: Default
-[ADAPTIVE] Strategy change: Reverse Topo
-[ADAPTIVE] Strategy change: Default
-[ADAPTIVE] Strategy change: Reverse Topo
-[ADAPTIVE] Strategy change: Low Flip First
-[ADAPTIVE] Strategy change: Default
-[ADAPTIVE] Strategy change: Topo
-[ADAPTIVE] Strategy change: Reverse Topo
 [ADAPTIVE] Strategy change: Topo
 [ADAPTIVE] Strategy change: Reverse Topo
 [ADAPTIVE] Strategy change: Default
-[ADAPTIVE] Strategy change: Topo
-[ADAPTIVE] Strategy change: Default
-[ADAPTIVE] Strategy change: Reverse Topo
-[ADAPTIVE] Strategy change: Low Flip First
-[ADAPTIVE] Strategy change: Default
-[ADAPTIVE] Strategy change: Low Flip First
-[ADAPTIVE] Strategy change: Reverse Topo
-[ADAPTIVE] Strategy change: Low Flip First
 [ADAPTIVE] Strategy change: High Flip First
+[ADAPTIVE] Strategy change: Default
 [ADAPTIVE] Strategy change: Low Flip First
-[ADAPTIVE] Strategy change: Reverse Topo
 [ADAPTIVE] Strategy change: Topo
+[ADAPTIVE] Strategy change: High Flip First
+[ADAPTIVE] Strategy change: Default
 [ADAPTIVE] Strategy change: Reverse Topo
+[ADAPTIVE] Strategy change: Default
+[ADAPTIVE] Strategy change: Reverse Topo
+[ADAPTIVE] Strategy change: Default
+[ADAPTIVE] Strategy change: Topo
+[ADAPTIVE] Strategy change: Default
+[ADAPTIVE] Strategy change: Topo
+[ADAPTIVE] Strategy change: Default
 [ADAPTIVE] Strategy change: Topo
 [ADAPTIVE] Strategy change: High Flip First
 [ADAPTIVE] Strategy change: Topo
 [ADAPTIVE] Strategy change: Reverse Topo
+[ADAPTIVE] Strategy change: Default
+[ADAPTIVE] Strategy change: Reverse Topo
+[ADAPTIVE] Strategy change: High Flip First
+[ADAPTIVE] Strategy change: Low Flip First
+[ADAPTIVE] Strategy change: Reverse Topo
+[ADAPTIVE] Strategy change: Low Flip First
+[ADAPTIVE] Strategy change: High Flip First
+[ADAPTIVE] Strategy change: Default
+[ADAPTIVE] Strategy change: High Flip First
+[ADAPTIVE] Strategy change: Reverse Topo
+[ADAPTIVE] Strategy change: High Flip First
+[ADAPTIVE] Strategy change: Low Flip First
+[ADAPTIVE] Strategy change: Reverse Topo
 [ADAPTIVE] Strategy change: Topo
-[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5609]
-47 5 13 10 24 25 45 84 181 168 404 324 259 277 238 208 219 170 188 276 334 312 208 77 17 10 6 0 6861 0 
+[ADAPTIVE] Strategy change: High Flip First
+[ADAPTIVE] Strategy change: Reverse Topo
+[ADAPTIVE] Strategy change: Default
+[ADAPTIVE] Strategy change: Low Flip First
+[ADAPTIVE] Strategy change: Reverse Topo
+[ADAPTIVE] Strategy change: High Flip First
+[ADAPTIVE] Strategy change: Reverse Topo
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1086, 4272]
+48 11 17 27 32 41 47 162 127 155 253 172 113 114 134 147 242 280 373 451 409 460 465 425 322 203 140 71 40 13 0 2 6250 
 SolverStatistic {
-    num_solve: 498782,
-    avg_decide_var: 0.246912,
-    num_simplify_subsume: 21701,
-    num_simplify_self_subsume: 15220,
+    num_solve: 577738,
+    avg_decide_var: 0.269398,
+    num_simplify_subsume: 25660,
+    num_simplify_self_subsume: 15907,
 }
 Statistic {
     case: zipcpu-busdelay-p00.aig,
-    time: 23.99s,
-    num_mic: 15680,
-    avg_mic_cube_len: 13.024171,
-    avg_po_cube_len: 68.893155,
-    mic_drop: success: 30764, fail: 169694, success rate: 15.35%,
-    num_down: 200458,
-    num_down_sat: 333901,
-    ctp: success: 0, fail: 73484, success rate: 0.00%,
-    num_get_bad: 130,
-    overall_block_time: 11.571535394s,
-    block_get_bad_time: 14.789953ms,
-    block_get_predecessor_time: 387.27752ms,
-    block_blocked_time: 1.450971711s,
-    block_mic_time: 8.838613749s,
-    block_push_time: 134.881058ms,
-    overall_propagate_time: 12.349978579s,
+    time: 28.93s,
+    num_mic: 16871,
+    avg_mic_cube_len: 13.911564,
+    avg_po_cube_len: 73.180090,
+    mic_drop: success: 36591, fail: 193033, success rate: 15.94%,
+    num_down: 229624,
+    num_down_sat: 392742,
+    ctp: success: 0, fail: 70527, success rate: 0.00%,
+    num_get_bad: 132,
+    overall_block_time: 13.57181054s,
+    block_get_bad_time: 15.273011ms,
+    block_get_predecessor_time: 346.207517ms,
+    block_blocked_time: 1.490511248s,
+    block_mic_time: 10.791176362s,
+    block_push_time: 124.096521ms,
+    overall_propagate_time: 15.293461912s,
     xor_gen: success: 0, fail: 0, success rate: NaN%,
     num_auxiliary_var: 0,
     test: success: 0, fail: 0, success rate: NaN%,
@@ -741,5 +750,5 @@ Statistic {
 result: safe
 ----------------------------------------
 STATUS: COMPLETED
-Finished at: Thu 17 Apr 2025 05:01:58 PM CST
+Finished at: Fri 18 Apr 2025 05:31:14 AM CST
 ========================================

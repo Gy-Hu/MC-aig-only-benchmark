@@ -1,0 +1,79 @@
+File: ./hwmcc08/visarbiter.aig
+Command: ~/coding_env/rIC3-adaptive/target/release/rIC3 -e ic3 --ic3-adaptive-ordering ./hwmcc08/visarbiter.aig
+Started at: Thu 17 Apr 2025 10:35:17 PM CST
+----------------------------------------
+the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc08/visarbiter.aig
+==========================================
+ADAPTIVE ORDERING IS ENABLED FOR THIS RUN
+==========================================
+Warning: property not found, moved 1 outputs to bad properties
+
+=== Latch Flip Rates (Total cycles: 1000, Seeds: 5) ===
+Latch    Flip Rate (%)
+-------- ------------
+4 94.00       
+5 22.00       
+6 27.00       
+7 22.00       
+8 94.00       
+9 22.00       
+10 27.00       
+11 22.00       
+12 94.00       
+13 22.00       
+14 27.00       
+15 22.00       
+16 33.00       
+17 33.00       
+18 88.00       
+19 11.00       
+20 88.00       
+21 87.00       
+22 11.00       
+23 87.00       
+24 88.00       
+25 10.00       
+26 88.00       
+=======================================
+
+[ADAPTIVE] Strategy change: Reverse Topo
+[ADAPTIVE] Strategy change: Default
+[ADAPTIVE] Strategy change: High Flip First
+[ADAPTIVE] Strategy change: Default
+[ADAPTIVE] Strategy change: Topo
+[ADAPTIVE] Strategy change: Default
+[0, 0, 0, 0, 0, 28]
+23 3 6 0 28 0 
+SolverStatistic {
+    num_solve: 242,
+    avg_decide_var: 0.494155,
+    num_simplify_subsume: 0,
+    num_simplify_self_subsume: 0,
+}
+Statistic {
+    case: visarbiter.aig,
+    time: 0.01s,
+    num_mic: 54,
+    avg_mic_cube_len: 2.333333,
+    avg_po_cube_len: 9.961783,
+    mic_drop: success: 14, fail: 112, success rate: 11.11%,
+    num_down: 126,
+    num_down_sat: 92,
+    ctp: success: 0, fail: 30, success rate: 0.00%,
+    num_get_bad: 14,
+    overall_block_time: 1.159837ms,
+    block_get_bad_time: 234.652µs,
+    block_get_predecessor_time: 193.44µs,
+    block_blocked_time: 208.06µs,
+    block_mic_time: 283.46µs,
+    block_push_time: 31.927µs,
+    overall_propagate_time: 194.291µs,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: safe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Thu 17 Apr 2025 10:35:19 PM CST
+========================================

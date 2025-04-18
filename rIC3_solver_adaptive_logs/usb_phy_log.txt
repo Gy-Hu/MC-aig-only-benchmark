@@ -1,8 +1,8 @@
-File: ./hwmcc19/single/aig/goel/opensource/usb_phy/usb_phy.aig
-Command: ~/coding_env/rIC3-adaptive/target/release/rIC3 -e ic3 --ic3-adaptive-ordering ./hwmcc19/single/aig/goel/opensource/usb_phy/usb_phy.aig
-Started at: Thu 17 Apr 2025 06:37:16 PM CST
+File: ./avr/opensource/usb_phy/usb_phy.aig
+Command: ~/coding_env/rIC3-adaptive/target/release/rIC3 -e ic3 --ic3-adaptive-ordering ./avr/opensource/usb_phy/usb_phy.aig
+Started at: Fri 18 Apr 2025 03:45:20 AM CST
 ----------------------------------------
-the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc19/single/aig/goel/opensource/usb_phy/usb_phy.aig
+the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/avr/opensource/usb_phy/usb_phy.aig
 ==========================================
 ADAPTIVE ORDERING IS ENABLED FOR THIS RUN
 ==========================================
@@ -10,14 +10,14 @@ ADAPTIVE ORDERING IS ENABLED FOR THIS RUN
 === Latch Flip Rates (Total cycles: 1000, Seeds: 5) ===
 Latch    Flip Rate (%)
 -------- ------------
-292 0.00        
-293 0.00        
-294 0.00        
-295 0.00        
-296 6.00        
-297 1.00        
-298 3.00        
-299 49.00       
+292 1.00        
+293 3.00        
+294 8.00        
+295 27.00       
+296 32.00       
+297 0.00        
+298 0.00        
+299 99.00       
 300 0.00        
 301 0.00        
 302 0.00        
@@ -26,102 +26,104 @@ Latch    Flip Rate (%)
 305 0.00        
 306 0.00        
 307 0.00        
-308 49.00       
-309 32.00       
-310 49.00       
+308 0.00        
+309 0.00        
+310 0.00        
 311 0.00        
-312 51.00       
-313 52.00       
+312 0.00        
+313 0.00        
 314 0.00        
-315 98.00       
-316 8.00        
+315 6.00        
+316 0.00        
 317 52.00       
 318 0.00        
 319 0.00        
 320 0.00        
-321 49.00       
+321 52.00       
 322 0.00        
-323 51.00       
+323 0.00        
 324 0.00        
-325 0.00        
-326 0.00        
-327 7.00        
+325 52.00       
+326 98.00       
+327 98.00       
 328 0.00        
 329 0.00        
-330 98.00       
-331 51.00       
+330 0.00        
+331 0.00        
 332 0.00        
-333 52.00       
-334 47.00       
+333 0.00        
+334 52.00       
 335 0.00        
-336 99.00       
+336 0.00        
 337 0.00        
 338 0.00        
-339 0.00        
-340 0.00        
-341 0.00        
+339 49.00       
+340 27.00       
+341 73.00       
 342 0.00        
 343 0.00        
-344 49.00       
-345 49.00       
-346 51.00       
+344 0.00        
+345 0.00        
+346 33.00       
 347 49.00       
-348 27.00       
-349 73.00       
+348 20.00       
+349 0.00        
 350 0.00        
-351 0.00        
-352 0.00        
-353 0.00        
+351 7.00        
+352 49.00       
+353 49.00       
 354 0.00        
-355 0.00        
-356 0.00        
-357 0.00        
-358 0.00        
-359 1.00        
-360 2.00        
-361 20.00       
-362 52.00       
-363 0.00        
-364 0.00        
-365 33.00       
-366 52.00       
-367 27.00       
+355 1.00        
+356 2.00        
+357 52.00       
+358 49.00       
+359 49.00       
+360 51.00       
+361 49.00       
+362 0.00        
+363 51.00       
+364 51.00       
+365 0.00        
+366 51.00       
+367 47.00       
 =======================================
 
-[ADAPTIVE] Strategy change: High Flip First
+[ADAPTIVE] Strategy change: Reverse Topo
+[ADAPTIVE] Strategy change: Default
+[ADAPTIVE] Strategy change: Topo
+[ADAPTIVE] Strategy change: Default
+[ADAPTIVE] Strategy change: Topo
 [ADAPTIVE] Strategy change: Default
 [ADAPTIVE] Strategy change: Low Flip First
 [ADAPTIVE] Strategy change: Default
-[ADAPTIVE] Strategy change: High Flip First
+[ADAPTIVE] Strategy change: Low Flip First
 [ADAPTIVE] Strategy change: Default
-[ADAPTIVE] Strategy change: High Flip First
-[ADAPTIVE] Strategy change: Default
-[1, 1, 4, 1, 1, 2, 1, 1, 3, 1, 34, 97]
-76 5 1 3 4 5 6 8 5 4 66 
+[1, 1, 3, 3, 1, 1, 1, 2, 2, 1, 1, 2, 63, 66]
+76 5 4 2 1 4 5 6 5 5 7 7 60 
 SolverStatistic {
-    num_solve: 2190,
-    avg_decide_var: 0.167080,
+    num_solve: 1988,
+    avg_decide_var: 0.163732,
     num_simplify_subsume: 0,
     num_simplify_self_subsume: 0,
 }
 Statistic {
     case: usb_phy.aig,
     time: 0.04s,
-    num_mic: 251,
-    avg_mic_cube_len: 3.741036,
-    avg_po_cube_len: 20.051704,
-    mic_drop: success: 47, fail: 874, success rate: 5.10%,
-    num_down: 921,
-    num_down_sat: 1215,
-    ctp: success: 0, fail: 67, success rate: 0.00%,
-    num_get_bad: 12,
-    overall_block_time: 12.897625ms,
-    block_get_bad_time: 264.049µs,
-    block_get_predecessor_time: 2.575815ms,
-    block_blocked_time: 2.269848ms,
-    block_mic_time: 5.214333ms,
-    block_push_time: 1.042874ms,
-    overall_propagate_time: 447.805µs,
+    num_mic: 223,
+    avg_mic_cube_len: 3.390135,
+    avg_po_cube_len: 19.988010,
+    mic_drop: success: 40, fail: 706, success rate: 5.36%,
+    num_down: 746,
+    num_down_sat: 950,
+    ctp: success: 0, fail: 102, success rate: 0.00%,
+    num_get_bad: 14,
+    overall_block_time: 11.185865ms,
+    block_get_bad_time: 266.392µs,
+    block_get_predecessor_time: 2.744419ms,
+    block_blocked_time: 2.032398ms,
+    block_mic_time: 3.891636ms,
+    block_push_time: 1.037903ms,
+    overall_propagate_time: 615.537µs,
     xor_gen: success: 0, fail: 0, success rate: NaN%,
     num_auxiliary_var: 0,
     test: success: 0, fail: 0, success rate: NaN%,
@@ -129,5 +131,5 @@ Statistic {
 result: unsafe
 ----------------------------------------
 STATUS: COMPLETED
-Finished at: Thu 17 Apr 2025 06:37:16 PM CST
+Finished at: Fri 18 Apr 2025 03:45:20 AM CST
 ========================================

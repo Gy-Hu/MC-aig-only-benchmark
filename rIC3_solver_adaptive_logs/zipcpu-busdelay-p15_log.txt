@@ -1,11 +1,12 @@
-File: ./hwmcc1920/aig/zipcpu-busdelay-p15.aig
-Command: ~/coding_env/rIC3-adaptive/target/release/rIC3 -e ic3 --ic3-adaptive-ordering ./hwmcc1920/aig/zipcpu-busdelay-p15.aig
-Started at: Thu 17 Apr 2025 05:02:28 PM CST
+File: ./hwmcc20/aig-1.8/zipcpu-busdelay-p15.aig
+Command: ~/coding_env/rIC3-adaptive/target/release/rIC3 -e ic3 --ic3-adaptive-ordering ./hwmcc20/aig-1.8/zipcpu-busdelay-p15.aig
+Started at: Fri 18 Apr 2025 05:53:34 AM CST
 ----------------------------------------
-the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc1920/aig/zipcpu-busdelay-p15.aig
+the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc20/aig-1.8/zipcpu-busdelay-p15.aig
 ==========================================
 ADAPTIVE ORDERING IS ENABLED FOR THIS RUN
 ==========================================
+Warning: property not found, moved 1 outputs to bad properties
 
 === Latch Flip Rates (Total cycles: 1000, Seeds: 5) ===
 Latch    Flip Rate (%)
@@ -668,41 +669,43 @@ Latch    Flip Rate (%)
 765 85.00       
 766 20.00       
 767 97.00       
+768 100.00      
 =======================================
 
-[ADAPTIVE] Strategy change: Reverse Topo
-[ADAPTIVE] Strategy change: Default
-[ADAPTIVE] Strategy change: High Flip First
-[ADAPTIVE] Strategy change: Default
-[ADAPTIVE] Strategy change: High Flip First
-[ADAPTIVE] Strategy change: Reverse Topo
 [ADAPTIVE] Strategy change: Low Flip First
-[0, 0, 0, 0, 0, 0, 0, 59, 553]
-255 2 2 24 153 142 0 553 
+[ADAPTIVE] Strategy change: Default
+[ADAPTIVE] Strategy change: High Flip First
+[ADAPTIVE] Strategy change: Default
+[ADAPTIVE] Strategy change: Reverse Topo
+[ADAPTIVE] Strategy change: Default
+[ADAPTIVE] Strategy change: Low Flip First
+[ADAPTIVE] Strategy change: Reverse Topo
+[0, 0, 0, 0, 0, 0, 0, 10, 299]
+256 3 17 143 1 1 0 299 
 SolverStatistic {
-    num_solve: 8414,
-    avg_decide_var: 0.251285,
+    num_solve: 4970,
+    avg_decide_var: 0.240694,
     num_simplify_subsume: 0,
     num_simplify_self_subsume: 0,
 }
 Statistic {
     case: zipcpu-busdelay-p15.aig,
-    time: 0.22s,
-    num_mic: 1010,
-    avg_mic_cube_len: 4.970297,
-    avg_po_cube_len: 54.029493,
-    mic_drop: success: 42, fail: 4975, success rate: 0.84%,
-    num_down: 5017,
-    num_down_sat: 4924,
-    ctp: success: 0, fail: 1311, success rate: 0.00%,
-    num_get_bad: 452,
-    overall_block_time: 150.500008ms,
-    block_get_bad_time: 39.748236ms,
-    block_get_predecessor_time: 8.175481ms,
-    block_blocked_time: 11.677595ms,
-    block_mic_time: 47.400839ms,
-    block_push_time: 127.645µs,
-    overall_propagate_time: 14.335858ms,
+    time: 0.14s,
+    num_mic: 467,
+    avg_mic_cube_len: 6.010707,
+    avg_po_cube_len: 49.964311,
+    mic_drop: success: 30, fail: 2770, success rate: 1.07%,
+    num_down: 2800,
+    num_down_sat: 2785,
+    ctp: success: 0, fail: 1068, success rate: 0.00%,
+    num_get_bad: 162,
+    overall_block_time: 74.235071ms,
+    block_get_bad_time: 17.567543ms,
+    block_get_predecessor_time: 6.711274ms,
+    block_blocked_time: 6.99455ms,
+    block_mic_time: 27.307688ms,
+    block_push_time: 1.112665ms,
+    overall_propagate_time: 9.702456ms,
     xor_gen: success: 0, fail: 0, success rate: NaN%,
     num_auxiliary_var: 0,
     test: success: 0, fail: 0, success rate: NaN%,
@@ -710,5 +713,5 @@ Statistic {
 result: safe
 ----------------------------------------
 STATUS: COMPLETED
-Finished at: Thu 17 Apr 2025 05:02:29 PM CST
+Finished at: Fri 18 Apr 2025 05:53:35 AM CST
 ========================================

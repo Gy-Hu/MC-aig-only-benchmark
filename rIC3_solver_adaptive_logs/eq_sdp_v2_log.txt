@@ -1,0 +1,63 @@
+File: ./avr/crafted/eq_sdp_v2/eq_sdp_v2.aig
+Command: ~/coding_env/rIC3-adaptive/target/release/rIC3 -e ic3 --ic3-adaptive-ordering ./avr/crafted/eq_sdp_v2/eq_sdp_v2.aig
+Started at: Fri 18 Apr 2025 03:48:58 AM CST
+----------------------------------------
+the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/avr/crafted/eq_sdp_v2/eq_sdp_v2.aig
+==========================================
+ADAPTIVE ORDERING IS ENABLED FOR THIS RUN
+==========================================
+
+=== Latch Flip Rates (Total cycles: 1000, Seeds: 5) ===
+Latch    Flip Rate (%)
+-------- ------------
+8 13.00       
+9 12.00       
+10 13.00       
+11 24.00       
+12 12.00       
+13 26.00       
+14 25.00       
+15 25.00       
+16 25.00       
+17 6.00        
+18 25.00       
+19 6.00        
+=======================================
+
+[ADAPTIVE] Strategy change: Topo
+[ADAPTIVE] Strategy change: Default
+[0, 0, 0, 0, 3, 12]
+9 3 1 0 12 
+SolverStatistic {
+    num_solve: 100,
+    avg_decide_var: 1.030436,
+    num_simplify_subsume: 0,
+    num_simplify_self_subsume: 0,
+}
+Statistic {
+    case: eq_sdp_v2.aig,
+    time: 0.00s,
+    num_mic: 16,
+    avg_mic_cube_len: 3.000000,
+    avg_po_cube_len: 5.800000,
+    mic_drop: success: 0, fail: 48, success rate: 0.00%,
+    num_down: 48,
+    num_down_sat: 37,
+    ctp: success: 0, fail: 24, success rate: 0.00%,
+    num_get_bad: 11,
+    overall_block_time: 284.317µs,
+    block_get_bad_time: 88.293µs,
+    block_get_predecessor_time: 23.31µs,
+    block_blocked_time: 33.413µs,
+    block_mic_time: 61.442µs,
+    block_push_time: 13.551µs,
+    overall_propagate_time: 80.964µs,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: safe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 18 Apr 2025 03:48:58 AM CST
+========================================

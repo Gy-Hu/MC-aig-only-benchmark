@@ -1,0 +1,81 @@
+File: ./hwmcc08/bj08vendingcycle.aig
+Command: ~/coding_env/rIC3-adaptive/target/release/rIC3 -e ic3 --ic3-adaptive-ordering ./hwmcc08/bj08vendingcycle.aig
+Started at: Thu 17 Apr 2025 10:36:21 PM CST
+----------------------------------------
+the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc08/bj08vendingcycle.aig
+==========================================
+ADAPTIVE ORDERING IS ENABLED FOR THIS RUN
+==========================================
+Warning: property not found, moved 1 outputs to bad properties
+
+=== Latch Flip Rates (Total cycles: 1000, Seeds: 5) ===
+Latch    Flip Rate (%)
+-------- ------------
+4 92.00       
+5 5.00        
+6 48.00       
+7 3.00        
+8 0.00        
+9 87.00       
+10 88.00       
+11 4.00        
+12 92.00       
+13 89.00       
+14 28.00       
+15 45.00       
+16 45.00       
+17 92.00       
+18 96.00       
+19 2.00        
+20 85.00       
+21 0.00        
+22 91.00       
+23 0.00        
+24 92.00       
+25 26.00       
+26 2.00        
+27 5.00        
+28 90.00       
+29 5.00        
+30 42.00       
+31 42.00       
+32 88.00       
+33 90.00       
+34 1.00        
+=======================================
+
+[1, 1, 1, 7, 7]
+24 4 4 4 
+SolverStatistic {
+    num_solve: 69,
+    avg_decide_var: 2.174564,
+    num_simplify_subsume: 0,
+    num_simplify_self_subsume: 0,
+}
+Statistic {
+    case: bj08vendingcycle.aig,
+    time: 0.01s,
+    num_mic: 20,
+    avg_mic_cube_len: 1.800000,
+    avg_po_cube_len: 10.309859,
+    mic_drop: success: 3, fail: 32, success rate: 8.57%,
+    num_down: 35,
+    num_down_sat: 21,
+    ctp: success: 0, fail: 2, success rate: 0.00%,
+    num_get_bad: 12,
+    overall_block_time: 1.213515ms,
+    block_get_bad_time: 498.858µs,
+    block_get_predecessor_time: 228.184µs,
+    block_blocked_time: 143.564µs,
+    block_mic_time: 122.396µs,
+    block_push_time: 10.799µs,
+    overall_propagate_time: 71.428µs,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: unsafe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Thu 17 Apr 2025 10:36:21 PM CST
+========================================

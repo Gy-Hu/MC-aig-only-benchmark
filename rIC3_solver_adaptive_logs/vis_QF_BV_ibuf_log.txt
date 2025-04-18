@@ -1,0 +1,57 @@
+File: ./avr/opensource/vis_QF_BV_ibuf/vis_QF_BV_ibuf.aig
+Command: ~/coding_env/rIC3-adaptive/target/release/rIC3 -e ic3 --ic3-adaptive-ordering ./avr/opensource/vis_QF_BV_ibuf/vis_QF_BV_ibuf.aig
+Started at: Fri 18 Apr 2025 03:48:47 AM CST
+----------------------------------------
+the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/avr/opensource/vis_QF_BV_ibuf/vis_QF_BV_ibuf.aig
+==========================================
+ADAPTIVE ORDERING IS ENABLED FOR THIS RUN
+==========================================
+
+=== Latch Flip Rates (Total cycles: 1000, Seeds: 5) ===
+Latch    Flip Rate (%)
+-------- ------------
+12 0.00        
+13 8.00        
+14 25.00       
+15 8.00        
+16 25.00       
+17 25.00       
+=======================================
+
+[ADAPTIVE] Strategy change: Reverse Topo
+[ADAPTIVE] Strategy change: Default
+[]
+6 0 0 
+SolverStatistic {
+    num_solve: 0,
+    avg_decide_var: NaN,
+    num_simplify_subsume: 0,
+    num_simplify_self_subsume: 0,
+}
+Statistic {
+    case: vis_QF_BV_ibuf.aig,
+    time: 0.00s,
+    num_mic: 0,
+    avg_mic_cube_len: NaN,
+    avg_po_cube_len: NaN,
+    mic_drop: success: 0, fail: 0, success rate: NaN%,
+    num_down: 0,
+    num_down_sat: 0,
+    ctp: success: 0, fail: 0, success rate: NaN%,
+    num_get_bad: 2,
+    overall_block_time: 63.854µs,
+    block_get_bad_time: 63.392µs,
+    block_get_predecessor_time: 0ns,
+    block_blocked_time: 0ns,
+    block_mic_time: 0ns,
+    block_push_time: 0ns,
+    overall_propagate_time: 490ns,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: safe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 18 Apr 2025 03:48:47 AM CST
+========================================

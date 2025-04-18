@@ -1,0 +1,65 @@
+File: ./avr/crafted/diagonal/diagonal.aig
+Command: ~/coding_env/rIC3-adaptive/target/release/rIC3 -e ic3 --ic3-adaptive-ordering ./avr/crafted/diagonal/diagonal.aig
+Started at: Fri 18 Apr 2025 03:48:58 AM CST
+----------------------------------------
+the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/avr/crafted/diagonal/diagonal.aig
+==========================================
+ADAPTIVE ORDERING IS ENABLED FOR THIS RUN
+==========================================
+
+=== Latch Flip Rates (Total cycles: 1000, Seeds: 5) ===
+Latch    Flip Rate (%)
+-------- ------------
+3 49.00       
+4 50.00       
+5 50.00       
+6 50.00       
+7 49.00       
+8 50.00       
+9 50.00       
+10 50.00       
+=======================================
+
+[ADAPTIVE] Strategy change: Reverse Topo
+[ADAPTIVE] Strategy change: Default
+[ADAPTIVE] Strategy change: Reverse Topo
+[ADAPTIVE] Strategy change: Default
+[ADAPTIVE] Strategy change: Topo
+[ADAPTIVE] Strategy change: Default
+[ADAPTIVE] Strategy change: Low Flip First
+[ADAPTIVE] Strategy change: Default
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 13, 4]
+8 1 1 1 1 1 1 1 0 4 
+SolverStatistic {
+    num_solve: 314,
+    avg_decide_var: 1.568937,
+    num_simplify_subsume: 0,
+    num_simplify_self_subsume: 0,
+}
+Statistic {
+    case: diagonal.aig,
+    time: 0.01s,
+    num_mic: 45,
+    avg_mic_cube_len: 4.111111,
+    avg_po_cube_len: 6.909091,
+    mic_drop: success: 55, fail: 120, success rate: 31.43%,
+    num_down: 175,
+    num_down_sat: 168,
+    ctp: success: 0, fail: 31, success rate: 0.00%,
+    num_get_bad: 13,
+    overall_block_time: 3.477147ms,
+    block_get_bad_time: 1.832491ms,
+    block_get_predecessor_time: 126.248µs,
+    block_blocked_time: 283.736µs,
+    block_mic_time: 879.937µs,
+    block_push_time: 51.259µs,
+    overall_propagate_time: 384.899µs,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: safe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 18 Apr 2025 03:48:58 AM CST
+========================================

@@ -1,0 +1,54 @@
+File: ./avr/crafted/client_server/client_server.aig
+Command: ~/coding_env/rIC3-adaptive/target/release/rIC3 -e ic3 --ic3-adaptive-ordering ./avr/crafted/client_server/client_server.aig
+Started at: Fri 18 Apr 2025 03:50:42 AM CST
+----------------------------------------
+the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/avr/crafted/client_server/client_server.aig
+==========================================
+ADAPTIVE ORDERING IS ENABLED FOR THIS RUN
+==========================================
+
+=== Latch Flip Rates (Total cycles: 1000, Seeds: 5) ===
+Latch    Flip Rate (%)
+-------- ------------
+24 19.00       
+25 22.00       
+26 20.00       
+27 19.00       
+28 17.00       
+=======================================
+
+[0, 0, 0, 4]
+5 0 4 
+SolverStatistic {
+    num_solve: 12,
+    avg_decide_var: 0.972405,
+    num_simplify_subsume: 0,
+    num_simplify_self_subsume: 0,
+}
+Statistic {
+    case: client_server.aig,
+    time: 0.00s,
+    num_mic: 4,
+    avg_mic_cube_len: 2.000000,
+    avg_po_cube_len: 5.000000,
+    mic_drop: success: 0, fail: 8, success rate: 0.00%,
+    num_down: 8,
+    num_down_sat: 4,
+    ctp: success: 0, fail: 4, success rate: 0.00%,
+    num_get_bad: 6,
+    overall_block_time: 204.212µs,
+    block_get_bad_time: 148.373µs,
+    block_get_predecessor_time: 0ns,
+    block_blocked_time: 7.609µs,
+    block_mic_time: 10.259µs,
+    block_push_time: 84ns,
+    overall_propagate_time: 32.013µs,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: safe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 18 Apr 2025 03:50:42 AM CST
+========================================

@@ -1,0 +1,76 @@
+File: ./avr/opensource/h_Arbiter/h_Arbiter.aig
+Command: ~/coding_env/rIC3-adaptive/target/release/rIC3 -e ic3 --ic3-adaptive-ordering ./avr/opensource/h_Arbiter/h_Arbiter.aig
+Started at: Fri 18 Apr 2025 03:48:49 AM CST
+----------------------------------------
+the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/avr/opensource/h_Arbiter/h_Arbiter.aig
+==========================================
+ADAPTIVE ORDERING IS ENABLED FOR THIS RUN
+==========================================
+
+=== Latch Flip Rates (Total cycles: 1000, Seeds: 5) ===
+Latch    Flip Rate (%)
+-------- ------------
+67 0.00        
+68 0.00        
+69 0.00        
+70 0.00        
+71 0.00        
+72 0.00        
+73 0.00        
+74 33.00       
+75 0.00        
+76 0.00        
+77 0.00        
+78 33.00       
+79 0.00        
+80 0.00        
+81 0.00        
+82 33.00       
+83 33.00       
+84 33.00       
+85 0.00        
+86 0.00        
+87 0.00        
+88 0.00        
+89 0.00        
+=======================================
+
+[ADAPTIVE] Strategy change: High Flip First
+[ADAPTIVE] Strategy change: Default
+[ADAPTIVE] Strategy change: Topo
+[ADAPTIVE] Strategy change: Default
+[0, 0, 0, 0, 0, 12, 12]
+17 2 1 3 0 12 
+SolverStatistic {
+    num_solve: 168,
+    avg_decide_var: inf,
+    num_simplify_subsume: 0,
+    num_simplify_self_subsume: 0,
+}
+Statistic {
+    case: h_Arbiter.aig,
+    time: 0.01s,
+    num_mic: 39,
+    avg_mic_cube_len: 1.871795,
+    avg_po_cube_len: 8.819549,
+    mic_drop: success: 6, fail: 67, success rate: 8.22%,
+    num_down: 73,
+    num_down_sat: 48,
+    ctp: success: 0, fail: 28, success rate: 0.00%,
+    num_get_bad: 18,
+    overall_block_time: 795.725µs,
+    block_get_bad_time: 201.475µs,
+    block_get_predecessor_time: 133.012µs,
+    block_blocked_time: 118.886µs,
+    block_mic_time: 140.022µs,
+    block_push_time: 9.587µs,
+    overall_propagate_time: 136.978µs,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: safe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 18 Apr 2025 03:48:50 AM CST
+========================================

@@ -1,11 +1,12 @@
-File: ./hwmcc1920/aig/vis_arrays_am2901.aig
-Command: ~/coding_env/rIC3-adaptive/target/release/rIC3 -e ic3 --ic3-adaptive-ordering ./hwmcc1920/aig/vis_arrays_am2901.aig
-Started at: Thu 17 Apr 2025 05:01:31 PM CST
+File: ./hwmcc20/aig-1.8/vis_arrays_am2901.aig
+Command: ~/coding_env/rIC3-adaptive/target/release/rIC3 -e ic3 --ic3-adaptive-ordering ./hwmcc20/aig-1.8/vis_arrays_am2901.aig
+Started at: Fri 18 Apr 2025 05:25:15 AM CST
 ----------------------------------------
-the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc1920/aig/vis_arrays_am2901.aig
+the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc20/aig-1.8/vis_arrays_am2901.aig
 ==========================================
 ADAPTIVE ORDERING IS ENABLED FOR THIS RUN
 ==========================================
+Warning: property not found, moved 1 outputs to bad properties
 
 === Latch Flip Rates (Total cycles: 1000, Seeds: 5) ===
 Latch    Flip Rate (%)
@@ -81,33 +82,33 @@ Latch    Flip Rate (%)
 =======================================
 
 [ADAPTIVE] Strategy change: High Flip First
-[ADAPTIVE] Strategy change: Topo
-[1, 1, 23, 1]
-68 24 1 
+[ADAPTIVE] Strategy change: Default
+[1, 1, 17, 1]
+68 18 1 
 SolverStatistic {
-    num_solve: 131,
-    avg_decide_var: 0.608079,
+    num_solve: 96,
+    avg_decide_var: 0.607620,
     num_simplify_subsume: 0,
     num_simplify_self_subsume: 0,
 }
 Statistic {
     case: vis_arrays_am2901.aig,
     time: 0.01s,
-    num_mic: 25,
-    avg_mic_cube_len: 2.280000,
-    avg_po_cube_len: 11.560000,
-    mic_drop: success: 2, fail: 55, success rate: 3.51%,
-    num_down: 57,
-    num_down_sat: 59,
+    num_mic: 19,
+    avg_mic_cube_len: 2.157895,
+    avg_po_cube_len: 12.894737,
+    mic_drop: success: 1, fail: 40, success rate: 2.44%,
+    num_down: 41,
+    num_down_sat: 42,
     ctp: success: 0, fail: 0, success rate: NaN%,
     num_get_bad: 5,
-    overall_block_time: 2.122535ms,
-    block_get_bad_time: 235.318µs,
-    block_get_predecessor_time: 544.715µs,
-    block_blocked_time: 492.19µs,
-    block_mic_time: 403.861µs,
-    block_push_time: 109ns,
-    overall_propagate_time: 51.712µs,
+    overall_block_time: 1.6578ms,
+    block_get_bad_time: 238.095µs,
+    block_get_predecessor_time: 433.066µs,
+    block_blocked_time: 319.704µs,
+    block_mic_time: 318.483µs,
+    block_push_time: 86ns,
+    overall_propagate_time: 49.114µs,
     xor_gen: success: 0, fail: 0, success rate: NaN%,
     num_auxiliary_var: 0,
     test: success: 0, fail: 0, success rate: NaN%,
@@ -115,5 +116,5 @@ Statistic {
 result: unsafe
 ----------------------------------------
 STATUS: COMPLETED
-Finished at: Thu 17 Apr 2025 05:01:31 PM CST
+Finished at: Fri 18 Apr 2025 05:25:15 AM CST
 ========================================

@@ -1,8 +1,8 @@
-File: ./hwmcc19/single/aig/goel/opensource/vcegar_QF_BV_itc99_b13_p06/vcegar_QF_BV_itc99_b13_p06.aig
-Command: ~/coding_env/rIC3-adaptive/target/release/rIC3 -e ic3 --ic3-adaptive-ordering ./hwmcc19/single/aig/goel/opensource/vcegar_QF_BV_itc99_b13_p06/vcegar_QF_BV_itc99_b13_p06.aig
-Started at: Thu 17 Apr 2025 06:37:11 PM CST
+File: ./avr/opensource/vcegar_QF_BV_itc99_b13_p06/vcegar_QF_BV_itc99_b13_p06.aig
+Command: ~/coding_env/rIC3-adaptive/target/release/rIC3 -e ic3 --ic3-adaptive-ordering ./avr/opensource/vcegar_QF_BV_itc99_b13_p06/vcegar_QF_BV_itc99_b13_p06.aig
+Started at: Fri 18 Apr 2025 03:44:10 AM CST
 ----------------------------------------
-the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc19/single/aig/goel/opensource/vcegar_QF_BV_itc99_b13_p06/vcegar_QF_BV_itc99_b13_p06.aig
+the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/avr/opensource/vcegar_QF_BV_itc99_b13_p06/vcegar_QF_BV_itc99_b13_p06.aig
 ==========================================
 ADAPTIVE ORDERING IS ENABLED FOR THIS RUN
 ==========================================
@@ -22,11 +22,11 @@ Latch    Flip Rate (%)
 68 0.00        
 69 0.00        
 70 0.00        
-71 50.00       
+71 0.00        
 72 0.00        
-73 0.00        
+73 100.00      
 74 0.00        
-75 100.00      
+75 50.00       
 76 0.00        
 77 0.00        
 78 0.00        
@@ -34,34 +34,35 @@ Latch    Flip Rate (%)
 80 0.00        
 =======================================
 
-[ADAPTIVE] Strategy change: Reverse Topo
+[ADAPTIVE] Strategy change: Low Flip First
 [ADAPTIVE] Strategy change: Default
-[0, 0, 0, 6]
-9 0 6 
+[ADAPTIVE] Strategy change: High Flip First
+[0, 0, 0, 1, 2, 8]
+9 0 1 2 5 
 SolverStatistic {
-    num_solve: 18,
-    avg_decide_var: 6.316667,
+    num_solve: 46,
+    avg_decide_var: 5.279217,
     num_simplify_subsume: 0,
     num_simplify_self_subsume: 0,
 }
 Statistic {
     case: vcegar_QF_BV_itc99_b13_p06.aig,
     time: 0.00s,
-    num_mic: 9,
-    avg_mic_cube_len: 1.000000,
-    avg_po_cube_len: 4.333333,
-    mic_drop: success: 0, fail: 9, success rate: 0.00%,
-    num_down: 9,
-    num_down_sat: 0,
-    ctp: success: 0, fail: 2, success rate: 0.00%,
-    num_get_bad: 5,
-    overall_block_time: 84.422µs,
-    block_get_bad_time: 20.57µs,
-    block_get_predecessor_time: 10.481µs,
-    block_blocked_time: 8.378µs,
-    block_mic_time: 4.383µs,
-    block_push_time: 968ns,
-    overall_propagate_time: 6.192µs,
+    num_mic: 12,
+    avg_mic_cube_len: 1.083333,
+    avg_po_cube_len: 5.862745,
+    mic_drop: success: 0, fail: 13, success rate: 0.00%,
+    num_down: 13,
+    num_down_sat: 1,
+    ctp: success: 0, fail: 11, success rate: 0.00%,
+    num_get_bad: 8,
+    overall_block_time: 144.254µs,
+    block_get_bad_time: 37.854µs,
+    block_get_predecessor_time: 25.909µs,
+    block_blocked_time: 15.541µs,
+    block_mic_time: 7.389µs,
+    block_push_time: 5.154µs,
+    overall_propagate_time: 20.875µs,
     xor_gen: success: 0, fail: 0, success rate: NaN%,
     num_auxiliary_var: 0,
     test: success: 0, fail: 0, success rate: NaN%,
@@ -69,5 +70,5 @@ Statistic {
 result: safe
 ----------------------------------------
 STATUS: COMPLETED
-Finished at: Thu 17 Apr 2025 06:37:11 PM CST
+Finished at: Fri 18 Apr 2025 03:44:10 AM CST
 ========================================

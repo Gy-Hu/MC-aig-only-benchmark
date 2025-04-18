@@ -1,0 +1,57 @@
+File: ./avr/crafted/counter_v/counter_v.aig
+Command: ~/coding_env/rIC3-adaptive/target/release/rIC3 -e ic3 --ic3-adaptive-ordering ./avr/crafted/counter_v/counter_v.aig
+Started at: Fri 18 Apr 2025 03:49:29 AM CST
+----------------------------------------
+the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/avr/crafted/counter_v/counter_v.aig
+==========================================
+ADAPTIVE ORDERING IS ENABLED FOR THIS RUN
+==========================================
+
+=== Latch Flip Rates (Total cycles: 1000, Seeds: 5) ===
+Latch    Flip Rate (%)
+-------- ------------
+3 53.00       
+4 53.00       
+5 54.00       
+6 54.00       
+=======================================
+
+[ADAPTIVE] Strategy change: Topo
+[ADAPTIVE] Strategy change: Default
+[ADAPTIVE] Strategy change: High Flip First
+[ADAPTIVE] Strategy change: Default
+[1, 1, 2, 2, 7, 1]
+4 2 2 2 1 
+SolverStatistic {
+    num_solve: 65,
+    avg_decide_var: 1.239805,
+    num_simplify_subsume: 0,
+    num_simplify_self_subsume: 0,
+}
+Statistic {
+    case: counter_v.aig,
+    time: 0.00s,
+    num_mic: 13,
+    avg_mic_cube_len: 2.076923,
+    avg_po_cube_len: 4.000000,
+    mic_drop: success: 1, fail: 26, success rate: 3.70%,
+    num_down: 27,
+    num_down_sat: 24,
+    ctp: success: 0, fail: 0, success rate: NaN%,
+    num_get_bad: 5,
+    overall_block_time: 232.214µs,
+    block_get_bad_time: 36.645µs,
+    block_get_predecessor_time: 42.585µs,
+    block_blocked_time: 40.185µs,
+    block_mic_time: 57.322µs,
+    block_push_time: 3.16µs,
+    overall_propagate_time: 11.09µs,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: unsafe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 18 Apr 2025 03:49:29 AM CST
+========================================

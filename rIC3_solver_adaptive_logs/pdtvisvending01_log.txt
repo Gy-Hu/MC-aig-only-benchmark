@@ -1,0 +1,105 @@
+File: ./hwmcc11/single/pdtvisvending01.aig
+Command: ~/coding_env/rIC3-adaptive/target/release/rIC3 -e ic3 --ic3-adaptive-ordering ./hwmcc11/single/pdtvisvending01.aig
+Started at: Fri 18 Apr 2025 02:25:45 AM CST
+----------------------------------------
+the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc11/single/pdtvisvending01.aig
+==========================================
+ADAPTIVE ORDERING IS ENABLED FOR THIS RUN
+==========================================
+Warning: property not found, moved 1 outputs to bad properties
+
+=== Latch Flip Rates (Total cycles: 1000, Seeds: 5) ===
+Latch    Flip Rate (%)
+-------- ------------
+3 94.00       
+4 50.00       
+5 91.00       
+6 1.00        
+7 89.00       
+8 93.00       
+9 3.00        
+10 82.00       
+11 0.00        
+12 91.00       
+13 94.00       
+14 29.00       
+15 2.00        
+16 93.00       
+17 89.00       
+18 90.00       
+19 0.00        
+20 0.00        
+21 27.00       
+22 90.00       
+23 1.00        
+24 93.00       
+25 6.00        
+26 88.00       
+27 2.00        
+28 5.00        
+29 5.00        
+30 89.00       
+31 42.00       
+32 43.00       
+33 83.00       
+34 1.00        
+35 4.00        
+36 88.00       
+=======================================
+
+[ADAPTIVE] Strategy change: Topo
+[ADAPTIVE] Strategy change: Default
+[ADAPTIVE] Strategy change: Reverse Topo
+[ADAPTIVE] Strategy change: Default
+[ADAPTIVE] Strategy change: Low Flip First
+[ADAPTIVE] Strategy change: Reverse Topo
+[ADAPTIVE] Strategy change: Default
+[ADAPTIVE] Strategy change: Reverse Topo
+[ADAPTIVE] Strategy change: Default
+[ADAPTIVE] Strategy change: High Flip First
+[ADAPTIVE] Strategy change: Default
+[ADAPTIVE] Strategy change: Topo
+[ADAPTIVE] Strategy change: Reverse Topo
+[ADAPTIVE] Strategy change: High Flip First
+[ADAPTIVE] Strategy change: Reverse Topo
+[ADAPTIVE] Strategy change: Topo
+[ADAPTIVE] Strategy change: Reverse Topo
+[ADAPTIVE] Strategy change: High Flip First
+[ADAPTIVE] Strategy change: Reverse Topo
+[ADAPTIVE] Strategy change: Default
+[ADAPTIVE] Strategy change: Reverse Topo
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 2, 1, 5, 1030]
+27 12 23 41 51 25 90 72 58 26 24 14 10 4 2 0 8 15 9 22 867 
+SolverStatistic {
+    num_solve: 66035,
+    avg_decide_var: 0.666094,
+    num_simplify_subsume: 0,
+    num_simplify_self_subsume: 0,
+}
+Statistic {
+    case: pdtvisvending01.aig,
+    time: 2.98s,
+    num_mic: 2887,
+    avg_mic_cube_len: 11.422584,
+    avg_po_cube_len: 17.767480,
+    mic_drop: success: 10160, fail: 21406, success rate: 32.19%,
+    num_down: 31566,
+    num_down_sat: 44559,
+    ctp: success: 0, fail: 8416, success rate: 0.00%,
+    num_get_bad: 49,
+    overall_block_time: 1.900853513s,
+    block_get_bad_time: 15.402999ms,
+    block_get_predecessor_time: 32.909757ms,
+    block_blocked_time: 193.199259ms,
+    block_mic_time: 1.53187797s,
+    block_push_time: 64.262322ms,
+    overall_propagate_time: 1.057743177s,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: safe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 18 Apr 2025 02:25:48 AM CST
+========================================

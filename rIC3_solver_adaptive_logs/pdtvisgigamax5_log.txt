@@ -1,0 +1,66 @@
+File: ./hwmcc08/pdtvisgigamax5.aig
+Command: ~/coding_env/rIC3-adaptive/target/release/rIC3 -e ic3 --ic3-adaptive-ordering ./hwmcc08/pdtvisgigamax5.aig
+Started at: Thu 17 Apr 2025 10:36:47 PM CST
+----------------------------------------
+the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc08/pdtvisgigamax5.aig
+==========================================
+ADAPTIVE ORDERING IS ENABLED FOR THIS RUN
+==========================================
+Warning: property not found, moved 1 outputs to bad properties
+
+=== Latch Flip Rates (Total cycles: 1000, Seeds: 5) ===
+Latch    Flip Rate (%)
+-------- ------------
+23 14.00       
+24 9.00        
+25 16.00       
+26 0.00        
+27 42.00       
+28 15.00       
+29 0.00        
+30 0.00        
+31 14.00       
+32 56.00       
+33 85.00       
+34 3.00        
+35 0.00        
+36 21.00       
+37 0.00        
+38 1.00        
+=======================================
+
+[0, 0, 0, 0, 7]
+16 3 0 7 
+SolverStatistic {
+    num_solve: 68,
+    avg_decide_var: 0.744086,
+    num_simplify_subsume: 0,
+    num_simplify_self_subsume: 0,
+}
+Statistic {
+    case: pdtvisgigamax5.aig,
+    time: 0.01s,
+    num_mic: 11,
+    avg_mic_cube_len: 3.181818,
+    avg_po_cube_len: 9.258065,
+    mic_drop: success: 3, fail: 32, success rate: 8.57%,
+    num_down: 35,
+    num_down_sat: 42,
+    ctp: success: 0, fail: 5, success rate: 0.00%,
+    num_get_bad: 8,
+    overall_block_time: 1.439739ms,
+    block_get_bad_time: 544.795µs,
+    block_get_predecessor_time: 77.388µs,
+    block_blocked_time: 174.913µs,
+    block_mic_time: 405.188µs,
+    block_push_time: 16.88µs,
+    overall_propagate_time: 242.374µs,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: safe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Thu 17 Apr 2025 10:36:48 PM CST
+========================================

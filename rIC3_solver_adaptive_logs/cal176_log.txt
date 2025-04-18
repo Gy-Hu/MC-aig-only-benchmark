@@ -1,12 +1,11 @@
-File: ./hwmcc1920/aig-1.8/cal176.aig
-Command: ~/coding_env/rIC3-adaptive/target/release/rIC3 -e ic3 --ic3-adaptive-ordering ./hwmcc1920/aig-1.8/cal176.aig
-Started at: Thu 17 Apr 2025 04:55:06 PM CST
+File: ./hwmcc1920cal/cal176.aig
+Command: ~/coding_env/rIC3-adaptive/target/release/rIC3 -e ic3 --ic3-adaptive-ordering ./hwmcc1920cal/cal176.aig
+Started at: Fri 18 Apr 2025 06:47:10 AM CST
 ----------------------------------------
-the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc1920/aig-1.8/cal176.aig
+the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc1920cal/cal176.aig
 ==========================================
 ADAPTIVE ORDERING IS ENABLED FOR THIS RUN
 ==========================================
-Warning: property not found, moved 1 outputs to bad properties
 
 === Latch Flip Rates (Total cycles: 1000, Seeds: 5) ===
 Latch    Flip Rate (%)
@@ -1046,7 +1045,7 @@ Latch    Flip Rate (%)
 2944 5.00        
 =======================================
 
-[ADAPTIVE] Strategy change: Low Flip First
+[ADAPTIVE] Strategy change: Reverse Topo
 [ADAPTIVE] Strategy change: Default
 [0, 0, 0, 0, 0, 0, 0, 34, 521]
 480 1 51 18 3 0 1 371 
@@ -1058,7 +1057,7 @@ SolverStatistic {
 }
 Statistic {
     case: cal176.aig,
-    time: 1.54s,
+    time: 1.57s,
     num_mic: 848,
     avg_mic_cube_len: 6.903302,
     avg_po_cube_len: 40.991867,
@@ -1067,13 +1066,13 @@ Statistic {
     num_down_sat: 7698,
     ctp: success: 0, fail: 1021, success rate: 0.00%,
     num_get_bad: 59,
-    overall_block_time: 665.613456ms,
-    block_get_bad_time: 86.830918ms,
-    block_get_predecessor_time: 115.926924ms,
-    block_blocked_time: 172.789748ms,
-    block_mic_time: 206.387637ms,
-    block_push_time: 44.714829ms,
-    overall_propagate_time: 94.23543ms,
+    overall_block_time: 683.291091ms,
+    block_get_bad_time: 91.432624ms,
+    block_get_predecessor_time: 118.860261ms,
+    block_blocked_time: 178.052111ms,
+    block_mic_time: 208.166229ms,
+    block_push_time: 46.21941ms,
+    overall_propagate_time: 93.724881ms,
     xor_gen: success: 0, fail: 0, success rate: NaN%,
     num_auxiliary_var: 0,
     test: success: 0, fail: 0, success rate: NaN%,
@@ -1081,5 +1080,5 @@ Statistic {
 result: safe
 ----------------------------------------
 STATUS: COMPLETED
-Finished at: Thu 17 Apr 2025 04:55:08 PM CST
+Finished at: Fri 18 Apr 2025 06:47:12 AM CST
 ========================================

@@ -1,0 +1,55 @@
+File: ./hwmcc08/bj08aut82.aig
+Command: ~/coding_env/rIC3-adaptive/target/release/rIC3 -e ic3 --ic3-adaptive-ordering ./hwmcc08/bj08aut82.aig
+Started at: Thu 17 Apr 2025 10:36:46 PM CST
+----------------------------------------
+the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc08/bj08aut82.aig
+==========================================
+ADAPTIVE ORDERING IS ENABLED FOR THIS RUN
+==========================================
+Warning: property not found, moved 1 outputs to bad properties
+
+=== Latch Flip Rates (Total cycles: 1000, Seeds: 5) ===
+Latch    Flip Rate (%)
+-------- ------------
+3 0.00        
+4 0.00        
+5 0.00        
+=======================================
+
+[ADAPTIVE] Strategy change: Low Flip First
+[ADAPTIVE] Strategy change: Default
+[0, 0, 0, 3]
+3 0 3 0 
+SolverStatistic {
+    num_solve: 11,
+    avg_decide_var: 6.654545,
+    num_simplify_subsume: 0,
+    num_simplify_self_subsume: 0,
+}
+Statistic {
+    case: bj08aut82.aig,
+    time: 0.00s,
+    num_mic: 4,
+    avg_mic_cube_len: 1.250000,
+    avg_po_cube_len: 3.000000,
+    mic_drop: success: 0, fail: 5, success rate: 0.00%,
+    num_down: 5,
+    num_down_sat: 1,
+    ctp: success: 0, fail: 2, success rate: 0.00%,
+    num_get_bad: 5,
+    overall_block_time: 72.691µs,
+    block_get_bad_time: 24.477µs,
+    block_get_predecessor_time: 7.373µs,
+    block_blocked_time: 5.229µs,
+    block_mic_time: 5.817µs,
+    block_push_time: 1.941µs,
+    overall_propagate_time: 8.435µs,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: safe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Thu 17 Apr 2025 10:36:47 PM CST
+========================================

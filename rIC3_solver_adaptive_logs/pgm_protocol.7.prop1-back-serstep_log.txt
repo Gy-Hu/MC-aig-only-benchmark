@@ -1,11 +1,12 @@
-File: ./hwmcc1920/aig/pgm_protocol.7.prop1-back-serstep.aig
-Command: ~/coding_env/rIC3-adaptive/target/release/rIC3 -e ic3 --ic3-adaptive-ordering ./hwmcc1920/aig/pgm_protocol.7.prop1-back-serstep.aig
-Started at: Thu 17 Apr 2025 05:00:46 PM CST
+File: ./hwmcc20/aig-1.8/pgm_protocol.7.prop1-back-serstep.aig
+Command: ~/coding_env/rIC3-adaptive/target/release/rIC3 -e ic3 --ic3-adaptive-ordering ./hwmcc20/aig-1.8/pgm_protocol.7.prop1-back-serstep.aig
+Started at: Fri 18 Apr 2025 05:06:04 AM CST
 ----------------------------------------
-the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc1920/aig/pgm_protocol.7.prop1-back-serstep.aig
+the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc20/aig-1.8/pgm_protocol.7.prop1-back-serstep.aig
 ==========================================
 ADAPTIVE ORDERING IS ENABLED FOR THIS RUN
 ==========================================
+Warning: property not found, moved 1 outputs to bad properties
 
 === Latch Flip Rates (Total cycles: 1000, Seeds: 5) ===
 Latch    Flip Rate (%)
@@ -1045,44 +1046,36 @@ Latch    Flip Rate (%)
 2184 49.00       
 =======================================
 
-[ADAPTIVE] Strategy change: Topo
-[ADAPTIVE] Strategy change: Default
-[ADAPTIVE] Strategy change: Reverse Topo
-[ADAPTIVE] Strategy change: Low Flip First
-[ADAPTIVE] Strategy change: Default
 [ADAPTIVE] Strategy change: High Flip First
 [ADAPTIVE] Strategy change: Default
 [ADAPTIVE] Strategy change: Topo
-[ADAPTIVE] Strategy change: Default
-[ADAPTIVE] Strategy change: Low Flip First
 [ADAPTIVE] Strategy change: Reverse Topo
-[ADAPTIVE] Strategy change: Default
-[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 303]
-1033 1 1 1 9 11 4 0 1 9 0 
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 276]
+1033 0 1 2 26 25 21 26 0 9 0 
 SolverStatistic {
-    num_solve: 30051,
-    avg_decide_var: 0.877083,
+    num_solve: 31951,
+    avg_decide_var: 0.877039,
     num_simplify_subsume: 0,
     num_simplify_self_subsume: 0,
 }
 Statistic {
     case: pgm_protocol.7.prop1-back-serstep.aig,
-    time: 13.24s,
-    num_mic: 490,
-    avg_mic_cube_len: 31.353061,
+    time: 13.94s,
+    num_mic: 463,
+    avg_mic_cube_len: 32.926566,
     avg_po_cube_len: 1033.000000,
-    mic_drop: success: 961, fail: 13860, success rate: 6.48%,
-    num_down: 14821,
-    num_down_sat: 28590,
-    ctp: success: 0, fail: 10, success rate: 0.00%,
+    mic_drop: success: 898, fail: 13857, success rate: 6.09%,
+    num_down: 14755,
+    num_down_sat: 30621,
+    ctp: success: 0, fail: 5, success rate: 0.00%,
     num_get_bad: 11,
-    overall_block_time: 12.473312323s,
-    block_get_bad_time: 29.405195ms,
-    block_get_predecessor_time: 336.842522ms,
-    block_blocked_time: 550.73099ms,
-    block_mic_time: 10.969037312s,
-    block_push_time: 6.344986ms,
-    overall_propagate_time: 135.389028ms,
+    overall_block_time: 13.199583923s,
+    block_get_bad_time: 24.245414ms,
+    block_get_predecessor_time: 298.225306ms,
+    block_blocked_time: 487.664948ms,
+    block_mic_time: 11.852912003s,
+    block_push_time: 8.372579ms,
+    overall_propagate_time: 107.851581ms,
     xor_gen: success: 0, fail: 0, success rate: NaN%,
     num_auxiliary_var: 0,
     test: success: 0, fail: 0, success rate: NaN%,
@@ -1090,5 +1083,5 @@ Statistic {
 result: safe
 ----------------------------------------
 STATUS: COMPLETED
-Finished at: Thu 17 Apr 2025 05:01:01 PM CST
+Finished at: Fri 18 Apr 2025 05:06:20 AM CST
 ========================================

@@ -1,0 +1,72 @@
+File: ./hwmcc11/single/pdtvisgigamax2.aig
+Command: ~/coding_env/rIC3-adaptive/target/release/rIC3 -e ic3 --ic3-adaptive-ordering ./hwmcc11/single/pdtvisgigamax2.aig
+Started at: Fri 18 Apr 2025 02:42:41 AM CST
+----------------------------------------
+the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc11/single/pdtvisgigamax2.aig
+==========================================
+ADAPTIVE ORDERING IS ENABLED FOR THIS RUN
+==========================================
+Warning: property not found, moved 1 outputs to bad properties
+
+=== Latch Flip Rates (Total cycles: 1000, Seeds: 5) ===
+Latch    Flip Rate (%)
+-------- ------------
+23 14.00       
+24 9.00        
+25 16.00       
+26 0.00        
+27 42.00       
+28 15.00       
+29 0.00        
+30 0.00        
+31 14.00       
+32 56.00       
+33 85.00       
+34 3.00        
+35 0.00        
+36 21.00       
+37 0.00        
+38 1.00        
+=======================================
+
+[ADAPTIVE] Strategy change: Reverse Topo
+[ADAPTIVE] Strategy change: Default
+[ADAPTIVE] Strategy change: High Flip First
+[ADAPTIVE] Strategy change: Default
+[ADAPTIVE] Strategy change: Reverse Topo
+[ADAPTIVE] Strategy change: Default
+[0, 0, 0, 0, 3, 7]
+16 4 5 0 7 
+SolverStatistic {
+    num_solve: 118,
+    avg_decide_var: 0.735201,
+    num_simplify_subsume: 0,
+    num_simplify_self_subsume: 0,
+}
+Statistic {
+    case: pdtvisgigamax2.aig,
+    time: 0.01s,
+    num_mic: 19,
+    avg_mic_cube_len: 3.000000,
+    avg_po_cube_len: 9.551724,
+    mic_drop: success: 6, fail: 51, success rate: 10.53%,
+    num_down: 57,
+    num_down_sat: 65,
+    ctp: success: 0, fail: 8, success rate: 0.00%,
+    num_get_bad: 8,
+    overall_block_time: 1.895896ms,
+    block_get_bad_time: 518.309µs,
+    block_get_predecessor_time: 171.021µs,
+    block_blocked_time: 303.723µs,
+    block_mic_time: 641.92µs,
+    block_push_time: 18.054µs,
+    overall_propagate_time: 419.821µs,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: safe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 18 Apr 2025 02:42:41 AM CST
+========================================

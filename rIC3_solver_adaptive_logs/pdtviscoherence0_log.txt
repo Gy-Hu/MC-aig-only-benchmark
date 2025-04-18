@@ -1,0 +1,90 @@
+File: ./hwmcc08/pdtviscoherence0.aig
+Command: ~/coding_env/rIC3-adaptive/target/release/rIC3 -e ic3 --ic3-adaptive-ordering ./hwmcc08/pdtviscoherence0.aig
+Started at: Thu 17 Apr 2025 10:37:51 PM CST
+----------------------------------------
+the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc08/pdtviscoherence0.aig
+==========================================
+ADAPTIVE ORDERING IS ENABLED FOR THIS RUN
+==========================================
+Warning: property not found, moved 1 outputs to bad properties
+
+=== Latch Flip Rates (Total cycles: 1000, Seeds: 5) ===
+Latch    Flip Rate (%)
+-------- ------------
+9 25.00       
+10 24.00       
+11 26.00       
+12 37.00       
+13 26.00       
+14 38.00       
+15 44.00       
+16 22.00       
+17 50.00       
+18 26.00       
+19 48.00       
+20 40.00       
+21 32.00       
+22 30.00       
+23 71.00       
+24 71.00       
+25 50.00       
+26 9.00        
+27 29.00       
+28 30.00       
+29 72.00       
+30 71.00       
+31 53.00       
+32 28.00       
+33 44.00       
+34 9.00        
+35 30.00       
+36 29.00       
+37 39.00       
+38 39.00       
+39 31.00       
+40 31.00       
+41 25.00       
+42 55.00       
+43 27.00       
+44 24.00       
+45 51.00       
+=======================================
+
+[ADAPTIVE] Strategy change: Low Flip First
+[ADAPTIVE] Strategy change: Default
+[ADAPTIVE] Strategy change: High Flip First
+[1, 1, 1, 2, 19]
+29 13 11 16 
+SolverStatistic {
+    num_solve: 215,
+    avg_decide_var: 0.695203,
+    num_simplify_subsume: 0,
+    num_simplify_self_subsume: 0,
+}
+Statistic {
+    case: pdtviscoherence0.aig,
+    time: 0.02s,
+    num_mic: 42,
+    avg_mic_cube_len: 2.952381,
+    avg_po_cube_len: 15.540741,
+    mic_drop: success: 15, fail: 107, success rate: 12.30%,
+    num_down: 122,
+    num_down_sat: 97,
+    ctp: success: 0, fail: 10, success rate: 0.00%,
+    num_get_bad: 5,
+    overall_block_time: 2.583782ms,
+    block_get_bad_time: 292.225µs,
+    block_get_predecessor_time: 764.764µs,
+    block_blocked_time: 585.844µs,
+    block_mic_time: 615.444µs,
+    block_push_time: 30.175µs,
+    overall_propagate_time: 317.845µs,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: unsafe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Thu 17 Apr 2025 10:37:52 PM CST
+========================================

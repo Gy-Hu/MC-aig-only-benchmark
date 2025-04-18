@@ -1,11 +1,12 @@
-File: ./hwmcc1920/fraig/shift_register_top_w16_d16_e0.aig
-Command: ~/coding_env/rIC3-adaptive/target/release/rIC3 -e ic3 --ic3-adaptive-ordering ./hwmcc1920/fraig/shift_register_top_w16_d16_e0.aig
-Started at: Thu 17 Apr 2025 12:41:49 PM CST
+File: ./hwmcc20/aig-1.8/shift_register_top_w16_d16_e0.aig
+Command: ~/coding_env/rIC3-adaptive/target/release/rIC3 -e ic3 --ic3-adaptive-ordering ./hwmcc20/aig-1.8/shift_register_top_w16_d16_e0.aig
+Started at: Fri 18 Apr 2025 05:25:13 AM CST
 ----------------------------------------
-the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc1920/fraig/shift_register_top_w16_d16_e0.aig
+the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc20/aig-1.8/shift_register_top_w16_d16_e0.aig
 ==========================================
 ADAPTIVE ORDERING IS ENABLED FOR THIS RUN
 ==========================================
+Warning: property not found, moved 1 outputs to bad properties
 
 === Latch Flip Rates (Total cycles: 1000, Seeds: 5) ===
 Latch    Flip Rate (%)
@@ -295,48 +296,47 @@ Latch    Flip Rate (%)
 321 0.00        
 322 0.00        
 323 0.00        
+324 99.00       
 =======================================
 
-[ADAPTIVE] Strategy change: High Flip First
-[ADAPTIVE] Strategy change: Default
-[ADAPTIVE] Strategy change: Low Flip First
-[ADAPTIVE] Strategy change: Default
-[ADAPTIVE] Strategy change: Low Flip First
-[ADAPTIVE] Strategy change: Default
-[ADAPTIVE] Strategy change: High Flip First
-[ADAPTIVE] Strategy change: Default
-[ADAPTIVE] Strategy change: High Flip First
-[ADAPTIVE] Strategy change: Low Flip First
-[ADAPTIVE] Strategy change: Default
 [ADAPTIVE] Strategy change: Topo
 [ADAPTIVE] Strategy change: Default
-[ADAPTIVE] Strategy change: Topo
-[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 257, 948]
-1 4 5 12 42 73 41 107 46 148 137 112 266 261 141 210 274 172 1141 
+[ADAPTIVE] Strategy change: High Flip First
+[ADAPTIVE] Strategy change: Default
+[ADAPTIVE] Strategy change: Low Flip First
+[ADAPTIVE] Strategy change: Default
+[ADAPTIVE] Strategy change: High Flip First
+[ADAPTIVE] Strategy change: Default
+[ADAPTIVE] Strategy change: Low Flip First
+[ADAPTIVE] Strategy change: Default
+[ADAPTIVE] Strategy change: Low Flip First
+[ADAPTIVE] Strategy change: Default
+[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 407, 442]
+2 6 7 41 17 75 83 151 164 144 102 191 223 195 175 266 272 372 
 SolverStatistic {
-    num_solve: 81168,
-    avg_decide_var: 0.277744,
-    num_simplify_subsume: 2151,
-    num_simplify_self_subsume: 1503,
+    num_solve: 64829,
+    avg_decide_var: 0.239064,
+    num_simplify_subsume: 0,
+    num_simplify_self_subsume: 0,
 }
 Statistic {
     case: shift_register_top_w16_d16_e0.aig,
-    time: 1.83s,
-    num_mic: 3955,
-    avg_mic_cube_len: 10.393173,
-    avg_po_cube_len: 14.472913,
-    mic_drop: success: 6400, fail: 34046, success rate: 15.82%,
-    num_down: 40446,
-    num_down_sat: 56749,
-    ctp: success: 0, fail: 5158, success rate: 0.00%,
-    num_get_bad: 239,
-    overall_block_time: 1.453483853s,
-    block_get_bad_time: 43.838082ms,
-    block_get_predecessor_time: 17.815866ms,
-    block_blocked_time: 126.728895ms,
-    block_mic_time: 1.187756234s,
-    block_push_time: 7.966743ms,
-    overall_propagate_time: 323.733776ms,
+    time: 1.25s,
+    num_mic: 3336,
+    avg_mic_cube_len: 10.499400,
+    avg_po_cube_len: 15.412238,
+    mic_drop: success: 4912, fail: 29313, success rate: 14.35%,
+    num_down: 34225,
+    num_down_sat: 44340,
+    ctp: success: 0, fail: 2644, success rate: 0.00%,
+    num_get_bad: 155,
+    overall_block_time: 979.905326ms,
+    block_get_bad_time: 31.16789ms,
+    block_get_predecessor_time: 11.203749ms,
+    block_blocked_time: 99.472301ms,
+    block_mic_time: 783.859902ms,
+    block_push_time: 8.847679ms,
+    overall_propagate_time: 218.074001ms,
     xor_gen: success: 0, fail: 0, success rate: NaN%,
     num_auxiliary_var: 0,
     test: success: 0, fail: 0, success rate: NaN%,
@@ -344,5 +344,5 @@ Statistic {
 result: unsafe
 ----------------------------------------
 STATUS: COMPLETED
-Finished at: Thu 17 Apr 2025 12:41:51 PM CST
+Finished at: Fri 18 Apr 2025 05:25:15 AM CST
 ========================================

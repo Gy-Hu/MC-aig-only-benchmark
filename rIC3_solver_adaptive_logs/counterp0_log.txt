@@ -1,0 +1,72 @@
+File: ./hwmcc08/counterp0.aig
+Command: ~/coding_env/rIC3-adaptive/target/release/rIC3 -e ic3 --ic3-adaptive-ordering ./hwmcc08/counterp0.aig
+Started at: Thu 17 Apr 2025 10:37:35 PM CST
+----------------------------------------
+the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc08/counterp0.aig
+==========================================
+ADAPTIVE ORDERING IS ENABLED FOR THIS RUN
+==========================================
+Warning: property not found, moved 1 outputs to bad properties
+
+=== Latch Flip Rates (Total cycles: 1000, Seeds: 5) ===
+Latch    Flip Rate (%)
+-------- ------------
+10 50.00       
+11 50.00       
+12 50.00       
+13 51.00       
+14 49.00       
+15 50.00       
+16 49.00       
+17 50.00       
+18 49.00       
+19 50.00       
+20 99.00       
+21 99.00       
+22 49.00       
+23 99.00       
+24 0.00        
+25 100.00      
+=======================================
+
+[ADAPTIVE] Strategy change: Low Flip First
+[ADAPTIVE] Strategy change: Default
+[ADAPTIVE] Strategy change: Low Flip First
+[ADAPTIVE] Strategy change: Default
+[ADAPTIVE] Strategy change: Topo
+[ADAPTIVE] Strategy change: Default
+[1, 1, 1, 1, 1, 1, 1, 8, 4]
+16 3 2 2 4 3 3 4 
+SolverStatistic {
+    num_solve: 149,
+    avg_decide_var: 0.829890,
+    num_simplify_subsume: 0,
+    num_simplify_self_subsume: 0,
+}
+Statistic {
+    case: counterp0.aig,
+    time: 0.00s,
+    num_mic: 21,
+    avg_mic_cube_len: 3.333333,
+    avg_po_cube_len: 13.043011,
+    mic_drop: success: 7, fail: 61, success rate: 10.29%,
+    num_down: 68,
+    num_down_sat: 78,
+    ctp: success: 0, fail: 13, success rate: 0.00%,
+    num_get_bad: 16,
+    overall_block_time: 1.042141ms,
+    block_get_bad_time: 256.369µs,
+    block_get_predecessor_time: 142.671µs,
+    block_blocked_time: 93.039µs,
+    block_mic_time: 314.348µs,
+    block_push_time: 11.992µs,
+    overall_propagate_time: 149.731µs,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: unsafe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Thu 17 Apr 2025 10:37:36 PM CST
+========================================

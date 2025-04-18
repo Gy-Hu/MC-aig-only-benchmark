@@ -1,0 +1,107 @@
+File: ./hwmcc11/single/pdtvisgoodbakery2.aig
+Command: ~/coding_env/rIC3-adaptive/target/release/rIC3 -e ic3 --ic3-adaptive-ordering ./hwmcc11/single/pdtvisgoodbakery2.aig
+Started at: Fri 18 Apr 2025 03:37:56 AM CST
+----------------------------------------
+the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc11/single/pdtvisgoodbakery2.aig
+==========================================
+ADAPTIVE ORDERING IS ENABLED FOR THIS RUN
+==========================================
+Warning: property not found, moved 1 outputs to bad properties
+
+=== Latch Flip Rates (Total cycles: 1000, Seeds: 5) ===
+Latch    Flip Rate (%)
+-------- ------------
+4 71.00       
+5 20.00       
+6 6.00        
+7 15.00       
+8 71.00       
+9 58.00       
+10 28.00       
+11 7.00        
+12 44.00       
+13 29.00       
+14 45.00       
+15 26.00       
+16 4.00        
+17 9.00        
+18 80.00       
+19 74.00       
+20 21.00       
+21 44.00       
+22 0.00        
+23 85.00       
+24 63.00       
+25 48.00       
+26 40.00       
+27 47.00       
+28 10.00       
+29 29.00       
+30 0.00        
+31 52.00       
+32 25.00       
+33 21.00       
+34 5.00        
+35 19.00       
+36 67.00       
+37 55.00       
+38 32.00       
+39 91.00       
+40 52.00       
+41 56.00       
+42 9.00        
+43 0.00        
+44 48.00       
+45 89.00       
+46 23.00       
+47 22.00       
+48 56.00       
+=======================================
+
+[ADAPTIVE] Strategy change: High Flip First
+[ADAPTIVE] Strategy change: Default
+[ADAPTIVE] Strategy change: Reverse Topo
+[ADAPTIVE] Strategy change: Default
+[ADAPTIVE] Strategy change: Low Flip First
+[ADAPTIVE] Strategy change: Default
+[ADAPTIVE] Strategy change: Topo
+[ADAPTIVE] Strategy change: Default
+[ADAPTIVE] Strategy change: Topo
+[ADAPTIVE] Strategy change: Default
+[ADAPTIVE] Strategy change: High Flip First
+[ADAPTIVE] Strategy change: Default
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 79, 31]
+33 2 2 2 2 2 2 2 3 3 8 7 9 8 6 1 0 31 
+SolverStatistic {
+    num_solve: 2400,
+    avg_decide_var: 0.607402,
+    num_simplify_subsume: 0,
+    num_simplify_self_subsume: 0,
+}
+Statistic {
+    case: pdtvisgoodbakery2.aig,
+    time: 0.16s,
+    num_mic: 186,
+    avg_mic_cube_len: 5.715054,
+    avg_po_cube_len: 16.840451,
+    mic_drop: success: 257, fail: 741, success rate: 25.75%,
+    num_down: 998,
+    num_down_sat: 1566,
+    ctp: success: 0, fail: 165, success rate: 0.00%,
+    num_get_bad: 21,
+    overall_block_time: 75.121306ms,
+    block_get_bad_time: 9.107452ms,
+    block_get_predecessor_time: 5.30221ms,
+    block_blocked_time: 12.081006ms,
+    block_mic_time: 42.701734ms,
+    block_push_time: 1.038525ms,
+    overall_propagate_time: 21.43228ms,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: safe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 18 Apr 2025 03:37:56 AM CST
+========================================

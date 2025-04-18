@@ -1,11 +1,12 @@
-File: ./hwmcc1920/fraig/shift_register_top_w32_d16_e0.aig
-Command: ~/coding_env/rIC3-adaptive/target/release/rIC3 -e ic3 --ic3-adaptive-ordering ./hwmcc1920/fraig/shift_register_top_w32_d16_e0.aig
-Started at: Thu 17 Apr 2025 02:41:51 PM CST
+File: ./hwmcc20/aig-1.8/shift_register_top_w32_d16_e0.aig
+Command: ~/coding_env/rIC3-adaptive/target/release/rIC3 -e ic3 --ic3-adaptive-ordering ./hwmcc20/aig-1.8/shift_register_top_w32_d16_e0.aig
+Started at: Fri 18 Apr 2025 06:03:18 AM CST
 ----------------------------------------
-the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc1920/fraig/shift_register_top_w32_d16_e0.aig
+the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc20/aig-1.8/shift_register_top_w32_d16_e0.aig
 ==========================================
 ADAPTIVE ORDERING IS ENABLED FOR THIS RUN
 ==========================================
+Warning: property not found, moved 1 outputs to bad properties
 
 === Latch Flip Rates (Total cycles: 1000, Seeds: 5) ===
 Latch    Flip Rate (%)
@@ -567,48 +568,46 @@ Latch    Flip Rate (%)
 625 0.00        
 626 0.00        
 627 0.00        
+628 99.00       
 =======================================
 
-[ADAPTIVE] Strategy change: Topo
-[ADAPTIVE] Strategy change: Default
-[ADAPTIVE] Strategy change: Low Flip First
-[ADAPTIVE] Strategy change: Reverse Topo
-[ADAPTIVE] Strategy change: Topo
-[ADAPTIVE] Strategy change: Default
-[ADAPTIVE] Strategy change: Low Flip First
 [ADAPTIVE] Strategy change: High Flip First
 [ADAPTIVE] Strategy change: Default
-[ADAPTIVE] Strategy change: High Flip First
+[ADAPTIVE] Strategy change: Reverse Topo
 [ADAPTIVE] Strategy change: Default
 [ADAPTIVE] Strategy change: Topo
-[ADAPTIVE] Strategy change: Reverse Topo
+[ADAPTIVE] Strategy change: Default
 [ADAPTIVE] Strategy change: Topo
-[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 551, 464]
-1 5 6 73 78 74 141 265 75 202 136 204 404 522 395 482 394 
+[ADAPTIVE] Strategy change: Default
+[ADAPTIVE] Strategy change: Topo
+[ADAPTIVE] Strategy change: High Flip First
+[ADAPTIVE] Strategy change: Topo
+[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 651, 447]
+2 5 5 75 15 140 77 273 148 142 137 267 463 328 330 573 385 
 SolverStatistic {
-    num_solve: 73753,
-    avg_decide_var: 0.207142,
-    num_simplify_subsume: 0,
-    num_simplify_self_subsume: 0,
+    num_solve: 74736,
+    avg_decide_var: 0.211667,
+    num_simplify_subsume: 204,
+    num_simplify_self_subsume: 120,
 }
 Statistic {
     case: shift_register_top_w32_d16_e0.aig,
-    time: 1.64s,
-    num_mic: 4250,
-    avg_mic_cube_len: 8.793412,
-    avg_po_cube_len: 14.462755,
-    mic_drop: success: 3849, fail: 33019, success rate: 10.44%,
-    num_down: 36868,
-    num_down_sat: 47807,
-    ctp: success: 0, fail: 3964, success rate: 0.00%,
-    num_get_bad: 163,
-    overall_block_time: 1.244274642s,
-    block_get_bad_time: 52.618207ms,
-    block_get_predecessor_time: 14.987972ms,
-    block_blocked_time: 121.275259ms,
-    block_mic_time: 985.320907ms,
-    block_push_time: 8.847946ms,
-    overall_propagate_time: 293.787971ms,
+    time: 1.79s,
+    num_mic: 4003,
+    avg_mic_cube_len: 9.772171,
+    avg_po_cube_len: 15.032458,
+    mic_drop: success: 4036, fail: 34776, success rate: 10.40%,
+    num_down: 38812,
+    num_down_sat: 49810,
+    ctp: success: 0, fail: 4177, success rate: 0.00%,
+    num_get_bad: 239,
+    overall_block_time: 1.386911993s,
+    block_get_bad_time: 68.962208ms,
+    block_get_predecessor_time: 16.249417ms,
+    block_blocked_time: 123.851668ms,
+    block_mic_time: 1.100104509s,
+    block_push_time: 9.917796ms,
+    overall_propagate_time: 302.918331ms,
     xor_gen: success: 0, fail: 0, success rate: NaN%,
     num_auxiliary_var: 0,
     test: success: 0, fail: 0, success rate: NaN%,
@@ -616,5 +615,5 @@ Statistic {
 result: unsafe
 ----------------------------------------
 STATUS: COMPLETED
-Finished at: Thu 17 Apr 2025 02:41:53 PM CST
+Finished at: Fri 18 Apr 2025 06:03:20 AM CST
 ========================================

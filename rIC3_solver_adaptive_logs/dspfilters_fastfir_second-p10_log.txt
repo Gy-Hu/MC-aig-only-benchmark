@@ -1,11 +1,12 @@
-File: ./hwmcc1920/fraig/dspfilters_fastfir_second-p10.aig
-Command: ~/coding_env/rIC3-adaptive/target/release/rIC3 -e ic3 --ic3-adaptive-ordering ./hwmcc1920/fraig/dspfilters_fastfir_second-p10.aig
-Started at: Thu 17 Apr 2025 12:32:31 PM CST
+File: ./hwmcc20/aig-1.8/dspfilters_fastfir_second-p10.aig
+Command: ~/coding_env/rIC3-adaptive/target/release/rIC3 -e ic3 --ic3-adaptive-ordering ./hwmcc20/aig-1.8/dspfilters_fastfir_second-p10.aig
+Started at: Fri 18 Apr 2025 05:12:10 AM CST
 ----------------------------------------
-the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc1920/fraig/dspfilters_fastfir_second-p10.aig
+the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc20/aig-1.8/dspfilters_fastfir_second-p10.aig
 ==========================================
 ADAPTIVE ORDERING IS ENABLED FOR THIS RUN
 ==========================================
+Warning: property not found, moved 1 outputs to bad properties
 
 === Latch Flip Rates (Total cycles: 1000, Seeds: 5) ===
 Latch    Flip Rate (%)
@@ -1144,54 +1145,50 @@ Latch    Flip Rate (%)
 3779 15.00       
 3780 15.00       
 3781 15.00       
+3782 100.00      
 =======================================
 
-[ADAPTIVE] Strategy change: Low Flip First
-[ADAPTIVE] Strategy change: Default
 [ADAPTIVE] Strategy change: Topo
 [ADAPTIVE] Strategy change: Reverse Topo
 [ADAPTIVE] Strategy change: Low Flip First
-[ADAPTIVE] Strategy change: Topo
 [ADAPTIVE] Strategy change: High Flip First
-[ADAPTIVE] Strategy change: Topo
-[ADAPTIVE] Strategy change: Reverse Topo
 [ADAPTIVE] Strategy change: Low Flip First
 [ADAPTIVE] Strategy change: Reverse Topo
 [ADAPTIVE] Strategy change: Topo
 [ADAPTIVE] Strategy change: Default
 [ADAPTIVE] Strategy change: Topo
+[ADAPTIVE] Strategy change: Low Flip First
+[ADAPTIVE] Strategy change: Reverse Topo
 [ADAPTIVE] Strategy change: High Flip First
 [ADAPTIVE] Strategy change: Low Flip First
-[ADAPTIVE] Strategy change: Topo
-[ADAPTIVE] Strategy change: Reverse Topo
+[ADAPTIVE] Strategy change: High Flip First
 [ADAPTIVE] Strategy change: Low Flip First
-[ADAPTIVE] Strategy change: Reverse Topo
-[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 995, 3509]
-1091 83 131 501 501 613 520 508 406 130 36 26 29 9 1 1 0 3591 
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 732, 3566]
+1092 82 218 539 481 594 440 359 157 22 3 2 2 1 1 0 3614 
 SolverStatistic {
-    num_solve: 146341,
-    avg_decide_var: 0.593410,
-    num_simplify_subsume: 1920,
-    num_simplify_self_subsume: 1526,
+    num_solve: 148254,
+    avg_decide_var: 0.607926,
+    num_simplify_subsume: 965,
+    num_simplify_self_subsume: 726,
 }
 Statistic {
     case: dspfilters_fastfir_second-p10.aig,
-    time: 49.09s,
-    num_mic: 8199,
-    avg_mic_cube_len: 6.655934,
-    avg_po_cube_len: 335.443035,
-    mic_drop: success: 10473, fail: 43351, success rate: 19.46%,
-    num_down: 53824,
-    num_down_sat: 65699,
-    ctp: success: 0, fail: 40184, success rate: 0.00%,
-    num_get_bad: 1662,
-    overall_block_time: 37.969309078s,
-    block_get_bad_time: 4.044487582s,
-    block_get_predecessor_time: 5.407422103s,
-    block_blocked_time: 4.470673649s,
-    block_mic_time: 16.008880797s,
-    block_push_time: 611.855846ms,
-    overall_propagate_time: 10.250696372s,
+    time: 55.42s,
+    num_mic: 7358,
+    avg_mic_cube_len: 7.545393,
+    avg_po_cube_len: 346.287768,
+    mic_drop: success: 7881, fail: 46991, success rate: 14.36%,
+    num_down: 54872,
+    num_down_sat: 77106,
+    ctp: success: 0, fail: 38561, success rate: 0.00%,
+    num_get_bad: 1394,
+    overall_block_time: 44.893872167s,
+    block_get_bad_time: 3.769124318s,
+    block_get_predecessor_time: 6.142146287s,
+    block_blocked_time: 5.327242926s,
+    block_mic_time: 21.699571811s,
+    block_push_time: 985.460731ms,
+    overall_propagate_time: 9.62954252s,
     xor_gen: success: 0, fail: 0, success rate: NaN%,
     num_auxiliary_var: 0,
     test: success: 0, fail: 0, success rate: NaN%,
@@ -1199,5 +1196,5 @@ Statistic {
 result: safe
 ----------------------------------------
 STATUS: COMPLETED
-Finished at: Thu 17 Apr 2025 12:33:21 PM CST
+Finished at: Fri 18 Apr 2025 05:13:08 AM CST
 ========================================

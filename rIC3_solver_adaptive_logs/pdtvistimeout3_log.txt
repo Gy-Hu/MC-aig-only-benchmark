@@ -1,0 +1,86 @@
+File: ./hwmcc08/pdtvistimeout3.aig
+Command: ~/coding_env/rIC3-adaptive/target/release/rIC3 -e ic3 --ic3-adaptive-ordering ./hwmcc08/pdtvistimeout3.aig
+Started at: Thu 17 Apr 2025 10:36:07 PM CST
+----------------------------------------
+the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc08/pdtvistimeout3.aig
+==========================================
+ADAPTIVE ORDERING IS ENABLED FOR THIS RUN
+==========================================
+Warning: property not found, moved 1 outputs to bad properties
+
+=== Latch Flip Rates (Total cycles: 1000, Seeds: 5) ===
+Latch    Flip Rate (%)
+-------- ------------
+11 0.00        
+12 0.00        
+13 1.00        
+14 0.00        
+15 0.00        
+16 0.00        
+17 0.00        
+18 59.00       
+19 79.00       
+20 20.00       
+21 0.00        
+22 0.00        
+23 50.00       
+24 0.00        
+25 0.00        
+26 20.00       
+27 0.00        
+28 39.00       
+29 40.00       
+30 59.00       
+31 39.00       
+32 39.00       
+33 19.00       
+34 0.00        
+35 0.00        
+36 0.00        
+37 98.00       
+38 0.00        
+39 1.00        
+40 98.00       
+41 0.00        
+42 59.00       
+43 59.00       
+44 20.00       
+=======================================
+
+[ADAPTIVE] Strategy change: High Flip First
+[ADAPTIVE] Strategy change: Default
+[0, 0, 0, 0, 0, 0, 8, 16]
+21 1 2 10 1 0 16 
+SolverStatistic {
+    num_solve: 398,
+    avg_decide_var: 0.670181,
+    num_simplify_subsume: 0,
+    num_simplify_self_subsume: 0,
+}
+Statistic {
+    case: pdtvistimeout3.aig,
+    time: 0.02s,
+    num_mic: 32,
+    avg_mic_cube_len: 6.281250,
+    avg_po_cube_len: 15.661157,
+    mic_drop: success: 48, fail: 148, success rate: 24.49%,
+    num_down: 196,
+    num_down_sat: 263,
+    ctp: success: 0, fail: 32, success rate: 0.00%,
+    num_get_bad: 9,
+    overall_block_time: 5.841739ms,
+    block_get_bad_time: 335.169µs,
+    block_get_predecessor_time: 413.067µs,
+    block_blocked_time: 1.768057ms,
+    block_mic_time: 2.760889ms,
+    block_push_time: 208.148µs,
+    overall_propagate_time: 1.405912ms,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: safe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Thu 17 Apr 2025 10:36:08 PM CST
+========================================

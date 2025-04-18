@@ -1,0 +1,74 @@
+File: ./avr/opensource/vcegar_QF_BV_sdlx_control/vcegar_QF_BV_sdlx_control.aig
+Command: ~/coding_env/rIC3-adaptive/target/release/rIC3 -e ic3 --ic3-adaptive-ordering ./avr/opensource/vcegar_QF_BV_sdlx_control/vcegar_QF_BV_sdlx_control.aig
+Started at: Fri 18 Apr 2025 03:44:29 AM CST
+----------------------------------------
+the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/avr/opensource/vcegar_QF_BV_sdlx_control/vcegar_QF_BV_sdlx_control.aig
+==========================================
+ADAPTIVE ORDERING IS ENABLED FOR THIS RUN
+==========================================
+
+=== Latch Flip Rates (Total cycles: 1000, Seeds: 5) ===
+Latch    Flip Rate (%)
+-------- ------------
+167 1.00        
+168 22.00       
+169 14.00       
+170 35.00       
+171 14.00       
+172 35.00       
+173 0.00        
+174 0.00        
+175 35.00       
+176 1.00        
+177 0.00        
+178 0.00        
+179 0.00        
+180 19.00       
+181 38.00       
+182 47.00       
+183 35.00       
+184 0.00        
+185 0.00        
+186 0.00        
+187 19.00       
+188 38.00       
+189 46.00       
+=======================================
+
+[ADAPTIVE] Strategy change: Reverse Topo
+[ADAPTIVE] Strategy change: Default
+[0, 0, 0, 3, 3]
+20 3 0 3 
+SolverStatistic {
+    num_solve: 15,
+    avg_decide_var: 0.795424,
+    num_simplify_subsume: 0,
+    num_simplify_self_subsume: 0,
+}
+Statistic {
+    case: vcegar_QF_BV_sdlx_control.aig,
+    time: 0.01s,
+    num_mic: 6,
+    avg_mic_cube_len: 1.000000,
+    avg_po_cube_len: 6.000000,
+    mic_drop: success: 0, fail: 6, success rate: 0.00%,
+    num_down: 6,
+    num_down_sat: 0,
+    ctp: success: 0, fail: 6, success rate: 0.00%,
+    num_get_bad: 9,
+    overall_block_time: 328.54µs,
+    block_get_bad_time: 151.758µs,
+    block_get_predecessor_time: 0ns,
+    block_blocked_time: 14.407µs,
+    block_mic_time: 6.749µs,
+    block_push_time: 115ns,
+    overall_propagate_time: 42.142µs,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: safe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 18 Apr 2025 03:44:29 AM CST
+========================================

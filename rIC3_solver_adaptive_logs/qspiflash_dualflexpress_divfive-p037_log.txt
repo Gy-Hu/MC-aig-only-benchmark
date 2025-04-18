@@ -1,11 +1,12 @@
-File: ./hwmcc1920/aig/qspiflash_dualflexpress_divfive-p037.aig
-Command: ~/coding_env/rIC3-adaptive/target/release/rIC3 -e ic3 --ic3-adaptive-ordering ./hwmcc1920/aig/qspiflash_dualflexpress_divfive-p037.aig
-Started at: Thu 17 Apr 2025 05:02:22 PM CST
+File: ./hwmcc20/aig-1.8/qspiflash_dualflexpress_divfive-p037.aig
+Command: ~/coding_env/rIC3-adaptive/target/release/rIC3 -e ic3 --ic3-adaptive-ordering ./hwmcc20/aig-1.8/qspiflash_dualflexpress_divfive-p037.aig
+Started at: Fri 18 Apr 2025 05:46:40 AM CST
 ----------------------------------------
-the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc1920/aig/qspiflash_dualflexpress_divfive-p037.aig
+the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc20/aig-1.8/qspiflash_dualflexpress_divfive-p037.aig
 ==========================================
 ADAPTIVE ORDERING IS ENABLED FOR THIS RUN
 ==========================================
+Warning: property not found, moved 1 outputs to bad properties
 
 === Latch Flip Rates (Total cycles: 1000, Seeds: 5) ===
 Latch    Flip Rate (%)
@@ -607,40 +608,43 @@ Latch    Flip Rate (%)
 707 100.00      
 708 100.00      
 709 100.00      
+710 100.00      
 =======================================
 
-[ADAPTIVE] Strategy change: Reverse Topo
+[ADAPTIVE] Strategy change: High Flip First
 [ADAPTIVE] Strategy change: Default
 [ADAPTIVE] Strategy change: High Flip First
 [ADAPTIVE] Strategy change: Default
-[ADAPTIVE] Strategy change: Reverse Topo
+[ADAPTIVE] Strategy change: High Flip First
 [ADAPTIVE] Strategy change: Default
-[0, 0, 0, 0, 0, 0, 0, 19, 28]
-75 4 6 6 6 1 0 30 
+[ADAPTIVE] Strategy change: Low Flip First
+[ADAPTIVE] Strategy change: Default
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 95, 38]
+76 8 8 8 8 20 14 5 1 1 0 39 
 SolverStatistic {
-    num_solve: 445,
-    avg_decide_var: 0.408767,
+    num_solve: 1681,
+    avg_decide_var: 0.435866,
     num_simplify_subsume: 0,
     num_simplify_self_subsume: 0,
 }
 Statistic {
     case: qspiflash_dualflexpress_divfive-p037.aig,
-    time: 0.05s,
-    num_mic: 70,
-    avg_mic_cube_len: 2.600000,
-    avg_po_cube_len: 25.799270,
-    mic_drop: success: 16, fail: 163, success rate: 8.94%,
-    num_down: 179,
-    num_down_sat: 167,
-    ctp: success: 0, fail: 73, success rate: 0.00%,
-    num_get_bad: 28,
-    overall_block_time: 8.328856ms,
-    block_get_bad_time: 2.002151ms,
-    block_get_predecessor_time: 1.460663ms,
-    block_blocked_time: 914.003µs,
-    block_mic_time: 1.918837ms,
-    block_push_time: 119.99µs,
-    overall_propagate_time: 1.499975ms,
+    time: 0.08s,
+    num_mic: 182,
+    avg_mic_cube_len: 4.027473,
+    avg_po_cube_len: 36.516605,
+    mic_drop: success: 123, fail: 580, success rate: 17.50%,
+    num_down: 703,
+    num_down_sat: 802,
+    ctp: success: 0, fail: 266, success rate: 0.00%,
+    num_get_bad: 32,
+    overall_block_time: 26.231868ms,
+    block_get_bad_time: 2.431694ms,
+    block_get_predecessor_time: 5.775159ms,
+    block_blocked_time: 3.861114ms,
+    block_mic_time: 10.167794ms,
+    block_push_time: 232.436µs,
+    overall_propagate_time: 4.091804ms,
     xor_gen: success: 0, fail: 0, success rate: NaN%,
     num_auxiliary_var: 0,
     test: success: 0, fail: 0, success rate: NaN%,
@@ -648,5 +652,5 @@ Statistic {
 result: safe
 ----------------------------------------
 STATUS: COMPLETED
-Finished at: Thu 17 Apr 2025 05:02:22 PM CST
+Finished at: Fri 18 Apr 2025 05:46:40 AM CST
 ========================================

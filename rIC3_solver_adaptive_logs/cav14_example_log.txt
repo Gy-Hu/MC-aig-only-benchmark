@@ -1,0 +1,59 @@
+File: ./avr/crafted/cav14_example/cav14_example.aig
+Command: ~/coding_env/rIC3-adaptive/target/release/rIC3 -e ic3 --ic3-adaptive-ordering ./avr/crafted/cav14_example/cav14_example.aig
+Started at: Fri 18 Apr 2025 03:49:28 AM CST
+----------------------------------------
+the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/avr/crafted/cav14_example/cav14_example.aig
+==========================================
+ADAPTIVE ORDERING IS ENABLED FOR THIS RUN
+==========================================
+
+=== Latch Flip Rates (Total cycles: 1000, Seeds: 5) ===
+Latch    Flip Rate (%)
+-------- ------------
+2 50.00       
+3 50.00       
+4 50.00       
+5 50.00       
+6 50.00       
+7 50.00       
+=======================================
+
+[ADAPTIVE] Strategy change: High Flip First
+[ADAPTIVE] Strategy change: Default
+[ADAPTIVE] Strategy change: Low Flip First
+[ADAPTIVE] Strategy change: Default
+[0, 0, 0, 0, 0, 4, 3]
+6 1 1 1 0 3 
+SolverStatistic {
+    num_solve: 57,
+    avg_decide_var: inf,
+    num_simplify_subsume: 0,
+    num_simplify_self_subsume: 0,
+}
+Statistic {
+    case: cav14_example.aig,
+    time: 0.00s,
+    num_mic: 12,
+    avg_mic_cube_len: 2.250000,
+    avg_po_cube_len: 4.545455,
+    mic_drop: success: 5, fail: 22, success rate: 18.52%,
+    num_down: 27,
+    num_down_sat: 20,
+    ctp: success: 0, fail: 3, success rate: 0.00%,
+    num_get_bad: 6,
+    overall_block_time: 527.011µs,
+    block_get_bad_time: 326.78µs,
+    block_get_predecessor_time: 40.48µs,
+    block_blocked_time: 36.544µs,
+    block_mic_time: 60.842µs,
+    block_push_time: 4.77µs,
+    overall_propagate_time: 35.492µs,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: safe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 18 Apr 2025 03:49:28 AM CST
+========================================

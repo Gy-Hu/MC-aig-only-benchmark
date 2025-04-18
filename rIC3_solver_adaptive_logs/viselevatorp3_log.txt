@@ -1,0 +1,93 @@
+File: ./hwmcc11/single/viselevatorp3.aig
+Command: ~/coding_env/rIC3-adaptive/target/release/rIC3 -e ic3 --ic3-adaptive-ordering ./hwmcc11/single/viselevatorp3.aig
+Started at: Fri 18 Apr 2025 03:21:22 AM CST
+----------------------------------------
+the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc11/single/viselevatorp3.aig
+==========================================
+ADAPTIVE ORDERING IS ENABLED FOR THIS RUN
+==========================================
+Warning: property not found, moved 1 outputs to bad properties
+
+=== Latch Flip Rates (Total cycles: 1000, Seeds: 5) ===
+Latch    Flip Rate (%)
+-------- ------------
+29 50.00       
+30 49.00       
+31 49.00       
+32 49.00       
+33 49.00       
+34 49.00       
+35 20.00       
+36 63.00       
+37 64.00       
+38 61.00       
+39 36.00       
+40 62.00       
+41 49.00       
+42 51.00       
+43 49.00       
+44 28.00       
+45 20.00       
+46 61.00       
+47 62.00       
+48 63.00       
+49 39.00       
+50 62.00       
+51 49.00       
+52 48.00       
+53 48.00       
+54 27.00       
+55 64.00       
+56 65.00       
+57 65.00       
+58 62.00       
+59 61.00       
+60 61.00       
+61 48.00       
+62 47.00       
+63 50.00       
+64 49.00       
+65 49.00       
+66 49.00       
+67 0.00        
+68 100.00      
+=======================================
+
+[ADAPTIVE] Strategy change: Topo
+[ADAPTIVE] Strategy change: Default
+[ADAPTIVE] Strategy change: Reverse Topo
+[0, 0, 0, 0, 2]
+36 1 0 2 
+SolverStatistic {
+    num_solve: 9,
+    avg_decide_var: 0.565575,
+    num_simplify_subsume: 0,
+    num_simplify_self_subsume: 0,
+}
+Statistic {
+    case: viselevatorp3.aig,
+    time: 0.01s,
+    num_mic: 3,
+    avg_mic_cube_len: 1.666667,
+    avg_po_cube_len: 18.000000,
+    mic_drop: success: 0, fail: 5, success rate: 0.00%,
+    num_down: 5,
+    num_down_sat: 3,
+    ctp: success: 0, fail: 2, success rate: 0.00%,
+    num_get_bad: 5,
+    overall_block_time: 748.374µs,
+    block_get_bad_time: 600.483µs,
+    block_get_predecessor_time: 0ns,
+    block_blocked_time: 14.608µs,
+    block_mic_time: 19.187µs,
+    block_push_time: 87ns,
+    overall_propagate_time: 34.171µs,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: safe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 18 Apr 2025 03:21:23 AM CST
+========================================

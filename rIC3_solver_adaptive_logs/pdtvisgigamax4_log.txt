@@ -1,0 +1,68 @@
+File: ./hwmcc08/pdtvisgigamax4.aig
+Command: ~/coding_env/rIC3-adaptive/target/release/rIC3 -e ic3 --ic3-adaptive-ordering ./hwmcc08/pdtvisgigamax4.aig
+Started at: Thu 17 Apr 2025 10:35:24 PM CST
+----------------------------------------
+the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc08/pdtvisgigamax4.aig
+==========================================
+ADAPTIVE ORDERING IS ENABLED FOR THIS RUN
+==========================================
+Warning: property not found, moved 1 outputs to bad properties
+
+=== Latch Flip Rates (Total cycles: 1000, Seeds: 5) ===
+Latch    Flip Rate (%)
+-------- ------------
+23 14.00       
+24 9.00        
+25 16.00       
+26 0.00        
+27 42.00       
+28 15.00       
+29 0.00        
+30 0.00        
+31 14.00       
+32 56.00       
+33 85.00       
+34 3.00        
+35 0.00        
+36 21.00       
+37 0.00        
+38 1.00        
+=======================================
+
+[ADAPTIVE] Strategy change: Reverse Topo
+[ADAPTIVE] Strategy change: Default
+[0, 0, 0, 1, 7]
+16 4 0 7 
+SolverStatistic {
+    num_solve: 73,
+    avg_decide_var: 0.747532,
+    num_simplify_subsume: 0,
+    num_simplify_self_subsume: 0,
+}
+Statistic {
+    case: pdtvisgigamax4.aig,
+    time: 0.01s,
+    num_mic: 12,
+    avg_mic_cube_len: 3.083333,
+    avg_po_cube_len: 8.914286,
+    mic_drop: success: 3, fail: 34, success rate: 8.11%,
+    num_down: 37,
+    num_down_sat: 44,
+    ctp: success: 0, fail: 5, success rate: 0.00%,
+    num_get_bad: 9,
+    overall_block_time: 1.518318ms,
+    block_get_bad_time: 570.436µs,
+    block_get_predecessor_time: 78.471µs,
+    block_blocked_time: 190.354µs,
+    block_mic_time: 422.103µs,
+    block_push_time: 24.072µs,
+    overall_propagate_time: 328.628µs,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: safe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Thu 17 Apr 2025 10:35:26 PM CST
+========================================

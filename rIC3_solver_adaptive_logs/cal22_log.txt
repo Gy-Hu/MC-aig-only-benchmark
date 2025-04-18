@@ -1,0 +1,78 @@
+File: ./avr/industry/cal22/cal22.aig
+Command: ~/coding_env/rIC3-adaptive/target/release/rIC3 -e ic3 --ic3-adaptive-ordering ./avr/industry/cal22/cal22.aig
+Started at: Fri 18 Apr 2025 04:01:22 AM CST
+----------------------------------------
+the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/avr/industry/cal22/cal22.aig
+==========================================
+ADAPTIVE ORDERING IS ENABLED FOR THIS RUN
+==========================================
+
+=== Latch Flip Rates (Total cycles: 1000, Seeds: 5) ===
+Latch    Flip Rate (%)
+-------- ------------
+58 11.00       
+59 15.00       
+60 4.00        
+61 5.00        
+62 14.00       
+63 0.00        
+64 0.00        
+65 1.00        
+66 0.00        
+67 0.00        
+68 0.00        
+69 2.00        
+70 15.00       
+71 0.00        
+72 0.00        
+73 0.00        
+74 0.00        
+75 0.00        
+76 0.00        
+77 0.00        
+78 5.00        
+79 34.00       
+80 65.00       
+81 99.00       
+82 5.00        
+83 100.00      
+=======================================
+
+[ADAPTIVE] Strategy change: Topo
+[ADAPTIVE] Strategy change: Default
+[ADAPTIVE] Strategy change: High Flip First
+[0, 0, 0, 0, 22]
+26 1 0 22 
+SolverStatistic {
+    num_solve: 184,
+    avg_decide_var: 0.602281,
+    num_simplify_subsume: 0,
+    num_simplify_self_subsume: 0,
+}
+Statistic {
+    case: cal22.aig,
+    time: 0.02s,
+    num_mic: 23,
+    avg_mic_cube_len: 6.173913,
+    avg_po_cube_len: 16.411765,
+    mic_drop: success: 56, fail: 83, success rate: 40.29%,
+    num_down: 139,
+    num_down_sat: 138,
+    ctp: success: 0, fail: 22, success rate: 0.00%,
+    num_get_bad: 25,
+    overall_block_time: 4.626456ms,
+    block_get_bad_time: 1.550169ms,
+    block_get_predecessor_time: 0ns,
+    block_blocked_time: 580.717µs,
+    block_mic_time: 1.641895ms,
+    block_push_time: 748ns,
+    overall_propagate_time: 1.082178ms,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: safe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 18 Apr 2025 04:01:22 AM CST
+========================================

@@ -1,0 +1,74 @@
+File: ./avr/industry/cal14/cal14.aig
+Command: ~/coding_env/rIC3-adaptive/target/release/rIC3 -e ic3 --ic3-adaptive-ordering ./avr/industry/cal14/cal14.aig
+Started at: Fri 18 Apr 2025 04:04:07 AM CST
+----------------------------------------
+the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/avr/industry/cal14/cal14.aig
+==========================================
+ADAPTIVE ORDERING IS ENABLED FOR THIS RUN
+==========================================
+
+=== Latch Flip Rates (Total cycles: 1000, Seeds: 5) ===
+Latch    Flip Rate (%)
+-------- ------------
+55 3.00        
+56 6.00        
+57 5.00        
+58 0.00        
+59 0.00        
+60 1.00        
+61 0.00        
+62 0.00        
+63 1.00        
+64 4.00        
+65 17.00       
+66 33.00       
+67 66.00       
+68 99.00       
+69 0.00        
+70 0.00        
+71 0.00        
+72 0.00        
+73 0.00        
+74 0.00        
+75 1.00        
+76 5.00        
+77 100.00      
+=======================================
+
+[ADAPTIVE] Strategy change: Low Flip First
+[ADAPTIVE] Strategy change: Topo
+[0, 0, 0, 0, 17]
+23 1 0 17 
+SolverStatistic {
+    num_solve: 135,
+    avg_decide_var: 0.686582,
+    num_simplify_subsume: 0,
+    num_simplify_self_subsume: 0,
+}
+Statistic {
+    case: cal14.aig,
+    time: 0.02s,
+    num_mic: 18,
+    avg_mic_cube_len: 5.888889,
+    avg_po_cube_len: 15.490566,
+    mic_drop: success: 37, fail: 63, success rate: 37.00%,
+    num_down: 100,
+    num_down_sat: 99,
+    ctp: success: 0, fail: 17, success rate: 0.00%,
+    num_get_bad: 20,
+    overall_block_time: 4.863544ms,
+    block_get_bad_time: 2.161144ms,
+    block_get_predecessor_time: 0ns,
+    block_blocked_time: 414.559µs,
+    block_mic_time: 1.273541ms,
+    block_push_time: 438ns,
+    overall_propagate_time: 837.151µs,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: safe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 18 Apr 2025 04:04:08 AM CST
+========================================

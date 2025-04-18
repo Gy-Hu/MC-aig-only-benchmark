@@ -1,0 +1,66 @@
+File: ./hwmcc08/shortp0.aig
+Command: ~/coding_env/rIC3-adaptive/target/release/rIC3 -e ic3 --ic3-adaptive-ordering ./hwmcc08/shortp0.aig
+Started at: Thu 17 Apr 2025 10:35:52 PM CST
+----------------------------------------
+the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc08/shortp0.aig
+==========================================
+ADAPTIVE ORDERING IS ENABLED FOR THIS RUN
+==========================================
+Warning: property not found, moved 1 outputs to bad properties
+
+=== Latch Flip Rates (Total cycles: 1000, Seeds: 5) ===
+Latch    Flip Rate (%)
+-------- ------------
+11 49.00       
+12 60.00       
+13 50.00       
+14 50.00       
+15 49.00       
+16 49.00       
+17 49.00       
+18 50.00       
+19 99.00       
+20 99.00       
+21 51.00       
+22 99.00       
+23 0.00        
+24 100.00      
+=======================================
+
+[ADAPTIVE] Strategy change: Topo
+[ADAPTIVE] Strategy change: Default
+[1, 1, 5]
+14 5 0 
+SolverStatistic {
+    num_solve: 14,
+    avg_decide_var: 1.401838,
+    num_simplify_subsume: 0,
+    num_simplify_self_subsume: 0,
+}
+Statistic {
+    case: shortp0.aig,
+    time: 0.00s,
+    num_mic: 5,
+    avg_mic_cube_len: 1.400000,
+    avg_po_cube_len: 9.000000,
+    mic_drop: success: 0, fail: 7, success rate: 0.00%,
+    num_down: 7,
+    num_down_sat: 2,
+    ctp: success: 0, fail: 0, success rate: NaN%,
+    num_get_bad: 7,
+    overall_block_time: 228.152µs,
+    block_get_bad_time: 68.926µs,
+    block_get_predecessor_time: 36.363µs,
+    block_blocked_time: 16.092µs,
+    block_mic_time: 11.119µs,
+    block_push_time: 105ns,
+    overall_propagate_time: 13.716µs,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: unsafe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Thu 17 Apr 2025 10:35:53 PM CST
+========================================

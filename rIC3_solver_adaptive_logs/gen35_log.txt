@@ -1,11 +1,12 @@
-File: ./hwmcc1920/aig/gen35.aig
-Command: ~/coding_env/rIC3-adaptive/target/release/rIC3 -e ic3 --ic3-adaptive-ordering ./hwmcc1920/aig/gen35.aig
-Started at: Thu 17 Apr 2025 05:02:44 PM CST
+File: ./hwmcc20/aig-1.8/gen35.aig
+Command: ~/coding_env/rIC3-adaptive/target/release/rIC3 -e ic3 --ic3-adaptive-ordering ./hwmcc20/aig-1.8/gen35.aig
+Started at: Fri 18 Apr 2025 06:02:15 AM CST
 ----------------------------------------
-the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc1920/aig/gen35.aig
+the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc20/aig-1.8/gen35.aig
 ==========================================
 ADAPTIVE ORDERING IS ENABLED FOR THIS RUN
 ==========================================
+Warning: property not found, moved 1 outputs to bad properties
 
 === Latch Flip Rates (Total cycles: 1000, Seeds: 5) ===
 Latch    Flip Rate (%)
@@ -815,10 +816,6 @@ Latch    Flip Rate (%)
 1383 1.00        
 =======================================
 
-[ADAPTIVE] Strategy change: Reverse Topo
-[ADAPTIVE] Strategy change: Default
-[ADAPTIVE] Strategy change: High Flip First
-[ADAPTIVE] Strategy change: Default
 [0, 0, 0, 0, 287]
 3 1 0 287 
 SolverStatistic {
@@ -829,7 +826,7 @@ SolverStatistic {
 }
 Statistic {
     case: gen35.aig,
-    time: 0.21s,
+    time: 0.22s,
     num_mic: 288,
     avg_mic_cube_len: 1.996528,
     avg_po_cube_len: 3.086906,
@@ -838,13 +835,13 @@ Statistic {
     num_down_sat: 287,
     ctp: success: 0, fail: 287, success rate: 0.00%,
     num_get_bad: 290,
-    overall_block_time: 106.780941ms,
-    block_get_bad_time: 41.412436ms,
+    overall_block_time: 110.689959ms,
+    block_get_bad_time: 43.435985ms,
     block_get_predecessor_time: 0ns,
-    block_blocked_time: 3.153563ms,
-    block_mic_time: 9.18665ms,
-    block_push_time: 4.86µs,
-    overall_propagate_time: 6.572217ms,
+    block_blocked_time: 3.384037ms,
+    block_mic_time: 9.330218ms,
+    block_push_time: 4.839µs,
+    overall_propagate_time: 6.753147ms,
     xor_gen: success: 0, fail: 0, success rate: NaN%,
     num_auxiliary_var: 0,
     test: success: 0, fail: 0, success rate: NaN%,
@@ -852,5 +849,5 @@ Statistic {
 result: safe
 ----------------------------------------
 STATUS: COMPLETED
-Finished at: Thu 17 Apr 2025 05:02:45 PM CST
+Finished at: Fri 18 Apr 2025 06:02:15 AM CST
 ========================================

@@ -1,0 +1,110 @@
+File: ./hwmcc08/eijkS344.aig
+Command: ~/coding_env/rIC3-adaptive/target/release/rIC3 -e ic3 --ic3-adaptive-ordering ./hwmcc08/eijkS344.aig
+Started at: Thu 17 Apr 2025 10:36:05 PM CST
+----------------------------------------
+the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc08/eijkS344.aig
+==========================================
+ADAPTIVE ORDERING IS ENABLED FOR THIS RUN
+==========================================
+Warning: property not found, moved 1 outputs to bad properties
+
+=== Latch Flip Rates (Total cycles: 1000, Seeds: 5) ===
+Latch    Flip Rate (%)
+-------- ------------
+10 88.00       
+11 97.00       
+12 84.00       
+13 83.00       
+14 15.00       
+15 19.00       
+16 20.00       
+17 46.00       
+18 23.00       
+19 48.00       
+20 23.00       
+21 48.00       
+22 24.00       
+23 48.00       
+24 24.00       
+25 48.00       
+26 22.00       
+27 37.00       
+28 2.00        
+29 1.00        
+30 2.00        
+31 0.00        
+32 2.00        
+33 0.00        
+34 2.00        
+35 0.00        
+36 31.00       
+37 2.00        
+38 11.00       
+39 0.00        
+40 57.00       
+41 54.00       
+42 52.00       
+43 50.00       
+44 98.00       
+45 94.00       
+46 92.00       
+47 92.00       
+48 48.00       
+49 50.00       
+50 50.00       
+51 49.00       
+52 50.00       
+53 52.00       
+54 54.00       
+55 57.00       
+56 92.00       
+57 92.00       
+58 94.00       
+59 98.00       
+60 33.00       
+61 18.00       
+62 5.00        
+=======================================
+
+[ADAPTIVE] Strategy change: High Flip First
+[ADAPTIVE] Strategy change: Default
+[ADAPTIVE] Strategy change: Reverse Topo
+[ADAPTIVE] Strategy change: Topo
+[ADAPTIVE] Strategy change: Default
+[ADAPTIVE] Strategy change: Low Flip First
+[ADAPTIVE] Strategy change: Default
+[0, 0, 0, 0, 0, 0, 0, 0, 477]
+53 59 89 78 128 0 57 370 0 
+SolverStatistic {
+    num_solve: 10591,
+    avg_decide_var: 0.506451,
+    num_simplify_subsume: 0,
+    num_simplify_self_subsume: 0,
+}
+Statistic {
+    case: eijkS344.aig,
+    time: 0.16s,
+    num_mic: 921,
+    avg_mic_cube_len: 5.823018,
+    avg_po_cube_len: 23.238832,
+    mic_drop: success: 820, fail: 4490, success rate: 15.44%,
+    num_down: 5310,
+    num_down_sat: 6386,
+    ctp: success: 0, fail: 1122, success rate: 0.00%,
+    num_get_bad: 428,
+    overall_block_time: 122.958708ms,
+    block_get_bad_time: 33.027704ms,
+    block_get_predecessor_time: 1.692894ms,
+    block_blocked_time: 9.95059ms,
+    block_mic_time: 64.876752ms,
+    block_push_time: 167.116µs,
+    overall_propagate_time: 32.01921ms,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: safe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Thu 17 Apr 2025 10:36:05 PM CST
+========================================

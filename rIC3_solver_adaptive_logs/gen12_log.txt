@@ -1,11 +1,12 @@
-File: ./hwmcc1920/aig/gen12.aig
-Command: ~/coding_env/rIC3-adaptive/target/release/rIC3 -e ic3 --ic3-adaptive-ordering ./hwmcc1920/aig/gen12.aig
-Started at: Thu 17 Apr 2025 05:02:40 PM CST
+File: ./hwmcc20/aig-1.8/gen12.aig
+Command: ~/coding_env/rIC3-adaptive/target/release/rIC3 -e ic3 --ic3-adaptive-ordering ./hwmcc20/aig-1.8/gen12.aig
+Started at: Fri 18 Apr 2025 05:57:07 AM CST
 ----------------------------------------
-the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc1920/aig/gen12.aig
+the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc20/aig-1.8/gen12.aig
 ==========================================
 ADAPTIVE ORDERING IS ENABLED FOR THIS RUN
 ==========================================
+Warning: property not found, moved 1 outputs to bad properties
 
 === Latch Flip Rates (Total cycles: 1000, Seeds: 5) ===
 Latch    Flip Rate (%)
@@ -537,8 +538,6 @@ Latch    Flip Rate (%)
 1134 5.00        
 =======================================
 
-[ADAPTIVE] Strategy change: Reverse Topo
-[ADAPTIVE] Strategy change: Topo
 [ADAPTIVE] Strategy change: Low Flip First
 [ADAPTIVE] Strategy change: Default
 [0, 0, 0, 8]
@@ -560,13 +559,13 @@ Statistic {
     num_down_sat: 8,
     ctp: success: 0, fail: 8, success rate: 0.00%,
     num_get_bad: 10,
-    overall_block_time: 414.566µs,
-    block_get_bad_time: 211.408µs,
+    overall_block_time: 419.755µs,
+    block_get_bad_time: 206.649µs,
     block_get_predecessor_time: 0ns,
-    block_blocked_time: 20.99µs,
-    block_mic_time: 31.694µs,
-    block_push_time: 155ns,
-    overall_propagate_time: 66.882µs,
+    block_blocked_time: 19.397µs,
+    block_mic_time: 31.679µs,
+    block_push_time: 150ns,
+    overall_propagate_time: 60.095µs,
     xor_gen: success: 0, fail: 0, success rate: NaN%,
     num_auxiliary_var: 0,
     test: success: 0, fail: 0, success rate: NaN%,
@@ -574,5 +573,5 @@ Statistic {
 result: safe
 ----------------------------------------
 STATUS: COMPLETED
-Finished at: Thu 17 Apr 2025 05:02:40 PM CST
+Finished at: Fri 18 Apr 2025 05:57:07 AM CST
 ========================================

@@ -1,12 +1,11 @@
-File: ./hwmcc1920/aig-1.8/cal149.aig
-Command: ~/coding_env/rIC3-adaptive/target/release/rIC3 -e ic3 --ic3-adaptive-ordering ./hwmcc1920/aig-1.8/cal149.aig
-Started at: Thu 17 Apr 2025 03:33:43 PM CST
+File: ./hwmcc1920cal/cal149.aig
+Command: ~/coding_env/rIC3-adaptive/target/release/rIC3 -e ic3 --ic3-adaptive-ordering ./hwmcc1920cal/cal149.aig
+Started at: Fri 18 Apr 2025 06:45:47 AM CST
 ----------------------------------------
-the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc1920/aig-1.8/cal149.aig
+the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc1920cal/cal149.aig
 ==========================================
 ADAPTIVE ORDERING IS ENABLED FOR THIS RUN
 ==========================================
-Warning: property not found, moved 1 outputs to bad properties
 
 === Latch Flip Rates (Total cycles: 1000, Seeds: 5) ===
 Latch    Flip Rate (%)
@@ -731,40 +730,43 @@ Latch    Flip Rate (%)
 2131 1.00        
 =======================================
 
+[ADAPTIVE] Strategy change: Topo
+[ADAPTIVE] Strategy change: Default
 [ADAPTIVE] Strategy change: Reverse Topo
+[ADAPTIVE] Strategy change: Topo
 [ADAPTIVE] Strategy change: Default
 [ADAPTIVE] Strategy change: Topo
-[ADAPTIVE] Strategy change: Low Flip First
 [ADAPTIVE] Strategy change: Reverse Topo
-[ADAPTIVE] Strategy change: High Flip First
-[ADAPTIVE] Strategy change: Topo
 [ADAPTIVE] Strategy change: Low Flip First
-[0, 0, 0, 0, 0, 0, 120, 764]
-468 1 40 7 0 1 709 
+[ADAPTIVE] Strategy change: Topo
+[ADAPTIVE] Strategy change: High Flip First
+[ADAPTIVE] Strategy change: Low Flip First
+[0, 0, 0, 0, 0, 0, 0, 821]
+468 1 30 0 7 2 658 0 
 SolverStatistic {
-    num_solve: 21538,
-    avg_decide_var: 0.229843,
+    num_solve: 19037,
+    avg_decide_var: 0.230639,
     num_simplify_subsume: 0,
     num_simplify_self_subsume: 0,
 }
 Statistic {
     case: cal149.aig,
-    time: 8.01s,
-    num_mic: 1322,
-    avg_mic_cube_len: 9.228442,
-    avg_po_cube_len: 43.768978,
-    mic_drop: success: 4344, fail: 7037, success rate: 38.17%,
-    num_down: 11381,
-    num_down_sat: 16475,
-    ctp: success: 0, fail: 1635, success rate: 0.00%,
-    num_get_bad: 250,
-    overall_block_time: 6.967772989s,
-    block_get_bad_time: 4.20412036s,
-    block_get_predecessor_time: 262.759507ms,
-    block_blocked_time: 508.806744ms,
-    block_mic_time: 1.491238849s,
-    block_push_time: 238.578126ms,
-    overall_propagate_time: 712.47993ms,
+    time: 9.09s,
+    num_mic: 1205,
+    avg_mic_cube_len: 8.546888,
+    avg_po_cube_len: 39.061067,
+    mic_drop: success: 3488, fail: 6283, success rate: 35.70%,
+    num_down: 9771,
+    num_down_sat: 14186,
+    ctp: success: 0, fail: 1554, success rate: 0.00%,
+    num_get_bad: 157,
+    overall_block_time: 7.810585369s,
+    block_get_bad_time: 4.810960541s,
+    block_get_predecessor_time: 281.425582ms,
+    block_blocked_time: 570.615478ms,
+    block_mic_time: 1.459491651s,
+    block_push_time: 472.242288ms,
+    overall_propagate_time: 918.762458ms,
     xor_gen: success: 0, fail: 0, success rate: NaN%,
     num_auxiliary_var: 0,
     test: success: 0, fail: 0, success rate: NaN%,
@@ -772,5 +774,5 @@ Statistic {
 result: safe
 ----------------------------------------
 STATUS: COMPLETED
-Finished at: Thu 17 Apr 2025 03:33:52 PM CST
+Finished at: Fri 18 Apr 2025 06:45:57 AM CST
 ========================================

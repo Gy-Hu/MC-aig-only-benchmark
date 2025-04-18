@@ -1,0 +1,93 @@
+File: ./hwmcc08/pdtviscoherence2.aig
+Command: ~/coding_env/rIC3-adaptive/target/release/rIC3 -e ic3 --ic3-adaptive-ordering ./hwmcc08/pdtviscoherence2.aig
+Started at: Thu 17 Apr 2025 10:36:27 PM CST
+----------------------------------------
+the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc08/pdtviscoherence2.aig
+==========================================
+ADAPTIVE ORDERING IS ENABLED FOR THIS RUN
+==========================================
+Warning: property not found, moved 1 outputs to bad properties
+
+=== Latch Flip Rates (Total cycles: 1000, Seeds: 5) ===
+Latch    Flip Rate (%)
+-------- ------------
+9 25.00       
+10 24.00       
+11 26.00       
+12 37.00       
+13 26.00       
+14 38.00       
+15 44.00       
+16 22.00       
+17 50.00       
+18 26.00       
+19 48.00       
+20 40.00       
+21 32.00       
+22 30.00       
+23 71.00       
+24 71.00       
+25 50.00       
+26 9.00        
+27 29.00       
+28 30.00       
+29 72.00       
+30 71.00       
+31 53.00       
+32 28.00       
+33 44.00       
+34 9.00        
+35 30.00       
+36 29.00       
+37 39.00       
+38 39.00       
+39 31.00       
+40 31.00       
+41 25.00       
+42 55.00       
+43 27.00       
+44 24.00       
+45 51.00       
+=======================================
+
+[ADAPTIVE] Strategy change: High Flip First
+[ADAPTIVE] Strategy change: Default
+[ADAPTIVE] Strategy change: High Flip First
+[ADAPTIVE] Strategy change: Default
+[ADAPTIVE] Strategy change: Topo
+[ADAPTIVE] Strategy change: Default
+[1, 1, 1, 5, 14]
+29 11 9 11 
+SolverStatistic {
+    num_solve: 185,
+    avg_decide_var: 0.692702,
+    num_simplify_subsume: 0,
+    num_simplify_self_subsume: 0,
+}
+Statistic {
+    case: pdtviscoherence2.aig,
+    time: 0.02s,
+    num_mic: 34,
+    avg_mic_cube_len: 3.235294,
+    avg_po_cube_len: 13.784483,
+    mic_drop: success: 21, fail: 83, success rate: 20.19%,
+    num_down: 104,
+    num_down_sat: 88,
+    ctp: success: 0, fail: 7, success rate: 0.00%,
+    num_get_bad: 6,
+    overall_block_time: 2.431657ms,
+    block_get_bad_time: 390.792µs,
+    block_get_predecessor_time: 640.024µs,
+    block_blocked_time: 475.78µs,
+    block_mic_time: 573.852µs,
+    block_push_time: 12.184µs,
+    overall_propagate_time: 214.365µs,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: unsafe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Thu 17 Apr 2025 10:36:29 PM CST
+========================================

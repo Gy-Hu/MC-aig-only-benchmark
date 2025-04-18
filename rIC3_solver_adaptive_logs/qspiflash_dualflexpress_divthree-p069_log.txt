@@ -1,11 +1,12 @@
-File: ./hwmcc1920/aig/qspiflash_dualflexpress_divthree-p069.aig
-Command: ~/coding_env/rIC3-adaptive/target/release/rIC3 -e ic3 --ic3-adaptive-ordering ./hwmcc1920/aig/qspiflash_dualflexpress_divthree-p069.aig
-Started at: Thu 17 Apr 2025 05:02:49 PM CST
+File: ./hwmcc20/aig-1.8/qspiflash_dualflexpress_divthree-p069.aig
+Command: ~/coding_env/rIC3-adaptive/target/release/rIC3 -e ic3 --ic3-adaptive-ordering ./hwmcc20/aig-1.8/qspiflash_dualflexpress_divthree-p069.aig
+Started at: Fri 18 Apr 2025 06:03:18 AM CST
 ----------------------------------------
-the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc1920/aig/qspiflash_dualflexpress_divthree-p069.aig
+the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc20/aig-1.8/qspiflash_dualflexpress_divthree-p069.aig
 ==========================================
 ADAPTIVE ORDERING IS ENABLED FOR THIS RUN
 ==========================================
+Warning: property not found, moved 1 outputs to bad properties
 
 === Latch Flip Rates (Total cycles: 1000, Seeds: 5) ===
 Latch    Flip Rate (%)
@@ -606,51 +607,53 @@ Latch    Flip Rate (%)
 706 100.00      
 707 100.00      
 708 100.00      
+709 100.00      
 =======================================
 
-[ADAPTIVE] Strategy change: Reverse Topo
+[ADAPTIVE] Strategy change: High Flip First
 [ADAPTIVE] Strategy change: Default
 [ADAPTIVE] Strategy change: High Flip First
 [ADAPTIVE] Strategy change: Default
-[ADAPTIVE] Strategy change: Low Flip First
+[ADAPTIVE] Strategy change: High Flip First
 [ADAPTIVE] Strategy change: Default
-[ADAPTIVE] Strategy change: Reverse Topo
-[ADAPTIVE] Strategy change: Default
-[ADAPTIVE] Strategy change: Topo
-[ADAPTIVE] Strategy change: Default
-[ADAPTIVE] Strategy change: Topo
 [ADAPTIVE] Strategy change: Reverse Topo
 [ADAPTIVE] Strategy change: Default
 [ADAPTIVE] Strategy change: High Flip First
+[ADAPTIVE] Strategy change: Reverse Topo
+[ADAPTIVE] Strategy change: High Flip First
 [ADAPTIVE] Strategy change: Default
-[ADAPTIVE] Strategy change: Low Flip First
+[ADAPTIVE] Strategy change: High Flip First
 [ADAPTIVE] Strategy change: Default
-[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 390, 117]
-78 3 9 12 18 25 28 23 27 32 46 28 7 5 5 6 2 0 118 
+[ADAPTIVE] Strategy change: Reverse Topo
+[ADAPTIVE] Strategy change: Default
+[ADAPTIVE] Strategy change: Reverse Topo
+[ADAPTIVE] Strategy change: Default
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 522, 164]
+79 12 15 31 25 23 27 25 33 45 54 47 46 23 17 9 6 6 4 2 1 0 164 
 SolverStatistic {
-    num_solve: 9886,
-    avg_decide_var: 0.425552,
+    num_solve: 18485,
+    avg_decide_var: 0.438806,
     num_simplify_subsume: 0,
     num_simplify_self_subsume: 0,
 }
 Statistic {
     case: qspiflash_dualflexpress_divthree-p069.aig,
-    time: 0.21s,
-    num_mic: 810,
-    avg_mic_cube_len: 4.866667,
-    avg_po_cube_len: 35.092132,
-    mic_drop: success: 616, fail: 3182, success rate: 16.22%,
-    num_down: 3798,
-    num_down_sat: 4968,
-    ctp: success: 0, fail: 1026, success rate: 0.00%,
-    num_get_bad: 48,
-    overall_block_time: 126.912261ms,
-    block_get_bad_time: 2.376888ms,
-    block_get_predecessor_time: 25.831174ms,
-    block_blocked_time: 18.495925ms,
-    block_mic_time: 63.002678ms,
-    block_push_time: 2.317978ms,
-    overall_propagate_time: 29.032082ms,
+    time: 0.35s,
+    num_mic: 1179,
+    avg_mic_cube_len: 6.057676,
+    avg_po_cube_len: 35.690754,
+    mic_drop: success: 1126, fail: 5744, success rate: 16.39%,
+    num_down: 6870,
+    num_down_sat: 10162,
+    ctp: success: 0, fail: 1580, success rate: 0.00%,
+    num_get_bad: 39,
+    overall_block_time: 229.58813ms,
+    block_get_bad_time: 1.672925ms,
+    block_get_predecessor_time: 35.06542ms,
+    block_blocked_time: 30.143641ms,
+    block_mic_time: 134.449491ms,
+    block_push_time: 5.685012ms,
+    overall_propagate_time: 60.524029ms,
     xor_gen: success: 0, fail: 0, success rate: NaN%,
     num_auxiliary_var: 0,
     test: success: 0, fail: 0, success rate: NaN%,
@@ -658,5 +661,5 @@ Statistic {
 result: safe
 ----------------------------------------
 STATUS: COMPLETED
-Finished at: Thu 17 Apr 2025 05:02:49 PM CST
+Finished at: Fri 18 Apr 2025 06:03:19 AM CST
 ========================================

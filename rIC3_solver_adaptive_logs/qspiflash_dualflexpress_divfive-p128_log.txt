@@ -1,11 +1,12 @@
-File: ./hwmcc1920/aig/qspiflash_dualflexpress_divfive-p128.aig
-Command: ~/coding_env/rIC3-adaptive/target/release/rIC3 -e ic3 --ic3-adaptive-ordering ./hwmcc1920/aig/qspiflash_dualflexpress_divfive-p128.aig
-Started at: Thu 17 Apr 2025 05:02:32 PM CST
+File: ./hwmcc20/aig-1.8/qspiflash_dualflexpress_divfive-p128.aig
+Command: ~/coding_env/rIC3-adaptive/target/release/rIC3 -e ic3 --ic3-adaptive-ordering ./hwmcc20/aig-1.8/qspiflash_dualflexpress_divfive-p128.aig
+Started at: Fri 18 Apr 2025 05:55:57 AM CST
 ----------------------------------------
-the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc1920/aig/qspiflash_dualflexpress_divfive-p128.aig
+the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc20/aig-1.8/qspiflash_dualflexpress_divfive-p128.aig
 ==========================================
 ADAPTIVE ORDERING IS ENABLED FOR THIS RUN
 ==========================================
+Warning: property not found, moved 1 outputs to bad properties
 
 === Latch Flip Rates (Total cycles: 1000, Seeds: 5) ===
 Latch    Flip Rate (%)
@@ -607,55 +608,43 @@ Latch    Flip Rate (%)
 707 100.00      
 708 100.00      
 709 100.00      
+710 100.00      
 =======================================
 
-[ADAPTIVE] Strategy change: High Flip First
-[ADAPTIVE] Strategy change: Default
-[ADAPTIVE] Strategy change: Reverse Topo
-[ADAPTIVE] Strategy change: Default
-[ADAPTIVE] Strategy change: High Flip First
-[ADAPTIVE] Strategy change: Default
-[ADAPTIVE] Strategy change: Topo
-[ADAPTIVE] Strategy change: Default
-[ADAPTIVE] Strategy change: Reverse Topo
-[ADAPTIVE] Strategy change: Default
-[ADAPTIVE] Strategy change: Topo
 [ADAPTIVE] Strategy change: Low Flip First
 [ADAPTIVE] Strategy change: Default
 [ADAPTIVE] Strategy change: Topo
 [ADAPTIVE] Strategy change: Default
-[ADAPTIVE] Strategy change: High Flip First
-[ADAPTIVE] Strategy change: Default
-[ADAPTIVE] Strategy change: Reverse Topo
+[ADAPTIVE] Strategy change: Low Flip First
 [ADAPTIVE] Strategy change: Default
 [ADAPTIVE] Strategy change: Topo
 [ADAPTIVE] Strategy change: Default
-[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 279, 124]
-78 5 7 5 13 4 9 6 13 8 12 11 10 7 8 4 5 5 3 5 2 2 10 3 1 0 124 
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 172]
+79 10 12 8 12 18 15 15 4 1 1 1 1 1 1 0 57 
 SolverStatistic {
-    num_solve: 5898,
-    avg_decide_var: 0.418797,
+    num_solve: 3099,
+    avg_decide_var: 0.431034,
     num_simplify_subsume: 0,
     num_simplify_self_subsume: 0,
 }
 Statistic {
     case: qspiflash_dualflexpress_divfive-p128.aig,
-    time: 0.16s,
-    num_mic: 422,
-    avg_mic_cube_len: 4.177725,
-    avg_po_cube_len: 39.976154,
-    mic_drop: success: 127, fail: 1610, success rate: 7.31%,
-    num_down: 1737,
-    num_down_sat: 2441,
-    ctp: success: 0, fail: 1221, success rate: 0.00%,
-    num_get_bad: 70,
-    overall_block_time: 80.277221ms,
-    block_get_bad_time: 4.017872ms,
-    block_get_predecessor_time: 20.724992ms,
-    block_blocked_time: 13.666628ms,
-    block_mic_time: 27.288341ms,
-    block_push_time: 4.885353ms,
-    overall_propagate_time: 16.40374ms,
+    time: 0.10s,
+    num_mic: 264,
+    avg_mic_cube_len: 4.765152,
+    avg_po_cube_len: 44.816129,
+    mic_drop: success: 83, fail: 1158, success rate: 6.69%,
+    num_down: 1241,
+    num_down_sat: 1583,
+    ctp: success: 0, fail: 503, success rate: 0.00%,
+    num_get_bad: 78,
+    overall_block_time: 41.659894ms,
+    block_get_bad_time: 4.489735ms,
+    block_get_predecessor_time: 6.03164ms,
+    block_blocked_time: 5.015308ms,
+    block_mic_time: 18.846286ms,
+    block_push_time: 679.372µs,
+    overall_propagate_time: 9.254469ms,
     xor_gen: success: 0, fail: 0, success rate: NaN%,
     num_auxiliary_var: 0,
     test: success: 0, fail: 0, success rate: NaN%,
@@ -663,5 +652,5 @@ Statistic {
 result: safe
 ----------------------------------------
 STATUS: COMPLETED
-Finished at: Thu 17 Apr 2025 05:02:32 PM CST
+Finished at: Fri 18 Apr 2025 05:55:58 AM CST
 ========================================

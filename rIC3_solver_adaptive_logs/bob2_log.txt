@@ -1,0 +1,90 @@
+File: ./hwmcc15/bob2.aig
+Command: ~/coding_env/rIC3-adaptive/target/release/rIC3 -e ic3 --ic3-adaptive-ordering ./hwmcc15/bob2.aig
+Started at: Thu 17 Apr 2025 08:52:32 PM CST
+----------------------------------------
+the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc15/bob2.aig
+==========================================
+ADAPTIVE ORDERING IS ENABLED FOR THIS RUN
+==========================================
+Warning: property not found, moved 1 outputs to bad properties
+
+=== Latch Flip Rates (Total cycles: 1000, Seeds: 5) ===
+Latch    Flip Rate (%)
+-------- ------------
+4 22.00       
+5 27.00       
+6 94.00       
+7 22.00       
+8 27.00       
+9 94.00       
+10 22.00       
+11 27.00       
+12 33.00       
+13 33.00       
+14 88.00       
+15 11.00       
+16 87.00       
+17 11.00       
+18 88.00       
+19 94.00       
+20 10.00       
+21 22.00       
+22 27.00       
+23 94.00       
+24 22.00       
+25 27.00       
+26 94.00       
+27 22.00       
+28 27.00       
+29 33.00       
+30 33.00       
+31 88.00       
+32 11.00       
+33 87.00       
+34 11.00       
+35 88.00       
+36 94.00       
+37 10.00       
+=======================================
+
+[ADAPTIVE] Strategy change: Low Flip First
+[ADAPTIVE] Strategy change: Default
+[ADAPTIVE] Strategy change: Low Flip First
+[ADAPTIVE] Strategy change: Default
+[ADAPTIVE] Strategy change: Topo
+[ADAPTIVE] Strategy change: Default
+[0, 0, 0, 0, 0, 0, 6, 24]
+17 3 3 1 2 0 26 
+SolverStatistic {
+    num_solve: 275,
+    avg_decide_var: 0.570133,
+    num_simplify_subsume: 0,
+    num_simplify_self_subsume: 0,
+}
+Statistic {
+    case: bob2.aig,
+    time: 0.00s,
+    num_mic: 53,
+    avg_mic_cube_len: 2.056604,
+    avg_po_cube_len: 8.508671,
+    mic_drop: success: 3, fail: 106, success rate: 2.75%,
+    num_down: 109,
+    num_down_sat: 79,
+    ctp: success: 0, fail: 62, success rate: 0.00%,
+    num_get_bad: 14,
+    overall_block_time: 1.033635ms,
+    block_get_bad_time: 159.571µs,
+    block_get_predecessor_time: 235.381µs,
+    block_blocked_time: 205.118µs,
+    block_mic_time: 207.479µs,
+    block_push_time: 37.923µs,
+    overall_propagate_time: 327µs,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: safe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Thu 17 Apr 2025 08:52:32 PM CST
+========================================

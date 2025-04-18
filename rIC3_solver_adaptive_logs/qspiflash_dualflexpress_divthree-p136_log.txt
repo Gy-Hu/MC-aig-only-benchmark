@@ -1,11 +1,12 @@
-File: ./hwmcc1920/aig/qspiflash_dualflexpress_divthree-p136.aig
-Command: ~/coding_env/rIC3-adaptive/target/release/rIC3 -e ic3 --ic3-adaptive-ordering ./hwmcc1920/aig/qspiflash_dualflexpress_divthree-p136.aig
-Started at: Thu 17 Apr 2025 05:01:58 PM CST
+File: ./hwmcc20/aig-1.8/qspiflash_dualflexpress_divthree-p136.aig
+Command: ~/coding_env/rIC3-adaptive/target/release/rIC3 -e ic3 --ic3-adaptive-ordering ./hwmcc20/aig-1.8/qspiflash_dualflexpress_divthree-p136.aig
+Started at: Fri 18 Apr 2025 05:35:45 AM CST
 ----------------------------------------
-the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc1920/aig/qspiflash_dualflexpress_divthree-p136.aig
+the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc20/aig-1.8/qspiflash_dualflexpress_divthree-p136.aig
 ==========================================
 ADAPTIVE ORDERING IS ENABLED FOR THIS RUN
 ==========================================
+Warning: property not found, moved 1 outputs to bad properties
 
 === Latch Flip Rates (Total cycles: 1000, Seeds: 5) ===
 Latch    Flip Rate (%)
@@ -606,50 +607,50 @@ Latch    Flip Rate (%)
 706 100.00      
 707 100.00      
 708 100.00      
+709 100.00      
 =======================================
 
-[ADAPTIVE] Strategy change: Low Flip First
-[ADAPTIVE] Strategy change: Default
-[ADAPTIVE] Strategy change: High Flip First
-[ADAPTIVE] Strategy change: Default
-[ADAPTIVE] Strategy change: High Flip First
-[ADAPTIVE] Strategy change: Default
 [ADAPTIVE] Strategy change: Reverse Topo
+[ADAPTIVE] Strategy change: Default
+[ADAPTIVE] Strategy change: Topo
 [ADAPTIVE] Strategy change: Default
 [ADAPTIVE] Strategy change: Low Flip First
 [ADAPTIVE] Strategy change: Default
+[ADAPTIVE] Strategy change: Reverse Topo
+[ADAPTIVE] Strategy change: Default
+[ADAPTIVE] Strategy change: Reverse Topo
+[ADAPTIVE] Strategy change: Default
+[ADAPTIVE] Strategy change: Low Flip First
 [ADAPTIVE] Strategy change: High Flip First
 [ADAPTIVE] Strategy change: Default
 [ADAPTIVE] Strategy change: Reverse Topo
 [ADAPTIVE] Strategy change: Default
-[ADAPTIVE] Strategy change: Reverse Topo
-[ADAPTIVE] Strategy change: Default
-[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 290, 84]
-77 3 12 11 14 23 17 13 9 12 11 8 7 9 12 12 14 11 3 2 3 1 0 85 
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 522, 115]
+78 13 13 11 26 36 34 41 48 33 32 30 26 20 14 24 15 6 1 0 116 
 SolverStatistic {
-    num_solve: 8166,
-    avg_decide_var: 0.414523,
+    num_solve: 15952,
+    avg_decide_var: 0.428069,
     num_simplify_subsume: 0,
     num_simplify_self_subsume: 0,
 }
 Statistic {
     case: qspiflash_dualflexpress_divthree-p136.aig,
-    time: 0.18s,
-    num_mic: 650,
-    avg_mic_cube_len: 4.395385,
-    avg_po_cube_len: 27.099665,
-    mic_drop: success: 529, fail: 2206, success rate: 19.34%,
-    num_down: 2735,
-    num_down_sat: 3370,
-    ctp: success: 0, fail: 1450, success rate: 0.00%,
-    num_get_bad: 57,
-    overall_block_time: 85.627627ms,
-    block_get_bad_time: 3.668271ms,
-    block_get_predecessor_time: 16.472856ms,
-    block_blocked_time: 12.455016ms,
-    block_mic_time: 40.159642ms,
-    block_push_time: 1.4207ms,
-    overall_propagate_time: 32.319783ms,
+    time: 0.33s,
+    num_mic: 1013,
+    avg_mic_cube_len: 6.184600,
+    avg_po_cube_len: 36.236657,
+    mic_drop: success: 1031, fail: 5003, success rate: 17.09%,
+    num_down: 6034,
+    num_down_sat: 8229,
+    ctp: success: 0, fail: 1560, success rate: 0.00%,
+    num_get_bad: 66,
+    overall_block_time: 204.291854ms,
+    block_get_bad_time: 5.208189ms,
+    block_get_predecessor_time: 30.011885ms,
+    block_blocked_time: 26.190901ms,
+    block_mic_time: 117.138383ms,
+    block_push_time: 3.852095ms,
+    overall_propagate_time: 66.547128ms,
     xor_gen: success: 0, fail: 0, success rate: NaN%,
     num_auxiliary_var: 0,
     test: success: 0, fail: 0, success rate: NaN%,
@@ -657,5 +658,5 @@ Statistic {
 result: safe
 ----------------------------------------
 STATUS: COMPLETED
-Finished at: Thu 17 Apr 2025 05:01:58 PM CST
+Finished at: Fri 18 Apr 2025 05:35:45 AM CST
 ========================================

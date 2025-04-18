@@ -1,0 +1,94 @@
+File: ./hwmcc08/pdtvistwo1.aig
+Command: ~/coding_env/rIC3-adaptive/target/release/rIC3 -e ic3 --ic3-adaptive-ordering ./hwmcc08/pdtvistwo1.aig
+Started at: Thu 17 Apr 2025 10:37:07 PM CST
+----------------------------------------
+the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc08/pdtvistwo1.aig
+==========================================
+ADAPTIVE ORDERING IS ENABLED FOR THIS RUN
+==========================================
+Warning: property not found, moved 1 outputs to bad properties
+
+=== Latch Flip Rates (Total cycles: 1000, Seeds: 5) ===
+Latch    Flip Rate (%)
+-------- ------------
+7 48.00       
+8 0.00        
+9 0.00        
+10 0.00        
+11 0.00        
+12 0.00        
+13 0.00        
+14 0.00        
+15 0.00        
+16 50.00       
+17 51.00       
+18 0.00        
+19 0.00        
+20 0.00        
+21 0.00        
+22 0.00        
+23 0.00        
+24 0.00        
+25 0.00        
+26 50.00       
+27 50.00       
+28 0.00        
+29 0.00        
+30 0.00        
+31 0.00        
+32 0.00        
+33 0.00        
+34 0.00        
+35 49.00       
+36 0.00        
+=======================================
+
+[ADAPTIVE] Strategy change: Low Flip First
+[ADAPTIVE] Strategy change: Default
+[ADAPTIVE] Strategy change: Topo
+[ADAPTIVE] Strategy change: Reverse Topo
+[ADAPTIVE] Strategy change: High Flip First
+[ADAPTIVE] Strategy change: Default
+[ADAPTIVE] Strategy change: Topo
+[ADAPTIVE] Strategy change: Default
+[ADAPTIVE] Strategy change: Reverse Topo
+[ADAPTIVE] Strategy change: High Flip First
+[ADAPTIVE] Strategy change: Reverse Topo
+[ADAPTIVE] Strategy change: Default
+[ADAPTIVE] Strategy change: Reverse Topo
+[ADAPTIVE] Strategy change: Low Flip First
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 151, 2093]
+30 6 17 44 58 75 154 317 286 218 183 160 118 83 43 15 2 0 1680 
+SolverStatistic {
+    num_solve: 155162,
+    avg_decide_var: 0.632195,
+    num_simplify_subsume: 0,
+    num_simplify_self_subsume: 0,
+}
+Statistic {
+    case: pdtvistwo1.aig,
+    time: 2.71s,
+    num_mic: 6995,
+    avg_mic_cube_len: 8.677341,
+    avg_po_cube_len: 30.000000,
+    mic_drop: success: 7332, fail: 51968, success rate: 12.36%,
+    num_down: 59300,
+    num_down_sat: 121177,
+    ctp: success: 0, fail: 12029, success rate: 0.00%,
+    num_get_bad: 20,
+    overall_block_time: 2.079506687s,
+    block_get_bad_time: 4.557203ms,
+    block_get_predecessor_time: 49.09604ms,
+    block_blocked_time: 294.020063ms,
+    block_mic_time: 1.613921949s,
+    block_push_time: 17.559562ms,
+    overall_propagate_time: 621.928562ms,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: safe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Thu 17 Apr 2025 10:37:13 PM CST
+========================================

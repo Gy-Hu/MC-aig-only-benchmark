@@ -1,0 +1,75 @@
+File: ./avr/opensource/h_Vending/h_Vending.aig
+Command: ~/coding_env/rIC3-adaptive/target/release/rIC3 -e ic3 --ic3-adaptive-ordering ./avr/opensource/h_Vending/h_Vending.aig
+Started at: Fri 18 Apr 2025 03:45:20 AM CST
+----------------------------------------
+the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/avr/opensource/h_Vending/h_Vending.aig
+==========================================
+ADAPTIVE ORDERING IS ENABLED FOR THIS RUN
+==========================================
+
+=== Latch Flip Rates (Total cycles: 1000, Seeds: 5) ===
+Latch    Flip Rate (%)
+-------- ------------
+246 84.00       
+247 87.00       
+248 86.00       
+249 87.00       
+250 45.00       
+251 48.00       
+252 92.00       
+253 90.00       
+254 90.00       
+255 90.00       
+256 2.00        
+257 5.00        
+258 87.00       
+259 85.00       
+260 85.00       
+261 85.00       
+262 5.00        
+263 3.00        
+264 7.00        
+265 0.00        
+266 5.00        
+267 11.00       
+=======================================
+
+[ADAPTIVE] Strategy change: Low Flip First
+[ADAPTIVE] Strategy change: Default
+[ADAPTIVE] Strategy change: Low Flip First
+[ADAPTIVE] Strategy change: Default
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 16]
+20 3 6 8 7 2 3 1 1 0 18 
+SolverStatistic {
+    num_solve: 723,
+    avg_decide_var: 0.481748,
+    num_simplify_subsume: 0,
+    num_simplify_self_subsume: 0,
+}
+Statistic {
+    case: h_Vending.aig,
+    time: 0.04s,
+    num_mic: 61,
+    avg_mic_cube_len: 5.278689,
+    avg_po_cube_len: 12.532468,
+    mic_drop: success: 81, fail: 232, success rate: 25.88%,
+    num_down: 313,
+    num_down_sat: 408,
+    ctp: success: 0, fail: 100, success rate: 0.00%,
+    num_get_bad: 16,
+    overall_block_time: 17.57772ms,
+    block_get_bad_time: 10.886591ms,
+    block_get_predecessor_time: 594.395µs,
+    block_blocked_time: 1.081749ms,
+    block_mic_time: 4.244201ms,
+    block_push_time: 67.185µs,
+    overall_propagate_time: 3.858636ms,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: safe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 18 Apr 2025 03:45:20 AM CST
+========================================

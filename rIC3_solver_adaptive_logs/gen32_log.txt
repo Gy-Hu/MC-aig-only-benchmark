@@ -1,8 +1,8 @@
-File: ./hwmcc19/single/aig/goel/industry/gen32/gen32.aig
-Command: ~/coding_env/rIC3-adaptive/target/release/rIC3 -e ic3 --ic3-adaptive-ordering ./hwmcc19/single/aig/goel/industry/gen32/gen32.aig
-Started at: Thu 17 Apr 2025 06:45:43 PM CST
+File: ./avr/industry/gen32/gen32.aig
+Command: ~/coding_env/rIC3-adaptive/target/release/rIC3 -e ic3 --ic3-adaptive-ordering ./avr/industry/gen32/gen32.aig
+Started at: Fri 18 Apr 2025 04:28:47 AM CST
 ----------------------------------------
-the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc19/single/aig/goel/industry/gen32/gen32.aig
+the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/avr/industry/gen32/gen32.aig
 ==========================================
 ADAPTIVE ORDERING IS ENABLED FOR THIS RUN
 ==========================================
@@ -522,14 +522,13 @@ Latch    Flip Rate (%)
 802 5.00        
 803 4.00        
 804 5.00        
-805 0.00        
+805 1.00        
 806 0.00        
-807 0.00        
-808 5.00        
-809 1.00        
+807 5.00        
+808 0.00        
+809 0.00        
 =======================================
 
-[ADAPTIVE] Strategy change: Low Flip First
 [0, 0, 0, 0, 3]
 3 1 0 3 
 SolverStatistic {
@@ -540,7 +539,7 @@ SolverStatistic {
 }
 Statistic {
     case: gen32.aig,
-    time: 0.04s,
+    time: 0.05s,
     num_mic: 4,
     avg_mic_cube_len: 2.000000,
     avg_po_cube_len: 3.461538,
@@ -549,13 +548,13 @@ Statistic {
     num_down_sat: 4,
     ctp: success: 0, fail: 3, success rate: 0.00%,
     num_get_bad: 4,
-    overall_block_time: 169.886µs,
-    block_get_bad_time: 54.759µs,
-    block_get_predecessor_time: 18.623µs,
-    block_blocked_time: 20.12µs,
-    block_mic_time: 19.542µs,
-    block_push_time: 15.955µs,
-    overall_propagate_time: 35.718µs,
+    overall_block_time: 157.476µs,
+    block_get_bad_time: 54.498µs,
+    block_get_predecessor_time: 16.811µs,
+    block_blocked_time: 19.583µs,
+    block_mic_time: 19.238µs,
+    block_push_time: 15.564µs,
+    overall_propagate_time: 34.061µs,
     xor_gen: success: 0, fail: 0, success rate: NaN%,
     num_auxiliary_var: 0,
     test: success: 0, fail: 0, success rate: NaN%,
@@ -563,5 +562,5 @@ Statistic {
 result: safe
 ----------------------------------------
 STATUS: COMPLETED
-Finished at: Thu 17 Apr 2025 06:45:43 PM CST
+Finished at: Fri 18 Apr 2025 04:28:47 AM CST
 ========================================

@@ -1,0 +1,77 @@
+File: ./hwmcc08/ringp0.aig
+Command: ~/coding_env/rIC3-adaptive/target/release/rIC3 -e ic3 --ic3-adaptive-ordering ./hwmcc08/ringp0.aig
+Started at: Thu 17 Apr 2025 10:36:03 PM CST
+----------------------------------------
+the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc08/ringp0.aig
+==========================================
+ADAPTIVE ORDERING IS ENABLED FOR THIS RUN
+==========================================
+Warning: property not found, moved 1 outputs to bad properties
+
+=== Latch Flip Rates (Total cycles: 1000, Seeds: 5) ===
+Latch    Flip Rate (%)
+-------- ------------
+16 50.00       
+17 50.00       
+18 47.00       
+19 50.00       
+20 51.00       
+21 49.00       
+22 49.00       
+23 49.00       
+24 49.00       
+25 49.00       
+26 49.00       
+27 50.00       
+28 50.00       
+29 48.00       
+30 99.00       
+31 99.00       
+32 99.00       
+33 99.00       
+34 99.00       
+35 99.00       
+36 99.00       
+37 48.00       
+38 99.00       
+39 0.00        
+40 100.00      
+=======================================
+
+[ADAPTIVE] Strategy change: High Flip First
+[ADAPTIVE] Strategy change: Default
+[1, 1, 1, 2, 19, 3]
+25 7 11 11 3 
+SolverStatistic {
+    num_solve: 201,
+    avg_decide_var: 0.690144,
+    num_simplify_subsume: 0,
+    num_simplify_self_subsume: 0,
+}
+Statistic {
+    case: ringp0.aig,
+    time: 0.01s,
+    num_mic: 32,
+    avg_mic_cube_len: 2.843750,
+    avg_po_cube_len: 16.957627,
+    mic_drop: success: 10, fail: 80, success rate: 11.11%,
+    num_down: 90,
+    num_down_sat: 98,
+    ctp: success: 0, fail: 3, success rate: 0.00%,
+    num_get_bad: 17,
+    overall_block_time: 1.545059ms,
+    block_get_bad_time: 247.56µs,
+    block_get_predecessor_time: 253.349µs,
+    block_blocked_time: 199.649µs,
+    block_mic_time: 445.35µs,
+    block_push_time: 5.518µs,
+    overall_propagate_time: 145.947µs,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: unsafe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Thu 17 Apr 2025 10:36:05 PM CST
+========================================

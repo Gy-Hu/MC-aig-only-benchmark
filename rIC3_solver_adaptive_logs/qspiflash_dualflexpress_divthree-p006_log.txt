@@ -1,11 +1,12 @@
-File: ./hwmcc1920/aig/qspiflash_dualflexpress_divthree-p006.aig
-Command: ~/coding_env/rIC3-adaptive/target/release/rIC3 -e ic3 --ic3-adaptive-ordering ./hwmcc1920/aig/qspiflash_dualflexpress_divthree-p006.aig
-Started at: Thu 17 Apr 2025 05:01:31 PM CST
+File: ./hwmcc20/aig-1.8/qspiflash_dualflexpress_divthree-p006.aig
+Command: ~/coding_env/rIC3-adaptive/target/release/rIC3 -e ic3 --ic3-adaptive-ordering ./hwmcc20/aig-1.8/qspiflash_dualflexpress_divthree-p006.aig
+Started at: Fri 18 Apr 2025 05:26:51 AM CST
 ----------------------------------------
-the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc1920/aig/qspiflash_dualflexpress_divthree-p006.aig
+the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc20/aig-1.8/qspiflash_dualflexpress_divthree-p006.aig
 ==========================================
 ADAPTIVE ORDERING IS ENABLED FOR THIS RUN
 ==========================================
+Warning: property not found, moved 1 outputs to bad properties
 
 === Latch Flip Rates (Total cycles: 1000, Seeds: 5) ===
 Latch    Flip Rate (%)
@@ -606,47 +607,40 @@ Latch    Flip Rate (%)
 706 100.00      
 707 100.00      
 708 100.00      
+709 100.00      
 =======================================
 
-[ADAPTIVE] Strategy change: Low Flip First
-[ADAPTIVE] Strategy change: Default
 [ADAPTIVE] Strategy change: Topo
-[ADAPTIVE] Strategy change: Default
-[ADAPTIVE] Strategy change: Topo
-[ADAPTIVE] Strategy change: Default
-[ADAPTIVE] Strategy change: Topo
-[ADAPTIVE] Strategy change: Default
 [ADAPTIVE] Strategy change: High Flip First
 [ADAPTIVE] Strategy change: Default
 [ADAPTIVE] Strategy change: High Flip First
-[ADAPTIVE] Strategy change: Reverse Topo
-[ADAPTIVE] Strategy change: Default
-[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 71, 147]
-72 2 5 5 50 3 2 2 1 0 148 
+[ADAPTIVE] Strategy change: Topo
+[0, 0, 0, 0, 0, 0, 0, 8, 186]
+73 8 10 6 45 3 0 124 
 SolverStatistic {
-    num_solve: 4772,
-    avg_decide_var: 0.484424,
+    num_solve: 3860,
+    avg_decide_var: 0.497522,
     num_simplify_subsume: 0,
     num_simplify_self_subsume: 0,
 }
 Statistic {
     case: qspiflash_dualflexpress_divthree-p006.aig,
-    time: 0.15s,
-    num_mic: 336,
-    avg_mic_cube_len: 6.741071,
-    avg_po_cube_len: 41.412075,
-    mic_drop: success: 283, fail: 1940, success rate: 12.73%,
-    num_down: 2223,
-    num_down_sat: 3075,
-    ctp: success: 0, fail: 696, success rate: 0.00%,
-    num_get_bad: 34,
-    overall_block_time: 85.531639ms,
-    block_get_bad_time: 2.046922ms,
-    block_get_predecessor_time: 11.051226ms,
-    block_blocked_time: 9.739677ms,
-    block_mic_time: 54.998512ms,
-    block_push_time: 2.497816ms,
-    overall_propagate_time: 8.808279ms,
+    time: 0.11s,
+    num_mic: 296,
+    avg_mic_cube_len: 6.429054,
+    avg_po_cube_len: 48.664436,
+    mic_drop: success: 159, fail: 1729, success rate: 8.42%,
+    num_down: 1888,
+    num_down_sat: 2771,
+    ctp: success: 0, fail: 207, success rate: 0.00%,
+    num_get_bad: 35,
+    overall_block_time: 68.095244ms,
+    block_get_bad_time: 2.337737ms,
+    block_get_predecessor_time: 8.864688ms,
+    block_blocked_time: 7.62403ms,
+    block_mic_time: 42.822412ms,
+    block_push_time: 1.381699ms,
+    overall_propagate_time: 4.362462ms,
     xor_gen: success: 0, fail: 0, success rate: NaN%,
     num_auxiliary_var: 0,
     test: success: 0, fail: 0, success rate: NaN%,
@@ -654,5 +648,5 @@ Statistic {
 result: safe
 ----------------------------------------
 STATUS: COMPLETED
-Finished at: Thu 17 Apr 2025 05:01:31 PM CST
+Finished at: Fri 18 Apr 2025 05:26:51 AM CST
 ========================================

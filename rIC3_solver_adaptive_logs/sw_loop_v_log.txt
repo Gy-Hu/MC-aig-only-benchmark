@@ -1,0 +1,70 @@
+File: ./avr/crafted/sw_loop_v/sw_loop_v.aig
+Command: ~/coding_env/rIC3-adaptive/target/release/rIC3 -e ic3 --ic3-adaptive-ordering ./avr/crafted/sw_loop_v/sw_loop_v.aig
+Started at: Fri 18 Apr 2025 03:48:51 AM CST
+----------------------------------------
+the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/avr/crafted/sw_loop_v/sw_loop_v.aig
+==========================================
+ADAPTIVE ORDERING IS ENABLED FOR THIS RUN
+==========================================
+
+=== Latch Flip Rates (Total cycles: 1000, Seeds: 5) ===
+Latch    Flip Rate (%)
+-------- ------------
+2 0.00        
+3 98.00       
+4 0.00        
+5 0.00        
+6 99.00       
+7 99.00       
+8 100.00      
+9 0.00        
+10 0.00        
+11 0.00        
+12 0.00        
+13 0.00        
+14 0.00        
+15 98.00       
+=======================================
+
+[ADAPTIVE] Strategy change: Low Flip First
+[ADAPTIVE] Strategy change: Topo
+[ADAPTIVE] Strategy change: Default
+[ADAPTIVE] Strategy change: Reverse Topo
+[ADAPTIVE] Strategy change: Default
+[ADAPTIVE] Strategy change: Reverse Topo
+[ADAPTIVE] Strategy change: Default
+[1, 1, 1, 1, 1, 1, 16, 15]
+14 2 5 6 4 5 11 
+SolverStatistic {
+    num_solve: 341,
+    avg_decide_var: inf,
+    num_simplify_subsume: 0,
+    num_simplify_self_subsume: 0,
+}
+Statistic {
+    case: sw_loop_v.aig,
+    time: 0.00s,
+    num_mic: 52,
+    avg_mic_cube_len: 3.230769,
+    avg_po_cube_len: 11.932039,
+    mic_drop: success: 14, fail: 150, success rate: 8.54%,
+    num_down: 164,
+    num_down_sat: 181,
+    ctp: success: 0, fail: 18, success rate: 0.00%,
+    num_get_bad: 12,
+    overall_block_time: 1.695619ms,
+    block_get_bad_time: 141.296µs,
+    block_get_predecessor_time: 273.329µs,
+    block_blocked_time: 317.443µs,
+    block_mic_time: 677.001µs,
+    block_push_time: 51.4µs,
+    overall_propagate_time: 175.723µs,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: unsafe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 18 Apr 2025 03:48:51 AM CST
+========================================
