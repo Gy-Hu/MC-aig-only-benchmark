@@ -1,0 +1,41 @@
+File: ./others/fastfir/fastfir.aig
+Command: ~/coding_env/rIC3-adaptive/target/release/rIC3 -e ic3 --ic3-reverse-sort --ic3-topo-sort ./others/fastfir/fastfir.aig
+Started at: Sat 19 Apr 2025 06:06:13 AM CST
+----------------------------------------
+the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/others/fastfir/fastfir.aig
+Warning: Multiple properties detected. rIC3 has compressed them into a single property.
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10006]
+1130 206 116 131 324 102 85 40 42 48 69 49 55 56 84 88 2311 163 246 30 22 10 6 3 0 70 1 7342 0 
+SolverStatistic {
+    num_solve: 316918,
+    avg_decide_var: 0.722233,
+    num_simplify_subsume: 3825,
+    num_simplify_self_subsume: 590,
+}
+Statistic {
+    case: fastfir.aig,
+    time: 284.67s,
+    num_mic: 14846,
+    avg_mic_cube_len: 6.987673,
+    avg_po_cube_len: 206.741222,
+    mic_drop: success: 19220, fail: 82469, success rate: 18.90%,
+    num_down: 101689,
+    num_down_sat: 133989,
+    ctp: success: 0, fail: 106086, success rate: 0.00%,
+    num_get_bad: 7810,
+    overall_block_time: 243.054521115s,
+    block_get_bad_time: 119.211985224s,
+    block_get_predecessor_time: 5.257966045s,
+    block_blocked_time: 8.697045258s,
+    block_mic_time: 66.321289398s,
+    block_push_time: 926.07252ms,
+    overall_propagate_time: 39.872229959s,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: safe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Sat 19 Apr 2025 06:11:00 AM CST
+========================================
