@@ -1,34 +1,35 @@
-File: ./hwmcc19/single/aig/wolf/2018A/zipcpu-busdelay-p36.aig
-Command: ~/coding_env/rIC3-adaptive/target/release/rIC3 -e ic3 --ic3-reverse-sort --ic3-topo-sort ./hwmcc19/single/aig/wolf/2018A/zipcpu-busdelay-p36.aig
-Started at: Sat 19 Apr 2025 12:51:26 AM CST
+File: ./hwmcc20/aig-1.8/zipcpu-busdelay-p36.aig
+Command: ~/coding_env/rIC3-adaptive/target/release/rIC3 -e ic3 --ic3-reverse-sort --ic3-topo-sort ./hwmcc20/aig-1.8/zipcpu-busdelay-p36.aig
+Started at: Sat 19 Apr 2025 12:58:23 PM CST
 ----------------------------------------
-the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc19/single/aig/wolf/2018A/zipcpu-busdelay-p36.aig
-[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 370, 556]
-49 6 13 24 33 41 52 45 37 40 95 98 78 32 35 12 4 2 0 699 
+the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc20/aig-1.8/zipcpu-busdelay-p36.aig
+Warning: property not found, moved 1 outputs to bad properties
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2349, 4294]
+50 9 18 20 17 21 27 31 37 52 52 93 50 36 52 95 102 113 100 142 174 275 303 278 248 196 107 23 3 1 0 5459 
 SolverStatistic {
-    num_solve: 52976,
-    avg_decide_var: 0.251344,
-    num_simplify_subsume: 0,
-    num_simplify_self_subsume: 0,
+    num_solve: 573343,
+    avg_decide_var: 0.275656,
+    num_simplify_subsume: 37547,
+    num_simplify_self_subsume: 16819,
 }
 Statistic {
     case: zipcpu-busdelay-p36.aig,
-    time: 0.80s,
-    num_mic: 2497,
-    avg_mic_cube_len: 9.258710,
-    avg_po_cube_len: 72.342649,
-    mic_drop: success: 3779, fail: 18380, success rate: 17.05%,
-    num_down: 22159,
-    num_down_sat: 35514,
-    ctp: success: 0, fail: 5818, success rate: 0.00%,
-    num_get_bad: 157,
-    overall_block_time: 602.853995ms,
-    block_get_bad_time: 11.890868ms,
-    block_get_predecessor_time: 51.92136ms,
-    block_blocked_time: 71.665828ms,
-    block_mic_time: 422.507715ms,
-    block_push_time: 2.87037ms,
-    overall_propagate_time: 183.102449ms,
+    time: 21.00s,
+    num_mic: 16696,
+    avg_mic_cube_len: 13.983289,
+    avg_po_cube_len: 58.715202,
+    mic_drop: success: 32378, fail: 197162, success rate: 14.11%,
+    num_down: 229540,
+    num_down_sat: 454572,
+    ctp: success: 0, fail: 48212, success rate: 0.00%,
+    num_get_bad: 267,
+    overall_block_time: 14.660706249s,
+    block_get_bad_time: 34.875038ms,
+    block_get_predecessor_time: 403.535707ms,
+    block_blocked_time: 1.449696057s,
+    block_mic_time: 11.30414219s,
+    block_push_time: 495.129205ms,
+    overall_propagate_time: 6.30892181s,
     xor_gen: success: 0, fail: 0, success rate: NaN%,
     num_auxiliary_var: 0,
     test: success: 0, fail: 0, success rate: NaN%,
@@ -36,5 +37,5 @@ Statistic {
 result: safe
 ----------------------------------------
 STATUS: COMPLETED
-Finished at: Sat 19 Apr 2025 12:51:27 AM CST
+Finished at: Sat 19 Apr 2025 12:58:44 PM CST
 ========================================

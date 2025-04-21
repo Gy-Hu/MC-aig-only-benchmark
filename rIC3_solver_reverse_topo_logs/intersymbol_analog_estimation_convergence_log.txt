@@ -1,40 +1,41 @@
-File: ./hwmcc19/single/aig/mann/unsafe/intersymbol_analog_estimation_convergence.aig
-Command: ~/coding_env/rIC3-adaptive/target/release/rIC3 -e ic3 --ic3-reverse-sort --ic3-topo-sort ./hwmcc19/single/aig/mann/unsafe/intersymbol_analog_estimation_convergence.aig
-Started at: Sat 19 Apr 2025 12:31:12 AM CST
+File: ./hwmcc20/aig-1.8/intersymbol_analog_estimation_convergence.aig
+Command: ~/coding_env/rIC3-adaptive/target/release/rIC3 -e ic3 --ic3-reverse-sort --ic3-topo-sort ./hwmcc20/aig-1.8/intersymbol_analog_estimation_convergence.aig
+Started at: Sat 19 Apr 2025 12:00:56 PM CST
 ----------------------------------------
-the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc19/single/aig/mann/unsafe/intersymbol_analog_estimation_convergence.aig
-[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 6, 2, 2, 1, 1, 2250, 16853]
-16 1 30 1 21 100 103 86 334 729 1013 1756 2344 5222 4874 6439 
+the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc20/aig-1.8/intersymbol_analog_estimation_convergence.aig
+Warning: property not found, moved 1 outputs to bad properties
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 901, 386]
+17 1 11 1 31 31 21 23 17 16 3 2 2 2 2 2 2 2 2 1 0 393 
 SolverStatistic {
-    num_solve: 1539398,
-    avg_decide_var: 0.663486,
-    num_simplify_subsume: 53927,
-    num_simplify_self_subsume: 38690,
+    num_solve: 45255,
+    avg_decide_var: 0.795626,
+    num_simplify_subsume: 0,
+    num_simplify_self_subsume: 0,
 }
 Statistic {
     case: intersymbol_analog_estimation_convergence.aig,
-    time: 1017.17s,
-    num_mic: 50388,
-    avg_mic_cube_len: 24.667361,
-    avg_po_cube_len: 70.338046,
-    mic_drop: success: 515513, fail: 654445, success rate: 44.06%,
-    num_down: 1169958,
-    num_down_sat: 1411600,
-    ctp: success: 0, fail: 9209, success rate: 0.00%,
-    num_get_bad: 2597,
-    overall_block_time: 981.35669257s,
-    block_get_bad_time: 2.46564898s,
-    block_get_predecessor_time: 8.816951858s,
-    block_blocked_time: 101.67941635s,
-    block_mic_time: 797.591139189s,
-    block_push_time: 6.660950993s,
-    overall_propagate_time: 35.698178361s,
+    time: 36.29s,
+    num_mic: 2105,
+    avg_mic_cube_len: 18.587648,
+    avg_po_cube_len: 43.547077,
+    mic_drop: success: 16408, fail: 19878, success rate: 45.22%,
+    num_down: 36286,
+    num_down_sat: 36144,
+    ctp: success: 0, fail: 4209, success rate: 0.00%,
+    num_get_bad: 502,
+    overall_block_time: 34.717052415s,
+    block_get_bad_time: 474.179671ms,
+    block_get_predecessor_time: 140.645395ms,
+    block_blocked_time: 2.29769008s,
+    block_mic_time: 29.524114687s,
+    block_push_time: 325.411066ms,
+    overall_propagate_time: 1.504178673s,
     xor_gen: success: 0, fail: 0, success rate: NaN%,
     num_auxiliary_var: 0,
     test: success: 0, fail: 0, success rate: NaN%,
 }
-result: unsafe
+result: safe
 ----------------------------------------
 STATUS: COMPLETED
-Finished at: Sat 19 Apr 2025 12:48:10 AM CST
+Finished at: Sat 19 Apr 2025 12:01:33 PM CST
 ========================================
