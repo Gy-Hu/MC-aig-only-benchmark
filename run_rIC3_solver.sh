@@ -30,7 +30,7 @@ done
 echo "Running with $PARALLEL_JOBS parallel jobs"
 
 # Create a directory to store logs
-LOG_DIR="rIC3_solver_reverse_topo_logs"
+LOG_DIR="rIC3_solver_reverse_topo_inn_logs"
 mkdir -p "$LOG_DIR"
 
 # Find all .aig and .aag files recursively
@@ -59,12 +59,12 @@ process_file() {
     # Run rIC3 solver with timeout
     {
         echo "File: $FILE"
-        echo "Command: ~/coding_env/rIC3-adaptive/target/release/rIC3 -e ic3 --ic3-reverse-sort --ic3-topo-sort $FILE"
+        echo "Command: ~/coding_env/rIC3-adaptive/target/release/rIC3 -e ic3 --ic3-inn --ic3-reverse-sort --ic3-topo-sort $FILE"
         echo "Started at: $(date)"
         echo "----------------------------------------"
         
         # Run the solver with timeout and capture output
-        timeout 3600 ~/coding_env/rIC3-adaptive/target/release/rIC3 -e ic3 --ic3-topo-sort --ic3-reverse-sort "$FILE" 2>&1
+        timeout 3600 ~/coding_env/rIC3-adaptive/target/release/rIC3 -e ic3 --ic3-inn --ic3-topo-sort --ic3-reverse-sort "$FILE" 2>&1
         
         # Check if the command timed out
         if [ $? -eq 124 ]; then

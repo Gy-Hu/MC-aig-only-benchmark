@@ -1,0 +1,41 @@
+File: ./hwmcc20/aig-1.8/vis_arrays_buf_bug.aig
+Command: ~/coding_env/rIC3-adaptive/target/release/rIC3 -e ic3 --ic3-inn --ic3-reverse-sort --ic3-topo-sort ./hwmcc20/aig-1.8/vis_arrays_buf_bug.aig
+Started at: Tue 22 Apr 2025 11:24:40 AM CST
+----------------------------------------
+the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc20/aig-1.8/vis_arrays_buf_bug.aig
+Warning: property not found, moved 1 outputs to bad properties
+[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 377, 377, 1961, 84]
+22 4 5 9 14 18 27 43 74 102 166 295 420 809 787 1820 84 
+SolverStatistic {
+    num_solve: 183711,
+    avg_decide_var: 0.493686,
+    num_simplify_subsume: 587,
+    num_simplify_self_subsume: 8,
+}
+Statistic {
+    case: vis_arrays_buf_bug.aig,
+    time: 5.08s,
+    num_mic: 9406,
+    avg_mic_cube_len: 9.063151,
+    avg_po_cube_len: 16.529532,
+    mic_drop: success: 18844, fail: 62174, success rate: 23.26%,
+    num_down: 81018,
+    num_down_sat: 158885,
+    ctp: success: 0, fail: 753, success rate: 0.00%,
+    num_get_bad: 17,
+    overall_block_time: 4.946917669s,
+    block_get_bad_time: 11.504µs,
+    block_get_predecessor_time: 72.927941ms,
+    block_blocked_time: 671.24686ms,
+    block_mic_time: 3.879704443s,
+    block_push_time: 27.331823ms,
+    overall_propagate_time: 135.334046ms,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: unsafe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Tue 22 Apr 2025 11:24:45 AM CST
+========================================

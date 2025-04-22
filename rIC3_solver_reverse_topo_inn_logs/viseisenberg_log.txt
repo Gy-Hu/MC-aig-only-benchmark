@@ -1,0 +1,41 @@
+File: ./hwmcc08/viseisenberg.aig
+Command: ~/coding_env/rIC3-adaptive/target/release/rIC3 -e ic3 --ic3-inn --ic3-reverse-sort --ic3-topo-sort ./hwmcc08/viseisenberg.aig
+Started at: Tue 22 Apr 2025 02:31:04 AM CST
+----------------------------------------
+the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc08/viseisenberg.aig
+Warning: property not found, moved 1 outputs to bad properties
+[1, 1, 1, 1, 1, 1, 11, 36, 33, 8, 74]
+18 5 10 16 17 20 22 20 16 48 
+SolverStatistic {
+    num_solve: 2631,
+    avg_decide_var: 0.556303,
+    num_simplify_subsume: 0,
+    num_simplify_self_subsume: 0,
+}
+Statistic {
+    case: viseisenberg.aig,
+    time: 0.07s,
+    num_mic: 314,
+    avg_mic_cube_len: 4.130573,
+    avg_po_cube_len: 11.380639,
+    mic_drop: success: 299, fail: 905, success rate: 24.83%,
+    num_down: 1204,
+    num_down_sat: 1572,
+    ctp: success: 0, fail: 80, success rate: 0.00%,
+    num_get_bad: 10,
+    overall_block_time: 67.362205ms,
+    block_get_bad_time: 6.538µs,
+    block_get_predecessor_time: 10.653761ms,
+    block_blocked_time: 9.403179ms,
+    block_mic_time: 34.469851ms,
+    block_push_time: 3.167001ms,
+    overall_propagate_time: 3.040306ms,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: unsafe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Tue 22 Apr 2025 02:31:05 AM CST
+========================================
