@@ -1,34 +1,35 @@
-File: ./hwmcc1920/aig/qspiflash_dualflexpress_divfive-p128.aig
-Command: ~/coding_env/rIC3-adaptive/target/release/rIC3 -e ic3 --ic3-high-flip-rate-first --ic3-flip-rate-sort ./hwmcc1920/aig/qspiflash_dualflexpress_divfive-p128.aig
-Started at: Tue 22 Apr 2025 10:19:11 PM CST
+File: ./hwmcc20/aig-1.8/qspiflash_dualflexpress_divfive-p128.aig
+Command: ~/coding_env/rIC3-adaptive/target/release/rIC3 -e ic3 --ic3-high-flip-rate-first --ic3-flip-rate-sort ./hwmcc20/aig-1.8/qspiflash_dualflexpress_divfive-p128.aig
+Started at: Wed 23 Apr 2025 11:25:13 AM CST
 ----------------------------------------
-the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc1920/aig/qspiflash_dualflexpress_divfive-p128.aig
-[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 139]
-78 5 7 7 4 3 2 2 2 2 1 1 1 2 1 1 1 1 1 0 50 0 
+the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc20/aig-1.8/qspiflash_dualflexpress_divfive-p128.aig
+Warning: property not found, moved 1 outputs to bad properties
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 370, 133]
+79 10 12 8 18 24 25 18 11 13 17 10 9 8 9 9 6 2 1 0 135 
 SolverStatistic {
-    num_solve: 1730,
-    avg_decide_var: 0.407842,
+    num_solve: 9634,
+    avg_decide_var: 0.463387,
     num_simplify_subsume: 0,
     num_simplify_self_subsume: 0,
 }
 Statistic {
     case: qspiflash_dualflexpress_divfive-p128.aig,
-    time: 0.06s,
-    num_mic: 170,
-    avg_mic_cube_len: 2.805882,
-    avg_po_cube_len: 26.141753,
-    mic_drop: success: 50, fail: 418, success rate: 10.68%,
-    num_down: 468,
-    num_down_sat: 458,
-    ctp: success: 0, fail: 612, success rate: 0.00%,
-    num_get_bad: 65,
-    overall_block_time: 22.147198ms,
-    block_get_bad_time: 3.695121ms,
-    block_get_predecessor_time: 4.77309ms,
-    block_blocked_time: 3.137229ms,
-    block_mic_time: 5.147781ms,
-    block_push_time: 877.149µs,
-    overall_propagate_time: 7.285008ms,
+    time: 0.20s,
+    num_mic: 579,
+    avg_mic_cube_len: 5.839378,
+    avg_po_cube_len: 50.472803,
+    mic_drop: success: 252, fail: 3091, success rate: 7.54%,
+    num_down: 3343,
+    num_down_sat: 5971,
+    ctp: success: 0, fail: 931, success rate: 0.00%,
+    num_get_bad: 111,
+    overall_block_time: 149.704364ms,
+    block_get_bad_time: 7.436324ms,
+    block_get_predecessor_time: 24.312924ms,
+    block_blocked_time: 18.555839ms,
+    block_mic_time: 76.788564ms,
+    block_push_time: 5.966758ms,
+    overall_propagate_time: 17.653598ms,
     xor_gen: success: 0, fail: 0, success rate: NaN%,
     num_auxiliary_var: 0,
     test: success: 0, fail: 0, success rate: NaN%,
@@ -36,5 +37,5 @@ Statistic {
 result: safe
 ----------------------------------------
 STATUS: COMPLETED
-Finished at: Tue 22 Apr 2025 10:19:11 PM CST
+Finished at: Wed 23 Apr 2025 11:25:14 AM CST
 ========================================

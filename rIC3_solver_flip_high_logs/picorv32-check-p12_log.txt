@@ -1,34 +1,35 @@
-File: ./hwmcc1920/aig/picorv32-check-p12.aig
-Command: ~/coding_env/rIC3-adaptive/target/release/rIC3 -e ic3 --ic3-high-flip-rate-first --ic3-flip-rate-sort ./hwmcc1920/aig/picorv32-check-p12.aig
-Started at: Tue 22 Apr 2025 10:20:00 PM CST
+File: ./hwmcc20/aig-1.8/picorv32-check-p12.aig
+Command: ~/coding_env/rIC3-adaptive/target/release/rIC3 -e ic3 --ic3-high-flip-rate-first --ic3-flip-rate-sort ./hwmcc20/aig-1.8/picorv32-check-p12.aig
+Started at: Wed 23 Apr 2025 11:44:40 AM CST
 ----------------------------------------
-the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc1920/aig/picorv32-check-p12.aig
-[0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 3, 70]
-2 1 2 4 6 6 3 0 3 3 56 
+the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc20/aig-1.8/picorv32-check-p12.aig
+Warning: property not found, moved 1 outputs to bad properties
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 73]
+3 1 1 2 4 5 8 2 0 1 56 0 
 SolverStatistic {
-    num_solve: 1196,
-    avg_decide_var: 0.025761,
+    num_solve: 1584,
+    avg_decide_var: 0.027503,
     num_simplify_subsume: 0,
     num_simplify_self_subsume: 0,
 }
 Statistic {
     case: picorv32-check-p12.aig,
-    time: 0.20s,
-    num_mic: 123,
-    avg_mic_cube_len: 4.040650,
-    avg_po_cube_len: 14.997753,
-    mic_drop: success: 46, fail: 443, success rate: 9.41%,
-    num_down: 489,
-    num_down_sat: 531,
-    ctp: success: 0, fail: 252, success rate: 0.00%,
-    num_get_bad: 13,
-    overall_block_time: 27.951505ms,
-    block_get_bad_time: 8.877435ms,
-    block_get_predecessor_time: 4.670179ms,
-    block_blocked_time: 4.542992ms,
-    block_mic_time: 7.278939ms,
-    block_push_time: 823.44µs,
-    overall_propagate_time: 6.325247ms,
+    time: 0.23s,
+    num_mic: 142,
+    avg_mic_cube_len: 5.218310,
+    avg_po_cube_len: 14.909664,
+    mic_drop: success: 71, fail: 663, success rate: 9.67%,
+    num_down: 734,
+    num_down_sat: 912,
+    ctp: success: 0, fail: 225, success rate: 0.00%,
+    num_get_bad: 14,
+    overall_block_time: 35.206559ms,
+    block_get_bad_time: 9.583868ms,
+    block_get_predecessor_time: 4.686594ms,
+    block_blocked_time: 4.881506ms,
+    block_mic_time: 13.445744ms,
+    block_push_time: 815.039µs,
+    overall_propagate_time: 7.249411ms,
     xor_gen: success: 0, fail: 0, success rate: NaN%,
     num_auxiliary_var: 0,
     test: success: 0, fail: 0, success rate: NaN%,
@@ -36,5 +37,5 @@ Statistic {
 result: safe
 ----------------------------------------
 STATUS: COMPLETED
-Finished at: Tue 22 Apr 2025 10:20:00 PM CST
+Finished at: Wed 23 Apr 2025 11:44:41 AM CST
 ========================================

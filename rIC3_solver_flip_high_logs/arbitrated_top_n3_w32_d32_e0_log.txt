@@ -3,3 +3,38 @@ Command: ~/coding_env/rIC3-adaptive/target/release/rIC3 -e ic3 --ic3-high-flip-r
 Started at: Tue 22 Apr 2025 10:20:53 PM CST
 ----------------------------------------
 the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc19/single/aig/mann/data-integrity/unsafe/arbitrated_top_n3_w32_d32_e0.aig
+[1, 1, 1, 2, 3, 2, 4, 3, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 13, 7, 1, 1, 1, 1, 13251]
+1 10 22 27 40 54 84 108 189 219 284 317 310 332 413 609 587 654 914 1025 1012 1023 1163 1348 1241 1225 1753 1737 1648 1593 1738 2694 5748 
+SolverStatistic {
+    num_solve: 2015262,
+    avg_decide_var: 0.409618,
+    num_simplify_subsume: 129325,
+    num_simplify_self_subsume: 201945,
+}
+Statistic {
+    case: arbitrated_top_n3_w32_d32_e0.aig,
+    time: 300.14s,
+    num_mic: 47057,
+    avg_mic_cube_len: 15.781903,
+    avg_po_cube_len: 36.138036,
+    mic_drop: success: 117944, fail: 607716, success rate: 16.25%,
+    num_down: 725660,
+    num_down_sat: 1659231,
+    ctp: success: 0, fail: 68579, success rate: 0.00%,
+    num_get_bad: 1572,
+    overall_block_time: 248.480042681s,
+    block_get_bad_time: 3.336102355s,
+    block_get_predecessor_time: 1.386583723s,
+    block_blocked_time: 13.863202397s,
+    block_mic_time: 209.206958273s,
+    block_push_time: 674.905193ms,
+    overall_propagate_time: 50.50096396s,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: unsafe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Tue 22 Apr 2025 10:25:54 PM CST
+========================================
