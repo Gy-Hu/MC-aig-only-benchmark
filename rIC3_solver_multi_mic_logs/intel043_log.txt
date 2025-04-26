@@ -1,0 +1,50 @@
+File: ./hwmcc1517/intel043.aig
+Command: ~/coding_env/rIC3-exp-param/target/release/rIC3 -e ic3 --ic3-multi-clauses 5 ./hwmcc1517/intel043.aig
+Started at: Fri 25 Apr 2025 09:08:14 PM CST
+----------------------------------------
+the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc1517/intel043.aig
+Warning: property not found, moved 1 outputs to bad properties
+abc preprocess timeout
+[0, 0, 0, 0, 0, 441]
+3830 1 41 0 405 0 
+SolverStatistic {
+    num_solve: 109722,
+    avg_decide_var: 0.877777,
+    num_simplify_subsume: 0,
+    num_simplify_self_subsume: 0,
+}
+Multi-clause generation statistics:
+  Total clauses generated: 2225
+  Unique clauses generated: 1950
+  Unique clause rate: 87.64%
+Statistic {
+    case: intel043.aig,
+    time: 323.55s,
+    num_mic: 2670,
+    avg_mic_cube_len: 32.923596,
+    avg_po_cube_len: 3375.034367,
+    mic_drop: success: 577, fail: 72445, success rate: 0.79%,
+    num_down: 73022,
+    num_down_sat: 109068,
+    ctp: success: 0, fail: 68, success rate: 0.00%,
+    num_get_bad: 440,
+    overall_block_time: 321.936655996s,
+    block_get_bad_time: 4.144505686s,
+    block_get_predecessor_time: 55.625631ms,
+    block_blocked_time: 950.813425ms,
+    block_mic_time: 611.352687137s,
+    block_push_time: 7.347511ms,
+    overall_propagate_time: 854.734377ms,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+    total_pred_samples: 0,
+    successful_pred_samples: 0,
+    total_multi_clauses: 2225,
+    unique_multi_clauses: 1950,
+}
+result: safe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 25 Apr 2025 09:13:43 PM CST
+========================================

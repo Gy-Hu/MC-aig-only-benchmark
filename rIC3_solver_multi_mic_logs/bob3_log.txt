@@ -1,0 +1,49 @@
+File: ./hwmcc-appr/bob3.aig
+Command: ~/coding_env/rIC3-exp-param/target/release/rIC3 -e ic3 --ic3-multi-clauses 5 ./hwmcc-appr/bob3.aig
+Started at: Fri 25 Apr 2025 02:16:36 PM CST
+----------------------------------------
+the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc-appr/bob3.aig
+Warning: property not found, moved 1 outputs to bad properties
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 545]
+70 2 10 5 6 9 7 7 4 0 19 24 23 29 41 62 98 152 315 0 
+SolverStatistic {
+    num_solve: 39707,
+    avg_decide_var: 0.497049,
+    num_simplify_subsume: 0,
+    num_simplify_self_subsume: 0,
+}
+Multi-clause generation statistics:
+  Total clauses generated: 5815
+  Unique clauses generated: 3716
+  Unique clause rate: 63.90%
+Statistic {
+    case: bob3.aig,
+    time: 0.40s,
+    num_mic: 6978,
+    avg_mic_cube_len: 4.563199,
+    avg_po_cube_len: 27.896686,
+    mic_drop: success: 3725, fail: 21345, success rate: 14.86%,
+    num_down: 25070,
+    num_down_sat: 31044,
+    ctp: success: 0, fail: 2346, success rate: 0.00%,
+    num_get_bad: 56,
+    overall_block_time: 351.352864ms,
+    block_get_bad_time: 4.724997ms,
+    block_get_predecessor_time: 28.330109ms,
+    block_blocked_time: 23.213899ms,
+    block_mic_time: 538.909093ms,
+    block_push_time: 1.072667ms,
+    overall_propagate_time: 39.705661ms,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+    total_pred_samples: 0,
+    successful_pred_samples: 0,
+    total_multi_clauses: 5815,
+    unique_multi_clauses: 3716,
+}
+result: safe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 25 Apr 2025 02:16:37 PM CST
+========================================

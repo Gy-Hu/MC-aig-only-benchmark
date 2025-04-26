@@ -1,0 +1,49 @@
+File: ./hwmcc24/2024/hku/refinement_checking/bv/ILA_Flute_SLL_problem.aig
+Command: ~/coding_env/rIC3-exp-param/target/release/rIC3 -e ic3 --ic3-multi-clauses 5 ./hwmcc24/2024/hku/refinement_checking/bv/ILA_Flute_SLL_problem.aig
+Started at: Sat 26 Apr 2025 08:41:16 AM CST
+----------------------------------------
+the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc24/2024/hku/refinement_checking/bv/ILA_Flute_SLL_problem.aig
+abc preprocess timeout
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3715]
+864 7 8 4 3 4 6 15 20 16 22 23 53 38 18 21 8 2 1 0 298 726 0 
+SolverStatistic {
+    num_solve: 743815,
+    avg_decide_var: 0.017049,
+    num_simplify_subsume: 1021,
+    num_simplify_self_subsume: 299,
+}
+Multi-clause generation statistics:
+  Total clauses generated: 31710
+  Unique clauses generated: 26171
+  Unique clause rate: 82.53%
+Statistic {
+    case: ILA_Flute_SLL_problem.aig,
+    time: 617.31s,
+    num_mic: 38052,
+    avg_mic_cube_len: 14.202933,
+    avg_po_cube_len: 985.730086,
+    mic_drop: success: 34528, fail: 391579, success rate: 8.10%,
+    num_down: 426107,
+    num_down_sat: 701101,
+    ctp: success: 0, fail: 9491, success rate: 0.00%,
+    num_get_bad: 56,
+    overall_block_time: 562.964366934s,
+    block_get_bad_time: 8.180975584s,
+    block_get_predecessor_time: 18.959717736s,
+    block_blocked_time: 19.710474335s,
+    block_mic_time: 1003.527326353s,
+    block_push_time: 482.956313ms,
+    overall_propagate_time: 12.361349972s,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+    total_pred_samples: 0,
+    successful_pred_samples: 0,
+    total_multi_clauses: 31710,
+    unique_multi_clauses: 26171,
+}
+result: safe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Sat 26 Apr 2025 08:51:45 AM CST
+========================================

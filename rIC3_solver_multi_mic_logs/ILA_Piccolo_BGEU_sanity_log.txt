@@ -1,0 +1,48 @@
+File: ./hwmcc24/2024/hku/refinement_checking/bv/ILA_Piccolo_BGEU_sanity.aig
+Command: ~/coding_env/rIC3-exp-param/target/release/rIC3 -e ic3 --ic3-multi-clauses 5 ./hwmcc24/2024/hku/refinement_checking/bv/ILA_Piccolo_BGEU_sanity.aig
+Started at: Sat 26 Apr 2025 08:36:52 AM CST
+----------------------------------------
+the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc24/2024/hku/refinement_checking/bv/ILA_Piccolo_BGEU_sanity.aig
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 667, 11]
+328 3 6 4 6 2 12 3 7 21 60 39 44 16 3 3 0 163 
+SolverStatistic {
+    num_solve: 10234,
+    avg_decide_var: 0.361432,
+    num_simplify_subsume: 0,
+    num_simplify_self_subsume: 0,
+}
+Multi-clause generation statistics:
+  Total clauses generated: 2375
+  Unique clauses generated: 1090
+  Unique clause rate: 45.89%
+Statistic {
+    case: ILA_Piccolo_BGEU_sanity.aig,
+    time: 15.82s,
+    num_mic: 2850,
+    avg_mic_cube_len: 2.837895,
+    avg_po_cube_len: 2333.680264,
+    mic_drop: success: 920, fail: 5474, success rate: 14.39%,
+    num_down: 6394,
+    num_down_sat: 6272,
+    ctp: success: 0, fail: 1234, success rate: 0.00%,
+    num_get_bad: 264,
+    overall_block_time: 13.195412074s,
+    block_get_bad_time: 3.646962226s,
+    block_get_predecessor_time: 2.453669608s,
+    block_blocked_time: 1.083916003s,
+    block_mic_time: 7.329625s,
+    block_push_time: 26.340384ms,
+    overall_propagate_time: 1.032235501s,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+    total_pred_samples: 0,
+    successful_pred_samples: 0,
+    total_multi_clauses: 2375,
+    unique_multi_clauses: 1090,
+}
+result: safe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Sat 26 Apr 2025 08:37:12 AM CST
+========================================

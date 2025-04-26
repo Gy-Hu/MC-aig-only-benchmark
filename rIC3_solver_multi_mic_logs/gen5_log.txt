@@ -1,0 +1,48 @@
+File: ./avr/industry/gen5/gen5.aig
+Command: ~/coding_env/rIC3-exp-param/target/release/rIC3 -e ic3 --ic3-multi-clauses 5 ./avr/industry/gen5/gen5.aig
+Started at: Sat 26 Apr 2025 04:46:58 AM CST
+----------------------------------------
+the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/avr/industry/gen5/gen5.aig
+[0, 0, 512]
+1 0 512 
+SolverStatistic {
+    num_solve: 3584,
+    avg_decide_var: 0.537842,
+    num_simplify_subsume: 0,
+    num_simplify_self_subsume: 0,
+}
+Multi-clause generation statistics:
+  Total clauses generated: 2560
+  Unique clauses generated: 1024
+  Unique clause rate: 40.00%
+Statistic {
+    case: gen5.aig,
+    time: 0.30s,
+    num_mic: 3072,
+    avg_mic_cube_len: 2.000000,
+    avg_po_cube_len: 2.000000,
+    mic_drop: success: 0, fail: 5120, success rate: 0.00%,
+    num_down: 5120,
+    num_down_sat: 2560,
+    ctp: success: 0, fail: 512, success rate: 0.00%,
+    num_get_bad: 514,
+    overall_block_time: 268.847012ms,
+    block_get_bad_time: 75.293732ms,
+    block_get_predecessor_time: 0ns,
+    block_blocked_time: 5.077511ms,
+    block_mic_time: 132.013041ms,
+    block_push_time: 17.238µs,
+    overall_propagate_time: 8.825144ms,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+    total_pred_samples: 0,
+    successful_pred_samples: 0,
+    total_multi_clauses: 2560,
+    unique_multi_clauses: 1024,
+}
+result: safe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Sat 26 Apr 2025 04:46:59 AM CST
+========================================

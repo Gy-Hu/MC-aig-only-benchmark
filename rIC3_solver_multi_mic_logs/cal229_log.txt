@@ -1,0 +1,49 @@
+File: ./avr/industry/cal229/cal229.aig
+Command: ~/coding_env/rIC3-exp-param/target/release/rIC3 -e ic3 --ic3-multi-clauses 5 ./avr/industry/cal229/cal229.aig
+Started at: Sat 26 Apr 2025 04:19:44 AM CST
+----------------------------------------
+the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/avr/industry/cal229/cal229.aig
+abc preprocess timeout
+[0, 0, 0, 0, 96]
+2836 1 0 80 0 
+SolverStatistic {
+    num_solve: 2641,
+    avg_decide_var: 0.007766,
+    num_simplify_subsume: 0,
+    num_simplify_self_subsume: 0,
+}
+Multi-clause generation statistics:
+  Total clauses generated: 505
+  Unique clauses generated: 333
+  Unique clause rate: 65.94%
+Statistic {
+    case: cal229.aig,
+    time: 1.78s,
+    num_mic: 606,
+    avg_mic_cube_len: 5.336634,
+    avg_po_cube_len: 25.813107,
+    mic_drop: success: 352, fail: 1720, success rate: 16.99%,
+    num_down: 2072,
+    num_down_sat: 2418,
+    ctp: success: 0, fail: 37, success rate: 0.00%,
+    num_get_bad: 60,
+    overall_block_time: 1.245175352s,
+    block_get_bad_time: 1.014938636s,
+    block_get_predecessor_time: 8.454518ms,
+    block_blocked_time: 13.592032ms,
+    block_mic_time: 244.621374ms,
+    block_push_time: 188.883µs,
+    overall_propagate_time: 5.583004ms,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+    total_pred_samples: 0,
+    successful_pred_samples: 0,
+    total_multi_clauses: 505,
+    unique_multi_clauses: 333,
+}
+result: safe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Sat 26 Apr 2025 04:19:51 AM CST
+========================================

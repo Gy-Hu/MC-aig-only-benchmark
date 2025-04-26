@@ -1,0 +1,49 @@
+File: ./hwmcc24/2024/hku/refinement_checking/bv/ILA_Flute_XORI_sanity.aig
+Command: ~/coding_env/rIC3-exp-param/target/release/rIC3 -e ic3 --ic3-multi-clauses 5 ./hwmcc24/2024/hku/refinement_checking/bv/ILA_Flute_XORI_sanity.aig
+Started at: Sat 26 Apr 2025 08:31:00 AM CST
+----------------------------------------
+the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc24/2024/hku/refinement_checking/bv/ILA_Flute_XORI_sanity.aig
+abc preprocess timeout
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1905]
+864 4 5 6 3 11 9 45 41 46 74 33 34 6 8 12 6 0 256 70 113 557 0 
+SolverStatistic {
+    num_solve: 294819,
+    avg_decide_var: 0.019358,
+    num_simplify_subsume: 0,
+    num_simplify_self_subsume: 0,
+}
+Multi-clause generation statistics:
+  Total clauses generated: 20475
+  Unique clauses generated: 16628
+  Unique clause rate: 81.21%
+Statistic {
+    case: ILA_Flute_XORI_sanity.aig,
+    time: 333.42s,
+    num_mic: 24570,
+    avg_mic_cube_len: 11.419536,
+    avg_po_cube_len: 300.839580,
+    mic_drop: success: 10765, fail: 217102, success rate: 4.72%,
+    num_down: 227867,
+    num_down_sat: 273460,
+    ctp: success: 0, fail: 4485, success rate: 0.00%,
+    num_get_bad: 169,
+    overall_block_time: 285.894747949s,
+    block_get_bad_time: 24.653737109s,
+    block_get_predecessor_time: 6.582555845s,
+    block_blocked_time: 6.129758101s,
+    block_mic_time: 477.436519308s,
+    block_push_time: 254.32894ms,
+    overall_propagate_time: 7.807342344s,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+    total_pred_samples: 0,
+    successful_pred_samples: 0,
+    total_multi_clauses: 20475,
+    unique_multi_clauses: 16628,
+}
+result: safe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Sat 26 Apr 2025 08:36:45 AM CST
+========================================

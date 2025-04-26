@@ -1,0 +1,49 @@
+File: ./hwmcc15/power2sum256.aig
+Command: ~/coding_env/rIC3-exp-param/target/release/rIC3 -e ic3 --ic3-multi-clauses 5 ./hwmcc15/power2sum256.aig
+Started at: Fri 25 Apr 2025 11:38:32 PM CST
+----------------------------------------
+the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc15/power2sum256.aig
+Warning: property not found, moved 1 outputs to bad properties
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 4]
+30 1 1 1 1 1 1 0 1 6 
+SolverStatistic {
+    num_solve: 940,
+    avg_decide_var: 0.483153,
+    num_simplify_subsume: 0,
+    num_simplify_self_subsume: 0,
+}
+Multi-clause generation statistics:
+  Total clauses generated: 65
+  Unique clauses generated: 35
+  Unique clause rate: 53.85%
+Statistic {
+    case: power2sum256.aig,
+    time: 0.01s,
+    num_mic: 78,
+    avg_mic_cube_len: 6.538462,
+    avg_po_cube_len: 29.742857,
+    mic_drop: success: 29, fail: 393, success rate: 6.87%,
+    num_down: 422,
+    num_down_sat: 912,
+    ctp: success: 0, fail: 0, success rate: NaN%,
+    num_get_bad: 13,
+    overall_block_time: 4.3631ms,
+    block_get_bad_time: 402.12µs,
+    block_get_predecessor_time: 37.077µs,
+    block_blocked_time: 109.183µs,
+    block_mic_time: 7.20249ms,
+    block_push_time: 8.983µs,
+    overall_propagate_time: 71.971µs,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+    total_pred_samples: 0,
+    successful_pred_samples: 0,
+    total_multi_clauses: 65,
+    unique_multi_clauses: 35,
+}
+result: safe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 25 Apr 2025 11:38:32 PM CST
+========================================

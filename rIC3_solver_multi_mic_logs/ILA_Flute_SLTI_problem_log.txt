@@ -1,0 +1,49 @@
+File: ./hwmcc24/2024/hku/refinement_checking/bv/ILA_Flute_SLTI_problem.aig
+Command: ~/coding_env/rIC3-exp-param/target/release/rIC3 -e ic3 --ic3-multi-clauses 5 ./hwmcc24/2024/hku/refinement_checking/bv/ILA_Flute_SLTI_problem.aig
+Started at: Sat 26 Apr 2025 08:30:26 AM CST
+----------------------------------------
+the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc24/2024/hku/refinement_checking/bv/ILA_Flute_SLTI_problem.aig
+abc preprocess timeout
+[0, 0, 0, 0, 0, 0, 0, 0, 172]
+864 1 0 2 31 6 3 41 0 
+SolverStatistic {
+    num_solve: 4563,
+    avg_decide_var: 0.017085,
+    num_simplify_subsume: 0,
+    num_simplify_self_subsume: 0,
+}
+Multi-clause generation statistics:
+  Total clauses generated: 1010
+  Unique clauses generated: 507
+  Unique clause rate: 50.20%
+Statistic {
+    case: ILA_Flute_SLTI_problem.aig,
+    time: 23.04s,
+    num_mic: 1212,
+    avg_mic_cube_len: 3.589109,
+    avg_po_cube_len: 323.299810,
+    mic_drop: success: 506, fail: 2871, success rate: 14.98%,
+    num_down: 3377,
+    num_down_sat: 3711,
+    ctp: success: 0, fail: 24, success rate: 0.00%,
+    num_get_bad: 17,
+    overall_block_time: 7.225593862s,
+    block_get_bad_time: 3.307834972s,
+    block_get_predecessor_time: 541.182067ms,
+    block_blocked_time: 378.702486ms,
+    block_mic_time: 4.43192389s,
+    block_push_time: 7.408519ms,
+    overall_propagate_time: 120.815173ms,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+    total_pred_samples: 0,
+    successful_pred_samples: 0,
+    total_multi_clauses: 1010,
+    unique_multi_clauses: 507,
+}
+result: safe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Sat 26 Apr 2025 08:31:00 AM CST
+========================================
