@@ -1,0 +1,49 @@
+File: ./hwmcc-appr/intel061.aig
+Command: ~/coding_env/rIC3-exp-param/target/release/rIC3 -e ic3 --ic3-pred-samples 5 ./hwmcc-appr/intel061.aig
+Started at: Mon 28 Apr 2025 10:20:45 AM CST
+----------------------------------------
+the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc-appr/intel061.aig
+Warning: property not found, moved 1 outputs to bad properties
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5355, 398]
+166 7 33 19 40 28 80 112 205 107 106 41 53 7 6 1 0 423 
+SolverStatistic {
+    num_solve: 48399,
+    avg_decide_var: 0.866836,
+    num_simplify_subsume: 0,
+    num_simplify_self_subsume: 0,
+}
+Predecessor sampling statistics:
+  Total samples attempted: 5290
+  Successful samples: 5145
+  Success rate: 97.26%
+Statistic {
+    case: intel061.aig,
+    time: 3.58s,
+    num_mic: 2637,
+    avg_mic_cube_len: 6.811149,
+    avg_po_cube_len: 110.320828,
+    mic_drop: success: 3163, fail: 13977, success rate: 18.45%,
+    num_down: 17140,
+    num_down_sat: 28195,
+    ctp: success: 0, fail: 3772, success rate: 0.00%,
+    num_get_bad: 625,
+    overall_block_time: 3.062997512s,
+    block_get_bad_time: 97.014875ms,
+    block_get_predecessor_time: 763.224377ms,
+    block_blocked_time: 237.735074ms,
+    block_mic_time: 1.266191408s,
+    block_push_time: 23.613197ms,
+    overall_propagate_time: 463.582228ms,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+    total_pred_samples: 5290,
+    successful_pred_samples: 5145,
+    total_multi_clauses: 0,
+    unique_multi_clauses: 0,
+}
+result: safe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Mon 28 Apr 2025 10:20:50 AM CST
+========================================
