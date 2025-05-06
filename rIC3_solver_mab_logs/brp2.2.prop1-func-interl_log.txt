@@ -1,0 +1,50 @@
+File: ./hwmcc1920/aig-1.8/brp2.2.prop1-func-interl.aig
+Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./hwmcc1920/aig-1.8/brp2.2.prop1-func-interl.aig
+Started at: Tue 06 May 2025 09:43:02 PM CST
+----------------------------------------
+Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc1920/aig-1.8/brp2.2.prop1-func-interl.aig
+Warning: property not found, moved 1 outputs to bad properties
+[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 255, 246]
+188 5 4 3 2 4 4 5 5 4 11 10 16 12 28 25 30 33 41 41 51 54 58 58 68 64 71 73 84 81 89 102 124 177 160 187 163 185 223 210 211 222 195 207 220 296 217 230 222 236 247 241 226 242 248 313 347 396 419 471 573 609 665 621 519 997 
+
+--- Contextual MAB Statistics ---
+Arm pulls:
+  Arm 0 (Heuristic): 2 pulls
+  Arm 1 (limit=0, max=0, level=0): 3 pulls
+  Arm 2 (limit=1, max=3, level=1): 2 pulls
+  Arm 3 (limit=2, max=5, level=1): 2 pulls
+  Arm 4 (limit=8, max=4, level=1): 1939 pulls
+----------------------------
+SolverStatistic {
+    num_solve: 786806,
+    avg_decide_var: 1.182148,
+    num_simplify_subsume: 78949,
+    num_simplify_self_subsume: 60454,
+}
+Statistic {
+    case: brp2.2.prop1-func-interl.aig,
+    time: 55.78s,
+    num_mic: 22242,
+    avg_mic_cube_len: 11.961919,
+    avg_po_cube_len: 82.342052,
+    mic_drop: success: 74271, fail: 162794, success rate: 31.33%,
+    num_down: 237065,
+    num_down_sat: 369348,
+    ctp: success: 0, fail: 62144, success rate: 0.00%,
+    num_get_bad: 77,
+    overall_block_time: 37.859752405s,
+    block_get_bad_time: 18.536651ms,
+    block_get_predecessor_time: 8.712596886s,
+    block_blocked_time: 211.055703ms,
+    block_mic_time: 49.931936408s,
+    block_push_time: 338.710227ms,
+    overall_propagate_time: 17.724466859s,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: unsafe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Tue 06 May 2025 09:43:58 PM CST
+========================================

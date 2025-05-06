@@ -1,0 +1,50 @@
+File: ./hwmcc-appr/bobsmi2c.aig
+Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./hwmcc-appr/bobsmi2c.aig
+Started at: Tue 06 May 2025 07:39:11 PM CST
+----------------------------------------
+Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc-appr/bobsmi2c.aig
+Warning: property not found, moved 1 outputs to bad properties
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 560, 458]
+260 96 111 79 46 69 23 19 21 20 36 22 22 11 11 14 8 22 9 7 4 7 7 9 11 8 19 5 6 5 4 11 7 4 4 11 20 16 14 8 30 42 72 45 25 10 9 6 6 0 583 
+
+--- Contextual MAB Statistics ---
+Arm pulls:
+  Arm 0 (Heuristic): 39 pulls
+  Arm 1 (limit=0, max=0, level=0): 32 pulls
+  Arm 2 (limit=1, max=3, level=1): 1387 pulls
+  Arm 3 (limit=2, max=5, level=1): 62 pulls
+  Arm 4 (limit=8, max=4, level=1): 438 pulls
+----------------------------
+SolverStatistic {
+    num_solve: 74892,
+    avg_decide_var: 0.394615,
+    num_simplify_subsume: 0,
+    num_simplify_self_subsume: 0,
+}
+Statistic {
+    case: bobsmi2c.aig,
+    time: 2.57s,
+    num_mic: 2848,
+    avg_mic_cube_len: 3.719101,
+    avg_po_cube_len: 92.975587,
+    mic_drop: success: 2264, fail: 7761, success rate: 22.58%,
+    num_down: 10025,
+    num_down_sat: 11270,
+    ctp: success: 0, fail: 33340, success rate: 0.00%,
+    num_get_bad: 440,
+    overall_block_time: 1.313769504s,
+    block_get_bad_time: 239.803457ms,
+    block_get_predecessor_time: 232.7168ms,
+    block_blocked_time: 101.487613ms,
+    block_mic_time: 878.091789ms,
+    block_push_time: 23.509646ms,
+    overall_propagate_time: 1.12223648s,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: safe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Tue 06 May 2025 07:39:14 PM CST
+========================================

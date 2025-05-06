@@ -1,0 +1,49 @@
+File: ./hwmcc1920/fraig/picorv32_mutAY_nomem-p7.aig
+Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./hwmcc1920/fraig/picorv32_mutAY_nomem-p7.aig
+Started at: Tue 06 May 2025 08:52:13 PM CST
+----------------------------------------
+Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc1920/fraig/picorv32_mutAY_nomem-p7.aig
+[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 3, 15, 1, 11, 46311, 13641]
+2049 60 7 69 117 2359 10905 25177 38532 24179 18025 4139 4643 10529 5085 
+
+--- Contextual MAB Statistics ---
+Arm pulls:
+  Arm 0 (Heuristic): 112430 pulls
+  Arm 1 (limit=0, max=0, level=0): 714 pulls
+  Arm 2 (limit=1, max=3, level=1): 3700 pulls
+  Arm 3 (limit=2, max=5, level=1): 8479 pulls
+  Arm 4 (limit=8, max=4, level=1): 9048 pulls
+----------------------------
+SolverStatistic {
+    num_solve: 3024286,
+    avg_decide_var: 0.330195,
+    num_simplify_subsume: 97770,
+    num_simplify_self_subsume: 24716,
+}
+Statistic {
+    case: picorv32_mutAY_nomem-p7.aig,
+    time: 1714.92s,
+    num_mic: 214616,
+    avg_mic_cube_len: 6.342253,
+    avg_po_cube_len: 299.636827,
+    mic_drop: success: 381064, fail: 814789, success rate: 31.87%,
+    num_down: 1195853,
+    num_down_sat: 1448795,
+    ctp: success: 0, fail: 66771, success rate: 0.00%,
+    num_get_bad: 63,
+    overall_block_time: 1421.928972811s,
+    block_get_bad_time: 410.707284ms,
+    block_get_predecessor_time: 266.890040393s,
+    block_blocked_time: 119.677305754s,
+    block_mic_time: 1248.166990761s,
+    block_push_time: 4.735644657s,
+    overall_propagate_time: 292.061237498s,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: unsafe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Tue 06 May 2025 09:20:50 PM CST
+========================================

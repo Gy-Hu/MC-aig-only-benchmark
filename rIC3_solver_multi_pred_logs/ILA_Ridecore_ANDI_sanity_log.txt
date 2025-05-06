@@ -1,0 +1,49 @@
+File: ./hwmcc24/2024/hku/refinement_checking/bv/ILA_Ridecore_ANDI_sanity.aig
+Command: ~/coding_env/rIC3-exp-param/target/release/rIC3 -e ic3 --ic3-pred-samples 5 ./hwmcc24/2024/hku/refinement_checking/bv/ILA_Ridecore_ANDI_sanity.aig
+Started at: Thu 01 May 2025 04:13:31 AM CST
+----------------------------------------
+the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc24/2024/hku/refinement_checking/bv/ILA_Ridecore_ANDI_sanity.aig
+abc preprocess timeout
+[5, 5, 1, 58, 5, 5, 371, 206, 69656]
+6831 169 124 333 645 3253 12878 11877 
+SolverStatistic {
+    num_solve: 928681,
+    avg_decide_var: 0.211115,
+    num_simplify_subsume: 9084,
+    num_simplify_self_subsume: 19616,
+}
+Predecessor sampling statistics:
+  Total samples attempted: 67825
+  Successful samples: 67532
+  Success rate: 99.57%
+Statistic {
+    case: ILA_Ridecore_ANDI_sanity.aig,
+    time: 2988.66s,
+    num_mic: 33985,
+    avg_mic_cube_len: 15.230013,
+    avg_po_cube_len: 2570.183721,
+    mic_drop: success: 75912, fail: 409683, success rate: 15.63%,
+    num_down: 485595,
+    num_down_sat: 797907,
+    ctp: success: 0, fail: 2442, success rate: 0.00%,
+    num_get_bad: 2787,
+    overall_block_time: 2972.186736653s,
+    block_get_bad_time: 82.057999916s,
+    block_get_predecessor_time: 729.298583481s,
+    block_blocked_time: 731.532822928s,
+    block_mic_time: 956.148274001s,
+    block_push_time: 578.204112ms,
+    overall_propagate_time: 12.754048973s,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+    total_pred_samples: 67825,
+    successful_pred_samples: 67532,
+    total_multi_clauses: 0,
+    unique_multi_clauses: 0,
+}
+result: unsafe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Thu 01 May 2025 05:03:27 AM CST
+========================================

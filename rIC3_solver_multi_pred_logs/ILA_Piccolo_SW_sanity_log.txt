@@ -1,0 +1,48 @@
+File: ./hwmcc24/2024/hku/refinement_checking/bv/ILA_Piccolo_SW_sanity.aig
+Command: ~/coding_env/rIC3-exp-param/target/release/rIC3 -e ic3 --ic3-pred-samples 5 ./hwmcc24/2024/hku/refinement_checking/bv/ILA_Piccolo_SW_sanity.aig
+Started at: Thu 01 May 2025 04:18:46 AM CST
+----------------------------------------
+the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc24/2024/hku/refinement_checking/bv/ILA_Piccolo_SW_sanity.aig
+[1, 1, 1, 1, 1, 1, 1, 2, 5, 1, 953]
+328 3 11 6 7 10 15 28 49 124 
+SolverStatistic {
+    num_solve: 4215,
+    avg_decide_var: 0.425356,
+    num_simplify_subsume: 0,
+    num_simplify_self_subsume: 0,
+}
+Predecessor sampling statistics:
+  Total samples attempted: 1715
+  Successful samples: 851
+  Success rate: 49.62%
+Statistic {
+    case: ILA_Piccolo_SW_sanity.aig,
+    time: 8.09s,
+    num_mic: 369,
+    avg_mic_cube_len: 3.501355,
+    avg_po_cube_len: 2182.666069,
+    mic_drop: success: 205, fail: 1026, success rate: 16.65%,
+    num_down: 1231,
+    num_down_sat: 1672,
+    ctp: success: 0, fail: 427, success rate: 0.00%,
+    num_get_bad: 126,
+    overall_block_time: 7.050717085s,
+    block_get_bad_time: 889.209885ms,
+    block_get_predecessor_time: 2.617195064s,
+    block_blocked_time: 643.304485ms,
+    block_mic_time: 951.338443ms,
+    block_push_time: 12.262778ms,
+    overall_propagate_time: 219.925382ms,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+    total_pred_samples: 1715,
+    successful_pred_samples: 851,
+    total_multi_clauses: 0,
+    unique_multi_clauses: 0,
+}
+result: unsafe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Thu 01 May 2025 04:18:59 AM CST
+========================================

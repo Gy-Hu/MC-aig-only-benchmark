@@ -1,0 +1,50 @@
+File: ./hwmcc1920/aig-1.8/arbitrated_top_n3_w32_d32_e0.aig
+Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./hwmcc1920/aig-1.8/arbitrated_top_n3_w32_d32_e0.aig
+Started at: Tue 06 May 2025 09:31:29 PM CST
+----------------------------------------
+Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc1920/aig-1.8/arbitrated_top_n3_w32_d32_e0.aig
+Warning: property not found, moved 1 outputs to bad properties
+[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 3488]
+2 10 26 24 48 53 99 90 207 132 176 127 295 192 286 233 601 281 410 277 612 379 593 447 1053 769 1079 872 1288 1089 1328 1216 2320 2836 
+
+--- Contextual MAB Statistics ---
+Arm pulls:
+  Arm 0 (Heuristic): 10 pulls
+  Arm 1 (limit=0, max=0, level=0): 10 pulls
+  Arm 2 (limit=1, max=3, level=1): 4255 pulls
+  Arm 3 (limit=2, max=5, level=1): 10 pulls
+  Arm 4 (limit=8, max=4, level=1): 10296 pulls
+----------------------------
+SolverStatistic {
+    num_solve: 1558184,
+    avg_decide_var: 0.514508,
+    num_simplify_subsume: 14259,
+    num_simplify_self_subsume: 23933,
+}
+Statistic {
+    case: arbitrated_top_n3_w32_d32_e0.aig,
+    time: 496.63s,
+    num_mic: 30127,
+    avg_mic_cube_len: 13.424071,
+    avg_po_cube_len: 28.928632,
+    mic_drop: success: 80319, fail: 309247, success rate: 20.62%,
+    num_down: 389566,
+    num_down_sat: 581688,
+    ctp: success: 0, fail: 43575, success rate: 0.00%,
+    num_get_bad: 1620,
+    overall_block_time: 470.713619052s,
+    block_get_bad_time: 2.872170771s,
+    block_get_predecessor_time: 38.307769285s,
+    block_blocked_time: 2.641227781s,
+    block_mic_time: 497.056649246s,
+    block_push_time: 292.297455ms,
+    overall_propagate_time: 24.805186203s,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: unsafe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Tue 06 May 2025 09:39:47 PM CST
+========================================

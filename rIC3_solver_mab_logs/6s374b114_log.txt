@@ -1,0 +1,50 @@
+File: ./hwmcc-appr/6s374b114.aig
+Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./hwmcc-appr/6s374b114.aig
+Started at: Tue 06 May 2025 07:39:12 PM CST
+----------------------------------------
+Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc-appr/6s374b114.aig
+Warning: property not found, moved 1 outputs to bad properties
+[0, 0, 0, 0, 1, 28]
+31 9 1 0 28 
+
+--- Contextual MAB Statistics ---
+Arm pulls:
+  Arm 0 (Heuristic): 43 pulls
+  Arm 1 (limit=0, max=0, level=0): 0 pulls
+  Arm 2 (limit=1, max=3, level=1): 0 pulls
+  Arm 3 (limit=2, max=5, level=1): 0 pulls
+  Arm 4 (limit=8, max=4, level=1): 0 pulls
+----------------------------
+SolverStatistic {
+    num_solve: 225,
+    avg_decide_var: 0.474866,
+    num_simplify_subsume: 0,
+    num_simplify_self_subsume: 0,
+}
+Statistic {
+    case: 6s374b114.aig,
+    time: 0.01s,
+    num_mic: 43,
+    avg_mic_cube_len: 2.186047,
+    avg_po_cube_len: 7.885714,
+    mic_drop: success: 17, fail: 77, success rate: 18.09%,
+    num_down: 94,
+    num_down_sat: 62,
+    ctp: success: 0, fail: 58, success rate: 0.00%,
+    num_get_bad: 9,
+    overall_block_time: 3.323328ms,
+    block_get_bad_time: 653.939µs,
+    block_get_predecessor_time: 720.413µs,
+    block_blocked_time: 627.148µs,
+    block_mic_time: 534.078µs,
+    block_push_time: 98.671µs,
+    overall_propagate_time: 571.837µs,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: safe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Tue 06 May 2025 07:39:12 PM CST
+========================================

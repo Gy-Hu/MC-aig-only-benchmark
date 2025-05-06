@@ -1,14 +1,15 @@
-File: ./hwmcc1920/fraig/mul7.aig
-Command: ~/coding_env/rIC3-exp-param/target/release/rIC3 -e ic3 --ic3-pred-samples 5 ./hwmcc1920/fraig/mul7.aig
-Started at: Mon 28 Apr 2025 12:47:15 PM CST
+File: ./hwmcc20/aig-1.8/mul7.aig
+Command: ~/coding_env/rIC3-exp-param/target/release/rIC3 -e ic3 --ic3-pred-samples 5 ./hwmcc20/aig-1.8/mul7.aig
+Started at: Wed 30 Apr 2025 08:45:06 PM CST
 ----------------------------------------
-the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc1920/fraig/mul7.aig
+the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc20/aig-1.8/mul7.aig
+Warning: property not found, moved 1 outputs to bad properties
 abc preprocess timeout
-[1, 1, 273]
-1037 273 
+[1, 1, 194]
+1037 194 
 SolverStatistic {
-    num_solve: 275,
-    avg_decide_var: 457.578733,
+    num_solve: 196,
+    avg_decide_var: 457.515171,
     num_simplify_subsume: 0,
     num_simplify_self_subsume: 0,
 }
@@ -18,22 +19,22 @@ Predecessor sampling statistics:
   Success rate: 20.00%
 Statistic {
     case: mul7.aig,
-    time: 61.99s,
-    num_mic: 273,
+    time: 109.33s,
+    num_mic: 194,
     avg_mic_cube_len: 1.000000,
-    avg_po_cube_len: 528.450790,
-    mic_drop: success: 0, fail: 273, success rate: 0.00%,
-    num_down: 273,
+    avg_po_cube_len: 519.283276,
+    mic_drop: success: 0, fail: 194, success rate: 0.00%,
+    num_down: 194,
     num_down_sat: 0,
     ctp: success: 0, fail: 0, success rate: NaN%,
-    num_get_bad: 275,
-    overall_block_time: 60.345612669s,
-    block_get_bad_time: 51.127791856s,
-    block_get_predecessor_time: 35.763517ms,
-    block_blocked_time: 1.233023449s,
-    block_mic_time: 324.806µs,
-    block_push_time: 4.958µs,
-    overall_propagate_time: 229ns,
+    num_get_bad: 196,
+    overall_block_time: 107.806820379s,
+    block_get_bad_time: 102.542064177s,
+    block_get_predecessor_time: 33.177485ms,
+    block_blocked_time: 822.972122ms,
+    block_mic_time: 189.417µs,
+    block_push_time: 3.464µs,
+    overall_propagate_time: 133ns,
     xor_gen: success: 0, fail: 0, success rate: NaN%,
     num_auxiliary_var: 0,
     test: success: 0, fail: 0, success rate: NaN%,
@@ -45,5 +46,5 @@ Statistic {
 result: unsafe
 ----------------------------------------
 STATUS: COMPLETED
-Finished at: Mon 28 Apr 2025 12:48:23 PM CST
+Finished at: Wed 30 Apr 2025 08:47:02 PM CST
 ========================================

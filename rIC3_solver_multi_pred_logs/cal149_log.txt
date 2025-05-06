@@ -1,6 +1,48 @@
-File: ./hwmcc1920/aig-1.8/cal149.aig
-Command: ~/coding_env/rIC3-exp-param/target/release/rIC3 -e ic3 --ic3-pred-samples 5 ./hwmcc1920/aig-1.8/cal149.aig
-Started at: Mon 28 Apr 2025 01:18:32 PM CST
+File: ./hwmcc1920cal/cal149.aig
+Command: ~/coding_env/rIC3-exp-param/target/release/rIC3 -e ic3 --ic3-pred-samples 5 ./hwmcc1920cal/cal149.aig
+Started at: Wed 30 Apr 2025 10:10:44 PM CST
 ----------------------------------------
-the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc1920/aig-1.8/cal149.aig
-Warning: property not found, moved 1 outputs to bad properties
+the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc1920cal/cal149.aig
+[0, 0, 0, 0, 0, 0, 2243]
+468 1 30 0 45 519 0 
+SolverStatistic {
+    num_solve: 16609,
+    avg_decide_var: 0.240482,
+    num_simplify_subsume: 0,
+    num_simplify_self_subsume: 0,
+}
+Predecessor sampling statistics:
+  Total samples attempted: 2530
+  Successful samples: 2069
+  Success rate: 81.78%
+Statistic {
+    case: cal149.aig,
+    time: 6.48s,
+    num_mic: 1030,
+    avg_mic_cube_len: 8.718447,
+    avg_po_cube_len: 42.689572,
+    mic_drop: success: 3051, fail: 5322, success rate: 36.44%,
+    num_down: 8373,
+    num_down_sat: 11510,
+    ctp: success: 0, fail: 744, success rate: 0.00%,
+    num_get_bad: 180,
+    overall_block_time: 5.963196327s,
+    block_get_bad_time: 3.282362906s,
+    block_get_predecessor_time: 566.463995ms,
+    block_blocked_time: 347.34713ms,
+    block_mic_time: 1.079256009s,
+    block_push_time: 264.145258ms,
+    overall_propagate_time: 401.660584ms,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+    total_pred_samples: 2530,
+    successful_pred_samples: 2069,
+    total_multi_clauses: 0,
+    unique_multi_clauses: 0,
+}
+result: safe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Wed 30 Apr 2025 10:10:52 PM CST
+========================================

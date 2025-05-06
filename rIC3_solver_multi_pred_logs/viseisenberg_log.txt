@@ -1,0 +1,49 @@
+File: ./hwmcc08/viseisenberg.aig
+Command: ~/coding_env/rIC3-exp-param/target/release/rIC3 -e ic3 --ic3-pred-samples 5 ./hwmcc08/viseisenberg.aig
+Started at: Tue 29 Apr 2025 09:57:57 PM CST
+----------------------------------------
+the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc08/viseisenberg.aig
+Warning: property not found, moved 1 outputs to bad properties
+[1, 1, 1, 1, 5, 3, 1, 3, 1, 3, 11, 42]
+18 2 3 4 4 7 11 12 11 8 9 
+SolverStatistic {
+    num_solve: 1018,
+    avg_decide_var: 0.743808,
+    num_simplify_subsume: 0,
+    num_simplify_self_subsume: 0,
+}
+Predecessor sampling statistics:
+  Total samples attempted: 310
+  Successful samples: 71
+  Success rate: 22.90%
+Statistic {
+    case: viseisenberg.aig,
+    time: 0.03s,
+    num_mic: 99,
+    avg_mic_cube_len: 4.262626,
+    avg_po_cube_len: 13.807623,
+    mic_drop: success: 71, fail: 331, success rate: 17.66%,
+    num_down: 402,
+    num_down_sat: 605,
+    ctp: success: 0, fail: 20, success rate: 0.00%,
+    num_get_bad: 12,
+    overall_block_time: 12.646452ms,
+    block_get_bad_time: 1.257495ms,
+    block_get_predecessor_time: 1.879369ms,
+    block_blocked_time: 1.933668ms,
+    block_mic_time: 5.110754ms,
+    block_push_time: 56.704µs,
+    overall_propagate_time: 1.145036ms,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+    total_pred_samples: 310,
+    successful_pred_samples: 71,
+    total_multi_clauses: 0,
+    unique_multi_clauses: 0,
+}
+result: unsafe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Tue 29 Apr 2025 09:57:58 PM CST
+========================================

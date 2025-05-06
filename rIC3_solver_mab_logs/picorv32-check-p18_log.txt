@@ -1,0 +1,50 @@
+File: ./hwmcc1920/aig-1.8/picorv32-check-p18.aig
+Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./hwmcc1920/aig-1.8/picorv32-check-p18.aig
+Started at: Tue 06 May 2025 10:02:40 PM CST
+----------------------------------------
+Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc1920/aig-1.8/picorv32-check-p18.aig
+Warning: property not found, moved 1 outputs to bad properties
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 8, 27]
+8 2 1 4 6 5 14 3 2 0 42 
+
+--- Contextual MAB Statistics ---
+Arm pulls:
+  Arm 0 (Heuristic): 2 pulls
+  Arm 1 (limit=0, max=0, level=0): 1 pulls
+  Arm 2 (limit=1, max=3, level=1): 56 pulls
+  Arm 3 (limit=2, max=5, level=1): 0 pulls
+  Arm 4 (limit=8, max=4, level=1): 0 pulls
+----------------------------
+SolverStatistic {
+    num_solve: 932,
+    avg_decide_var: 0.023371,
+    num_simplify_subsume: 0,
+    num_simplify_self_subsume: 0,
+}
+Statistic {
+    case: picorv32-check-p18.aig,
+    time: 0.18s,
+    num_mic: 87,
+    avg_mic_cube_len: 4.747126,
+    avg_po_cube_len: 15.141463,
+    mic_drop: success: 40, fail: 363, success rate: 9.93%,
+    num_down: 403,
+    num_down_sat: 431,
+    ctp: success: 0, fail: 189, success rate: 0.00%,
+    num_get_bad: 18,
+    overall_block_time: 27.501844ms,
+    block_get_bad_time: 13.91037ms,
+    block_get_predecessor_time: 3.292908ms,
+    block_blocked_time: 1.437725ms,
+    block_mic_time: 10.512565ms,
+    block_push_time: 341.71µs,
+    overall_propagate_time: 4.430744ms,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: safe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Tue 06 May 2025 10:02:40 PM CST
+========================================

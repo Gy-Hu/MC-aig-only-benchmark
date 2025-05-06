@@ -1,0 +1,50 @@
+File: ./hwmcc1920/fraig/frogs.5.prop1-func-interl.aig
+Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./hwmcc1920/fraig/frogs.5.prop1-func-interl.aig
+Started at: Tue 06 May 2025 08:19:16 PM CST
+----------------------------------------
+Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc1920/fraig/frogs.5.prop1-func-interl.aig
+Warning: property not found, moved 1 outputs to bad properties
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 78, 16]
+261 12 38 17 16 17 26 13 12 14 2 0 32 
+
+--- Contextual MAB Statistics ---
+Arm pulls:
+  Arm 0 (Heuristic): 1 pulls
+  Arm 1 (limit=0, max=0, level=0): 1 pulls
+  Arm 2 (limit=1, max=3, level=1): 198 pulls
+  Arm 3 (limit=2, max=5, level=1): 0 pulls
+  Arm 4 (limit=8, max=4, level=1): 0 pulls
+----------------------------
+SolverStatistic {
+    num_solve: 8133,
+    avg_decide_var: 0.489473,
+    num_simplify_subsume: 0,
+    num_simplify_self_subsume: 0,
+}
+Statistic {
+    case: frogs.5.prop1-func-interl.aig,
+    time: 0.88s,
+    num_mic: 436,
+    avg_mic_cube_len: 7.871560,
+    avg_po_cube_len: 249.840961,
+    mic_drop: success: 875, fail: 2174, success rate: 28.70%,
+    num_down: 3049,
+    num_down_sat: 4867,
+    ctp: success: 0, fail: 220, success rate: 0.00%,
+    num_get_bad: 13,
+    overall_block_time: 702.357657ms,
+    block_get_bad_time: 2.348814ms,
+    block_get_predecessor_time: 143.077152ms,
+    block_blocked_time: 57.581962ms,
+    block_mic_time: 711.083944ms,
+    block_push_time: 12.133371ms,
+    overall_propagate_time: 76.393411ms,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: safe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Tue 06 May 2025 08:19:17 PM CST
+========================================

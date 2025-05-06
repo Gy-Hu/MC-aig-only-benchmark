@@ -1,0 +1,49 @@
+File: ./hwmcc1920/fraig/zipcpu-pfcache-p22.aig
+Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./hwmcc1920/fraig/zipcpu-pfcache-p22.aig
+Started at: Tue 06 May 2025 08:41:06 PM CST
+----------------------------------------
+Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc1920/fraig/zipcpu-pfcache-p22.aig
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 60]
+304 2 1 3 0 0 3 7 9 8 8 12 11 23 21 23 23 22 35 27 13 103 0 
+
+--- Contextual MAB Statistics ---
+Arm pulls:
+  Arm 0 (Heuristic): 4 pulls
+  Arm 1 (limit=0, max=0, level=0): 2 pulls
+  Arm 2 (limit=1, max=3, level=1): 32 pulls
+  Arm 3 (limit=2, max=5, level=1): 7 pulls
+  Arm 4 (limit=8, max=4, level=1): 94 pulls
+----------------------------
+SolverStatistic {
+    num_solve: 8451,
+    avg_decide_var: 0.147981,
+    num_simplify_subsume: 0,
+    num_simplify_self_subsume: 0,
+}
+Statistic {
+    case: zipcpu-pfcache-p22.aig,
+    time: 0.28s,
+    num_mic: 727,
+    avg_mic_cube_len: 4.828061,
+    avg_po_cube_len: 85.262228,
+    mic_drop: success: 505, fail: 2866, success rate: 14.98%,
+    num_down: 3371,
+    num_down_sat: 3340,
+    ctp: success: 0, fail: 1139, success rate: 0.00%,
+    num_get_bad: 56,
+    overall_block_time: 181.463809ms,
+    block_get_bad_time: 17.854541ms,
+    block_get_predecessor_time: 50.472919ms,
+    block_blocked_time: 3.297334ms,
+    block_mic_time: 181.371442ms,
+    block_push_time: 3.025128ms,
+    overall_propagate_time: 24.234526ms,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: safe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Tue 06 May 2025 08:41:07 PM CST
+========================================

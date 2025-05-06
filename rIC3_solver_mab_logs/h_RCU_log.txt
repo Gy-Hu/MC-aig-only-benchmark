@@ -1,0 +1,50 @@
+File: ./hwmcc1920/fraig/h_RCU.aig
+Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./hwmcc1920/fraig/h_RCU.aig
+Started at: Tue 06 May 2025 08:03:32 PM CST
+----------------------------------------
+Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc1920/fraig/h_RCU.aig
+Warning: property not found, moved 1 outputs to bad properties
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3028]
+52 21 39 59 75 114 160 210 245 271 318 302 265 232 256 285 391 393 304 181 141 118 96 135 154 147 300 469 394 233 122 263 260 170 173 137 69 98 104 81 39 40 24 21 28 68 434 281 482 193 238 227 109 86 60 33 34 22 10 5 8 59 182 300 174 110 50 25 24 19 24 14 9 0 2526 0 
+
+--- Contextual MAB Statistics ---
+Arm pulls:
+  Arm 0 (Heuristic): 3 pulls
+  Arm 1 (limit=0, max=0, level=0): 4 pulls
+  Arm 2 (limit=1, max=3, level=1): 15 pulls
+  Arm 3 (limit=2, max=5, level=1): 7527 pulls
+  Arm 4 (limit=8, max=4, level=1): 3171 pulls
+----------------------------
+SolverStatistic {
+    num_solve: 1890803,
+    avg_decide_var: 0.496781,
+    num_simplify_subsume: 59903,
+    num_simplify_self_subsume: 30611,
+}
+Statistic {
+    case: h_RCU.aig,
+    time: 80.94s,
+    num_mic: 49798,
+    avg_mic_cube_len: 10.769268,
+    avg_po_cube_len: 37.342527,
+    mic_drop: success: 102354, fail: 410549, success rate: 19.96%,
+    num_down: 512903,
+    num_down_sat: 932788,
+    ctp: success: 0, fail: 99895, success rate: 0.00%,
+    num_get_bad: 103,
+    overall_block_time: 59.474612157s,
+    block_get_bad_time: 39.517113ms,
+    block_get_predecessor_time: 10.261594698s,
+    block_blocked_time: 1.154095716s,
+    block_mic_time: 73.631251655s,
+    block_push_time: 505.730931ms,
+    overall_propagate_time: 21.365918894s,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: safe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Tue 06 May 2025 08:04:53 PM CST
+========================================

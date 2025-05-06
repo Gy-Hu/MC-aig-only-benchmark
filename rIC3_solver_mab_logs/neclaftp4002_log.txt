@@ -1,0 +1,50 @@
+File: ./hwmcc-appr/neclaftp4002.aig
+Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./hwmcc-appr/neclaftp4002.aig
+Started at: Tue 06 May 2025 07:39:11 PM CST
+----------------------------------------
+Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc-appr/neclaftp4002.aig
+Warning: property not found, moved 1 outputs to bad properties
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 46, 2]
+1032 2 1 1 1 1 2 1 1 1 1 1 1 2 2 4 1 0 2 
+
+--- Contextual MAB Statistics ---
+Arm pulls:
+  Arm 0 (Heuristic): 1 pulls
+  Arm 1 (limit=0, max=0, level=0): 1 pulls
+  Arm 2 (limit=1, max=3, level=1): 116 pulls
+  Arm 3 (limit=2, max=5, level=1): 0 pulls
+  Arm 4 (limit=8, max=4, level=1): 0 pulls
+----------------------------
+SolverStatistic {
+    num_solve: 2751,
+    avg_decide_var: 0.511857,
+    num_simplify_subsume: 0,
+    num_simplify_self_subsume: 0,
+}
+Statistic {
+    case: neclaftp4002.aig,
+    time: 0.67s,
+    num_mic: 273,
+    avg_mic_cube_len: 5.142857,
+    avg_po_cube_len: 20.888554,
+    mic_drop: success: 467, fail: 885, success rate: 34.54%,
+    num_down: 1352,
+    num_down_sat: 1699,
+    ctp: success: 0, fail: 47, success rate: 0.00%,
+    num_get_bad: 19,
+    overall_block_time: 472.927275ms,
+    block_get_bad_time: 20.323483ms,
+    block_get_predecessor_time: 46.305631ms,
+    block_blocked_time: 20.126764ms,
+    block_mic_time: 520.505031ms,
+    block_push_time: 736.993µs,
+    overall_propagate_time: 33.962903ms,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: safe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Tue 06 May 2025 07:39:12 PM CST
+========================================

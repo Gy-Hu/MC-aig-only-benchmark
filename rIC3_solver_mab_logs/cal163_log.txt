@@ -1,0 +1,50 @@
+File: ./hwmcc1920/aig-1.8/cal163.aig
+Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./hwmcc1920/aig-1.8/cal163.aig
+Started at: Tue 06 May 2025 10:05:09 PM CST
+----------------------------------------
+Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc1920/aig-1.8/cal163.aig
+Warning: property not found, moved 1 outputs to bad properties
+[0, 0, 0, 0, 8]
+80 1 0 8 
+
+--- Contextual MAB Statistics ---
+Arm pulls:
+  Arm 0 (Heuristic): 1 pulls
+  Arm 1 (limit=0, max=0, level=0): 8 pulls
+  Arm 2 (limit=1, max=3, level=1): 0 pulls
+  Arm 3 (limit=2, max=5, level=1): 0 pulls
+  Arm 4 (limit=8, max=4, level=1): 0 pulls
+----------------------------
+SolverStatistic {
+    num_solve: 65,
+    avg_decide_var: 0.331960,
+    num_simplify_subsume: 0,
+    num_simplify_self_subsume: 0,
+}
+Statistic {
+    case: cal163.aig,
+    time: 0.01s,
+    num_mic: 9,
+    avg_mic_cube_len: 5.666667,
+    avg_po_cube_len: 38.115385,
+    mic_drop: success: 22, fail: 25, success rate: 46.81%,
+    num_down: 47,
+    num_down_sat: 46,
+    ctp: success: 0, fail: 8, success rate: 0.00%,
+    num_get_bad: 11,
+    overall_block_time: 5.330491ms,
+    block_get_bad_time: 3.133943ms,
+    block_get_predecessor_time: 0ns,
+    block_blocked_time: 549.126µs,
+    block_mic_time: 713.334µs,
+    block_push_time: 230ns,
+    overall_propagate_time: 469.594µs,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: safe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Tue 06 May 2025 10:05:09 PM CST
+========================================

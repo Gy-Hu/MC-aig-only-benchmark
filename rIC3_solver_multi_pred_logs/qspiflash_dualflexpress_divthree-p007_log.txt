@@ -1,48 +1,49 @@
-File: ./hwmcc1920/fraig/qspiflash_dualflexpress_divthree-p007.aig
-Command: ~/coding_env/rIC3-exp-param/target/release/rIC3 -e ic3 --ic3-pred-samples 5 ./hwmcc1920/fraig/qspiflash_dualflexpress_divthree-p007.aig
-Started at: Mon 28 Apr 2025 11:33:16 AM CST
+File: ./hwmcc20/aig-1.8/qspiflash_dualflexpress_divthree-p007.aig
+Command: ~/coding_env/rIC3-exp-param/target/release/rIC3 -e ic3 --ic3-pred-samples 5 ./hwmcc20/aig-1.8/qspiflash_dualflexpress_divthree-p007.aig
+Started at: Wed 30 Apr 2025 07:17:23 PM CST
 ----------------------------------------
-the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc1920/fraig/qspiflash_dualflexpress_divthree-p007.aig
-[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7226]
-72 3 6 12 9 11 8 9 15 19 8 3 3 1 1 5 7 2 4 1 6 3 1 1 1 1 1 5 7 3 4 1 2 1 2 3 1 0 25 5 3 3 9 7 2 4 12 5 9 17 13 9 11 12 17 20 21 27 24 30 28 37 39 30 28 33 25 14 14 7 516 0 
+the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc20/aig-1.8/qspiflash_dualflexpress_divthree-p007.aig
+Warning: property not found, moved 1 outputs to bad properties
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 15473]
+73 11 14 26 16 17 18 17 25 23 23 25 3 3 3 3 1 12 16 9 11 7 5 3 3 4 2 1 17 17 5 5 4 5 3 1 2 1 12 3 4 3 1 1 1 1 1 0 88 28 29 36 20 42 90 60 46 25 29 31 26 17 29 55 193 678 0 
 SolverStatistic {
-    num_solve: 129918,
-    avg_decide_var: 0.476709,
-    num_simplify_subsume: 0,
-    num_simplify_self_subsume: 0,
+    num_solve: 331999,
+    avg_decide_var: 0.503358,
+    num_simplify_subsume: 64302,
+    num_simplify_self_subsume: 22072,
 }
 Predecessor sampling statistics:
-  Total samples attempted: 19000
-  Successful samples: 7094
-  Success rate: 37.34%
+  Total samples attempted: 36390
+  Successful samples: 15242
+  Success rate: 41.89%
 Statistic {
     case: qspiflash_dualflexpress_divthree-p007.aig,
-    time: 3.25s,
-    num_mic: 4902,
-    avg_mic_cube_len: 8.346593,
-    avg_po_cube_len: 41.485660,
-    mic_drop: success: 4577, fail: 35470, success rate: 11.43%,
-    num_down: 40047,
-    num_down_sat: 65099,
-    ctp: success: 0, fail: 23175, success rate: 0.00%,
-    num_get_bad: 203,
-    overall_block_time: 2.6305626s,
-    block_get_bad_time: 47.518876ms,
-    block_get_predecessor_time: 402.73278ms,
-    block_blocked_time: 253.201058ms,
-    block_mic_time: 1.200187708s,
-    block_push_time: 195.428928ms,
-    overall_propagate_time: 515.661481ms,
+    time: 10.25s,
+    num_mic: 11798,
+    avg_mic_cube_len: 9.682573,
+    avg_po_cube_len: 58.666712,
+    mic_drop: success: 15164, fail: 96163, success rate: 13.62%,
+    num_down: 111327,
+    num_down_sat: 172073,
+    ctp: success: 0, fail: 51731, success rate: 0.00%,
+    num_get_bad: 297,
+    overall_block_time: 7.458851213s,
+    block_get_bad_time: 75.849171ms,
+    block_get_predecessor_time: 883.005433ms,
+    block_blocked_time: 653.827876ms,
+    block_mic_time: 4.195875883s,
+    block_push_time: 128.363439ms,
+    overall_propagate_time: 2.691990653s,
     xor_gen: success: 0, fail: 0, success rate: NaN%,
     num_auxiliary_var: 0,
     test: success: 0, fail: 0, success rate: NaN%,
-    total_pred_samples: 19000,
-    successful_pred_samples: 7094,
+    total_pred_samples: 36390,
+    successful_pred_samples: 15242,
     total_multi_clauses: 0,
     unique_multi_clauses: 0,
 }
 result: safe
 ----------------------------------------
 STATUS: COMPLETED
-Finished at: Mon 28 Apr 2025 11:33:19 AM CST
+Finished at: Wed 30 Apr 2025 07:17:33 PM CST
 ========================================

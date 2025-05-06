@@ -1,0 +1,50 @@
+File: ./hwmcc1920/aig-1.8/qspiflash_qflexpress_divfive-p056.aig
+Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./hwmcc1920/aig-1.8/qspiflash_qflexpress_divfive-p056.aig
+Started at: Tue 06 May 2025 10:10:10 PM CST
+----------------------------------------
+Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc1920/aig-1.8/qspiflash_qflexpress_divfive-p056.aig
+Warning: property not found, moved 1 outputs to bad properties
+[0, 0, 0, 0, 0, 0, 5, 12]
+65 1 2 3 1 0 12 
+
+--- Contextual MAB Statistics ---
+Arm pulls:
+  Arm 0 (Heuristic): 1 pulls
+  Arm 1 (limit=0, max=0, level=0): 21 pulls
+  Arm 2 (limit=1, max=3, level=1): 0 pulls
+  Arm 3 (limit=2, max=5, level=1): 0 pulls
+  Arm 4 (limit=8, max=4, level=1): 0 pulls
+----------------------------
+SolverStatistic {
+    num_solve: 207,
+    avg_decide_var: 0.590044,
+    num_simplify_subsume: 0,
+    num_simplify_self_subsume: 0,
+}
+Statistic {
+    case: qspiflash_qflexpress_divfive-p056.aig,
+    time: 0.01s,
+    num_mic: 22,
+    avg_mic_cube_len: 4.454545,
+    avg_po_cube_len: 33.234568,
+    mic_drop: success: 13, fail: 82, success rate: 13.68%,
+    num_down: 95,
+    num_down_sat: 119,
+    ctp: success: 0, fail: 26, success rate: 0.00%,
+    num_get_bad: 12,
+    overall_block_time: 4.110656ms,
+    block_get_bad_time: 934.256µs,
+    block_get_predecessor_time: 531.286µs,
+    block_blocked_time: 424.985µs,
+    block_mic_time: 1.465456ms,
+    block_push_time: 39.889µs,
+    overall_propagate_time: 576.102µs,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: safe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Tue 06 May 2025 10:10:10 PM CST
+========================================

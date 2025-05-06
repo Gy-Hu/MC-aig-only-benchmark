@@ -1,0 +1,50 @@
+File: ./hwmcc1920/fraig/miim.aig
+Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./hwmcc1920/fraig/miim.aig
+Started at: Tue 06 May 2025 08:04:42 PM CST
+----------------------------------------
+Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc1920/fraig/miim.aig
+Warning: property not found, moved 1 outputs to bad properties
+[0, 0, 0, 0, 0, 1, 5]
+36 4 3 1 0 8 
+
+--- Contextual MAB Statistics ---
+Arm pulls:
+  Arm 0 (Heuristic): 3 pulls
+  Arm 1 (limit=0, max=0, level=0): 2 pulls
+  Arm 2 (limit=1, max=3, level=1): 1 pulls
+  Arm 3 (limit=2, max=5, level=1): 6 pulls
+  Arm 4 (limit=8, max=4, level=1): 0 pulls
+----------------------------
+SolverStatistic {
+    num_solve: 103,
+    avg_decide_var: 0.596009,
+    num_simplify_subsume: 0,
+    num_simplify_self_subsume: 0,
+}
+Statistic {
+    case: miim.aig,
+    time: 0.01s,
+    num_mic: 22,
+    avg_mic_cube_len: 1.772727,
+    avg_po_cube_len: 15.441176,
+    mic_drop: success: 5, fail: 32, success rate: 13.51%,
+    num_down: 37,
+    num_down_sat: 23,
+    ctp: success: 0, fail: 15, success rate: 0.00%,
+    num_get_bad: 10,
+    overall_block_time: 2.073382ms,
+    block_get_bad_time: 678.43µs,
+    block_get_predecessor_time: 257.407µs,
+    block_blocked_time: 186.255µs,
+    block_mic_time: 517.395µs,
+    block_push_time: 18.791µs,
+    overall_propagate_time: 155.481µs,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: safe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Tue 06 May 2025 08:04:42 PM CST
+========================================

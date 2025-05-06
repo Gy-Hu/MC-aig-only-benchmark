@@ -1,0 +1,50 @@
+File: ./hwmcc1920/aig-1.8/zipcpu-zipmmu-p32.aig
+Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./hwmcc1920/aig-1.8/zipcpu-zipmmu-p32.aig
+Started at: Tue 06 May 2025 09:43:12 PM CST
+----------------------------------------
+Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc1920/aig-1.8/zipcpu-zipmmu-p32.aig
+Warning: property not found, moved 1 outputs to bad properties
+[0, 0, 0, 0, 0, 0, 25, 18]
+78 22 1 1 1 0 18 
+
+--- Contextual MAB Statistics ---
+Arm pulls:
+  Arm 0 (Heuristic): 20 pulls
+  Arm 1 (limit=0, max=0, level=0): 5 pulls
+  Arm 2 (limit=1, max=3, level=1): 6 pulls
+  Arm 3 (limit=2, max=5, level=1): 6 pulls
+  Arm 4 (limit=8, max=4, level=1): 6 pulls
+----------------------------
+SolverStatistic {
+    num_solve: 220,
+    avg_decide_var: 0.144109,
+    num_simplify_subsume: 0,
+    num_simplify_self_subsume: 0,
+}
+Statistic {
+    case: zipcpu-zipmmu-p32.aig,
+    time: 0.03s,
+    num_mic: 43,
+    avg_mic_cube_len: 2.372093,
+    avg_po_cube_len: 46.600897,
+    mic_drop: success: 4, fail: 94, success rate: 4.08%,
+    num_down: 98,
+    num_down_sat: 55,
+    ctp: success: 0, fail: 96, success rate: 0.00%,
+    num_get_bad: 49,
+    overall_block_time: 7.748921ms,
+    block_get_bad_time: 4.125364ms,
+    block_get_predecessor_time: 10.359µs,
+    block_blocked_time: 258.873µs,
+    block_mic_time: 166.578µs,
+    block_push_time: 724ns,
+    overall_propagate_time: 640.793µs,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: safe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Tue 06 May 2025 09:43:12 PM CST
+========================================

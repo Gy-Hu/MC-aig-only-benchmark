@@ -1,0 +1,50 @@
+File: ./hwmcc-appr/intel056.aig
+Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./hwmcc-appr/intel056.aig
+Started at: Tue 06 May 2025 07:39:11 PM CST
+----------------------------------------
+Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc-appr/intel056.aig
+Warning: property not found, moved 1 outputs to bad properties
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 227, 38]
+147 8 53 61 121 68 99 135 89 93 134 80 48 21 19 6 7 0 253 
+
+--- Contextual MAB Statistics ---
+Arm pulls:
+  Arm 0 (Heuristic): 13 pulls
+  Arm 1 (limit=0, max=0, level=0): 13 pulls
+  Arm 2 (limit=1, max=3, level=1): 16 pulls
+  Arm 3 (limit=2, max=5, level=1): 281 pulls
+  Arm 4 (limit=8, max=4, level=1): 12 pulls
+----------------------------
+SolverStatistic {
+    num_solve: 36574,
+    avg_decide_var: 0.993986,
+    num_simplify_subsume: 0,
+    num_simplify_self_subsume: 0,
+}
+Statistic {
+    case: intel056.aig,
+    time: 2.19s,
+    num_mic: 2109,
+    avg_mic_cube_len: 5.918919,
+    avg_po_cube_len: 104.289714,
+    mic_drop: success: 2745, fail: 9312, success rate: 22.77%,
+    num_down: 12057,
+    num_down_sat: 20220,
+    ctp: success: 0, fail: 2967, success rate: 0.00%,
+    num_get_bad: 260,
+    overall_block_time: 1.720436321s,
+    block_get_bad_time: 45.839796ms,
+    block_get_predecessor_time: 282.733036ms,
+    block_blocked_time: 17.167079ms,
+    block_mic_time: 2.339306334s,
+    block_push_time: 23.221933ms,
+    overall_propagate_time: 421.036995ms,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: safe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Tue 06 May 2025 07:39:14 PM CST
+========================================

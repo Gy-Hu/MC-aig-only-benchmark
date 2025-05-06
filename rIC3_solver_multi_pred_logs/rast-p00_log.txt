@@ -1,48 +1,49 @@
-File: ./hwmcc1920/fraig/rast-p00.aig
-Command: ~/coding_env/rIC3-exp-param/target/release/rIC3 -e ic3 --ic3-pred-samples 5 ./hwmcc1920/fraig/rast-p00.aig
-Started at: Mon 28 Apr 2025 12:45:09 PM CST
+File: ./hwmcc20/aig-1.8/rast-p00.aig
+Command: ~/coding_env/rIC3-exp-param/target/release/rIC3 -e ic3 --ic3-pred-samples 5 ./hwmcc20/aig-1.8/rast-p00.aig
+Started at: Wed 30 Apr 2025 08:43:06 PM CST
 ----------------------------------------
-the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc1920/fraig/rast-p00.aig
-[0, 0, 0, 0, 0, 0, 22, 12357]
-439 18 2 1 2 0 12357 
+the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc20/aig-1.8/rast-p00.aig
+Warning: property not found, moved 1 outputs to bad properties
+[0, 0, 0, 0, 0, 16477, 12357]
+439 18 1 1 0 12357 
 SolverStatistic {
-    num_solve: 280702,
-    avg_decide_var: 0.107518,
+    num_solve: 279399,
+    avg_decide_var: 0.105553,
     num_simplify_subsume: 0,
     num_simplify_self_subsume: 0,
 }
 Predecessor sampling statistics:
-  Total samples attempted: 41195
-  Successful samples: 8260
-  Success rate: 20.05%
+  Total samples attempted: 41190
+  Successful samples: 24715
+  Success rate: 60.00%
 Statistic {
     case: rast-p00.aig,
-    time: 9.73s,
-    num_mic: 12388,
-    avg_mic_cube_len: 13.904666,
-    avg_po_cube_len: 20.356419,
-    mic_drop: success: 12319, fail: 159932, success rate: 7.15%,
-    num_down: 172251,
-    num_down_sat: 214668,
-    ctp: success: 0, fail: 24718, success rate: 0.00%,
-    num_get_bad: 4125,
-    overall_block_time: 7.771673392s,
-    block_get_bad_time: 1.178236452s,
-    block_get_predecessor_time: 348.125658ms,
-    block_blocked_time: 1.591323242s,
-    block_mic_time: 2.678897762s,
-    block_push_time: 843.725221ms,
-    overall_propagate_time: 1.924738219s,
+    time: 8.95s,
+    num_mic: 12385,
+    avg_mic_cube_len: 13.906984,
+    avg_po_cube_len: 63.543489,
+    mic_drop: success: 12310, fail: 159928, success rate: 7.15%,
+    num_down: 172238,
+    num_down_sat: 213392,
+    ctp: success: 0, fail: 12361, success rate: 0.00%,
+    num_get_bad: 4124,
+    overall_block_time: 8.022713318s,
+    block_get_bad_time: 765.811233ms,
+    block_get_predecessor_time: 831.239608ms,
+    block_blocked_time: 1.508507784s,
+    block_mic_time: 2.442651652s,
+    block_push_time: 810.968168ms,
+    overall_propagate_time: 899.927114ms,
     xor_gen: success: 0, fail: 0, success rate: NaN%,
     num_auxiliary_var: 0,
     test: success: 0, fail: 0, success rate: NaN%,
-    total_pred_samples: 41195,
-    successful_pred_samples: 8260,
+    total_pred_samples: 41190,
+    successful_pred_samples: 24715,
     total_multi_clauses: 0,
     unique_multi_clauses: 0,
 }
 result: safe
 ----------------------------------------
 STATUS: COMPLETED
-Finished at: Mon 28 Apr 2025 12:45:19 PM CST
+Finished at: Wed 30 Apr 2025 08:43:15 PM CST
 ========================================

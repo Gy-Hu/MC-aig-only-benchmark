@@ -1,0 +1,49 @@
+File: ./hwmcc1920/fraig/circular_pointer_top_w8_d16_e0.aig
+Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./hwmcc1920/fraig/circular_pointer_top_w8_d16_e0.aig
+Started at: Tue 06 May 2025 08:47:15 PM CST
+----------------------------------------
+Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc1920/fraig/circular_pointer_top_w8_d16_e0.aig
+[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 4025]
+1 9 32 52 101 131 224 229 464 297 480 497 945 791 1039 1140 1936 2486 3169 
+
+--- Contextual MAB Statistics ---
+Arm pulls:
+  Arm 0 (Heuristic): 14 pulls
+  Arm 1 (limit=0, max=0, level=0): 2887 pulls
+  Arm 2 (limit=1, max=3, level=1): 48 pulls
+  Arm 3 (limit=2, max=5, level=1): 12475 pulls
+  Arm 4 (limit=8, max=4, level=1): 14 pulls
+----------------------------
+SolverStatistic {
+    num_solve: 606568,
+    avg_decide_var: 0.561719,
+    num_simplify_subsume: 3566,
+    num_simplify_self_subsume: 10050,
+}
+Statistic {
+    case: circular_pointer_top_w8_d16_e0.aig,
+    time: 25.13s,
+    num_mic: 18902,
+    avg_mic_cube_len: 12.399376,
+    avg_po_cube_len: 21.688947,
+    mic_drop: success: 38392, fail: 188909, success rate: 16.89%,
+    num_down: 227301,
+    num_down_sat: 337782,
+    ctp: success: 0, fail: 9159, success rate: 0.00%,
+    num_get_bad: 1178,
+    overall_block_time: 23.0114365s,
+    block_get_bad_time: 209.522282ms,
+    block_get_predecessor_time: 2.27013503s,
+    block_blocked_time: 1.054212192s,
+    block_mic_time: 23.039909725s,
+    block_push_time: 104.958212ms,
+    overall_propagate_time: 2.082376473s,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: unsafe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Tue 06 May 2025 08:47:40 PM CST
+========================================

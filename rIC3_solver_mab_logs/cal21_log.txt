@@ -1,0 +1,50 @@
+File: ./hwmcc1920/fraig/cal21.aig
+Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./hwmcc1920/fraig/cal21.aig
+Started at: Tue 06 May 2025 09:10:18 PM CST
+----------------------------------------
+Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc1920/fraig/cal21.aig
+Warning: property not found, moved 1 outputs to bad properties
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 422]
+25 1 13 13 30 20 11 5 2 0 3 1 1 1 1 1 1 1 2 1 1 1 1 1 1 1 85 0 
+
+--- Contextual MAB Statistics ---
+Arm pulls:
+  Arm 0 (Heuristic): 1 pulls
+  Arm 1 (limit=0, max=0, level=0): 527 pulls
+  Arm 2 (limit=1, max=3, level=1): 0 pulls
+  Arm 3 (limit=2, max=5, level=1): 0 pulls
+  Arm 4 (limit=8, max=4, level=1): 0 pulls
+----------------------------
+SolverStatistic {
+    num_solve: 11699,
+    avg_decide_var: 0.781066,
+    num_simplify_subsume: 0,
+    num_simplify_self_subsume: 0,
+}
+Statistic {
+    case: cal21.aig,
+    time: 0.34s,
+    num_mic: 528,
+    avg_mic_cube_len: 11.651515,
+    avg_po_cube_len: 22.906864,
+    mic_drop: success: 2161, fail: 3290, success rate: 39.64%,
+    num_down: 5451,
+    num_down_sat: 7354,
+    ctp: success: 0, fail: 1562, success rate: 0.00%,
+    num_get_bad: 66,
+    overall_block_time: 234.322044ms,
+    block_get_bad_time: 32.197597ms,
+    block_get_predecessor_time: 12.157196ms,
+    block_blocked_time: 25.391143ms,
+    block_mic_time: 142.277194ms,
+    block_push_time: 2.145473ms,
+    overall_propagate_time: 90.427935ms,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: safe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Tue 06 May 2025 09:10:19 PM CST
+========================================

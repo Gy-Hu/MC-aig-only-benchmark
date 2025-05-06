@@ -1,0 +1,50 @@
+File: ./hwmcc1920/fraig/lamport_nonatomic.5.prop1-func-interl.aig
+Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./hwmcc1920/fraig/lamport_nonatomic.5.prop1-func-interl.aig
+Started at: Tue 06 May 2025 08:40:48 PM CST
+----------------------------------------
+Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc1920/fraig/lamport_nonatomic.5.prop1-func-interl.aig
+Warning: property not found, moved 1 outputs to bad properties
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 443, 160]
+231 18 35 52 78 131 186 227 247 262 254 274 251 220 174 131 83 58 41 22 9 6 2 0 340 
+
+--- Contextual MAB Statistics ---
+Arm pulls:
+  Arm 0 (Heuristic): 6 pulls
+  Arm 1 (limit=0, max=0, level=0): 6 pulls
+  Arm 2 (limit=1, max=3, level=1): 10 pulls
+  Arm 3 (limit=2, max=5, level=1): 1102 pulls
+  Arm 4 (limit=8, max=4, level=1): 5 pulls
+----------------------------
+SolverStatistic {
+    num_solve: 140951,
+    avg_decide_var: 0.764629,
+    num_simplify_subsume: 0,
+    num_simplify_self_subsume: 0,
+}
+Statistic {
+    case: lamport_nonatomic.5.prop1-func-interl.aig,
+    time: 17.17s,
+    num_mic: 4891,
+    avg_mic_cube_len: 10.843590,
+    avg_po_cube_len: 101.902595,
+    mic_drop: success: 11527, fail: 31707, success rate: 26.66%,
+    num_down: 43234,
+    num_down_sat: 79856,
+    ctp: success: 0, fail: 4127, success rate: 0.00%,
+    num_get_bad: 140,
+    overall_block_time: 14.356049783s,
+    block_get_bad_time: 90.125244ms,
+    block_get_predecessor_time: 3.65754836s,
+    block_blocked_time: 221.283742ms,
+    block_mic_time: 17.430066215s,
+    block_push_time: 50.582207ms,
+    overall_propagate_time: 2.612849385s,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: safe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Tue 06 May 2025 08:41:06 PM CST
+========================================

@@ -1,0 +1,50 @@
+File: ./hwmcc1920/aig-1.8/vis_arrays_two_p1.aig
+Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./hwmcc1920/aig-1.8/vis_arrays_two_p1.aig
+Started at: Tue 06 May 2025 09:36:14 PM CST
+----------------------------------------
+Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc1920/aig-1.8/vis_arrays_two_p1.aig
+Warning: property not found, moved 1 outputs to bad properties
+[1, 1, 1, 1, 1, 1, 1, 35, 31, 2]
+30 6 10 24 38 57 49 19 2 
+
+--- Contextual MAB Statistics ---
+Arm pulls:
+  Arm 0 (Heuristic): 1 pulls
+  Arm 1 (limit=0, max=0, level=0): 11 pulls
+  Arm 2 (limit=1, max=3, level=1): 154 pulls
+  Arm 3 (limit=2, max=5, level=1): 0 pulls
+  Arm 4 (limit=8, max=4, level=1): 0 pulls
+----------------------------
+SolverStatistic {
+    num_solve: 4270,
+    avg_decide_var: 0.716766,
+    num_simplify_subsume: 0,
+    num_simplify_self_subsume: 0,
+}
+Statistic {
+    case: vis_arrays_two_p1.aig,
+    time: 0.06s,
+    num_mic: 285,
+    avg_mic_cube_len: 5.670175,
+    avg_po_cube_len: 29.988848,
+    mic_drop: success: 293, fail: 1224, success rate: 19.31%,
+    num_down: 1517,
+    num_down_sat: 2689,
+    ctp: success: 0, fail: 3, success rate: 0.00%,
+    num_get_bad: 10,
+    overall_block_time: 54.701652ms,
+    block_get_bad_time: 823.513µs,
+    block_get_predecessor_time: 12.491365ms,
+    block_blocked_time: 4.061082ms,
+    block_mic_time: 54.94149ms,
+    block_push_time: 880ns,
+    overall_propagate_time: 957.077µs,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: unsafe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Tue 06 May 2025 09:36:14 PM CST
+========================================

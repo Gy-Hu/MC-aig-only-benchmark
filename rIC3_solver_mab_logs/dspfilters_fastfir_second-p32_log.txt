@@ -1,0 +1,50 @@
+File: ./hwmcc1920/aig-1.8/dspfilters_fastfir_second-p32.aig
+Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./hwmcc1920/aig-1.8/dspfilters_fastfir_second-p32.aig
+Started at: Tue 06 May 2025 09:31:33 PM CST
+----------------------------------------
+Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc1920/aig-1.8/dspfilters_fastfir_second-p32.aig
+Warning: property not found, moved 1 outputs to bad properties
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1883, 4751]
+1092 81 54 78 113 247 252 431 504 665 483 411 515 327 432 428 472 1080 907 687 560 317 158 50 17 9 6 2 1 0 5190 
+
+--- Contextual MAB Statistics ---
+Arm pulls:
+  Arm 0 (Heuristic): 14268 pulls
+  Arm 1 (limit=0, max=0, level=0): 8 pulls
+  Arm 2 (limit=1, max=3, level=1): 8 pulls
+  Arm 3 (limit=2, max=5, level=1): 8 pulls
+  Arm 4 (limit=8, max=4, level=1): 2599 pulls
+----------------------------
+SolverStatistic {
+    num_solve: 654411,
+    avg_decide_var: 0.746749,
+    num_simplify_subsume: 12657,
+    num_simplify_self_subsume: 4533,
+}
+Statistic {
+    case: dspfilters_fastfir_second-p32.aig,
+    time: 269.61s,
+    num_mic: 20469,
+    avg_mic_cube_len: 14.525917,
+    avg_po_cube_len: 376.220337,
+    mic_drop: success: 155763, fail: 131738, success rate: 54.18%,
+    num_down: 287501,
+    num_down_sat: 352110,
+    ctp: success: 0, fail: 104102, success rate: 0.00%,
+    num_get_bad: 2131,
+    overall_block_time: 232.856934187s,
+    block_get_bad_time: 6.324032311s,
+    block_get_predecessor_time: 71.082344145s,
+    block_blocked_time: 9.886407377s,
+    block_mic_time: 234.729499037s,
+    block_push_time: 2.368744601s,
+    overall_propagate_time: 35.564423878s,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: safe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Tue 06 May 2025 09:36:05 PM CST
+========================================

@@ -1,0 +1,50 @@
+File: ./hwmcc1920/aig-1.8/dspfilters_fastfir_second-p07.aig
+Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./hwmcc1920/aig-1.8/dspfilters_fastfir_second-p07.aig
+Started at: Tue 06 May 2025 10:06:50 PM CST
+----------------------------------------
+Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc1920/aig-1.8/dspfilters_fastfir_second-p07.aig
+Warning: property not found, moved 1 outputs to bad properties
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 500, 710]
+1092 52 54 100 121 163 110 132 189 105 111 102 54 139 12 18 29 333 162 10 10 1 0 807 
+
+--- Contextual MAB Statistics ---
+Arm pulls:
+  Arm 0 (Heuristic): 69 pulls
+  Arm 1 (limit=0, max=0, level=0): 7 pulls
+  Arm 2 (limit=1, max=3, level=1): 2779 pulls
+  Arm 3 (limit=2, max=5, level=1): 27 pulls
+  Arm 4 (limit=8, max=4, level=1): 7 pulls
+----------------------------
+SolverStatistic {
+    num_solve: 72649,
+    avg_decide_var: 0.701349,
+    num_simplify_subsume: 0,
+    num_simplify_self_subsume: 0,
+}
+Statistic {
+    case: dspfilters_fastfir_second-p07.aig,
+    time: 33.02s,
+    num_mic: 3471,
+    avg_mic_cube_len: 8.358110,
+    avg_po_cube_len: 359.832950,
+    mic_drop: success: 9375, fail: 18790, success rate: 33.29%,
+    num_down: 28165,
+    num_down_sat: 32761,
+    ctp: success: 0, fail: 12652, success rate: 0.00%,
+    num_get_bad: 968,
+    overall_block_time: 27.905990818s,
+    block_get_bad_time: 2.349039819s,
+    block_get_predecessor_time: 7.481076878s,
+    block_blocked_time: 1.205709026s,
+    block_mic_time: 21.326776091s,
+    block_push_time: 88.925313ms,
+    overall_propagate_time: 4.112972544s,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: safe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Tue 06 May 2025 10:07:26 PM CST
+========================================
