@@ -1,0 +1,50 @@
+File: ./hwmcc15/power2sum128.aig
+Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./hwmcc15/power2sum128.aig
+Started at: Wed 07 May 2025 01:53:44 AM CST
+----------------------------------------
+Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc15/power2sum128.aig
+Warning: property not found, moved 1 outputs to bad properties
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 769]
+29 17 8 8 1 1 1 9 2 1 1 1 1 1 1 11 1 1 1 1 1 1 1 1 1 1 1 11 2 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 10 3 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 9 0 31 0 
+
+--- Contextual MAB Statistics ---
+Arm pulls:
+  Arm 0 (Heuristic): 6 pulls
+  Arm 1 (limit=0, max=0, level=0): 5 pulls
+  Arm 2 (limit=1, max=3, level=1): 106 pulls
+  Arm 3 (limit=2, max=5, level=1): 400 pulls
+  Arm 4 (limit=8, max=4, level=1): 49 pulls
+----------------------------
+SolverStatistic {
+    num_solve: 14757,
+    avg_decide_var: 0.580965,
+    num_simplify_subsume: 0,
+    num_simplify_self_subsume: 0,
+}
+Statistic {
+    case: power2sum128.aig,
+    time: 0.17s,
+    num_mic: 897,
+    avg_mic_cube_len: 4.775920,
+    avg_po_cube_len: 27.926238,
+    mic_drop: success: 569, fail: 3555, success rate: 13.80%,
+    num_down: 4124,
+    num_down_sat: 5924,
+    ctp: success: 0, fail: 1017, success rate: 0.00%,
+    num_get_bad: 106,
+    overall_block_time: 123.440312ms,
+    block_get_bad_time: 6.412185ms,
+    block_get_predecessor_time: 28.535961ms,
+    block_blocked_time: 10.817723ms,
+    block_mic_time: 89.044287ms,
+    block_push_time: 14.407656ms,
+    overall_propagate_time: 18.292922ms,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: safe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Wed 07 May 2025 01:53:44 AM CST
+========================================

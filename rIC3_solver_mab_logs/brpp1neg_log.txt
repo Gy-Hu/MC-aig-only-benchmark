@@ -1,0 +1,50 @@
+File: ./hwmcc08/brpp1neg.aig
+Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./hwmcc08/brpp1neg.aig
+Started at: Wed 07 May 2025 03:13:19 AM CST
+----------------------------------------
+Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc08/brpp1neg.aig
+Warning: property not found, moved 1 outputs to bad properties
+[1, 1, 44]
+138 44 
+
+--- Contextual MAB Statistics ---
+Arm pulls:
+  Arm 0 (Heuristic): 9 pulls
+  Arm 1 (limit=0, max=0, level=0): 9 pulls
+  Arm 2 (limit=1, max=3, level=1): 9 pulls
+  Arm 3 (limit=2, max=5, level=1): 9 pulls
+  Arm 4 (limit=8, max=4, level=1): 8 pulls
+----------------------------
+SolverStatistic {
+    num_solve: 48,
+    avg_decide_var: 3.975783,
+    num_simplify_subsume: 0,
+    num_simplify_self_subsume: 0,
+}
+Statistic {
+    case: brpp1neg.aig,
+    time: 0.02s,
+    num_mic: 44,
+    avg_mic_cube_len: 1.022727,
+    avg_po_cube_len: 101.904412,
+    mic_drop: success: 0, fail: 45, success rate: 0.00%,
+    num_down: 45,
+    num_down_sat: 2,
+    ctp: success: 0, fail: 0, success rate: NaN%,
+    num_get_bad: 46,
+    overall_block_time: 10.670924ms,
+    block_get_bad_time: 2.619824ms,
+    block_get_predecessor_time: 180.673µs,
+    block_blocked_time: 614.059µs,
+    block_mic_time: 152.964µs,
+    block_push_time: 920ns,
+    overall_propagate_time: 270ns,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: unsafe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Wed 07 May 2025 03:13:19 AM CST
+========================================

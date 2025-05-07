@@ -1,43 +1,44 @@
-File: ./hwmcc1920/fraig/zipcpu-busdelay-p00.aig
-Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./hwmcc1920/fraig/zipcpu-busdelay-p00.aig
-Started at: Tue 06 May 2025 07:58:44 PM CST
+File: ./hwmcc20/aig-1.8/zipcpu-busdelay-p00.aig
+Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./hwmcc20/aig-1.8/zipcpu-busdelay-p00.aig
+Started at: Wed 07 May 2025 08:19:06 AM CST
 ----------------------------------------
-Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc1920/fraig/zipcpu-busdelay-p00.aig
-[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 69, 84]
-47 3 3 16 35 69 65 50 45 76 67 59 43 45 34 23 16 2 1 0 351 
+Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc20/aig-1.8/zipcpu-busdelay-p00.aig
+Warning: property not found, moved 1 outputs to bad properties
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2150]
+48 12 18 44 40 43 38 100 95 202 148 185 205 862 646 742 234 129 47 14 2 0 92 16 17 3524 0 
 
 --- Contextual MAB Statistics ---
 Arm pulls:
-  Arm 0 (Heuristic): 3 pulls
-  Arm 1 (limit=0, max=0, level=0): 7 pulls
-  Arm 2 (limit=1, max=3, level=1): 6 pulls
-  Arm 3 (limit=2, max=5, level=1): 8 pulls
-  Arm 4 (limit=8, max=4, level=1): 473 pulls
+  Arm 0 (Heuristic): 35 pulls
+  Arm 1 (limit=0, max=0, level=0): 18 pulls
+  Arm 2 (limit=1, max=3, level=1): 7005 pulls
+  Arm 3 (limit=2, max=5, level=1): 7 pulls
+  Arm 4 (limit=8, max=4, level=1): 7 pulls
 ----------------------------
 SolverStatistic {
-    num_solve: 35510,
-    avg_decide_var: 0.407079,
-    num_simplify_subsume: 0,
-    num_simplify_self_subsume: 0,
+    num_solve: 388934,
+    avg_decide_var: 0.320865,
+    num_simplify_subsume: 17070,
+    num_simplify_self_subsume: 10324,
 }
 Statistic {
     case: zipcpu-busdelay-p00.aig,
-    time: 0.79s,
-    num_mic: 1254,
-    avg_mic_cube_len: 6.547847,
-    avg_po_cube_len: 54.112048,
-    mic_drop: success: 1471, fail: 6394, success rate: 18.70%,
-    num_down: 7865,
-    num_down_sat: 11012,
-    ctp: success: 0, fail: 3056, success rate: 0.00%,
-    num_get_bad: 85,
-    overall_block_time: 695.840041ms,
-    block_get_bad_time: 6.341582ms,
-    block_get_predecessor_time: 319.283791ms,
-    block_blocked_time: 9.404075ms,
-    block_mic_time: 725.653414ms,
-    block_push_time: 2.940729ms,
-    overall_propagate_time: 68.619924ms,
+    time: 13.55s,
+    num_mic: 13234,
+    avg_mic_cube_len: 11.583044,
+    avg_po_cube_len: 54.564279,
+    mic_drop: success: 24492, fail: 124513, success rate: 16.44%,
+    num_down: 149005,
+    num_down_sat: 230901,
+    ctp: success: 0, fail: 33127, success rate: 0.00%,
+    num_get_bad: 100,
+    overall_block_time: 9.473983779s,
+    block_get_bad_time: 11.325537ms,
+    block_get_predecessor_time: 970.582051ms,
+    block_blocked_time: 394.282572ms,
+    block_mic_time: 11.445309319s,
+    block_push_time: 106.691017ms,
+    overall_propagate_time: 4.048538796s,
     xor_gen: success: 0, fail: 0, success rate: NaN%,
     num_auxiliary_var: 0,
     test: success: 0, fail: 0, success rate: NaN%,
@@ -45,5 +46,5 @@ Statistic {
 result: safe
 ----------------------------------------
 STATUS: COMPLETED
-Finished at: Tue 06 May 2025 07:58:45 PM CST
+Finished at: Wed 07 May 2025 08:19:19 AM CST
 ========================================

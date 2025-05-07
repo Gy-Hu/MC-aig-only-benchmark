@@ -1,0 +1,49 @@
+File: ./others/vgasim-imgfifo/aig/imgfifo-p090.aig
+Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./others/vgasim-imgfifo/aig/imgfifo-p090.aig
+Started at: Wed 07 May 2025 03:18:23 AM CST
+----------------------------------------
+Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/others/vgasim-imgfifo/aig/imgfifo-p090.aig
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 31, 35]
+394 5 3 4 8 5 6 4 3 4 3 4 4 6 4 3 4 3 2 4 3 4 5 4 3 5 7 6 2 2 2 3 3 2 1 2 3 5 4 4 3 5 3 5 8 9 11 12 12 17 12 14 9 29 16 1 0 216 
+
+--- Contextual MAB Statistics ---
+Arm pulls:
+  Arm 0 (Heuristic): 9 pulls
+  Arm 1 (limit=0, max=0, level=0): 15 pulls
+  Arm 2 (limit=1, max=3, level=1): 8 pulls
+  Arm 3 (limit=2, max=5, level=1): 24 pulls
+  Arm 4 (limit=8, max=4, level=1): 198 pulls
+----------------------------
+SolverStatistic {
+    num_solve: 16667,
+    avg_decide_var: 0.368579,
+    num_simplify_subsume: 0,
+    num_simplify_self_subsume: 0,
+}
+Statistic {
+    case: imgfifo-p090.aig,
+    time: 1.07s,
+    num_mic: 870,
+    avg_mic_cube_len: 6.639080,
+    avg_po_cube_len: 151.058947,
+    mic_drop: success: 546, fail: 5062, success rate: 9.74%,
+    num_down: 5608,
+    num_down_sat: 5990,
+    ctp: success: 0, fail: 3151, success rate: 0.00%,
+    num_get_bad: 93,
+    overall_block_time: 572.030454ms,
+    block_get_bad_time: 41.073574ms,
+    block_get_predecessor_time: 149.117816ms,
+    block_blocked_time: 9.619088ms,
+    block_mic_time: 630.073844ms,
+    block_push_time: 16.801299ms,
+    overall_propagate_time: 176.196389ms,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: safe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Wed 07 May 2025 03:18:25 AM CST
+========================================

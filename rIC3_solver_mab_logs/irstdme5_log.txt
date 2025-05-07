@@ -1,0 +1,50 @@
+File: ./hwmcc11/single/irstdme5.aig
+Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./hwmcc11/single/irstdme5.aig
+Started at: Wed 07 May 2025 05:57:26 AM CST
+----------------------------------------
+Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc11/single/irstdme5.aig
+Warning: property not found, moved 1 outputs to bad properties
+[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 6, 4, 2, 3, 3, 4, 3, 2, 1, 2, 1, 1, 1, 1, 1, 1, 1, 89, 1021]
+165 8 12 17 23 27 35 35 30 38 30 36 31 37 43 60 58 61 69 98 100 88 114 118 100 89 85 258 
+
+--- Contextual MAB Statistics ---
+Arm pulls:
+  Arm 0 (Heuristic): 595 pulls
+  Arm 1 (limit=0, max=0, level=0): 32 pulls
+  Arm 2 (limit=1, max=3, level=1): 214 pulls
+  Arm 3 (limit=2, max=5, level=1): 17 pulls
+  Arm 4 (limit=8, max=4, level=1): 1558 pulls
+----------------------------
+SolverStatistic {
+    num_solve: 46296,
+    avg_decide_var: 0.313857,
+    num_simplify_subsume: 0,
+    num_simplify_self_subsume: 0,
+}
+Statistic {
+    case: irstdme5.aig,
+    time: 0.82s,
+    num_mic: 4601,
+    avg_mic_cube_len: 3.509672,
+    avg_po_cube_len: 56.864947,
+    mic_drop: success: 1752, fail: 13892, success rate: 11.20%,
+    num_down: 15644,
+    num_down_sat: 15451,
+    ctp: success: 0, fail: 2281, success rate: 0.00%,
+    num_get_bad: 34,
+    overall_block_time: 762.247447ms,
+    block_get_bad_time: 2.057639ms,
+    block_get_predecessor_time: 247.580143ms,
+    block_blocked_time: 56.533859ms,
+    block_mic_time: 665.079674ms,
+    block_push_time: 2.965446ms,
+    overall_propagate_time: 28.51986ms,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: unsafe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Wed 07 May 2025 05:57:27 AM CST
+========================================

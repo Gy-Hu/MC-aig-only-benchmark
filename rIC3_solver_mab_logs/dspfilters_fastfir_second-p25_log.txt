@@ -1,43 +1,44 @@
-File: ./hwmcc1920/fraig/dspfilters_fastfir_second-p25.aig
-Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./hwmcc1920/fraig/dspfilters_fastfir_second-p25.aig
-Started at: Tue 06 May 2025 07:52:39 PM CST
+File: ./hwmcc20/aig-1.8/dspfilters_fastfir_second-p25.aig
+Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./hwmcc20/aig-1.8/dspfilters_fastfir_second-p25.aig
+Started at: Wed 07 May 2025 08:18:49 AM CST
 ----------------------------------------
-Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc1920/fraig/dspfilters_fastfir_second-p25.aig
-[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 6771]
-1091 24 17 17 22 28 23 20 26 38 37 24 28 22 25 23 169 72 1387 63 1050 780 557 15 421 405 339 373 181 129 63 40 179 4 0 6 3 5257 0 
+Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc20/aig-1.8/dspfilters_fastfir_second-p25.aig
+Warning: property not found, moved 1 outputs to bad properties
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5248]
+1092 61 34 36 33 21 18 25 27 25 26 38 30 36 39 41 28 17 244 147 2370 258 1819 1505 1342 186 909 814 900 658 427 293 211 57 91 14 7 4 0 8092 0 
 
 --- Contextual MAB Statistics ---
 Arm pulls:
-  Arm 0 (Heuristic): 11 pulls
-  Arm 1 (limit=0, max=0, level=0): 30 pulls
-  Arm 2 (limit=1, max=3, level=1): 7072 pulls
-  Arm 3 (limit=2, max=5, level=1): 3128 pulls
-  Arm 4 (limit=8, max=4, level=1): 465 pulls
+  Arm 0 (Heuristic): 1000 pulls
+  Arm 1 (limit=0, max=0, level=0): 278 pulls
+  Arm 2 (limit=1, max=3, level=1): 18 pulls
+  Arm 3 (limit=2, max=5, level=1): 13 pulls
+  Arm 4 (limit=8, max=4, level=1): 8147 pulls
 ----------------------------
 SolverStatistic {
-    num_solve: 495247,
-    avg_decide_var: 0.740570,
-    num_simplify_subsume: 2380,
-    num_simplify_self_subsume: 544,
+    num_solve: 2227052,
+    avg_decide_var: 0.795553,
+    num_simplify_subsume: 6763,
+    num_simplify_self_subsume: 2037,
 }
 Statistic {
     case: dspfilters_fastfir_second-p25.aig,
-    time: 227.09s,
-    num_mic: 14295,
-    avg_mic_cube_len: 14.009584,
-    avg_po_cube_len: 360.559933,
-    mic_drop: success: 112311, fail: 79294, success rate: 58.62%,
-    num_down: 191605,
-    num_down_sat: 239593,
-    ctp: success: 0, fail: 81880, success rate: 0.00%,
-    num_get_bad: 1953,
-    overall_block_time: 193.31278613s,
-    block_get_bad_time: 5.763505585s,
-    block_get_predecessor_time: 56.699672872s,
-    block_blocked_time: 8.548210227s,
-    block_mic_time: 187.852716929s,
-    block_push_time: 2.638825247s,
-    overall_propagate_time: 32.244670706s,
+    time: 932.96s,
+    num_mic: 23957,
+    avg_mic_cube_len: 53.795300,
+    avg_po_cube_len: 379.756803,
+    mic_drop: success: 1011656, fail: 170395, success rate: 85.58%,
+    num_down: 1182051,
+    num_down_sat: 1688558,
+    ctp: success: 0, fail: 111369, success rate: 0.00%,
+    num_get_bad: 1505,
+    overall_block_time: 858.311849646s,
+    block_get_bad_time: 5.253326169s,
+    block_get_predecessor_time: 197.834901602s,
+    block_blocked_time: 7.87901868s,
+    block_mic_time: 1251.529252425s,
+    block_push_time: 6.633418288s,
+    overall_propagate_time: 72.876553824s,
     xor_gen: success: 0, fail: 0, success rate: NaN%,
     num_auxiliary_var: 0,
     test: success: 0, fail: 0, success rate: NaN%,
@@ -45,5 +46,5 @@ Statistic {
 result: safe
 ----------------------------------------
 STATUS: COMPLETED
-Finished at: Tue 06 May 2025 07:56:27 PM CST
+Finished at: Wed 07 May 2025 08:34:24 AM CST
 ========================================

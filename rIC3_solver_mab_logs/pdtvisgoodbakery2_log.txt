@@ -1,0 +1,50 @@
+File: ./hwmcc11/single/pdtvisgoodbakery2.aig
+Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./hwmcc11/single/pdtvisgoodbakery2.aig
+Started at: Wed 07 May 2025 06:55:33 AM CST
+----------------------------------------
+Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc11/single/pdtvisgoodbakery2.aig
+Warning: property not found, moved 1 outputs to bad properties
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 3, 2, 16, 120]
+33 5 6 4 4 3 4 5 4 5 4 5 7 7 5 5 7 8 8 3 2 2 0 1 2 1 27 
+
+--- Contextual MAB Statistics ---
+Arm pulls:
+  Arm 0 (Heuristic): 2 pulls
+  Arm 1 (limit=0, max=0, level=0): 7 pulls
+  Arm 2 (limit=1, max=3, level=1): 212 pulls
+  Arm 3 (limit=2, max=5, level=1): 0 pulls
+  Arm 4 (limit=8, max=4, level=1): 0 pulls
+----------------------------
+SolverStatistic {
+    num_solve: 3588,
+    avg_decide_var: 0.706394,
+    num_simplify_subsume: 0,
+    num_simplify_self_subsume: 0,
+}
+Statistic {
+    case: pdtvisgoodbakery2.aig,
+    time: 0.17s,
+    num_mic: 281,
+    avg_mic_cube_len: 4.113879,
+    avg_po_cube_len: 17.829901,
+    mic_drop: success: 217, fail: 875, success rate: 19.87%,
+    num_down: 1092,
+    num_down_sat: 1590,
+    ctp: success: 0, fail: 266, success rate: 0.00%,
+    num_get_bad: 30,
+    overall_block_time: 111.008379ms,
+    block_get_bad_time: 12.959789ms,
+    block_get_predecessor_time: 20.237693ms,
+    block_blocked_time: 13.087109ms,
+    block_mic_time: 75.379919ms,
+    block_push_time: 2.712992ms,
+    overall_propagate_time: 25.640156ms,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: safe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Wed 07 May 2025 06:55:34 AM CST
+========================================

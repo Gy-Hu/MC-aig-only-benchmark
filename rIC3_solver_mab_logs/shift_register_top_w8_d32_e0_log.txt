@@ -1,44 +1,43 @@
-File: ./hwmcc1920/aig-1.8/shift_register_top_w8_d32_e0.aig
-Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./hwmcc1920/aig-1.8/shift_register_top_w8_d32_e0.aig
-Started at: Tue 06 May 2025 09:43:35 PM CST
+File: ./hwmcc19/single/aig/mann/data-integrity/unsafe/shift_register_top_w8_d32_e0.aig
+Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./hwmcc19/single/aig/mann/data-integrity/unsafe/shift_register_top_w8_d32_e0.aig
+Started at: Tue 06 May 2025 11:00:10 PM CST
 ----------------------------------------
-Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc1920/aig-1.8/shift_register_top_w8_d32_e0.aig
-Warning: property not found, moved 1 outputs to bad properties
-[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 629, 547]
-2 3 23 46 29 46 28 63 37 49 34 69 56 64 82 95 214 69 61 74 99 99 114 153 155 198 119 78 128 113 179 148 815 315 562 
+Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc19/single/aig/mann/data-integrity/unsafe/shift_register_top_w8_d32_e0.aig
+[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 918, 825]
+1 5 21 42 47 58 43 59 35 46 39 79 59 86 92 175 265 95 118 87 66 72 82 223 238 242 245 260 507 659 260 378 514 637 789 
 
 --- Contextual MAB Statistics ---
 Arm pulls:
-  Arm 0 (Heuristic): 6 pulls
-  Arm 1 (limit=0, max=0, level=0): 398 pulls
-  Arm 2 (limit=1, max=3, level=1): 11 pulls
-  Arm 3 (limit=2, max=5, level=1): 6 pulls
-  Arm 4 (limit=8, max=4, level=1): 5648 pulls
+  Arm 0 (Heuristic): 24 pulls
+  Arm 1 (limit=0, max=0, level=0): 414 pulls
+  Arm 2 (limit=1, max=3, level=1): 8240 pulls
+  Arm 3 (limit=2, max=5, level=1): 23 pulls
+  Arm 4 (limit=8, max=4, level=1): 7 pulls
 ----------------------------
 SolverStatistic {
-    num_solve: 364787,
-    avg_decide_var: 0.332202,
-    num_simplify_subsume: 0,
-    num_simplify_self_subsume: 0,
+    num_solve: 277782,
+    avg_decide_var: 0.353996,
+    num_simplify_subsume: 6124,
+    num_simplify_self_subsume: 9252,
 }
 Statistic {
     case: shift_register_top_w8_d32_e0.aig,
-    time: 11.90s,
-    num_mic: 7276,
-    avg_mic_cube_len: 11.868884,
-    avg_po_cube_len: 17.370297,
-    mic_drop: success: 13483, fail: 70791, success rate: 16.00%,
-    num_down: 84274,
-    num_down_sat: 110210,
-    ctp: success: 0, fail: 7962, success rate: 0.00%,
-    num_get_bad: 101,
-    overall_block_time: 10.873415619s,
-    block_get_bad_time: 66.832027ms,
-    block_get_predecessor_time: 2.422384178s,
-    block_blocked_time: 251.562711ms,
-    block_mic_time: 10.827516715s,
-    block_push_time: 33.426991ms,
-    overall_propagate_time: 946.7061ms,
+    time: 7.65s,
+    num_mic: 9974,
+    avg_mic_cube_len: 11.681472,
+    avg_po_cube_len: 16.476157,
+    mic_drop: success: 21327, fail: 92084, success rate: 18.81%,
+    num_down: 113411,
+    num_down_sat: 156726,
+    ctp: success: 0, fail: 9916, success rate: 0.00%,
+    num_get_bad: 96,
+    overall_block_time: 6.286776916s,
+    block_get_bad_time: 49.145603ms,
+    block_get_predecessor_time: 762.694645ms,
+    block_blocked_time: 353.142546ms,
+    block_mic_time: 6.123286102s,
+    block_push_time: 35.478624ms,
+    overall_propagate_time: 1.282055681s,
     xor_gen: success: 0, fail: 0, success rate: NaN%,
     num_auxiliary_var: 0,
     test: success: 0, fail: 0, success rate: NaN%,
@@ -46,5 +45,5 @@ Statistic {
 result: unsafe
 ----------------------------------------
 STATUS: COMPLETED
-Finished at: Tue 06 May 2025 09:43:47 PM CST
+Finished at: Tue 06 May 2025 11:00:18 PM CST
 ========================================

@@ -1,0 +1,50 @@
+File: ./hwmcc11/single/eijkbs3330.aig
+Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./hwmcc11/single/eijkbs3330.aig
+Started at: Wed 07 May 2025 06:10:37 AM CST
+----------------------------------------
+Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc11/single/eijkbs3330.aig
+Warning: property not found, moved 1 outputs to bad properties
+[0, 0, 0, 0, 0, 0, 0, 1238, 2102]
+246 138 799 750 222 17 0 2102 
+
+--- Contextual MAB Statistics ---
+Arm pulls:
+  Arm 0 (Heuristic): 45 pulls
+  Arm 1 (limit=0, max=0, level=0): 3818 pulls
+  Arm 2 (limit=1, max=3, level=1): 62 pulls
+  Arm 3 (limit=2, max=5, level=1): 41 pulls
+  Arm 4 (limit=8, max=4, level=1): 66 pulls
+----------------------------
+SolverStatistic {
+    num_solve: 57515,
+    avg_decide_var: 0.545053,
+    num_simplify_subsume: 30,
+    num_simplify_self_subsume: 190,
+}
+Statistic {
+    case: eijkbs3330.aig,
+    time: 4.48s,
+    num_mic: 4032,
+    avg_mic_cube_len: 7.680308,
+    avg_po_cube_len: 89.851642,
+    mic_drop: success: 5498, fail: 23704, success rate: 18.83%,
+    num_down: 29202,
+    num_down_sat: 38355,
+    ctp: success: 0, fail: 7491, success rate: 0.00%,
+    num_get_bad: 3322,
+    overall_block_time: 3.426432402s,
+    block_get_bad_time: 1.025599659s,
+    block_get_predecessor_time: 4.516921ms,
+    block_blocked_time: 194.542778ms,
+    block_mic_time: 1.465424105s,
+    block_push_time: 120.984µs,
+    overall_propagate_time: 1.02589754s,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: safe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Wed 07 May 2025 06:10:41 AM CST
+========================================

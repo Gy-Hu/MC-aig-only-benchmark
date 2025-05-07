@@ -1,6 +1,49 @@
-File: ./hwmcc1920/aig-1.8/dspfilters_fastfir_second-p17.aig
-Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./hwmcc1920/aig-1.8/dspfilters_fastfir_second-p17.aig
-Started at: Tue 06 May 2025 09:39:26 PM CST
+File: ./hwmcc19/single/aig/wolf/2019C/dspfilters_fastfir_second-p17.aig
+Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./hwmcc19/single/aig/wolf/2019C/dspfilters_fastfir_second-p17.aig
+Started at: Tue 06 May 2025 11:25:08 PM CST
 ----------------------------------------
-Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc1920/aig-1.8/dspfilters_fastfir_second-p17.aig
-Warning: property not found, moved 1 outputs to bad properties
+Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc19/single/aig/wolf/2019C/dspfilters_fastfir_second-p17.aig
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4457, 15506]
+1091 19 43 94 259 307 472 642 845 893 1151 1148 1449 1640 1868 1838 1543 1363 2921 2593 2914 2623 2063 1435 1294 1286 896 699 588 532 386 225 84 8 1 0 18001 
+
+--- Contextual MAB Statistics ---
+Arm pulls:
+  Arm 0 (Heuristic): 22553 pulls
+  Arm 1 (limit=0, max=0, level=0): 15887 pulls
+  Arm 2 (limit=1, max=3, level=1): 9892 pulls
+  Arm 3 (limit=2, max=5, level=1): 9 pulls
+  Arm 4 (limit=8, max=4, level=1): 12809 pulls
+----------------------------
+SolverStatistic {
+    num_solve: 2751028,
+    avg_decide_var: 0.758661,
+    num_simplify_subsume: 56238,
+    num_simplify_self_subsume: 43842,
+}
+Statistic {
+    case: dspfilters_fastfir_second-p17.aig,
+    time: 1497.75s,
+    num_mic: 73327,
+    avg_mic_cube_len: 13.796241,
+    avg_po_cube_len: 477.022972,
+    mic_drop: success: 539469, fail: 428000, success rate: 55.76%,
+    num_down: 967469,
+    num_down_sat: 1241660,
+    ctp: success: 0, fail: 364706, success rate: 0.00%,
+    num_get_bad: 3039,
+    overall_block_time: 1266.399136008s,
+    block_get_bad_time: 11.685541937s,
+    block_get_predecessor_time: 472.616755079s,
+    block_blocked_time: 36.877019046s,
+    block_mic_time: 1280.190019621s,
+    block_push_time: 15.67552757s,
+    overall_propagate_time: 229.819503016s,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: safe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Tue 06 May 2025 11:50:07 PM CST
+========================================

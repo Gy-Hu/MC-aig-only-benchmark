@@ -1,0 +1,50 @@
+File: ./hwmcc11/single/pdtvsarmultip29.aig
+Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./hwmcc11/single/pdtvsarmultip29.aig
+Started at: Wed 07 May 2025 06:17:07 AM CST
+----------------------------------------
+Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc11/single/pdtvsarmultip29.aig
+Warning: property not found, moved 1 outputs to bad properties
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3793, 5110]
+66 1 3 2 14 23 23 35 69 224 128 329 498 498 919 321 1020 663 803 48 1 0 5372 
+
+--- Contextual MAB Statistics ---
+Arm pulls:
+  Arm 0 (Heuristic): 15 pulls
+  Arm 1 (limit=0, max=0, level=0): 36 pulls
+  Arm 2 (limit=1, max=3, level=1): 789 pulls
+  Arm 3 (limit=2, max=5, level=1): 9554 pulls
+  Arm 4 (limit=8, max=4, level=1): 5 pulls
+----------------------------
+SolverStatistic {
+    num_solve: 384797,
+    avg_decide_var: 0.480713,
+    num_simplify_subsume: 1068,
+    num_simplify_self_subsume: 2498,
+}
+Statistic {
+    case: pdtvsarmultip29.aig,
+    time: 17.92s,
+    num_mic: 12927,
+    avg_mic_cube_len: 8.155179,
+    avg_po_cube_len: 32.472740,
+    mic_drop: success: 11849, fail: 89044, success rate: 11.74%,
+    num_down: 100893,
+    num_down_sat: 169537,
+    ctp: success: 0, fail: 26727, success rate: 0.00%,
+    num_get_bad: 4143,
+    overall_block_time: 15.774934689s,
+    block_get_bad_time: 3.991996079s,
+    block_get_predecessor_time: 1.78716278s,
+    block_blocked_time: 651.155069ms,
+    block_mic_time: 10.438410202s,
+    block_push_time: 138.737632ms,
+    overall_propagate_time: 2.109708629s,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: safe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Wed 07 May 2025 06:17:25 AM CST
+========================================

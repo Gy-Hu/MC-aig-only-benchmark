@@ -1,6 +1,49 @@
-File: ./hwmcc1920/aig-1.8/dspfilters_fastfir_second-p20.aig
-Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./hwmcc1920/aig-1.8/dspfilters_fastfir_second-p20.aig
-Started at: Tue 06 May 2025 09:39:28 PM CST
+File: ./hwmcc19/single/aig/wolf/2019C/dspfilters_fastfir_second-p20.aig
+Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./hwmcc19/single/aig/wolf/2019C/dspfilters_fastfir_second-p20.aig
+Started at: Tue 06 May 2025 11:25:09 PM CST
 ----------------------------------------
-Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc1920/aig-1.8/dspfilters_fastfir_second-p20.aig
-Warning: property not found, moved 1 outputs to bad properties
+Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc19/single/aig/wolf/2019C/dspfilters_fastfir_second-p20.aig
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 29887]
+1092 34 12 18 11 15 19 15 14 17 17 22 22 35 31 29 31 21 561 170 3766 169 3863 3920 4925 94 3220 2844 3535 2585 2778 2603 2531 10 744 8 9 7 7 5 4 4 8 5 5 5 5 1 1 0 23288 
+
+--- Contextual MAB Statistics ---
+Arm pulls:
+  Arm 0 (Heuristic): 10958 pulls
+  Arm 1 (limit=0, max=0, level=0): 11007 pulls
+  Arm 2 (limit=1, max=3, level=1): 18787 pulls
+  Arm 3 (limit=2, max=5, level=1): 6997 pulls
+  Arm 4 (limit=8, max=4, level=1): 15479 pulls
+----------------------------
+SolverStatistic {
+    num_solve: 3274126,
+    avg_decide_var: 0.691722,
+    num_simplify_subsume: 29096,
+    num_simplify_self_subsume: 11847,
+}
+Statistic {
+    case: dspfilters_fastfir_second-p20.aig,
+    time: 1641.42s,
+    num_mic: 76265,
+    avg_mic_cube_len: 14.119858,
+    avg_po_cube_len: 505.169108,
+    mic_drop: success: 466361, fail: 550490, success rate: 45.86%,
+    num_down: 1016851,
+    num_down_sat: 1354820,
+    ctp: success: 0, fail: 477723, success rate: 0.00%,
+    num_get_bad: 3290,
+    overall_block_time: 1359.269496508s,
+    block_get_bad_time: 9.41516647s,
+    block_get_predecessor_time: 469.848604534s,
+    block_blocked_time: 60.321387442s,
+    block_mic_time: 1270.766078076s,
+    block_push_time: 25.023707982s,
+    overall_propagate_time: 280.029479689s,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: safe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Tue 06 May 2025 11:52:32 PM CST
+========================================

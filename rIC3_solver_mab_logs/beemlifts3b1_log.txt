@@ -1,0 +1,50 @@
+File: ./hwmcc15/beemlifts3b1.aig
+Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./hwmcc15/beemlifts3b1.aig
+Started at: Wed 07 May 2025 02:21:39 AM CST
+----------------------------------------
+Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc15/beemlifts3b1.aig
+Warning: property not found, moved 1 outputs to bad properties
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1421, 2333]
+257 1 193 1296 2448 2540 1987 1627 1337 1090 893 805 801 731 677 622 526 416 344 247 195 124 77 43 27 32 23 15 7 7 8 2 3 2 0 2374 
+
+--- Contextual MAB Statistics ---
+Arm pulls:
+  Arm 0 (Heuristic): 1 pulls
+  Arm 1 (limit=0, max=0, level=0): 23270 pulls
+  Arm 2 (limit=1, max=3, level=1): 0 pulls
+  Arm 3 (limit=2, max=5, level=1): 0 pulls
+  Arm 4 (limit=8, max=4, level=1): 0 pulls
+----------------------------
+SolverStatistic {
+    num_solve: 4014245,
+    avg_decide_var: 1.000297,
+    num_simplify_subsume: 8136,
+    num_simplify_self_subsume: 3681,
+}
+Statistic {
+    case: beemlifts3b1.aig,
+    time: 1059.42s,
+    num_mic: 23271,
+    avg_mic_cube_len: 83.553994,
+    avg_po_cube_len: 257.000000,
+    mic_drop: success: 344050, fail: 1490933, success rate: 18.75%,
+    num_down: 1834983,
+    num_down_sat: 3470172,
+    ctp: success: 0, fail: 58081, success rate: 0.00%,
+    num_get_bad: 38,
+    overall_block_time: 772.580709892s,
+    block_get_bad_time: 117.560575ms,
+    block_get_predecessor_time: 2.296291768s,
+    block_blocked_time: 19.662234509s,
+    block_mic_time: 742.477113077s,
+    block_push_time: 468.69846ms,
+    overall_propagate_time: 285.825446383s,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: safe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Wed 07 May 2025 02:39:24 AM CST
+========================================

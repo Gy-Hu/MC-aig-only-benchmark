@@ -1,0 +1,50 @@
+File: ./hwmcc08/viseisenberg.aig
+Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./hwmcc08/viseisenberg.aig
+Started at: Wed 07 May 2025 03:12:51 AM CST
+----------------------------------------
+Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc08/viseisenberg.aig
+Warning: property not found, moved 1 outputs to bad properties
+[1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 2, 1, 21, 24]
+18 2 3 4 2 2 3 4 4 11 9 9 5 9 
+
+--- Contextual MAB Statistics ---
+Arm pulls:
+  Arm 0 (Heuristic): 1 pulls
+  Arm 1 (limit=0, max=0, level=0): 1 pulls
+  Arm 2 (limit=1, max=3, level=1): 82 pulls
+  Arm 3 (limit=2, max=5, level=1): 0 pulls
+  Arm 4 (limit=8, max=4, level=1): 0 pulls
+----------------------------
+SolverStatistic {
+    num_solve: 1238,
+    avg_decide_var: 0.714635,
+    num_simplify_subsume: 0,
+    num_simplify_self_subsume: 0,
+}
+Statistic {
+    case: viseisenberg.aig,
+    time: 0.02s,
+    num_mic: 114,
+    avg_mic_cube_len: 3.912281,
+    avg_po_cube_len: 13.312741,
+    mic_drop: success: 86, fail: 326, success rate: 20.87%,
+    num_down: 412,
+    num_down_sat: 584,
+    ctp: success: 0, fail: 34, success rate: 0.00%,
+    num_get_bad: 15,
+    overall_block_time: 13.745554ms,
+    block_get_bad_time: 923.919µs,
+    block_get_predecessor_time: 3.597344ms,
+    block_blocked_time: 1.625142ms,
+    block_mic_time: 9.60146ms,
+    block_push_time: 69.823µs,
+    overall_propagate_time: 1.369671ms,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: unsafe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Wed 07 May 2025 03:12:52 AM CST
+========================================

@@ -1,0 +1,50 @@
+File: ./hwmcc11/single/bc57sensorsp2neg.aig
+Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./hwmcc11/single/bc57sensorsp2neg.aig
+Started at: Wed 07 May 2025 06:21:35 AM CST
+----------------------------------------
+Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc11/single/bc57sensorsp2neg.aig
+Warning: property not found, moved 1 outputs to bad properties
+[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 3, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 13, 4, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 3, 6, 1, 1, 1, 1, 1, 145, 501]
+190 2 4 2 4 8 9 14 17 13 11 6 9 10 7 9 15 17 19 23 17 25 35 29 24 48 43 38 38 78 68 85 82 93 95 101 111 84 110 89 68 84 120 98 112 78 47 55 33 54 64 102 64 75 48 66 48 39 39 97 120 127 104 94 213 250 189 215 260 279 200 164 165 187 174 135 128 108 117 106 104 107 76 67 66 49 63 64 1941 
+
+--- Contextual MAB Statistics ---
+Arm pulls:
+  Arm 0 (Heuristic): 11 pulls
+  Arm 1 (limit=0, max=0, level=0): 11 pulls
+  Arm 2 (limit=1, max=3, level=1): 11 pulls
+  Arm 3 (limit=2, max=5, level=1): 11 pulls
+  Arm 4 (limit=8, max=4, level=1): 1211 pulls
+----------------------------
+SolverStatistic {
+    num_solve: 583382,
+    avg_decide_var: 0.937348,
+    num_simplify_subsume: 24529,
+    num_simplify_self_subsume: 11636,
+}
+Statistic {
+    case: bc57sensorsp2neg.aig,
+    time: 32.85s,
+    num_mic: 13236,
+    avg_mic_cube_len: 8.975899,
+    avg_po_cube_len: 166.547847,
+    mic_drop: success: 22297, fail: 91182, success rate: 19.65%,
+    num_down: 113479,
+    num_down_sat: 192332,
+    ctp: success: 0, fail: 100645, success rate: 0.00%,
+    num_get_bad: 637,
+    overall_block_time: 20.096015116s,
+    block_get_bad_time: 229.739325ms,
+    block_get_predecessor_time: 4.736834474s,
+    block_blocked_time: 86.211814ms,
+    block_mic_time: 26.019604686s,
+    block_push_time: 284.250366ms,
+    overall_propagate_time: 12.528330163s,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: unsafe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Wed 07 May 2025 06:22:08 AM CST
+========================================

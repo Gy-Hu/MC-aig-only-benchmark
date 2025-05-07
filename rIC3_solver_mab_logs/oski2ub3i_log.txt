@@ -1,0 +1,51 @@
+File: ./hwmcc14/single/oski2ub3i.aig
+Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./hwmcc14/single/oski2ub3i.aig
+Started at: Wed 07 May 2025 05:42:37 AM CST
+----------------------------------------
+Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc14/single/oski2ub3i.aig
+Warning: property not found, moved 1 outputs to bad properties
+abc preprocess timeout
+[1, 1, 1, 1, 1, 1, 1, 1, 795, 189]
+12599 1 1 1 1 1 1 1 693 
+
+--- Contextual MAB Statistics ---
+Arm pulls:
+  Arm 0 (Heuristic): 14 pulls
+  Arm 1 (limit=0, max=0, level=0): 14 pulls
+  Arm 2 (limit=1, max=3, level=1): 934 pulls
+  Arm 3 (limit=2, max=5, level=1): 14 pulls
+  Arm 4 (limit=8, max=4, level=1): 14 pulls
+----------------------------
+SolverStatistic {
+    num_solve: 73165,
+    avg_decide_var: 0.967822,
+    num_simplify_subsume: 27,
+    num_simplify_self_subsume: 8,
+}
+Statistic {
+    case: oski2ub3i.aig,
+    time: 699.07s,
+    num_mic: 4185,
+    avg_mic_cube_len: 9.557706,
+    avg_po_cube_len: 10437.609989,
+    mic_drop: success: 2023, fail: 37279, success rate: 5.15%,
+    num_down: 39302,
+    num_down_sat: 59150,
+    ctp: success: 0, fail: 2390, success rate: 0.00%,
+    num_get_bad: 940,
+    overall_block_time: 686.341233296s,
+    block_get_bad_time: 20.528597596s,
+    block_get_predecessor_time: 98.751783272s,
+    block_blocked_time: 6.368736431s,
+    block_mic_time: 840.889200195s,
+    block_push_time: 1.479672245s,
+    overall_propagate_time: 10.286499632s,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: unsafe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Wed 07 May 2025 05:54:22 AM CST
+========================================

@@ -1,0 +1,50 @@
+File: ./hwmcc15/beemldfilt3f1.aig
+Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./hwmcc15/beemldfilt3f1.aig
+Started at: Wed 07 May 2025 01:54:33 AM CST
+----------------------------------------
+Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc15/beemldfilt3f1.aig
+Warning: property not found, moved 1 outputs to bad properties
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 502]
+193 22 34 49 68 108 178 287 382 508 629 745 839 863 852 844 839 867 894 887 868 806 728 699 711 738 711 701 640 530 509 457 401 349 331 295 214 152 117 90 58 43 22 14 16 12 8 0 24 3117 0 
+
+--- Contextual MAB Statistics ---
+Arm pulls:
+  Arm 0 (Heuristic): 2 pulls
+  Arm 1 (limit=0, max=0, level=0): 3 pulls
+  Arm 2 (limit=1, max=3, level=1): 5 pulls
+  Arm 3 (limit=2, max=5, level=1): 10 pulls
+  Arm 4 (limit=8, max=4, level=1): 1842 pulls
+----------------------------
+SolverStatistic {
+    num_solve: 1761802,
+    avg_decide_var: 0.675616,
+    num_simplify_subsume: 34719,
+    num_simplify_self_subsume: 11614,
+}
+Statistic {
+    case: beemldfilt3f1.aig,
+    time: 107.17s,
+    num_mic: 40560,
+    avg_mic_cube_len: 12.483605,
+    avg_po_cube_len: 69.744839,
+    mic_drop: success: 108760, fail: 351648, success rate: 23.62%,
+    num_down: 460408,
+    num_down_sat: 803117,
+    ctp: success: 0, fail: 78201, success rate: 0.00%,
+    num_get_bad: 113,
+    overall_block_time: 68.165126407s,
+    block_get_bad_time: 66.131219ms,
+    block_get_predecessor_time: 15.654962391s,
+    block_blocked_time: 146.186154ms,
+    block_mic_time: 90.955285766s,
+    block_push_time: 274.478674ms,
+    overall_propagate_time: 38.859911319s,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: safe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Wed 07 May 2025 01:56:21 AM CST
+========================================

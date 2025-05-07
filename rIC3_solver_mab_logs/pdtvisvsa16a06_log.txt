@@ -1,0 +1,50 @@
+File: ./hwmcc08/pdtvisvsa16a06.aig
+Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./hwmcc08/pdtvisvsa16a06.aig
+Started at: Wed 07 May 2025 03:13:18 AM CST
+----------------------------------------
+Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc08/pdtvisvsa16a06.aig
+Warning: property not found, moved 1 outputs to bad properties
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 64]
+172 11 24 20 77 94 54 51 10 10 14 0 82 
+
+--- Contextual MAB Statistics ---
+Arm pulls:
+  Arm 0 (Heuristic): 10 pulls
+  Arm 1 (limit=0, max=0, level=0): 10 pulls
+  Arm 2 (limit=1, max=3, level=1): 10 pulls
+  Arm 3 (limit=2, max=5, level=1): 275 pulls
+  Arm 4 (limit=8, max=4, level=1): 9 pulls
+----------------------------
+SolverStatistic {
+    num_solve: 7989,
+    avg_decide_var: 0.331259,
+    num_simplify_subsume: 0,
+    num_simplify_self_subsume: 0,
+}
+Statistic {
+    case: pdtvisvsa16a06.aig,
+    time: 0.16s,
+    num_mic: 664,
+    avg_mic_cube_len: 5.040663,
+    avg_po_cube_len: 16.000000,
+    mic_drop: success: 405, fail: 2300, success rate: 14.97%,
+    num_down: 2705,
+    num_down_sat: 3524,
+    ctp: success: 0, fail: 583, success rate: 0.00%,
+    num_get_bad: 76,
+    overall_block_time: 109.385076ms,
+    block_get_bad_time: 13.250557ms,
+    block_get_predecessor_time: 25.60911ms,
+    block_blocked_time: 2.729003ms,
+    block_mic_time: 91.725151ms,
+    block_push_time: 317.031µs,
+    overall_propagate_time: 13.431371ms,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: safe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Wed 07 May 2025 03:13:19 AM CST
+========================================

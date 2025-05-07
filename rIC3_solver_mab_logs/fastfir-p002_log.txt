@@ -1,0 +1,49 @@
+File: ./others/fastfir/aig/fastfir-p002.aig
+Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./others/fastfir/aig/fastfir-p002.aig
+Started at: Wed 07 May 2025 03:41:08 AM CST
+----------------------------------------
+Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/others/fastfir/aig/fastfir-p002.aig
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 319, 844]
+698 54 2 1 1 1 1 1 1 25 48 46 99 81 117 98 1 23 0 874 
+
+--- Contextual MAB Statistics ---
+Arm pulls:
+  Arm 0 (Heuristic): 15 pulls
+  Arm 1 (limit=0, max=0, level=0): 206 pulls
+  Arm 2 (limit=1, max=3, level=1): 2112 pulls
+  Arm 3 (limit=2, max=5, level=1): 136 pulls
+  Arm 4 (limit=8, max=4, level=1): 15 pulls
+----------------------------
+SolverStatistic {
+    num_solve: 32848,
+    avg_decide_var: 0.693982,
+    num_simplify_subsume: 0,
+    num_simplify_self_subsume: 0,
+}
+Statistic {
+    case: fastfir-p002.aig,
+    time: 12.42s,
+    num_mic: 2538,
+    avg_mic_cube_len: 3.819149,
+    avg_po_cube_len: 85.344687,
+    mic_drop: success: 1264, fail: 8412, success rate: 13.06%,
+    num_down: 9676,
+    num_down_sat: 12268,
+    ctp: success: 0, fail: 3520, success rate: 0.00%,
+    num_get_bad: 126,
+    overall_block_time: 11.411724145s,
+    block_get_bad_time: 264.664795ms,
+    block_get_predecessor_time: 3.703061231s,
+    block_blocked_time: 878.017032ms,
+    block_mic_time: 7.899723651s,
+    block_push_time: 710.372732ms,
+    overall_propagate_time: 420.538452ms,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: safe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Wed 07 May 2025 03:41:21 AM CST
+========================================

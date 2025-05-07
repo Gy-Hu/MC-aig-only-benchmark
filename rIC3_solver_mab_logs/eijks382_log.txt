@@ -1,0 +1,50 @@
+File: ./hwmcc11/single/eijks382.aig
+Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./hwmcc11/single/eijks382.aig
+Started at: Wed 07 May 2025 06:44:03 AM CST
+----------------------------------------
+Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc11/single/eijks382.aig
+Warning: property not found, moved 1 outputs to bad properties
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 362, 180]
+57 7 14 17 5 11 23 24 25 23 15 16 23 17 20 13 28 22 20 19 17 12 8 6 4 3 3 6 5 4 2 4 2 3 3 3 1 4 2 14 9 9 1 2 2 2 2 3 2 2 8 2 2 2 2 2 5 1 1 1 1 1 2 1 4 1 1 1 1 1 1 1 2 7 9 2 1 1 1 2 1 2 4 2 9 6 1 2 1 4 2 1 2 0 314 
+
+--- Contextual MAB Statistics ---
+Arm pulls:
+  Arm 0 (Heuristic): 109 pulls
+  Arm 1 (limit=0, max=0, level=0): 601 pulls
+  Arm 2 (limit=1, max=3, level=1): 52 pulls
+  Arm 3 (limit=2, max=5, level=1): 127 pulls
+  Arm 4 (limit=8, max=4, level=1): 641 pulls
+----------------------------
+SolverStatistic {
+    num_solve: 74767,
+    avg_decide_var: 0.655417,
+    num_simplify_subsume: 0,
+    num_simplify_self_subsume: 0,
+}
+Statistic {
+    case: eijks382.aig,
+    time: 0.78s,
+    num_mic: 3367,
+    avg_mic_cube_len: 5.565786,
+    avg_po_cube_len: 27.624094,
+    mic_drop: success: 2766, fail: 15482, success rate: 15.16%,
+    num_down: 18248,
+    num_down_sat: 24012,
+    ctp: success: 0, fail: 20819, success rate: 0.00%,
+    num_get_bad: 182,
+    overall_block_time: 501.716092ms,
+    block_get_bad_time: 22.76548ms,
+    block_get_predecessor_time: 97.613233ms,
+    block_blocked_time: 16.143762ms,
+    block_mic_time: 548.194506ms,
+    block_push_time: 2.549259ms,
+    overall_propagate_time: 234.990136ms,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: safe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Wed 07 May 2025 06:44:04 AM CST
+========================================

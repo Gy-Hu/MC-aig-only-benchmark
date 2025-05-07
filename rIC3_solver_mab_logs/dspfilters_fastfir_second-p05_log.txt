@@ -4,3 +4,47 @@ Started at: Tue 06 May 2025 10:12:01 PM CST
 ----------------------------------------
 Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc1920/aig-1.8/dspfilters_fastfir_second-p05.aig
 Warning: property not found, moved 1 outputs to bad properties
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10481, 15833]
+1092 55 41 40 226 193 1753 487 2520 2873 3627 1038 2402 2367 2167 2140 1650 1677 1229 392 512 131 70 51 31 19 17 11 4 1 1 1 1 0 17649 
+
+--- Contextual MAB Statistics ---
+Arm pulls:
+  Arm 0 (Heuristic): 23 pulls
+  Arm 1 (limit=0, max=0, level=0): 29416 pulls
+  Arm 2 (limit=1, max=3, level=1): 23 pulls
+  Arm 3 (limit=2, max=5, level=1): 21801 pulls
+  Arm 4 (limit=8, max=4, level=1): 11 pulls
+----------------------------
+SolverStatistic {
+    num_solve: 2059733,
+    avg_decide_var: 0.731640,
+    num_simplify_subsume: 25485,
+    num_simplify_self_subsume: 12545,
+}
+Statistic {
+    case: dspfilters_fastfir_second-p05.aig,
+    time: 1210.18s,
+    num_mic: 56061,
+    avg_mic_cube_len: 11.366173,
+    avg_po_cube_len: 481.235273,
+    mic_drop: success: 162443, fail: 451201, success rate: 26.47%,
+    num_down: 613644,
+    num_down_sat: 808694,
+    ctp: success: 0, fail: 348934, success rate: 0.00%,
+    num_get_bad: 4654,
+    overall_block_time: 924.659156292s,
+    block_get_bad_time: 15.299114487s,
+    block_get_predecessor_time: 235.327552518s,
+    block_blocked_time: 55.300630168s,
+    block_mic_time: 779.573788126s,
+    block_push_time: 21.123342931s,
+    overall_propagate_time: 283.998573863s,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: safe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Tue 06 May 2025 10:32:13 PM CST
+========================================

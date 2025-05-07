@@ -1,0 +1,49 @@
+File: ./others/atxfifo/aig/atxfifo-p13.aig
+Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./others/atxfifo/aig/atxfifo-p13.aig
+Started at: Wed 07 May 2025 03:13:28 AM CST
+----------------------------------------
+Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/others/atxfifo/aig/atxfifo-p13.aig
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 123, 124]
+80 4 15 16 25 22 12 13 11 19 19 25 21 27 21 23 18 20 8 17 4 10 16 13 15 17 21 23 10 14 12 18 14 19 10 19 15 16 12 21 13 19 15 17 12 9 6 10 6 10 10 12 7 12 6 9 4 1 4 5 4 6 7 1 0 410 
+
+--- Contextual MAB Statistics ---
+Arm pulls:
+  Arm 0 (Heuristic): 49 pulls
+  Arm 1 (limit=0, max=0, level=0): 15 pulls
+  Arm 2 (limit=1, max=3, level=1): 168 pulls
+  Arm 3 (limit=2, max=5, level=1): 18 pulls
+  Arm 4 (limit=8, max=4, level=1): 354 pulls
+----------------------------
+SolverStatistic {
+    num_solve: 56381,
+    avg_decide_var: 0.677829,
+    num_simplify_subsume: 0,
+    num_simplify_self_subsume: 0,
+}
+Statistic {
+    case: atxfifo-p13.aig,
+    time: 1.12s,
+    num_mic: 1696,
+    avg_mic_cube_len: 6.514741,
+    avg_po_cube_len: 39.969071,
+    mic_drop: success: 1193, fail: 9242, success rate: 11.43%,
+    num_down: 10435,
+    num_down_sat: 11794,
+    ctp: success: 0, fail: 15898, success rate: 0.00%,
+    num_get_bad: 263,
+    overall_block_time: 707.295277ms,
+    block_get_bad_time: 349.021144ms,
+    block_get_predecessor_time: 67.341533ms,
+    block_blocked_time: 7.691785ms,
+    block_mic_time: 434.339407ms,
+    block_push_time: 13.046671ms,
+    overall_propagate_time: 356.026202ms,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: safe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Wed 07 May 2025 03:13:30 AM CST
+========================================

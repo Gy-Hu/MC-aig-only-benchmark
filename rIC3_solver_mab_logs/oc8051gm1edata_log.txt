@@ -1,0 +1,50 @@
+File: ./hwmcc1517/oc8051gm1edata.aig
+Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./hwmcc1517/oc8051gm1edata.aig
+Started at: Wed 07 May 2025 01:16:52 AM CST
+----------------------------------------
+Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc1517/oc8051gm1edata.aig
+Warning: property not found, moved 1 outputs to bad properties
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3391]
+933 2 2 3 2 13 48 87 59 107 108 272 794 2401 3834 5617 5206 2058 545 56 8 0 9877 0 
+
+--- Contextual MAB Statistics ---
+Arm pulls:
+  Arm 0 (Heuristic): 9 pulls
+  Arm 1 (limit=0, max=0, level=0): 4 pulls
+  Arm 2 (limit=1, max=3, level=1): 2 pulls
+  Arm 3 (limit=2, max=5, level=1): 7201 pulls
+  Arm 4 (limit=8, max=4, level=1): 483 pulls
+----------------------------
+SolverStatistic {
+    num_solve: 1032417,
+    avg_decide_var: 0.570413,
+    num_simplify_subsume: 16987,
+    num_simplify_self_subsume: 20368,
+}
+Statistic {
+    case: oc8051gm1edata.aig,
+    time: 341.11s,
+    num_mic: 36600,
+    avg_mic_cube_len: 12.153415,
+    avg_po_cube_len: 394.065017,
+    mic_drop: success: 128738, fail: 281393, success rate: 31.39%,
+    num_down: 410131,
+    num_down_sat: 643274,
+    ctp: success: 0, fail: 50671, success rate: 0.00%,
+    num_get_bad: 236,
+    overall_block_time: 281.674751884s,
+    block_get_bad_time: 380.85272ms,
+    block_get_predecessor_time: 47.383297082s,
+    block_blocked_time: 3.801034684s,
+    block_mic_time: 373.198369575s,
+    block_push_time: 2.444866603s,
+    overall_propagate_time: 58.950238505s,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: safe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Wed 07 May 2025 01:22:34 AM CST
+========================================

@@ -1,43 +1,44 @@
-File: ./hwmcc1920/fraig/vgasim_imgfifo-p082.aig
-Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./hwmcc1920/fraig/vgasim_imgfifo-p082.aig
-Started at: Tue 06 May 2025 07:39:24 PM CST
+File: ./hwmcc20/aig-1.8/vgasim_imgfifo-p082.aig
+Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./hwmcc20/aig-1.8/vgasim_imgfifo-p082.aig
+Started at: Wed 07 May 2025 08:10:40 AM CST
 ----------------------------------------
-Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc1920/fraig/vgasim_imgfifo-p082.aig
-[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 807, 502]
-343 6 1 1 2 12 47 25 86 27 13 3 2 2 2 2 2 2 2 2 2 2 1 0 502 
+Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc20/aig-1.8/vgasim_imgfifo-p082.aig
+Warning: property not found, moved 1 outputs to bad properties
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 287, 123]
+344 5 8 13 23 22 57 44 67 53 62 80 99 115 102 84 66 62 58 45 48 51 47 40 25 12 7 5 2 2 2 1 2 1 1 1 2 3 7 10 9 6 6 4 2 1 2 2 5 6 7 12 16 23 16 6 5 2 3 2 2 3 3 4 3 2 2 2 1 2 1 3 4 7 5 4 5 4 4 2 2 1 0 460 
 
 --- Contextual MAB Statistics ---
 Arm pulls:
-  Arm 0 (Heuristic): 11 pulls
-  Arm 1 (limit=0, max=0, level=0): 1939 pulls
-  Arm 2 (limit=1, max=3, level=1): 7 pulls
-  Arm 3 (limit=2, max=5, level=1): 6 pulls
-  Arm 4 (limit=8, max=4, level=1): 6 pulls
+  Arm 0 (Heuristic): 26 pulls
+  Arm 1 (limit=0, max=0, level=0): 6 pulls
+  Arm 2 (limit=1, max=3, level=1): 9 pulls
+  Arm 3 (limit=2, max=5, level=1): 14 pulls
+  Arm 4 (limit=8, max=4, level=1): 1200 pulls
 ----------------------------
 SolverStatistic {
-    num_solve: 29412,
-    avg_decide_var: 0.291616,
+    num_solve: 103155,
+    avg_decide_var: 0.307282,
     num_simplify_subsume: 0,
     num_simplify_self_subsume: 0,
 }
 Statistic {
     case: vgasim_imgfifo-p082.aig,
-    time: 0.82s,
-    num_mic: 1973,
-    avg_mic_cube_len: 7.759250,
-    avg_po_cube_len: 167.728610,
-    mic_drop: success: 1254, fail: 13668, success rate: 8.40%,
-    num_down: 14922,
-    num_down_sat: 14840,
-    ctp: success: 0, fail: 7844, success rate: 0.00%,
-    num_get_bad: 113,
-    overall_block_time: 662.605349ms,
-    block_get_bad_time: 41.814956ms,
-    block_get_predecessor_time: 179.041856ms,
-    block_blocked_time: 93.765655ms,
-    block_mic_time: 243.373814ms,
-    block_push_time: 23.36064ms,
-    overall_propagate_time: 57.60675ms,
+    time: 3.71s,
+    num_mic: 5033,
+    avg_mic_cube_len: 6.524737,
+    avg_po_cube_len: 165.854100,
+    mic_drop: success: 4151, fail: 26396, success rate: 13.59%,
+    num_down: 30547,
+    num_down_sat: 30569,
+    ctp: success: 0, fail: 29895, success rate: 0.00%,
+    num_get_bad: 166,
+    overall_block_time: 2.313050235s,
+    block_get_bad_time: 108.075791ms,
+    block_get_predecessor_time: 520.0071ms,
+    block_blocked_time: 68.405889ms,
+    block_mic_time: 2.576103193s,
+    block_push_time: 35.962557ms,
+    overall_propagate_time: 906.822145ms,
     xor_gen: success: 0, fail: 0, success rate: NaN%,
     num_auxiliary_var: 0,
     test: success: 0, fail: 0, success rate: NaN%,
@@ -45,5 +46,5 @@ Statistic {
 result: safe
 ----------------------------------------
 STATUS: COMPLETED
-Finished at: Tue 06 May 2025 07:39:25 PM CST
+Finished at: Wed 07 May 2025 08:10:44 AM CST
 ========================================

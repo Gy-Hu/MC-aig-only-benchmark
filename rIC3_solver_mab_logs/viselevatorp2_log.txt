@@ -1,0 +1,50 @@
+File: ./hwmcc08/viselevatorp2.aig
+Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./hwmcc08/viselevatorp2.aig
+Started at: Wed 07 May 2025 03:12:57 AM CST
+----------------------------------------
+Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc08/viselevatorp2.aig
+Warning: property not found, moved 1 outputs to bad properties
+[1, 1, 1, 1, 32]
+36 7 2 14 
+
+--- Contextual MAB Statistics ---
+Arm pulls:
+  Arm 0 (Heuristic): 24 pulls
+  Arm 1 (limit=0, max=0, level=0): 1 pulls
+  Arm 2 (limit=1, max=3, level=1): 1 pulls
+  Arm 3 (limit=2, max=5, level=1): 1 pulls
+  Arm 4 (limit=8, max=4, level=1): 1 pulls
+----------------------------
+SolverStatistic {
+    num_solve: 160,
+    avg_decide_var: 0.866345,
+    num_simplify_subsume: 0,
+    num_simplify_self_subsume: 0,
+}
+Statistic {
+    case: viselevatorp2.aig,
+    time: 0.01s,
+    num_mic: 28,
+    avg_mic_cube_len: 2.750000,
+    avg_po_cube_len: 18.424242,
+    mic_drop: success: 12, fail: 62, success rate: 16.22%,
+    num_down: 74,
+    num_down_sat: 81,
+    ctp: success: 0, fail: 2, success rate: 0.00%,
+    num_get_bad: 17,
+    overall_block_time: 8.341563ms,
+    block_get_bad_time: 1.426886ms,
+    block_get_predecessor_time: 1.959312ms,
+    block_blocked_time: 1.226678ms,
+    block_mic_time: 1.864353ms,
+    block_push_time: 206.009µs,
+    overall_propagate_time: 136.297µs,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: unsafe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Wed 07 May 2025 03:12:57 AM CST
+========================================

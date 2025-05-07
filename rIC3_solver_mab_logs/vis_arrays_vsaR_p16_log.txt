@@ -1,0 +1,49 @@
+File: ./avr/opensource/vis_arrays_vsaR_p16/vis_arrays_vsaR_p16.aig
+Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./avr/opensource/vis_arrays_vsaR_p16/vis_arrays_vsaR_p16.aig
+Started at: Wed 07 May 2025 06:59:43 AM CST
+----------------------------------------
+Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/avr/opensource/vis_arrays_vsaR_p16/vis_arrays_vsaR_p16.aig
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4318, 4711]
+66 1 6 12 22 29 32 33 62 254 175 289 548 843 981 163 817 897 1277 919 51 2 0 5031 
+
+--- Contextual MAB Statistics ---
+Arm pulls:
+  Arm 0 (Heuristic): 355 pulls
+  Arm 1 (limit=0, max=0, level=0): 13 pulls
+  Arm 2 (limit=1, max=3, level=1): 7 pulls
+  Arm 3 (limit=2, max=5, level=1): 5 pulls
+  Arm 4 (limit=8, max=4, level=1): 9554 pulls
+----------------------------
+SolverStatistic {
+    num_solve: 800690,
+    avg_decide_var: 0.473291,
+    num_simplify_subsume: 2204,
+    num_simplify_self_subsume: 3827,
+}
+Statistic {
+    case: vis_arrays_vsaR_p16.aig,
+    time: 40.87s,
+    num_mic: 15540,
+    avg_mic_cube_len: 8.062098,
+    avg_po_cube_len: 32.552768,
+    mic_drop: success: 14693, fail: 105250, success rate: 12.25%,
+    num_down: 119943,
+    num_down_sat: 208186,
+    ctp: success: 0, fail: 24670, success rate: 0.00%,
+    num_get_bad: 4251,
+    overall_block_time: 38.961116867s,
+    block_get_bad_time: 2.563343776s,
+    block_get_predecessor_time: 8.64358129s,
+    block_blocked_time: 762.899366ms,
+    block_mic_time: 35.645474065s,
+    block_push_time: 243.585087ms,
+    overall_propagate_time: 1.870085006s,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: safe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Wed 07 May 2025 07:00:24 AM CST
+========================================

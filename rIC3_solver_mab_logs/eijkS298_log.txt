@@ -1,0 +1,50 @@
+File: ./hwmcc08/eijkS298.aig
+Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./hwmcc08/eijkS298.aig
+Started at: Wed 07 May 2025 03:12:29 AM CST
+----------------------------------------
+Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc08/eijkS298.aig
+Warning: property not found, moved 1 outputs to bad properties
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 44, 129]
+43 7 3 8 4 5 6 18 23 18 20 6 1 7 2 3 5 0 151 
+
+--- Contextual MAB Statistics ---
+Arm pulls:
+  Arm 0 (Heuristic): 8 pulls
+  Arm 1 (limit=0, max=0, level=0): 8 pulls
+  Arm 2 (limit=1, max=3, level=1): 10 pulls
+  Arm 3 (limit=2, max=5, level=1): 8 pulls
+  Arm 4 (limit=8, max=4, level=1): 347 pulls
+----------------------------
+SolverStatistic {
+    num_solve: 6805,
+    avg_decide_var: 0.794079,
+    num_simplify_subsume: 0,
+    num_simplify_self_subsume: 0,
+}
+Statistic {
+    case: eijkS298.aig,
+    time: 0.08s,
+    num_mic: 427,
+    avg_mic_cube_len: 3.337237,
+    avg_po_cube_len: 17.427397,
+    mic_drop: success: 258, fail: 1132, success rate: 18.56%,
+    num_down: 1390,
+    num_down_sat: 1416,
+    ctp: success: 0, fail: 1496, success rate: 0.00%,
+    num_get_bad: 126,
+    overall_block_time: 55.391357ms,
+    block_get_bad_time: 5.779905ms,
+    block_get_predecessor_time: 18.985534ms,
+    block_blocked_time: 3.276993ms,
+    block_mic_time: 40.64185ms,
+    block_push_time: 283.383µs,
+    overall_propagate_time: 15.294844ms,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: safe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Wed 07 May 2025 03:12:29 AM CST
+========================================

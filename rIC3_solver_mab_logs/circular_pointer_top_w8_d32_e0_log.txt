@@ -1,6 +1,49 @@
-File: ./hwmcc1920/aig-1.8/circular_pointer_top_w8_d32_e0.aig
-Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./hwmcc1920/aig-1.8/circular_pointer_top_w8_d32_e0.aig
-Started at: Tue 06 May 2025 10:09:36 PM CST
+File: ./hwmcc19/single/aig/mann/data-integrity/unsafe/circular_pointer_top_w8_d32_e0.aig
+Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./hwmcc19/single/aig/mann/data-integrity/unsafe/circular_pointer_top_w8_d32_e0.aig
+Started at: Tue 06 May 2025 11:07:09 PM CST
 ----------------------------------------
-Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc1920/aig-1.8/circular_pointer_top_w8_d32_e0.aig
-Warning: property not found, moved 1 outputs to bad properties
+Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc19/single/aig/mann/data-integrity/unsafe/circular_pointer_top_w8_d32_e0.aig
+[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 6746, 5455]
+1 10 30 69 149 133 236 245 546 354 586 538 920 744 1048 936 1778 865 1444 1275 1810 1668 2189 2760 3140 2778 3067 3263 3726 3616 3639 4840 4888 8165 5897 
+
+--- Contextual MAB Statistics ---
+Arm pulls:
+  Arm 0 (Heuristic): 10 pulls
+  Arm 1 (limit=0, max=0, level=0): 11 pulls
+  Arm 2 (limit=1, max=3, level=1): 10 pulls
+  Arm 3 (limit=2, max=5, level=1): 78457 pulls
+  Arm 4 (limit=8, max=4, level=1): 902 pulls
+----------------------------
+SolverStatistic {
+    num_solve: 4483126,
+    avg_decide_var: 0.537344,
+    num_simplify_subsume: 91859,
+    num_simplify_self_subsume: 148652,
+}
+Statistic {
+    case: circular_pointer_top_w8_d32_e0.aig,
+    time: 433.52s,
+    num_mic: 109554,
+    avg_mic_cube_len: 14.334146,
+    avg_po_cube_len: 23.809800,
+    mic_drop: success: 268869, fail: 1258501, success rate: 17.60%,
+    num_down: 1527370,
+    num_down_sat: 2304139,
+    ctp: success: 0, fail: 105883, success rate: 0.00%,
+    num_get_bad: 1870,
+    overall_block_time: 355.065730951s,
+    block_get_bad_time: 911.873697ms,
+    block_get_predecessor_time: 24.037882204s,
+    block_blocked_time: 12.632537113s,
+    block_mic_time: 369.024692126s,
+    block_push_time: 1.441948405s,
+    overall_propagate_time: 78.328426701s,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: unsafe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Tue 06 May 2025 11:14:23 PM CST
+========================================

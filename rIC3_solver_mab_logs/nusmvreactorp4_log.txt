@@ -1,0 +1,50 @@
+File: ./hwmcc08/nusmvreactorp4.aig
+Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./hwmcc08/nusmvreactorp4.aig
+Started at: Wed 07 May 2025 03:13:20 AM CST
+----------------------------------------
+Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc08/nusmvreactorp4.aig
+Warning: property not found, moved 1 outputs to bad properties
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 59, 21]
+76 4 6 5 8 8 15 18 18 8 8 12 13 14 13 6 1 4 5 3 6 7 12 3 6 5 5 1 2 0 390 
+
+--- Contextual MAB Statistics ---
+Arm pulls:
+  Arm 0 (Heuristic): 5 pulls
+  Arm 1 (limit=0, max=0, level=0): 3 pulls
+  Arm 2 (limit=1, max=3, level=1): 5 pulls
+  Arm 3 (limit=2, max=5, level=1): 83 pulls
+  Arm 4 (limit=8, max=4, level=1): 3 pulls
+----------------------------
+SolverStatistic {
+    num_solve: 21185,
+    avg_decide_var: 0.980050,
+    num_simplify_subsume: 0,
+    num_simplify_self_subsume: 0,
+}
+Statistic {
+    case: nusmvreactorp4.aig,
+    time: 0.63s,
+    num_mic: 911,
+    avg_mic_cube_len: 7.072448,
+    avg_po_cube_len: 62.994780,
+    mic_drop: success: 1422, fail: 4597, success rate: 23.63%,
+    num_down: 6019,
+    num_down_sat: 10539,
+    ctp: success: 0, fail: 4859, success rate: 0.00%,
+    num_get_bad: 69,
+    overall_block_time: 437.173226ms,
+    block_get_bad_time: 10.44518ms,
+    block_get_predecessor_time: 55.17201ms,
+    block_blocked_time: 3.667553ms,
+    block_mic_time: 642.455984ms,
+    block_push_time: 26.78689ms,
+    overall_propagate_time: 148.783862ms,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: safe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Wed 07 May 2025 03:13:21 AM CST
+========================================

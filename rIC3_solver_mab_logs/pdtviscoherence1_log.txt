@@ -1,0 +1,50 @@
+File: ./hwmcc08/pdtviscoherence1.aig
+Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./hwmcc08/pdtviscoherence1.aig
+Started at: Wed 07 May 2025 03:13:26 AM CST
+----------------------------------------
+Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc08/pdtviscoherence1.aig
+Warning: property not found, moved 1 outputs to bad properties
+[1, 1, 1, 2, 5, 1, 1, 13, 19]
+30 14 12 27 25 22 15 32 
+
+--- Contextual MAB Statistics ---
+Arm pulls:
+  Arm 0 (Heuristic): 4 pulls
+  Arm 1 (limit=0, max=0, level=0): 2 pulls
+  Arm 2 (limit=1, max=3, level=1): 1 pulls
+  Arm 3 (limit=2, max=5, level=1): 81 pulls
+  Arm 4 (limit=8, max=4, level=1): 0 pulls
+----------------------------
+SolverStatistic {
+    num_solve: 1676,
+    avg_decide_var: 0.597733,
+    num_simplify_subsume: 0,
+    num_simplify_self_subsume: 0,
+}
+Statistic {
+    case: pdtviscoherence1.aig,
+    time: 0.03s,
+    num_mic: 180,
+    avg_mic_cube_len: 3.427778,
+    avg_po_cube_len: 15.810526,
+    mic_drop: success: 120, fail: 480, success rate: 20.00%,
+    num_down: 600,
+    num_down_sat: 671,
+    ctp: success: 0, fail: 108, success rate: 0.00%,
+    num_get_bad: 11,
+    overall_block_time: 19.821684ms,
+    block_get_bad_time: 1.169251ms,
+    block_get_predecessor_time: 5.488038ms,
+    block_blocked_time: 1.837787ms,
+    block_mic_time: 16.344534ms,
+    block_push_time: 420.023µs,
+    overall_propagate_time: 3.567336ms,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: unsafe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Wed 07 May 2025 03:13:26 AM CST
+========================================

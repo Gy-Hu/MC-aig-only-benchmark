@@ -1,0 +1,49 @@
+File: ./others/vgasim-imgfifo/aig/imgfifo-p056.aig
+Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./others/vgasim-imgfifo/aig/imgfifo-p056.aig
+Started at: Wed 07 May 2025 03:14:51 AM CST
+----------------------------------------
+Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/others/vgasim-imgfifo/aig/imgfifo-p056.aig
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 5]
+394 3 3 3 2 4 12 2 2 1 2 1 1 2 1 2 2 1 2 2 1 2 1 1 2 2 1 2 1 2 1 2 1 2 2 3 2 3 4 4 4 1 2 2 2 2 2 3 3 1 2 2 3 1 2 2 3 3 1 4 6 5 4 3 6 2 3 2 4 5 5 6 8 5 3 1 2 1 1 0 67 
+
+--- Contextual MAB Statistics ---
+Arm pulls:
+  Arm 0 (Heuristic): 5 pulls
+  Arm 1 (limit=0, max=0, level=0): 5 pulls
+  Arm 2 (limit=1, max=3, level=1): 19 pulls
+  Arm 3 (limit=2, max=5, level=1): 10 pulls
+  Arm 4 (limit=8, max=4, level=1): 70 pulls
+----------------------------
+SolverStatistic {
+    num_solve: 9888,
+    avg_decide_var: 0.354840,
+    num_simplify_subsume: 0,
+    num_simplify_self_subsume: 0,
+}
+Statistic {
+    case: imgfifo-p056.aig,
+    time: 0.73s,
+    num_mic: 435,
+    avg_mic_cube_len: 5.340230,
+    avg_po_cube_len: 129.333333,
+    mic_drop: success: 150, fail: 2126, success rate: 6.59%,
+    num_down: 2276,
+    num_down_sat: 2431,
+    ctp: success: 0, fail: 3204, success rate: 0.00%,
+    num_get_bad: 81,
+    overall_block_time: 229.372367ms,
+    block_get_bad_time: 26.412047ms,
+    block_get_predecessor_time: 66.652553ms,
+    block_blocked_time: 3.252632ms,
+    block_mic_time: 236.837687ms,
+    block_push_time: 1.734677ms,
+    overall_propagate_time: 127.890485ms,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: safe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Wed 07 May 2025 03:14:52 AM CST
+========================================

@@ -1,0 +1,50 @@
+File: ./hwmcc15/beemfrogs4f1.aig
+Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./hwmcc15/beemfrogs4f1.aig
+Started at: Wed 07 May 2025 01:44:48 AM CST
+----------------------------------------
+Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc15/beemfrogs4f1.aig
+Warning: property not found, moved 1 outputs to bad properties
+[1, 1, 1, 1, 1, 1, 1, 2, 1, 1, 12, 87, 84, 424]
+221 21 34 65 125 196 355 519 673 613 405 279 295 
+
+--- Contextual MAB Statistics ---
+Arm pulls:
+  Arm 0 (Heuristic): 1 pulls
+  Arm 1 (limit=0, max=0, level=0): 1 pulls
+  Arm 2 (limit=1, max=3, level=1): 1729 pulls
+  Arm 3 (limit=2, max=5, level=1): 0 pulls
+  Arm 4 (limit=8, max=4, level=1): 0 pulls
+----------------------------
+SolverStatistic {
+    num_solve: 131925,
+    avg_decide_var: 0.542714,
+    num_simplify_subsume: 0,
+    num_simplify_self_subsume: 0,
+}
+Statistic {
+    case: beemfrogs4f1.aig,
+    time: 12.30s,
+    num_mic: 4429,
+    avg_mic_cube_len: 13.079928,
+    avg_po_cube_len: 213.505283,
+    mic_drop: success: 16049, fail: 37152, success rate: 30.17%,
+    num_down: 53201,
+    num_down_sat: 95498,
+    ctp: success: 0, fail: 493, success rate: 0.00%,
+    num_get_bad: 13,
+    overall_block_time: 11.824226715s,
+    block_get_bad_time: 2.574803ms,
+    block_get_predecessor_time: 1.867734101s,
+    block_blocked_time: 502.164481ms,
+    block_mic_time: 13.946258312s,
+    block_push_time: 129.391807ms,
+    overall_propagate_time: 393.616445ms,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: unsafe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Wed 07 May 2025 01:45:01 AM CST
+========================================

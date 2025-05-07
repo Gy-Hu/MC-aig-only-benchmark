@@ -1,0 +1,50 @@
+File: ./hwmcc15/ndista128.aig
+Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./hwmcc15/ndista128.aig
+Started at: Wed 07 May 2025 02:07:13 AM CST
+----------------------------------------
+Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc15/ndista128.aig
+Warning: property not found, moved 1 outputs to bad properties
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 378, 6]
+13 7 2 6 1 1 1 6 1 1 1 1 1 1 1 6 2 1 1 1 1 1 1 1 1 1 1 1 1 1 1 5 2 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 6 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 3 0 6 
+
+--- Contextual MAB Statistics ---
+Arm pulls:
+  Arm 0 (Heuristic): 3 pulls
+  Arm 1 (limit=0, max=0, level=0): 10 pulls
+  Arm 2 (limit=1, max=3, level=1): 51 pulls
+  Arm 3 (limit=2, max=5, level=1): 163 pulls
+  Arm 4 (limit=8, max=4, level=1): 178 pulls
+----------------------------
+SolverStatistic {
+    num_solve: 8513,
+    avg_decide_var: 0.714263,
+    num_simplify_subsume: 0,
+    num_simplify_self_subsume: 0,
+}
+Statistic {
+    case: ndista128.aig,
+    time: 0.06s,
+    num_mic: 663,
+    avg_mic_cube_len: 4.040724,
+    avg_po_cube_len: 12.068004,
+    mic_drop: success: 299, fail: 2348, success rate: 11.30%,
+    num_down: 2647,
+    num_down_sat: 3623,
+    ctp: success: 0, fail: 255, success rate: 0.00%,
+    num_get_bad: 75,
+    overall_block_time: 42.814714ms,
+    block_get_bad_time: 1.893686ms,
+    block_get_predecessor_time: 11.076266ms,
+    block_blocked_time: 2.925456ms,
+    block_mic_time: 36.484543ms,
+    block_push_time: 853.442µs,
+    overall_propagate_time: 3.1423ms,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: safe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Wed 07 May 2025 02:07:13 AM CST
+========================================

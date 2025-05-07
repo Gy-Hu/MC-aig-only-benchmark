@@ -1,0 +1,50 @@
+File: ./hwmcc11/single/bobtuttt.aig
+Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./hwmcc11/single/bobtuttt.aig
+Started at: Wed 07 May 2025 06:35:31 AM CST
+----------------------------------------
+Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc11/single/bobtuttt.aig
+Warning: property not found, moved 1 outputs to bad properties
+[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 4, 1, 1, 2, 1, 108476, 2990]
+111 31 8 4 5 6 4 20 15 152 105 220 215 212 164 145 66 88 1924 2570 
+
+--- Contextual MAB Statistics ---
+Arm pulls:
+  Arm 0 (Heuristic): 107200 pulls
+  Arm 1 (limit=0, max=0, level=0): 4370 pulls
+  Arm 2 (limit=1, max=3, level=1): 8 pulls
+  Arm 3 (limit=2, max=5, level=1): 7 pulls
+  Arm 4 (limit=8, max=4, level=1): 370 pulls
+----------------------------
+SolverStatistic {
+    num_solve: 10737094,
+    avg_decide_var: 0.970807,
+    num_simplify_subsume: 201249,
+    num_simplify_self_subsume: 221118,
+}
+Statistic {
+    case: bobtuttt.aig,
+    time: 2769.60s,
+    num_mic: 112953,
+    avg_mic_cube_len: 59.568166,
+    avg_po_cube_len: 70.893311,
+    mic_drop: success: 113591, fail: 6612122, success rate: 1.69%,
+    num_down: 6725713,
+    num_down_sat: 10431918,
+    ctp: success: 0, fail: 22011, success rate: 0.00%,
+    num_get_bad: 54116,
+    overall_block_time: 2759.006084228s,
+    block_get_bad_time: 35.457406944s,
+    block_get_predecessor_time: 55.16370469s,
+    block_blocked_time: 546.299437673s,
+    block_mic_time: 1882.238393412s,
+    block_push_time: 13.929407416s,
+    overall_propagate_time: 10.275874017s,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: unsafe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Wed 07 May 2025 07:21:41 AM CST
+========================================

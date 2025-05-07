@@ -1,0 +1,50 @@
+File: ./hwmcc13/single/6s407rb296.aig
+Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./hwmcc13/single/6s407rb296.aig
+Started at: Wed 07 May 2025 04:24:17 AM CST
+----------------------------------------
+Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc13/single/6s407rb296.aig
+Warning: property not found, moved 1 outputs to bad properties
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7717, 2325]
+11350 37 47 206 858 1813 3440 3763 4598 3288 1850 1101 551 331 211 847 58 7 1 0 3722 
+
+--- Contextual MAB Statistics ---
+Arm pulls:
+  Arm 0 (Heuristic): 134 pulls
+  Arm 1 (limit=0, max=0, level=0): 9165 pulls
+  Arm 2 (limit=1, max=3, level=1): 4 pulls
+  Arm 3 (limit=2, max=5, level=1): 203 pulls
+  Arm 4 (limit=8, max=4, level=1): 4678 pulls
+----------------------------
+SolverStatistic {
+    num_solve: 813580,
+    avg_decide_var: 0.041640,
+    num_simplify_subsume: 16094,
+    num_simplify_self_subsume: 7117,
+}
+Statistic {
+    case: 6s407rb296.aig,
+    time: 164.46s,
+    num_mic: 36258,
+    avg_mic_cube_len: 9.136025,
+    avg_po_cube_len: 185.713630,
+    mic_drop: success: 49999, fail: 268537, success rate: 15.70%,
+    num_down: 318536,
+    num_down_sat: 408497,
+    ctp: success: 0, fail: 53331, success rate: 0.00%,
+    num_get_bad: 303,
+    overall_block_time: 131.864117891s,
+    block_get_bad_time: 12.182257851s,
+    block_get_predecessor_time: 20.137000636s,
+    block_blocked_time: 8.086685967s,
+    block_mic_time: 127.362476663s,
+    block_push_time: 1.964959128s,
+    overall_propagate_time: 27.759097314s,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: safe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Wed 07 May 2025 04:27:07 AM CST
+========================================

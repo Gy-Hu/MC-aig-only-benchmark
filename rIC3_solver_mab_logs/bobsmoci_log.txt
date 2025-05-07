@@ -1,0 +1,50 @@
+File: ./hwmcc11/single/bobsmoci.aig
+Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./hwmcc11/single/bobsmoci.aig
+Started at: Wed 07 May 2025 05:55:35 AM CST
+----------------------------------------
+Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc11/single/bobsmoci.aig
+Warning: property not found, moved 1 outputs to bad properties
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 6, 7, 2, 1, 1, 1, 1, 4, 2, 4, 1, 1, 1, 1, 1, 1, 1, 3, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 8, 30, 9, 9, 6, 1, 1, 8, 647, 1034]
+541 339 25 49 74 83 54 87 61 2 2 1 1 3 1 2 0 3 2 4 3 1 1 2 1 1 1 8 19 5 3 4 3 4 5 12 7 14 6 7 5 17 7 6 12 15 12 8 9 11 12 9 7 6 10 15 1525 
+
+--- Contextual MAB Statistics ---
+Arm pulls:
+  Arm 0 (Heuristic): 47 pulls
+  Arm 1 (limit=0, max=0, level=0): 336 pulls
+  Arm 2 (limit=1, max=3, level=1): 109 pulls
+  Arm 3 (limit=2, max=5, level=1): 2852 pulls
+  Arm 4 (limit=8, max=4, level=1): 226 pulls
+----------------------------
+SolverStatistic {
+    num_solve: 188980,
+    avg_decide_var: 0.560542,
+    num_simplify_subsume: 4952,
+    num_simplify_self_subsume: 2301,
+}
+Statistic {
+    case: bobsmoci.aig,
+    time: 11.63s,
+    num_mic: 5431,
+    avg_mic_cube_len: 6.011784,
+    avg_po_cube_len: 76.276795,
+    mic_drop: success: 5840, fail: 25656, success rate: 18.54%,
+    num_down: 31496,
+    num_down_sat: 43154,
+    ctp: success: 0, fail: 77051, success rate: 0.00%,
+    num_get_bad: 822,
+    overall_block_time: 7.06620266s,
+    block_get_bad_time: 1.624288457s,
+    block_get_predecessor_time: 595.630354ms,
+    block_blocked_time: 263.912347ms,
+    block_mic_time: 5.357211937s,
+    block_push_time: 30.632917ms,
+    overall_propagate_time: 4.212586518s,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: safe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Wed 07 May 2025 05:55:47 AM CST
+========================================

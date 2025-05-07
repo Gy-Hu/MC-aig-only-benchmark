@@ -1,0 +1,50 @@
+File: ./hwmcc15/beembrptwo3b2.aig
+Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./hwmcc15/beembrptwo3b2.aig
+Started at: Wed 07 May 2025 01:45:01 AM CST
+----------------------------------------
+Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc15/beembrptwo3b2.aig
+Warning: property not found, moved 1 outputs to bad properties
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 165, 66]
+228 22 11 25 40 25 9 23 75 14 8 10 5 5 3 21 55 31 30 25 24 24 29 22 9 4 4 4 3 5 6 38 88 36 37 25 33 23 14 12 16 12 12 13 20 17 61 66 33 40 111 218 317 441 732 1219 1726 2021 2363 2655 3087 3587 4184 5377 6031 7595 7726 7075 6413 4803 3663 2432 1817 1204 1031 978 853 732 529 393 356 301 199 157 64 32 22 14 9 22 11 4 5 4 0 5007 
+
+--- Contextual MAB Statistics ---
+Arm pulls:
+  Arm 0 (Heuristic): 10 pulls
+  Arm 1 (limit=0, max=0, level=0): 3 pulls
+  Arm 2 (limit=1, max=3, level=1): 7 pulls
+  Arm 3 (limit=2, max=5, level=1): 15 pulls
+  Arm 4 (limit=8, max=4, level=1): 1752 pulls
+----------------------------
+SolverStatistic {
+    num_solve: 11154759,
+    avg_decide_var: 1.000757,
+    num_simplify_subsume: 737063,
+    num_simplify_self_subsume: 951936,
+}
+Statistic {
+    case: beembrptwo3b2.aig,
+    time: 2875.96s,
+    num_mic: 129218,
+    avg_mic_cube_len: 35.358077,
+    avg_po_cube_len: 228.000000,
+    mic_drop: success: 813987, fail: 3337936, success rate: 19.61%,
+    num_down: 4151923,
+    num_down_sat: 8629378,
+    ctp: success: 0, fail: 234200, success rate: 0.00%,
+    num_get_bad: 98,
+    overall_block_time: 1606.719619979s,
+    block_get_bad_time: 92.684046ms,
+    block_get_predecessor_time: 58.659694273s,
+    block_blocked_time: 1.290705596s,
+    block_mic_time: 2808.906687203s,
+    block_push_time: 4.408599053s,
+    overall_propagate_time: 1268.584185308s,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: safe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Wed 07 May 2025 02:32:57 AM CST
+========================================

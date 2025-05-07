@@ -1,0 +1,49 @@
+File: ./avr/opensource/h_CRC/h_CRC.aig
+Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./avr/opensource/h_CRC/h_CRC.aig
+Started at: Wed 07 May 2025 07:00:14 AM CST
+----------------------------------------
+Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/avr/opensource/h_CRC/h_CRC.aig
+[1, 1, 18]
+32 18 0 
+
+--- Contextual MAB Statistics ---
+Arm pulls:
+  Arm 0 (Heuristic): 3 pulls
+  Arm 1 (limit=0, max=0, level=0): 1 pulls
+  Arm 2 (limit=1, max=3, level=1): 1 pulls
+  Arm 3 (limit=2, max=5, level=1): 13 pulls
+  Arm 4 (limit=8, max=4, level=1): 0 pulls
+----------------------------
+SolverStatistic {
+    num_solve: 153,
+    avg_decide_var: 0.683167,
+    num_simplify_subsume: 0,
+    num_simplify_self_subsume: 0,
+}
+Statistic {
+    case: h_CRC.aig,
+    time: 0.01s,
+    num_mic: 18,
+    avg_mic_cube_len: 6.444444,
+    avg_po_cube_len: 27.114754,
+    mic_drop: success: 17, fail: 98, success rate: 14.78%,
+    num_down: 115,
+    num_down_sat: 112,
+    ctp: success: 0, fail: 0, success rate: NaN%,
+    num_get_bad: 18,
+    overall_block_time: 3.897744ms,
+    block_get_bad_time: 1.423011ms,
+    block_get_predecessor_time: 370.054µs,
+    block_blocked_time: 395.755µs,
+    block_mic_time: 987.571µs,
+    block_push_time: 602ns,
+    overall_propagate_time: 145.874µs,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: unsafe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Wed 07 May 2025 07:00:15 AM CST
+========================================

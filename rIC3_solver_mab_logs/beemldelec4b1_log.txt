@@ -1,0 +1,51 @@
+File: ./hwmcc13/single/beemldelec4b1.aig
+Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./hwmcc13/single/beemldelec4b1.aig
+Started at: Wed 07 May 2025 05:10:23 AM CST
+----------------------------------------
+Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc13/single/beemldelec4b1.aig
+Warning: property not found, moved 1 outputs to bad properties
+abc preprocess timeout
+[1, 1, 1, 5, 199]
+1214 1 88 197 0 
+
+--- Contextual MAB Statistics ---
+Arm pulls:
+  Arm 0 (Heuristic): 1 pulls
+  Arm 1 (limit=0, max=0, level=0): 285 pulls
+  Arm 2 (limit=1, max=3, level=1): 0 pulls
+  Arm 3 (limit=2, max=5, level=1): 0 pulls
+  Arm 4 (limit=8, max=4, level=1): 0 pulls
+----------------------------
+SolverStatistic {
+    num_solve: 19413,
+    avg_decide_var: 1.000133,
+    num_simplify_subsume: 0,
+    num_simplify_self_subsume: 0,
+}
+Statistic {
+    case: beemldelec4b1.aig,
+    time: 10.21s,
+    num_mic: 286,
+    avg_mic_cube_len: 38.545455,
+    avg_po_cube_len: 1211.274157,
+    mic_drop: success: 834, fail: 9517, success rate: 8.06%,
+    num_down: 10351,
+    num_down_sat: 18654,
+    ctp: success: 0, fail: 0, success rate: NaN%,
+    num_get_bad: 103,
+    overall_block_time: 9.764265118s,
+    block_get_bad_time: 223.307744ms,
+    block_get_predecessor_time: 152.66888ms,
+    block_blocked_time: 342.263964ms,
+    block_mic_time: 8.707903383s,
+    block_push_time: 3.864µs,
+    overall_propagate_time: 219.595034ms,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: unsafe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Wed 07 May 2025 05:10:38 AM CST
+========================================

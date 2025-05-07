@@ -1,0 +1,51 @@
+File: ./hwmcc14/single/6s203b19.aig
+Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./hwmcc14/single/6s203b19.aig
+Started at: Wed 07 May 2025 05:17:18 AM CST
+----------------------------------------
+Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc14/single/6s203b19.aig
+Warning: property not found, moved 1 outputs to bad properties
+abc preprocess timeout
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 565, 195]
+64974 16 15 15 8 5 5 4 4 2 2 2 5 4 7 4 5 2 7 4 17 10 22 10 12 6 6 1 1 1 1 1 2 2 1 1 1 1 1 1 1 1 1 1 5 2 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 254 
+
+--- Contextual MAB Statistics ---
+Arm pulls:
+  Arm 0 (Heuristic): 9 pulls
+  Arm 1 (limit=0, max=0, level=0): 6 pulls
+  Arm 2 (limit=1, max=3, level=1): 1023 pulls
+  Arm 3 (limit=2, max=5, level=1): 115 pulls
+  Arm 4 (limit=8, max=4, level=1): 93 pulls
+----------------------------
+SolverStatistic {
+    num_solve: 31164,
+    avg_decide_var: 0.001759,
+    num_simplify_subsume: 0,
+    num_simplify_self_subsume: 0,
+}
+Statistic {
+    case: 6s203b19.aig,
+    time: 87.45s,
+    num_mic: 1407,
+    avg_mic_cube_len: 4.126510,
+    avg_po_cube_len: 79.969675,
+    mic_drop: success: 839, fail: 4912, success rate: 14.59%,
+    num_down: 5751,
+    num_down_sat: 6213,
+    ctp: success: 0, fail: 15278, success rate: 0.00%,
+    num_get_bad: 75,
+    overall_block_time: 15.463640753s,
+    block_get_bad_time: 13.981604809s,
+    block_get_predecessor_time: 595.335683ms,
+    block_blocked_time: 212.017602ms,
+    block_mic_time: 706.608207ms,
+    block_push_time: 87.72683ms,
+    overall_propagate_time: 395.212827ms,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: safe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Wed 07 May 2025 05:18:56 AM CST
+========================================

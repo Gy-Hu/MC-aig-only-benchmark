@@ -1,0 +1,50 @@
+File: ./hwmcc15/beemprdcell2f1.aig
+Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./hwmcc15/beemprdcell2f1.aig
+Started at: Wed 07 May 2025 01:43:54 AM CST
+----------------------------------------
+Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc15/beemprdcell2f1.aig
+Warning: property not found, moved 1 outputs to bad properties
+[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 5, 2, 1, 1, 1, 1, 1, 1, 1, 1, 2, 1, 3, 3, 3, 1, 1, 3, 1, 1, 16, 1, 7, 1, 1, 1, 5, 1, 1, 37, 98, 1, 1, 2, 110, 360]
+110 6 6 10 17 19 22 22 27 29 32 39 54 72 93 91 119 146 113 102 150 139 129 113 110 117 100 77 59 68 60 71 76 73 71 64 62 36 20 18 64 90 79 101 97 81 76 58 63 37 18 504 
+
+--- Contextual MAB Statistics ---
+Arm pulls:
+  Arm 0 (Heuristic): 18 pulls
+  Arm 1 (limit=0, max=0, level=0): 34 pulls
+  Arm 2 (limit=1, max=3, level=1): 55 pulls
+  Arm 3 (limit=2, max=5, level=1): 591 pulls
+  Arm 4 (limit=8, max=4, level=1): 931 pulls
+----------------------------
+SolverStatistic {
+    num_solve: 455102,
+    avg_decide_var: 0.685178,
+    num_simplify_subsume: 19018,
+    num_simplify_self_subsume: 935,
+}
+Statistic {
+    case: beemprdcell2f1.aig,
+    time: 10.98s,
+    num_mic: 20401,
+    avg_mic_cube_len: 9.549434,
+    avg_po_cube_len: 81.702849,
+    mic_drop: success: 33447, fail: 148556, success rate: 18.38%,
+    num_down: 182003,
+    num_down_sat: 311762,
+    ctp: success: 0, fail: 16316, success rate: 0.00%,
+    num_get_bad: 72,
+    overall_block_time: 10.112979268s,
+    block_get_bad_time: 6.487694ms,
+    block_get_predecessor_time: 1.827054454s,
+    block_blocked_time: 66.880605ms,
+    block_mic_time: 14.806772877s,
+    block_push_time: 66.556132ms,
+    overall_propagate_time: 808.250973ms,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: unsafe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Wed 07 May 2025 01:44:06 AM CST
+========================================

@@ -1,0 +1,50 @@
+File: ./hwmcc11/single/bobtuint09neg.aig
+Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./hwmcc11/single/bobtuint09neg.aig
+Started at: Wed 07 May 2025 06:09:40 AM CST
+----------------------------------------
+Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc11/single/bobtuint09neg.aig
+Warning: property not found, moved 1 outputs to bad properties
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 38, 20]
+207 5 5 4 6 4 1 1 1 3 4 5 2 1 0 23 
+
+--- Contextual MAB Statistics ---
+Arm pulls:
+  Arm 0 (Heuristic): 2 pulls
+  Arm 1 (limit=0, max=0, level=0): 2 pulls
+  Arm 2 (limit=1, max=3, level=1): 108 pulls
+  Arm 3 (limit=2, max=5, level=1): 0 pulls
+  Arm 4 (limit=8, max=4, level=1): 0 pulls
+----------------------------
+SolverStatistic {
+    num_solve: 1157,
+    avg_decide_var: 0.078206,
+    num_simplify_subsume: 0,
+    num_simplify_self_subsume: 0,
+}
+Statistic {
+    case: bobtuint09neg.aig,
+    time: 0.06s,
+    num_mic: 136,
+    avg_mic_cube_len: 2.198529,
+    avg_po_cube_len: 22.521441,
+    mic_drop: success: 27, fail: 269, success rate: 9.12%,
+    num_down: 296,
+    num_down_sat: 279,
+    ctp: success: 0, fail: 270, success rate: 0.00%,
+    num_get_bad: 21,
+    overall_block_time: 12.49043ms,
+    block_get_bad_time: 3.152587ms,
+    block_get_predecessor_time: 3.119773ms,
+    block_blocked_time: 2.065232ms,
+    block_mic_time: 3.482723ms,
+    block_push_time: 239.802µs,
+    overall_propagate_time: 2.131066ms,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: safe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Wed 07 May 2025 06:09:40 AM CST
+========================================

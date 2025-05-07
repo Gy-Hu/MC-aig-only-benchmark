@@ -1,0 +1,50 @@
+File: ./avr/industry/mul5/mul5.aig
+Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./avr/industry/mul5/mul5.aig
+Started at: Wed 07 May 2025 08:04:17 AM CST
+----------------------------------------
+Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/avr/industry/mul5/mul5.aig
+abc preprocess timeout
+[1, 1, 112]
+269 112 
+
+--- Contextual MAB Statistics ---
+Arm pulls:
+  Arm 0 (Heuristic): 23 pulls
+  Arm 1 (limit=0, max=0, level=0): 23 pulls
+  Arm 2 (limit=1, max=3, level=1): 22 pulls
+  Arm 3 (limit=2, max=5, level=1): 22 pulls
+  Arm 4 (limit=8, max=4, level=1): 22 pulls
+----------------------------
+SolverStatistic {
+    num_solve: 114,
+    avg_decide_var: 95.397185,
+    num_simplify_subsume: 0,
+    num_simplify_self_subsume: 0,
+}
+Statistic {
+    case: mul5.aig,
+    time: 0.62s,
+    num_mic: 112,
+    avg_mic_cube_len: 1.000000,
+    avg_po_cube_len: 151.082353,
+    mic_drop: success: 0, fail: 112, success rate: 0.00%,
+    num_down: 112,
+    num_down_sat: 0,
+    ctp: success: 0, fail: 0, success rate: NaN%,
+    num_get_bad: 114,
+    overall_block_time: 539.658246ms,
+    block_get_bad_time: 306.965ms,
+    block_get_predecessor_time: 3.342913ms,
+    block_blocked_time: 34.288981ms,
+    block_mic_time: 1.433594ms,
+    block_push_time: 1.942µs,
+    overall_propagate_time: 489ns,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: unsafe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Wed 07 May 2025 08:04:23 AM CST
+========================================

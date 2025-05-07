@@ -1,0 +1,50 @@
+File: ./hwmcc08/pdtvisblackjack4.aig
+Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./hwmcc08/pdtvisblackjack4.aig
+Started at: Wed 07 May 2025 03:12:46 AM CST
+----------------------------------------
+Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc08/pdtvisblackjack4.aig
+Warning: property not found, moved 1 outputs to bad properties
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 78]
+103 3 3 5 3 2 2 1 2 0 4 2 6 2 1 1 79 0 
+
+--- Contextual MAB Statistics ---
+Arm pulls:
+  Arm 0 (Heuristic): 3 pulls
+  Arm 1 (limit=0, max=0, level=0): 3 pulls
+  Arm 2 (limit=1, max=3, level=1): 22 pulls
+  Arm 3 (limit=2, max=5, level=1): 2 pulls
+  Arm 4 (limit=8, max=4, level=1): 55 pulls
+----------------------------
+SolverStatistic {
+    num_solve: 3072,
+    avg_decide_var: 0.836136,
+    num_simplify_subsume: 0,
+    num_simplify_self_subsume: 0,
+}
+Statistic {
+    case: pdtvisblackjack4.aig,
+    time: 0.07s,
+    num_mic: 336,
+    avg_mic_cube_len: 2.208333,
+    avg_po_cube_len: 14.468643,
+    mic_drop: success: 157, fail: 547, success rate: 22.30%,
+    num_down: 704,
+    num_down_sat: 607,
+    ctp: success: 0, fail: 933, success rate: 0.00%,
+    num_get_bad: 30,
+    overall_block_time: 36.366459ms,
+    block_get_bad_time: 7.965197ms,
+    block_get_predecessor_time: 9.20703ms,
+    block_blocked_time: 1.998019ms,
+    block_mic_time: 26.155397ms,
+    block_push_time: 1.352212ms,
+    overall_propagate_time: 8.86964ms,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: safe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Wed 07 May 2025 03:12:46 AM CST
+========================================

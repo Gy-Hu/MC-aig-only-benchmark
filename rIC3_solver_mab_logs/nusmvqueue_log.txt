@@ -1,0 +1,50 @@
+File: ./hwmcc11/single/nusmvqueue.aig
+Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./hwmcc11/single/nusmvqueue.aig
+Started at: Wed 07 May 2025 06:22:38 AM CST
+----------------------------------------
+Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc11/single/nusmvqueue.aig
+Warning: property not found, moved 1 outputs to bad properties
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 13555, 9001]
+84 5 15 19 31 29 44 35 78 89 111 120 182 219 268 334 534 632 737 596 814 896 1036 1071 1023 845 907 1128 1161 1556 1135 877 914 827 748 616 381 100 105 68 52 23 13 9 11 11 2 0 9806 
+
+--- Contextual MAB Statistics ---
+Arm pulls:
+  Arm 0 (Heuristic): 2 pulls
+  Arm 1 (limit=0, max=0, level=0): 49339 pulls
+  Arm 2 (limit=1, max=3, level=1): 1 pulls
+  Arm 3 (limit=2, max=5, level=1): 45 pulls
+  Arm 4 (limit=8, max=4, level=1): 1 pulls
+----------------------------
+SolverStatistic {
+    num_solve: 1705622,
+    avg_decide_var: 0.997526,
+    num_simplify_subsume: 87923,
+    num_simplify_self_subsume: 106853,
+}
+Statistic {
+    case: nusmvqueue.aig,
+    time: 219.11s,
+    num_mic: 49517,
+    avg_mic_cube_len: 11.364582,
+    avg_po_cube_len: 79.565945,
+    mic_drop: success: 104544, fail: 446359, success rate: 18.98%,
+    num_down: 550903,
+    num_down_sat: 918665,
+    ctp: success: 0, fail: 204983, success rate: 0.00%,
+    num_get_bad: 7402,
+    overall_block_time: 120.225885932s,
+    block_get_bad_time: 1.884585459s,
+    block_get_predecessor_time: 1.801828982s,
+    block_blocked_time: 13.201117496s,
+    block_mic_time: 86.082493224s,
+    block_push_time: 3.839915868s,
+    overall_propagate_time: 98.751376645s,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: safe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Wed 07 May 2025 06:26:17 AM CST
+========================================

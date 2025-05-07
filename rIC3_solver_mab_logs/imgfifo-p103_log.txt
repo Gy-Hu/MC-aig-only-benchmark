@@ -1,0 +1,49 @@
+File: ./others/vgasim-imgfifo/aig/imgfifo-p103.aig
+Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./others/vgasim-imgfifo/aig/imgfifo-p103.aig
+Started at: Wed 07 May 2025 03:18:25 AM CST
+----------------------------------------
+Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/others/vgasim-imgfifo/aig/imgfifo-p103.aig
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 2]
+394 2 2 3 8 4 4 3 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 3 4 3 2 3 3 1 1 2 2 2 3 3 3 2 3 3 3 3 2 3 2 2 2 3 2 2 3 4 3 3 3 3 4 5 2 2 1 1 0 60 
+
+--- Contextual MAB Statistics ---
+Arm pulls:
+  Arm 0 (Heuristic): 5 pulls
+  Arm 1 (limit=0, max=0, level=0): 3 pulls
+  Arm 2 (limit=1, max=3, level=1): 7 pulls
+  Arm 3 (limit=2, max=5, level=1): 24 pulls
+  Arm 4 (limit=8, max=4, level=1): 42 pulls
+----------------------------
+SolverStatistic {
+    num_solve: 7020,
+    avg_decide_var: 0.358232,
+    num_simplify_subsume: 0,
+    num_simplify_self_subsume: 0,
+}
+Statistic {
+    case: imgfifo-p103.aig,
+    time: 0.56s,
+    num_mic: 311,
+    avg_mic_cube_len: 6.250804,
+    avg_po_cube_len: 127.702206,
+    mic_drop: success: 126, fail: 1781, success rate: 6.61%,
+    num_down: 1907,
+    num_down_sat: 1995,
+    ctp: success: 0, fail: 1747, success rate: 0.00%,
+    num_get_bad: 66,
+    overall_block_time: 168.069723ms,
+    block_get_bad_time: 21.436911ms,
+    block_get_predecessor_time: 45.485193ms,
+    block_blocked_time: 2.283868ms,
+    block_mic_time: 174.337284ms,
+    block_push_time: 2.364492ms,
+    overall_propagate_time: 103.419486ms,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: safe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Wed 07 May 2025 03:18:26 AM CST
+========================================

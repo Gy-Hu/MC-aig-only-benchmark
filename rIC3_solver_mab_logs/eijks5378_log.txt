@@ -1,0 +1,50 @@
+File: ./hwmcc11/single/eijks5378.aig
+Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./hwmcc11/single/eijks5378.aig
+Started at: Wed 07 May 2025 05:59:03 AM CST
+----------------------------------------
+Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc11/single/eijks5378.aig
+Warning: property not found, moved 1 outputs to bad properties
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1423, 1717]
+441 146 274 242 107 98 71 169 86 27 41 32 44 15 49 29 36 31 38 38 55 55 30 23 20 7 2 2 0 1779 
+
+--- Contextual MAB Statistics ---
+Arm pulls:
+  Arm 0 (Heuristic): 87 pulls
+  Arm 1 (limit=0, max=0, level=0): 3968 pulls
+  Arm 2 (limit=1, max=3, level=1): 53 pulls
+  Arm 3 (limit=2, max=5, level=1): 69 pulls
+  Arm 4 (limit=8, max=4, level=1): 43 pulls
+----------------------------
+SolverStatistic {
+    num_solve: 98827,
+    avg_decide_var: 0.662022,
+    num_simplify_subsume: 766,
+    num_simplify_self_subsume: 452,
+}
+Statistic {
+    case: eijks5378.aig,
+    time: 6.96s,
+    num_mic: 4225,
+    avg_mic_cube_len: 4.823195,
+    avg_po_cube_len: 104.622835,
+    mic_drop: success: 1624, fail: 18419, success rate: 8.10%,
+    num_down: 20043,
+    num_down_sat: 21225,
+    ctp: success: 0, fail: 40227, success rate: 0.00%,
+    num_get_bad: 2074,
+    overall_block_time: 5.26904788s,
+    block_get_bad_time: 3.545292422s,
+    block_get_predecessor_time: 119.3712ms,
+    block_blocked_time: 209.062272ms,
+    block_mic_time: 643.541278ms,
+    block_push_time: 16.274498ms,
+    overall_propagate_time: 1.562399977s,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: safe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Wed 07 May 2025 05:59:10 AM CST
+========================================

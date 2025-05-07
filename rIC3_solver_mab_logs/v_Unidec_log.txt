@@ -1,0 +1,49 @@
+File: ./avr/opensource/v_Unidec/v_Unidec.aig
+Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./avr/opensource/v_Unidec/v_Unidec.aig
+Started at: Wed 07 May 2025 07:01:05 AM CST
+----------------------------------------
+Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/avr/opensource/v_Unidec/v_Unidec.aig
+[1, 1, 1, 1, 2, 7]
+18 4 2 2 14 
+
+--- Contextual MAB Statistics ---
+Arm pulls:
+  Arm 0 (Heuristic): 1 pulls
+  Arm 1 (limit=0, max=0, level=0): 4 pulls
+  Arm 2 (limit=1, max=3, level=1): 12 pulls
+  Arm 3 (limit=2, max=5, level=1): 0 pulls
+  Arm 4 (limit=8, max=4, level=1): 0 pulls
+----------------------------
+SolverStatistic {
+    num_solve: 167,
+    avg_decide_var: 0.890134,
+    num_simplify_subsume: 0,
+    num_simplify_self_subsume: 0,
+}
+Statistic {
+    case: v_Unidec.aig,
+    time: 0.01s,
+    num_mic: 26,
+    avg_mic_cube_len: 3.307692,
+    avg_po_cube_len: 17.220339,
+    mic_drop: success: 18, fail: 62, success rate: 22.50%,
+    num_down: 80,
+    num_down_sat: 68,
+    ctp: success: 0, fail: 26, success rate: 0.00%,
+    num_get_bad: 10,
+    overall_block_time: 2.802771ms,
+    block_get_bad_time: 718.676µs,
+    block_get_predecessor_time: 461.347µs,
+    block_blocked_time: 318.273µs,
+    block_mic_time: 1.474482ms,
+    block_push_time: 54.572µs,
+    overall_propagate_time: 660.336µs,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: unsafe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Wed 07 May 2025 07:01:06 AM CST
+========================================

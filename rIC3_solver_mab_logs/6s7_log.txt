@@ -1,0 +1,50 @@
+File: ./hwmcc11/single/6s7.aig
+Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./hwmcc11/single/6s7.aig
+Started at: Wed 07 May 2025 06:18:56 AM CST
+----------------------------------------
+Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc11/single/6s7.aig
+Warning: property not found, moved 1 outputs to bad properties
+[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 10, 17, 17, 4, 1, 1, 2, 1, 2, 1, 1, 6, 3, 1, 1, 1, 1, 7, 23, 9, 12, 10621, 17991]
+504 7 18 19 48 76 120 193 282 384 488 463 664 981 1316 1540 1855 2105 1986 1921 1863 1762 1639 1761 1870 1952 2038 2245 2257 2184 2328 2428 2920 3868 4445 4938 6209 7292 7549 6004 11416 
+
+--- Contextual MAB Statistics ---
+Arm pulls:
+  Arm 0 (Heuristic): 23 pulls
+  Arm 1 (limit=0, max=0, level=0): 23 pulls
+  Arm 2 (limit=1, max=3, level=1): 58 pulls
+  Arm 3 (limit=2, max=5, level=1): 54577 pulls
+  Arm 4 (limit=8, max=4, level=1): 27 pulls
+----------------------------
+SolverStatistic {
+    num_solve: 4313866,
+    avg_decide_var: 0.804201,
+    num_simplify_subsume: 136558,
+    num_simplify_self_subsume: 110315,
+}
+Statistic {
+    case: 6s7.aig,
+    time: 579.61s,
+    num_mic: 117769,
+    avg_mic_cube_len: 13.226384,
+    avg_po_cube_len: 375.971332,
+    mic_drop: success: 204930, fail: 1278141, success rate: 13.82%,
+    num_down: 1483071,
+    num_down_sat: 2304135,
+    ctp: success: 0, fail: 152634, success rate: 0.00%,
+    num_get_bad: 13682,
+    overall_block_time: 479.100009133s,
+    block_get_bad_time: 6.101190509s,
+    block_get_predecessor_time: 39.964132846s,
+    block_blocked_time: 14.135529523s,
+    block_mic_time: 494.030373582s,
+    block_push_time: 1.693743893s,
+    overall_propagate_time: 100.326136981s,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: unsafe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Wed 07 May 2025 06:28:36 AM CST
+========================================

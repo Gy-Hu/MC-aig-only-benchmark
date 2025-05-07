@@ -1,0 +1,49 @@
+File: ./avr/opensource/ethernet/ethernet.aig
+Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./avr/opensource/ethernet/ethernet.aig
+Started at: Wed 07 May 2025 07:00:26 AM CST
+----------------------------------------
+Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/avr/opensource/ethernet/ethernet.aig
+[1, 1, 1, 1, 1, 1, 77]
+72 9 10 22 24 60 
+
+--- Contextual MAB Statistics ---
+Arm pulls:
+  Arm 0 (Heuristic): 4 pulls
+  Arm 1 (limit=0, max=0, level=0): 5 pulls
+  Arm 2 (limit=1, max=3, level=1): 82 pulls
+  Arm 3 (limit=2, max=5, level=1): 10 pulls
+  Arm 4 (limit=8, max=4, level=1): 14 pulls
+----------------------------
+SolverStatistic {
+    num_solve: 863,
+    avg_decide_var: 0.171248,
+    num_simplify_subsume: 0,
+    num_simplify_self_subsume: 0,
+}
+Statistic {
+    case: ethernet.aig,
+    time: 0.04s,
+    num_mic: 156,
+    avg_mic_cube_len: 2.173077,
+    avg_po_cube_len: 31.511737,
+    mic_drop: success: 40, fail: 297, success rate: 11.87%,
+    num_down: 337,
+    num_down_sat: 283,
+    ctp: success: 0, fail: 78, success rate: 0.00%,
+    num_get_bad: 37,
+    overall_block_time: 23.112578ms,
+    block_get_bad_time: 5.740562ms,
+    block_get_predecessor_time: 6.039091ms,
+    block_blocked_time: 2.876456ms,
+    block_mic_time: 4.583098ms,
+    block_push_time: 291.86µs,
+    overall_propagate_time: 1.349444ms,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: unsafe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Wed 07 May 2025 07:00:26 AM CST
+========================================

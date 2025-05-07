@@ -1,0 +1,50 @@
+File: ./hwmcc11/single/bobsmhdlc1.aig
+Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./hwmcc11/single/bobsmhdlc1.aig
+Started at: Wed 07 May 2025 06:24:11 AM CST
+----------------------------------------
+Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc11/single/bobsmhdlc1.aig
+Warning: property not found, moved 1 outputs to bad properties
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4133, 764]
+290 11 15 23 20 23 21 24 16 23 20 40 72 31 20 45 60 96 328 662 1148 1168 716 520 512 732 675 1176 1051 1048 1274 577 720 485 344 173 122 102 63 51 50 35 30 29 37 694 359 311 315 823 204 465 204 93 358 173 187 136 95 112 113 214 144 95 55 15 23 1 0 3418 
+
+--- Contextual MAB Statistics ---
+Arm pulls:
+  Arm 0 (Heuristic): 763 pulls
+  Arm 1 (limit=0, max=0, level=0): 54 pulls
+  Arm 2 (limit=1, max=3, level=1): 901 pulls
+  Arm 3 (limit=2, max=5, level=1): 48 pulls
+  Arm 4 (limit=8, max=4, level=1): 15041 pulls
+----------------------------
+SolverStatistic {
+    num_solve: 1879619,
+    avg_decide_var: 0.451145,
+    num_simplify_subsume: 170172,
+    num_simplify_self_subsume: 53877,
+}
+Statistic {
+    case: bobsmhdlc1.aig,
+    time: 159.98s,
+    num_mic: 54702,
+    avg_mic_cube_len: 7.705440,
+    avg_po_cube_len: 84.554227,
+    mic_drop: success: 89825, fail: 311898, success rate: 22.36%,
+    num_down: 401723,
+    num_down_sat: 574256,
+    ctp: success: 0, fail: 256256, success rate: 0.00%,
+    num_get_bad: 155,
+    overall_block_time: 99.18630717s,
+    block_get_bad_time: 243.430037ms,
+    block_get_predecessor_time: 12.772354599s,
+    block_blocked_time: 1.823390111s,
+    block_mic_time: 112.802257366s,
+    block_push_time: 1.110985784s,
+    overall_propagate_time: 60.577396692s,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: safe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Wed 07 May 2025 06:26:51 AM CST
+========================================

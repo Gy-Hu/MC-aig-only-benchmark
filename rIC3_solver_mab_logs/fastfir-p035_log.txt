@@ -1,0 +1,49 @@
+File: ./others/fastfir/aig/fastfir-p035.aig
+Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./others/fastfir/aig/fastfir-p035.aig
+Started at: Wed 07 May 2025 03:32:42 AM CST
+----------------------------------------
+Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/others/fastfir/aig/fastfir-p035.aig
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10680, 14617]
+657 25 43 65 96 251 323 474 652 836 993 1146 1476 1848 2358 2683 1952 1609 3137 2730 2828 2400 1995 1227 911 975 770 523 397 247 94 50 173 281 351 214 138 96 45 24 12 4 1 0 18639 
+
+--- Contextual MAB Statistics ---
+Arm pulls:
+  Arm 0 (Heuristic): 43 pulls
+  Arm 1 (limit=0, max=0, level=0): 152 pulls
+  Arm 2 (limit=1, max=3, level=1): 5045 pulls
+  Arm 3 (limit=2, max=5, level=1): 29595 pulls
+  Arm 4 (limit=8, max=4, level=1): 36034 pulls
+----------------------------
+SolverStatistic {
+    num_solve: 3042633,
+    avg_decide_var: 0.801891,
+    num_simplify_subsume: 73012,
+    num_simplify_self_subsume: 42963,
+}
+Statistic {
+    case: fastfir-p035.aig,
+    time: 1815.29s,
+    num_mic: 83254,
+    avg_mic_cube_len: 8.059577,
+    avg_po_cube_len: 213.767439,
+    mic_drop: success: 136309, fail: 509287, success rate: 21.11%,
+    num_down: 645596,
+    num_down_sat: 774182,
+    ctp: success: 0, fail: 528383, success rate: 0.00%,
+    num_get_bad: 5205,
+    overall_block_time: 1511.904000346s,
+    block_get_bad_time: 16.335078132s,
+    block_get_predecessor_time: 558.72596561s,
+    block_blocked_time: 37.653061072s,
+    block_mic_time: 1394.554417724s,
+    block_push_time: 15.084798201s,
+    overall_propagate_time: 301.65093205s,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: safe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Wed 07 May 2025 04:02:58 AM CST
+========================================

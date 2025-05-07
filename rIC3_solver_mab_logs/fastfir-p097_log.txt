@@ -1,0 +1,49 @@
+File: ./others/fastfir/aig/fastfir-p097.aig
+Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./others/fastfir/aig/fastfir-p097.aig
+Started at: Wed 07 May 2025 03:27:43 AM CST
+----------------------------------------
+Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/others/fastfir/aig/fastfir-p097.aig
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7595, 20161]
+739 25 34 68 92 242 250 394 531 744 759 904 1053 1256 1424 1647 1816 2789 3733 3606 3380 3023 3390 3567 1992 2141 1793 1512 1302 975 712 389 80 60 47 28 16 11 6 0 21892 
+
+--- Contextual MAB Statistics ---
+Arm pulls:
+  Arm 0 (Heuristic): 17 pulls
+  Arm 1 (limit=0, max=0, level=0): 23925 pulls
+  Arm 2 (limit=1, max=3, level=1): 10868 pulls
+  Arm 3 (limit=2, max=5, level=1): 23803 pulls
+  Arm 4 (limit=8, max=4, level=1): 35518 pulls
+----------------------------
+SolverStatistic {
+    num_solve: 3062487,
+    avg_decide_var: 0.788183,
+    num_simplify_subsume: 59023,
+    num_simplify_self_subsume: 40237,
+}
+Statistic {
+    case: fastfir-p097.aig,
+    time: 1597.84s,
+    num_mic: 100411,
+    avg_mic_cube_len: 7.654141,
+    avg_po_cube_len: 157.006799,
+    mic_drop: success: 121137, fail: 623908, success rate: 16.26%,
+    num_down: 745045,
+    num_down_sat: 889432,
+    ctp: success: 0, fail: 486452, success rate: 0.00%,
+    num_get_bad: 4136,
+    overall_block_time: 1252.405037634s,
+    block_get_bad_time: 13.877415295s,
+    block_get_predecessor_time: 424.368406802s,
+    block_blocked_time: 42.820349659s,
+    block_mic_time: 1100.464147996s,
+    block_push_time: 19.144631539s,
+    overall_propagate_time: 343.820859948s,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: safe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Wed 07 May 2025 03:54:22 AM CST
+========================================

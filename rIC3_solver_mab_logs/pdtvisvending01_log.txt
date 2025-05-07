@@ -1,0 +1,50 @@
+File: ./hwmcc11/single/pdtvisvending01.aig
+Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./hwmcc11/single/pdtvisvending01.aig
+Started at: Wed 07 May 2025 06:05:12 AM CST
+----------------------------------------
+Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc11/single/pdtvisvending01.aig
+Warning: property not found, moved 1 outputs to bad properties
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 25, 73]
+27 13 29 29 33 25 24 22 37 50 53 61 60 68 66 56 41 23 26 21 16 12 6 4 3 18 9 23 12 4 0 217 
+
+--- Contextual MAB Statistics ---
+Arm pulls:
+  Arm 0 (Heuristic): 4 pulls
+  Arm 1 (limit=0, max=0, level=0): 1 pulls
+  Arm 2 (limit=1, max=3, level=1): 1 pulls
+  Arm 3 (limit=2, max=5, level=1): 2 pulls
+  Arm 4 (limit=8, max=4, level=1): 501 pulls
+----------------------------
+SolverStatistic {
+    num_solve: 40584,
+    avg_decide_var: 0.605522,
+    num_simplify_subsume: 0,
+    num_simplify_self_subsume: 0,
+}
+Statistic {
+    case: pdtvisvending01.aig,
+    time: 0.95s,
+    num_mic: 1823,
+    avg_mic_cube_len: 6.857926,
+    avg_po_cube_len: 13.790819,
+    mic_drop: success: 3938, fail: 7866, success rate: 33.36%,
+    num_down: 11804,
+    num_down_sat: 16096,
+    ctp: success: 0, fail: 4513, success rate: 0.00%,
+    num_get_bad: 54,
+    overall_block_time: 563.167344ms,
+    block_get_bad_time: 20.146448ms,
+    block_get_predecessor_time: 91.745646ms,
+    block_blocked_time: 12.30676ms,
+    block_mic_time: 728.938094ms,
+    block_push_time: 3.666847ms,
+    overall_propagate_time: 368.157808ms,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: safe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Wed 07 May 2025 06:05:14 AM CST
+========================================

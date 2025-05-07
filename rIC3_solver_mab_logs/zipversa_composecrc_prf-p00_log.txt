@@ -1,43 +1,44 @@
-File: ./hwmcc1920/fraig/zipversa_composecrc_prf-p00.aig
-Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./hwmcc1920/fraig/zipversa_composecrc_prf-p00.aig
-Started at: Tue 06 May 2025 08:00:29 PM CST
+File: ./hwmcc20/aig-1.8/zipversa_composecrc_prf-p00.aig
+Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./hwmcc20/aig-1.8/zipversa_composecrc_prf-p00.aig
+Started at: Wed 07 May 2025 08:19:19 AM CST
 ----------------------------------------
-Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc1920/fraig/zipversa_composecrc_prf-p00.aig
-[0, 0, 0, 1, 2]
-97 4 0 2 
+Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc20/aig-1.8/zipversa_composecrc_prf-p00.aig
+Warning: property not found, moved 1 outputs to bad properties
+[0, 0, 0, 2, 3]
+98 2 0 3 
 
 --- Contextual MAB Statistics ---
 Arm pulls:
   Arm 0 (Heuristic): 1 pulls
-  Arm 1 (limit=0, max=0, level=0): 2 pulls
+  Arm 1 (limit=0, max=0, level=0): 1 pulls
   Arm 2 (limit=1, max=3, level=1): 1 pulls
   Arm 3 (limit=2, max=5, level=1): 1 pulls
-  Arm 4 (limit=8, max=4, level=1): 0 pulls
+  Arm 4 (limit=8, max=4, level=1): 1 pulls
 ----------------------------
 SolverStatistic {
-    num_solve: 24,
-    avg_decide_var: 0.366092,
+    num_solve: 19,
+    avg_decide_var: 0.317418,
     num_simplify_subsume: 0,
     num_simplify_self_subsume: 0,
 }
 Statistic {
     case: zipversa_composecrc_prf-p00.aig,
     time: 0.01s,
-    num_mic: 6,
-    avg_mic_cube_len: 1.666667,
-    avg_po_cube_len: 50.642857,
-    mic_drop: success: 1, fail: 9, success rate: 10.00%,
+    num_mic: 5,
+    avg_mic_cube_len: 2.000000,
+    avg_po_cube_len: 49.000000,
+    mic_drop: success: 0, fail: 10, success rate: 0.00%,
     num_down: 10,
     num_down_sat: 5,
-    ctp: success: 0, fail: 2, success rate: 0.00%,
-    num_get_bad: 6,
-    overall_block_time: 1.102857ms,
-    block_get_bad_time: 539.57µs,
-    block_get_predecessor_time: 111.316µs,
-    block_blocked_time: 44.768µs,
-    block_mic_time: 193.295µs,
-    block_push_time: 152ns,
-    overall_propagate_time: 148.132µs,
+    ctp: success: 0, fail: 6, success rate: 0.00%,
+    num_get_bad: 8,
+    overall_block_time: 1.07161ms,
+    block_get_bad_time: 623.683µs,
+    block_get_predecessor_time: 25.384µs,
+    block_blocked_time: 48.897µs,
+    block_mic_time: 65.04µs,
+    block_push_time: 93ns,
+    overall_propagate_time: 106.196µs,
     xor_gen: success: 0, fail: 0, success rate: NaN%,
     num_auxiliary_var: 0,
     test: success: 0, fail: 0, success rate: NaN%,
@@ -45,5 +46,5 @@ Statistic {
 result: safe
 ----------------------------------------
 STATUS: COMPLETED
-Finished at: Tue 06 May 2025 08:00:29 PM CST
+Finished at: Wed 07 May 2025 08:19:20 AM CST
 ========================================

@@ -1,44 +1,43 @@
-File: ./hwmcc1920/fraig/cal143.aig
-Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./hwmcc1920/fraig/cal143.aig
-Started at: Tue 06 May 2025 09:09:37 PM CST
+File: ./hwmcc1920cal/cal143.aig
+Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./hwmcc1920cal/cal143.aig
+Started at: Wed 07 May 2025 09:10:21 AM CST
 ----------------------------------------
-Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc1920/fraig/cal143.aig
-Warning: property not found, moved 1 outputs to bad properties
-[0, 0, 0, 0, 0, 0, 0, 962]
-468 1 29 0 12 1 686 0 
+Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc1920cal/cal143.aig
+[0, 0, 0, 0, 0, 0, 0, 876]
+468 1 33 0 16 10 658 0 
 
 --- Contextual MAB Statistics ---
 Arm pulls:
   Arm 0 (Heuristic): 1 pulls
-  Arm 1 (limit=0, max=0, level=0): 1348 pulls
+  Arm 1 (limit=0, max=0, level=0): 1267 pulls
   Arm 2 (limit=1, max=3, level=1): 0 pulls
   Arm 3 (limit=2, max=5, level=1): 0 pulls
   Arm 4 (limit=8, max=4, level=1): 0 pulls
 ----------------------------
 SolverStatistic {
-    num_solve: 22771,
-    avg_decide_var: 0.284327,
+    num_solve: 20316,
+    avg_decide_var: 0.282940,
     num_simplify_subsume: 0,
     num_simplify_self_subsume: 0,
 }
 Statistic {
     case: cal143.aig,
-    time: 11.92s,
-    num_mic: 1349,
-    avg_mic_cube_len: 9.961453,
-    avg_po_cube_len: 49.932661,
-    mic_drop: success: 4833, fail: 7478, success rate: 39.26%,
-    num_down: 12311,
-    num_down_sat: 17503,
-    ctp: success: 0, fail: 1504, success rate: 0.00%,
-    num_get_bad: 235,
-    overall_block_time: 10.898673452s,
-    block_get_bad_time: 6.694524622s,
-    block_get_predecessor_time: 364.286155ms,
-    block_blocked_time: 716.889359ms,
-    block_mic_time: 2.119692035s,
-    block_push_time: 604.192112ms,
-    overall_propagate_time: 878.500331ms,
+    time: 10.60s,
+    num_mic: 1268,
+    avg_mic_cube_len: 9.279180,
+    avg_po_cube_len: 47.779161,
+    mic_drop: success: 4070, fail: 6780, success rate: 37.51%,
+    num_down: 10850,
+    num_down_sat: 15409,
+    ctp: success: 0, fail: 1434, success rate: 0.00%,
+    num_get_bad: 219,
+    overall_block_time: 9.824665297s,
+    block_get_bad_time: 6.476392703s,
+    block_get_predecessor_time: 315.215945ms,
+    block_blocked_time: 609.748625ms,
+    block_mic_time: 1.671092694s,
+    block_push_time: 362.263368ms,
+    overall_propagate_time: 640.165015ms,
     xor_gen: success: 0, fail: 0, success rate: NaN%,
     num_auxiliary_var: 0,
     test: success: 0, fail: 0, success rate: NaN%,
@@ -46,5 +45,5 @@ Statistic {
 result: safe
 ----------------------------------------
 STATUS: COMPLETED
-Finished at: Tue 06 May 2025 09:09:50 PM CST
+Finished at: Wed 07 May 2025 09:10:33 AM CST
 ========================================

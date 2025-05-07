@@ -1,0 +1,49 @@
+File: ./others/fastfir/aig/fastfir-p019.aig
+Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./others/fastfir/aig/fastfir-p019.aig
+Started at: Wed 07 May 2025 03:42:32 AM CST
+----------------------------------------
+Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/others/fastfir/aig/fastfir-p019.aig
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 25331]
+698 16 15 13 24 57 51 96 150 96 183 196 200 277 207 548 471 484 1287 1862 3215 1022 3869 4324 4131 957 3841 3242 3002 2401 2033 2045 1285 156 2647 100 152 182 666 411 388 335 199 177 2 2 0 1 16715 
+
+--- Contextual MAB Statistics ---
+Arm pulls:
+  Arm 0 (Heuristic): 33403 pulls
+  Arm 1 (limit=0, max=0, level=0): 7051 pulls
+  Arm 2 (limit=1, max=3, level=1): 34251 pulls
+  Arm 3 (limit=2, max=5, level=1): 8021 pulls
+  Arm 4 (limit=8, max=4, level=1): 5137 pulls
+----------------------------
+SolverStatistic {
+    num_solve: 2573697,
+    avg_decide_var: 0.757928,
+    num_simplify_subsume: 59125,
+    num_simplify_self_subsume: 16849,
+}
+Statistic {
+    case: fastfir-p019.aig,
+    time: 1053.84s,
+    num_mic: 96803,
+    avg_mic_cube_len: 7.099584,
+    avg_po_cube_len: 161.988952,
+    mic_drop: success: 83086, fail: 598734, success rate: 12.19%,
+    num_down: 681820,
+    num_down_sat: 841864,
+    ctp: success: 0, fail: 348789, success rate: 0.00%,
+    num_get_bad: 2886,
+    overall_block_time: 775.350734228s,
+    block_get_bad_time: 10.187218537s,
+    block_get_predecessor_time: 196.36271834s,
+    block_blocked_time: 38.485312313s,
+    block_mic_time: 634.250076622s,
+    block_push_time: 11.235832634s,
+    overall_propagate_time: 276.576634426s,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: safe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Wed 07 May 2025 04:00:07 AM CST
+========================================

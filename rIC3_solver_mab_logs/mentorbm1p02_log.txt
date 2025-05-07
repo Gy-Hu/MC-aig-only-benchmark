@@ -1,0 +1,50 @@
+File: ./hwmcc1517/mentorbm1p02.aig
+Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./hwmcc1517/mentorbm1p02.aig
+Started at: Wed 07 May 2025 12:21:52 AM CST
+----------------------------------------
+Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc1517/mentorbm1p02.aig
+Warning: property not found, moved 1 outputs to bad properties
+[0, 0, 0, 0, 4]
+2308 1 0 4 
+
+--- Contextual MAB Statistics ---
+Arm pulls:
+  Arm 0 (Heuristic): 2 pulls
+  Arm 1 (limit=0, max=0, level=0): 2 pulls
+  Arm 2 (limit=1, max=3, level=1): 1 pulls
+  Arm 3 (limit=2, max=5, level=1): 0 pulls
+  Arm 4 (limit=8, max=4, level=1): 0 pulls
+----------------------------
+SolverStatistic {
+    num_solve: 29,
+    avg_decide_var: 0.507017,
+    num_simplify_subsume: 0,
+    num_simplify_self_subsume: 0,
+}
+Statistic {
+    case: mentorbm1p02.aig,
+    time: 0.12s,
+    num_mic: 5,
+    avg_mic_cube_len: 3.200000,
+    avg_po_cube_len: 101.642857,
+    mic_drop: success: 2, fail: 14, success rate: 12.50%,
+    num_down: 16,
+    num_down_sat: 16,
+    ctp: success: 0, fail: 4, success rate: 0.00%,
+    num_get_bad: 7,
+    overall_block_time: 25.003083ms,
+    block_get_bad_time: 18.252742ms,
+    block_get_predecessor_time: 95.546µs,
+    block_blocked_time: 563.711µs,
+    block_mic_time: 419.471µs,
+    block_push_time: 159ns,
+    overall_propagate_time: 257.421µs,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: safe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Wed 07 May 2025 12:21:53 AM CST
+========================================

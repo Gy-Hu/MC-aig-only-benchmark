@@ -1,0 +1,49 @@
+File: ./others/fastfir/aig/fastfir-p017.aig
+Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./others/fastfir/aig/fastfir-p017.aig
+Started at: Wed 07 May 2025 03:38:30 AM CST
+----------------------------------------
+Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/others/fastfir/aig/fastfir-p017.aig
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 29744]
+821 14 13 12 19 22 32 104 43 59 165 224 255 104 180 243 606 610 1340 1883 3889 1091 4171 4874 4104 313 3591 3692 3518 2811 2423 2597 2248 68 3301 11 2 2 0 27 13 7 5 14 13 14 13 21 23 3 21413 0 
+
+--- Contextual MAB Statistics ---
+Arm pulls:
+  Arm 0 (Heuristic): 7450 pulls
+  Arm 1 (limit=0, max=0, level=0): 544 pulls
+  Arm 2 (limit=1, max=3, level=1): 30557 pulls
+  Arm 3 (limit=2, max=5, level=1): 2780 pulls
+  Arm 4 (limit=8, max=4, level=1): 48158 pulls
+----------------------------
+SolverStatistic {
+    num_solve: 3655417,
+    avg_decide_var: 0.726208,
+    num_simplify_subsume: 63384,
+    num_simplify_self_subsume: 22770,
+}
+Statistic {
+    case: fastfir-p017.aig,
+    time: 2125.90s,
+    num_mic: 105787,
+    avg_mic_cube_len: 7.198314,
+    avg_po_cube_len: 143.838885,
+    mic_drop: success: 89713, fail: 665493, success rate: 11.88%,
+    num_down: 755206,
+    num_down_sat: 918377,
+    ctp: success: 0, fail: 451012, success rate: 0.00%,
+    num_get_bad: 3625,
+    overall_block_time: 1762.315044855s,
+    block_get_bad_time: 13.008384411s,
+    block_get_predecessor_time: 599.269024867s,
+    block_blocked_time: 49.300671964s,
+    block_mic_time: 1583.979609796s,
+    block_push_time: 24.220734268s,
+    overall_propagate_time: 361.490780695s,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: safe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Wed 07 May 2025 04:13:57 AM CST
+========================================

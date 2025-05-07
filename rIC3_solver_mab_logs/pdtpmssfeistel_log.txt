@@ -1,0 +1,50 @@
+File: ./hwmcc11/single/pdtpmssfeistel.aig
+Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./hwmcc11/single/pdtpmssfeistel.aig
+Started at: Wed 07 May 2025 06:00:50 AM CST
+----------------------------------------
+Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc11/single/pdtpmssfeistel.aig
+Warning: property not found, moved 1 outputs to bad properties
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3883, 753]
+754 182 227 177 244 239 380 121 273 257 37 1 0 782 
+
+--- Contextual MAB Statistics ---
+Arm pulls:
+  Arm 0 (Heuristic): 11 pulls
+  Arm 1 (limit=0, max=0, level=0): 1010 pulls
+  Arm 2 (limit=1, max=3, level=1): 4168 pulls
+  Arm 3 (limit=2, max=5, level=1): 10 pulls
+  Arm 4 (limit=8, max=4, level=1): 10 pulls
+----------------------------
+SolverStatistic {
+    num_solve: 84269,
+    avg_decide_var: 0.330060,
+    num_simplify_subsume: 8331,
+    num_simplify_self_subsume: 1251,
+}
+Statistic {
+    case: pdtpmssfeistel.aig,
+    time: 10.08s,
+    num_mic: 5800,
+    avg_mic_cube_len: 6.081552,
+    avg_po_cube_len: 246.516301,
+    mic_drop: success: 9506, fail: 24393, success rate: 28.04%,
+    num_down: 33899,
+    num_down_sat: 43723,
+    ctp: success: 0, fail: 5194, success rate: 0.00%,
+    num_get_bad: 341,
+    overall_block_time: 8.975998865s,
+    block_get_bad_time: 286.648246ms,
+    block_get_predecessor_time: 2.167325747s,
+    block_blocked_time: 1.642554891s,
+    block_mic_time: 3.869137159s,
+    block_push_time: 276.16016ms,
+    overall_propagate_time: 977.905701ms,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: safe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Wed 07 May 2025 06:01:01 AM CST
+========================================

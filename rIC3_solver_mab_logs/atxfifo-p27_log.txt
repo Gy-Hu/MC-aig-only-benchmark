@@ -1,0 +1,49 @@
+File: ./others/atxfifo/aig/atxfifo-p27.aig
+Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./others/atxfifo/aig/atxfifo-p27.aig
+Started at: Wed 07 May 2025 03:13:31 AM CST
+----------------------------------------
+Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/others/atxfifo/aig/atxfifo-p27.aig
+[0, 0, 0, 0, 0, 0, 0, 12, 9]
+80 5 6 6 14 5 0 18 
+
+--- Contextual MAB Statistics ---
+Arm pulls:
+  Arm 0 (Heuristic): 4 pulls
+  Arm 1 (limit=0, max=0, level=0): 2 pulls
+  Arm 2 (limit=1, max=3, level=1): 2 pulls
+  Arm 3 (limit=2, max=5, level=1): 2 pulls
+  Arm 4 (limit=8, max=4, level=1): 23 pulls
+----------------------------
+SolverStatistic {
+    num_solve: 463,
+    avg_decide_var: 0.554315,
+    num_simplify_subsume: 0,
+    num_simplify_self_subsume: 0,
+}
+Statistic {
+    case: atxfifo-p27.aig,
+    time: 0.01s,
+    num_mic: 67,
+    avg_mic_cube_len: 2.462687,
+    avg_po_cube_len: 24.699115,
+    mic_drop: success: 15, fail: 149, success rate: 9.15%,
+    num_down: 164,
+    num_down_sat: 121,
+    ctp: success: 0, fail: 78, success rate: 0.00%,
+    num_get_bad: 25,
+    overall_block_time: 5.055991ms,
+    block_get_bad_time: 1.092456ms,
+    block_get_predecessor_time: 1.269286ms,
+    block_blocked_time: 184.339µs,
+    block_mic_time: 3.139596ms,
+    block_push_time: 97.622µs,
+    overall_propagate_time: 620.093µs,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: safe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Wed 07 May 2025 03:13:31 AM CST
+========================================

@@ -1,6 +1,49 @@
-File: ./hwmcc1920/aig-1.8/circular_pointer_top_w32_d16_e0.aig
-Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./hwmcc1920/aig-1.8/circular_pointer_top_w32_d16_e0.aig
-Started at: Tue 06 May 2025 10:10:10 PM CST
+File: ./hwmcc1920sat/circular_pointer_top_w32_d16_e0.aig
+Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./hwmcc1920sat/circular_pointer_top_w32_d16_e0.aig
+Started at: Wed 07 May 2025 06:56:55 AM CST
 ----------------------------------------
-Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc1920/aig-1.8/circular_pointer_top_w32_d16_e0.aig
-Warning: property not found, moved 1 outputs to bad properties
+Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc1920sat/circular_pointer_top_w32_d16_e0.aig
+[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 10975]
+1 24 90 101 459 228 555 811 1388 723 1626 1761 2852 3180 3844 3404 4787 6073 10259 
+
+--- Contextual MAB Statistics ---
+Arm pulls:
+  Arm 0 (Heuristic): 74 pulls
+  Arm 1 (limit=0, max=0, level=0): 67 pulls
+  Arm 2 (limit=1, max=3, level=1): 30781 pulls
+  Arm 3 (limit=2, max=5, level=1): 22301 pulls
+  Arm 4 (limit=8, max=4, level=1): 56 pulls
+----------------------------
+SolverStatistic {
+    num_solve: 1779581,
+    avg_decide_var: 0.533337,
+    num_simplify_subsume: 18680,
+    num_simplify_self_subsume: 35592,
+}
+Statistic {
+    case: circular_pointer_top_w32_d16_e0.aig,
+    time: 166.00s,
+    num_mic: 59992,
+    avg_mic_cube_len: 12.054124,
+    avg_po_cube_len: 20.213030,
+    mic_drop: success: 92298, fail: 618329, success rate: 12.99%,
+    num_down: 710627,
+    num_down_sat: 1027132,
+    ctp: success: 0, fail: 27506, success rate: 0.00%,
+    num_get_bad: 3277,
+    overall_block_time: 153.199175743s,
+    block_get_bad_time: 1.748556325s,
+    block_get_predecessor_time: 9.377824625s,
+    block_blocked_time: 6.463760735s,
+    block_mic_time: 143.982751904s,
+    block_push_time: 232.527123ms,
+    overall_propagate_time: 12.685492467s,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: unsafe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Wed 07 May 2025 06:59:42 AM CST
+========================================

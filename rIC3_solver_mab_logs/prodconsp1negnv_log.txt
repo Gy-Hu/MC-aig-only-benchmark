@@ -1,0 +1,50 @@
+File: ./hwmcc11/single/prodconsp1negnv.aig
+Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./hwmcc11/single/prodconsp1negnv.aig
+Started at: Wed 07 May 2025 06:14:12 AM CST
+----------------------------------------
+Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc11/single/prodconsp1negnv.aig
+Warning: property not found, moved 1 outputs to bad properties
+[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 1, 1, 84, 149]
+86 8 10 9 11 4 4 8 11 13 15 15 22 30 72 
+
+--- Contextual MAB Statistics ---
+Arm pulls:
+  Arm 0 (Heuristic): 18 pulls
+  Arm 1 (limit=0, max=0, level=0): 379 pulls
+  Arm 2 (limit=1, max=3, level=1): 4 pulls
+  Arm 3 (limit=2, max=5, level=1): 4 pulls
+  Arm 4 (limit=8, max=4, level=1): 9 pulls
+----------------------------
+SolverStatistic {
+    num_solve: 5963,
+    avg_decide_var: 0.850033,
+    num_simplify_subsume: 0,
+    num_simplify_self_subsume: 0,
+}
+Statistic {
+    case: prodconsp1negnv.aig,
+    time: 0.13s,
+    num_mic: 420,
+    avg_mic_cube_len: 6.209524,
+    avg_po_cube_len: 64.647947,
+    mic_drop: success: 434, fail: 2056, success rate: 17.43%,
+    num_down: 2490,
+    num_down_sat: 3943,
+    ctp: success: 0, fail: 384, success rate: 0.00%,
+    num_get_bad: 111,
+    overall_block_time: 98.651448ms,
+    block_get_bad_time: 6.686911ms,
+    block_get_predecessor_time: 9.421327ms,
+    block_blocked_time: 10.65777ms,
+    block_mic_time: 56.79862ms,
+    block_push_time: 445.804µs,
+    overall_propagate_time: 15.093911ms,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: unsafe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Wed 07 May 2025 06:14:12 AM CST
+========================================
