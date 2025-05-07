@@ -1,0 +1,51 @@
+File: ./others/atxfifo/aig/atxfifo-p47.aig
+Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./others/atxfifo/aig/atxfifo-p47.aig
+Started at: Wed 07 May 2025 11:34:28 PM CST
+----------------------------------------
+Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/others/atxfifo/aig/atxfifo-p47.aig
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3107, 2218]
+85 4 3 6 6 4 5 5 9 8 12 17 24 32 83 108 94 91 110 87 155 144 121 161 184 191 85 147 114 143 124 152 160 314 182 159 94 105 102 331 168 397 121 185 85 138 167 195 298 346 143 152 152 153 104 339 171 451 113 139 72 125 75 78 91 146 54 71 38 86 46 89 50 91 57 64 36 39 30 16 6 4 1 0 4174 
+
+--- Contextual MAB Statistics ---
+Arm pulls:
+  Arm 0 (Balanced Heuristic): 17 pulls
+  Arm 1 (Aggressive Heuristic): 5 pulls
+  Arm 2 (Conservative Heuristic): 2 pulls
+  Arm 3 (limit=0, max=0, level=0): 6 pulls
+  Arm 4 (limit=1, max=3, level=1): 19396 pulls
+  Arm 5 (limit=2, max=5, level=1): 9 pulls
+  Arm 6 (limit=8, max=4, level=1): 15 pulls
+----------------------------
+SolverStatistic {
+    num_solve: 1030890,
+    avg_decide_var: 0.660414,
+    num_simplify_subsume: 51987,
+    num_simplify_self_subsume: 16506,
+}
+Statistic {
+    case: atxfifo-p47.aig,
+    time: 39.84s,
+    num_mic: 28145,
+    avg_mic_cube_len: 12.069781,
+    avg_po_cube_len: 45.147287,
+    mic_drop: success: 53931, fail: 242377, success rate: 18.20%,
+    num_down: 296308,
+    num_down_sat: 364098,
+    ctp: success: 0, fail: 188534, success rate: 0.00%,
+    num_get_bad: 689,
+    overall_block_time: 18.752876408s,
+    block_get_bad_time: 293.260739ms,
+    block_get_predecessor_time: 1.772190022s,
+    block_blocked_time: 1.088514556s,
+    block_mic_time: 19.524287707s,
+    block_push_time: 412.054912ms,
+    overall_propagate_time: 20.998139958s,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: safe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Wed 07 May 2025 11:35:08 PM CST
+========================================

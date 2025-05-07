@@ -1,0 +1,52 @@
+File: ./hwmcc08/pdtvisheap00.aig
+Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./hwmcc08/pdtvisheap00.aig
+Started at: Wed 07 May 2025 11:31:38 PM CST
+----------------------------------------
+Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc08/pdtvisheap00.aig
+Warning: property not found, moved 1 outputs to bad properties
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 154]
+24 2 5 5 4 3 10 8 10 19 22 11 21 27 22 12 7 7 8 12 0 2 3 2 149 0 
+
+--- Contextual MAB Statistics ---
+Arm pulls:
+  Arm 0 (Balanced Heuristic): 1 pulls
+  Arm 1 (Aggressive Heuristic): 1 pulls
+  Arm 2 (Conservative Heuristic): 1 pulls
+  Arm 3 (limit=0, max=0, level=0): 12 pulls
+  Arm 4 (limit=1, max=3, level=1): 1 pulls
+  Arm 5 (limit=2, max=5, level=1): 383 pulls
+  Arm 6 (limit=8, max=4, level=1): 0 pulls
+----------------------------
+SolverStatistic {
+    num_solve: 14905,
+    avg_decide_var: 0.691070,
+    num_simplify_subsume: 0,
+    num_simplify_self_subsume: 0,
+}
+Statistic {
+    case: pdtvisheap00.aig,
+    time: 0.27s,
+    num_mic: 593,
+    avg_mic_cube_len: 6.204047,
+    avg_po_cube_len: 10.861200,
+    mic_drop: success: 783, fail: 2817, success rate: 21.75%,
+    num_down: 3600,
+    num_down_sat: 5960,
+    ctp: success: 0, fail: 1260, success rate: 0.00%,
+    num_get_bad: 38,
+    overall_block_time: 205.035541ms,
+    block_get_bad_time: 3.253081ms,
+    block_get_predecessor_time: 55.129608ms,
+    block_blocked_time: 8.241221ms,
+    block_mic_time: 203.078313ms,
+    block_push_time: 4.010855ms,
+    overall_propagate_time: 51.174222ms,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: safe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Wed 07 May 2025 11:31:38 PM CST
+========================================

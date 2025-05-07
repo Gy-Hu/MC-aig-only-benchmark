@@ -1,0 +1,51 @@
+File: ./hwmcc19/single/aig/beem/lamport_nonatomic.5.prop1-func-interl.aig
+Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./hwmcc19/single/aig/beem/lamport_nonatomic.5.prop1-func-interl.aig
+Started at: Wed 07 May 2025 06:45:10 PM CST
+----------------------------------------
+Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc19/single/aig/beem/lamport_nonatomic.5.prop1-func-interl.aig
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 395, 92]
+231 25 41 80 151 265 457 748 1155 1717 2425 3144 3707 4041 4339 4208 3622 2902 2039 1318 653 301 164 65 32 2 0 401 
+
+--- Contextual MAB Statistics ---
+Arm pulls:
+  Arm 0 (Balanced Heuristic): 4 pulls
+  Arm 1 (Aggressive Heuristic): 4 pulls
+  Arm 2 (Conservative Heuristic): 4 pulls
+  Arm 3 (limit=0, max=0, level=0): 4 pulls
+  Arm 4 (limit=1, max=3, level=1): 4 pulls
+  Arm 5 (limit=2, max=5, level=1): 6 pulls
+  Arm 6 (limit=8, max=4, level=1): 942 pulls
+----------------------------
+SolverStatistic {
+    num_solve: 1913303,
+    avg_decide_var: 0.766575,
+    num_simplify_subsume: 23799,
+    num_simplify_self_subsume: 15297,
+}
+Statistic {
+    case: lamport_nonatomic.5.prop1-func-interl.aig,
+    time: 281.48s,
+    num_mic: 49970,
+    avg_mic_cube_len: 17.240584,
+    avg_po_cube_len: 92.253837,
+    mic_drop: success: 234880, fail: 452857, success rate: 34.15%,
+    num_down: 687737,
+    num_down_sat: 1300011,
+    ctp: success: 0, fail: 10496, success rate: 0.00%,
+    num_get_bad: 258,
+    overall_block_time: 199.486378268s,
+    block_get_bad_time: 163.674462ms,
+    block_get_predecessor_time: 25.261944939s,
+    block_blocked_time: 202.655256ms,
+    block_mic_time: 310.329446678s,
+    block_push_time: 108.137349ms,
+    overall_propagate_time: 81.774024595s,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: safe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Wed 07 May 2025 06:49:53 PM CST
+========================================

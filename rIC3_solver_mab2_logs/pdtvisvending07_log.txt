@@ -1,0 +1,52 @@
+File: ./hwmcc08/pdtvisvending07.aig
+Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./hwmcc08/pdtvisvending07.aig
+Started at: Wed 07 May 2025 11:30:55 PM CST
+----------------------------------------
+Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc08/pdtvisvending07.aig
+Warning: property not found, moved 1 outputs to bad properties
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 13, 12]
+21 4 7 3 6 8 7 1 0 19 
+
+--- Contextual MAB Statistics ---
+Arm pulls:
+  Arm 0 (Balanced Heuristic): 1 pulls
+  Arm 1 (Aggressive Heuristic): 1 pulls
+  Arm 2 (Conservative Heuristic): 1 pulls
+  Arm 3 (limit=0, max=0, level=0): 1 pulls
+  Arm 4 (limit=1, max=3, level=1): 50 pulls
+  Arm 5 (limit=2, max=5, level=1): 0 pulls
+  Arm 6 (limit=8, max=4, level=1): 0 pulls
+----------------------------
+SolverStatistic {
+    num_solve: 826,
+    avg_decide_var: 0.661915,
+    num_simplify_subsume: 0,
+    num_simplify_self_subsume: 0,
+}
+Statistic {
+    case: pdtvisvending07.aig,
+    time: 0.02s,
+    num_mic: 76,
+    avg_mic_cube_len: 4.486842,
+    avg_po_cube_len: 9.909548,
+    mic_drop: success: 97, fail: 235, success rate: 29.22%,
+    num_down: 332,
+    num_down_sat: 391,
+    ctp: success: 0, fail: 54, success rate: 0.00%,
+    num_get_bad: 15,
+    overall_block_time: 13.455652ms,
+    block_get_bad_time: 1.294176ms,
+    block_get_predecessor_time: 2.706941ms,
+    block_blocked_time: 1.252561ms,
+    block_mic_time: 10.164446ms,
+    block_push_time: 165.293µs,
+    overall_propagate_time: 2.632291ms,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: safe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Wed 07 May 2025 11:30:55 PM CST
+========================================

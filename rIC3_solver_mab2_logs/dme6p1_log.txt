@@ -1,0 +1,52 @@
+File: ./hwmcc08/dme6p1.aig
+Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./hwmcc08/dme6p1.aig
+Started at: Wed 07 May 2025 11:32:17 PM CST
+----------------------------------------
+Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc08/dme6p1.aig
+Warning: property not found, moved 1 outputs to bad properties
+[1, 1, 16, 92]
+251 16 92 
+
+--- Contextual MAB Statistics ---
+Arm pulls:
+  Arm 0 (Balanced Heuristic): 16 pulls
+  Arm 1 (Aggressive Heuristic): 16 pulls
+  Arm 2 (Conservative Heuristic): 16 pulls
+  Arm 3 (limit=0, max=0, level=0): 15 pulls
+  Arm 4 (limit=1, max=3, level=1): 15 pulls
+  Arm 5 (limit=2, max=5, level=1): 15 pulls
+  Arm 6 (limit=8, max=4, level=1): 15 pulls
+----------------------------
+SolverStatistic {
+    num_solve: 220,
+    avg_decide_var: 1.719981,
+    num_simplify_subsume: 0,
+    num_simplify_self_subsume: 0,
+}
+Statistic {
+    case: dme6p1.aig,
+    time: 0.04s,
+    num_mic: 108,
+    avg_mic_cube_len: 1.009259,
+    avg_po_cube_len: 229.589666,
+    mic_drop: success: 0, fail: 109, success rate: 0.00%,
+    num_down: 109,
+    num_down_sat: 1,
+    ctp: success: 0, fail: 92, success rate: 0.00%,
+    num_get_bad: 110,
+    overall_block_time: 31.025972ms,
+    block_get_bad_time: 7.235871ms,
+    block_get_predecessor_time: 402.194µs,
+    block_blocked_time: 1.96685ms,
+    block_mic_time: 92.614µs,
+    block_push_time: 1.817µs,
+    overall_propagate_time: 569.369µs,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: unsafe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Wed 07 May 2025 11:32:17 PM CST
+========================================

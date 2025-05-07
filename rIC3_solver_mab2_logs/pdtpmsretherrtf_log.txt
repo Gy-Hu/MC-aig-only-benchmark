@@ -1,0 +1,52 @@
+File: ./hwmcc-appr/pdtpmsretherrtf.aig
+Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./hwmcc-appr/pdtpmsretherrtf.aig
+Started at: Wed 07 May 2025 02:18:03 PM CST
+----------------------------------------
+Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc-appr/pdtpmsretherrtf.aig
+Warning: property not found, moved 1 outputs to bad properties
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2065, 551]
+82 2 2 3 2 2 4 3 4 6 5 7 5 5 14 15 13 9 26 19 27 20 60 81 46 41 31 45 80 86 81 64 88 100 77 72 81 186 150 97 124 111 134 132 173 197 225 236 181 122 114 76 120 91 86 88 63 34 21 10 10 0 2310 
+
+--- Contextual MAB Statistics ---
+Arm pulls:
+  Arm 0 (Balanced Heuristic): 3 pulls
+  Arm 1 (Aggressive Heuristic): 3 pulls
+  Arm 2 (Conservative Heuristic): 12 pulls
+  Arm 3 (limit=0, max=0, level=0): 110 pulls
+  Arm 4 (limit=1, max=3, level=1): 8779 pulls
+  Arm 5 (limit=2, max=5, level=1): 6 pulls
+  Arm 6 (limit=8, max=4, level=1): 756 pulls
+----------------------------
+SolverStatistic {
+    num_solve: 646431,
+    avg_decide_var: 0.513830,
+    num_simplify_subsume: 116344,
+    num_simplify_self_subsume: 57996,
+}
+Statistic {
+    case: pdtpmsretherrtf.aig,
+    time: 28.36s,
+    num_mic: 26159,
+    avg_mic_cube_len: 7.807485,
+    avg_po_cube_len: 38.103228,
+    mic_drop: success: 59247, fail: 131910, success rate: 30.99%,
+    num_down: 191157,
+    num_down_sat: 303559,
+    ctp: success: 0, fail: 110584, success rate: 0.00%,
+    num_get_bad: 278,
+    overall_block_time: 17.944097801s,
+    block_get_bad_time: 97.965564ms,
+    block_get_predecessor_time: 1.64984927s,
+    block_blocked_time: 505.231839ms,
+    block_mic_time: 23.301379027s,
+    block_push_time: 52.909245ms,
+    overall_propagate_time: 10.354641218s,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: safe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Wed 07 May 2025 02:18:31 PM CST
+========================================

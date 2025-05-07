@@ -1,0 +1,52 @@
+File: ./hwmcc08/srg5ptimonegnv.aig
+Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./hwmcc08/srg5ptimonegnv.aig
+Started at: Wed 07 May 2025 11:31:46 PM CST
+----------------------------------------
+Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc08/srg5ptimonegnv.aig
+Warning: property not found, moved 1 outputs to bad properties
+[1, 1, 10, 4]
+47 10 4 
+
+--- Contextual MAB Statistics ---
+Arm pulls:
+  Arm 0 (Balanced Heuristic): 2 pulls
+  Arm 1 (Aggressive Heuristic): 2 pulls
+  Arm 2 (Conservative Heuristic): 2 pulls
+  Arm 3 (limit=0, max=0, level=0): 2 pulls
+  Arm 4 (limit=1, max=3, level=1): 2 pulls
+  Arm 5 (limit=2, max=5, level=1): 2 pulls
+  Arm 6 (limit=8, max=4, level=1): 2 pulls
+----------------------------
+SolverStatistic {
+    num_solve: 35,
+    avg_decide_var: 1.911271,
+    num_simplify_subsume: 0,
+    num_simplify_self_subsume: 0,
+}
+Statistic {
+    case: srg5ptimonegnv.aig,
+    time: 0.01s,
+    num_mic: 14,
+    avg_mic_cube_len: 1.142857,
+    avg_po_cube_len: 31.312500,
+    mic_drop: success: 0, fail: 16, success rate: 0.00%,
+    num_down: 16,
+    num_down_sat: 3,
+    ctp: success: 0, fail: 4, success rate: 0.00%,
+    num_get_bad: 15,
+    overall_block_time: 2.021174ms,
+    block_get_bad_time: 622.946µs,
+    block_get_predecessor_time: 130.465µs,
+    block_blocked_time: 106.637µs,
+    block_mic_time: 67.102µs,
+    block_push_time: 422ns,
+    overall_propagate_time: 56.716µs,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: unsafe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Wed 07 May 2025 11:31:46 PM CST
+========================================

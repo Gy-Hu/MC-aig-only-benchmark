@@ -1,0 +1,51 @@
+File: ./hwmcc1920/aig/qspiflash_dualflexpress_divfive-p092.aig
+Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./hwmcc1920/aig/qspiflash_dualflexpress_divfive-p092.aig
+Started at: Wed 07 May 2025 06:18:45 PM CST
+----------------------------------------
+Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc1920/aig/qspiflash_dualflexpress_divfive-p092.aig
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 22, 14]
+75 6 7 4 5 2 2 2 1 0 21 
+
+--- Contextual MAB Statistics ---
+Arm pulls:
+  Arm 0 (Balanced Heuristic): 3 pulls
+  Arm 1 (Aggressive Heuristic): 26 pulls
+  Arm 2 (Conservative Heuristic): 4 pulls
+  Arm 3 (limit=0, max=0, level=0): 3 pulls
+  Arm 4 (limit=1, max=3, level=1): 3 pulls
+  Arm 5 (limit=2, max=5, level=1): 3 pulls
+  Arm 6 (limit=8, max=4, level=1): 3 pulls
+----------------------------
+SolverStatistic {
+    num_solve: 425,
+    avg_decide_var: 0.539444,
+    num_simplify_subsume: 0,
+    num_simplify_self_subsume: 0,
+}
+Statistic {
+    case: qspiflash_dualflexpress_divfive-p092.aig,
+    time: 0.03s,
+    num_mic: 61,
+    avg_mic_cube_len: 2.032787,
+    avg_po_cube_len: 17.868526,
+    mic_drop: success: 9, fail: 108, success rate: 7.69%,
+    num_down: 117,
+    num_down_sat: 89,
+    ctp: success: 0, fail: 158, success rate: 0.00%,
+    num_get_bad: 42,
+    overall_block_time: 9.064548ms,
+    block_get_bad_time: 2.750292ms,
+    block_get_predecessor_time: 1.342092ms,
+    block_blocked_time: 337.903µs,
+    block_mic_time: 3.013247ms,
+    block_push_time: 46.03µs,
+    overall_propagate_time: 1.941854ms,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: safe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Wed 07 May 2025 06:18:46 PM CST
+========================================

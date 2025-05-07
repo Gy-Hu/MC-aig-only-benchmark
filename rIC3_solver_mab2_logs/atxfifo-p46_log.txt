@@ -1,0 +1,51 @@
+File: ./others/atxfifo/aig/atxfifo-p46.aig
+Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./others/atxfifo/aig/atxfifo-p46.aig
+Started at: Wed 07 May 2025 11:32:19 PM CST
+----------------------------------------
+Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/others/atxfifo/aig/atxfifo-p46.aig
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7696, 2948]
+80 6 4 7 3 2 3 10 11 17 18 30 36 38 32 51 47 84 60 67 66 63 72 239 218 365 219 292 277 326 287 327 264 414 382 384 280 303 177 253 448 449 634 413 389 288 299 260 318 237 335 242 251 220 197 447 505 634 519 380 276 207 177 226 167 191 156 93 101 92 139 169 218 242 216 164 134 101 56 35 20 22 21 22 15 35 19 4 2 1 0 6041 
+
+--- Contextual MAB Statistics ---
+Arm pulls:
+  Arm 0 (Balanced Heuristic): 2 pulls
+  Arm 1 (Aggressive Heuristic): 38054 pulls
+  Arm 2 (Conservative Heuristic): 2 pulls
+  Arm 3 (limit=0, max=0, level=0): 8 pulls
+  Arm 4 (limit=1, max=3, level=1): 10 pulls
+  Arm 5 (limit=2, max=5, level=1): 2 pulls
+  Arm 6 (limit=8, max=4, level=1): 2 pulls
+----------------------------
+SolverStatistic {
+    num_solve: 2191506,
+    avg_decide_var: 0.690683,
+    num_simplify_subsume: 182095,
+    num_simplify_self_subsume: 51544,
+}
+Statistic {
+    case: atxfifo-p46.aig,
+    time: 127.82s,
+    num_mic: 59618,
+    avg_mic_cube_len: 13.922624,
+    avg_po_cube_len: 46.081902,
+    mic_drop: success: 137057, fail: 602297, success rate: 18.54%,
+    num_down: 739354,
+    num_down_sat: 923275,
+    ctp: success: 0, fail: 307258, success rate: 0.00%,
+    num_get_bad: 950,
+    overall_block_time: 59.515858715s,
+    block_get_bad_time: 940.693471ms,
+    block_get_predecessor_time: 4.974064877s,
+    block_blocked_time: 3.332061735s,
+    block_mic_time: 64.857985103s,
+    block_push_time: 979.348762ms,
+    overall_propagate_time: 68.214931324s,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: safe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Wed 07 May 2025 11:34:27 PM CST
+========================================

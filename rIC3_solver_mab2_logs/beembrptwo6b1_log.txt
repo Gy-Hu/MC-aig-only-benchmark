@@ -1,0 +1,52 @@
+File: ./hwmcc15/beembrptwo6b1.aig
+Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./hwmcc15/beembrptwo6b1.aig
+Started at: Wed 07 May 2025 11:26:54 PM CST
+----------------------------------------
+Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc15/beembrptwo6b1.aig
+Warning: property not found, moved 1 outputs to bad properties
+[1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 11, 4, 1, 1, 1, 1, 1, 1, 1, 1, 1, 4, 9, 2, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 24, 158]
+228 2 16 35 48 37 37 49 63 79 75 52 49 36 36 46 36 20 20 19 14 16 12 10 11 31 28 21 21 25 24 21 23 22 26 25 23 19 13 15 17 18 14 21 20 20 25 38 23 19 17 16 20 28 29 30 21 12 9 18 11 17 15 15 36 57 54 95 78 45 47 37 40 33 25 23 19 15 10 14 22 20 11 7 6 10 21 28 34 29 24 35 25 30 40 42 39 35 45 32 23 41 38 38 44 29 30 41 47 49 82 186 524 3160 
+
+--- Contextual MAB Statistics ---
+Arm pulls:
+  Arm 0 (Balanced Heuristic): 2 pulls
+  Arm 1 (Aggressive Heuristic): 2 pulls
+  Arm 2 (Conservative Heuristic): 2 pulls
+  Arm 3 (limit=0, max=0, level=0): 2 pulls
+  Arm 4 (limit=1, max=3, level=1): 10 pulls
+  Arm 5 (limit=2, max=5, level=1): 72 pulls
+  Arm 6 (limit=8, max=4, level=1): 881 pulls
+----------------------------
+SolverStatistic {
+    num_solve: 1552721,
+    avg_decide_var: 1.000509,
+    num_simplify_subsume: 153928,
+    num_simplify_self_subsume: 65456,
+}
+Statistic {
+    case: beembrptwo6b1.aig,
+    time: 150.75s,
+    num_mic: 21114,
+    avg_mic_cube_len: 23.630293,
+    avg_po_cube_len: 227.967917,
+    mic_drop: success: 75380, fail: 399634, success rate: 15.87%,
+    num_down: 475014,
+    num_down_sat: 1033322,
+    ctp: success: 0, fail: 157757, success rate: 0.00%,
+    num_get_bad: 116,
+    overall_block_time: 123.343612488s,
+    block_get_bad_time: 133.602972ms,
+    block_get_predecessor_time: 15.838752994s,
+    block_blocked_time: 183.359904ms,
+    block_mic_time: 186.831388334s,
+    block_push_time: 7.746806548s,
+    overall_propagate_time: 26.757349837s,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: unsafe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Wed 07 May 2025 11:29:25 PM CST
+========================================

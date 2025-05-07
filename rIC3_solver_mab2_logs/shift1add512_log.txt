@@ -1,0 +1,52 @@
+File: ./hwmcc15/shift1add512.aig
+Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./hwmcc15/shift1add512.aig
+Started at: Wed 07 May 2025 10:34:31 PM CST
+----------------------------------------
+Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc15/shift1add512.aig
+Warning: property not found, moved 1 outputs to bad properties
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1095, 8]
+18 4 4 2 2 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 4 14 0 11 
+
+--- Contextual MAB Statistics ---
+Arm pulls:
+  Arm 0 (Balanced Heuristic): 12 pulls
+  Arm 1 (Aggressive Heuristic): 60 pulls
+  Arm 2 (Conservative Heuristic): 3 pulls
+  Arm 3 (limit=0, max=0, level=0): 5 pulls
+  Arm 4 (limit=1, max=3, level=1): 575 pulls
+  Arm 5 (limit=2, max=5, level=1): 138 pulls
+  Arm 6 (limit=8, max=4, level=1): 142 pulls
+----------------------------
+SolverStatistic {
+    num_solve: 19712,
+    avg_decide_var: 0.732469,
+    num_simplify_subsume: 0,
+    num_simplify_self_subsume: 0,
+}
+Statistic {
+    case: shift1add512.aig,
+    time: 0.15s,
+    num_mic: 1459,
+    avg_mic_cube_len: 4.274846,
+    avg_po_cube_len: 17.163635,
+    mic_drop: success: 670, fail: 5334, success rate: 11.16%,
+    num_down: 6004,
+    num_down_sat: 8906,
+    ctp: success: 0, fail: 313, success rate: 0.00%,
+    num_get_bad: 137,
+    overall_block_time: 121.222762ms,
+    block_get_bad_time: 2.639245ms,
+    block_get_predecessor_time: 32.924892ms,
+    block_blocked_time: 8.01455ms,
+    block_mic_time: 99.996985ms,
+    block_push_time: 2.202361ms,
+    overall_propagate_time: 5.982952ms,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: safe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Wed 07 May 2025 10:34:31 PM CST
+========================================

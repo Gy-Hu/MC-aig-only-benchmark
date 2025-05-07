@@ -1,0 +1,52 @@
+File: ./hwmcc08/viscoherencep3.aig
+Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./hwmcc08/viscoherencep3.aig
+Started at: Wed 07 May 2025 11:32:09 PM CST
+----------------------------------------
+Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc08/viscoherencep3.aig
+Warning: property not found, moved 1 outputs to bad properties
+[0, 0, 0, 0, 0, 0, 0, 0, 16, 27]
+29 5 8 3 6 7 2 0 36 
+
+--- Contextual MAB Statistics ---
+Arm pulls:
+  Arm 0 (Balanced Heuristic): 1 pulls
+  Arm 1 (Aggressive Heuristic): 1 pulls
+  Arm 2 (Conservative Heuristic): 1 pulls
+  Arm 3 (limit=0, max=0, level=0): 31 pulls
+  Arm 4 (limit=1, max=3, level=1): 42 pulls
+  Arm 5 (limit=2, max=5, level=1): 0 pulls
+  Arm 6 (limit=8, max=4, level=1): 0 pulls
+----------------------------
+SolverStatistic {
+    num_solve: 960,
+    avg_decide_var: 0.573767,
+    num_simplify_subsume: 0,
+    num_simplify_self_subsume: 0,
+}
+Statistic {
+    case: viscoherencep3.aig,
+    time: 0.03s,
+    num_mic: 95,
+    avg_mic_cube_len: 4.021053,
+    avg_po_cube_len: 16.643110,
+    mic_drop: success: 89, fail: 271, success rate: 24.72%,
+    num_down: 360,
+    num_down_sat: 415,
+    ctp: success: 0, fail: 124, success rate: 0.00%,
+    num_get_bad: 14,
+    overall_block_time: 16.920274ms,
+    block_get_bad_time: 2.479189ms,
+    block_get_predecessor_time: 3.516803ms,
+    block_blocked_time: 2.250054ms,
+    block_mic_time: 9.412214ms,
+    block_push_time: 519µs,
+    overall_propagate_time: 3.508825ms,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: safe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Wed 07 May 2025 11:32:09 PM CST
+========================================

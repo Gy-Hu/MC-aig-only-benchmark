@@ -1,0 +1,51 @@
+File: ./hwmcc19/single/aig/wolf/2019C/zipversa_composecrc_prf-p15.aig
+Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./hwmcc19/single/aig/wolf/2019C/zipversa_composecrc_prf-p15.aig
+Started at: Wed 07 May 2025 07:05:03 PM CST
+----------------------------------------
+Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc19/single/aig/wolf/2019C/zipversa_composecrc_prf-p15.aig
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 11, 19]
+95 4 5 3 4 7 5 3 1 1 0 27 
+
+--- Contextual MAB Statistics ---
+Arm pulls:
+  Arm 0 (Balanced Heuristic): 5 pulls
+  Arm 1 (Aggressive Heuristic): 1 pulls
+  Arm 2 (Conservative Heuristic): 1 pulls
+  Arm 3 (limit=0, max=0, level=0): 1 pulls
+  Arm 4 (limit=1, max=3, level=1): 15 pulls
+  Arm 5 (limit=2, max=5, level=1): 32 pulls
+  Arm 6 (limit=8, max=4, level=1): 0 pulls
+----------------------------
+SolverStatistic {
+    num_solve: 726,
+    avg_decide_var: 0.153171,
+    num_simplify_subsume: 0,
+    num_simplify_self_subsume: 0,
+}
+Statistic {
+    case: zipversa_composecrc_prf-p15.aig,
+    time: 0.03s,
+    num_mic: 74,
+    avg_mic_cube_len: 3.000000,
+    avg_po_cube_len: 17.196507,
+    mic_drop: success: 45, fail: 177, success rate: 20.27%,
+    num_down: 222,
+    num_down_sat: 214,
+    ctp: success: 0, fail: 137, success rate: 0.00%,
+    num_get_bad: 28,
+    overall_block_time: 10.176784ms,
+    block_get_bad_time: 3.237723ms,
+    block_get_predecessor_time: 2.345441ms,
+    block_blocked_time: 420.706µs,
+    block_mic_time: 4.85267ms,
+    block_push_time: 97.453µs,
+    overall_propagate_time: 2.035041ms,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: safe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Wed 07 May 2025 07:05:03 PM CST
+========================================

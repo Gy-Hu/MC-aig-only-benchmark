@@ -1,0 +1,51 @@
+File: ./others/atxfifo/aig/atxfifo-p13.aig
+Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./others/atxfifo/aig/atxfifo-p13.aig
+Started at: Wed 07 May 2025 11:32:18 PM CST
+----------------------------------------
+Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/others/atxfifo/aig/atxfifo-p13.aig
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 113, 140]
+80 3 4 5 5 8 7 10 9 11 3 7 1 4 6 1 5 2 7 3 5 4 4 2 4 7 1 6 5 2 5 3 8 2 4 6 3 1 6 5 9 4 1 0 166 
+
+--- Contextual MAB Statistics ---
+Arm pulls:
+  Arm 0 (Balanced Heuristic): 21 pulls
+  Arm 1 (Aggressive Heuristic): 62 pulls
+  Arm 2 (Conservative Heuristic): 14 pulls
+  Arm 3 (limit=0, max=0, level=0): 276 pulls
+  Arm 4 (limit=1, max=3, level=1): 13 pulls
+  Arm 5 (limit=2, max=5, level=1): 21 pulls
+  Arm 6 (limit=8, max=4, level=1): 30 pulls
+----------------------------
+SolverStatistic {
+    num_solve: 10610,
+    avg_decide_var: 0.619004,
+    num_simplify_subsume: 0,
+    num_simplify_self_subsume: 0,
+}
+Statistic {
+    case: atxfifo-p13.aig,
+    time: 0.43s,
+    num_mic: 515,
+    avg_mic_cube_len: 4.398058,
+    avg_po_cube_len: 40.890932,
+    mic_drop: success: 259, fail: 1923, success rate: 11.87%,
+    num_down: 2182,
+    num_down_sat: 2361,
+    ctp: success: 0, fail: 4316, success rate: 0.00%,
+    num_get_bad: 187,
+    overall_block_time: 330.101392ms,
+    block_get_bad_time: 256.914942ms,
+    block_get_predecessor_time: 10.051747ms,
+    block_blocked_time: 6.8418ms,
+    block_mic_time: 43.567208ms,
+    block_push_time: 1.930594ms,
+    overall_propagate_time: 60.217656ms,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: safe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Wed 07 May 2025 11:32:18 PM CST
+========================================

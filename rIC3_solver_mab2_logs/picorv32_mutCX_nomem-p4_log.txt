@@ -1,0 +1,51 @@
+File: ./hwmcc19/single/aig/wolf/2019A/picorv32_mutCX_nomem-p4.aig
+Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./hwmcc19/single/aig/wolf/2019A/picorv32_mutCX_nomem-p4.aig
+Started at: Wed 07 May 2025 07:29:03 PM CST
+----------------------------------------
+Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc19/single/aig/wolf/2019A/picorv32_mutCX_nomem-p4.aig
+[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 108808, 17670]
+2049 68 6 69 139 2439 8871 20070 34105 51462 43212 12844 
+
+--- Contextual MAB Statistics ---
+Arm pulls:
+  Arm 0 (Balanced Heuristic): 99 pulls
+  Arm 1 (Aggressive Heuristic): 5692 pulls
+  Arm 2 (Conservative Heuristic): 9436 pulls
+  Arm 3 (limit=0, max=0, level=0): 202482 pulls
+  Arm 4 (limit=1, max=3, level=1): 7953 pulls
+  Arm 5 (limit=2, max=5, level=1): 5027 pulls
+  Arm 6 (limit=8, max=4, level=1): 11112 pulls
+----------------------------
+SolverStatistic {
+    num_solve: 4170111,
+    avg_decide_var: 0.338387,
+    num_simplify_subsume: 137146,
+    num_simplify_self_subsume: 23969,
+}
+Statistic {
+    case: picorv32_mutCX_nomem-p4.aig,
+    time: 2500.80s,
+    num_mic: 254689,
+    avg_mic_cube_len: 10.497811,
+    avg_po_cube_len: 281.765816,
+    mic_drop: success: 704254, fail: 1528466, success rate: 31.54%,
+    num_down: 2232720,
+    num_down_sat: 3202023,
+    ctp: success: 0, fail: 29066, success rate: 0.00%,
+    num_get_bad: 125,
+    overall_block_time: 2359.335520806s,
+    block_get_bad_time: 715.954345ms,
+    block_get_predecessor_time: 230.436753689s,
+    block_blocked_time: 324.43700878s,
+    block_mic_time: 1334.438240878s,
+    block_push_time: 2.922808546s,
+    overall_propagate_time: 140.748742067s,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: unsafe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Wed 07 May 2025 08:10:45 PM CST
+========================================

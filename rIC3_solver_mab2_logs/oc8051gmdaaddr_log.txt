@@ -1,0 +1,52 @@
+File: ./hwmcc1517/oc8051gmdaaddr.aig
+Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./hwmcc1517/oc8051gmdaaddr.aig
+Started at: Wed 07 May 2025 08:40:05 PM CST
+----------------------------------------
+Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc1517/oc8051gmdaaddr.aig
+Warning: property not found, moved 1 outputs to bad properties
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 893, 1748]
+933 3 2 5 4 5 46 74 62 80 108 315 772 1052 1981 3464 2839 1455 982 426 183 125 36 19 3 1 0 8529 
+
+--- Contextual MAB Statistics ---
+Arm pulls:
+  Arm 0 (Balanced Heuristic): 14 pulls
+  Arm 1 (Aggressive Heuristic): 6 pulls
+  Arm 2 (Conservative Heuristic): 7 pulls
+  Arm 3 (limit=0, max=0, level=0): 2 pulls
+  Arm 4 (limit=1, max=3, level=1): 2 pulls
+  Arm 5 (limit=2, max=5, level=1): 6555 pulls
+  Arm 6 (limit=8, max=4, level=1): 422 pulls
+----------------------------
+SolverStatistic {
+    num_solve: 871065,
+    avg_decide_var: 0.584865,
+    num_simplify_subsume: 11330,
+    num_simplify_self_subsume: 16465,
+}
+Statistic {
+    case: oc8051gmdaaddr.aig,
+    time: 290.14s,
+    num_mic: 26430,
+    avg_mic_cube_len: 11.944041,
+    avg_po_cube_len: 420.068463,
+    mic_drop: success: 92488, fail: 200616, success rate: 31.55%,
+    num_down: 293104,
+    num_down_sat: 466094,
+    ctp: success: 0, fail: 80289, success rate: 0.00%,
+    num_get_bad: 85,
+    overall_block_time: 224.479771524s,
+    block_get_bad_time: 185.062958ms,
+    block_get_predecessor_time: 44.319620859s,
+    block_blocked_time: 3.080798519s,
+    block_mic_time: 282.1801001s,
+    block_push_time: 1.971614429s,
+    overall_propagate_time: 65.041424708s,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: safe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Wed 07 May 2025 08:44:56 PM CST
+========================================

@@ -1,0 +1,51 @@
+File: ./hwmcc19/single/aig/goel/industry/cal142/cal142.aig
+Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./hwmcc19/single/aig/goel/industry/cal142/cal142.aig
+Started at: Wed 07 May 2025 07:41:36 PM CST
+----------------------------------------
+Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc19/single/aig/goel/industry/cal142/cal142.aig
+[0, 0, 0, 0, 0, 0, 1, 465]
+469 1 5 2 0 1 526 
+
+--- Contextual MAB Statistics ---
+Arm pulls:
+  Arm 0 (Balanced Heuristic): 1 pulls
+  Arm 1 (Aggressive Heuristic): 667 pulls
+  Arm 2 (Conservative Heuristic): 1 pulls
+  Arm 3 (limit=0, max=0, level=0): 6 pulls
+  Arm 4 (limit=1, max=3, level=1): 3 pulls
+  Arm 5 (limit=2, max=5, level=1): 3 pulls
+  Arm 6 (limit=8, max=4, level=1): 2 pulls
+----------------------------
+SolverStatistic {
+    num_solve: 12926,
+    avg_decide_var: 0.227570,
+    num_simplify_subsume: 0,
+    num_simplify_self_subsume: 0,
+}
+Statistic {
+    case: cal142.aig,
+    time: 6.94s,
+    num_mic: 914,
+    avg_mic_cube_len: 8.387309,
+    avg_po_cube_len: 46.921119,
+    mic_drop: success: 2499, fail: 4433, success rate: 36.05%,
+    num_down: 6932,
+    num_down_sat: 8045,
+    ctp: success: 0, fail: 1245, success rate: 0.00%,
+    num_get_bad: 153,
+    overall_block_time: 6.237115547s,
+    block_get_bad_time: 4.277947609s,
+    block_get_predecessor_time: 234.55494ms,
+    block_blocked_time: 344.59483ms,
+    block_mic_time: 1.246896118s,
+    block_push_time: 226.134499ms,
+    overall_propagate_time: 582.545515ms,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: safe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Wed 07 May 2025 07:41:44 PM CST
+========================================

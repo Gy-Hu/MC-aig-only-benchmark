@@ -1,0 +1,52 @@
+File: ./hwmcc15/power2sum32.aig
+Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./hwmcc15/power2sum32.aig
+Started at: Wed 07 May 2025 09:18:07 PM CST
+----------------------------------------
+Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc15/power2sum32.aig
+Warning: property not found, moved 1 outputs to bad properties
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 232]
+27 12 9 12 4 1 1 7 1 1 1 1 1 1 1 4 1 1 1 1 1 1 1 1 1 1 5 1 1 0 36 0 
+
+--- Contextual MAB Statistics ---
+Arm pulls:
+  Arm 0 (Balanced Heuristic): 1 pulls
+  Arm 1 (Aggressive Heuristic): 16 pulls
+  Arm 2 (Conservative Heuristic): 1 pulls
+  Arm 3 (limit=0, max=0, level=0): 169 pulls
+  Arm 4 (limit=1, max=3, level=1): 1 pulls
+  Arm 5 (limit=2, max=5, level=1): 36 pulls
+  Arm 6 (limit=8, max=4, level=1): 0 pulls
+----------------------------
+SolverStatistic {
+    num_solve: 4510,
+    avg_decide_var: 0.644146,
+    num_simplify_subsume: 0,
+    num_simplify_self_subsume: 0,
+}
+Statistic {
+    case: power2sum32.aig,
+    time: 0.05s,
+    num_mic: 257,
+    avg_mic_cube_len: 6.097276,
+    avg_po_cube_len: 25.529323,
+    mic_drop: success: 229, fail: 1301, success rate: 14.97%,
+    num_down: 1530,
+    num_down_sat: 2296,
+    ctp: success: 0, fail: 383, success rate: 0.00%,
+    num_get_bad: 41,
+    overall_block_time: 33.354676ms,
+    block_get_bad_time: 2.185425ms,
+    block_get_predecessor_time: 3.709648ms,
+    block_blocked_time: 3.507928ms,
+    block_mic_time: 21.405934ms,
+    block_push_time: 2.062653ms,
+    overall_propagate_time: 6.195072ms,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: safe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Wed 07 May 2025 09:18:07 PM CST
+========================================

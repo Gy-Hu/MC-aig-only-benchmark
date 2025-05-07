@@ -1,0 +1,52 @@
+File: ./hwmcc08/kenflashp12.aig
+Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./hwmcc08/kenflashp12.aig
+Started at: Wed 07 May 2025 11:30:53 PM CST
+----------------------------------------
+Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc08/kenflashp12.aig
+Warning: property not found, moved 1 outputs to bad properties
+[1, 1, 1, 8]
+44 5 8 
+
+--- Contextual MAB Statistics ---
+Arm pulls:
+  Arm 0 (Balanced Heuristic): 1 pulls
+  Arm 1 (Aggressive Heuristic): 1 pulls
+  Arm 2 (Conservative Heuristic): 1 pulls
+  Arm 3 (limit=0, max=0, level=0): 1 pulls
+  Arm 4 (limit=1, max=3, level=1): 1 pulls
+  Arm 5 (limit=2, max=5, level=1): 5 pulls
+  Arm 6 (limit=8, max=4, level=1): 0 pulls
+----------------------------
+SolverStatistic {
+    num_solve: 84,
+    avg_decide_var: 1.452948,
+    num_simplify_subsume: 0,
+    num_simplify_self_subsume: 0,
+}
+Statistic {
+    case: kenflashp12.aig,
+    time: 0.01s,
+    num_mic: 15,
+    avg_mic_cube_len: 2.933333,
+    avg_po_cube_len: 29.550000,
+    mic_drop: success: 5, fail: 36, success rate: 12.20%,
+    num_down: 41,
+    num_down_sat: 48,
+    ctp: success: 0, fail: 1, success rate: 0.00%,
+    num_get_bad: 7,
+    overall_block_time: 3.7586ms,
+    block_get_bad_time: 830.741µs,
+    block_get_predecessor_time: 957.072µs,
+    block_blocked_time: 363.752µs,
+    block_mic_time: 1.540878ms,
+    block_push_time: 73.148µs,
+    overall_propagate_time: 135.218µs,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: unsafe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Wed 07 May 2025 11:30:53 PM CST
+========================================

@@ -1,0 +1,52 @@
+File: ./hwmcc15/power2sum256.aig
+Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./hwmcc15/power2sum256.aig
+Started at: Wed 07 May 2025 11:17:27 PM CST
+----------------------------------------
+Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc15/power2sum256.aig
+Warning: property not found, moved 1 outputs to bad properties
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1459]
+30 15 7 11 2 1 1 9 2 1 1 1 1 1 1 9 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 8 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 8 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 6 2 1 1 1 1 2 2 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 8 0 22 0 
+
+--- Contextual MAB Statistics ---
+Arm pulls:
+  Arm 0 (Balanced Heuristic): 7 pulls
+  Arm 1 (Aggressive Heuristic): 303 pulls
+  Arm 2 (Conservative Heuristic): 82 pulls
+  Arm 3 (limit=0, max=0, level=0): 29 pulls
+  Arm 4 (limit=1, max=3, level=1): 488 pulls
+  Arm 5 (limit=2, max=5, level=1): 67 pulls
+  Arm 6 (limit=8, max=4, level=1): 232 pulls
+----------------------------
+SolverStatistic {
+    num_solve: 25248,
+    avg_decide_var: 0.573585,
+    num_simplify_subsume: 0,
+    num_simplify_self_subsume: 0,
+}
+Statistic {
+    case: power2sum256.aig,
+    time: 0.21s,
+    num_mic: 1762,
+    avg_mic_cube_len: 4.434166,
+    avg_po_cube_len: 27.861427,
+    mic_drop: success: 901, fail: 6700, success rate: 11.85%,
+    num_down: 7601,
+    num_down_sat: 11077,
+    ctp: success: 0, fail: 1277, success rate: 0.00%,
+    num_get_bad: 129,
+    overall_block_time: 158.074178ms,
+    block_get_bad_time: 6.80483ms,
+    block_get_predecessor_time: 35.078043ms,
+    block_blocked_time: 15.914942ms,
+    block_mic_time: 108.814632ms,
+    block_push_time: 7.960149ms,
+    overall_propagate_time: 21.426496ms,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: safe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Wed 07 May 2025 11:17:28 PM CST
+========================================

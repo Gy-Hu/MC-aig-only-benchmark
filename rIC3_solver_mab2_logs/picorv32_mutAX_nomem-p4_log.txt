@@ -1,0 +1,51 @@
+File: ./hwmcc19/single/aig/wolf/2019A/picorv32_mutAX_nomem-p4.aig
+Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./hwmcc19/single/aig/wolf/2019A/picorv32_mutAX_nomem-p4.aig
+Started at: Wed 07 May 2025 07:26:44 PM CST
+----------------------------------------
+Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc19/single/aig/wolf/2019A/picorv32_mutAX_nomem-p4.aig
+[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 19, 72571]
+2049 68 5 80 108 2421 13169 24490 35411 27571 14568 7877 
+
+--- Contextual MAB Statistics ---
+Arm pulls:
+  Arm 0 (Balanced Heuristic): 30277 pulls
+  Arm 1 (Aggressive Heuristic): 38792 pulls
+  Arm 2 (Conservative Heuristic): 28123 pulls
+  Arm 3 (limit=0, max=0, level=0): 29 pulls
+  Arm 4 (limit=1, max=3, level=1): 11193 pulls
+  Arm 5 (limit=2, max=5, level=1): 9521 pulls
+  Arm 6 (limit=8, max=4, level=1): 319 pulls
+----------------------------
+SolverStatistic {
+    num_solve: 2775350,
+    avg_decide_var: 0.327232,
+    num_simplify_subsume: 76613,
+    num_simplify_self_subsume: 42227,
+}
+Statistic {
+    case: picorv32_mutAX_nomem-p4.aig,
+    time: 3580.28s,
+    num_mic: 176052,
+    avg_mic_cube_len: 7.864648,
+    avg_po_cube_len: 222.128443,
+    mic_drop: success: 283090, fail: 885987, success rate: 24.21%,
+    num_down: 1169077,
+    num_down_sat: 1463500,
+    ctp: success: 0, fail: 35587, success rate: 0.00%,
+    num_get_bad: 128,
+    overall_block_time: 3471.072394584s,
+    block_get_bad_time: 646.351727ms,
+    block_get_predecessor_time: 263.274795242s,
+    block_blocked_time: 289.422358002s,
+    block_mic_time: 3047.639211819s,
+    block_push_time: 4.611070212s,
+    overall_propagate_time: 108.4879128s,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: unsafe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Wed 07 May 2025 08:26:25 PM CST
+========================================

@@ -1,0 +1,52 @@
+File: ./hwmcc08/texastwoprocp1.aig
+Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./hwmcc08/texastwoprocp1.aig
+Started at: Wed 07 May 2025 11:31:45 PM CST
+----------------------------------------
+Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc08/texastwoprocp1.aig
+Warning: property not found, moved 1 outputs to bad properties
+[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 26, 97]
+41 4 7 7 4 7 4 6 16 36 64 
+
+--- Contextual MAB Statistics ---
+Arm pulls:
+  Arm 0 (Balanced Heuristic): 2 pulls
+  Arm 1 (Aggressive Heuristic): 12 pulls
+  Arm 2 (Conservative Heuristic): 117 pulls
+  Arm 3 (limit=0, max=0, level=0): 117 pulls
+  Arm 4 (limit=1, max=3, level=1): 14 pulls
+  Arm 5 (limit=2, max=5, level=1): 1 pulls
+  Arm 6 (limit=8, max=4, level=1): 1 pulls
+----------------------------
+SolverStatistic {
+    num_solve: 2400,
+    avg_decide_var: 0.867482,
+    num_simplify_subsume: 0,
+    num_simplify_self_subsume: 0,
+}
+Statistic {
+    case: texastwoprocp1.aig,
+    time: 0.03s,
+    num_mic: 272,
+    avg_mic_cube_len: 3.202206,
+    avg_po_cube_len: 19.568182,
+    mic_drop: success: 150, fail: 705, success rate: 17.54%,
+    num_down: 855,
+    num_down_sat: 795,
+    ctp: success: 0, fail: 543, success rate: 0.00%,
+    num_get_bad: 17,
+    overall_block_time: 16.034181ms,
+    block_get_bad_time: 1.275892ms,
+    block_get_predecessor_time: 4.093862ms,
+    block_blocked_time: 2.973758ms,
+    block_mic_time: 5.403697ms,
+    block_push_time: 196.851µs,
+    overall_propagate_time: 5.418109ms,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: unsafe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Wed 07 May 2025 11:31:45 PM CST
+========================================

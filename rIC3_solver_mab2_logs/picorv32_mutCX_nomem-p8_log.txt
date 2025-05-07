@@ -1,0 +1,51 @@
+File: ./hwmcc19/single/aig/wolf/2019A/picorv32_mutCX_nomem-p8.aig
+Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./hwmcc19/single/aig/wolf/2019A/picorv32_mutCX_nomem-p8.aig
+Started at: Wed 07 May 2025 07:31:42 PM CST
+----------------------------------------
+Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc19/single/aig/wolf/2019A/picorv32_mutCX_nomem-p8.aig
+[1, 1, 1, 1, 1, 1, 1, 1, 2, 1, 1, 39294, 2982]
+2049 56 17 57 107 2425 11184 22508 22913 11680 8856 3754 
+
+--- Contextual MAB Statistics ---
+Arm pulls:
+  Arm 0 (Balanced Heuristic): 15884 pulls
+  Arm 1 (Aggressive Heuristic): 35543 pulls
+  Arm 2 (Conservative Heuristic): 169 pulls
+  Arm 3 (limit=0, max=0, level=0): 6485 pulls
+  Arm 4 (limit=1, max=3, level=1): 11334 pulls
+  Arm 5 (limit=2, max=5, level=1): 9 pulls
+  Arm 6 (limit=8, max=4, level=1): 1874 pulls
+----------------------------
+SolverStatistic {
+    num_solve: 1150982,
+    avg_decide_var: 0.309570,
+    num_simplify_subsume: 18607,
+    num_simplify_self_subsume: 6649,
+}
+Statistic {
+    case: picorv32_mutCX_nomem-p8.aig,
+    time: 556.36s,
+    num_mic: 104000,
+    avg_mic_cube_len: 4.692817,
+    avg_po_cube_len: 167.483061,
+    mic_drop: success: 108302, fail: 335632, success rate: 24.40%,
+    num_down: 443934,
+    num_down_sat: 474030,
+    ctp: success: 0, fail: 26276, success rate: 0.00%,
+    num_get_bad: 1179,
+    overall_block_time: 483.10717338s,
+    block_get_bad_time: 5.083632911s,
+    block_get_predecessor_time: 100.804311407s,
+    block_blocked_time: 48.25316634s,
+    block_mic_time: 374.547973998s,
+    block_push_time: 3.814146377s,
+    overall_propagate_time: 72.610821312s,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: unsafe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Wed 07 May 2025 07:41:00 PM CST
+========================================

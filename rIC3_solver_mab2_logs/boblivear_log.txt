@@ -1,0 +1,52 @@
+File: ./hwmcc-appr/boblivear.aig
+Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./hwmcc-appr/boblivear.aig
+Started at: Wed 07 May 2025 02:18:00 PM CST
+----------------------------------------
+Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc-appr/boblivear.aig
+Warning: property not found, moved 1 outputs to bad properties
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 558, 178]
+77 15 23 48 92 202 417 546 381 325 340 287 190 146 119 166 180 180 164 121 98 86 70 51 38 18 5 3 1 0 487 
+
+--- Contextual MAB Statistics ---
+Arm pulls:
+  Arm 0 (Balanced Heuristic): 16 pulls
+  Arm 1 (Aggressive Heuristic): 9 pulls
+  Arm 2 (Conservative Heuristic): 11 pulls
+  Arm 3 (limit=0, max=0, level=0): 6 pulls
+  Arm 4 (limit=1, max=3, level=1): 7 pulls
+  Arm 5 (limit=2, max=5, level=1): 6 pulls
+  Arm 6 (limit=8, max=4, level=1): 1107 pulls
+----------------------------
+SolverStatistic {
+    num_solve: 202836,
+    avg_decide_var: 0.733950,
+    num_simplify_subsume: 677,
+    num_simplify_self_subsume: 567,
+}
+Statistic {
+    case: boblivear.aig,
+    time: 6.89s,
+    num_mic: 5951,
+    avg_mic_cube_len: 8.756343,
+    avg_po_cube_len: 46.956375,
+    mic_drop: success: 12874, fail: 36970, success rate: 25.83%,
+    num_down: 49844,
+    num_down_sat: 73588,
+    ctp: success: 0, fail: 11778, success rate: 0.00%,
+    num_get_bad: 353,
+    overall_block_time: 3.43807509s,
+    block_get_bad_time: 27.905438ms,
+    block_get_predecessor_time: 562.902229ms,
+    block_blocked_time: 36.720632ms,
+    block_mic_time: 4.731800086s,
+    block_push_time: 14.173391ms,
+    overall_propagate_time: 3.432968848s,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: safe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Wed 07 May 2025 02:18:07 PM CST
+========================================

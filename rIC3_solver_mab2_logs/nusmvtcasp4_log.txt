@@ -1,0 +1,52 @@
+File: ./hwmcc08/nusmvtcasp4.aig
+Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./hwmcc08/nusmvtcasp4.aig
+Started at: Wed 07 May 2025 11:32:01 PM CST
+----------------------------------------
+Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc08/nusmvtcasp4.aig
+Warning: property not found, moved 1 outputs to bad properties
+[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 8, 3, 2, 1, 1, 247]
+166 3 8 9 12 13 11 13 13 49 30 16 21 72 236 
+
+--- Contextual MAB Statistics ---
+Arm pulls:
+  Arm 0 (Balanced Heuristic): 2 pulls
+  Arm 1 (Aggressive Heuristic): 285 pulls
+  Arm 2 (Conservative Heuristic): 1 pulls
+  Arm 3 (limit=0, max=0, level=0): 1 pulls
+  Arm 4 (limit=1, max=3, level=1): 1 pulls
+  Arm 5 (limit=2, max=5, level=1): 1 pulls
+  Arm 6 (limit=8, max=4, level=1): 1 pulls
+----------------------------
+SolverStatistic {
+    num_solve: 11624,
+    avg_decide_var: 0.816711,
+    num_simplify_subsume: 0,
+    num_simplify_self_subsume: 0,
+}
+Statistic {
+    case: nusmvtcasp4.aig,
+    time: 0.81s,
+    num_mic: 618,
+    avg_mic_cube_len: 7.438511,
+    avg_po_cube_len: 137.102018,
+    mic_drop: success: 711, fail: 3640, success rate: 16.34%,
+    num_down: 4351,
+    num_down_sat: 7765,
+    ctp: success: 0, fail: 607, success rate: 0.00%,
+    num_get_bad: 100,
+    overall_block_time: 732.434237ms,
+    block_get_bad_time: 21.268701ms,
+    block_get_predecessor_time: 180.256119ms,
+    block_blocked_time: 29.730319ms,
+    block_mic_time: 756.58102ms,
+    block_push_time: 16.545082ms,
+    overall_propagate_time: 29.94534ms,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: unsafe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Wed 07 May 2025 11:32:02 PM CST
+========================================

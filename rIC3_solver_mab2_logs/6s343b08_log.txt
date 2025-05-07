@@ -1,0 +1,52 @@
+File: ./hwmcc-appr/6s343b08.aig
+Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./hwmcc-appr/6s343b08.aig
+Started at: Wed 07 May 2025 02:18:00 PM CST
+----------------------------------------
+Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc-appr/6s343b08.aig
+Warning: property not found, moved 1 outputs to bad properties
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 914, 1741]
+4680 17 20 29 53 96 108 373 463 561 596 449 347 225 156 54 75 78 31 1 0 4228 
+
+--- Contextual MAB Statistics ---
+Arm pulls:
+  Arm 0 (Balanced Heuristic): 4 pulls
+  Arm 1 (Aggressive Heuristic): 3 pulls
+  Arm 2 (Conservative Heuristic): 4 pulls
+  Arm 3 (limit=0, max=0, level=0): 4 pulls
+  Arm 4 (limit=1, max=3, level=1): 12 pulls
+  Arm 5 (limit=2, max=5, level=1): 3818 pulls
+  Arm 6 (limit=8, max=4, level=1): 6 pulls
+----------------------------
+SolverStatistic {
+    num_solve: 214099,
+    avg_decide_var: 0.060973,
+    num_simplify_subsume: 9454,
+    num_simplify_self_subsume: 1643,
+}
+Statistic {
+    case: 6s343b08.aig,
+    time: 24.93s,
+    num_mic: 10606,
+    avg_mic_cube_len: 7.673298,
+    avg_po_cube_len: 329.234816,
+    mic_drop: success: 16031, fail: 57820, success rate: 21.71%,
+    num_down: 73851,
+    num_down_sat: 99190,
+    ctp: success: 0, fail: 37067, success rate: 0.00%,
+    num_get_bad: 87,
+    overall_block_time: 20.586794629s,
+    block_get_bad_time: 1.062497161s,
+    block_get_predecessor_time: 5.371476743s,
+    block_blocked_time: 2.185426753s,
+    block_mic_time: 17.162207883s,
+    block_push_time: 365.031903ms,
+    overall_propagate_time: 2.769771067s,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: safe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Wed 07 May 2025 02:18:27 PM CST
+========================================

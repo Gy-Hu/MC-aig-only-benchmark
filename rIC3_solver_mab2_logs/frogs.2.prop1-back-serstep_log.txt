@@ -1,0 +1,51 @@
+File: ./hwmcc19/single/aig/beem/frogs.2.prop1-back-serstep.aig
+Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./hwmcc19/single/aig/beem/frogs.2.prop1-back-serstep.aig
+Started at: Wed 07 May 2025 06:45:09 PM CST
+----------------------------------------
+Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc19/single/aig/beem/frogs.2.prop1-back-serstep.aig
+[1, 1, 1, 1, 2, 2, 2, 14, 28]
+142 1 52 256 322 400 164 80 
+
+--- Contextual MAB Statistics ---
+Arm pulls:
+  Arm 0 (Balanced Heuristic): 1 pulls
+  Arm 1 (Aggressive Heuristic): 107 pulls
+  Arm 2 (Conservative Heuristic): 0 pulls
+  Arm 3 (limit=0, max=0, level=0): 0 pulls
+  Arm 4 (limit=1, max=3, level=1): 0 pulls
+  Arm 5 (limit=2, max=5, level=1): 0 pulls
+  Arm 6 (limit=8, max=4, level=1): 0 pulls
+----------------------------
+SolverStatistic {
+    num_solve: 45729,
+    avg_decide_var: 0.999409,
+    num_simplify_subsume: 0,
+    num_simplify_self_subsume: 0,
+}
+Statistic {
+    case: frogs.2.prop1-back-serstep.aig,
+    time: 13.57s,
+    num_mic: 1345,
+    avg_mic_cube_len: 21.298141,
+    avg_po_cube_len: 141.212291,
+    mic_drop: success: 11857, fail: 12575, success rate: 48.53%,
+    num_down: 24432,
+    num_down_sat: 41119,
+    ctp: success: 0, fail: 105, success rate: 0.00%,
+    num_get_bad: 13,
+    overall_block_time: 12.973196457s,
+    block_get_bad_time: 18.998916ms,
+    block_get_predecessor_time: 650.179421ms,
+    block_blocked_time: 40.10078ms,
+    block_mic_time: 22.434241918s,
+    block_push_time: 100.870784ms,
+    overall_propagate_time: 533.590239ms,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: unsafe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Wed 07 May 2025 06:45:23 PM CST
+========================================

@@ -1,0 +1,51 @@
+File: ./hwmcc1920/aig/elevator.4.prop1-func-interl.aig
+Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./hwmcc1920/aig/elevator.4.prop1-func-interl.aig
+Started at: Wed 07 May 2025 06:19:33 PM CST
+----------------------------------------
+Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc1920/aig/elevator.4.prop1-func-interl.aig
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 13, 6]
+259 19 11 23 33 50 23 9 2 3 12 0 17 
+
+--- Contextual MAB Statistics ---
+Arm pulls:
+  Arm 0 (Balanced Heuristic): 1 pulls
+  Arm 1 (Aggressive Heuristic): 1 pulls
+  Arm 2 (Conservative Heuristic): 1 pulls
+  Arm 3 (limit=0, max=0, level=0): 1 pulls
+  Arm 4 (limit=1, max=3, level=1): 7 pulls
+  Arm 5 (limit=2, max=5, level=1): 1 pulls
+  Arm 6 (limit=8, max=4, level=1): 21 pulls
+----------------------------
+SolverStatistic {
+    num_solve: 4090,
+    avg_decide_var: 0.432533,
+    num_simplify_subsume: 0,
+    num_simplify_self_subsume: 0,
+}
+Statistic {
+    case: elevator.4.prop1-func-interl.aig,
+    time: 0.17s,
+    num_mic: 410,
+    avg_mic_cube_len: 4.087805,
+    avg_po_cube_len: 34.034286,
+    mic_drop: success: 215, fail: 1385, success rate: 13.44%,
+    num_down: 1600,
+    num_down_sat: 1863,
+    ctp: success: 0, fail: 256, success rate: 0.00%,
+    num_get_bad: 24,
+    overall_block_time: 117.197201ms,
+    block_get_bad_time: 5.065754ms,
+    block_get_predecessor_time: 26.245683ms,
+    block_blocked_time: 1.197351ms,
+    block_mic_time: 142.971886ms,
+    block_push_time: 348.14µs,
+    overall_propagate_time: 16.092404ms,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: safe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Wed 07 May 2025 06:19:34 PM CST
+========================================

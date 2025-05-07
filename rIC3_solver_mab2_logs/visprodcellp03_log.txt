@@ -1,0 +1,52 @@
+File: ./hwmcc08/visprodcellp03.aig
+Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./hwmcc08/visprodcellp03.aig
+Started at: Wed 07 May 2025 11:31:00 PM CST
+----------------------------------------
+Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc08/visprodcellp03.aig
+Warning: property not found, moved 1 outputs to bad properties
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 11, 9]
+63 10 16 43 48 49 26 46 75 31 9 0 138 
+
+--- Contextual MAB Statistics ---
+Arm pulls:
+  Arm 0 (Balanced Heuristic): 1 pulls
+  Arm 1 (Aggressive Heuristic): 1 pulls
+  Arm 2 (Conservative Heuristic): 1 pulls
+  Arm 3 (limit=0, max=0, level=0): 1 pulls
+  Arm 4 (limit=1, max=3, level=1): 1 pulls
+  Arm 5 (limit=2, max=5, level=1): 8 pulls
+  Arm 6 (limit=8, max=4, level=1): 32 pulls
+----------------------------
+SolverStatistic {
+    num_solve: 9611,
+    avg_decide_var: 0.613541,
+    num_simplify_subsume: 0,
+    num_simplify_self_subsume: 0,
+}
+Statistic {
+    case: visprodcellp03.aig,
+    time: 0.20s,
+    num_mic: 613,
+    avg_mic_cube_len: 6.119086,
+    avg_po_cube_len: 32.297143,
+    mic_drop: success: 698, fail: 2896, success rate: 19.42%,
+    num_down: 3594,
+    num_down_sat: 5194,
+    ctp: success: 0, fail: 979, success rate: 0.00%,
+    num_get_bad: 22,
+    overall_block_time: 142.248793ms,
+    block_get_bad_time: 3.644213ms,
+    block_get_predecessor_time: 20.855602ms,
+    block_blocked_time: 1.312594ms,
+    block_mic_time: 205.266894ms,
+    block_push_time: 3.615646ms,
+    overall_propagate_time: 37.837938ms,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: safe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Wed 07 May 2025 11:31:01 PM CST
+========================================

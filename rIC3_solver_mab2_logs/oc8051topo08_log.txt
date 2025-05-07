@@ -1,0 +1,52 @@
+File: ./hwmcc-appr/oc8051topo08.aig
+Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./hwmcc-appr/oc8051topo08.aig
+Started at: Wed 07 May 2025 02:18:01 PM CST
+----------------------------------------
+Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc-appr/oc8051topo08.aig
+Warning: property not found, moved 1 outputs to bad properties
+[1, 1, 1, 1, 1, 1, 1, 1, 4, 2, 184, 822, 1, 1, 2799]
+1084 51 24 62 120 133 169 378 493 540 409 317 663 1330 
+
+--- Contextual MAB Statistics ---
+Arm pulls:
+  Arm 0 (Balanced Heuristic): 7037 pulls
+  Arm 1 (Aggressive Heuristic): 5 pulls
+  Arm 2 (Conservative Heuristic): 9 pulls
+  Arm 3 (limit=0, max=0, level=0): 4 pulls
+  Arm 4 (limit=1, max=3, level=1): 976 pulls
+  Arm 5 (limit=2, max=5, level=1): 5 pulls
+  Arm 6 (limit=8, max=4, level=1): 4 pulls
+----------------------------
+SolverStatistic {
+    num_solve: 144941,
+    avg_decide_var: 0.143944,
+    num_simplify_subsume: 8886,
+    num_simplify_self_subsume: 2917,
+}
+Statistic {
+    case: oc8051topo08.aig,
+    time: 22.31s,
+    num_mic: 9870,
+    avg_mic_cube_len: 7.551874,
+    avg_po_cube_len: 97.929570,
+    mic_drop: success: 15546, fail: 55773, success rate: 21.80%,
+    num_down: 71319,
+    num_down_sat: 104834,
+    ctp: success: 0, fail: 3481, success rate: 0.00%,
+    num_get_bad: 177,
+    overall_block_time: 21.03829361s,
+    block_get_bad_time: 637.383763ms,
+    block_get_predecessor_time: 4.327610787s,
+    block_blocked_time: 3.6101957s,
+    block_mic_time: 13.176442523s,
+    block_push_time: 120.50567ms,
+    overall_propagate_time: 536.959489ms,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: unsafe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Wed 07 May 2025 02:18:26 PM CST
+========================================

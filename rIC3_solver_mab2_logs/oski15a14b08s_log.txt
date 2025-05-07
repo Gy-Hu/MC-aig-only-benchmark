@@ -1,0 +1,52 @@
+File: ./hwmcc15/oski15a14b08s.aig
+Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./hwmcc15/oski15a14b08s.aig
+Started at: Wed 07 May 2025 09:41:41 PM CST
+----------------------------------------
+Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc15/oski15a14b08s.aig
+Warning: property not found, moved 1 outputs to bad properties
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 961]
+3452 10 5 3 3 1 3 13 13 4 0 7 1 4638 0 
+
+--- Contextual MAB Statistics ---
+Arm pulls:
+  Arm 0 (Balanced Heuristic): 817 pulls
+  Arm 1 (Aggressive Heuristic): 37 pulls
+  Arm 2 (Conservative Heuristic): 52 pulls
+  Arm 3 (limit=0, max=0, level=0): 67 pulls
+  Arm 4 (limit=1, max=3, level=1): 31 pulls
+  Arm 5 (limit=2, max=5, level=1): 27 pulls
+  Arm 6 (limit=8, max=4, level=1): 15 pulls
+----------------------------
+SolverStatistic {
+    num_solve: 50712,
+    avg_decide_var: 0.417523,
+    num_simplify_subsume: 129,
+    num_simplify_self_subsume: 56,
+}
+Statistic {
+    case: oski15a14b08s.aig,
+    time: 24.34s,
+    num_mic: 4869,
+    avg_mic_cube_len: 4.688437,
+    avg_po_cube_len: 889.461942,
+    mic_drop: success: 3491, fail: 17916, success rate: 16.31%,
+    num_down: 21407,
+    num_down_sat: 24291,
+    ctp: success: 0, fail: 958, success rate: 0.00%,
+    num_get_bad: 464,
+    overall_block_time: 23.358247317s,
+    block_get_bad_time: 1.767739503s,
+    block_get_predecessor_time: 5.083588414s,
+    block_blocked_time: 845.474917ms,
+    block_mic_time: 22.486901043s,
+    block_push_time: 1.222041286s,
+    overall_propagate_time: 114.476199ms,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: safe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Wed 07 May 2025 09:42:07 PM CST
+========================================

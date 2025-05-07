@@ -1,0 +1,51 @@
+File: ./hwmcc19/single/aig/wolf/2018D/picorv32-check-p01.aig
+Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./hwmcc19/single/aig/wolf/2018D/picorv32-check-p01.aig
+Started at: Wed 07 May 2025 07:22:56 PM CST
+----------------------------------------
+Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc19/single/aig/wolf/2018D/picorv32-check-p01.aig
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 23]
+2 1 1 2 8 12 16 19 5 0 36 
+
+--- Contextual MAB Statistics ---
+Arm pulls:
+  Arm 0 (Balanced Heuristic): 1 pulls
+  Arm 1 (Aggressive Heuristic): 1 pulls
+  Arm 2 (Conservative Heuristic): 1 pulls
+  Arm 3 (limit=0, max=0, level=0): 1 pulls
+  Arm 4 (limit=1, max=3, level=1): 1 pulls
+  Arm 5 (limit=2, max=5, level=1): 54 pulls
+  Arm 6 (limit=8, max=4, level=1): 0 pulls
+----------------------------
+SolverStatistic {
+    num_solve: 1591,
+    avg_decide_var: 0.035646,
+    num_simplify_subsume: 0,
+    num_simplify_self_subsume: 0,
+}
+Statistic {
+    case: picorv32-check-p01.aig,
+    time: 0.22s,
+    num_mic: 140,
+    avg_mic_cube_len: 4.657143,
+    avg_po_cube_len: 11.166667,
+    mic_drop: success: 110, fail: 518, success rate: 17.52%,
+    num_down: 628,
+    num_down_sat: 732,
+    ctp: success: 0, fail: 137, success rate: 0.00%,
+    num_get_bad: 12,
+    overall_block_time: 41.984052ms,
+    block_get_bad_time: 6.40326ms,
+    block_get_predecessor_time: 9.073015ms,
+    block_blocked_time: 1.98199ms,
+    block_mic_time: 38.647797ms,
+    block_push_time: 1.00273ms,
+    overall_propagate_time: 7.778645ms,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: safe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Wed 07 May 2025 07:22:57 PM CST
+========================================

@@ -1,0 +1,52 @@
+File: ./hwmcc08/139452p22.aig
+Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./hwmcc08/139452p22.aig
+Started at: Wed 07 May 2025 11:31:37 PM CST
+----------------------------------------
+Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc08/139452p22.aig
+Warning: property not found, moved 1 outputs to bad properties
+[1, 1, 1, 1, 378]
+306 27 50 257 
+
+--- Contextual MAB Statistics ---
+Arm pulls:
+  Arm 0 (Balanced Heuristic): 9 pulls
+  Arm 1 (Aggressive Heuristic): 9 pulls
+  Arm 2 (Conservative Heuristic): 11 pulls
+  Arm 3 (limit=0, max=0, level=0): 319 pulls
+  Arm 4 (limit=1, max=3, level=1): 8 pulls
+  Arm 5 (limit=2, max=5, level=1): 8 pulls
+  Arm 6 (limit=8, max=4, level=1): 8 pulls
+----------------------------
+SolverStatistic {
+    num_solve: 3426,
+    avg_decide_var: 1.053079,
+    num_simplify_subsume: 0,
+    num_simplify_self_subsume: 0,
+}
+Statistic {
+    case: 139452p22.aig,
+    time: 0.73s,
+    num_mic: 373,
+    avg_mic_cube_len: 5.238606,
+    avg_po_cube_len: 269.222307,
+    mic_drop: success: 388, fail: 1453, success rate: 21.08%,
+    num_down: 1841,
+    num_down_sat: 2757,
+    ctp: success: 0, fail: 95, success rate: 0.00%,
+    num_get_bad: 326,
+    overall_block_time: 691.62445ms,
+    block_get_bad_time: 124.501646ms,
+    block_get_predecessor_time: 26.732884ms,
+    block_blocked_time: 43.081362ms,
+    block_mic_time: 235.57381ms,
+    block_push_time: 1.404608ms,
+    overall_propagate_time: 6.864696ms,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: unsafe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Wed 07 May 2025 11:31:38 PM CST
+========================================

@@ -1,0 +1,51 @@
+File: ./hwmcc1920/aig/gen35.aig
+Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./hwmcc1920/aig/gen35.aig
+Started at: Wed 07 May 2025 06:19:54 PM CST
+----------------------------------------
+Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc1920/aig/gen35.aig
+[0, 0, 0, 0, 0, 287]
+3 1 1 0 287 
+
+--- Contextual MAB Statistics ---
+Arm pulls:
+  Arm 0 (Balanced Heuristic): 40 pulls
+  Arm 1 (Aggressive Heuristic): 46 pulls
+  Arm 2 (Conservative Heuristic): 41 pulls
+  Arm 3 (limit=0, max=0, level=0): 41 pulls
+  Arm 4 (limit=1, max=3, level=1): 41 pulls
+  Arm 5 (limit=2, max=5, level=1): 40 pulls
+  Arm 6 (limit=8, max=4, level=1): 40 pulls
+----------------------------
+SolverStatistic {
+    num_solve: 1117,
+    avg_decide_var: 0.696370,
+    num_simplify_subsume: 0,
+    num_simplify_self_subsume: 0,
+}
+Statistic {
+    case: gen35.aig,
+    time: 0.19s,
+    num_mic: 290,
+    avg_mic_cube_len: 1.993103,
+    avg_po_cube_len: 3.121387,
+    mic_drop: success: 1, fail: 577, success rate: 0.17%,
+    num_down: 578,
+    num_down_sat: 289,
+    ctp: success: 0, fail: 287, success rate: 0.00%,
+    num_get_bad: 291,
+    overall_block_time: 155.257079ms,
+    block_get_bad_time: 55.708863ms,
+    block_get_predecessor_time: 5.064402ms,
+    block_blocked_time: 4.057219ms,
+    block_mic_time: 27.57411ms,
+    block_push_time: 6.338µs,
+    overall_propagate_time: 8.473993ms,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: safe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Wed 07 May 2025 06:19:54 PM CST
+========================================

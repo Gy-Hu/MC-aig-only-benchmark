@@ -1,0 +1,52 @@
+File: ./hwmcc15/beemldfilt3f1.aig
+Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./hwmcc15/beemldfilt3f1.aig
+Started at: Wed 07 May 2025 09:49:46 PM CST
+----------------------------------------
+Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc15/beemldfilt3f1.aig
+Warning: property not found, moved 1 outputs to bad properties
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 6006, 3170]
+193 14 23 30 33 42 44 67 108 162 230 208 221 199 251 260 215 197 165 269 327 215 181 239 556 285 121 190 134 118 155 143 126 97 84 146 143 139 275 219 154 222 314 260 193 133 145 180 222 124 75 68 235 224 98 77 48 67 38 22 18 20 30 34 23 13 2 3 0 4708 
+
+--- Contextual MAB Statistics ---
+Arm pulls:
+  Arm 0 (Balanced Heuristic): 2 pulls
+  Arm 1 (Aggressive Heuristic): 10 pulls
+  Arm 2 (Conservative Heuristic): 35651 pulls
+  Arm 3 (limit=0, max=0, level=0): 1 pulls
+  Arm 4 (limit=1, max=3, level=1): 1 pulls
+  Arm 5 (limit=2, max=5, level=1): 16 pulls
+  Arm 6 (limit=8, max=4, level=1): 9 pulls
+----------------------------
+SolverStatistic {
+    num_solve: 1671061,
+    avg_decide_var: 0.643855,
+    num_simplify_subsume: 179688,
+    num_simplify_self_subsume: 23117,
+}
+Statistic {
+    case: beemldfilt3f1.aig,
+    time: 117.14s,
+    num_mic: 35823,
+    avg_mic_cube_len: 17.197303,
+    avg_po_cube_len: 90.577304,
+    mic_drop: success: 132463, fail: 440021, success rate: 23.14%,
+    num_down: 572484,
+    num_down_sat: 961385,
+    ctp: success: 0, fail: 218575, success rate: 0.00%,
+    num_get_bad: 174,
+    overall_block_time: 44.384102466s,
+    block_get_bad_time: 99.404336ms,
+    block_get_predecessor_time: 1.102445023s,
+    block_blocked_time: 4.448595945s,
+    block_mic_time: 34.482954773s,
+    block_push_time: 348.28085ms,
+    overall_propagate_time: 72.543819882s,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: safe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Wed 07 May 2025 09:51:43 PM CST
+========================================

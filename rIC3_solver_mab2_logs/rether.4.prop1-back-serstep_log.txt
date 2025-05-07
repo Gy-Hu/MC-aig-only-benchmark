@@ -1,0 +1,51 @@
+File: ./hwmcc19/single/aig/beem/rether.4.prop1-back-serstep.aig
+Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./hwmcc19/single/aig/beem/rether.4.prop1-back-serstep.aig
+Started at: Wed 07 May 2025 06:45:00 PM CST
+----------------------------------------
+Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc19/single/aig/beem/rether.4.prop1-back-serstep.aig
+[1, 1, 1, 1, 1, 1, 1, 1, 1, 17, 10, 12]
+340 1 6 15 22 53 104 156 203 98 62 
+
+--- Contextual MAB Statistics ---
+Arm pulls:
+  Arm 0 (Balanced Heuristic): 1 pulls
+  Arm 1 (Aggressive Heuristic): 116 pulls
+  Arm 2 (Conservative Heuristic): 0 pulls
+  Arm 3 (limit=0, max=0, level=0): 0 pulls
+  Arm 4 (limit=1, max=3, level=1): 0 pulls
+  Arm 5 (limit=2, max=5, level=1): 0 pulls
+  Arm 6 (limit=8, max=4, level=1): 0 pulls
+----------------------------
+SolverStatistic {
+    num_solve: 36134,
+    avg_decide_var: 0.997830,
+    num_simplify_subsume: 0,
+    num_simplify_self_subsume: 0,
+}
+Statistic {
+    case: rether.4.prop1-back-serstep.aig,
+    time: 6.75s,
+    num_mic: 864,
+    avg_mic_cube_len: 19.937500,
+    avg_po_cube_len: 338.201592,
+    mic_drop: success: 4415, fail: 11024, success rate: 28.60%,
+    num_down: 15439,
+    num_down_sat: 31723,
+    ctp: success: 0, fail: 91, success rate: 0.00%,
+    num_get_bad: 12,
+    overall_block_time: 6.482711073s,
+    block_get_bad_time: 10.150746ms,
+    block_get_predecessor_time: 863.882595ms,
+    block_blocked_time: 38.387921ms,
+    block_mic_time: 9.953735326s,
+    block_push_time: 13.246494ms,
+    overall_propagate_time: 165.21124ms,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: unsafe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Wed 07 May 2025 06:45:09 PM CST
+========================================

@@ -1,0 +1,51 @@
+File: ./hwmcc1920/fraig/zipcpu-zipmmu-p31.aig
+Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./hwmcc1920/fraig/zipcpu-zipmmu-p31.aig
+Started at: Wed 07 May 2025 04:04:19 PM CST
+----------------------------------------
+Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc1920/fraig/zipcpu-zipmmu-p31.aig
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 146]
+78 6 5 31 35 42 53 24 16 4 0 325 0 
+
+--- Contextual MAB Statistics ---
+Arm pulls:
+  Arm 0 (Balanced Heuristic): 3 pulls
+  Arm 1 (Aggressive Heuristic): 3 pulls
+  Arm 2 (Conservative Heuristic): 14 pulls
+  Arm 3 (limit=0, max=0, level=0): 3 pulls
+  Arm 4 (limit=1, max=3, level=1): 28 pulls
+  Arm 5 (limit=2, max=5, level=1): 5 pulls
+  Arm 6 (limit=8, max=4, level=1): 242 pulls
+----------------------------
+SolverStatistic {
+    num_solve: 17201,
+    avg_decide_var: 0.397620,
+    num_simplify_subsume: 0,
+    num_simplify_self_subsume: 0,
+}
+Statistic {
+    case: zipcpu-zipmmu-p31.aig,
+    time: 0.65s,
+    num_mic: 748,
+    avg_mic_cube_len: 5.430481,
+    avg_po_cube_len: 60.505051,
+    mic_drop: success: 569, fail: 3349, success rate: 14.52%,
+    num_down: 3918,
+    num_down_sat: 8732,
+    ctp: success: 0, fail: 1084, success rate: 0.00%,
+    num_get_bad: 132,
+    overall_block_time: 588.38949ms,
+    block_get_bad_time: 29.817177ms,
+    block_get_predecessor_time: 176.355291ms,
+    block_blocked_time: 6.123123ms,
+    block_mic_time: 699.950461ms,
+    block_push_time: 1.476584ms,
+    overall_propagate_time: 29.005874ms,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: safe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Wed 07 May 2025 04:04:20 PM CST
+========================================

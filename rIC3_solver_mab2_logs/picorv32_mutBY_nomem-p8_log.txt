@@ -1,0 +1,51 @@
+File: ./hwmcc19/single/aig/wolf/2019A/picorv32_mutBY_nomem-p8.aig
+Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./hwmcc19/single/aig/wolf/2019A/picorv32_mutBY_nomem-p8.aig
+Started at: Wed 07 May 2025 07:26:59 PM CST
+----------------------------------------
+Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc19/single/aig/wolf/2019A/picorv32_mutBY_nomem-p8.aig
+[1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 16, 35914, 1683]
+2049 66 8 53 120 2375 11942 23403 19029 10118 8649 2700 
+
+--- Contextual MAB Statistics ---
+Arm pulls:
+  Arm 0 (Balanced Heuristic): 206 pulls
+  Arm 1 (Aggressive Heuristic): 10291 pulls
+  Arm 2 (Conservative Heuristic): 142 pulls
+  Arm 3 (limit=0, max=0, level=0): 9028 pulls
+  Arm 4 (limit=1, max=3, level=1): 4615 pulls
+  Arm 5 (limit=2, max=5, level=1): 16211 pulls
+  Arm 6 (limit=8, max=4, level=1): 16353 pulls
+----------------------------
+SolverStatistic {
+    num_solve: 1050067,
+    avg_decide_var: 0.303646,
+    num_simplify_subsume: 8688,
+    num_simplify_self_subsume: 4955,
+}
+Statistic {
+    case: picorv32_mutBY_nomem-p8.aig,
+    time: 508.43s,
+    num_mic: 94817,
+    avg_mic_cube_len: 4.280213,
+    avg_po_cube_len: 162.440211,
+    mic_drop: success: 86658, fail: 285116, success rate: 23.31%,
+    num_down: 371774,
+    num_down_sat: 389305,
+    ctp: success: 0, fail: 19192, success rate: 0.00%,
+    num_get_bad: 1036,
+    overall_block_time: 446.547135398s,
+    block_get_bad_time: 3.87785841s,
+    block_get_predecessor_time: 96.840924633s,
+    block_blocked_time: 42.029305265s,
+    block_mic_time: 365.394284135s,
+    block_push_time: 3.94774305s,
+    overall_propagate_time: 61.28320359s,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: unsafe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Wed 07 May 2025 07:35:29 PM CST
+========================================

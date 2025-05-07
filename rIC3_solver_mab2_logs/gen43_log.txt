@@ -1,0 +1,51 @@
+File: ./hwmcc19/single/aig/goel/industry/gen43/gen43.aig
+Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./hwmcc19/single/aig/goel/industry/gen43/gen43.aig
+Started at: Wed 07 May 2025 07:37:07 PM CST
+----------------------------------------
+Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc19/single/aig/goel/industry/gen43/gen43.aig
+[0, 0, 0, 1, 512]
+4 1 0 512 
+
+--- Contextual MAB Statistics ---
+Arm pulls:
+  Arm 0 (Balanced Heuristic): 80 pulls
+  Arm 1 (Aggressive Heuristic): 72 pulls
+  Arm 2 (Conservative Heuristic): 72 pulls
+  Arm 3 (limit=0, max=0, level=0): 73 pulls
+  Arm 4 (limit=1, max=3, level=1): 72 pulls
+  Arm 5 (limit=2, max=5, level=1): 72 pulls
+  Arm 6 (limit=8, max=4, level=1): 72 pulls
+----------------------------
+SolverStatistic {
+    num_solve: 3590,
+    avg_decide_var: 0.155405,
+    num_simplify_subsume: 0,
+    num_simplify_self_subsume: 0,
+}
+Statistic {
+    case: gen43.aig,
+    time: 0.28s,
+    num_mic: 513,
+    avg_mic_cube_len: 3.998051,
+    avg_po_cube_len: 5.017532,
+    mic_drop: success: 1, fail: 2050, success rate: 0.05%,
+    num_down: 2051,
+    num_down_sat: 2051,
+    ctp: success: 0, fail: 1024, success rate: 0.00%,
+    num_get_bad: 516,
+    overall_block_time: 251.624512ms,
+    block_get_bad_time: 124.825634ms,
+    block_get_predecessor_time: 5.064648ms,
+    block_blocked_time: 3.007336ms,
+    block_mic_time: 15.742737ms,
+    block_push_time: 19.016µs,
+    overall_propagate_time: 11.725397ms,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: safe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Wed 07 May 2025 07:37:08 PM CST
+========================================

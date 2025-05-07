@@ -1,0 +1,51 @@
+File: ./hwmcc19/single/aig/wolf/2018D/zipcpu-pfcache-p05.aig
+Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./hwmcc19/single/aig/wolf/2018D/zipcpu-pfcache-p05.aig
+Started at: Wed 07 May 2025 07:20:06 PM CST
+----------------------------------------
+Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc19/single/aig/wolf/2018D/zipcpu-pfcache-p05.aig
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 57]
+304 4 5 4 1 0 1 2 2 0 2 3 7 9 8 5 5 2 60 0 
+
+--- Contextual MAB Statistics ---
+Arm pulls:
+  Arm 0 (Balanced Heuristic): 5 pulls
+  Arm 1 (Aggressive Heuristic): 34 pulls
+  Arm 2 (Conservative Heuristic): 2 pulls
+  Arm 3 (limit=0, max=0, level=0): 4 pulls
+  Arm 4 (limit=1, max=3, level=1): 50 pulls
+  Arm 5 (limit=2, max=5, level=1): 4 pulls
+  Arm 6 (limit=8, max=4, level=1): 33 pulls
+----------------------------
+SolverStatistic {
+    num_solve: 5386,
+    avg_decide_var: 0.137769,
+    num_simplify_subsume: 0,
+    num_simplify_self_subsume: 0,
+}
+Statistic {
+    case: zipcpu-pfcache-p05.aig,
+    time: 0.15s,
+    num_mic: 505,
+    avg_mic_cube_len: 4.411881,
+    avg_po_cube_len: 85.861404,
+    mic_drop: success: 329, fail: 1840, success rate: 15.17%,
+    num_down: 2169,
+    num_down_sat: 2131,
+    ctp: success: 0, fail: 600, success rate: 0.00%,
+    num_get_bad: 39,
+    overall_block_time: 85.613608ms,
+    block_get_bad_time: 8.361288ms,
+    block_get_predecessor_time: 21.041403ms,
+    block_blocked_time: 3.196067ms,
+    block_mic_time: 81.485757ms,
+    block_push_time: 3.458717ms,
+    overall_propagate_time: 9.639512ms,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: safe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Wed 07 May 2025 07:20:07 PM CST
+========================================

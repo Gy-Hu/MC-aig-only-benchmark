@@ -30,7 +30,7 @@ done
 echo "Running with $PARALLEL_JOBS parallel jobs"
 
 # Create a directory to store logs
-LOG_DIR="rIC3_solver_mab_logs"
+LOG_DIR="rIC3_solver_mab2_logs"
 mkdir -p "$LOG_DIR"
 
 # Find all .aig and .aag files recursively
