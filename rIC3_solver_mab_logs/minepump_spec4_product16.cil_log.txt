@@ -1,0 +1,49 @@
+File: ./hwmcc24/2024/sosylab/product-lines/minepump_spec4_product16.cil.aig
+Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./hwmcc24/2024/sosylab/product-lines/minepump_spec4_product16.cil.aig
+Started at: Wed 07 May 2025 12:13:47 PM CST
+----------------------------------------
+Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc24/2024/sosylab/product-lines/minepump_spec4_product16.cil.aig
+[0, 0, 0, 0, 65]
+2 1 0 65 
+
+--- Contextual MAB Statistics ---
+Arm pulls:
+  Arm 0 (Heuristic): 13 pulls
+  Arm 1 (limit=0, max=0, level=0): 12 pulls
+  Arm 2 (limit=1, max=3, level=1): 16 pulls
+  Arm 3 (limit=2, max=5, level=1): 13 pulls
+  Arm 4 (limit=8, max=4, level=1): 12 pulls
+----------------------------
+SolverStatistic {
+    num_solve: 371,
+    avg_decide_var: 0.997817,
+    num_simplify_subsume: 0,
+    num_simplify_self_subsume: 0,
+}
+Statistic {
+    case: minepump_spec4_product16.cil.aig,
+    time: 0.35s,
+    num_mic: 66,
+    avg_mic_cube_len: 2.984848,
+    avg_po_cube_len: 197.487310,
+    mic_drop: success: 1, fail: 196, success rate: 0.51%,
+    num_down: 197,
+    num_down_sat: 196,
+    ctp: success: 0, fail: 65, success rate: 0.00%,
+    num_get_bad: 68,
+    overall_block_time: 295.337275ms,
+    block_get_bad_time: 61.992447ms,
+    block_get_predecessor_time: 46.388202ms,
+    block_blocked_time: 12.428632ms,
+    block_mic_time: 148.43747ms,
+    block_push_time: 1.513µs,
+    overall_propagate_time: 7.16948ms,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: safe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Wed 07 May 2025 12:13:48 PM CST
+========================================

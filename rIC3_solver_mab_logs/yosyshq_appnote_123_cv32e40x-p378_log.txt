@@ -1,0 +1,50 @@
+File: ./hwmcc24/2024/yosyshq/appnote_123/cv32e40x/yosyshq_appnote_123_cv32e40x-p378.aig
+Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./hwmcc24/2024/yosyshq/appnote_123/cv32e40x/yosyshq_appnote_123_cv32e40x-p378.aig
+Started at: Wed 07 May 2025 11:29:48 AM CST
+----------------------------------------
+Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc24/2024/yosyshq/appnote_123/cv32e40x/yosyshq_appnote_123_cv32e40x-p378.aig
+abc preprocess timeout
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 52]
+3290 2 2 4 1 48 11 19 18 19 9 1 0 13 5 5 6 33 0 
+
+--- Contextual MAB Statistics ---
+Arm pulls:
+  Arm 0 (Heuristic): 4 pulls
+  Arm 1 (limit=0, max=0, level=0): 4 pulls
+  Arm 2 (limit=1, max=3, level=1): 7 pulls
+  Arm 3 (limit=2, max=5, level=1): 17 pulls
+  Arm 4 (limit=8, max=4, level=1): 51 pulls
+----------------------------
+SolverStatistic {
+    num_solve: 3676,
+    avg_decide_var: 0.058715,
+    num_simplify_subsume: 0,
+    num_simplify_self_subsume: 0,
+}
+Statistic {
+    case: yosyshq_appnote_123_cv32e40x-p378.aig,
+    time: 123.70s,
+    num_mic: 301,
+    avg_mic_cube_len: 4.209302,
+    avg_po_cube_len: 270.259309,
+    mic_drop: success: 241, fail: 991, success rate: 19.56%,
+    num_down: 1232,
+    num_down_sat: 1080,
+    ctp: success: 0, fail: 331, success rate: 0.00%,
+    num_get_bad: 60,
+    overall_block_time: 3.351433335s,
+    block_get_bad_time: 965.815032ms,
+    block_get_predecessor_time: 165.149588ms,
+    block_blocked_time: 12.700935ms,
+    block_mic_time: 2.362000778s,
+    block_push_time: 6.008544ms,
+    overall_propagate_time: 119.961112ms,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: safe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Wed 07 May 2025 11:31:58 AM CST
+========================================

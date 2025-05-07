@@ -3,3 +3,47 @@ Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab .
 Started at: Wed 07 May 2025 08:59:46 AM CST
 ----------------------------------------
 Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/x-epic-2024/aig/a09-p0.aig
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 9188, 19870]
+195 426 1919 7617 18409 17487 21932 26471 13978 8561 5717 3357 2046 569 310 97 25 4 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 37962 
+
+--- Contextual MAB Statistics ---
+Arm pulls:
+  Arm 0 (Heuristic): 20 pulls
+  Arm 1 (limit=0, max=0, level=0): 24 pulls
+  Arm 2 (limit=1, max=3, level=1): 50 pulls
+  Arm 3 (limit=2, max=5, level=1): 78462 pulls
+  Arm 4 (limit=8, max=4, level=1): 20 pulls
+----------------------------
+SolverStatistic {
+    num_solve: 7565085,
+    avg_decide_var: 0.504247,
+    num_simplify_subsume: 242533,
+    num_simplify_self_subsume: 62915,
+}
+Statistic {
+    case: a09-p0.aig,
+    time: 2811.28s,
+    num_mic: 195905,
+    avg_mic_cube_len: 12.504056,
+    avg_po_cube_len: 82.159185,
+    mic_drop: success: 656111, fail: 1631205, success rate: 28.68%,
+    num_down: 2287316,
+    num_down_sat: 3580097,
+    ctp: success: 0, fail: 1179446, success rate: 0.00%,
+    num_get_bad: 26853,
+    overall_block_time: 1433.118185149s,
+    block_get_bad_time: 16.119490791s,
+    block_get_predecessor_time: 195.781569635s,
+    block_blocked_time: 27.205048892s,
+    block_mic_time: 1705.16734994s,
+    block_push_time: 4.979125066s,
+    overall_propagate_time: 1377.85203967s,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: safe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Wed 07 May 2025 09:46:37 AM CST
+========================================

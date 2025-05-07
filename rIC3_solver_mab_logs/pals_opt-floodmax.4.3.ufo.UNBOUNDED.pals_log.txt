@@ -1,0 +1,49 @@
+File: ./hwmcc24/2024/sosylab/seq-mthreaded/pals_opt-floodmax.4.3.ufo.UNBOUNDED.pals.aig
+Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./hwmcc24/2024/sosylab/seq-mthreaded/pals_opt-floodmax.4.3.ufo.UNBOUNDED.pals.aig
+Started at: Wed 07 May 2025 12:01:07 PM CST
+----------------------------------------
+Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc24/2024/sosylab/seq-mthreaded/pals_opt-floodmax.4.3.ufo.UNBOUNDED.pals.aig
+[1, 1, 1, 1, 1, 1, 1, 1, 803]
+2 1 75 76 296 1078 2013 2489 
+
+--- Contextual MAB Statistics ---
+Arm pulls:
+  Arm 0 (Heuristic): 24 pulls
+  Arm 1 (limit=0, max=0, level=0): 23 pulls
+  Arm 2 (limit=1, max=3, level=1): 24 pulls
+  Arm 3 (limit=2, max=5, level=1): 24 pulls
+  Arm 4 (limit=8, max=4, level=1): 679 pulls
+----------------------------
+SolverStatistic {
+    num_solve: 154244,
+    avg_decide_var: 1.000231,
+    num_simplify_subsume: 307,
+    num_simplify_self_subsume: 221,
+}
+Statistic {
+    case: pals_opt-floodmax.4.3.ufo.UNBOUNDED.pals.aig,
+    time: 63.31s,
+    num_mic: 6709,
+    avg_mic_cube_len: 11.231033,
+    avg_po_cube_len: 392.284516,
+    mic_drop: success: 11908, fail: 61107, success rate: 16.31%,
+    num_down: 73015,
+    num_down_sat: 129442,
+    ctp: success: 0, fail: 2394, success rate: 0.00%,
+    num_get_bad: 612,
+    overall_block_time: 62.13882408s,
+    block_get_bad_time: 873.698948ms,
+    block_get_predecessor_time: 9.633342687s,
+    block_blocked_time: 490.976406ms,
+    block_mic_time: 91.127898744s,
+    block_push_time: 1.567337523s,
+    overall_propagate_time: 1.027929808s,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: unsafe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Wed 07 May 2025 12:02:11 PM CST
+========================================

@@ -1,0 +1,50 @@
+File: ./hwmcc24/2024/sosylab/nla-digbench-scaling/hard-ll_valuebound20.aig
+Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./hwmcc24/2024/sosylab/nla-digbench-scaling/hard-ll_valuebound20.aig
+Started at: Wed 07 May 2025 11:59:28 AM CST
+----------------------------------------
+Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc24/2024/sosylab/nla-digbench-scaling/hard-ll_valuebound20.aig
+abc preprocess timeout
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 189, 793]
+2 1 17 13 30 78 100 63 38 14 11 3 7 0 893 
+
+--- Contextual MAB Statistics ---
+Arm pulls:
+  Arm 0 (Heuristic): 65 pulls
+  Arm 1 (limit=0, max=0, level=0): 65 pulls
+  Arm 2 (limit=1, max=3, level=1): 65 pulls
+  Arm 3 (limit=2, max=5, level=1): 946 pulls
+  Arm 4 (limit=8, max=4, level=1): 65 pulls
+----------------------------
+SolverStatistic {
+    num_solve: 32176,
+    avg_decide_var: 1.000032,
+    num_simplify_subsume: 0,
+    num_simplify_self_subsume: 0,
+}
+Statistic {
+    case: hard-ll_valuebound20.aig,
+    time: 164.73s,
+    num_mic: 1366,
+    avg_mic_cube_len: 8.007321,
+    avg_po_cube_len: 326.000000,
+    mic_drop: success: 2439, fail: 8132, success rate: 23.07%,
+    num_down: 10571,
+    num_down_sat: 14120,
+    ctp: success: 0, fail: 8021, success rate: 0.00%,
+    num_get_bad: 996,
+    overall_block_time: 131.799652698s,
+    block_get_bad_time: 12.023865554s,
+    block_get_predecessor_time: 37.84978563s,
+    block_blocked_time: 3.190579363s,
+    block_mic_time: 119.670609454s,
+    block_push_time: 448.274402ms,
+    overall_propagate_time: 30.902147025s,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: safe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Wed 07 May 2025 12:02:18 PM CST
+========================================

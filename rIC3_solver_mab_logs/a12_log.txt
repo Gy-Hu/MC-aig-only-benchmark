@@ -3,3 +3,47 @@ Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab .
 Started at: Wed 07 May 2025 09:04:18 AM CST
 ----------------------------------------
 Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/x-epic-2024/aig/a12.aig
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4449, 37365]
+212 146 326 999 2634 9041 12248 10105 4794 1010 268 6402 21670 22274 8749 4075 2102 1088 582 430 232 133 171 65 6 4 0 65828 
+
+--- Contextual MAB Statistics ---
+Arm pulls:
+  Arm 0 (Heuristic): 11683 pulls
+  Arm 1 (limit=0, max=0, level=0): 28 pulls
+  Arm 2 (limit=1, max=3, level=1): 9 pulls
+  Arm 3 (limit=2, max=5, level=1): 112796 pulls
+  Arm 4 (limit=8, max=4, level=1): 131 pulls
+----------------------------
+SolverStatistic {
+    num_solve: 8718136,
+    avg_decide_var: 0.416007,
+    num_simplify_subsume: 73151,
+    num_simplify_self_subsume: 182419,
+}
+Statistic {
+    case: a12.aig,
+    time: 3373.48s,
+    num_mic: 207349,
+    avg_mic_cube_len: 12.916267,
+    avg_po_cube_len: 83.709107,
+    mic_drop: success: 573373, fail: 1975205, success rate: 22.50%,
+    num_down: 2548578,
+    num_down_sat: 4076119,
+    ctp: success: 0, fail: 982089, success rate: 0.00%,
+    num_get_bad: 40383,
+    overall_block_time: 2166.818839925s,
+    block_get_bad_time: 45.736434942s,
+    block_get_predecessor_time: 318.053149026s,
+    block_blocked_time: 49.833892203s,
+    block_mic_time: 2232.243824806s,
+    block_push_time: 9.463397078s,
+    overall_propagate_time: 1206.37713456s,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: safe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Wed 07 May 2025 10:00:32 AM CST
+========================================

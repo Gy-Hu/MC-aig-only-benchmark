@@ -1,0 +1,50 @@
+File: ./hwmcc24/2024/hku/refinement_checking/bv/ILA_Ridecore_AND_sanity.aig
+Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./hwmcc24/2024/hku/refinement_checking/bv/ILA_Ridecore_AND_sanity.aig
+Started at: Wed 07 May 2025 10:47:29 AM CST
+----------------------------------------
+Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc24/2024/hku/refinement_checking/bv/ILA_Ridecore_AND_sanity.aig
+abc preprocess timeout
+[1, 1, 1, 1, 1, 1, 1, 12, 5288]
+6831 145 69 153 769 2495 2372 969 
+
+--- Contextual MAB Statistics ---
+Arm pulls:
+  Arm 0 (Heuristic): 7616 pulls
+  Arm 1 (limit=0, max=0, level=0): 27 pulls
+  Arm 2 (limit=1, max=3, level=1): 52 pulls
+  Arm 3 (limit=2, max=5, level=1): 27 pulls
+  Arm 4 (limit=8, max=4, level=1): 40 pulls
+----------------------------
+SolverStatistic {
+    num_solve: 122401,
+    avg_decide_var: 0.236152,
+    num_simplify_subsume: 1841,
+    num_simplify_self_subsume: 975,
+}
+Statistic {
+    case: ILA_Ridecore_AND_sanity.aig,
+    time: 501.25s,
+    num_mic: 9497,
+    avg_mic_cube_len: 7.682953,
+    avg_po_cube_len: 2075.718448,
+    mic_drop: success: 11692, fail: 56914, success rate: 17.04%,
+    num_down: 68606,
+    num_down_sat: 89852,
+    ctp: success: 0, fail: 2102, success rate: 0.00%,
+    num_get_bad: 1924,
+    overall_block_time: 479.254244117s,
+    block_get_bad_time: 66.953648834s,
+    block_get_predecessor_time: 57.630218608s,
+    block_blocked_time: 78.09459729s,
+    block_mic_time: 249.242992876s,
+    block_push_time: 400.4531ms,
+    overall_propagate_time: 18.047351899s,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: unsafe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Wed 07 May 2025 10:55:57 AM CST
+========================================

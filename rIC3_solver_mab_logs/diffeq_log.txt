@@ -1,0 +1,49 @@
+File: ./hwmcc24/2024/hku/seq/diffeq_1_4/diffeq.aig
+Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./hwmcc24/2024/hku/seq/diffeq_1_4/diffeq.aig
+Started at: Wed 07 May 2025 10:56:48 AM CST
+----------------------------------------
+Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc24/2024/hku/seq/diffeq_1_4/diffeq.aig
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 8877]
+13 15 30 31 130 465 938 883 990 711 608 609 767 411 362 293 257 134 115 57 11 7 4 4 1 0 39 3 2 2 3 1 2 18801 0 
+
+--- Contextual MAB Statistics ---
+Arm pulls:
+  Arm 0 (Heuristic): 9 pulls
+  Arm 1 (limit=0, max=0, level=0): 2744 pulls
+  Arm 2 (limit=1, max=3, level=1): 8029 pulls
+  Arm 3 (limit=2, max=5, level=1): 10 pulls
+  Arm 4 (limit=8, max=4, level=1): 10803 pulls
+----------------------------
+SolverStatistic {
+    num_solve: 1280433,
+    avg_decide_var: 0.560463,
+    num_simplify_subsume: 65824,
+    num_simplify_self_subsume: 49977,
+}
+Statistic {
+    case: diffeq.aig,
+    time: 276.88s,
+    num_mic: 36685,
+    avg_mic_cube_len: 12.891809,
+    avg_po_cube_len: 29.803356,
+    mic_drop: success: 94431, fail: 369353, success rate: 20.36%,
+    num_down: 463784,
+    num_down_sat: 471889,
+    ctp: success: 0, fail: 358665, success rate: 0.00%,
+    num_get_bad: 122,
+    overall_block_time: 99.571490246s,
+    block_get_bad_time: 68.496696ms,
+    block_get_predecessor_time: 5.317914676s,
+    block_blocked_time: 7.487403679s,
+    block_mic_time: 82.160009109s,
+    block_push_time: 10.687220537s,
+    overall_propagate_time: 177.206220858s,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: safe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Wed 07 May 2025 11:01:25 AM CST
+========================================

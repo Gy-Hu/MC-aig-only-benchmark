@@ -1,0 +1,49 @@
+File: ./hwmcc24/2019/beem/anderson.3.prop1-func-interl.aig
+Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./hwmcc24/2019/beem/anderson.3.prop1-func-interl.aig
+Started at: Wed 07 May 2025 10:35:09 AM CST
+----------------------------------------
+Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc24/2019/beem/anderson.3.prop1-func-interl.aig
+[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 14, 101]
+72 19 30 43 43 51 50 79 158 226 76 
+
+--- Contextual MAB Statistics ---
+Arm pulls:
+  Arm 0 (Heuristic): 2 pulls
+  Arm 1 (limit=0, max=0, level=0): 5 pulls
+  Arm 2 (limit=1, max=3, level=1): 13 pulls
+  Arm 3 (limit=2, max=5, level=1): 8 pulls
+  Arm 4 (limit=8, max=4, level=1): 401 pulls
+----------------------------
+SolverStatistic {
+    num_solve: 23894,
+    avg_decide_var: 0.610498,
+    num_simplify_subsume: 0,
+    num_simplify_self_subsume: 0,
+}
+Statistic {
+    case: anderson.3.prop1-func-interl.aig,
+    time: 0.81s,
+    num_mic: 1323,
+    avg_mic_cube_len: 7.716553,
+    avg_po_cube_len: 36.574174,
+    mic_drop: success: 2990, fail: 6355, success rate: 32.00%,
+    num_down: 9345,
+    num_down_sat: 12840,
+    ctp: success: 0, fail: 550, success rate: 0.00%,
+    num_get_bad: 20,
+    overall_block_time: 732.021834ms,
+    block_get_bad_time: 3.160859ms,
+    block_get_predecessor_time: 227.423348ms,
+    block_blocked_time: 18.910076ms,
+    block_mic_time: 861.586404ms,
+    block_push_time: 3.454548ms,
+    overall_propagate_time: 60.828515ms,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: unsafe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Wed 07 May 2025 10:35:10 AM CST
+========================================

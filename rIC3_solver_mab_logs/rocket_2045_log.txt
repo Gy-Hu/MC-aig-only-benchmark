@@ -1,0 +1,50 @@
+File: ./hwmcc24/2024/hku/branch_coverage/bv/rocket_2045.aig
+Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./hwmcc24/2024/hku/branch_coverage/bv/rocket_2045.aig
+Started at: Wed 07 May 2025 11:04:18 AM CST
+----------------------------------------
+Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc24/2024/hku/branch_coverage/bv/rocket_2045.aig
+abc preprocess timeout
+[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 12, 1, 1, 634]
+3228 56 56 62 94 118 148 195 292 431 645 218 70 393 
+
+--- Contextual MAB Statistics ---
+Arm pulls:
+  Arm 0 (Heuristic): 467 pulls
+  Arm 1 (limit=0, max=0, level=0): 3 pulls
+  Arm 2 (limit=1, max=3, level=1): 2 pulls
+  Arm 3 (limit=2, max=5, level=1): 1 pulls
+  Arm 4 (limit=8, max=4, level=1): 591 pulls
+----------------------------
+SolverStatistic {
+    num_solve: 49500,
+    avg_decide_var: 0.014689,
+    num_simplify_subsume: 0,
+    num_simplify_self_subsume: 0,
+}
+Statistic {
+    case: rocket_2045.aig,
+    time: 29.12s,
+    num_mic: 4520,
+    avg_mic_cube_len: 4.405531,
+    avg_po_cube_len: 243.853128,
+    mic_drop: success: 3357, fail: 13914, success rate: 19.44%,
+    num_down: 17271,
+    num_down_sat: 21884,
+    ctp: success: 0, fail: 3298, success rate: 0.00%,
+    num_get_bad: 23,
+    overall_block_time: 20.864569264s,
+    block_get_bad_time: 2.267052938s,
+    block_get_predecessor_time: 7.077863907s,
+    block_blocked_time: 1.776744674s,
+    block_mic_time: 16.581227441s,
+    block_push_time: 143.808049ms,
+    overall_propagate_time: 509.895934ms,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: unsafe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Wed 07 May 2025 11:04:55 AM CST
+========================================

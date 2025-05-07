@@ -1,0 +1,49 @@
+File: ./hwmcc24/2019/mann/data-integrity/unsafe/arbitrated_top_n4_w8_d32_e0.aig
+Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./hwmcc24/2019/mann/data-integrity/unsafe/arbitrated_top_n4_w8_d32_e0.aig
+Started at: Wed 07 May 2025 10:33:10 AM CST
+----------------------------------------
+Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc24/2019/mann/data-integrity/unsafe/arbitrated_top_n4_w8_d32_e0.aig
+[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 55, 2385]
+1 11 34 46 66 65 97 80 172 123 197 115 295 189 276 223 558 259 393 249 562 304 474 376 926 459 707 565 1063 752 1034 1023 1896 1936 
+
+--- Contextual MAB Statistics ---
+Arm pulls:
+  Arm 0 (Heuristic): 6 pulls
+  Arm 1 (limit=0, max=0, level=0): 5 pulls
+  Arm 2 (limit=1, max=3, level=1): 5 pulls
+  Arm 3 (limit=2, max=5, level=1): 5 pulls
+  Arm 4 (limit=8, max=4, level=1): 11637 pulls
+----------------------------
+SolverStatistic {
+    num_solve: 1346685,
+    avg_decide_var: 0.532155,
+    num_simplify_subsume: 8619,
+    num_simplify_self_subsume: 15160,
+}
+Statistic {
+    case: arbitrated_top_n4_w8_d32_e0.aig,
+    time: 224.37s,
+    num_mic: 23091,
+    avg_mic_cube_len: 12.255121,
+    avg_po_cube_len: 28.772560,
+    mic_drop: success: 59813, fail: 214597, success rate: 21.80%,
+    num_down: 274410,
+    num_down_sat: 414327,
+    ctp: success: 0, fail: 29158, success rate: 0.00%,
+    num_get_bad: 821,
+    overall_block_time: 210.780856935s,
+    block_get_bad_time: 781.964787ms,
+    block_get_predecessor_time: 26.660168698s,
+    block_blocked_time: 1.254901274s,
+    block_mic_time: 219.881179625s,
+    block_push_time: 131.137016ms,
+    overall_propagate_time: 13.1328895s,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: unsafe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Wed 07 May 2025 10:36:55 AM CST
+========================================

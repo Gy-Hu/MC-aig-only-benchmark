@@ -1,0 +1,50 @@
+File: ./hwmcc24/2024/yosyshq/appnote_123/veer_axi/yosyshq_appnote_123_veer_axi-p30.aig
+Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./hwmcc24/2024/yosyshq/appnote_123/veer_axi/yosyshq_appnote_123_veer_axi-p30.aig
+Started at: Wed 07 May 2025 11:04:57 AM CST
+----------------------------------------
+Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc24/2024/yosyshq/appnote_123/veer_axi/yosyshq_appnote_123_veer_axi-p30.aig
+abc preprocess timeout
+[0, 0, 0, 0, 0, 0, 0, 48, 3]
+15365 6 4 5 3 24 0 9 
+
+--- Contextual MAB Statistics ---
+Arm pulls:
+  Arm 0 (Heuristic): 9 pulls
+  Arm 1 (limit=0, max=0, level=0): 3 pulls
+  Arm 2 (limit=1, max=3, level=1): 2 pulls
+  Arm 3 (limit=2, max=5, level=1): 6 pulls
+  Arm 4 (limit=8, max=4, level=1): 28 pulls
+----------------------------
+SolverStatistic {
+    num_solve: 401,
+    avg_decide_var: 0.007086,
+    num_simplify_subsume: 0,
+    num_simplify_self_subsume: 0,
+}
+Statistic {
+    case: yosyshq_appnote_123_veer_axi-p30.aig,
+    time: 9.30s,
+    num_mic: 63,
+    avg_mic_cube_len: 1.841270,
+    avg_po_cube_len: 59.332237,
+    mic_drop: success: 30, fail: 85, success rate: 26.09%,
+    num_down: 115,
+    num_down_sat: 67,
+    ctp: success: 0, fail: 108, success rate: 0.00%,
+    num_get_bad: 41,
+    overall_block_time: 5.423225894s,
+    block_get_bad_time: 5.228352915s,
+    block_get_predecessor_time: 15.948795ms,
+    block_blocked_time: 4.574623ms,
+    block_mic_time: 19.716177ms,
+    block_push_time: 409.912µs,
+    overall_propagate_time: 48.509396ms,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: safe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Wed 07 May 2025 11:05:13 AM CST
+========================================

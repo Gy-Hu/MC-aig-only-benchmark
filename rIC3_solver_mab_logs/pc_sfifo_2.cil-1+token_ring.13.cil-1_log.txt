@@ -1,0 +1,50 @@
+File: ./hwmcc24/2024/sosylab/combinations/pc_sfifo_2.cil-1+token_ring.13.cil-1.aig
+Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./hwmcc24/2024/sosylab/combinations/pc_sfifo_2.cil-1+token_ring.13.cil-1.aig
+Started at: Wed 07 May 2025 12:10:21 PM CST
+----------------------------------------
+Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc24/2024/sosylab/combinations/pc_sfifo_2.cil-1+token_ring.13.cil-1.aig
+abc preprocess timeout
+[1, 1, 1, 1, 1, 1, 2079]
+2 2 178 228 438 3781 
+
+--- Contextual MAB Statistics ---
+Arm pulls:
+  Arm 0 (Heuristic): 12 pulls
+  Arm 1 (limit=0, max=0, level=0): 19 pulls
+  Arm 2 (limit=1, max=3, level=1): 49 pulls
+  Arm 3 (limit=2, max=5, level=1): 1709 pulls
+  Arm 4 (limit=8, max=4, level=1): 83 pulls
+----------------------------
+SolverStatistic {
+    num_solve: 137149,
+    avg_decide_var: 1.000018,
+    num_simplify_subsume: 412,
+    num_simplify_self_subsume: 1090,
+}
+Statistic {
+    case: pc_sfifo_2.cil-1+token_ring.13.cil-1.aig,
+    time: 704.74s,
+    num_mic: 5901,
+    avg_mic_cube_len: 18.790036,
+    avg_po_cube_len: 2872.191606,
+    mic_drop: success: 89523, fail: 19171, success rate: 82.36%,
+    num_down: 108694,
+    num_down_sat: 115572,
+    ctp: success: 0, fail: 5118, success rate: 0.00%,
+    num_get_bad: 1216,
+    overall_block_time: 683.470495473s,
+    block_get_bad_time: 15.475702952s,
+    block_get_predecessor_time: 80.298478404s,
+    block_blocked_time: 11.694792662s,
+    block_mic_time: 1045.005282496s,
+    block_push_time: 6.223577456s,
+    overall_propagate_time: 20.08400815s,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: unsafe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Wed 07 May 2025 12:22:12 PM CST
+========================================

@@ -1,0 +1,49 @@
+File: ./hwmcc24/2024/hku/seq/kalman_wrapper_1_3_2/kalman_bit_width_small.aig
+Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./hwmcc24/2024/hku/seq/kalman_wrapper_1_3_2/kalman_bit_width_small.aig
+Started at: Wed 07 May 2025 10:57:06 AM CST
+----------------------------------------
+Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc24/2024/hku/seq/kalman_wrapper_1_3_2/kalman_bit_width_small.aig
+[0, 0, 0, 0, 0, 6561]
+9 4 1 0 11534 0 
+
+--- Contextual MAB Statistics ---
+Arm pulls:
+  Arm 0 (Heuristic): 30 pulls
+  Arm 1 (limit=0, max=0, level=0): 204 pulls
+  Arm 2 (limit=1, max=3, level=1): 8 pulls
+  Arm 3 (limit=2, max=5, level=1): 2837 pulls
+  Arm 4 (limit=8, max=4, level=1): 11102 pulls
+----------------------------
+SolverStatistic {
+    num_solve: 231762,
+    avg_decide_var: 0.335182,
+    num_simplify_subsume: 2,
+    num_simplify_self_subsume: 0,
+}
+Statistic {
+    case: kalman_bit_width_small.aig,
+    time: 6.85s,
+    num_mic: 14184,
+    avg_mic_cube_len: 14.211858,
+    avg_po_cube_len: 41.282475,
+    mic_drop: success: 17458, fail: 183767, success rate: 8.68%,
+    num_down: 201225,
+    num_down_sat: 187047,
+    ctp: success: 0, fail: 18032, success rate: 0.00%,
+    num_get_bad: 6561,
+    overall_block_time: 5.63073443s,
+    block_get_bad_time: 1.186699361s,
+    block_get_predecessor_time: 494.283469ms,
+    block_blocked_time: 534.519465ms,
+    block_mic_time: 2.701995616s,
+    block_push_time: 258.444µs,
+    overall_propagate_time: 1.20201366s,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: safe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Wed 07 May 2025 10:57:14 AM CST
+========================================

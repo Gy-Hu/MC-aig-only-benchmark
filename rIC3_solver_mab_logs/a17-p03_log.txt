@@ -3,3 +3,47 @@ Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab .
 Started at: Wed 07 May 2025 09:05:20 AM CST
 ----------------------------------------
 Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/x-epic-2024/aig/a17-p03.aig
+[1, 1, 1, 1, 1, 1, 1, 1, 9, 24, 45986]
+281 3 9 30 46 174 280 289 3623 43287 
+
+--- Contextual MAB Statistics ---
+Arm pulls:
+  Arm 0 (Heuristic): 1498 pulls
+  Arm 1 (limit=0, max=0, level=0): 28 pulls
+  Arm 2 (limit=1, max=3, level=1): 45575 pulls
+  Arm 3 (limit=2, max=5, level=1): 4 pulls
+  Arm 4 (limit=8, max=4, level=1): 8 pulls
+----------------------------
+SolverStatistic {
+    num_solve: 5283586,
+    avg_decide_var: 0.265006,
+    num_simplify_subsume: 18252,
+    num_simplify_self_subsume: 26341,
+}
+Statistic {
+    case: a17-p03.aig,
+    time: 1836.27s,
+    num_mic: 48632,
+    avg_mic_cube_len: 32.958114,
+    avg_po_cube_len: 59.465137,
+    mic_drop: success: 3562, fail: 1598410, success rate: 0.22%,
+    num_down: 1601972,
+    num_down_sat: 3197083,
+    ctp: success: 0, fail: 90444, success rate: 0.00%,
+    num_get_bad: 23,
+    overall_block_time: 1765.269617337s,
+    block_get_bad_time: 49.726092ms,
+    block_get_predecessor_time: 594.751283533s,
+    block_blocked_time: 174.981897672s,
+    block_mic_time: 1541.235677054s,
+    block_push_time: 8.912175349s,
+    overall_propagate_time: 70.634684118s,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: unsafe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Wed 07 May 2025 09:35:57 AM CST
+========================================

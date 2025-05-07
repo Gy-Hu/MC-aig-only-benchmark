@@ -3,3 +3,47 @@ Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab .
 Started at: Wed 07 May 2025 09:21:06 AM CST
 ----------------------------------------
 Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc1920ns/picorv32_mutAX_nomem-p5.aig
+[1, 1, 1, 1, 1, 1, 1, 1, 1, 4, 1, 5, 6, 15, 54475, 6869]
+2049 52 7 39 109 2372 8638 24196 39082 30511 29768 5425 4480 8348 3620 
+
+--- Contextual MAB Statistics ---
+Arm pulls:
+  Arm 0 (Heuristic): 172 pulls
+  Arm 1 (limit=0, max=0, level=0): 138 pulls
+  Arm 2 (limit=1, max=3, level=1): 8493 pulls
+  Arm 3 (limit=2, max=5, level=1): 98089 pulls
+  Arm 4 (limit=8, max=4, level=1): 6336 pulls
+----------------------------
+SolverStatistic {
+    num_solve: 2996876,
+    avg_decide_var: 0.318459,
+    num_simplify_subsume: 81618,
+    num_simplify_self_subsume: 16158,
+}
+Statistic {
+    case: picorv32_mutAX_nomem-p5.aig,
+    time: 2159.38s,
+    num_mic: 220133,
+    avg_mic_cube_len: 5.359283,
+    avg_po_cube_len: 272.577633,
+    mic_drop: success: 304435, fail: 745017, success rate: 29.01%,
+    num_down: 1049452,
+    num_down_sat: 1256960,
+    ctp: success: 0, fail: 70034, success rate: 0.00%,
+    num_get_bad: 147,
+    overall_block_time: 1812.291666729s,
+    block_get_bad_time: 831.218147ms,
+    block_get_predecessor_time: 263.4091115s,
+    block_blocked_time: 134.904551649s,
+    block_mic_time: 1639.974205602s,
+    block_push_time: 7.150869969s,
+    overall_propagate_time: 346.127550994s,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: unsafe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Wed 07 May 2025 09:57:06 AM CST
+========================================

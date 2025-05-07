@@ -1,0 +1,49 @@
+File: ./hwmcc24/2024/hku/x-epic/a16-p041.aig
+Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./hwmcc24/2024/hku/x-epic/a16-p041.aig
+Started at: Wed 07 May 2025 10:59:40 AM CST
+----------------------------------------
+Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc24/2024/hku/x-epic/a16-p041.aig
+[0, 0, 0, 0, 0, 0, 0, 5, 9]
+194 5 16 9 6 2 0 10 
+
+--- Contextual MAB Statistics ---
+Arm pulls:
+  Arm 0 (Heuristic): 4 pulls
+  Arm 1 (limit=0, max=0, level=0): 3 pulls
+  Arm 2 (limit=1, max=3, level=1): 9 pulls
+  Arm 3 (limit=2, max=5, level=1): 9 pulls
+  Arm 4 (limit=8, max=4, level=1): 4 pulls
+----------------------------
+SolverStatistic {
+    num_solve: 418,
+    avg_decide_var: 0.244829,
+    num_simplify_subsume: 0,
+    num_simplify_self_subsume: 0,
+}
+Statistic {
+    case: a16-p041.aig,
+    time: 0.05s,
+    num_mic: 61,
+    avg_mic_cube_len: 2.377049,
+    avg_po_cube_len: 80.930693,
+    mic_drop: success: 20, fail: 119, success rate: 14.39%,
+    num_down: 139,
+    num_down_sat: 125,
+    ctp: success: 0, fail: 43, success rate: 0.00%,
+    num_get_bad: 14,
+    overall_block_time: 14.102564ms,
+    block_get_bad_time: 3.087269ms,
+    block_get_predecessor_time: 3.633995ms,
+    block_blocked_time: 1.626728ms,
+    block_mic_time: 7.479333ms,
+    block_push_time: 26.725µs,
+    overall_propagate_time: 2.094787ms,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: safe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Wed 07 May 2025 10:59:41 AM CST
+========================================
