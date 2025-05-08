@@ -1,0 +1,52 @@
+File: ./hwmcc11/single/bobcohdoptdcd4.aig
+Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./hwmcc11/single/bobcohdoptdcd4.aig
+Started at: Thu 08 May 2025 02:38:59 AM CST
+----------------------------------------
+Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc11/single/bobcohdoptdcd4.aig
+Warning: property not found, moved 1 outputs to bad properties
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 455]
+54 19 37 54 88 115 106 33 12 3 0 252 351 0 
+
+--- Contextual MAB Statistics ---
+Arm pulls:
+  Arm 0 (Balanced Heuristic): 1 pulls
+  Arm 1 (Aggressive Heuristic): 1559 pulls
+  Arm 2 (Conservative Heuristic): 1 pulls
+  Arm 3 (limit=0, max=0, level=0): 6 pulls
+  Arm 4 (limit=1, max=3, level=1): 1 pulls
+  Arm 5 (limit=2, max=5, level=1): 1 pulls
+  Arm 6 (limit=8, max=4, level=1): 1 pulls
+----------------------------
+SolverStatistic {
+    num_solve: 35693,
+    avg_decide_var: 0.475425,
+    num_simplify_subsume: 0,
+    num_simplify_self_subsume: 0,
+}
+Statistic {
+    case: bobcohdoptdcd4.aig,
+    time: 0.92s,
+    num_mic: 2575,
+    avg_mic_cube_len: 6.237670,
+    avg_po_cube_len: 23.975462,
+    mic_drop: success: 5148, fail: 9885, success rate: 34.24%,
+    num_down: 15033,
+    num_down_sat: 19446,
+    ctp: success: 0, fail: 2699, success rate: 0.00%,
+    num_get_bad: 75,
+    overall_block_time: 715.043778ms,
+    block_get_bad_time: 8.971794ms,
+    block_get_predecessor_time: 88.540337ms,
+    block_blocked_time: 53.262458ms,
+    block_mic_time: 753.034225ms,
+    block_push_time: 4.777343ms,
+    overall_propagate_time: 197.054824ms,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: safe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Thu 08 May 2025 02:39:00 AM CST
+========================================

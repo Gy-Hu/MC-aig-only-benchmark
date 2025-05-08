@@ -1,0 +1,52 @@
+File: ./hwmcc13/single/6s150.aig
+Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./hwmcc13/single/6s150.aig
+Started at: Thu 08 May 2025 12:29:05 AM CST
+----------------------------------------
+Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc13/single/6s150.aig
+Warning: property not found, moved 1 outputs to bad properties
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 11286]
+1044 2 2 3 2 2 2 1 2 15 12 3 5 32 32 16 13 21 24 53 25 34 21 31 27 24 32 29 45 37 23 10 9 6 8 3 24 12 5 7 23 5 20 24 8 24 21 16 31 54 48 36 25 12 3 1 9 17 2 4 3 10 6 17 25 17 5 19 26 4 0 7 3 5 6 5 4 5 15 5664 0 
+
+--- Contextual MAB Statistics ---
+Arm pulls:
+  Arm 0 (Balanced Heuristic): 4 pulls
+  Arm 1 (Aggressive Heuristic): 9445 pulls
+  Arm 2 (Conservative Heuristic): 24 pulls
+  Arm 3 (limit=0, max=0, level=0): 7679 pulls
+  Arm 4 (limit=1, max=3, level=1): 2670 pulls
+  Arm 5 (limit=2, max=5, level=1): 1307 pulls
+  Arm 6 (limit=8, max=4, level=1): 3917 pulls
+----------------------------
+SolverStatistic {
+    num_solve: 1033998,
+    avg_decide_var: 0.331109,
+    num_simplify_subsume: 198036,
+    num_simplify_self_subsume: 26528,
+}
+Statistic {
+    case: 6s150.aig,
+    time: 88.33s,
+    num_mic: 40050,
+    avg_mic_cube_len: 5.984519,
+    avg_po_cube_len: 108.053329,
+    mic_drop: success: 36733, fail: 194833, success rate: 15.86%,
+    num_down: 231566,
+    num_down_sat: 321769,
+    ctp: success: 0, fail: 279260, success rate: 0.00%,
+    num_get_bad: 94,
+    overall_block_time: 71.604701864s,
+    block_get_bad_time: 34.102087ms,
+    block_get_predecessor_time: 14.439847106s,
+    block_blocked_time: 4.343903478s,
+    block_mic_time: 61.944981931s,
+    block_push_time: 1.449850396s,
+    overall_propagate_time: 15.766469978s,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: safe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Thu 08 May 2025 12:30:34 AM CST
+========================================

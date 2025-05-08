@@ -1,0 +1,52 @@
+File: ./hwmcc13/single/6s372rb31.aig
+Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./hwmcc13/single/6s372rb31.aig
+Started at: Thu 08 May 2025 01:37:54 AM CST
+----------------------------------------
+Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc13/single/6s372rb31.aig
+Warning: property not found, moved 1 outputs to bad properties
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 299, 292]
+1073 3 4 8 3 10 10 35 7 39 24 87 68 59 21 20 17 67 33 60 39 70 71 5 1 1 1 1 1 2 1 2 38 35 51 45 52 26 22 10 9 10 8 3 1 0 795 
+
+--- Contextual MAB Statistics ---
+Arm pulls:
+  Arm 0 (Balanced Heuristic): 14 pulls
+  Arm 1 (Aggressive Heuristic): 8 pulls
+  Arm 2 (Conservative Heuristic): 92 pulls
+  Arm 3 (limit=0, max=0, level=0): 20 pulls
+  Arm 4 (limit=1, max=3, level=1): 6 pulls
+  Arm 5 (limit=2, max=5, level=1): 482 pulls
+  Arm 6 (limit=8, max=4, level=1): 1012 pulls
+----------------------------
+SolverStatistic {
+    num_solve: 114363,
+    avg_decide_var: 0.053627,
+    num_simplify_subsume: 0,
+    num_simplify_self_subsume: 0,
+}
+Statistic {
+    case: 6s372rb31.aig,
+    time: 3.67s,
+    num_mic: 3982,
+    avg_mic_cube_len: 5.030889,
+    avg_po_cube_len: 32.623637,
+    mic_drop: success: 2935, fail: 16670, success rate: 14.97%,
+    num_down: 19605,
+    num_down_sat: 27139,
+    ctp: success: 0, fail: 23396, success rate: 0.00%,
+    num_get_bad: 131,
+    overall_block_time: 2.429167203s,
+    block_get_bad_time: 164.545446ms,
+    block_get_predecessor_time: 685.847364ms,
+    block_blocked_time: 59.716294ms,
+    block_mic_time: 2.42115167s,
+    block_push_time: 30.284378ms,
+    overall_propagate_time: 705.753159ms,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: safe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Thu 08 May 2025 01:37:58 AM CST
+========================================

@@ -1,0 +1,51 @@
+File: ./x-epic-2024/aig/a18-p5.aig
+Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./x-epic-2024/aig/a18-p5.aig
+Started at: Thu 08 May 2025 06:47:38 AM CST
+----------------------------------------
+Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/x-epic-2024/aig/a18-p5.aig
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2504, 29048]
+212 50 338 1330 3354 7292 11312 11486 5424 6663 8307 12463 13526 7088 2410 2814 693 323 190 59 13 1 0 48148 
+
+--- Contextual MAB Statistics ---
+Arm pulls:
+  Arm 0 (Balanced Heuristic): 8 pulls
+  Arm 1 (Aggressive Heuristic): 56 pulls
+  Arm 2 (Conservative Heuristic): 17 pulls
+  Arm 3 (limit=0, max=0, level=0): 45 pulls
+  Arm 4 (limit=1, max=3, level=1): 53 pulls
+  Arm 5 (limit=2, max=5, level=1): 118823 pulls
+  Arm 6 (limit=8, max=4, level=1): 121 pulls
+----------------------------
+SolverStatistic {
+    num_solve: 7253174,
+    avg_decide_var: 0.393831,
+    num_simplify_subsume: 59738,
+    num_simplify_self_subsume: 138144,
+}
+Statistic {
+    case: a18-p5.aig,
+    time: 1990.39s,
+    num_mic: 186211,
+    avg_mic_cube_len: 12.421114,
+    avg_po_cube_len: 72.035443,
+    mic_drop: success: 488479, fail: 1725780, success rate: 22.06%,
+    num_down: 2214259,
+    num_down_sat: 3420949,
+    ctp: success: 0, fail: 565504, success rate: 0.00%,
+    num_get_bad: 29466,
+    overall_block_time: 1296.62344235s,
+    block_get_bad_time: 28.109061066s,
+    block_get_predecessor_time: 203.71352622s,
+    block_blocked_time: 35.065494124s,
+    block_mic_time: 1320.158382934s,
+    block_push_time: 4.713066214s,
+    overall_propagate_time: 693.532099645s,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: safe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Thu 08 May 2025 07:20:49 AM CST
+========================================

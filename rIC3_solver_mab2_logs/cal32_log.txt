@@ -1,45 +1,45 @@
-File: ./hwmcc19/single/aig/goel/industry/cal32/cal32.aig
-Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./hwmcc19/single/aig/goel/industry/cal32/cal32.aig
-Started at: Wed 07 May 2025 07:40:35 PM CST
+File: ./avr/industry/cal32/cal32.aig
+Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./avr/industry/cal32/cal32.aig
+Started at: Thu 08 May 2025 05:31:26 AM CST
 ----------------------------------------
-Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc19/single/aig/goel/industry/cal32/cal32.aig
-[0, 0, 0, 0, 4]
-51 1 0 4 
+Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/avr/industry/cal32/cal32.aig
+[0, 0, 0, 0, 2]
+51 1 0 2 
 
 --- Contextual MAB Statistics ---
 Arm pulls:
   Arm 0 (Balanced Heuristic): 1 pulls
-  Arm 1 (Aggressive Heuristic): 1 pulls
-  Arm 2 (Conservative Heuristic): 1 pulls
-  Arm 3 (limit=0, max=0, level=0): 1 pulls
-  Arm 4 (limit=1, max=3, level=1): 1 pulls
+  Arm 1 (Aggressive Heuristic): 2 pulls
+  Arm 2 (Conservative Heuristic): 0 pulls
+  Arm 3 (limit=0, max=0, level=0): 0 pulls
+  Arm 4 (limit=1, max=3, level=1): 0 pulls
   Arm 5 (limit=2, max=5, level=1): 0 pulls
   Arm 6 (limit=8, max=4, level=1): 0 pulls
 ----------------------------
 SolverStatistic {
-    num_solve: 31,
-    avg_decide_var: 0.508043,
+    num_solve: 18,
+    avg_decide_var: 0.391626,
     num_simplify_subsume: 0,
     num_simplify_self_subsume: 0,
 }
 Statistic {
     case: cal32.aig,
     time: 0.01s,
-    num_mic: 5,
-    avg_mic_cube_len: 3.800000,
-    avg_po_cube_len: 8.714286,
-    mic_drop: success: 0, fail: 19, success rate: 0.00%,
-    num_down: 19,
-    num_down_sat: 18,
-    ctp: success: 0, fail: 4, success rate: 0.00%,
-    num_get_bad: 7,
-    overall_block_time: 2.505223ms,
-    block_get_bad_time: 1.318584ms,
-    block_get_predecessor_time: 143.265µs,
-    block_blocked_time: 201.3µs,
-    block_mic_time: 521.245µs,
-    block_push_time: 134ns,
-    overall_propagate_time: 268.197µs,
+    num_mic: 3,
+    avg_mic_cube_len: 3.333333,
+    avg_po_cube_len: 7.000000,
+    mic_drop: success: 1, fail: 9, success rate: 10.00%,
+    num_down: 10,
+    num_down_sat: 9,
+    ctp: success: 0, fail: 2, success rate: 0.00%,
+    num_get_bad: 5,
+    overall_block_time: 1.731156ms,
+    block_get_bad_time: 1.120002ms,
+    block_get_predecessor_time: 102.734µs,
+    block_blocked_time: 109.851µs,
+    block_mic_time: 240.362µs,
+    block_push_time: 82ns,
+    overall_propagate_time: 143.421µs,
     xor_gen: success: 0, fail: 0, success rate: NaN%,
     num_auxiliary_var: 0,
     test: success: 0, fail: 0, success rate: NaN%,
@@ -47,5 +47,5 @@ Statistic {
 result: safe
 ----------------------------------------
 STATUS: COMPLETED
-Finished at: Wed 07 May 2025 07:40:35 PM CST
+Finished at: Thu 08 May 2025 05:31:26 AM CST
 ========================================

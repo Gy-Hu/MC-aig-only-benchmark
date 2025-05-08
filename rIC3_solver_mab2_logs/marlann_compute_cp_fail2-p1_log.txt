@@ -1,0 +1,51 @@
+File: ./hwmcc24/2019/wolf/2019B/marlann_compute_cp_fail2-p1.aig
+Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./hwmcc24/2019/wolf/2019B/marlann_compute_cp_fail2-p1.aig
+Started at: Thu 08 May 2025 08:26:52 AM CST
+----------------------------------------
+Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc24/2019/wolf/2019B/marlann_compute_cp_fail2-p1.aig
+[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 59]
+1 1 1 1 1 1 1 1 1 1 1 59 
+
+--- Contextual MAB Statistics ---
+Arm pulls:
+  Arm 0 (Balanced Heuristic): 1 pulls
+  Arm 1 (Aggressive Heuristic): 1 pulls
+  Arm 2 (Conservative Heuristic): 9 pulls
+  Arm 3 (limit=0, max=0, level=0): 56 pulls
+  Arm 4 (limit=1, max=3, level=1): 1 pulls
+  Arm 5 (limit=2, max=5, level=1): 5 pulls
+  Arm 6 (limit=8, max=4, level=1): 1 pulls
+----------------------------
+SolverStatistic {
+    num_solve: 954,
+    avg_decide_var: 0.383676,
+    num_simplify_subsume: 0,
+    num_simplify_self_subsume: 0,
+}
+Statistic {
+    case: marlann_compute_cp_fail2-p1.aig,
+    time: 0.01s,
+    num_mic: 75,
+    avg_mic_cube_len: 7.240000,
+    avg_po_cube_len: 19.322581,
+    mic_drop: success: 2, fail: 541, success rate: 0.37%,
+    num_down: 543,
+    num_down_sat: 519,
+    ctp: success: 0, fail: 144, success rate: 0.00%,
+    num_get_bad: 23,
+    overall_block_time: 6.618802ms,
+    block_get_bad_time: 1.094013ms,
+    block_get_predecessor_time: 1.20314ms,
+    block_blocked_time: 791.618µs,
+    block_mic_time: 2.218659ms,
+    block_push_time: 364.645µs,
+    overall_propagate_time: 609.536µs,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: unsafe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Thu 08 May 2025 08:26:52 AM CST
+========================================

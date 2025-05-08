@@ -1,0 +1,52 @@
+File: ./hwmcc11/single/pdtpmsns3.aig
+Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./hwmcc11/single/pdtpmsns3.aig
+Started at: Thu 08 May 2025 04:05:52 AM CST
+----------------------------------------
+Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc11/single/pdtpmsns3.aig
+Warning: property not found, moved 1 outputs to bad properties
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 9997]
+464 86 300 705 1605 3390 6710 12741 16421 12141 7101 3998 2049 902 263 175 202 275 155 65 44 24 26 15 4 0 3782 0 
+
+--- Contextual MAB Statistics ---
+Arm pulls:
+  Arm 0 (Balanced Heuristic): 13 pulls
+  Arm 1 (Aggressive Heuristic): 10 pulls
+  Arm 2 (Conservative Heuristic): 13 pulls
+  Arm 3 (limit=0, max=0, level=0): 20 pulls
+  Arm 4 (limit=1, max=3, level=1): 20 pulls
+  Arm 5 (limit=2, max=5, level=1): 21220 pulls
+  Arm 6 (limit=8, max=4, level=1): 31 pulls
+----------------------------
+SolverStatistic {
+    num_solve: 2810155,
+    avg_decide_var: 0.481047,
+    num_simplify_subsume: 29628,
+    num_simplify_self_subsume: 27020,
+}
+Statistic {
+    case: pdtpmsns3.aig,
+    time: 691.32s,
+    num_mic: 81682,
+    avg_mic_cube_len: 9.743799,
+    avg_po_cube_len: 68.540018,
+    mic_drop: success: 231257, fail: 517809, success rate: 30.87%,
+    num_down: 749066,
+    num_down_sat: 1164149,
+    ctp: success: 0, fail: 69766, success rate: 0.00%,
+    num_get_bad: 5030,
+    overall_block_time: 266.369084514s,
+    block_get_bad_time: 2.82816023s,
+    block_get_predecessor_time: 18.948992128s,
+    block_blocked_time: 3.710132207s,
+    block_mic_time: 365.827041621s,
+    block_push_time: 215.1968ms,
+    overall_propagate_time: 424.824999477s,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: safe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Thu 08 May 2025 04:17:24 AM CST
+========================================

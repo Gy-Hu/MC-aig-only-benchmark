@@ -1,0 +1,52 @@
+File: ./hwmcc11/single/6s7.aig
+Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./hwmcc11/single/6s7.aig
+Started at: Thu 08 May 2025 03:32:51 AM CST
+----------------------------------------
+Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc11/single/6s7.aig
+Warning: property not found, moved 1 outputs to bad properties
+[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 1, 2, 1, 1, 4, 1, 1, 1, 10, 5, 1, 1, 1, 1, 10, 9, 6, 1, 1, 1, 7, 51, 15, 27, 6, 5, 21587, 17599]
+504 6 16 22 39 62 147 210 267 338 420 463 721 849 1017 1101 1288 1448 1520 1539 1368 1363 1525 1660 1883 1961 2196 2504 2557 2653 2918 3721 4331 4563 4991 5741 6485 6342 5563 12083 
+
+--- Contextual MAB Statistics ---
+Arm pulls:
+  Arm 0 (Balanced Heuristic): 32 pulls
+  Arm 1 (Aggressive Heuristic): 15 pulls
+  Arm 2 (Conservative Heuristic): 18969 pulls
+  Arm 3 (limit=0, max=0, level=0): 14 pulls
+  Arm 4 (limit=1, max=3, level=1): 18 pulls
+  Arm 5 (limit=2, max=5, level=1): 56123 pulls
+  Arm 6 (limit=8, max=4, level=1): 14 pulls
+----------------------------
+SolverStatistic {
+    num_solve: 4652996,
+    avg_decide_var: 0.801891,
+    num_simplify_subsume: 253642,
+    num_simplify_self_subsume: 127315,
+}
+Statistic {
+    case: 6s7.aig,
+    time: 587.98s,
+    num_mic: 141847,
+    avg_mic_cube_len: 12.553730,
+    avg_po_cube_len: 345.841068,
+    mic_drop: success: 240313, fail: 1457561, success rate: 14.15%,
+    num_down: 1697874,
+    num_down_sat: 2663905,
+    ctp: success: 0, fail: 174694, success rate: 0.00%,
+    num_get_bad: 18882,
+    overall_block_time: 506.237918509s,
+    block_get_bad_time: 6.198598235s,
+    block_get_predecessor_time: 38.210722034s,
+    block_blocked_time: 16.011543411s,
+    block_mic_time: 503.290607014s,
+    block_push_time: 2.113131452s,
+    overall_propagate_time: 81.575975289s,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: unsafe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Thu 08 May 2025 03:42:39 AM CST
+========================================

@@ -1,0 +1,52 @@
+File: ./hwmcc11/single/boblivea.aig
+Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./hwmcc11/single/boblivea.aig
+Started at: Thu 08 May 2025 03:24:53 AM CST
+----------------------------------------
+Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc11/single/boblivea.aig
+Warning: property not found, moved 1 outputs to bad properties
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 292, 162]
+102 14 15 50 105 173 188 135 96 79 81 67 54 31 23 14 8 2 2 1 0 382 
+
+--- Contextual MAB Statistics ---
+Arm pulls:
+  Arm 0 (Balanced Heuristic): 6 pulls
+  Arm 1 (Aggressive Heuristic): 6 pulls
+  Arm 2 (Conservative Heuristic): 12 pulls
+  Arm 3 (limit=0, max=0, level=0): 6 pulls
+  Arm 4 (limit=1, max=3, level=1): 12 pulls
+  Arm 5 (limit=2, max=5, level=1): 575 pulls
+  Arm 6 (limit=8, max=4, level=1): 23 pulls
+----------------------------
+SolverStatistic {
+    num_solve: 37813,
+    avg_decide_var: 0.704628,
+    num_simplify_subsume: 0,
+    num_simplify_self_subsume: 0,
+}
+Statistic {
+    case: boblivea.aig,
+    time: 0.75s,
+    num_mic: 1664,
+    avg_mic_cube_len: 6.338942,
+    avg_po_cube_len: 72.379164,
+    mic_drop: success: 1767, fail: 8400, success rate: 17.38%,
+    num_down: 10167,
+    num_down_sat: 15409,
+    ctp: success: 0, fail: 4433, success rate: 0.00%,
+    num_get_bad: 369,
+    overall_block_time: 521.853948ms,
+    block_get_bad_time: 25.921155ms,
+    block_get_predecessor_time: 67.755236ms,
+    block_blocked_time: 10.250258ms,
+    block_mic_time: 580.051066ms,
+    block_push_time: 3.718402ms,
+    overall_propagate_time: 205.948181ms,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: safe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Thu 08 May 2025 03:24:54 AM CST
+========================================

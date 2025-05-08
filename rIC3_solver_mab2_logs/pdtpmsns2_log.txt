@@ -1,0 +1,52 @@
+File: ./hwmcc11/single/pdtpmsns2.aig
+Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./hwmcc11/single/pdtpmsns2.aig
+Started at: Thu 08 May 2025 03:26:53 AM CST
+----------------------------------------
+Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc11/single/pdtpmsns2.aig
+Warning: property not found, moved 1 outputs to bad properties
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 601, 296]
+328 36 135 264 287 384 499 400 372 346 290 143 45 33 33 13 17 22 48 71 50 18 2 2 1 0 768 
+
+--- Contextual MAB Statistics ---
+Arm pulls:
+  Arm 0 (Balanced Heuristic): 30 pulls
+  Arm 1 (Aggressive Heuristic): 63 pulls
+  Arm 2 (Conservative Heuristic): 9 pulls
+  Arm 3 (limit=0, max=0, level=0): 29 pulls
+  Arm 4 (limit=1, max=3, level=1): 21 pulls
+  Arm 5 (limit=2, max=5, level=1): 18 pulls
+  Arm 6 (limit=8, max=4, level=1): 1542 pulls
+----------------------------
+SolverStatistic {
+    num_solve: 131555,
+    avg_decide_var: 0.476690,
+    num_simplify_subsume: 859,
+    num_simplify_self_subsume: 228,
+}
+Statistic {
+    case: pdtpmsns2.aig,
+    time: 7.37s,
+    num_mic: 5647,
+    avg_mic_cube_len: 5.338587,
+    avg_po_cube_len: 44.847958,
+    mic_drop: success: 8905, fail: 19570, success rate: 31.27%,
+    num_down: 28475,
+    num_down_sat: 36873,
+    ctp: success: 0, fail: 20164, success rate: 0.00%,
+    num_get_bad: 687,
+    overall_block_time: 4.095101362s,
+    block_get_bad_time: 282.961588ms,
+    block_get_predecessor_time: 786.132128ms,
+    block_blocked_time: 77.265404ms,
+    block_mic_time: 4.628794795s,
+    block_push_time: 20.632436ms,
+    overall_propagate_time: 3.203735881s,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: safe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Thu 08 May 2025 03:27:00 AM CST
+========================================

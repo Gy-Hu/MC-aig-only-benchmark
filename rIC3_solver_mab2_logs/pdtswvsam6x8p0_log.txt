@@ -1,0 +1,52 @@
+File: ./hwmcc11/single/pdtswvsam6x8p0.aig
+Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./hwmcc11/single/pdtswvsam6x8p0.aig
+Started at: Thu 08 May 2025 03:57:48 AM CST
+----------------------------------------
+Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc11/single/pdtswvsam6x8p0.aig
+Warning: property not found, moved 1 outputs to bad properties
+[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 6, 6, 2, 3, 1, 6, 89, 38]
+68 1 1 1 1 1 1 1 2 5 6 10 9 3 4 5 6 12 11 
+
+--- Contextual MAB Statistics ---
+Arm pulls:
+  Arm 0 (Balanced Heuristic): 4 pulls
+  Arm 1 (Aggressive Heuristic): 1 pulls
+  Arm 2 (Conservative Heuristic): 1 pulls
+  Arm 3 (limit=0, max=0, level=0): 229 pulls
+  Arm 4 (limit=1, max=3, level=1): 0 pulls
+  Arm 5 (limit=2, max=5, level=1): 0 pulls
+  Arm 6 (limit=8, max=4, level=1): 0 pulls
+----------------------------
+SolverStatistic {
+    num_solve: 1816,
+    avg_decide_var: 0.674711,
+    num_simplify_subsume: 0,
+    num_simplify_self_subsume: 0,
+}
+Statistic {
+    case: pdtswvsam6x8p0.aig,
+    time: 0.07s,
+    num_mic: 235,
+    avg_mic_cube_len: 3.221277,
+    avg_po_cube_len: 16.727108,
+    mic_drop: success: 141, fail: 592, success rate: 19.24%,
+    num_down: 733,
+    num_down_sat: 855,
+    ctp: success: 0, fail: 132, success rate: 0.00%,
+    num_get_bad: 19,
+    overall_block_time: 35.150055ms,
+    block_get_bad_time: 490.994µs,
+    block_get_predecessor_time: 8.078747ms,
+    block_blocked_time: 7.20471ms,
+    block_mic_time: 13.718052ms,
+    block_push_time: 202.561µs,
+    overall_propagate_time: 4.184358ms,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: unsafe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Thu 08 May 2025 03:57:48 AM CST
+========================================

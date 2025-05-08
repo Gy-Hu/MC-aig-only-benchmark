@@ -1,0 +1,52 @@
+File: ./hwmcc11/single/bobsmmips.aig
+Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./hwmcc11/single/bobsmmips.aig
+Started at: Thu 08 May 2025 03:37:03 AM CST
+----------------------------------------
+Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc11/single/bobsmmips.aig
+Warning: property not found, moved 1 outputs to bad properties
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 19893, 2352]
+2514 2229 16132 118 9 11 13 12 11 12 9 13 13 5 14 41 46 26 29 31 16 16 17 31 72 97 200 173 97 32 15 114 267 0 2400 
+
+--- Contextual MAB Statistics ---
+Arm pulls:
+  Arm 0 (Balanced Heuristic): 403 pulls
+  Arm 1 (Aggressive Heuristic): 294 pulls
+  Arm 2 (Conservative Heuristic): 293 pulls
+  Arm 3 (limit=0, max=0, level=0): 293 pulls
+  Arm 4 (limit=1, max=3, level=1): 28085 pulls
+  Arm 5 (limit=2, max=5, level=1): 293 pulls
+  Arm 6 (limit=8, max=4, level=1): 308 pulls
+----------------------------
+SolverStatistic {
+    num_solve: 1394078,
+    avg_decide_var: 0.743443,
+    num_simplify_subsume: 75928,
+    num_simplify_self_subsume: 16269,
+}
+Statistic {
+    case: bobsmmips.aig,
+    time: 2191.41s,
+    num_mic: 46001,
+    avg_mic_cube_len: 15.481033,
+    avg_po_cube_len: 211.938334,
+    mic_drop: success: 212108, fail: 309838, success rate: 40.64%,
+    num_down: 521946,
+    num_down_sat: 810002,
+    ctp: success: 0, fail: 86036, success rate: 0.00%,
+    num_get_bad: 18845,
+    overall_block_time: 1968.092193239s,
+    block_get_bad_time: 1143.524686692s,
+    block_get_predecessor_time: 78.145534335s,
+    block_blocked_time: 16.377078914s,
+    block_mic_time: 938.734746086s,
+    block_push_time: 1.539844941s,
+    overall_propagate_time: 221.349082852s,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: safe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Thu 08 May 2025 04:13:37 AM CST
+========================================

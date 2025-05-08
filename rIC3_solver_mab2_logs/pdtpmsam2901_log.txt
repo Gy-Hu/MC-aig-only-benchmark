@@ -1,0 +1,52 @@
+File: ./hwmcc11/single/pdtpmsam2901.aig
+Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./hwmcc11/single/pdtpmsam2901.aig
+Started at: Thu 08 May 2025 03:27:00 AM CST
+----------------------------------------
+Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc11/single/pdtpmsam2901.aig
+Warning: property not found, moved 1 outputs to bad properties
+[0, 0, 0, 491, 132]
+136 491 0 132 
+
+--- Contextual MAB Statistics ---
+Arm pulls:
+  Arm 0 (Balanced Heuristic): 56 pulls
+  Arm 1 (Aggressive Heuristic): 48 pulls
+  Arm 2 (Conservative Heuristic): 37 pulls
+  Arm 3 (limit=0, max=0, level=0): 216 pulls
+  Arm 4 (limit=1, max=3, level=1): 42 pulls
+  Arm 5 (limit=2, max=5, level=1): 101 pulls
+  Arm 6 (limit=8, max=4, level=1): 123 pulls
+----------------------------
+SolverStatistic {
+    num_solve: 2649,
+    avg_decide_var: 0.612580,
+    num_simplify_subsume: 0,
+    num_simplify_self_subsume: 0,
+}
+Statistic {
+    case: pdtpmsam2901.aig,
+    time: 0.81s,
+    num_mic: 623,
+    avg_mic_cube_len: 2.191011,
+    avg_po_cube_len: 18.226271,
+    mic_drop: success: 107, fail: 1257, success rate: 7.84%,
+    num_down: 1364,
+    num_down_sat: 1270,
+    ctp: success: 0, fail: 264, success rate: 0.00%,
+    num_get_bad: 626,
+    overall_block_time: 716.359798ms,
+    block_get_bad_time: 576.910328ms,
+    block_get_predecessor_time: 7.639086ms,
+    block_blocked_time: 13.036666ms,
+    block_mic_time: 29.872292ms,
+    block_push_time: 13.612µs,
+    overall_propagate_time: 78.022192ms,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: safe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Thu 08 May 2025 03:27:01 AM CST
+========================================

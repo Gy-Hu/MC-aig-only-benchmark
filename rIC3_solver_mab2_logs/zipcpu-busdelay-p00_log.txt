@@ -1,45 +1,46 @@
-File: ./hwmcc1920/aig/zipcpu-busdelay-p00.aig
-Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./hwmcc1920/aig/zipcpu-busdelay-p00.aig
-Started at: Wed 07 May 2025 06:19:06 PM CST
+File: ./hwmcc20/aig-1.8/zipcpu-busdelay-p00.aig
+Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./hwmcc20/aig-1.8/zipcpu-busdelay-p00.aig
+Started at: Thu 08 May 2025 05:47:11 AM CST
 ----------------------------------------
-Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc1920/aig/zipcpu-busdelay-p00.aig
-[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 278]
-47 3 2 14 23 35 43 49 38 96 65 70 64 144 47 49 23 13 2 0 29 11 15 682 0 
+Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc20/aig-1.8/zipcpu-busdelay-p00.aig
+Warning: property not found, moved 1 outputs to bad properties
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 254, 804]
+48 14 18 34 39 50 53 126 97 177 155 380 211 258 201 160 127 24 15 4 8 11 5 2 0 2036 
 
 --- Contextual MAB Statistics ---
 Arm pulls:
-  Arm 0 (Balanced Heuristic): 2 pulls
-  Arm 1 (Aggressive Heuristic): 3 pulls
-  Arm 2 (Conservative Heuristic): 2 pulls
-  Arm 3 (limit=0, max=0, level=0): 2 pulls
-  Arm 4 (limit=1, max=3, level=1): 2 pulls
-  Arm 5 (limit=2, max=5, level=1): 929 pulls
-  Arm 6 (limit=8, max=4, level=1): 8 pulls
+  Arm 0 (Balanced Heuristic): 16 pulls
+  Arm 1 (Aggressive Heuristic): 3558 pulls
+  Arm 2 (Conservative Heuristic): 5 pulls
+  Arm 3 (limit=0, max=0, level=0): 4 pulls
+  Arm 4 (limit=1, max=3, level=1): 10 pulls
+  Arm 5 (limit=2, max=5, level=1): 4 pulls
+  Arm 6 (limit=8, max=4, level=1): 26 pulls
 ----------------------------
 SolverStatistic {
-    num_solve: 49790,
-    avg_decide_var: 0.297986,
-    num_simplify_subsume: 0,
-    num_simplify_self_subsume: 0,
+    num_solve: 175389,
+    avg_decide_var: 0.330715,
+    num_simplify_subsume: 1997,
+    num_simplify_self_subsume: 1862,
 }
 Statistic {
     case: zipcpu-busdelay-p00.aig,
-    time: 0.88s,
-    num_mic: 2058,
-    avg_mic_cube_len: 7.524781,
-    avg_po_cube_len: 57.483081,
-    mic_drop: success: 2765, fail: 12005, success rate: 18.72%,
-    num_down: 14770,
-    num_down_sat: 22011,
-    ctp: success: 0, fail: 5915, success rate: 0.00%,
-    num_get_bad: 96,
-    overall_block_time: 669.491954ms,
-    block_get_bad_time: 7.091334ms,
-    block_get_predecessor_time: 181.284447ms,
-    block_blocked_time: 21.164283ms,
-    block_mic_time: 754.255673ms,
-    block_push_time: 5.914332ms,
-    overall_propagate_time: 186.378289ms,
+    time: 3.86s,
+    num_mic: 5905,
+    avg_mic_cube_len: 10.676884,
+    avg_po_cube_len: 61.559893,
+    mic_drop: success: 10130, fail: 51147, success rate: 16.53%,
+    num_down: 61277,
+    num_down_sat: 92530,
+    ctp: success: 0, fail: 21117, success rate: 0.00%,
+    num_get_bad: 99,
+    overall_block_time: 2.405148296s,
+    block_get_bad_time: 8.932931ms,
+    block_get_predecessor_time: 363.042613ms,
+    block_blocked_time: 116.672625ms,
+    block_mic_time: 2.674389326s,
+    block_push_time: 28.890808ms,
+    overall_propagate_time: 1.425088295s,
     xor_gen: success: 0, fail: 0, success rate: NaN%,
     num_auxiliary_var: 0,
     test: success: 0, fail: 0, success rate: NaN%,
@@ -47,5 +48,5 @@ Statistic {
 result: safe
 ----------------------------------------
 STATUS: COMPLETED
-Finished at: Wed 07 May 2025 06:19:07 PM CST
+Finished at: Thu 08 May 2025 05:47:15 AM CST
 ========================================

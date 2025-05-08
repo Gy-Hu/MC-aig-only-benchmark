@@ -1,0 +1,51 @@
+File: ./avr/crafted/eq_sdp_v6/eq_sdp_v6.aig
+Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./avr/crafted/eq_sdp_v6/eq_sdp_v6.aig
+Started at: Thu 08 May 2025 04:19:56 AM CST
+----------------------------------------
+Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/avr/crafted/eq_sdp_v6/eq_sdp_v6.aig
+[0, 0, 0, 0, 54, 739]
+125 42 25 0 739 
+
+--- Contextual MAB Statistics ---
+Arm pulls:
+  Arm 0 (Balanced Heuristic): 10 pulls
+  Arm 1 (Aggressive Heuristic): 10 pulls
+  Arm 2 (Conservative Heuristic): 10 pulls
+  Arm 3 (limit=0, max=0, level=0): 10 pulls
+  Arm 4 (limit=1, max=3, level=1): 10 pulls
+  Arm 5 (limit=2, max=5, level=1): 10 pulls
+  Arm 6 (limit=8, max=4, level=1): 746 pulls
+----------------------------
+SolverStatistic {
+    num_solve: 8504,
+    avg_decide_var: 0.705867,
+    num_simplify_subsume: 0,
+    num_simplify_self_subsume: 0,
+}
+Statistic {
+    case: eq_sdp_v6.aig,
+    time: 0.25s,
+    num_mic: 806,
+    avg_mic_cube_len: 6.818859,
+    avg_po_cube_len: 54.112687,
+    mic_drop: success: 452, fail: 5022, success rate: 8.26%,
+    num_down: 5474,
+    num_down_sat: 5313,
+    ctp: success: 0, fail: 1497, success rate: 0.00%,
+    num_get_bad: 747,
+    overall_block_time: 232.556882ms,
+    block_get_bad_time: 124.558772ms,
+    block_get_predecessor_time: 14.358845ms,
+    block_blocked_time: 7.035421ms,
+    block_mic_time: 45.335571ms,
+    block_push_time: 89.185µs,
+    overall_propagate_time: 13.306515ms,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: safe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Thu 08 May 2025 04:19:56 AM CST
+========================================

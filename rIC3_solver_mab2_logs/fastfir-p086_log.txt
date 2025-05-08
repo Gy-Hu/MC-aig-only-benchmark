@@ -1,0 +1,51 @@
+File: ./others/fastfir/aig/fastfir-p086.aig
+Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./others/fastfir/aig/fastfir-p086.aig
+Started at: Thu 08 May 2025 12:16:57 AM CST
+----------------------------------------
+Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/others/fastfir/aig/fastfir-p086.aig
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1137, 2622]
+329 21 41 65 77 228 411 528 396 646 607 252 134 95 41 39 430 23 587 443 345 165 16 23 35 2 2 0 2985 
+
+--- Contextual MAB Statistics ---
+Arm pulls:
+  Arm 0 (Balanced Heuristic): 38 pulls
+  Arm 1 (Aggressive Heuristic): 429 pulls
+  Arm 2 (Conservative Heuristic): 510 pulls
+  Arm 3 (limit=0, max=0, level=0): 118 pulls
+  Arm 4 (limit=1, max=3, level=1): 3887 pulls
+  Arm 5 (limit=2, max=5, level=1): 5088 pulls
+  Arm 6 (limit=8, max=4, level=1): 122 pulls
+----------------------------
+SolverStatistic {
+    num_solve: 261636,
+    avg_decide_var: 0.913372,
+    num_simplify_subsume: 773,
+    num_simplify_self_subsume: 541,
+}
+Statistic {
+    case: fastfir-p086.aig,
+    time: 87.91s,
+    num_mic: 11743,
+    avg_mic_cube_len: 7.205058,
+    avg_po_cube_len: 123.117718,
+    mic_drop: success: 13798, fail: 67125, success rate: 17.05%,
+    num_down: 80923,
+    num_down_sat: 93522,
+    ctp: success: 0, fail: 48648, success rate: 0.00%,
+    num_get_bad: 1785,
+    overall_block_time: 73.111878009s,
+    block_get_bad_time: 3.552318303s,
+    block_get_predecessor_time: 23.963519534s,
+    block_blocked_time: 2.38679821s,
+    block_mic_time: 60.145820131s,
+    block_push_time: 367.819561ms,
+    overall_propagate_time: 14.02539557s,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: safe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Thu 08 May 2025 12:18:26 AM CST
+========================================

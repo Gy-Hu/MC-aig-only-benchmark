@@ -1,9 +1,51 @@
-File: ./hwmcc19/single/aig/mann/data-integrity/unsafe/circular_pointer_top_w16_d32_e0.aig
-Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./hwmcc19/single/aig/mann/data-integrity/unsafe/circular_pointer_top_w16_d32_e0.aig
-Started at: Wed 07 May 2025 06:23:28 PM CST
+File: ./hwmcc1920ns/circular_pointer_top_w16_d32_e0.aig
+Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./hwmcc1920ns/circular_pointer_top_w16_d32_e0.aig
+Started at: Thu 08 May 2025 07:04:45 AM CST
 ----------------------------------------
-Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc19/single/aig/mann/data-integrity/unsafe/circular_pointer_top_w16_d32_e0.aig
+Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc1920ns/circular_pointer_top_w16_d32_e0.aig
+[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 32490]
+1 21 52 78 220 188 356 488 645 415 706 885 1232 1566 2036 1708 2574 1356 1922 1934 2976 2834 3733 3225 5021 4656 5536 5211 6816 6021 6891 5783 11635 13300 24093 
+
+--- Contextual MAB Statistics ---
+Arm pulls:
+  Arm 0 (Balanced Heuristic): 127769 pulls
+  Arm 1 (Aggressive Heuristic): 13 pulls
+  Arm 2 (Conservative Heuristic): 13 pulls
+  Arm 3 (limit=0, max=0, level=0): 13 pulls
+  Arm 4 (limit=1, max=3, level=1): 20 pulls
+  Arm 5 (limit=2, max=5, level=1): 12386 pulls
+  Arm 6 (limit=8, max=4, level=1): 31033 pulls
+----------------------------
+SolverStatistic {
+    num_solve: 8161428,
+    avg_decide_var: 0.533225,
+    num_simplify_subsume: 126284,
+    num_simplify_self_subsume: 312868,
+}
+Statistic {
+    case: circular_pointer_top_w16_d32_e0.aig,
+    time: 1481.23s,
+    num_mic: 195375,
+    avg_mic_cube_len: 14.857367,
+    avg_po_cube_len: 24.724004,
+    mic_drop: success: 491658, fail: 2352997, success rate: 17.28%,
+    num_down: 2844655,
+    num_down_sat: 4261666,
+    ctp: success: 0, fail: 205428, success rate: 0.00%,
+    num_get_bad: 3813,
+    overall_block_time: 1291.637917847s,
+    block_get_bad_time: 2.72442531s,
+    block_get_predecessor_time: 56.07153863s,
+    block_blocked_time: 46.609045775s,
+    block_mic_time: 1227.796049502s,
+    block_push_time: 4.119312707s,
+    overall_propagate_time: 189.365350223s,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: unsafe
 ----------------------------------------
-STATUS: TIMEOUT (exceeded 3600 seconds)
-Finished at: Wed 07 May 2025 07:23:28 PM CST
+STATUS: COMPLETED
+Finished at: Thu 08 May 2025 07:29:26 AM CST
 ========================================

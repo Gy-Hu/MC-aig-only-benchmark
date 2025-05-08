@@ -1,46 +1,45 @@
-File: ./hwmcc1920/aig-1.8/circular_pointer_top_w128_d8_e0.aig
-Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./hwmcc1920/aig-1.8/circular_pointer_top_w128_d8_e0.aig
-Started at: Wed 07 May 2025 04:27:50 PM CST
+File: ./hwmcc1920sat/circular_pointer_top_w128_d8_e0.aig
+Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./hwmcc1920sat/circular_pointer_top_w128_d8_e0.aig
+Started at: Thu 08 May 2025 04:09:36 AM CST
 ----------------------------------------
-Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc1920/aig-1.8/circular_pointer_top_w128_d8_e0.aig
-Warning: property not found, moved 1 outputs to bad properties
-[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 11639]
-2 60 494 923 1939 1601 3199 3301 5919 5094 12041 
+Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc1920sat/circular_pointer_top_w128_d8_e0.aig
+[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 12111]
+1 106 388 594 1999 1742 3046 3678 7337 5800 12158 
 
 --- Contextual MAB Statistics ---
 Arm pulls:
-  Arm 0 (Balanced Heuristic): 47 pulls
-  Arm 1 (Aggressive Heuristic): 9638 pulls
-  Arm 2 (Conservative Heuristic): 47 pulls
-  Arm 3 (limit=0, max=0, level=0): 47 pulls
-  Arm 4 (limit=1, max=3, level=1): 5795 pulls
-  Arm 5 (limit=2, max=5, level=1): 47 pulls
-  Arm 6 (limit=8, max=4, level=1): 20711 pulls
+  Arm 0 (Balanced Heuristic): 69 pulls
+  Arm 1 (Aggressive Heuristic): 77 pulls
+  Arm 2 (Conservative Heuristic): 86 pulls
+  Arm 3 (limit=0, max=0, level=0): 69 pulls
+  Arm 4 (limit=1, max=3, level=1): 77 pulls
+  Arm 5 (limit=2, max=5, level=1): 13703 pulls
+  Arm 6 (limit=8, max=4, level=1): 24105 pulls
 ----------------------------
 SolverStatistic {
-    num_solve: 1305735,
-    avg_decide_var: 0.519611,
-    num_simplify_subsume: 4155,
-    num_simplify_self_subsume: 8321,
+    num_solve: 1538444,
+    avg_decide_var: 0.537779,
+    num_simplify_subsume: 3584,
+    num_simplify_self_subsume: 9091,
 }
 Statistic {
     case: circular_pointer_top_w128_d8_e0.aig,
-    time: 171.85s,
-    num_mic: 44544,
-    avg_mic_cube_len: 9.955774,
-    avg_po_cube_len: 18.148627,
-    mic_drop: success: 39698, fail: 398531, success rate: 9.06%,
-    num_down: 438229,
-    num_down_sat: 592130,
-    ctp: success: 0, fail: 11295, success rate: 0.00%,
-    num_get_bad: 6035,
-    overall_block_time: 166.370523964s,
-    block_get_bad_time: 6.416879709s,
-    block_get_predecessor_time: 12.090905399s,
-    block_blocked_time: 4.275947016s,
-    block_mic_time: 152.311032951s,
-    block_push_time: 308.408495ms,
-    overall_propagate_time: 5.357162696s,
+    time: 237.40s,
+    num_mic: 47535,
+    avg_mic_cube_len: 9.024908,
+    avg_po_cube_len: 17.423966,
+    mic_drop: success: 45890, fail: 377435, success rate: 10.84%,
+    num_down: 423325,
+    num_down_sat: 582579,
+    ctp: success: 0, fail: 10153, success rate: 0.00%,
+    num_get_bad: 6390,
+    overall_block_time: 231.792262161s,
+    block_get_bad_time: 6.799931572s,
+    block_get_predecessor_time: 17.534499059s,
+    block_blocked_time: 5.007107127s,
+    block_mic_time: 215.153183414s,
+    block_push_time: 332.047171ms,
+    overall_propagate_time: 5.49339323s,
     xor_gen: success: 0, fail: 0, success rate: NaN%,
     num_auxiliary_var: 0,
     test: success: 0, fail: 0, success rate: NaN%,
@@ -48,5 +47,5 @@ Statistic {
 result: unsafe
 ----------------------------------------
 STATUS: COMPLETED
-Finished at: Wed 07 May 2025 04:30:42 PM CST
+Finished at: Thu 08 May 2025 04:13:34 AM CST
 ========================================

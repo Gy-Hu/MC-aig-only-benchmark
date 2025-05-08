@@ -1,0 +1,52 @@
+File: ./hwmcc11/single/abp4ptimo.aig
+Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./hwmcc11/single/abp4ptimo.aig
+Started at: Thu 08 May 2025 03:42:33 AM CST
+----------------------------------------
+Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc11/single/abp4ptimo.aig
+Warning: property not found, moved 1 outputs to bad properties
+[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 1, 1, 44, 289]
+80 5 3 5 7 11 15 17 29 31 26 25 32 31 36 111 
+
+--- Contextual MAB Statistics ---
+Arm pulls:
+  Arm 0 (Balanced Heuristic): 4 pulls
+  Arm 1 (Aggressive Heuristic): 4 pulls
+  Arm 2 (Conservative Heuristic): 488 pulls
+  Arm 3 (limit=0, max=0, level=0): 5 pulls
+  Arm 4 (limit=1, max=3, level=1): 6 pulls
+  Arm 5 (limit=2, max=5, level=1): 3 pulls
+  Arm 6 (limit=8, max=4, level=1): 3 pulls
+----------------------------
+SolverStatistic {
+    num_solve: 7162,
+    avg_decide_var: 0.864636,
+    num_simplify_subsume: 0,
+    num_simplify_self_subsume: 0,
+}
+Statistic {
+    case: abp4ptimo.aig,
+    time: 0.17s,
+    num_mic: 515,
+    avg_mic_cube_len: 5.499029,
+    avg_po_cube_len: 71.929666,
+    mic_drop: success: 474, fail: 2265, success rate: 17.31%,
+    num_down: 2739,
+    num_down_sat: 4205,
+    ctp: success: 0, fail: 605, success rate: 0.00%,
+    num_get_bad: 121,
+    overall_block_time: 128.955469ms,
+    block_get_bad_time: 7.80443ms,
+    block_get_predecessor_time: 15.36164ms,
+    block_blocked_time: 15.473587ms,
+    block_mic_time: 68.365747ms,
+    block_push_time: 1.997556ms,
+    overall_propagate_time: 24.057789ms,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: unsafe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Thu 08 May 2025 03:42:33 AM CST
+========================================

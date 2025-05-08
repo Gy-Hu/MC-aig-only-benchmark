@@ -1,10 +1,51 @@
-File: ./hwmcc1920/aig-1.8/arbitrated_top_n2_w8_d64_e0.aig
-Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./hwmcc1920/aig-1.8/arbitrated_top_n2_w8_d64_e0.aig
-Started at: Wed 07 May 2025 05:18:26 PM CST
+File: ./hwmcc1920ns/arbitrated_top_n2_w8_d64_e0.aig
+Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./hwmcc1920ns/arbitrated_top_n2_w8_d64_e0.aig
+Started at: Thu 08 May 2025 07:18:05 AM CST
 ----------------------------------------
-Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc1920/aig-1.8/arbitrated_top_n2_w8_d64_e0.aig
-Warning: property not found, moved 1 outputs to bad properties
+Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc1920ns/arbitrated_top_n2_w8_d64_e0.aig
+[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 54, 15431]
+1 8 21 26 53 65 109 70 187 111 186 138 296 197 257 179 511 229 374 187 426 271 399 321 853 450 710 497 926 655 825 631 1969 654 1034 582 1293 798 972 772 1965 946 1340 1002 1597 1175 1557 1153 4064 1654 2414 1928 3418 2596 3276 2924 5477 3923 5090 5223 6570 6185 6475 5786 11044 9544 
+
+--- Contextual MAB Statistics ---
+Arm pulls:
+  Arm 0 (Balanced Heuristic): 7 pulls
+  Arm 1 (Aggressive Heuristic): 62418 pulls
+  Arm 2 (Conservative Heuristic): 7 pulls
+  Arm 3 (limit=0, max=0, level=0): 7 pulls
+  Arm 4 (limit=1, max=3, level=1): 7 pulls
+  Arm 5 (limit=2, max=5, level=1): 8 pulls
+  Arm 6 (limit=8, max=4, level=1): 39480 pulls
+----------------------------
+SolverStatistic {
+    num_solve: 11933958,
+    avg_decide_var: 0.578789,
+    num_simplify_subsume: 496047,
+    num_simplify_self_subsume: 972488,
+}
+Statistic {
+    case: arbitrated_top_n2_w8_d64_e0.aig,
+    time: 3123.30s,
+    num_mic: 220239,
+    avg_mic_cube_len: 16.187001,
+    avg_po_cube_len: 33.120372,
+    mic_drop: success: 755009, fail: 2706047, success rate: 21.81%,
+    num_down: 3461056,
+    num_down_sat: 5561476,
+    ctp: success: 0, fail: 344858, success rate: 0.00%,
+    num_get_bad: 1572,
+    overall_block_time: 2468.432909419s,
+    block_get_bad_time: 1.820826831s,
+    block_get_predecessor_time: 177.357935287s,
+    block_blocked_time: 44.775219783s,
+    block_mic_time: 2847.911265294s,
+    block_push_time: 4.063132591s,
+    overall_propagate_time: 653.819746528s,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: unsafe
 ----------------------------------------
-STATUS: TIMEOUT (exceeded 3600 seconds)
-Finished at: Wed 07 May 2025 06:18:26 PM CST
+STATUS: COMPLETED
+Finished at: Thu 08 May 2025 08:10:09 AM CST
 ========================================

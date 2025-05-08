@@ -1,0 +1,52 @@
+File: ./hwmcc11/single/cmudme1.aig
+Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./hwmcc11/single/cmudme1.aig
+Started at: Thu 08 May 2025 03:28:40 AM CST
+----------------------------------------
+Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc11/single/cmudme1.aig
+Warning: property not found, moved 1 outputs to bad properties
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2470]
+61 3 3 3 3 3 3 3 3 2 2 2 3 4 8 19 24 24 36 20 21 29 40 39 17 16 9 9 6 6 6 5 3 15 27 9 4 7 14 16 13 16 18 22 19 29 27 18 16 19 21 12 14 24 14 17 12 8 6 10 4 10 12 13 11 17 20 8 15 17 30 26 30 30 13 24 17 6 4 8 4 5 1 0 31 12 2851 0 
+
+--- Contextual MAB Statistics ---
+Arm pulls:
+  Arm 0 (Balanced Heuristic): 80 pulls
+  Arm 1 (Aggressive Heuristic): 111 pulls
+  Arm 2 (Conservative Heuristic): 1324 pulls
+  Arm 3 (limit=0, max=0, level=0): 359 pulls
+  Arm 4 (limit=1, max=3, level=1): 110 pulls
+  Arm 5 (limit=2, max=5, level=1): 139 pulls
+  Arm 6 (limit=8, max=4, level=1): 3998 pulls
+----------------------------
+SolverStatistic {
+    num_solve: 418080,
+    avg_decide_var: 0.472354,
+    num_simplify_subsume: 48515,
+    num_simplify_self_subsume: 5726,
+}
+Statistic {
+    case: cmudme1.aig,
+    time: 9.10s,
+    num_mic: 18611,
+    avg_mic_cube_len: 6.126807,
+    avg_po_cube_len: 34.539508,
+    mic_drop: success: 13384, fail: 97720, success rate: 12.05%,
+    num_down: 111104,
+    num_down_sat: 133342,
+    ctp: success: 0, fail: 97576, success rate: 0.00%,
+    num_get_bad: 99,
+    overall_block_time: 5.568204843s,
+    block_get_bad_time: 11.208519ms,
+    block_get_predecessor_time: 1.01216663s,
+    block_blocked_time: 159.144032ms,
+    block_mic_time: 6.403443806s,
+    block_push_time: 22.315738ms,
+    overall_propagate_time: 3.490218177s,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: safe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Thu 08 May 2025 03:28:49 AM CST
+========================================

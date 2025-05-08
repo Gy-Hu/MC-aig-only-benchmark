@@ -1,0 +1,52 @@
+File: ./hwmcc11/single/pdtpmseisenberg.aig
+Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./hwmcc11/single/pdtpmseisenberg.aig
+Started at: Thu 08 May 2025 02:39:00 AM CST
+----------------------------------------
+Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc11/single/pdtpmseisenberg.aig
+Warning: property not found, moved 1 outputs to bad properties
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 9557, 1199]
+197 11 31 79 177 272 497 703 826 1061 1346 1696 1971 2183 1804 2101 868 246 285 187 183 72 22 12 0 3843 
+
+--- Contextual MAB Statistics ---
+Arm pulls:
+  Arm 0 (Balanced Heuristic): 7 pulls
+  Arm 1 (Aggressive Heuristic): 33967 pulls
+  Arm 2 (Conservative Heuristic): 154 pulls
+  Arm 3 (limit=0, max=0, level=0): 60 pulls
+  Arm 4 (limit=1, max=3, level=1): 40 pulls
+  Arm 5 (limit=2, max=5, level=1): 53 pulls
+  Arm 6 (limit=8, max=4, level=1): 6 pulls
+----------------------------
+SolverStatistic {
+    num_solve: 2155117,
+    avg_decide_var: 0.591734,
+    num_simplify_subsume: 165698,
+    num_simplify_self_subsume: 68489,
+}
+Statistic {
+    case: pdtpmseisenberg.aig,
+    time: 270.57s,
+    num_mic: 73111,
+    avg_mic_cube_len: 15.638809,
+    avg_po_cube_len: 52.818335,
+    mic_drop: success: 259992, fail: 803495, success rate: 24.45%,
+    num_down: 1063487,
+    num_down_sat: 1524969,
+    ctp: success: 0, fail: 70964, success rate: 0.00%,
+    num_get_bad: 141,
+    overall_block_time: 229.638095317s,
+    block_get_bad_time: 169.45125ms,
+    block_get_predecessor_time: 24.746632008s,
+    block_blocked_time: 10.3511053s,
+    block_mic_time: 269.96835715s,
+    block_push_time: 929.988549ms,
+    overall_propagate_time: 40.842228453s,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: safe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Thu 08 May 2025 02:43:31 AM CST
+========================================

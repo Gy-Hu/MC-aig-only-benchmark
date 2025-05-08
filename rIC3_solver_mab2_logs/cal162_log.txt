@@ -1,10 +1,10 @@
-File: ./hwmcc19/single/aig/goel/industry/cal162/cal162.aig
-Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./hwmcc19/single/aig/goel/industry/cal162/cal162.aig
-Started at: Wed 07 May 2025 07:36:13 PM CST
+File: ./hwmcc1920cal/cal162.aig
+Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./hwmcc1920cal/cal162.aig
+Started at: Thu 08 May 2025 06:50:13 AM CST
 ----------------------------------------
-Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc19/single/aig/goel/industry/cal162/cal162.aig
-[0, 0, 0, 0, 7]
-80 1 0 8 
+Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc1920cal/cal162.aig
+[0, 0, 0, 0, 8]
+80 1 0 8 0 
 
 --- Contextual MAB Statistics ---
 Arm pulls:
@@ -17,8 +17,8 @@ Arm pulls:
   Arm 6 (limit=8, max=4, level=1): 0 pulls
 ----------------------------
 SolverStatistic {
-    num_solve: 144,
-    avg_decide_var: 0.298307,
+    num_solve: 136,
+    avg_decide_var: 0.292285,
     num_simplify_subsume: 0,
     num_simplify_self_subsume: 0,
 }
@@ -26,20 +26,20 @@ Statistic {
     case: cal162.aig,
     time: 0.01s,
     num_mic: 16,
-    avg_mic_cube_len: 6.062500,
-    avg_po_cube_len: 38.135135,
-    mic_drop: success: 46, fail: 46, success rate: 50.00%,
-    num_down: 92,
-    num_down_sat: 98,
-    ctp: success: 0, fail: 0, success rate: NaN%,
-    num_get_bad: 10,
-    overall_block_time: 6.402269ms,
-    block_get_bad_time: 2.319359ms,
-    block_get_predecessor_time: 628.142µs,
-    block_blocked_time: 881.756µs,
-    block_mic_time: 2.47315ms,
-    block_push_time: 29.13µs,
-    overall_propagate_time: 210.582µs,
+    avg_mic_cube_len: 5.937500,
+    avg_po_cube_len: 38.230769,
+    mic_drop: success: 40, fail: 47, success rate: 45.98%,
+    num_down: 87,
+    num_down_sat: 91,
+    ctp: success: 0, fail: 1, success rate: 0.00%,
+    num_get_bad: 12,
+    overall_block_time: 7.409034ms,
+    block_get_bad_time: 3.869739ms,
+    block_get_predecessor_time: 491.995µs,
+    block_blocked_time: 857.076µs,
+    block_mic_time: 1.948803ms,
+    block_push_time: 28.873µs,
+    overall_propagate_time: 189.28µs,
     xor_gen: success: 0, fail: 0, success rate: NaN%,
     num_auxiliary_var: 0,
     test: success: 0, fail: 0, success rate: NaN%,
@@ -47,5 +47,5 @@ Statistic {
 result: safe
 ----------------------------------------
 STATUS: COMPLETED
-Finished at: Wed 07 May 2025 07:36:13 PM CST
+Finished at: Thu 08 May 2025 06:50:13 AM CST
 ========================================

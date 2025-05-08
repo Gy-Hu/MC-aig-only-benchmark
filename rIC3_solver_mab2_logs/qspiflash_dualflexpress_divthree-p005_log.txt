@@ -1,45 +1,46 @@
-File: ./hwmcc1920/aig/qspiflash_dualflexpress_divthree-p005.aig
-Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./hwmcc1920/aig/qspiflash_dualflexpress_divthree-p005.aig
-Started at: Wed 07 May 2025 06:19:12 PM CST
+File: ./hwmcc20/aig-1.8/qspiflash_dualflexpress_divthree-p005.aig
+Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./hwmcc20/aig-1.8/qspiflash_dualflexpress_divthree-p005.aig
+Started at: Thu 08 May 2025 05:49:24 AM CST
 ----------------------------------------
-Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc1920/aig/qspiflash_dualflexpress_divthree-p005.aig
-[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 34, 68]
-72 2 6 16 14 10 17 18 11 12 20 9 8 6 8 1 1 10 5 1 2 3 2 2 4 3 11 8 1 2 1 3 5 1 1 2 3 1 1 2 6 0 153 
+Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc20/aig-1.8/qspiflash_dualflexpress_divthree-p005.aig
+Warning: property not found, moved 1 outputs to bad properties
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 129, 110]
+73 11 15 27 36 39 31 42 38 29 28 22 35 26 30 26 45 56 40 45 50 49 64 32 15 14 24 15 15 8 8 14 7 21 13 8 13 8 4 5 3 6 6 5 9 4 7 8 10 20 46 19 9 12 39 21 24 27 16 6 6 0 334 
 
 --- Contextual MAB Statistics ---
 Arm pulls:
-  Arm 0 (Balanced Heuristic): 17 pulls
-  Arm 1 (Aggressive Heuristic): 6 pulls
-  Arm 2 (Conservative Heuristic): 4 pulls
-  Arm 3 (limit=0, max=0, level=0): 4 pulls
-  Arm 4 (limit=1, max=3, level=1): 85 pulls
-  Arm 5 (limit=2, max=5, level=1): 223 pulls
-  Arm 6 (limit=8, max=4, level=1): 8 pulls
+  Arm 0 (Balanced Heuristic): 3 pulls
+  Arm 1 (Aggressive Heuristic): 43 pulls
+  Arm 2 (Conservative Heuristic): 3 pulls
+  Arm 3 (limit=0, max=0, level=0): 78 pulls
+  Arm 4 (limit=1, max=3, level=1): 274 pulls
+  Arm 5 (limit=2, max=5, level=1): 4 pulls
+  Arm 6 (limit=8, max=4, level=1): 480 pulls
 ----------------------------
 SolverStatistic {
-    num_solve: 12959,
-    avg_decide_var: 0.552738,
+    num_solve: 98786,
+    avg_decide_var: 0.574947,
     num_simplify_subsume: 0,
     num_simplify_self_subsume: 0,
 }
 Statistic {
     case: qspiflash_dualflexpress_divthree-p005.aig,
-    time: 0.37s,
-    num_mic: 608,
-    avg_mic_cube_len: 4.856908,
-    avg_po_cube_len: 26.800539,
-    mic_drop: success: 564, fail: 2281, success rate: 19.82%,
-    num_down: 2845,
-    num_down_sat: 3831,
-    ctp: success: 0, fail: 4289, success rate: 0.00%,
-    num_get_bad: 120,
-    overall_block_time: 204.919744ms,
-    block_get_bad_time: 39.122059ms,
-    block_get_predecessor_time: 47.4363ms,
-    block_blocked_time: 4.717298ms,
-    block_mic_time: 177.789642ms,
-    block_push_time: 1.843485ms,
-    overall_propagate_time: 99.417782ms,
+    time: 2.23s,
+    num_mic: 2762,
+    avg_mic_cube_len: 6.783852,
+    avg_po_cube_len: 38.220571,
+    mic_drop: success: 3366, fail: 14709, success rate: 18.62%,
+    num_down: 18075,
+    num_down_sat: 25519,
+    ctp: success: 0, fail: 13264, success rate: 0.00%,
+    num_get_bad: 198,
+    overall_block_time: 1.312411103s,
+    block_get_bad_time: 69.751466ms,
+    block_get_predecessor_time: 348.119654ms,
+    block_blocked_time: 15.493727ms,
+    block_mic_time: 1.502636309s,
+    block_push_time: 13.125805ms,
+    overall_propagate_time: 837.203602ms,
     xor_gen: success: 0, fail: 0, success rate: NaN%,
     num_auxiliary_var: 0,
     test: success: 0, fail: 0, success rate: NaN%,
@@ -47,5 +48,5 @@ Statistic {
 result: safe
 ----------------------------------------
 STATUS: COMPLETED
-Finished at: Wed 07 May 2025 06:19:12 PM CST
+Finished at: Thu 08 May 2025 05:49:26 AM CST
 ========================================

@@ -1,0 +1,51 @@
+File: ./avr/opensource/vcegar_arrays_itc99_b12_p1/vcegar_arrays_itc99_b12_p1.aig
+Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./avr/opensource/vcegar_arrays_itc99_b12_p1/vcegar_arrays_itc99_b12_p1.aig
+Started at: Thu 08 May 2025 04:17:51 AM CST
+----------------------------------------
+Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/avr/opensource/vcegar_arrays_itc99_b12_p1/vcegar_arrays_itc99_b12_p1.aig
+[1, 1, 1, 3, 3, 3, 3, 5, 14, 24]
+112 3 3 3 6 12 16 15 13 
+
+--- Contextual MAB Statistics ---
+Arm pulls:
+  Arm 0 (Balanced Heuristic): 1 pulls
+  Arm 1 (Aggressive Heuristic): 4 pulls
+  Arm 2 (Conservative Heuristic): 1 pulls
+  Arm 3 (limit=0, max=0, level=0): 78 pulls
+  Arm 4 (limit=1, max=3, level=1): 0 pulls
+  Arm 5 (limit=2, max=5, level=1): 0 pulls
+  Arm 6 (limit=8, max=4, level=1): 0 pulls
+----------------------------
+SolverStatistic {
+    num_solve: 671,
+    avg_decide_var: 0.282751,
+    num_simplify_subsume: 0,
+    num_simplify_self_subsume: 0,
+}
+Statistic {
+    case: vcegar_arrays_itc99_b12_p1.aig,
+    time: 0.05s,
+    num_mic: 84,
+    avg_mic_cube_len: 3.904762,
+    avg_po_cube_len: 14.868421,
+    mic_drop: success: 98, fail: 215, success rate: 31.31%,
+    num_down: 313,
+    num_down_sat: 356,
+    ctp: success: 0, fail: 33, success rate: 0.00%,
+    num_get_bad: 17,
+    overall_block_time: 22.420159ms,
+    block_get_bad_time: 4.308643ms,
+    block_get_predecessor_time: 3.029298ms,
+    block_blocked_time: 3.546711ms,
+    block_mic_time: 8.822049ms,
+    block_push_time: 226.849µs,
+    overall_propagate_time: 1.780851ms,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: unsafe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Thu 08 May 2025 04:17:51 AM CST
+========================================

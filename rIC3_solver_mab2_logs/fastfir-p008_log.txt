@@ -1,0 +1,51 @@
+File: ./others/fastfir/aig/fastfir-p008.aig
+Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./others/fastfir/aig/fastfir-p008.aig
+Started at: Thu 08 May 2025 12:18:13 AM CST
+----------------------------------------
+Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/others/fastfir/aig/fastfir-p008.aig
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3738, 9138]
+534 21 38 62 83 230 254 349 505 707 784 860 1227 1086 1164 1466 1267 2964 1917 1598 1155 831 593 471 359 325 220 134 47 21 12 3 0 9984 
+
+--- Contextual MAB Statistics ---
+Arm pulls:
+  Arm 0 (Balanced Heuristic): 72 pulls
+  Arm 1 (Aggressive Heuristic): 18360 pulls
+  Arm 2 (Conservative Heuristic): 39 pulls
+  Arm 3 (limit=0, max=0, level=0): 568 pulls
+  Arm 4 (limit=1, max=3, level=1): 14402 pulls
+  Arm 5 (limit=2, max=5, level=1): 2136 pulls
+  Arm 6 (limit=8, max=4, level=1): 7985 pulls
+----------------------------
+SolverStatistic {
+    num_solve: 1138201,
+    avg_decide_var: 0.848656,
+    num_simplify_subsume: 15790,
+    num_simplify_self_subsume: 12863,
+}
+Statistic {
+    case: fastfir-p008.aig,
+    time: 461.81s,
+    num_mic: 46644,
+    avg_mic_cube_len: 7.046694,
+    avg_po_cube_len: 147.541979,
+    mic_drop: success: 47631, fail: 271463, success rate: 14.93%,
+    num_down: 319094,
+    num_down_sat: 377043,
+    ctp: success: 0, fail: 192392, success rate: 0.00%,
+    num_get_bad: 2976,
+    overall_block_time: 380.78938242s,
+    block_get_bad_time: 7.341000948s,
+    block_get_predecessor_time: 134.685532124s,
+    block_blocked_time: 13.902128299s,
+    block_mic_time: 330.195439124s,
+    block_push_time: 4.025413307s,
+    overall_propagate_time: 79.94309246s,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: safe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Thu 08 May 2025 12:25:56 AM CST
+========================================

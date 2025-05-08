@@ -1,0 +1,51 @@
+File: ./avr/crafted/sw_sym_ex/sw_sym_ex.aig
+Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./avr/crafted/sw_sym_ex/sw_sym_ex.aig
+Started at: Thu 08 May 2025 04:20:06 AM CST
+----------------------------------------
+Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/avr/crafted/sw_sym_ex/sw_sym_ex.aig
+[0, 0, 0, 0, 0, 0, 0, 17, 9]
+25 4 3 2 2 1 0 9 
+
+--- Contextual MAB Statistics ---
+Arm pulls:
+  Arm 0 (Balanced Heuristic): 1 pulls
+  Arm 1 (Aggressive Heuristic): 19 pulls
+  Arm 2 (Conservative Heuristic): 0 pulls
+  Arm 3 (limit=0, max=0, level=0): 0 pulls
+  Arm 4 (limit=1, max=3, level=1): 0 pulls
+  Arm 5 (limit=2, max=5, level=1): 0 pulls
+  Arm 6 (limit=8, max=4, level=1): 0 pulls
+----------------------------
+SolverStatistic {
+    num_solve: 153,
+    avg_decide_var: 0.824052,
+    num_simplify_subsume: 0,
+    num_simplify_self_subsume: 0,
+}
+Statistic {
+    case: sw_sym_ex.aig,
+    time: 0.01s,
+    num_mic: 23,
+    avg_mic_cube_len: 1.565217,
+    avg_po_cube_len: 21.395973,
+    mic_drop: success: 2, fail: 34, success rate: 5.56%,
+    num_down: 36,
+    num_down_sat: 18,
+    ctp: success: 0, fail: 42, success rate: 0.00%,
+    num_get_bad: 16,
+    overall_block_time: 2.633802ms,
+    block_get_bad_time: 684.237µs,
+    block_get_predecessor_time: 622.356µs,
+    block_blocked_time: 436.526µs,
+    block_mic_time: 233.582µs,
+    block_push_time: 46.239µs,
+    overall_propagate_time: 215.637µs,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: safe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Thu 08 May 2025 04:20:06 AM CST
+========================================

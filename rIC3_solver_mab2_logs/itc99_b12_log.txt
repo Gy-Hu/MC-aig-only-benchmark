@@ -1,0 +1,51 @@
+File: ./avr/opensource/itc99_b12/itc99_b12.aig
+Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./avr/opensource/itc99_b12/itc99_b12.aig
+Started at: Thu 08 May 2025 04:18:02 AM CST
+----------------------------------------
+Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/avr/opensource/itc99_b12/itc99_b12.aig
+[1, 1, 1, 4, 2, 1, 2, 4, 50, 21]
+119 3 5 4 6 9 21 21 18 
+
+--- Contextual MAB Statistics ---
+Arm pulls:
+  Arm 0 (Balanced Heuristic): 113 pulls
+  Arm 1 (Aggressive Heuristic): 1 pulls
+  Arm 2 (Conservative Heuristic): 2 pulls
+  Arm 3 (limit=0, max=0, level=0): 1 pulls
+  Arm 4 (limit=1, max=3, level=1): 1 pulls
+  Arm 5 (limit=2, max=5, level=1): 1 pulls
+  Arm 6 (limit=8, max=4, level=1): 1 pulls
+----------------------------
+SolverStatistic {
+    num_solve: 913,
+    avg_decide_var: 0.274868,
+    num_simplify_subsume: 0,
+    num_simplify_self_subsume: 0,
+}
+Statistic {
+    case: itc99_b12.aig,
+    time: 0.06s,
+    num_mic: 120,
+    avg_mic_cube_len: 3.541667,
+    avg_po_cube_len: 17.182927,
+    mic_drop: success: 119, fail: 287, success rate: 29.31%,
+    num_down: 406,
+    num_down_sat: 444,
+    ctp: success: 0, fail: 68, success rate: 0.00%,
+    num_get_bad: 32,
+    overall_block_time: 29.878965ms,
+    block_get_bad_time: 9.430725ms,
+    block_get_predecessor_time: 4.308185ms,
+    block_blocked_time: 4.254831ms,
+    block_mic_time: 7.776292ms,
+    block_push_time: 161.557µs,
+    overall_propagate_time: 3.519367ms,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: unsafe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Thu 08 May 2025 04:18:03 AM CST
+========================================

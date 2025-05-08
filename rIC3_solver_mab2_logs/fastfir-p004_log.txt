@@ -1,0 +1,51 @@
+File: ./others/fastfir/aig/fastfir-p004.aig
+Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./others/fastfir/aig/fastfir-p004.aig
+Started at: Thu 08 May 2025 12:05:47 AM CST
+----------------------------------------
+Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/others/fastfir/aig/fastfir-p004.aig
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 6793, 20802]
+780 24 46 68 91 229 238 374 524 764 793 942 1053 1296 1438 1659 1835 2182 5114 3967 3516 3207 2638 2156 1789 1830 1197 880 741 582 324 235 120 74 151 180 106 50 35 20 15 6 5 2 1 1 0 24008 
+
+--- Contextual MAB Statistics ---
+Arm pulls:
+  Arm 0 (Balanced Heuristic): 13 pulls
+  Arm 1 (Aggressive Heuristic): 843 pulls
+  Arm 2 (Conservative Heuristic): 273 pulls
+  Arm 3 (limit=0, max=0, level=0): 7679 pulls
+  Arm 4 (limit=1, max=3, level=1): 13 pulls
+  Arm 5 (limit=2, max=5, level=1): 32511 pulls
+  Arm 6 (limit=8, max=4, level=1): 36504 pulls
+----------------------------
+SolverStatistic {
+    num_solve: 3345021,
+    avg_decide_var: 0.772913,
+    num_simplify_subsume: 52495,
+    num_simplify_self_subsume: 38121,
+}
+Statistic {
+    case: fastfir-p004.aig,
+    time: 1917.58s,
+    num_mic: 87660,
+    avg_mic_cube_len: 7.431314,
+    avg_po_cube_len: 152.860335,
+    mic_drop: success: 111691, fail: 522226, success rate: 17.62%,
+    num_down: 633917,
+    num_down_sat: 764122,
+    ctp: success: 0, fail: 680662, success rate: 0.00%,
+    num_get_bad: 3813,
+    overall_block_time: 1551.297289926s,
+    block_get_bad_time: 14.97588299s,
+    block_get_predecessor_time: 562.217597632s,
+    block_blocked_time: 34.862169371s,
+    block_mic_time: 1423.403128589s,
+    block_push_time: 21.95438371s,
+    overall_propagate_time: 364.465756002s,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: safe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Thu 08 May 2025 12:37:46 AM CST
+========================================

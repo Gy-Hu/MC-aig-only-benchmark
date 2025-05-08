@@ -1,0 +1,52 @@
+File: ./hwmcc11/single/pdtswvtms14x8p1.aig
+Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./hwmcc11/single/pdtswvtms14x8p1.aig
+Started at: Thu 08 May 2025 03:49:36 AM CST
+----------------------------------------
+Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc11/single/pdtswvtms14x8p1.aig
+Warning: property not found, moved 1 outputs to bad properties
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 557, 815]
+58 5 2 1 10 13 10 12 3 6 10 17 25 11 3 1 1 1 1 1 1 1 1 1 1 0 1298 
+
+--- Contextual MAB Statistics ---
+Arm pulls:
+  Arm 0 (Balanced Heuristic): 1 pulls
+  Arm 1 (Aggressive Heuristic): 1 pulls
+  Arm 2 (Conservative Heuristic): 1 pulls
+  Arm 3 (limit=0, max=0, level=0): 1 pulls
+  Arm 4 (limit=1, max=3, level=1): 1169 pulls
+  Arm 5 (limit=2, max=5, level=1): 0 pulls
+  Arm 6 (limit=8, max=4, level=1): 0 pulls
+----------------------------
+SolverStatistic {
+    num_solve: 77794,
+    avg_decide_var: 0.703715,
+    num_simplify_subsume: 0,
+    num_simplify_self_subsume: 0,
+}
+Statistic {
+    case: pdtswvtms14x8p1.aig,
+    time: 1.82s,
+    num_mic: 1716,
+    avg_mic_cube_len: 11.106061,
+    avg_po_cube_len: 23.713900,
+    mic_drop: success: 1762, fail: 16575, success rate: 9.61%,
+    num_down: 18337,
+    num_down_sat: 39986,
+    ctp: success: 0, fail: 17227, success rate: 0.00%,
+    num_get_bad: 281,
+    overall_block_time: 1.368213668s,
+    block_get_bad_time: 35.157837ms,
+    block_get_predecessor_time: 314.660638ms,
+    block_blocked_time: 64.034322ms,
+    block_mic_time: 1.36819358s,
+    block_push_time: 85.36317ms,
+    overall_propagate_time: 429.697375ms,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: safe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Thu 08 May 2025 03:49:38 AM CST
+========================================

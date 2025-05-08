@@ -1,0 +1,51 @@
+File: ./avr/opensource/AR/AR.aig
+Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./avr/opensource/AR/AR.aig
+Started at: Thu 08 May 2025 04:15:54 AM CST
+----------------------------------------
+Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/avr/opensource/AR/AR.aig
+[0, 0, 0, 0, 0, 2, 249]
+502 4 4 2 0 251 
+
+--- Contextual MAB Statistics ---
+Arm pulls:
+  Arm 0 (Balanced Heuristic): 36 pulls
+  Arm 1 (Aggressive Heuristic): 46 pulls
+  Arm 2 (Conservative Heuristic): 35 pulls
+  Arm 3 (limit=0, max=0, level=0): 35 pulls
+  Arm 4 (limit=1, max=3, level=1): 35 pulls
+  Arm 5 (limit=2, max=5, level=1): 35 pulls
+  Arm 6 (limit=8, max=4, level=1): 35 pulls
+----------------------------
+SolverStatistic {
+    num_solve: 1330,
+    avg_decide_var: inf,
+    num_simplify_subsume: 0,
+    num_simplify_self_subsume: 0,
+}
+Statistic {
+    case: AR.aig,
+    time: 0.07s,
+    num_mic: 265,
+    avg_mic_cube_len: 1.139623,
+    avg_po_cube_len: 289.790909,
+    mic_drop: success: 5, fail: 292, success rate: 1.68%,
+    num_down: 297,
+    num_down_sat: 50,
+    ctp: success: 0, fail: 982, success rate: 0.00%,
+    num_get_bad: 256,
+    overall_block_time: 46.179352ms,
+    block_get_bad_time: 8.22349ms,
+    block_get_predecessor_time: 577.772µs,
+    block_blocked_time: 2.291933ms,
+    block_mic_time: 1.241515ms,
+    block_push_time: 18.157µs,
+    overall_propagate_time: 2.989445ms,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: safe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Thu 08 May 2025 04:15:54 AM CST
+========================================

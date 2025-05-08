@@ -1,45 +1,46 @@
-File: ./hwmcc1920/fraig/shift_register_top_w32_d16_e0.aig
-Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./hwmcc1920/fraig/shift_register_top_w32_d16_e0.aig
-Started at: Wed 07 May 2025 04:10:55 PM CST
+File: ./hwmcc20/aig-1.8/shift_register_top_w32_d16_e0.aig
+Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./hwmcc20/aig-1.8/shift_register_top_w32_d16_e0.aig
+Started at: Thu 08 May 2025 06:19:13 AM CST
 ----------------------------------------
-Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc1920/fraig/shift_register_top_w32_d16_e0.aig
-[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 700, 682]
-1 6 8 76 76 139 74 204 142 142 141 268 206 591 593 455 743 675 726 
+Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc20/aig-1.8/shift_register_top_w32_d16_e0.aig
+Warning: property not found, moved 1 outputs to bad properties
+[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 594, 649]
+2 6 97 194 133 167 138 141 145 202 78 213 144 318 396 634 1103 603 653 
 
 --- Contextual MAB Statistics ---
 Arm pulls:
-  Arm 0 (Balanced Heuristic): 19 pulls
-  Arm 1 (Aggressive Heuristic): 18 pulls
-  Arm 2 (Conservative Heuristic): 45 pulls
-  Arm 3 (limit=0, max=0, level=0): 18 pulls
-  Arm 4 (limit=1, max=3, level=1): 1282 pulls
-  Arm 5 (limit=2, max=5, level=1): 5264 pulls
-  Arm 6 (limit=8, max=4, level=1): 19 pulls
+  Arm 0 (Balanced Heuristic): 20 pulls
+  Arm 1 (Aggressive Heuristic): 20 pulls
+  Arm 2 (Conservative Heuristic): 33 pulls
+  Arm 3 (limit=0, max=0, level=0): 20 pulls
+  Arm 4 (limit=1, max=3, level=1): 21 pulls
+  Arm 5 (limit=2, max=5, level=1): 20 pulls
+  Arm 6 (limit=8, max=4, level=1): 6258 pulls
 ----------------------------
 SolverStatistic {
-    num_solve: 160608,
-    avg_decide_var: 0.349081,
-    num_simplify_subsume: 237,
-    num_simplify_self_subsume: 539,
+    num_solve: 277191,
+    avg_decide_var: 0.338021,
+    num_simplify_subsume: 352,
+    num_simplify_self_subsume: 910,
 }
 Statistic {
     case: shift_register_top_w32_d16_e0.aig,
-    time: 5.14s,
-    num_mic: 7139,
-    avg_mic_cube_len: 9.129850,
-    avg_po_cube_len: 14.606450,
-    mic_drop: success: 6558, fail: 57462, success rate: 10.24%,
-    num_down: 64020,
-    num_down_sat: 81258,
-    ctp: success: 0, fail: 4987, success rate: 0.00%,
-    num_get_bad: 159,
-    overall_block_time: 4.54960536s,
-    block_get_bad_time: 63.643535ms,
-    block_get_predecessor_time: 693.287337ms,
-    block_blocked_time: 228.379649ms,
-    block_mic_time: 4.269821334s,
-    block_push_time: 17.987084ms,
-    overall_propagate_time: 512.050868ms,
+    time: 9.22s,
+    num_mic: 7188,
+    avg_mic_cube_len: 10.010851,
+    avg_po_cube_len: 15.598846,
+    mic_drop: success: 6359, fail: 63976, success rate: 9.04%,
+    num_down: 70335,
+    num_down_sat: 86854,
+    ctp: success: 0, fail: 4640, success rate: 0.00%,
+    num_get_bad: 162,
+    overall_block_time: 8.699161471s,
+    block_get_bad_time: 56.91208ms,
+    block_get_predecessor_time: 1.67744415s,
+    block_blocked_time: 218.209887ms,
+    block_mic_time: 8.475493244s,
+    block_push_time: 26.784156ms,
+    overall_propagate_time: 450.185289ms,
     xor_gen: success: 0, fail: 0, success rate: NaN%,
     num_auxiliary_var: 0,
     test: success: 0, fail: 0, success rate: NaN%,
@@ -47,5 +48,5 @@ Statistic {
 result: unsafe
 ----------------------------------------
 STATUS: COMPLETED
-Finished at: Wed 07 May 2025 04:11:00 PM CST
+Finished at: Thu 08 May 2025 06:19:22 AM CST
 ========================================

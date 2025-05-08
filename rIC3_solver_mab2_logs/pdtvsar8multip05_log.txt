@@ -1,0 +1,52 @@
+File: ./hwmcc11/single/pdtvsar8multip05.aig
+Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./hwmcc11/single/pdtvsar8multip05.aig
+Started at: Thu 08 May 2025 03:17:42 AM CST
+----------------------------------------
+Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc11/single/pdtvsar8multip05.aig
+Warning: property not found, moved 1 outputs to bad properties
+[0, 0, 0, 0, 0, 192]
+128 1 1 0 192 
+
+--- Contextual MAB Statistics ---
+Arm pulls:
+  Arm 0 (Balanced Heuristic): 1 pulls
+  Arm 1 (Aggressive Heuristic): 1 pulls
+  Arm 2 (Conservative Heuristic): 192 pulls
+  Arm 3 (limit=0, max=0, level=0): 0 pulls
+  Arm 4 (limit=1, max=3, level=1): 0 pulls
+  Arm 5 (limit=2, max=5, level=1): 0 pulls
+  Arm 6 (limit=8, max=4, level=1): 0 pulls
+----------------------------
+SolverStatistic {
+    num_solve: 4059,
+    avg_decide_var: 0.196636,
+    num_simplify_subsume: 0,
+    num_simplify_self_subsume: 0,
+}
+Statistic {
+    case: pdtvsar8multip05.aig,
+    time: 0.06s,
+    num_mic: 194,
+    avg_mic_cube_len: 11.819588,
+    avg_po_cube_len: 16.542373,
+    mic_drop: success: 50, fail: 2243, success rate: 2.18%,
+    num_down: 2293,
+    num_down_sat: 3412,
+    ctp: success: 0, fail: 192, success rate: 0.00%,
+    num_get_bad: 68,
+    overall_block_time: 46.301487ms,
+    block_get_bad_time: 4.534072ms,
+    block_get_predecessor_time: 2.993167ms,
+    block_blocked_time: 3.365292ms,
+    block_mic_time: 30.306528ms,
+    block_push_time: 1.161774ms,
+    overall_propagate_time: 2.006003ms,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: safe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Thu 08 May 2025 03:17:42 AM CST
+========================================

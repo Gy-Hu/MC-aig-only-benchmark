@@ -1,0 +1,51 @@
+File: ./others/fastfir/aig/fastfir-p011.aig
+Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./others/fastfir/aig/fastfir-p011.aig
+Started at: Thu 08 May 2025 12:19:19 AM CST
+----------------------------------------
+Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/others/fastfir/aig/fastfir-p011.aig
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 948, 3095]
+370 27 40 63 82 233 239 379 454 859 697 529 176 314 181 595 108 161 780 590 471 328 164 32 32 1 0 3535 
+
+--- Contextual MAB Statistics ---
+Arm pulls:
+  Arm 0 (Balanced Heuristic): 1260 pulls
+  Arm 1 (Aggressive Heuristic): 25 pulls
+  Arm 2 (Conservative Heuristic): 49 pulls
+  Arm 3 (limit=0, max=0, level=0): 163 pulls
+  Arm 4 (limit=1, max=3, level=1): 2861 pulls
+  Arm 5 (limit=2, max=5, level=1): 4686 pulls
+  Arm 6 (limit=8, max=4, level=1): 5093 pulls
+----------------------------
+SolverStatistic {
+    num_solve: 359904,
+    avg_decide_var: 0.907768,
+    num_simplify_subsume: 2263,
+    num_simplify_self_subsume: 934,
+}
+Statistic {
+    case: fastfir-p011.aig,
+    time: 132.78s,
+    num_mic: 15755,
+    avg_mic_cube_len: 6.926373,
+    avg_po_cube_len: 114.443532,
+    mic_drop: success: 15966, fail: 88275, success rate: 15.32%,
+    num_down: 104241,
+    num_down_sat: 122247,
+    ctp: success: 0, fail: 57232, success rate: 0.00%,
+    num_get_bad: 1499,
+    overall_block_time: 113.550705365s,
+    block_get_bad_time: 3.298743327s,
+    block_get_predecessor_time: 42.658269652s,
+    block_blocked_time: 3.298022788s,
+    block_mic_time: 100.017345999s,
+    block_push_time: 690.973037ms,
+    overall_propagate_time: 18.47575442s,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: safe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Thu 08 May 2025 12:21:33 AM CST
+========================================

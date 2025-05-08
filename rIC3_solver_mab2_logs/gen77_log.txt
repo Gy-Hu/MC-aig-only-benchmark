@@ -1,0 +1,51 @@
+File: ./avr/industry/gen77/gen77.aig
+Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./avr/industry/gen77/gen77.aig
+Started at: Thu 08 May 2025 05:35:28 AM CST
+----------------------------------------
+Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/avr/industry/gen77/gen77.aig
+[0, 0, 0, 2460]
+8 0 2460 
+
+--- Contextual MAB Statistics ---
+Arm pulls:
+  Arm 0 (Balanced Heuristic): 345 pulls
+  Arm 1 (Aggressive Heuristic): 314 pulls
+  Arm 2 (Conservative Heuristic): 328 pulls
+  Arm 3 (limit=0, max=0, level=0): 314 pulls
+  Arm 4 (limit=1, max=3, level=1): 429 pulls
+  Arm 5 (limit=2, max=5, level=1): 379 pulls
+  Arm 6 (limit=8, max=4, level=1): 351 pulls
+----------------------------
+SolverStatistic {
+    num_solve: 25335,
+    avg_decide_var: 0.081892,
+    num_simplify_subsume: 0,
+    num_simplify_self_subsume: 0,
+}
+Statistic {
+    case: gen77.aig,
+    time: 2.44s,
+    num_mic: 2460,
+    avg_mic_cube_len: 8.299187,
+    avg_po_cube_len: 13.176016,
+    mic_drop: success: 17, fail: 20397, success rate: 0.08%,
+    num_down: 20414,
+    num_down_sat: 20414,
+    ctp: success: 0, fail: 2460, success rate: 0.00%,
+    num_get_bad: 2462,
+    overall_block_time: 2.361178994s,
+    block_get_bad_time: 931.830265ms,
+    block_get_predecessor_time: 94.721849ms,
+    block_blocked_time: 34.204943ms,
+    block_mic_time: 298.855583ms,
+    block_push_time: 42.115µs,
+    overall_propagate_time: 58.958124ms,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: safe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Thu 08 May 2025 05:35:31 AM CST
+========================================

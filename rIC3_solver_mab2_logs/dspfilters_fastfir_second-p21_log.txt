@@ -1,45 +1,46 @@
-File: ./hwmcc19/single/aig/wolf/2019C/dspfilters_fastfir_second-p21.aig
-Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./hwmcc19/single/aig/wolf/2019C/dspfilters_fastfir_second-p21.aig
-Started at: Wed 07 May 2025 07:01:46 PM CST
+File: ./hwmcc20/aig-1.8/dspfilters_fastfir_second-p21.aig
+Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./hwmcc20/aig-1.8/dspfilters_fastfir_second-p21.aig
+Started at: Thu 08 May 2025 05:53:01 AM CST
 ----------------------------------------
-Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc19/single/aig/wolf/2019C/dspfilters_fastfir_second-p21.aig
-[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 201, 189]
-1091 17 14 13 15 20 17 88 4 93 3 16 5 123 10 9 5 1 0 347 
+Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc20/aig-1.8/dspfilters_fastfir_second-p21.aig
+Warning: property not found, moved 1 outputs to bad properties
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 365, 162]
+1092 32 30 18 19 15 14 18 14 9 15 23 30 51 121 195 32 92 8 37 2 21 2 2 1 2 0 344 
 
 --- Contextual MAB Statistics ---
 Arm pulls:
-  Arm 0 (Balanced Heuristic): 328 pulls
+  Arm 0 (Balanced Heuristic): 7 pulls
   Arm 1 (Aggressive Heuristic): 7 pulls
-  Arm 2 (Conservative Heuristic): 5 pulls
-  Arm 3 (limit=0, max=0, level=0): 5 pulls
-  Arm 4 (limit=1, max=3, level=1): 20 pulls
-  Arm 5 (limit=2, max=5, level=1): 308 pulls
-  Arm 6 (limit=8, max=4, level=1): 5 pulls
+  Arm 2 (Conservative Heuristic): 7 pulls
+  Arm 3 (limit=0, max=0, level=0): 7 pulls
+  Arm 4 (limit=1, max=3, level=1): 21 pulls
+  Arm 5 (limit=2, max=5, level=1): 437 pulls
+  Arm 6 (limit=8, max=4, level=1): 181 pulls
 ----------------------------
 SolverStatistic {
-    num_solve: 128974,
-    avg_decide_var: 0.794270,
+    num_solve: 44441,
+    avg_decide_var: 0.744305,
     num_simplify_subsume: 0,
     num_simplify_self_subsume: 0,
 }
 Statistic {
     case: dspfilters_fastfir_second-p21.aig,
-    time: 32.91s,
-    num_mic: 1088,
-    avg_mic_cube_len: 95.557904,
-    avg_po_cube_len: 190.500408,
-    mic_drop: success: 97566, fail: 5532, success rate: 94.63%,
-    num_down: 103098,
-    num_down_sat: 119991,
-    ctp: success: 0, fail: 3374, success rate: 0.00%,
-    num_get_bad: 409,
-    overall_block_time: 31.434974895s,
-    block_get_bad_time: 940.522391ms,
-    block_get_predecessor_time: 2.0411616s,
-    block_blocked_time: 193.85823ms,
-    block_mic_time: 52.064676359s,
-    block_push_time: 69.590202ms,
-    overall_propagate_time: 733.174305ms,
+    time: 21.70s,
+    num_mic: 1831,
+    avg_mic_cube_len: 12.225014,
+    avg_po_cube_len: 176.346121,
+    mic_drop: success: 14740, fail: 7392, success rate: 66.60%,
+    num_down: 22132,
+    num_down_sat: 25125,
+    ctp: success: 0, fail: 4854, success rate: 0.00%,
+    num_get_bad: 554,
+    overall_block_time: 18.688109161s,
+    block_get_bad_time: 1.438160015s,
+    block_get_predecessor_time: 4.753167178s,
+    block_blocked_time: 238.039542ms,
+    block_mic_time: 19.099181206s,
+    block_push_time: 56.251891ms,
+    overall_propagate_time: 1.843412857s,
     xor_gen: success: 0, fail: 0, success rate: NaN%,
     num_auxiliary_var: 0,
     test: success: 0, fail: 0, success rate: NaN%,
@@ -47,5 +48,5 @@ Statistic {
 result: safe
 ----------------------------------------
 STATUS: COMPLETED
-Finished at: Wed 07 May 2025 07:02:20 PM CST
+Finished at: Thu 08 May 2025 05:53:25 AM CST
 ========================================

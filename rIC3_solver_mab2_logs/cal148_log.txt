@@ -1,0 +1,51 @@
+File: ./avr/industry/cal148/cal148.aig
+Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./avr/industry/cal148/cal148.aig
+Started at: Thu 08 May 2025 04:43:05 AM CST
+----------------------------------------
+Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/avr/industry/cal148/cal148.aig
+[0, 0, 0, 0, 0, 0, 0, 568]
+468 1 4 0 29 22 549 0 
+
+--- Contextual MAB Statistics ---
+Arm pulls:
+  Arm 0 (Balanced Heuristic): 1 pulls
+  Arm 1 (Aggressive Heuristic): 782 pulls
+  Arm 2 (Conservative Heuristic): 0 pulls
+  Arm 3 (limit=0, max=0, level=0): 0 pulls
+  Arm 4 (limit=1, max=3, level=1): 0 pulls
+  Arm 5 (limit=2, max=5, level=1): 0 pulls
+  Arm 6 (limit=8, max=4, level=1): 0 pulls
+----------------------------
+SolverStatistic {
+    num_solve: 15880,
+    avg_decide_var: 0.256307,
+    num_simplify_subsume: 0,
+    num_simplify_self_subsume: 0,
+}
+Statistic {
+    case: cal148.aig,
+    time: 10.75s,
+    num_mic: 1067,
+    avg_mic_cube_len: 9.332709,
+    avg_po_cube_len: 54.230394,
+    mic_drop: success: 3393, fail: 5256, success rate: 39.23%,
+    num_down: 8649,
+    num_down_sat: 10191,
+    ctp: success: 0, fail: 1191, success rate: 0.00%,
+    num_get_bad: 245,
+    overall_block_time: 10.071172505s,
+    block_get_bad_time: 7.351410798s,
+    block_get_predecessor_time: 293.855591ms,
+    block_blocked_time: 354.963537ms,
+    block_mic_time: 1.803889705s,
+    block_push_time: 321.873278ms,
+    overall_propagate_time: 538.172653ms,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: safe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Thu 08 May 2025 04:43:17 AM CST
+========================================

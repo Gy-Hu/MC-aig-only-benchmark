@@ -1,0 +1,51 @@
+File: ./others/vgasim-imgfifo/aig/imgfifo-p076.aig
+Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./others/vgasim-imgfifo/aig/imgfifo-p076.aig
+Started at: Wed 07 May 2025 11:56:38 PM CST
+----------------------------------------
+Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/others/vgasim-imgfifo/aig/imgfifo-p076.aig
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 349, 279]
+395 15 6 7 22 27 21 34 25 44 34 31 3 0 286 
+
+--- Contextual MAB Statistics ---
+Arm pulls:
+  Arm 0 (Balanced Heuristic): 1074 pulls
+  Arm 1 (Aggressive Heuristic): 41 pulls
+  Arm 2 (Conservative Heuristic): 7 pulls
+  Arm 3 (limit=0, max=0, level=0): 7 pulls
+  Arm 4 (limit=1, max=3, level=1): 7 pulls
+  Arm 5 (limit=2, max=5, level=1): 7 pulls
+  Arm 6 (limit=8, max=4, level=1): 7 pulls
+----------------------------
+SolverStatistic {
+    num_solve: 10682,
+    avg_decide_var: 0.375212,
+    num_simplify_subsume: 0,
+    num_simplify_self_subsume: 0,
+}
+Statistic {
+    case: imgfifo-p076.aig,
+    time: 0.42s,
+    num_mic: 1175,
+    avg_mic_cube_len: 4.801702,
+    avg_po_cube_len: 153.654379,
+    mic_drop: success: 602, fail: 4626, success rate: 11.51%,
+    num_down: 5228,
+    num_down_sat: 5356,
+    ctp: success: 0, fail: 1710, success rate: 0.00%,
+    num_get_bad: 214,
+    overall_block_time: 319.916564ms,
+    block_get_bad_time: 43.712109ms,
+    block_get_predecessor_time: 59.231555ms,
+    block_blocked_time: 33.620909ms,
+    block_mic_time: 113.663291ms,
+    block_push_time: 2.780012ms,
+    overall_propagate_time: 36.380324ms,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: safe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Wed 07 May 2025 11:56:39 PM CST
+========================================

@@ -1,0 +1,52 @@
+File: ./hwmcc11/single/pdtpmsviper.aig
+Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./hwmcc11/single/pdtpmsviper.aig
+Started at: Thu 08 May 2025 03:14:35 AM CST
+----------------------------------------
+Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc11/single/pdtpmsviper.aig
+Warning: property not found, moved 1 outputs to bad properties
+[0, 0, 0, 0, 0, 0, 0, 0, 925, 710]
+580 168 424 574 309 53 2 0 728 
+
+--- Contextual MAB Statistics ---
+Arm pulls:
+  Arm 0 (Balanced Heuristic): 178 pulls
+  Arm 1 (Aggressive Heuristic): 31 pulls
+  Arm 2 (Conservative Heuristic): 2665 pulls
+  Arm 3 (limit=0, max=0, level=0): 30 pulls
+  Arm 4 (limit=1, max=3, level=1): 30 pulls
+  Arm 5 (limit=2, max=5, level=1): 30 pulls
+  Arm 6 (limit=8, max=4, level=1): 52 pulls
+----------------------------
+SolverStatistic {
+    num_solve: 40429,
+    avg_decide_var: 0.447085,
+    num_simplify_subsume: 0,
+    num_simplify_self_subsume: 0,
+}
+Statistic {
+    case: pdtpmsviper.aig,
+    time: 98.39s,
+    num_mic: 3061,
+    avg_mic_cube_len: 9.102908,
+    avg_po_cube_len: 146.619224,
+    mic_drop: success: 13323, fail: 11323, success rate: 54.06%,
+    num_down: 24646,
+    num_down_sat: 25949,
+    ctp: success: 0, fail: 3568, success rate: 0.00%,
+    num_get_bad: 1082,
+    overall_block_time: 73.406409267s,
+    block_get_bad_time: 1.738372083s,
+    block_get_predecessor_time: 316.82674ms,
+    block_blocked_time: 6.127954647s,
+    block_mic_time: 64.389553285s,
+    block_push_time: 118.801892ms,
+    overall_propagate_time: 24.761016292s,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: safe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Thu 08 May 2025 03:16:14 AM CST
+========================================
