@@ -1,0 +1,51 @@
+File: ./hwmcc24/2024/hku/refinement_checking/bv/ILA_Piccolo_LHU_sanity.aig
+Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./hwmcc24/2024/hku/refinement_checking/bv/ILA_Piccolo_LHU_sanity.aig
+Started at: Thu 08 May 2025 08:44:03 AM CST
+----------------------------------------
+Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc24/2024/hku/refinement_checking/bv/ILA_Piccolo_LHU_sanity.aig
+[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 553]
+328 4 7 7 5 16 11 13 64 114 140 
+
+--- Contextual MAB Statistics ---
+Arm pulls:
+  Arm 0 (Balanced Heuristic): 6 pulls
+  Arm 1 (Aggressive Heuristic): 366 pulls
+  Arm 2 (Conservative Heuristic): 6 pulls
+  Arm 3 (limit=0, max=0, level=0): 6 pulls
+  Arm 4 (limit=1, max=3, level=1): 5 pulls
+  Arm 5 (limit=2, max=5, level=1): 8 pulls
+  Arm 6 (limit=8, max=4, level=1): 5 pulls
+----------------------------
+SolverStatistic {
+    num_solve: 4431,
+    avg_decide_var: 0.492997,
+    num_simplify_subsume: 0,
+    num_simplify_self_subsume: 0,
+}
+Statistic {
+    case: ILA_Piccolo_LHU_sanity.aig,
+    time: 11.82s,
+    num_mic: 512,
+    avg_mic_cube_len: 2.732422,
+    avg_po_cube_len: 2337.818117,
+    mic_drop: success: 222, fail: 1141, success rate: 16.29%,
+    num_down: 1363,
+    num_down_sat: 1424,
+    ctp: success: 0, fail: 612, success rate: 0.00%,
+    num_get_bad: 232,
+    overall_block_time: 10.37697948s,
+    block_get_bad_time: 2.458969782s,
+    block_get_predecessor_time: 2.510602449s,
+    block_blocked_time: 790.176605ms,
+    block_mic_time: 3.416086845s,
+    block_push_time: 17.324322ms,
+    overall_propagate_time: 452.314861ms,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: unsafe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Thu 08 May 2025 08:44:19 AM CST
+========================================

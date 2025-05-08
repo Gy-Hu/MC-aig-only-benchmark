@@ -1,0 +1,51 @@
+File: ./hwmcc24/2024/yosyshq/appnote_123/cv32e40x/yosyshq_appnote_123_cv32e40x-p217.aig
+Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./hwmcc24/2024/yosyshq/appnote_123/cv32e40x/yosyshq_appnote_123_cv32e40x-p217.aig
+Started at: Thu 08 May 2025 09:44:19 AM CST
+----------------------------------------
+Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc24/2024/yosyshq/appnote_123/cv32e40x/yosyshq_appnote_123_cv32e40x-p217.aig
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 82, 103]
+3288 4 1 2 1 40 9 44 77 45 31 1 0 108 
+
+--- Contextual MAB Statistics ---
+Arm pulls:
+  Arm 0 (Balanced Heuristic): 7 pulls
+  Arm 1 (Aggressive Heuristic): 77 pulls
+  Arm 2 (Conservative Heuristic): 4 pulls
+  Arm 3 (limit=0, max=0, level=0): 13 pulls
+  Arm 4 (limit=1, max=3, level=1): 13 pulls
+  Arm 5 (limit=2, max=5, level=1): 22 pulls
+  Arm 6 (limit=8, max=4, level=1): 262 pulls
+----------------------------
+SolverStatistic {
+    num_solve: 5058,
+    avg_decide_var: 0.041084,
+    num_simplify_subsume: 0,
+    num_simplify_self_subsume: 0,
+}
+Statistic {
+    case: yosyshq_appnote_123_cv32e40x-p217.aig,
+    time: 2.13s,
+    num_mic: 550,
+    avg_mic_cube_len: 2.967273,
+    avg_po_cube_len: 179.829177,
+    mic_drop: success: 257, fail: 1330, success rate: 16.19%,
+    num_down: 1587,
+    num_down_sat: 1156,
+    ctp: success: 0, fail: 763, success rate: 0.00%,
+    num_get_bad: 78,
+    overall_block_time: 1.016251208s,
+    block_get_bad_time: 539.356299ms,
+    block_get_predecessor_time: 148.052247ms,
+    block_blocked_time: 51.160621ms,
+    block_mic_time: 322.737013ms,
+    block_push_time: 2.395179ms,
+    overall_propagate_time: 78.690558ms,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: safe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Thu 08 May 2025 09:44:27 AM CST
+========================================

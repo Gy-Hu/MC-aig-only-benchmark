@@ -1,0 +1,51 @@
+File: ./hwmcc24/2024/hku/x-epic/a16-p012.aig
+Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./hwmcc24/2024/hku/x-epic/a16-p012.aig
+Started at: Thu 08 May 2025 09:08:36 AM CST
+----------------------------------------
+Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc24/2024/hku/x-epic/a16-p012.aig
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7631]
+194 210 959 950 2413 2727 3927 3585 2300 1791 1249 1072 549 336 382 1770 2230 1944 1184 737 326 284 351 209 231 220 201 258 286 232 212 132 26 58 80 46 37 51 62 24 22 17 14 12 39 94 80 58 82 22 13 18 26 10 18 7 10 1 0 14744 0 
+
+--- Contextual MAB Statistics ---
+Arm pulls:
+  Arm 0 (Balanced Heuristic): 29 pulls
+  Arm 1 (Aggressive Heuristic): 49 pulls
+  Arm 2 (Conservative Heuristic): 36 pulls
+  Arm 3 (limit=0, max=0, level=0): 70 pulls
+  Arm 4 (limit=1, max=3, level=1): 164 pulls
+  Arm 5 (limit=2, max=5, level=1): 30084 pulls
+  Arm 6 (limit=8, max=4, level=1): 3214 pulls
+----------------------------
+SolverStatistic {
+    num_solve: 3864427,
+    avg_decide_var: 0.442929,
+    num_simplify_subsume: 55529,
+    num_simplify_self_subsume: 25895,
+}
+Statistic {
+    case: a16-p012.aig,
+    time: 1962.15s,
+    num_mic: 80854,
+    avg_mic_cube_len: 9.941734,
+    avg_po_cube_len: 100.042385,
+    mic_drop: success: 145545, fail: 614516, success rate: 19.15%,
+    num_down: 760061,
+    num_down_sat: 1132714,
+    ctp: success: 0, fail: 620370, success rate: 0.00%,
+    num_get_bad: 3989,
+    overall_block_time: 1469.690915881s,
+    block_get_bad_time: 62.174717287s,
+    block_get_predecessor_time: 366.837080651s,
+    block_blocked_time: 50.569807982s,
+    block_mic_time: 1336.837969002s,
+    block_push_time: 23.037413258s,
+    overall_propagate_time: 490.936713825s,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: safe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Thu 08 May 2025 09:41:18 AM CST
+========================================

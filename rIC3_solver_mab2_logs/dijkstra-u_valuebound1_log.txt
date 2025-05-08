@@ -1,0 +1,52 @@
+File: ./hwmcc24/2024/sosylab/nla-digbench-scaling/dijkstra-u_valuebound1.aig
+Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./hwmcc24/2024/sosylab/nla-digbench-scaling/dijkstra-u_valuebound1.aig
+Started at: Thu 08 May 2025 10:25:39 AM CST
+----------------------------------------
+Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc24/2024/sosylab/nla-digbench-scaling/dijkstra-u_valuebound1.aig
+abc preprocess timeout
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 470]
+2 1 2 4 4 0 4 1 1 1 1 1 1 1 1 1 1 5 2 2 2 2 2 2 2 2 2 2 2 2 2 6 544 0 
+
+--- Contextual MAB Statistics ---
+Arm pulls:
+  Arm 0 (Balanced Heuristic): 5 pulls
+  Arm 1 (Aggressive Heuristic): 525 pulls
+  Arm 2 (Conservative Heuristic): 8 pulls
+  Arm 3 (limit=0, max=0, level=0): 5 pulls
+  Arm 4 (limit=1, max=3, level=1): 5 pulls
+  Arm 5 (limit=2, max=5, level=1): 5 pulls
+  Arm 6 (limit=8, max=4, level=1): 14 pulls
+----------------------------
+SolverStatistic {
+    num_solve: 22071,
+    avg_decide_var: 0.999977,
+    num_simplify_subsume: 0,
+    num_simplify_self_subsume: 0,
+}
+Statistic {
+    case: dijkstra-u_valuebound1.aig,
+    time: 278.54s,
+    num_mic: 919,
+    avg_mic_cube_len: 5.216540,
+    avg_po_cube_len: 165.920589,
+    mic_drop: success: 940, fail: 3687, success rate: 20.32%,
+    num_down: 4627,
+    num_down_sat: 6318,
+    ctp: success: 0, fail: 11949, success rate: 0.00%,
+    num_get_bad: 356,
+    overall_block_time: 180.857811946s,
+    block_get_bad_time: 44.87746289s,
+    block_get_predecessor_time: 24.761436083s,
+    block_blocked_time: 5.53340874s,
+    block_mic_time: 147.388634358s,
+    block_push_time: 3.600398509s,
+    overall_propagate_time: 84.552872797s,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: safe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Thu 08 May 2025 10:30:24 AM CST
+========================================

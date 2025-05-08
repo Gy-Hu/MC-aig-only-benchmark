@@ -1,0 +1,51 @@
+File: ./hwmcc24/2024/yosyshq/appnote_123/cv32e40x/yosyshq_appnote_123_cv32e40x-p749.aig
+Command: ~/coding_env/rIC3-MAB/target/release/rIC3 -e ic3 --ic3-enable-ctx-mab ./hwmcc24/2024/yosyshq/appnote_123/cv32e40x/yosyshq_appnote_123_cv32e40x-p749.aig
+Started at: Thu 08 May 2025 09:36:53 AM CST
+----------------------------------------
+Info: the model to be checked: /data/guangyuh/coding_env/MC-aig-only-benchmark/hwmcc24/2024/yosyshq/appnote_123/cv32e40x/yosyshq_appnote_123_cv32e40x-p749.aig
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 16, 10]
+3295 2 2 2 5 44 18 18 12 16 9 20 22 28 12 3 2 0 29 
+
+--- Contextual MAB Statistics ---
+Arm pulls:
+  Arm 0 (Balanced Heuristic): 1 pulls
+  Arm 1 (Aggressive Heuristic): 1 pulls
+  Arm 2 (Conservative Heuristic): 1 pulls
+  Arm 3 (limit=0, max=0, level=0): 1 pulls
+  Arm 4 (limit=1, max=3, level=1): 1 pulls
+  Arm 5 (limit=2, max=5, level=1): 29 pulls
+  Arm 6 (limit=8, max=4, level=1): 43 pulls
+----------------------------
+SolverStatistic {
+    num_solve: 4815,
+    avg_decide_var: 0.053828,
+    num_simplify_subsume: 0,
+    num_simplify_self_subsume: 0,
+}
+Statistic {
+    case: yosyshq_appnote_123_cv32e40x-p749.aig,
+    time: 2.19s,
+    num_mic: 403,
+    avg_mic_cube_len: 4.362283,
+    avg_po_cube_len: 30.260870,
+    mic_drop: success: 284, fail: 1456, success rate: 16.32%,
+    num_down: 1740,
+    num_down_sat: 1576,
+    ctp: success: 0, fail: 395, success rate: 0.00%,
+    num_get_bad: 38,
+    overall_block_time: 747.743339ms,
+    block_get_bad_time: 311.062781ms,
+    block_get_predecessor_time: 110.637732ms,
+    block_blocked_time: 5.301505ms,
+    block_mic_time: 501.904929ms,
+    block_push_time: 3.310076ms,
+    overall_propagate_time: 144.649478ms,
+    xor_gen: success: 0, fail: 0, success rate: NaN%,
+    num_auxiliary_var: 0,
+    test: success: 0, fail: 0, success rate: NaN%,
+}
+result: safe
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Thu 08 May 2025 09:37:01 AM CST
+========================================
