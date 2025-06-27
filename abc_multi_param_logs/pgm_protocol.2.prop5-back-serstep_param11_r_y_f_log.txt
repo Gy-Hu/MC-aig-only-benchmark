@@ -1,0 +1,31 @@
+File: abc_unknown_cases/pgm_protocol.2.prop5-back-serstep.aig
+Command: ~/coding_env/abc/abc -c "&r abc_unknown_cases/pgm_protocol.2.prop5-back-serstep.aig; &put; fold; pdr -v -r -y -f"
+PDR Parameters: -r -y -f
+Parameter Set: 11 of 32
+Started at: Thu 26 Jun 2025 10:21:48 PM CST
+----------------------------------------
+ABC command line: "&r abc_unknown_cases/pgm_protocol.2.prop5-back-serstep.aig; &put; fold; pdr -v -r -y -f".
+
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 1                                                                 1     7      0.06 sec
+  2 : 0 1 1                                                               1     9      0.10 sec
+  3 : 0 1 1 1                                                             1    28      0.17 sec
+  4 : 0 1 1 1 1                                                           1    29      0.25 sec
+  5 : 0 1 1 1 1 1                                                         1    47      0.37 sec
+  6 : 0 1 1 1 1 1 1                                                       1    77      0.54 sec
+  7 : 0 1 1 1 1 1 1 1                                                     1    87      0.72 sec
+  8 : 0 1 1 1 1 1 1 1 1                                                   1    89      0.93 sec
+  9 : 0 1 1 1 1 1 1 1 1 1                                                 2    90      1.16 sec
+ 10 : 0 1 1 1 1 1 1 1 1 1 1                                               1    90      1.37 sec
+ 11 : 0 2 16 81 255 663 1257 1912 2287 2488 2294 2360                  2083   442   3397.66 sec
+ 12 : 0 2 12 62 217 582 1104 1703 1871 2086 1898 1724 706                 1   442   3414.08 sec
+ 13 : 0 2 12 62 217 579 1096 1700 1871 2083 1895 1699 579 129             1   442   3428.33 sec
+ 14 : 0 2 12 62 217 579 1096 1700 1871 2083 1895 1697 579 115 15          1   442   3442.63 sec
+ 15 : ... 2 12 62 217 579 1096 1700 1871 2083 1895 1696 579 115 10 6      2   442   3456.96 sec
+ 16 : ... 12 62 217 579 1096 1700 1871 2083 1895 1696 579 115 10 4 3      1   442   3471.30 sec
+----------------------------------------
+STATUS: TIMEOUT (exceeded 3600 seconds)
+Finished at: Thu 26 Jun 2025 11:21:48 PM CST
+========================================

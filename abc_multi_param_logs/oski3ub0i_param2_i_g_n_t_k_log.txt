@@ -1,0 +1,30 @@
+File: abc_unknown_cases/oski3ub0i.aig
+Command: ~/coding_env/abc/abc -c "&r abc_unknown_cases/oski3ub0i.aig; &put; fold; pdr -v -i -g -n -t -k"
+PDR Parameters: -i -g -n -t -k
+Parameter Set: 2 of 32
+Started at: Sat 14 Jun 2025 02:18:10 PM CST
+----------------------------------------
+ABC command line: "&r abc_unknown_cases/oski3ub0i.aig; &put; fold; pdr -v -i -g -n -t -k".
+
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = yes. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 1                                                                 1     1   1      0.04 sec
+  2 : 0 1 1                                                               2     2   1      0.05 sec
+  3 : 0 1 1 1                                                             3     4   1      0.06 sec
+  4 : 0 1 1 2 5                                                           5     8   1      0.50 sec
+  5 : 0 1 1 1 2 2                                                         0     8   0      0.51 sec
+  6 : 0 1 1 8 59 227 643                                                  7   240   1     59.29 sec
+  7 : 0 1 1 1 1 1 1 115                                                   0   240   0     59.32 sec
+  8 : 0 1 1 1 1 1 1 21 94                                                 0   240   0     59.34 sec
+  9 : 0 1 1 1 1 1 1 21 29 65                                              0   240   0     59.37 sec
+ 10 : 0 1 1 1 1 2 2 24 43 282 550                                        15   248   2    104.12 sec
+ 11 : 0 1 1 1 1 2 2 24 43 48 160 278                                      5   248   0    107.62 sec
+ 12 : 0 1 1 1 1 2 2 24 43 39 182 551 714                                 54   248   1    158.64 sec
+ 13 : 0 1 1 1 1 2 2 24 43 39 182 1 38 181                                 0   248   0    158.73 sec
+ 14 : 0 1 1 1 1 2 2 24 43 39 182 5 58 264 1002                           15   495 121    335.29 sec
+ 15 : 0 1 1 1 1 2 2 24 43 39 182 5 63 654 7008 14608                     22   495   0   1588.96 sec
+----------------------------------------
+STATUS: TIMEOUT (exceeded 3600 seconds)
+Finished at: Sat 14 Jun 2025 03:18:10 PM CST
+========================================

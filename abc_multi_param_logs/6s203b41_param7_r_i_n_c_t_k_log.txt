@@ -1,0 +1,56 @@
+File: abc_unknown_cases/6s203b41.aig
+Command: ~/coding_env/abc/abc -c "&r abc_unknown_cases/6s203b41.aig; &put; fold; pdr -v -r -i -n -c -t -k"
+PDR Parameters: -r -i -n -c -t -k
+Parameter Set: 7 of 32
+Started at: Fri 20 Jun 2025 01:05:33 PM CST
+----------------------------------------
+ABC command line: "&r abc_unknown_cases/6s203b41.aig; &put; fold; pdr -v -r -i -n -c -t -k".
+
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 1                                                                 1     1   1      0.52 sec
+  2 : 0 2 1                                                               3     2   2      0.52 sec
+  3 : 0 3 2 2                                                             5     6   2      0.52 sec
+  4 : 0 3 2 2 1                                                           4     7   1      0.53 sec
+  5 : 0 3 3 4 3 2                                                         7     7   1      0.53 sec
+  6 : 0 3 3 4 3 1 1                                                       0     7   0      0.53 sec
+  7 : 0 4 3 4 3 2 2 2                                                     9    10   2      0.53 sec
+  8 : 0 69 70 56 33 23 25 12 102                                         40   185   5      1.10 sec
+  9 : 0 44 30 38 21 17 5 4 9 100                                          0   185   0      1.12 sec
+ 10 : 0 44 30 38 21 17 5 4 9 2 98                                         0   185   0      1.12 sec
+ 11 : 0 44 30 38 21 17 5 4 9 2 2 96                                       0   185   0      1.13 sec
+ 12 : 0 47 34 39 23 17 5 6 16 9 18 10 111                                27   185   1      1.26 sec
+ 13 : 0 47 34 39 23 17 5 6 16 9 18 8 2 110                                0   185   0      1.26 sec
+ 14 : 0 48 37 43 31 19 6 6 16 11 19 10 5 2 115                           27   185   1      1.35 sec
+ 15 : 0 48 37 43 31 19 6 6 16 11 19 10 5 1 1 114                          0   185   0      1.35 sec
+ 16 : 0 52 43 48 33 22 8 8 21 21 35 22 15 3 2 2 165                      27   203   2      1.73 sec
+ 17 : 0 52 43 48 33 22 8 8 21 21 35 22 15 3 2 2 1 163                     0   203   0      1.73 sec
+ 18 : 0 61 59 63 57 41 20 14 28 35 67 70 75 50 41 49 40 32 260           52   230   2      3.26 sec
+ 19 : 0 61 59 63 57 41 20 14 28 35 67 70 75 50 41 49 40 22 10 257         0   230   0      3.26 sec
+ 20 : ... 61 59 63 58 41 20 14 28 35 67 70 76 53 45 49 41 26 18 9 255    33   230   1      3.37 sec
+ 21 : ... 59 63 58 41 20 14 28 35 67 70 76 53 45 49 41 26 18 8 2 253      0   230   0      3.37 sec
+ 22 : ... 60 42 20 14 28 35 67 70 76 56 52 57 48 45 43 55 56 62 308      51   230   1      4.15 sec
+ 23 : ... 42 20 14 28 35 67 70 76 56 52 57 48 45 43 55 56 62 14 294       0   230   0      4.16 sec
+ 24 : ... 55 26 14 28 35 67 70 76 56 52 58 51 46 44 56 57 63 15 9 315    39   257   2      4.41 sec
+ 25 : ... 438 663 933 1443 1290 1919 1388 2148 1645 1692 197 38 1057   1157   477   2    143.40 sec
+ 26 : ... 29 30 29 22 21 26 17 41 29 19 11 8 7 8 13 8 7 2 1 1 1 1 629     0   477   0    143.56 sec
+ 27 : ... 30 29 22 21 26 17 41 29 19 11 8 7 8 13 8 7 2 1 1 1 1 0 629      0   477   0    143.57 sec
+Invariant F[26] : 629 clauses with 390 flops (out of 68957) (cex = 26, ave = 40.24)
+Verification of invariant with 629 clauses was successful.  Time =     0.01 sec
+Block =   41  Oblig = 19591  Clause = 17192  Call =392067 (sat=76.9%)  Cex =  26  Start =1290
+SAT solving =    87.69 sec ( 61.05 %)
+  unsat     =     4.34 sec (  3.02 %)
+  sat       =    83.35 sec ( 58.03 %)
+Generalize  =   123.66 sec ( 86.10 %)
+Push clause =     0.23 sec (  0.16 %)
+Ternary sim =    34.22 sec ( 23.82 %)
+Containment =     8.74 sec (  6.08 %)
+CNF compute =     5.08 sec (  3.54 %)
+Refinement  =     0.00 sec (  0.00 %)
+TOTAL       =   143.63 sec (100.00 %)
+Property proved.  Time =   143.97 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 20 Jun 2025 01:07:58 PM CST
+========================================

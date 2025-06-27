@@ -1,0 +1,26 @@
+File: abc_unknown_cases/benchmark04_conjunctive.aig
+Command: ~/coding_env/abc/abc -c "&r abc_unknown_cases/benchmark04_conjunctive.aig; &put; fold; pdr -v -i -g -n -t -k"
+PDR Parameters: -i -g -n -t -k
+Parameter Set: 2 of 32
+Started at: Sun 15 Jun 2025 10:57:00 PM CST
+----------------------------------------
+ABC command line: "&r abc_unknown_cases/benchmark04_conjunctive.aig; &put; fold; pdr -v -i -g -n -t -k".
+
+Converted 0 1-valued FFs and 99 DC-valued FFs.
+Warning: The number of inputs does not match the number of input names.
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = yes. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 2                                                                 2     3   2      0.00 sec
+  2 : 0 1 2                                                               3     4   1      0.01 sec
+  3 : 0 1 2 4                                                             4     8   1      0.01 sec
+  4 : 0 1 32 238 2849                                                     6   100   1      1.89 sec
+  5 : 0 1 32 96 743 10331                                                 8   100   0      8.52 sec
+  6 : 0 1 35 108 532 1102 20962                                          12   100   0     27.01 sec
+  7 : 0 1 36 106 264 635 1519 41227                                      12   100   0     90.25 sec
+  8 : 0 1 39 104 258 582 1116 2161 65290                                 28   100   0    269.66 sec
+  9 : 0 1 39 100 243 496 844 1281 2842 221912                            52   100   0   2764.55 sec
+----------------------------------------
+STATUS: TIMEOUT (exceeded 3600 seconds)
+Finished at: Sun 15 Jun 2025 11:57:00 PM CST
+========================================

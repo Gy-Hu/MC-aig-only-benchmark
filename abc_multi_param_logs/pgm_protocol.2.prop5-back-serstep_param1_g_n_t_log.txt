@@ -1,0 +1,34 @@
+File: abc_unknown_cases/pgm_protocol.2.prop5-back-serstep.aig
+Command: ~/coding_env/abc/abc -c "&r abc_unknown_cases/pgm_protocol.2.prop5-back-serstep.aig; &put; fold; pdr -v -g -n -t"
+PDR Parameters: -g -n -t
+Parameter Set: 1 of 32
+Started at: Thu 26 Jun 2025 10:12:37 PM CST
+----------------------------------------
+ABC command line: "&r abc_unknown_cases/pgm_protocol.2.prop5-back-serstep.aig; &put; fold; pdr -v -g -n -t".
+
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = yes. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 1                                                                 1     7   1      0.05 sec
+  2 : 0 1 1                                                               3     8   1      0.07 sec
+  3 : 0 2 1 1                                                             5    18   1      0.12 sec
+  4 : 0 2 1 2 1                                                           7    18   1      0.18 sec
+  5 : 0 2 2 1 1 1                                                         7    26   1      0.24 sec
+  6 : 0 2 3 3 5 1 1                                                      13    40   1      0.37 sec
+  7 : 0 2 3 6 6 19 5 1                                                   29    40   1      0.66 sec
+  8 : 0 2 3 8 6 23 4 1 1                                                 20    52   1      0.88 sec
+  9 : 0 2 3 7 8 25 6 1 3 1                                               18    78   1      1.09 sec
+ 10 : 0 2 3 8 11 28 9 1 3 2 1                                            22    79   1      1.35 sec
+ 11 : 0 2 3 8 10 32 19 4 3 1 1 1                                         30   113   1      1.68 sec
+ 12 : 0 2 3 9 11 34 19 3 4 1 1 1 1                                       18   126   1      1.89 sec
+ 13 : 0 2 3 9 20 37 19 3 1 4 2 1 1 1                                     28   128   1      2.20 sec
+ 14 : 0 2 3 9 17 38 19 3 1 3 3 1 2 1 1                                   19   129   1      2.43 sec
+ 15 : 0 2 3 9 17 42 19 3 1 3 2 1 4 2 3 1                                 26   129   1      2.71 sec
+ 16 : 0 2 3 9 17 47 19 3 1 3 2 1 2 4 1 3 1                               28   129   1      3.01 sec
+ 17 : 0 2 3 9 17 46 19 3 1 3 2 1 2 1 1 1 1 1                              1   129   0      3.12 sec
+ 18 : 0 2 3 9 17 46 19 3 1 3 2 1 2 1 1 1 1 1 1                            1   129   0      3.23 sec
+ 19 : ... 6685 7350 7845 8138 8186 8677 8735 8869 8948 9206 10188      9548  1016   1   2575.36 sec
+----------------------------------------
+STATUS: TIMEOUT (exceeded 3600 seconds)
+Finished at: Thu 26 Jun 2025 11:12:37 PM CST
+========================================

@@ -1,0 +1,24 @@
+File: abc_unknown_cases/bob12s03.aig
+Command: ~/coding_env/abc/abc -c "&r abc_unknown_cases/bob12s03.aig; &put; fold; pdr -v -y -f -n -c -t -k"
+PDR Parameters: -y -f -n -c -t -k
+Parameter Set: 25 of 32
+Started at: Sun 15 Jun 2025 06:02:46 AM CST
+----------------------------------------
+ABC command line: "&r abc_unknown_cases/bob12s03.aig; &put; fold; pdr -v -y -f -n -c -t -k".
+
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 501                                                               2   503 251      0.74 sec
+  2 : 0 995 1191                                                          5  1271 305      2.39 sec
+  3 : 0 521 535 973                                                       7  1442 127      2.99 sec
+  4 : 0 1023 1088 1544 2863                                              57  3013 264     18.39 sec
+  5 : 0 458 741 736 869 2661                                             11  3032  12     20.63 sec
+  6 : 0 583 1027 1134 2541 3485 3616                                    352  3347 148     68.34 sec
+  7 : 0 483 830 801 1638 2326 1578 2624                                   2  3347   0     71.89 sec
+  8 : 0 483 833 805 1771 2904 6572 5104 5654                           1792  3383  22    235.42 sec
+  9 : 0 475 824 793 1681 1728 4268 3884 2207 4384                         0  3383   0    245.00 sec
+----------------------------------------
+STATUS: TIMEOUT (exceeded 3600 seconds)
+Finished at: Sun 15 Jun 2025 07:02:47 AM CST
+========================================

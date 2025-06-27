@@ -1,0 +1,36 @@
+File: abc_unknown_cases/6s320rb1.aig
+Command: ~/coding_env/abc/abc -c "&r abc_unknown_cases/6s320rb1.aig; &put; fold; pdr -v -y -f -i -n -c"
+PDR Parameters: -y -f -i -n -c
+Parameter Set: 22 of 32
+Started at: Sat 14 Jun 2025 02:08:09 PM CST
+----------------------------------------
+ABC command line: "&r abc_unknown_cases/6s320rb1.aig; &put; fold; pdr -v -y -f -i -n -c".
+
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 6                                                                 1     6      0.05 sec
+  2 : 0 85 89                                                             6   109      1.61 sec
+  3 : 0 92 348 201                                                       11   177      8.33 sec
+  4 : 0 72 267 608 265                                                   13   185     25.24 sec
+  5 : 0 73 229 578 1549 409                                              11   187     75.34 sec
+  6 : 0 73 219 576 1940 3447 892                                         17   187    289.64 sec
+  7 : 0 73 212 564 1685 3762 5550 1321                                   22   187    668.34 sec
+  8 : 0 71 208 540 1565 2747 5598 7927 2235                              12   187   1354.58 sec
+  9 : 0 71 208 542 1532 2488 3576 5898 4915 2860                         24   187   1743.06 sec
+Block =   49  Oblig =  6717  Clause = 24593  Call =571110 (sat=51.6%)  Cex =   0  Start =1898
+SAT solving =  1497.27 sec ( 85.90 %)
+  unsat     =   737.31 sec ( 42.30 %)
+  sat       =   759.96 sec ( 43.60 %)
+Generalize  =  1216.70 sec ( 69.80 %)
+Push clause =   512.15 sec ( 29.38 %)
+Ternary sim =   215.33 sec ( 12.35 %)
+Containment =     0.68 sec (  0.04 %)
+CNF compute =    18.03 sec (  1.03 %)
+Refinement  =     0.00 sec (  0.00 %)
+TOTAL       =  1743.07 sec (100.00 %)
+Output 0 of miter "abc_unknown_cases/6s320rb1" was asserted in frame 11.  Time =  1743.11 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Sat 14 Jun 2025 02:37:12 PM CST
+========================================

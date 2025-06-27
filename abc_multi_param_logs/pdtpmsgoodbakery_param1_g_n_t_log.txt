@@ -1,0 +1,24 @@
+File: abc_unknown_cases/pdtpmsgoodbakery.aig
+Command: ~/coding_env/abc/abc -c "&r abc_unknown_cases/pdtpmsgoodbakery.aig; &put; fold; pdr -v -g -n -t"
+PDR Parameters: -g -n -t
+Parameter Set: 1 of 32
+Started at: Wed 25 Jun 2025 05:30:02 PM CST
+----------------------------------------
+ABC command line: "&r abc_unknown_cases/pdtpmsgoodbakery.aig; &put; fold; pdr -v -g -n -t".
+
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = yes. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 4                                                                 1     4   2      0.01 sec
+  2 : 0 11 10                                                             5    14   2      0.02 sec
+  3 : 0 11 14 8                                                           9    23   2      0.03 sec
+  4 : 0 7 11 8 9                                                          8    24   1      0.05 sec
+  5 : 0 11 20 18 23 11                                                   18    34   1      0.10 sec
+  6 : 0 10 18 10 10 8 7                                                   3    34   0      0.11 sec
+  7 : 0 12 22 15 17 10 10 7                                              27    34   1      0.15 sec
+  8 : 0 12 22 14 14 7 7 6 12                                              4    34   0      0.17 sec
+  9 : 0 18 52 211 1222 6748 18461 31497 42505 56099                    8795    54   1    964.23 sec
+----------------------------------------
+STATUS: TIMEOUT (exceeded 3600 seconds)
+Finished at: Wed 25 Jun 2025 06:30:02 PM CST
+========================================

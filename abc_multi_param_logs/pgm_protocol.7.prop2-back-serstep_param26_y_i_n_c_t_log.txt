@@ -1,0 +1,27 @@
+File: abc_unknown_cases/pgm_protocol.7.prop2-back-serstep.aig
+Command: ~/coding_env/abc/abc -c "&r abc_unknown_cases/pgm_protocol.7.prop2-back-serstep.aig; &put; fold; pdr -v -y -i -n -c -t"
+PDR Parameters: -y -i -n -c -t
+Parameter Set: 26 of 32
+Started at: Thu 26 Jun 2025 07:59:07 PM CST
+----------------------------------------
+ABC command line: "&r abc_unknown_cases/pgm_protocol.7.prop2-back-serstep.aig; &put; fold; pdr -v -y -i -n -c -t".
+
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 1                                                                 1    15   1      0.12 sec
+  2 : 0 1 1                                                               3    18   1      0.39 sec
+  3 : 0 3 30 3                                                            6    64   1      2.07 sec
+  4 : 0 4 70 14 22                                                       12    84   1      7.18 sec
+  5 : 0 19 633 544 78 153                                                87   100   1     78.14 sec
+  6 : 0 19 633 544 78 6 150                                               1   100   0     78.78 sec
+  7 : 0 314 3474 9012 4129 324 8 581                                    808   127   1    892.84 sec
+  8 : 0 314 3478 9273 6211 1966 271 30 806                              155   158   1   1166.49 sec
+  9 : 0 314 3478 9273 6211 1966 271 33 12 808                             3   158   0   1174.98 sec
+ 10 : 0 314 3489 9661 8068 4933 2431 234 12 48 1156                     196   188   1   1751.10 sec
+ 11 : 0 314 3489 9661 8080 4979 2441 234 12 111 86 1156                  18   231   1   1776.65 sec
+ 12 : 0 314 3489 9661 8080 4979 2441 234 12 111 182 90 1161               6   231   0   1805.93 sec
+----------------------------------------
+STATUS: TIMEOUT (exceeded 3600 seconds)
+Finished at: Thu 26 Jun 2025 08:59:07 PM CST
+========================================

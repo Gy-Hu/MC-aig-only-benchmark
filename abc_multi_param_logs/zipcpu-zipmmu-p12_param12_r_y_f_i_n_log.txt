@@ -1,0 +1,36 @@
+File: abc_unknown_cases/zipcpu-zipmmu-p12.aig
+Command: ~/coding_env/abc/abc -c "&r abc_unknown_cases/zipcpu-zipmmu-p12.aig; &put; fold; pdr -v -r -y -f -i -n"
+PDR Parameters: -r -y -f -i -n
+Parameter Set: 12 of 32
+Started at: Fri 27 Jun 2025 02:30:19 PM CST
+----------------------------------------
+ABC command line: "&r abc_unknown_cases/zipcpu-zipmmu-p12.aig; &put; fold; pdr -v -r -y -f -i -n".
+
+Warning: The last 42 outputs are interpreted as constraints.
+Converted 2 1-valued FFs and 684 DC-valued FFs.
+Warning: The number of inputs does not match the number of input names.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 1                                                                 1     1      0.00 sec
+  2 : 0 2 4                                                               2     4      0.01 sec
+  3 : 0 1 294 306                                                         3   210      1.34 sec
+  4 : 0 1 294 74 306                                                      3   211      1.56 sec
+  5 : 0 1 294 16 0 306                                                    0   211      1.58 sec
+Invariant F[4] : 306 clauses with 204 flops (out of 369) (cex = 0, ave = 43.03)
+Verification of invariant with 306 clauses was successful.  Time =     0.00 sec
+Block =    9  Oblig =  1053  Clause =   678  Call = 12364 (sat=88.8%)  Cex =   0  Start =  39
+SAT solving =     0.68 sec ( 42.61 %)
+  unsat     =     0.01 sec (  0.69 %)
+  sat       =     0.67 sec ( 41.92 %)
+Generalize  =     1.47 sec ( 92.05 %)
+Push clause =     0.04 sec (  2.72 %)
+Ternary sim =     0.82 sec ( 51.60 %)
+Containment =     0.00 sec (  0.15 %)
+CNF compute =     0.02 sec (  1.05 %)
+Refinement  =     0.00 sec (  0.00 %)
+TOTAL       =     1.59 sec (100.00 %)
+Property proved.  Time =     1.60 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 27 Jun 2025 02:30:21 PM CST
+========================================

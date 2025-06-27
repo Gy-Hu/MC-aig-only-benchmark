@@ -1,0 +1,34 @@
+File: abc_unknown_cases/6s320rb0.aig
+Command: ~/coding_env/abc/abc -c "&r abc_unknown_cases/6s320rb0.aig; &put; fold; pdr -v -r -i -t"
+PDR Parameters: -r -i -t
+Parameter Set: 8 of 32
+Started at: Fri 27 Jun 2025 01:17:23 AM CST
+----------------------------------------
+ABC command line: "&r abc_unknown_cases/6s320rb0.aig; &put; fold; pdr -v -r -i -t".
+
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 7                                                                 2     7   6      0.07 sec
+  2 : 0 58 46                                                            18    73   7      0.59 sec
+  3 : 0 92 213 176                                                       11   154  11      4.23 sec
+  4 : 0 76 173 503 400                                                   20   171   5     15.66 sec
+  5 : 0 78 146 481 1425 1168                                             32   172   1     65.26 sec
+  6 : 0 78 134 402 1412 5368 4245                                        90   173   1    397.65 sec
+  7 : 0 78 132 386 1208 5185 17906 12700                                159   173   0   1975.33 sec
+Block =   75  Oblig = 67307  Clause = 40655  Call =1379541 (sat=58.5%)  Cex =  31  Start =4593
+SAT solving =  2020.44 sec ( 90.42 %)
+  unsat     =   529.94 sec ( 23.72 %)
+  sat       =  1490.49 sec ( 66.71 %)
+Generalize  =  1876.79 sec ( 83.99 %)
+Push clause =   243.46 sec ( 10.90 %)
+Ternary sim =    89.25 sec (  3.99 %)
+Containment =    19.33 sec (  0.87 %)
+CNF compute =    44.62 sec (  2.00 %)
+Refinement  =     0.14 sec (  0.01 %)
+TOTAL       =  2234.45 sec (100.00 %)
+Output 0 of miter "abc_unknown_cases/6s320rb0" was asserted in frame 14.  Time =  2234.49 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 27 Jun 2025 01:54:38 AM CST
+========================================

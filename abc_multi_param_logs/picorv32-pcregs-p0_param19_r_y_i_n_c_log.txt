@@ -1,0 +1,26 @@
+File: abc_unknown_cases/picorv32-pcregs-p0.aig
+Command: ~/coding_env/abc/abc -c "&r abc_unknown_cases/picorv32-pcregs-p0.aig; &put; fold; pdr -v -r -y -i -n -c"
+PDR Parameters: -r -y -i -n -c
+Parameter Set: 19 of 32
+Started at: Mon 16 Jun 2025 11:34:50 PM CST
+----------------------------------------
+ABC command line: "&r abc_unknown_cases/picorv32-pcregs-p0.aig; &put; fold; pdr -v -r -y -i -n -c".
+
+Converted 0 1-valued FFs and 2113 DC-valued FFs.
+Warning: The number of inputs does not match the number of input names.
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 1                                                                 1     1      0.03 sec
+  2 : 0 4 5                                                               3     7      0.04 sec
+  3 : 0 2 2 3                                                             0     7      0.04 sec
+  4 : 0 2 2 1 2                                                           0     7      0.04 sec
+  5 : 0 2 3 11 9 24                                                       7    35      0.10 sec
+  6 : 0 2 1 9 6 3 20                                                      0    35      0.10 sec
+  7 : 0 2 1 9 6 3 2 20                                                    1    35      0.11 sec
+  8 : 0 3 11 37 57 52 37 37 171                                          23   107      1.06 sec
+  9 : 0 4 11 31 36 43 28 65 43 250                                       14   130      1.84 sec
+----------------------------------------
+STATUS: TIMEOUT (exceeded 3600 seconds)
+Finished at: Tue 17 Jun 2025 12:34:50 AM CST
+========================================

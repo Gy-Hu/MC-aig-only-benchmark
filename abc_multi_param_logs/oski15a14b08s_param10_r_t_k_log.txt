@@ -1,0 +1,42 @@
+File: abc_unknown_cases/oski15a14b08s.aig
+Command: ~/coding_env/abc/abc -c "&r abc_unknown_cases/oski15a14b08s.aig; &put; fold; pdr -v -r -t -k"
+PDR Parameters: -r -t -k
+Parameter Set: 10 of 32
+Started at: Wed 18 Jun 2025 11:27:48 PM CST
+----------------------------------------
+ABC command line: "&r abc_unknown_cases/oski15a14b08s.aig; &put; fold; pdr -v -r -t -k".
+
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 8                                                                 2     8   4      0.08 sec
+  2 : 0 1 10                                                              2    15   1      0.10 sec
+  3 : 0 1 2 9                                                             1    15   0      0.11 sec
+  4 : 0 1 2 3 8                                                           1    15   0      0.13 sec
+  5 : 0 1 2 4 10 15                                                       3    15   0      0.27 sec
+  6 : 0 1 2 2 2 3 12                                                      1    15   0      0.30 sec
+  7 : 0 1 2 2 2 3 6 13                                                    2    15   0      0.36 sec
+  8 : 0 1 2 2 2 4 11 13 20                                                8    15   0      0.59 sec
+  9 : 0 1 2 2 2 2 3 6 6 15                                                1    15   0      0.62 sec
+ 10 : 0 1 2 2 2 2 3 9 11 16 18                                            7    15   0      0.84 sec
+ 11 : 0 1 2 2 2 2 3 5 6 8 16 17                                           8    15   0      1.02 sec
+ 12 : 0 1 2 2 2 2 4 3 4 3 4 7 27                                          8    15   0      1.19 sec
+ 13 : 0 1 2 2 2 2 3 1 1 0 0 0 0 19                                        0    15   0      1.20 sec
+Invariant F[9] : 19 clauses with 12 flops (out of 3519) (cex = 5, ave = 31.58)
+Verification of invariant with 19 clauses was successful.  Time =     0.00 sec
+Block =   49  Oblig =   199  Clause =   140  Call =  1899 (sat=71.5%)  Cex =   5  Start =   0
+SAT solving =     0.64 sec ( 52.82 %)
+  unsat     =     0.01 sec (  0.83 %)
+  sat       =     0.63 sec ( 52.00 %)
+Generalize  =     0.76 sec ( 62.56 %)
+Push clause =     0.12 sec (  9.93 %)
+Ternary sim =     0.37 sec ( 30.37 %)
+Containment =     0.00 sec (  0.02 %)
+CNF compute =     0.02 sec (  1.24 %)
+Refinement  =     0.00 sec (  0.00 %)
+TOTAL       =     1.22 sec (100.00 %)
+Property proved.  Time =     1.24 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Wed 18 Jun 2025 11:27:50 PM CST
+========================================

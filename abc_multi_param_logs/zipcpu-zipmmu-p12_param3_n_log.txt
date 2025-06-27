@@ -1,0 +1,36 @@
+File: abc_unknown_cases/zipcpu-zipmmu-p12.aig
+Command: ~/coding_env/abc/abc -c "&r abc_unknown_cases/zipcpu-zipmmu-p12.aig; &put; fold; pdr -v -n"
+PDR Parameters: -n
+Parameter Set: 3 of 32
+Started at: Fri 27 Jun 2025 02:22:15 PM CST
+----------------------------------------
+ABC command line: "&r abc_unknown_cases/zipcpu-zipmmu-p12.aig; &put; fold; pdr -v -n".
+
+Warning: The last 42 outputs are interpreted as constraints.
+Converted 2 1-valued FFs and 684 DC-valued FFs.
+Warning: The number of inputs does not match the number of input names.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 1                                                                 1     1      0.01 sec
+  2 : 0 2 4                                                               2     4      0.01 sec
+  3 : 0 1 75232 76784                                                     3   223   1777.09 sec
+  4 : 0 1 75233 63814 55276                                               3   225   2442.85 sec
+  5 : 0 1 17 13 0 116280                                                  0   225   3260.80 sec
+Invariant F[4] : 116280 clauses with 219 flops (out of 369) (cex = 0, ave = 28.60)
+Verification of invariant with 116280 clauses was successful.  Time =     0.31 sec
+Block =   12  Oblig =313409  Clause =194327  Call =4848322 (sat=83.9%)  Cex =   0  Start =16158
+SAT solving =   974.17 sec ( 29.87 %)
+  unsat     =    22.37 sec (  0.69 %)
+  sat       =   951.80 sec ( 29.19 %)
+Generalize  =  1690.27 sec ( 51.83 %)
+Push clause =   918.06 sec ( 28.15 %)
+Ternary sim =   288.54 sec (  8.85 %)
+Containment =   423.55 sec ( 12.99 %)
+CNF compute =   376.03 sec ( 11.53 %)
+Refinement  =     0.00 sec (  0.00 %)
+TOTAL       =  3261.14 sec (100.00 %)
+Property proved.  Time =  3261.17 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 27 Jun 2025 03:16:36 PM CST
+========================================

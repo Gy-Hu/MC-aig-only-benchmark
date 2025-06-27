@@ -1,0 +1,26 @@
+File: abc_unknown_cases/arbitrated_top_n2_w32_d128_e0.aig
+Command: ~/coding_env/abc/abc -c "&r abc_unknown_cases/arbitrated_top_n2_w32_d128_e0.aig; &put; fold; pdr -v -g -n -t"
+PDR Parameters: -g -n -t
+Parameter Set: 1 of 32
+Started at: Tue 24 Jun 2025 09:34:26 AM CST
+----------------------------------------
+ABC command line: "&r abc_unknown_cases/arbitrated_top_n2_w32_d128_e0.aig; &put; fold; pdr -v -g -n -t".
+
+Warning: The last 7 outputs are interpreted as constraints.
+Converted 1 1-valued FFs and 8299 DC-valued FFs.
+Warning: The number of inputs does not match the number of input names.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = yes. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 3                                                                 2     5   2      0.16 sec
+  2 : 0 22 36                                                             6    32   6      1.10 sec
+  3 : 0 15 78 180                                                         7    99  37      5.93 sec
+  4 : 0 19 79 260 876                                                     9   142  33     21.78 sec
+  5 : 0 12 23 70 872 1525                                                15   177  32     48.56 sec
+  6 : 0 15 39 72 730 3538 4033                                           25   220  33    123.70 sec
+  7 : 0 7 24 60 393 2328 8155 8210                                      270   252  32    290.46 sec
+  8 : 0 7 23 68 405 2150 8028 31210 30532                               585   284  32   1174.06 sec
+  9 : 0 7 23 48 276 1363 4248 14416 34876 27889                         235   316  33   2110.86 sec
+----------------------------------------
+STATUS: TIMEOUT (exceeded 3600 seconds)
+Finished at: Tue 24 Jun 2025 10:34:26 AM CST
+========================================

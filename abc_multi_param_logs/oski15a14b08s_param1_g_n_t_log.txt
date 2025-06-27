@@ -1,0 +1,41 @@
+File: abc_unknown_cases/oski15a14b08s.aig
+Command: ~/coding_env/abc/abc -c "&r abc_unknown_cases/oski15a14b08s.aig; &put; fold; pdr -v -g -n -t"
+PDR Parameters: -g -n -t
+Parameter Set: 1 of 32
+Started at: Wed 18 Jun 2025 11:27:38 PM CST
+----------------------------------------
+ABC command line: "&r abc_unknown_cases/oski15a14b08s.aig; &put; fold; pdr -v -g -n -t".
+
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = yes. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 5                                                                 2     5   4      0.10 sec
+  2 : 0 1 7                                                               2    12   1      0.12 sec
+  3 : 0 1 1 9                                                             1    12   0      0.13 sec
+  4 : 0 1 1 5 11                                                          3    12   0      0.17 sec
+  5 : 0 1 1 1 1 11                                                        1    12   0      0.18 sec
+  6 : 0 1 1 1 1 10 16                                                     5    12   0      0.28 sec
+  7 : 0 1 1 1 1 3 7 22                                                    4    12   0      0.38 sec
+  8 : 0 1 1 1 1 1 1 3 18                                                  0    12   0      0.39 sec
+  9 : 0 1 1 1 1 1 1 3 3 16                                                1    12   0      0.41 sec
+ 10 : 0 1 1 1 1 1 1 3 3 13 18                                             6    12   0      0.50 sec
+ 11 : 0 1 1 1 1 1 1 3 5 15 21 38                                         17    12   0      0.84 sec
+ 12 : 0 1 1 1 1 1 1 1 1 0 0 0 33                                          0    12   0      0.85 sec
+Invariant F[9] : 33 clauses with 12 flops (out of 3519) (cex = 5, ave = 25.36)
+Verification of invariant with 33 clauses was successful.  Time =     0.00 sec
+Block =   34  Oblig =   175  Clause =   114  Call =   606 (sat=38.1%)  Cex =   5  Start =   0
+SAT solving =     0.16 sec ( 18.73 %)
+  unsat     =     0.01 sec (  1.29 %)
+  sat       =     0.15 sec ( 17.44 %)
+Generalize  =     0.46 sec ( 53.08 %)
+Push clause =     0.09 sec ( 10.42 %)
+Ternary sim =     0.48 sec ( 55.43 %)
+Containment =     0.00 sec (  0.02 %)
+CNF compute =     0.02 sec (  1.82 %)
+Refinement  =     0.01 sec (  1.68 %)
+TOTAL       =     0.86 sec (100.00 %)
+Property proved.  Time =     0.89 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Wed 18 Jun 2025 11:27:39 PM CST
+========================================

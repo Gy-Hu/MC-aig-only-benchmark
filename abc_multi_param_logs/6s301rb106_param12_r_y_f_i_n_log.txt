@@ -1,0 +1,42 @@
+File: abc_unknown_cases/6s301rb106.aig
+Command: ~/coding_env/abc/abc -c "&r abc_unknown_cases/6s301rb106.aig; &put; fold; pdr -v -r -y -f -i -n"
+PDR Parameters: -r -y -f -i -n
+Parameter Set: 12 of 32
+Started at: Sat 21 Jun 2025 02:59:08 PM CST
+----------------------------------------
+ABC command line: "&r abc_unknown_cases/6s301rb106.aig; &put; fold; pdr -v -r -y -f -i -n".
+
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 1                                                                 1     1      0.18 sec
+  2 : 0 6 7                                                               3     9      0.18 sec
+  3 : 0 5 4 2                                                             0     9      0.18 sec
+  4 : 0 44 48 8 26                                                       39    84      0.32 sec
+  5 : 0 39 39 5 7 24                                                      0    84      0.33 sec
+  6 : 0 39 39 5 7 2 22                                                    0    84      0.33 sec
+  7 : 0 42 45 8 10 4 6 77                                                10   157      0.58 sec
+  8 : 0 48 59 29 19 8 6 9 131                                            25   238      0.97 sec
+  9 : 0 43 53 25 20 10 4 4 4 149                                         11   240      1.06 sec
+ 10 : 0 43 52 24 19 9 4 4 4 2 152                                         4   241      1.09 sec
+ 11 : 0 49 83 90 93 100 66 40 27 19 17 445                               72   512      4.29 sec
+ 12 : 0 39 59 62 55 72 49 25 13 5 4 1 443                                 0   512      4.37 sec
+ 13 : 0 39 59 62 55 72 49 25 13 5 4 1 1 442                               0   512      4.38 sec
+ 14 : 0 39 59 62 55 72 49 25 13 5 4 1 1 1 441                             0   512      4.38 sec
+ 15 : ... 233 453 650 992 1085 1318 1161 1049 918 636 327 88 15 2343    760  1761    108.06 sec
+Block =   10  Oblig = 24303  Clause = 11622  Call =187591 (sat=73.3%)  Cex =   0  Start = 619
+SAT solving =    48.77 sec ( 45.09 %)
+  unsat     =     2.49 sec (  2.30 %)
+  sat       =    46.28 sec ( 42.79 %)
+Generalize  =    79.04 sec ( 73.08 %)
+Push clause =     0.20 sec (  0.18 %)
+Ternary sim =    26.31 sec ( 24.32 %)
+Containment =    13.40 sec ( 12.38 %)
+CNF compute =     3.39 sec (  3.14 %)
+Refinement  =     0.08 sec (  0.07 %)
+TOTAL       =   108.17 sec (100.00 %)
+Output 0 of miter "abc_unknown_cases/6s301rb106" was asserted in frame 60.  Time =   108.34 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Sat 21 Jun 2025 03:00:56 PM CST
+========================================

@@ -1,0 +1,34 @@
+File: abc_unknown_cases/Problem05_label46+token_ring.12.cil-1.aig
+Command: ~/coding_env/abc/abc -c "&r abc_unknown_cases/Problem05_label46+token_ring.12.cil-1.aig; &put; fold; pdr -v -y -f -i -n -c -t"
+PDR Parameters: -y -f -i -n -c -t
+Parameter Set: 23 of 32
+Started at: Thu 26 Jun 2025 04:56:19 PM CST
+----------------------------------------
+ABC command line: "&r abc_unknown_cases/Problem05_label46+token_ring.12.cil-1.aig; &put; fold; pdr -v -y -f -i -n -c -t".
+
+Converted 0 1-valued FFs and 2468 DC-valued FFs.
+Warning: The number of inputs does not match the number of input names.
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 2                                                                 2     3   2      0.69 sec
+  2 : 0 3 3                                                               3     6   1      1.77 sec
+  3 : 0 2 26 104                                                          5   102   1     35.02 sec
+  4 : 0 2 158 298 843                                                     5   600   1    486.49 sec
+  5 : 0 2 117 133 1113 1019                                               7  1393   1    846.27 sec
+Block =   18  Oblig =  3514  Clause =  4458  Call = 69250 (sat=49.4%)  Cex =   7  Start = 228
+SAT solving =  1039.88 sec ( 62.15 %)
+  unsat     =   250.90 sec ( 15.00 %)
+  sat       =   788.98 sec ( 47.16 %)
+Generalize  =  1557.92 sec ( 93.12 %)
+Push clause =    62.30 sec (  3.72 %)
+Ternary sim =   546.33 sec ( 32.65 %)
+Containment =     4.01 sec (  0.24 %)
+CNF compute =    13.34 sec (  0.80 %)
+Refinement  =     0.23 sec (  0.01 %)
+TOTAL       =  1673.10 sec (100.00 %)
+Output 0 of miter "abc_unknown_cases/Problem05_label46+token_ring.12.cil-1" was asserted in frame 6.  Time =  1673.31 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Thu 26 Jun 2025 05:24:13 PM CST
+========================================

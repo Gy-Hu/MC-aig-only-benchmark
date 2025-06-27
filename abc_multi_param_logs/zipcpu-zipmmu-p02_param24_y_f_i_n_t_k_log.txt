@@ -1,0 +1,50 @@
+File: abc_unknown_cases/zipcpu-zipmmu-p02.aig
+Command: ~/coding_env/abc/abc -c "&r abc_unknown_cases/zipcpu-zipmmu-p02.aig; &put; fold; pdr -v -y -f -i -n -t -k"
+PDR Parameters: -y -f -i -n -t -k
+Parameter Set: 24 of 32
+Started at: Thu 19 Jun 2025 05:28:56 PM CST
+----------------------------------------
+ABC command line: "&r abc_unknown_cases/zipcpu-zipmmu-p02.aig; &put; fold; pdr -v -y -f -i -n -t -k".
+
+Warning: The last 42 outputs are interpreted as constraints.
+Converted 2 1-valued FFs and 684 DC-valued FFs.
+Warning: The number of inputs does not match the number of input names.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 3                                                                 1     4   1      0.01 sec
+  2 : 0 4 13                                                              3    17   2      0.01 sec
+  3 : 0 4 5 17                                                            4    22   1      0.01 sec
+  4 : 0 9 13 10 32                                                       11    31   2      0.03 sec
+  5 : 0 10 19 21 27 56                                                   16    48   3      0.08 sec
+  6 : 0 10 16 6 9 15 61                                                   4    48   0      0.09 sec
+  7 : 0 10 16 6 14 21 45 78                                              19    49   1      0.18 sec
+  8 : 0 11 19 14 50 101 191 178 265                                     114   246   3      3.00 sec
+  9 : 0 11 19 13 25 46 61 78 146 354                                     24   246   0      3.41 sec
+ 10 : 0 11 19 13 24 34 45 29 91 170 320                                  13   246   0      3.59 sec
+ 11 : 0 11 19 13 24 34 45 29 44 70 160 388                               16   246   0      3.84 sec
+ 12 : 0 11 19 13 24 34 45 29 32 55 79 177 343                            17   246   0      3.95 sec
+ 13 : 0 11 19 13 24 34 45 29 30 41 49 165 248 274                        16   246   0      4.23 sec
+ 14 : 0 11 19 13 24 34 45 29 30 41 25 78 150 182 238                      8   246   0      4.31 sec
+ 15 : 0 11 19 13 24 34 45 29 30 41 25 78 100 128 110 219                  0   246   0      4.35 sec
+ 16 : 0 11 19 13 24 34 45 29 30 41 25 78 104 146 212 226 316             61   246   0      5.88 sec
+ 17 : 0 11 19 13 24 34 45 29 30 41 25 79 85 113 169 304 313 381          75   246   0      7.43 sec
+ 18 : 0 11 19 13 24 34 45 29 30 41 25 48 35 12 13 27 26 58 801           10   246   0      7.62 sec
+ 19 : 0 11 19 13 24 34 45 29 30 41 25 48 33 6 2 3 0 0 0 864               0   246   0      7.65 sec
+Invariant F[16] : 864 clauses with 240 flops (out of 369) (cex = 13, ave = 46.80)
+Verification of invariant with 864 clauses was successful.  Time =     0.01 sec
+Block =   68  Oblig =  4714  Clause =  2588  Call = 63062 (sat=70.6%)  Cex =  13  Start = 199
+SAT solving =     3.66 sec ( 47.72 %)
+  unsat     =     0.29 sec (  3.83 %)
+  sat       =     3.37 sec ( 43.89 %)
+Generalize  =     6.67 sec ( 87.00 %)
+Push clause =     0.41 sec (  5.41 %)
+Ternary sim =     3.22 sec ( 41.95 %)
+Containment =     0.06 sec (  0.77 %)
+CNF compute =     0.14 sec (  1.77 %)
+Refinement  =     0.00 sec (  0.00 %)
+TOTAL       =     7.67 sec (100.00 %)
+Property proved.  Time =     7.68 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Thu 19 Jun 2025 05:29:04 PM CST
+========================================

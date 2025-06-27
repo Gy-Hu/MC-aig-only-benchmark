@@ -1,0 +1,51 @@
+File: abc_unknown_cases/6s0.aig
+Command: ~/coding_env/abc/abc -c "&r abc_unknown_cases/6s0.aig; &put; fold; pdr -v -r -y -i -t"
+PDR Parameters: -r -y -i -t
+Parameter Set: 20 of 32
+Started at: Fri 20 Jun 2025 04:56:46 AM CST
+----------------------------------------
+ABC command line: "&r abc_unknown_cases/6s0.aig; &put; fold; pdr -v -r -y -i -t".
+
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 1                                                                 1     1   1      0.01 sec
+  2 : 0 5 2                                                               5     6   1      0.01 sec
+  3 : 0 6 4 4                                                             5    13   1      0.01 sec
+  4 : 0 12 12 12 16                                                       9    28   2      0.04 sec
+  5 : 0 1 8 8 6 15                                                        8    28   1      0.05 sec
+  6 : 0 5 10 9 13 8 30                                                   11    41   2      0.08 sec
+  7 : 0 9 12 13 27 126 330 394                                           44    83   2      1.54 sec
+  8 : 0 12 15 10 11 116 1411 3397 2947                                  143   128   2     20.31 sec
+  9 : 0 14 16 10 19 103 1251 3431 4580 1865                             280   138   3     37.48 sec
+ 10 : 0 14 16 10 19 103 161 1484 5370 8566 6534                         280   138   0    102.71 sec
+ 11 : 0 14 16 10 19 103 117 769 2817 6066 9865 4628                     312   138   0    149.15 sec
+ 12 : 0 14 16 10 19 103 117 620 2265 4271 8619 9467 4662                 91   138   0    202.03 sec
+ 13 : 0 14 16 10 19 103 117 809 3040 6179 11504 14540 18090 11829       444   138   0    483.07 sec
+ 14 : ... 16 10 19 103 117 498 1833 4458 7611 7742 11057 13134 9203     888   138   0    615.73 sec
+ 15 : ... 10 19 103 117 452 1607 4225 6765 6845 8234 10741 15644 7368  1516   138   0    780.71 sec
+ 16 : ... 103 117 421 1396 3820 5491 4161 3318 2930 7506 11706 5123     107   138   0    823.84 sec
+ 17 : ... 117 421 1396 3820 5494 4113 3070 2679 6137 13009 12244 6519   670   138   0    921.91 sec
+ 18 : ... 421 1396 3820 5380 4011 2705 1621 1707 3542 5314 7831 16246   441   138   0   1005.50 sec
+ 19 : ... 421 1396 3820 5361 3992 2663 1422 711 123 98 95 184 24772       0   138   0   1030.64 sec
+ 20 : ... 1396 3820 5361 3992 2663 1422 711 123 98 95 184 351 24327       0   138   0   1041.06 sec
+ 21 : ... 3820 5361 3992 2664 1422 711 123 100 109 220 408 391 24076     31   138   0   1053.05 sec
+ 22 : ... 1396 3820 5361 3992 2656 1415 701 112 39 5 0 0 0 0 24854        0   138   0   1065.12 sec
+Invariant F[18] : 24854 clauses with 137 flops (out of 157) (cex = 15, ave = 46.48)
+Verification of invariant with 24854 clauses was successful.  Time =     1.78 sec
+Block =   34  Oblig =250215  Clause =145366  Call =3774410 (sat=73.8%)  Cex =  15  Start =12570
+SAT solving =   746.81 sec ( 70.00 %)
+  unsat     =   143.51 sec ( 13.45 %)
+  sat       =   603.30 sec ( 56.55 %)
+Generalize  =   679.39 sec ( 63.68 %)
+Push clause =   218.01 sec ( 20.43 %)
+Ternary sim =    21.32 sec (  2.00 %)
+Containment =    72.50 sec (  6.79 %)
+CNF compute =    76.43 sec (  7.16 %)
+Refinement  =     0.03 sec (  0.00 %)
+TOTAL       =  1066.92 sec (100.00 %)
+Property proved.  Time =  1066.94 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 20 Jun 2025 05:14:33 AM CST
+========================================

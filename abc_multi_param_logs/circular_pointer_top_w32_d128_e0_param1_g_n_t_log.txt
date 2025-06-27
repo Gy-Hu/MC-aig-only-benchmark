@@ -1,0 +1,28 @@
+File: abc_unknown_cases/circular_pointer_top_w32_d128_e0.aig
+Command: ~/coding_env/abc/abc -c "&r abc_unknown_cases/circular_pointer_top_w32_d128_e0.aig; &put; fold; pdr -v -g -n -t"
+PDR Parameters: -g -n -t
+Parameter Set: 1 of 32
+Started at: Mon 23 Jun 2025 01:34:25 PM CST
+----------------------------------------
+ABC command line: "&r abc_unknown_cases/circular_pointer_top_w32_d128_e0.aig; &put; fold; pdr -v -g -n -t".
+
+Warning: The last 3 outputs are interpreted as constraints.
+Converted 1 1-valued FFs and 4198 DC-valued FFs.
+Warning: The number of inputs does not match the number of input names.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = yes. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 3                                                                 2     5   2      0.15 sec
+  2 : 0 37 118                                                            4    96  42      1.53 sec
+  3 : 0 16 84 245                                                         4   128  32      3.28 sec
+  4 : 0 16 19 340 640                                                     7   168  32      7.59 sec
+  5 : 0 16 21 264 856 1252                                               13   200  32     16.26 sec
+  6 : 0 16 21 186 334 1794 2181                                           8   232  32     31.04 sec
+  7 : 0 16 21 185 321 1313 4020 4814                                     16   264  32     64.75 sec
+  8 : 0 16 21 184 302 943 2104 7141 6379                                 62   296  32    118.12 sec
+  9 : 0 16 22 192 311 791 1779 3805 13547 14223                          60   328  32    262.47 sec
+ 10 : 0 16 21 183 270 632 1500 2657 5656 24306 23989                     54   360  32    563.98 sec
+ 11 : 0 16 21 182 269 612 1495 2619 4816 14007 54481 49614              255   392  32   1695.20 sec
+----------------------------------------
+STATUS: TIMEOUT (exceeded 3600 seconds)
+Finished at: Mon 23 Jun 2025 02:34:25 PM CST
+========================================

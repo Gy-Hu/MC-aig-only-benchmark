@@ -1,0 +1,42 @@
+File: abc_unknown_cases/6s130.aig
+Command: ~/coding_env/abc/abc -c "&r abc_unknown_cases/6s130.aig; &put; fold; pdr -v -r -y -f -i -t"
+PDR Parameters: -r -y -f -i -t
+Parameter Set: 14 of 32
+Started at: Wed 18 Jun 2025 07:34:51 PM CST
+----------------------------------------
+ABC command line: "&r abc_unknown_cases/6s130.aig; &put; fold; pdr -v -r -y -f -i -t".
+
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 45                                                                1    14   1      0.07 sec
+  2 : 0 54 339                                                            4    28   2      0.34 sec
+  3 : 0 130 8 602                                                         4    48   2      1.98 sec
+  4 : 0 244 13 9 1112                                                    10    76   2      6.01 sec
+  5 : 0 265 24 9 5 1625                                                  11    87   1     10.29 sec
+  6 : 0 354 489 987 1280 582 2193                                       361   212   2     56.39 sec
+  7 : 0 310 318 858 1959 2474 763 2595                                  300   212   0    126.83 sec
+  8 : 0 321 569 1681 3998 7663 5913 1062 3247                          2391   296   1    535.44 sec
+  9 : 0 263 413 1130 2597 4929 4991 1394 35 3233                          0   296   0    549.62 sec
+ 10 : 0 263 413 1130 2597 4929 4991 1394 35 72 3161                       0   296   0    550.05 sec
+ 11 : 0 263 413 1130 2597 4929 4991 1394 35 72 1 3160                     0   296   0    550.60 sec
+ 12 : 0 263 413 1130 2597 4929 4991 1394 35 72 1 1 3159                   0   296   0    551.13 sec
+ 13 : 0 263 413 1130 2597 4929 4991 1394 35 72 1 1 0 3159                 0   296   0    551.65 sec
+Invariant F[12] : 3159 clauses with 269 flops (out of 811) (cex = 11, ave = 84.93)
+Verification of invariant with 3159 clauses was successful.  Time =     0.29 sec
+Block = 2634  Oblig = 64967  Clause = 28129  Call =836129 (sat=75.6%)  Cex =  11  Start =2771
+SAT solving =   431.97 sec ( 78.26 %)
+  unsat     =    28.31 sec (  5.13 %)
+  sat       =   403.66 sec ( 73.13 %)
+Generalize  =   442.60 sec ( 80.19 %)
+Push clause =    20.30 sec (  3.68 %)
+Ternary sim =    36.77 sec (  6.66 %)
+Containment =    20.79 sec (  3.77 %)
+CNF compute =    16.56 sec (  3.00 %)
+Refinement  =     0.06 sec (  0.01 %)
+TOTAL       =   551.95 sec (100.00 %)
+Property proved.  Time =   551.99 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Wed 18 Jun 2025 07:44:03 PM CST
+========================================

@@ -1,0 +1,29 @@
+File: abc_unknown_cases/imgfifo-p029.aig
+Command: ~/coding_env/abc/abc -c "&r abc_unknown_cases/imgfifo-p029.aig; &put; fold; pdr -v -i -g -n -t -k"
+PDR Parameters: -i -g -n -t -k
+Parameter Set: 2 of 32
+Started at: Sun 22 Jun 2025 03:25:54 AM CST
+----------------------------------------
+ABC command line: "&r abc_unknown_cases/imgfifo-p029.aig; &put; fold; pdr -v -i -g -n -t -k".
+
+Warning: The last 44 outputs are interpreted as constraints.
+Converted 28 1-valued FFs and 414 DC-valued FFs.
+Warning: The number of inputs does not match the number of input names.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = yes. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 4                                                                 1     5   1      0.01 sec
+  2 : 0 7 16                                                              3    23   1      0.02 sec
+  3 : 0 7 2 17                                                            1    23   0      0.02 sec
+  4 : 0 7 4 5 35                                                          5    51   2      0.04 sec
+  5 : 0 7 4 3 4 28                                                        0    51   0      0.04 sec
+  6 : 0 10 16 15 15 6 58                                                 20    69   2      0.09 sec
+  7 : 0 10 16 7 9 2 1 56                                                  0    69   0      0.09 sec
+  8 : 0 10 20 7 11 4 3 5 74                                              12    74   3      0.19 sec
+  9 : 0 11 26 17 19 11 10 7 15 165                                       22   108  11      0.35 sec
+ 10 : 0 11 26 17 19 11 10 7 8 25 138                                      1   108   0      0.36 sec
+ 11 : 0 11 37 159 300 504 1157 1617 2065 2613 4858 15599                127   245   4    101.14 sec
+ 12 : 0 11 37 236 1247 2802 4506 5773 6384 6952 8477 11078 42714        232   245   0    661.17 sec
+----------------------------------------
+STATUS: TIMEOUT (exceeded 3600 seconds)
+Finished at: Sun 22 Jun 2025 04:25:54 AM CST
+========================================

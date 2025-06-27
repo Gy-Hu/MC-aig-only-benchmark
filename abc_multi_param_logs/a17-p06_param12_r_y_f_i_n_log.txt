@@ -1,0 +1,37 @@
+File: abc_unknown_cases/a17-p06.aig
+Command: ~/coding_env/abc/abc -c "&r abc_unknown_cases/a17-p06.aig; &put; fold; pdr -v -r -y -f -i -n"
+PDR Parameters: -r -y -f -i -n
+Parameter Set: 12 of 32
+Started at: Fri 27 Jun 2025 04:48:49 AM CST
+----------------------------------------
+ABC command line: "&r abc_unknown_cases/a17-p06.aig; &put; fold; pdr -v -r -y -f -i -n".
+
+Warning: The last 9 outputs are interpreted as constraints.
+Converted 42 1-valued FFs and 2640 DC-valued FFs.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 1                                                                 1     1      0.05 sec
+  2 : 0 2 3                                                               2     3      0.05 sec
+  3 : 0 2 2 6                                                             3     5      0.05 sec
+  4 : 0 2 8 11 17                                                         9    18      0.09 sec
+  5 : 0 3 8 21 13 38                                                     12    41      0.23 sec
+  6 : 0 2 3 8 8 9 34                                                      1    43      0.24 sec
+  7 : 0 10 18 34 57 113 287 255                                         146   181      2.92 sec
+  8 : 0 7 14 25 34 60 209 178 105                                         2   181      3.01 sec
+  9 : 0 7 14 25 34 65 222 238 204 228                                    21   264      6.43 sec
+Block =   14  Oblig =  2001  Clause =  1219  Call = 19947 (sat=81.1%)  Cex =   0  Start =  63
+SAT solving =     2.91 sec ( 45.19 %)
+  unsat     =     0.08 sec (  1.19 %)
+  sat       =     2.83 sec ( 43.99 %)
+Generalize  =     5.81 sec ( 90.15 %)
+Push clause =     0.12 sec (  1.82 %)
+Ternary sim =     3.04 sec ( 47.19 %)
+Containment =     0.02 sec (  0.26 %)
+CNF compute =     0.11 sec (  1.67 %)
+Refinement  =     0.00 sec (  0.02 %)
+TOTAL       =     6.44 sec (100.00 %)
+Output 0 of miter "abc_unknown_cases/a17-p06" was asserted in frame 10.  Time =     6.46 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 27 Jun 2025 04:48:55 AM CST
+========================================

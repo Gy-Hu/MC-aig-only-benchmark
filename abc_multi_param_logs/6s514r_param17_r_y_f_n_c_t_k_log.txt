@@ -1,0 +1,28 @@
+File: abc_unknown_cases/6s514r.aig
+Command: ~/coding_env/abc/abc -c "&r abc_unknown_cases/6s514r.aig; &put; fold; pdr -v -r -y -f -n -c -t -k"
+PDR Parameters: -r -y -f -n -c -t -k
+Parameter Set: 17 of 32
+Started at: Mon 23 Jun 2025 11:04:44 PM CST
+----------------------------------------
+ABC command line: "&r abc_unknown_cases/6s514r.aig; &put; fold; pdr -v -r -y -f -n -c -t -k".
+
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 1                                                                 1     1   1      0.00 sec
+  2 : 0 3 2                                                               3     5   1      0.00 sec
+  3 : 0 10 9 10                                                           6    22   4      0.01 sec
+  4 : 0 12 14 14 16                                                       8    31   2      0.01 sec
+  5 : 0 9 11 8 8 14                                                       1    31   0      0.02 sec
+  6 : 0 10 15 17 28 24 32                                                13    35   5      0.04 sec
+  7 : 0 4 69 20 86 267 224 399                                           16   218 145      1.10 sec
+  8 : 0 4 69 10 87 208 157 416 77                                         3   218   0      1.20 sec
+  9 : 0 4 73 308 355 792 1095 1830 1942 2432                             54   314  84     16.93 sec
+ 10 : 0 4 73 150 218 706 1106 1289 1227 2384 574                          3   314   0     17.68 sec
+ 11 : 0 4 73 171 293 827 1256 1497 1515 2875 2571 1899                  141   322   2     32.06 sec
+ 12 : 0 4 73 171 828 2914 2239 4172 5425 7397 8345 9984 10378           490   379  57    325.17 sec
+ 13 : ... 4 73 171 774 1919 1914 3893 4875 7213 7736 8063 11662 5051    456   385   2    424.36 sec
+----------------------------------------
+STATUS: TIMEOUT (exceeded 3600 seconds)
+Finished at: Tue 24 Jun 2025 12:04:44 AM CST
+========================================

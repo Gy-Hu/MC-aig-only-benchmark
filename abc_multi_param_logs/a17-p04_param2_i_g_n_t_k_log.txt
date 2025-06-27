@@ -1,0 +1,34 @@
+File: abc_unknown_cases/a17-p04.aig
+Command: ~/coding_env/abc/abc -c "&r abc_unknown_cases/a17-p04.aig; &put; fold; pdr -v -i -g -n -t -k"
+PDR Parameters: -i -g -n -t -k
+Parameter Set: 2 of 32
+Started at: Thu 19 Jun 2025 11:54:53 AM CST
+----------------------------------------
+ABC command line: "&r abc_unknown_cases/a17-p04.aig; &put; fold; pdr -v -i -g -n -t -k".
+
+Warning: The last 9 outputs are interpreted as constraints.
+Converted 42 1-valued FFs and 2640 DC-valued FFs.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = yes. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 1                                                                 1     1   1      0.04 sec
+  2 : 0 2 3                                                               2     4   1      0.04 sec
+  3 : 0 5 6 6                                                             6    13   1      0.05 sec
+  4 : 0 3 3 2 3                                                           0    13   0      0.05 sec
+  5 : 0 3 3 2 1 3                                                         1    13   0      0.05 sec
+  6 : 0 3 3 2 1 2 5                                                       2    13   0      0.05 sec
+  7 : 0 3 3 2 1 1 1 4                                                     0    13   0      0.05 sec
+  8 : 0 5 8 7 4 6 5 5 9                                                  15    20   1      0.08 sec
+  9 : 0 5 8 3 1 1 1 1 1 9                                                 1    20   0      0.08 sec
+ 10 : 0 5 8 3 1 1 1 1 1 2 10                                              2    20   0      0.08 sec
+ 11 : 0 5 8 3 1 1 1 1 1 1 1 9                                             0    20   0      0.08 sec
+ 12 : 0 5 8 5 1 1 1 2 3 3 2 2 11                                         20    20   1      0.09 sec
+ 13 : 0 5 8 5 1 1 1 2 3 3 2 1 1 9                                         0    20   0      0.10 sec
+ 14 : 0 5 10 9 5 5 3 4 5 6 5 3 3 3 27                                    20    36   1      0.15 sec
+ 15 : 0 5 4 5 1 1 1 1 1 1 1 1 1 1 1 21                                    1    36   0      0.16 sec
+ 16 : 0 5 4 5 1 1 1 1 1 1 1 1 1 1 1 2 22                                  2    36   0      0.16 sec
+ 17 : 0 5 4 5 1 1 1 1 1 1 1 1 1 1 1 1 1 21                                0    36   0      0.16 sec
+ 18 : ... 175 480 638 1146 915 945 1289 2072 1636 1423 1959 2007 7555  3841   116   2     47.84 sec
+----------------------------------------
+STATUS: TIMEOUT (exceeded 3600 seconds)
+Finished at: Thu 19 Jun 2025 12:54:54 PM CST
+========================================

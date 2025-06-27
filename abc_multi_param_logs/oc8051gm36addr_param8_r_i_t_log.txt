@@ -1,0 +1,29 @@
+File: abc_unknown_cases/oc8051gm36addr.aig
+Command: ~/coding_env/abc/abc -c "&r abc_unknown_cases/oc8051gm36addr.aig; &put; fold; pdr -v -r -i -t"
+PDR Parameters: -r -i -t
+Parameter Set: 8 of 32
+Started at: Wed 25 Jun 2025 01:18:32 AM CST
+----------------------------------------
+ABC command line: "&r abc_unknown_cases/oc8051gm36addr.aig; &put; fold; pdr -v -r -i -t".
+
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 2                                                                 1     2   1      0.02 sec
+  2 : 0 3 4                                                               2     5   1      0.03 sec
+  3 : 0 6 4 10                                                            5    11   1      0.06 sec
+  4 : 0 1 1 6 2                                                           0    11   0      0.06 sec
+  5 : 0 6 24 138 449 439                                                 54   275   3      5.81 sec
+  6 : 0 4 2 17 43 67 177                                                 10   276   2      5.90 sec
+  7 : 0 4 2 17 49 127 104 236                                            62   289   2      6.69 sec
+  8 : 0 4 2 17 49 130 159 301 253                                        28   312   2      8.09 sec
+  9 : 0 4 2 12 8 16 82 224 124 116                                        0   312   0      8.21 sec
+ 10 : 0 4 2 12 9 17 106 353 686 2442 2528                               150   452   1     54.23 sec
+ 11 : 0 4 2 12 4 6 42 71 124 319 1556 952                                15   452   1     57.76 sec
+ 12 : 0 4 2 12 4 6 49 97 156 383 1874 2411 2200                         405   467   2     95.26 sec
+ 13 : 0 4 2 12 3 4 45 59 101 199 493 1768 3043 1964                     404   469   1    128.88 sec
+ 14 : 0 4 2 12 3 4 64 60 116 85 157 576 1898 8634 8131                  402   676   1    399.72 sec
+----------------------------------------
+STATUS: TIMEOUT (exceeded 3600 seconds)
+Finished at: Wed 25 Jun 2025 02:18:32 AM CST
+========================================

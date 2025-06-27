@@ -1,0 +1,27 @@
+File: abc_unknown_cases/fastfir-p020.aig
+Command: ~/coding_env/abc/abc -c "&r abc_unknown_cases/fastfir-p020.aig; &put; fold; pdr -v -g -n -t"
+PDR Parameters: -g -n -t
+Parameter Set: 1 of 32
+Started at: Sun 15 Jun 2025 07:13:17 AM CST
+----------------------------------------
+ABC command line: "&r abc_unknown_cases/fastfir-p020.aig; &put; fold; pdr -v -g -n -t".
+
+Warning: The last 342 outputs are interpreted as constraints.
+Converted 34 1-valued FFs and 39 DC-valued FFs.
+Warning: The number of inputs does not match the number of input names.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = yes. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 13                                                                1    13   1      0.09 sec
+  2 : 0 13 27                                                             4    29   1      0.21 sec
+  3 : 0 12 13 41                                                          5    38   1      0.39 sec
+  4 : 0 11 12 13 27                                                       0    38   0      0.41 sec
+  5 : 0 15 29 52 38 63                                                   28    63   2      0.93 sec
+  6 : 0 28 132 438 730 811 858                                           75   180  10      9.67 sec
+  7 : 0 58 229 996 2742 6047 5605 8280                                  124   285  57    111.38 sec
+  8 : 0 61 240 1036 2856 7770 7162 10081 12688                          443   326  18    239.43 sec
+  9 : 0 62 260 1182 3186 9009 9156 12120 7836 28129                     924   391  28    539.67 sec
+ 10 : 0 64 266 1248 3285 9710 11371 18877 11113 18552 55510             613   418  16   1356.91 sec
+----------------------------------------
+STATUS: TIMEOUT (exceeded 3600 seconds)
+Finished at: Sun 15 Jun 2025 08:13:17 AM CST
+========================================

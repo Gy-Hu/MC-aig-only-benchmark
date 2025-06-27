@@ -1,0 +1,41 @@
+File: abc_unknown_cases/zipcpu-zipmmu-p12.aig
+Command: ~/coding_env/abc/abc -c "&r abc_unknown_cases/zipcpu-zipmmu-p12.aig; &put; fold; pdr -v -y -i -n -t"
+PDR Parameters: -y -i -n -t
+Parameter Set: 28 of 32
+Started at: Fri 27 Jun 2025 02:30:40 PM CST
+----------------------------------------
+ABC command line: "&r abc_unknown_cases/zipcpu-zipmmu-p12.aig; &put; fold; pdr -v -y -i -n -t".
+
+Warning: The last 42 outputs are interpreted as constraints.
+Converted 2 1-valued FFs and 684 DC-valued FFs.
+Warning: The number of inputs does not match the number of input names.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 1                                                                 1     1   1      0.01 sec
+  2 : 0 2 4                                                               2     4   1      0.01 sec
+  3 : 0 3 3 8                                                             3    11   1      0.01 sec
+  4 : 0 7 8 6 13                                                          9    22   3      0.03 sec
+  5 : 0 7 8 6 5 14                                                        9    23   2      0.04 sec
+  6 : 0 9 11 16 32 47 689                                                20   244  10      1.48 sec
+  7 : 0 9 11 16 32 33 114 578                                             0   244   0      1.50 sec
+  8 : 0 9 11 16 32 33 114 9 712                                           3   244   0      1.82 sec
+  9 : 0 9 11 16 32 33 114 8 1 711                                         0   244   0      1.83 sec
+ 10 : 0 9 11 16 32 33 114 8 1 0 711                                       0   244   0      1.84 sec
+Invariant F[9] : 711 clauses with 232 flops (out of 369) (cex = 18, ave = 37.99)
+Verification of invariant with 711 clauses was successful.  Time =     0.01 sec
+Block =   34  Oblig =  2068  Clause =   957  Call = 13367 (sat=62.1%)  Cex =  18  Start =  39
+SAT solving =     0.59 sec ( 31.77 %)
+  unsat     =     0.04 sec (  2.10 %)
+  sat       =     0.55 sec ( 29.66 %)
+Generalize  =     1.65 sec ( 88.78 %)
+Push clause =     0.04 sec (  2.25 %)
+Ternary sim =     1.07 sec ( 57.77 %)
+Containment =     0.01 sec (  0.32 %)
+CNF compute =     0.02 sec (  1.24 %)
+Refinement  =     0.01 sec (  0.77 %)
+TOTAL       =     1.86 sec (100.00 %)
+Property proved.  Time =     1.86 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 27 Jun 2025 02:30:42 PM CST
+========================================

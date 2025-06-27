@@ -1,0 +1,29 @@
+File: abc_unknown_cases/arbitrated_top_n5_w128_d16_e0.aig
+Command: ~/coding_env/abc/abc -c "&r abc_unknown_cases/arbitrated_top_n5_w128_d16_e0.aig; &put; fold; pdr -v -r -i -t"
+PDR Parameters: -r -i -t
+Parameter Set: 8 of 32
+Started at: Wed 25 Jun 2025 11:04:36 PM CST
+----------------------------------------
+ABC command line: "&r abc_unknown_cases/arbitrated_top_n5_w128_d16_e0.aig; &put; fold; pdr -v -r -i -t".
+
+Warning: The last 16 outputs are interpreted as constraints.
+Converted 1 1-valued FFs and 10476 DC-valued FFs.
+Warning: The number of inputs does not match the number of input names.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 3                                                                 2     5   2      0.24 sec
+  2 : 0 15 19                                                             5    22   3      1.50 sec
+  3 : 0 33 65 295                                                         7   319 133     28.10 sec
+  4 : 0 34 55 82 457                                                      8   449 128     51.61 sec
+  5 : 0 34 55 46 330 824                                                  9   577 128    112.98 sec
+  6 : 0 34 55 51 316 530 771                                             14   709 129    166.75 sec
+  7 : 0 34 55 58 336 459 1155 1569                                       16   837 128    349.43 sec
+  8 : 0 34 56 60 340 475 628 1734 1688                                   19   965 128    533.54 sec
+  9 : 0 34 56 60 340 478 488 1616 2926 2911                              15  1093 128   1039.83 sec
+ 10 : 0 34 56 61 344 485 500 1307 2333 3682 3079                         17  1221 128   1513.50 sec
+ 11 : 0 34 56 61 344 485 504 1320 2378 3216 5501 4596                    22  1349 128   2453.64 sec
+ 12 : 0 34 56 61 344 485 504 1323 2389 3161 4336 6700 4250               20  1477 128   3449.80 sec
+----------------------------------------
+STATUS: TIMEOUT (exceeded 3600 seconds)
+Finished at: Thu 26 Jun 2025 12:04:36 AM CST
+========================================

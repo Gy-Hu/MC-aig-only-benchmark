@@ -1,0 +1,33 @@
+File: abc_unknown_cases/6s20.aig
+Command: ~/coding_env/abc/abc -c "&r abc_unknown_cases/6s20.aig; &put; fold; pdr -v -y -i -n -c -t"
+PDR Parameters: -y -i -n -c -t
+Parameter Set: 26 of 32
+Started at: Wed 18 Jun 2025 01:07:45 PM CST
+----------------------------------------
+ABC command line: "&r abc_unknown_cases/6s20.aig; &put; fold; pdr -v -y -i -n -c -t".
+
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 7                                                                 2     7   6      0.10 sec
+  2 : 0 41 30                                                            11    51   6      0.51 sec
+  3 : 0 99 315 212                                                       11   156   9      5.47 sec
+  4 : 0 64 245 644 282                                                   10   170   6     20.17 sec
+  5 : 0 65 251 607 1420 445                                              10   173   3     52.15 sec
+  6 : 0 65 205 567 1829 3161 856                                         14   173   0    205.64 sec
+Block =   70  Oblig =  4526  Clause = 10816  Call =198619 (sat=53.2%)  Cex =  30  Start = 658
+SAT solving =   284.62 sec ( 72.78 %)
+  unsat     =    93.56 sec ( 23.92 %)
+  sat       =   191.06 sec ( 48.85 %)
+Generalize  =   344.78 sec ( 88.16 %)
+Push clause =    39.45 sec ( 10.09 %)
+Ternary sim =    96.93 sec ( 24.78 %)
+Containment =     0.20 sec (  0.05 %)
+CNF compute =     5.33 sec (  1.36 %)
+Refinement  =     0.14 sec (  0.04 %)
+TOTAL       =   391.09 sec (100.00 %)
+Output 0 of miter "abc_unknown_cases/6s20" was asserted in frame 12.  Time =   391.12 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Wed 18 Jun 2025 01:14:16 PM CST
+========================================

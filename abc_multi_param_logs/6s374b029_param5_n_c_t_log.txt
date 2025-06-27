@@ -1,0 +1,36 @@
+File: abc_unknown_cases/6s374b029.aig
+Command: ~/coding_env/abc/abc -c "&r abc_unknown_cases/6s374b029.aig; &put; fold; pdr -v -n -c -t"
+PDR Parameters: -n -c -t
+Parameter Set: 5 of 32
+Started at: Mon 16 Jun 2025 12:00:14 PM CST
+----------------------------------------
+ABC command line: "&r abc_unknown_cases/6s374b029.aig; &put; fold; pdr -v -n -c -t".
+
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 2                                                                 1     2   1      0.42 sec
+  2 : 0 4 3                                                               3     5   2      0.48 sec
+  3 : 0 12 9 2                                                            9    16   6      0.83 sec
+  4 : 0 8 3 2 3                                                           0    16   0      0.83 sec
+  5 : 0 18 12 6 7 4                                                      16    32   4      1.14 sec
+  6 : 0 22 19 9 7 6 6                                                    17    45   5      1.61 sec
+  7 : 0 16 15 4 6 5 2 5                                                   0    45   0      1.62 sec
+  8 : 0 50 58 31 19 19 10 9 30                                           23   130  14      3.17 sec
+  9 : 0 35 44 17 9 9 9 6 11 27                                            0   130   0      3.19 sec
+Block =  378  Oblig = 93559  Clause = 86844  Call =1707101 (sat=69.8%)  Cex = 366  Start =5684
+SAT solving =  1292.58 sec ( 57.80 %)
+  unsat     =    92.23 sec (  4.12 %)
+  sat       =  1200.35 sec ( 53.67 %)
+Generalize  =  1710.16 sec ( 76.47 %)
+Push clause =     0.04 sec (  0.00 %)
+Ternary sim =   353.05 sec ( 15.79 %)
+Containment =   362.11 sec ( 16.19 %)
+CNF compute =    83.74 sec (  3.74 %)
+Refinement  =    34.94 sec (  1.56 %)
+TOTAL       =  2236.33 sec (100.00 %)
+Output 0 of miter "abc_unknown_cases/6s374b029" was asserted in frame 10.  Time =  2236.57 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Mon 16 Jun 2025 12:37:31 PM CST
+========================================

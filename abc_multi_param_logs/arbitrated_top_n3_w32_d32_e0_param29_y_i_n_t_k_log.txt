@@ -1,0 +1,54 @@
+File: abc_unknown_cases/arbitrated_top_n3_w32_d32_e0.aig
+Command: ~/coding_env/abc/abc -c "&r abc_unknown_cases/arbitrated_top_n3_w32_d32_e0.aig; &put; fold; pdr -v -y -i -n -t -k"
+PDR Parameters: -y -i -n -t -k
+Parameter Set: 29 of 32
+Started at: Fri 13 Jun 2025 04:55:19 PM CST
+----------------------------------------
+ABC command line: "&r abc_unknown_cases/arbitrated_top_n3_w32_d32_e0.aig; &put; fold; pdr -v -y -i -n -t -k".
+
+Warning: The last 10 outputs are interpreted as constraints.
+Converted 1 1-valued FFs and 3185 DC-valued FFs.
+Warning: The number of inputs does not match the number of input names.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 4                                                                 2     6   2      0.27 sec
+  2 : 0 12 19                                                             3    23   4      0.94 sec
+  3 : 0 25 49 104                                                         7   116  39      5.52 sec
+  4 : 0 25 42 60 157                                                      7   148  33      9.09 sec
+  5 : 0 25 42 38 63 175                                                   6   180  32     12.49 sec
+  6 : 0 25 43 48 82 90 222                                               26   218  33     17.07 sec
+  7 : 0 25 43 49 87 96 129 292                                           14   250  32     22.88 sec
+  8 : 0 25 43 49 88 98 118 180 352                                       14   282  32     29.86 sec
+  9 : 0 25 43 49 90 100 128 174 252 437                                  16   314  32     40.61 sec
+ 10 : 0 25 44 53 95 107 141 189 232 305 444                              27   346  32     50.72 sec
+ 11 : 0 25 44 53 95 107 143 193 224 350 428 624                          24   377  31     68.96 sec
+ 12 : 0 25 44 53 95 107 143 195 234 380 402 525 659                      23   409  32     86.14 sec
+ 13 : 0 25 44 53 95 107 143 196 208 281 377 429 554 663                  22   441  32    102.51 sec
+ 14 : 0 25 44 53 95 107 143 201 221 291 396 377 462 483 689              25   473  32    119.18 sec
+ 15 : 0 25 44 53 95 107 149 216 250 326 439 418 527 455 592 852          58   505  32    146.05 sec
+ 16 : ... 25 44 53 95 108 152 223 258 333 452 442 422 449 560 672 881    38   537  32    172.92 sec
+ 17 : ... 53 95 108 152 223 258 339 467 374 483 571 756 943 1005 1209    89   569  32    235.75 sec
+ 18 : ... 97 110 155 224 262 267 381 359 449 453 595 679 834 985 1196    43   601  32    271.95 sec
+ 19 : ... 155 226 265 271 400 406 530 569 783 930 1168 1184 1270 1089   306   633  32    339.10 sec
+ 20 : ... 265 271 400 406 530 571 793 968 1247 1347 1148 1253 1360       65   665  32    401.66 sec
+ 21 : ... 265 271 400 406 530 571 793 968 591 691 924 1038 1154 1220     50   697  32    435.84 sec
+ 22 : ... 272 402 408 536 581 808 999 605 679 959 1024 1360 1398 1417    59   729  32    503.25 sec
+ 23 : ... 459 597 655 887 1093 716 802 1141 1336 1827 1713 1830 1875    142   761  32    632.28 sec
+ 24 : ... 597 656 890 1098 721 807 808 840 1029 1207 1482 1730 1586     114   793  32    686.52 sec
+ 25 : ... 661 901 1117 739 823 843 915 1154 1381 1769 1959 1907 1930     68   825  32    800.05 sec
+Block = 2428  Oblig = 71742  Clause = 29742  Call =907879 (sat=77.3%)  Cex = 782  Start =3005
+SAT solving =   650.42 sec ( 73.26 %)
+  unsat     =    29.64 sec (  3.34 %)
+  sat       =   620.78 sec ( 69.92 %)
+Generalize  =   672.97 sec ( 75.80 %)
+Push clause =    36.56 sec (  4.12 %)
+Ternary sim =   140.02 sec ( 15.77 %)
+Containment =     5.79 sec (  0.65 %)
+CNF compute =     5.05 sec (  0.57 %)
+Refinement  =     0.01 sec (  0.00 %)
+TOTAL       =   887.82 sec (100.00 %)
+Output 0 of miter "abc_unknown_cases/arbitrated_top_n3_w32_d32_e0" was asserted in frame 35.  Time =   887.87 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 13 Jun 2025 05:10:07 PM CST
+========================================

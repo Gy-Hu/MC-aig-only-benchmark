@@ -1,0 +1,37 @@
+File: abc_unknown_cases/arbitrated_top_n2_w8_d32_e0.aig
+Command: ~/coding_env/abc/abc -c "&r abc_unknown_cases/arbitrated_top_n2_w8_d32_e0.aig; &put; fold; pdr -v -i -g -n -t -k"
+PDR Parameters: -i -g -n -t -k
+Parameter Set: 2 of 32
+Started at: Tue 17 Jun 2025 03:35:51 PM CST
+----------------------------------------
+ABC command line: "&r abc_unknown_cases/arbitrated_top_n2_w8_d32_e0.aig; &put; fold; pdr -v -i -g -n -t -k".
+
+Warning: The last 7 outputs are interpreted as constraints.
+Converted 1 1-valued FFs and 577 DC-valued FFs.
+Warning: The number of inputs does not match the number of input names.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = yes. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 4                                                                 2     6   2      0.01 sec
+  2 : 0 11 13                                                             4    15   1      0.02 sec
+  3 : 0 17 48 158                                                         7    53  12      0.15 sec
+  4 : 0 11 33 114 239                                                    20    69   8      0.32 sec
+  5 : 0 11 33 85 588 703                                                 13    78   8      0.95 sec
+  6 : 0 11 33 88 596 2175 2370                                           51    86   8      3.44 sec
+  7 : 0 11 33 94 664 2061 7105 7677                                      61    94   8     18.22 sec
+  8 : 0 11 33 105 670 2132 6622 20450 18811                             340   102   8    103.97 sec
+Block = 4024  Oblig =191844  Clause =122857  Call =322840 (sat=51.9%)  Cex =  63  Start =1058
+SAT solving =   277.94 sec ( 55.90 %)
+  unsat     =   151.67 sec ( 30.50 %)
+  sat       =   126.27 sec ( 25.40 %)
+Generalize  =   197.72 sec ( 39.77 %)
+Push clause =    32.90 sec (  6.62 %)
+Ternary sim =     8.37 sec (  1.68 %)
+Containment =    88.70 sec ( 17.84 %)
+CNF compute =    11.97 sec (  2.41 %)
+Refinement  =     0.00 sec (  0.00 %)
+TOTAL       =   497.21 sec (100.00 %)
+Output 0 of miter "abc_unknown_cases/arbitrated_top_n2_w8_d32_e0" was asserted in frame 37.  Time =   497.23 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Tue 17 Jun 2025 03:44:08 PM CST
+========================================

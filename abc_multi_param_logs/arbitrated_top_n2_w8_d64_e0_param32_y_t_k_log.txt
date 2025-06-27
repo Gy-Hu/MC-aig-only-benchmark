@@ -1,0 +1,31 @@
+File: abc_unknown_cases/arbitrated_top_n2_w8_d64_e0.aig
+Command: ~/coding_env/abc/abc -c "&r abc_unknown_cases/arbitrated_top_n2_w8_d64_e0.aig; &put; fold; pdr -v -y -t -k"
+PDR Parameters: -y -t -k
+Parameter Set: 32 of 32
+Started at: Fri 27 Jun 2025 09:40:30 PM CST
+----------------------------------------
+ABC command line: "&r abc_unknown_cases/arbitrated_top_n2_w8_d64_e0.aig; &put; fold; pdr -v -y -t -k".
+
+Warning: The last 7 outputs are interpreted as constraints.
+Converted 1 1-valued FFs and 1098 DC-valued FFs.
+Warning: The number of inputs does not match the number of input names.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 3                                                                 2     5   2      0.04 sec
+  2 : 0 21 35                                                             4    31   3      0.24 sec
+  3 : 0 18 31 47                                                          5    53  13      0.55 sec
+  4 : 0 17 48 74 98                                                       8    69   8      0.95 sec
+  5 : 0 7 26 30 87 95                                                     8    79   8      1.31 sec
+  6 : 0 7 26 30 83 144 155                                                9    93   9      2.01 sec
+  7 : 0 7 26 26 68 144 251 213                                           11   101   8      3.06 sec
+  8 : 0 7 26 27 63 125 196 268 195                                       11   109   8      4.12 sec
+  9 : 0 7 26 27 60 109 156 230 328 329                                   17   117   8      5.93 sec
+ 10 : 0 7 27 30 65 116 160 205 285 494 349                               36   125   8      8.25 sec
+ 11 : 0 7 24 23 54 105 134 199 282 488 630 490                           24   133   8     11.87 sec
+ 12 : 0 7 24 23 54 105 134 197 294 456 597 794 545                       31   141   8     16.48 sec
+ 13 : 0 7 24 23 54 93 122 186 252 387 545 865 1243 938                   37   149   8     24.86 sec
+ 14 : 0 7 24 23 54 93 121 185 243 349 487 786 1135 1372 970              47   157   8     33.23 sec
+ 15 : 0 7 24 23 54 93 118 181 239 354 476 736 1012 1245 1356 792         33   165   8     40.95 sec
+ 16 : ... 24 23 53 94 118 179 239 338 457 689 958 1323 1465 1471 1082    39   173   8     53.70 sec
+ 17 : ... 53 93 118 179 239 338 460 690 967 1325 1569 1711 1847 1389     57   181   8     73.24 sec
+ 18 : ... 118 179 239 319 445 657 938 1289 1501 1615 1645 1705 1079      97   189   8     87.64 sec

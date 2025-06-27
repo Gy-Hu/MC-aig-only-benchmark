@@ -1,0 +1,24 @@
+File: abc_unknown_cases/a06-p1.aig
+Command: ~/coding_env/abc/abc -c "&r abc_unknown_cases/a06-p1.aig; &put; fold; pdr -v -n -c -t"
+PDR Parameters: -n -c -t
+Parameter Set: 5 of 32
+Started at: Tue 24 Jun 2025 01:42:24 PM CST
+----------------------------------------
+ABC command line: "&r abc_unknown_cases/a06-p1.aig; &put; fold; pdr -v -n -c -t".
+
+Warning: The last 71 outputs are interpreted as constraints.
+Converted 173 1-valued FFs and 503 DC-valued FFs.
+Warning: The number of inputs does not match the number of flop names.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 1                                                                 1     1   1      0.01 sec
+  2 : 0 60 25                                                            10   100  37      0.21 sec
+  3 : 0 695 2395 1858                                                    40   267  36     17.42 sec
+  4 : 0 729 2538 5857 1577                                               36   318  33     42.86 sec
+  5 : 0 794 2362 9216 18658 5361                                         55   372  32    214.63 sec
+  6 : 0 807 2272 8923 24846 34152 9090                                  101   378   2    766.38 sec
+  7 : 0 811 2284 8907 24129 45397 50708 15495                            86   378   0   2585.89 sec
+----------------------------------------
+STATUS: TIMEOUT (exceeded 3600 seconds)
+Finished at: Tue 24 Jun 2025 02:42:24 PM CST
+========================================

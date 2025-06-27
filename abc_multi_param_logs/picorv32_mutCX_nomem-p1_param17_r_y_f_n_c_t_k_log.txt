@@ -1,0 +1,24 @@
+File: abc_unknown_cases/picorv32_mutCX_nomem-p1.aig
+Command: ~/coding_env/abc/abc -c "&r abc_unknown_cases/picorv32_mutCX_nomem-p1.aig; &put; fold; pdr -v -r -y -f -n -c -t -k"
+PDR Parameters: -r -y -f -n -c -t -k
+Parameter Set: 17 of 32
+Started at: Mon 16 Jun 2025 08:58:39 AM CST
+----------------------------------------
+ABC command line: "&r abc_unknown_cases/picorv32_mutCX_nomem-p1.aig; &put; fold; pdr -v -r -y -f -n -c -t -k".
+
+Warning: The last 216 outputs are interpreted as constraints.
+Converted 1 1-valued FFs and 1436 DC-valued FFs.
+Warning: The number of inputs does not match the number of input names.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 38                                                                1    41   1      1.88 sec
+  2 : 0 17 26                                                             1    41   0      2.55 sec
+  3 : 0 19 21 29                                                          5    41   0      5.77 sec
+  4 : 0 18 13 10 17                                                       0    41   0      5.82 sec
+  5 : 0 18 13 10 23 27                                                    7    41   1      8.83 sec
+  6 : 0 18 43 98 315 810 1094                                             8   255   1    155.55 sec
+  7 : 0 15 37 103 186 355 927 869                                        11   255   0    221.06 sec
+----------------------------------------
+STATUS: TIMEOUT (exceeded 3600 seconds)
+Finished at: Mon 16 Jun 2025 09:58:39 AM CST
+========================================

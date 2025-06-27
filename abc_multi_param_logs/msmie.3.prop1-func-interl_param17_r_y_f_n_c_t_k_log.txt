@@ -1,0 +1,53 @@
+File: abc_unknown_cases/msmie.3.prop1-func-interl.aig
+Command: ~/coding_env/abc/abc -c "&r abc_unknown_cases/msmie.3.prop1-func-interl.aig; &put; fold; pdr -v -r -y -f -n -c -t -k"
+PDR Parameters: -r -y -f -n -c -t -k
+Parameter Set: 17 of 32
+Started at: Wed 25 Jun 2025 11:07:17 AM CST
+----------------------------------------
+ABC command line: "&r abc_unknown_cases/msmie.3.prop1-func-interl.aig; &put; fold; pdr -v -r -y -f -n -c -t -k".
+
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 1                                                                 1     2   1      0.00 sec
+  2 : 0 5 3                                                               4    13   1      0.02 sec
+  3 : 0 30 106 25                                                        10    57   1      0.47 sec
+  4 : 0 57 196 214 56                                                    14    95   1      1.25 sec
+  5 : 0 59 241 644 1189 212                                              70    95   0      6.21 sec
+  6 : 0 23 84 172 583 1035 215                                           40    95   0      9.17 sec
+  7 : 0 21 41 77 171 575 766 179                                         29    99   1     10.76 sec
+  8 : 0 17 11 18 38 140 303 473 356                                      13   107   2     11.77 sec
+  9 : 0 17 11 16 3 28 39 84 232 617                                      10   107   0     12.10 sec
+ 10 : 0 17 11 16 3 27 38 73 176 382 327                                   4   107   0     12.31 sec
+ 11 : 0 17 11 16 3 27 38 73 147 339 443 186                               6   107   0     13.07 sec
+ 12 : 0 17 11 16 3 27 36 54 112 312 674 986 158                           8   107   0     16.62 sec
+ 13 : 0 17 11 16 3 27 36 54 99 317 713 2324 3837 228                     29   117   1     38.28 sec
+ 14 : 0 17 11 16 3 27 36 54 93 280 782 2814 8482 14690 1469              83   117   0    160.37 sec
+ 15 : 0 17 11 16 3 27 36 54 67 134 284 681 1931 5586 6680 1132           36   117   0    188.64 sec
+ 16 : ... 17 11 16 3 27 36 54 67 130 217 353 682 1052 1520 1601 1364     11   117   0    192.35 sec
+ 17 : ... 11 16 3 27 36 54 69 133 218 353 635 861 1102 1198 1586 1015    17   117   0    198.47 sec
+ 18 : ... 16 3 27 36 54 69 131 216 350 606 800 879 807 1033 1067 1058     5   117   0    201.33 sec
+ 19 : ... 27 36 54 69 131 216 350 604 789 880 845 1152 1995 2850 982     59   117   0    219.72 sec
+ 20 : ... 36 54 69 131 216 348 602 788 881 806 918 1448 3613 4756 905    38   117   0    249.06 sec
+ 21 : ... 69 131 216 348 602 785 839 708 761 743 1007 1853 1765 1779      9   117   0    260.06 sec
+ 22 : ... 216 348 602 785 838 713 781 762 1016 1786 2481 3393 1735      145   117   0    287.80 sec
+ 23 : ... 237 373 652 834 951 817 876 713 690 898 756 706 554 3252       67   127   1    299.55 sec
+ 24 : ... 118 198 292 526 697 712 541 556 468 346 205 85 5 0 0 3190       0   127   0    301.25 sec
+Invariant F[22] : 3190 clauses with 124 flops (out of 153) (cex = 9, ave = 85.59)
+Verification of invariant with 3190 clauses was successful.  Time =     0.15 sec
+Block =   32  Oblig = 11507  Clause = 58770  Call =1696879 (sat=44.0%)  Cex =   9  Start =5643
+SAT solving =   228.58 sec ( 75.84 %)
+  unsat     =    76.25 sec ( 25.30 %)
+  sat       =   152.33 sec ( 50.54 %)
+Generalize  =   269.91 sec ( 89.55 %)
+Push clause =    24.85 sec (  8.24 %)
+Ternary sim =    43.74 sec ( 14.51 %)
+Containment =     3.13 sec (  1.04 %)
+CNF compute =    13.67 sec (  4.54 %)
+Refinement  =     0.00 sec (  0.00 %)
+TOTAL       =   301.40 sec (100.00 %)
+Property proved.  Time =   301.44 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Wed 25 Jun 2025 11:12:19 AM CST
+========================================

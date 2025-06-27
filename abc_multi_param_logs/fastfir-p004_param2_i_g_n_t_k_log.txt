@@ -1,0 +1,31 @@
+File: abc_unknown_cases/fastfir-p004.aig
+Command: ~/coding_env/abc/abc -c "&r abc_unknown_cases/fastfir-p004.aig; &put; fold; pdr -v -i -g -n -t -k"
+PDR Parameters: -i -g -n -t -k
+Parameter Set: 2 of 32
+Started at: Thu 19 Jun 2025 05:36:20 PM CST
+----------------------------------------
+ABC command line: "&r abc_unknown_cases/fastfir-p004.aig; &put; fold; pdr -v -i -g -n -t -k".
+
+Warning: The last 342 outputs are interpreted as constraints.
+Converted 34 1-valued FFs and 39 DC-valued FFs.
+Warning: The number of inputs does not match the number of input names.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = yes. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 14                                                                1    14   1      0.10 sec
+  2 : 0 15 30                                                             4    31   1      0.22 sec
+  3 : 0 177 211 554                                                      78   278  49      3.22 sec
+  4 : 0 275 255 636 1686                                                 20   323  14      9.89 sec
+  5 : 0 312 271 840 553 5122                                             54   364   7     30.75 sec
+  6 : 0 239 297 680 456 1531 4296                                        16   465  12     45.65 sec
+  7 : 0 289 330 646 522 1421 2554 12792                                  36   477   4    119.36 sec
+  8 : 0 303 362 501 445 1094 2249 3359 10964                             24   490   6    181.35 sec
+  9 : 0 376 393 497 455 758 1844 2236 2738 13651                         76   531   8    264.13 sec
+ 10 : 0 406 460 628 601 910 1868 2255 2596 4764 13391                    77   660  15    355.48 sec
+ 11 : 0 578 587 773 678 1233 1616 2196 2572 4681 6333 30042             100   774  22    659.10 sec
+ 12 : 0 553 546 672 580 979 1035 1466 1791 2898 3826 5027 18160          37   783   6    783.98 sec
+ 13 : ... 594 725 604 1175 1253 1825 2394 3750 5477 8182 9310 35085     175   794   9   1230.08 sec
+ 14 : ... 752 609 1155 1130 1716 2184 3364 4666 5967 7146 10057 28790   137   794   0   1580.26 sec
+----------------------------------------
+STATUS: TIMEOUT (exceeded 3600 seconds)
+Finished at: Thu 19 Jun 2025 06:36:20 PM CST
+========================================

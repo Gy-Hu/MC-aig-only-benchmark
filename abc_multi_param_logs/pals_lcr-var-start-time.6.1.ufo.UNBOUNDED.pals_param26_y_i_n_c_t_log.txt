@@ -1,0 +1,24 @@
+File: abc_unknown_cases/pals_lcr-var-start-time.6.1.ufo.UNBOUNDED.pals.aig
+Command: ~/coding_env/abc/abc -c "&r abc_unknown_cases/pals_lcr-var-start-time.6.1.ufo.UNBOUNDED.pals.aig; &put; fold; pdr -v -y -i -n -c -t"
+PDR Parameters: -y -i -n -c -t
+Parameter Set: 26 of 32
+Started at: Tue 24 Jun 2025 05:23:07 AM CST
+----------------------------------------
+ABC command line: "&r abc_unknown_cases/pals_lcr-var-start-time.6.1.ufo.UNBOUNDED.pals.aig; &put; fold; pdr -v -y -i -n -c -t".
+
+Converted 0 1-valued FFs and 271 DC-valued FFs.
+Warning: The number of inputs does not match the number of input names.
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 2                                                                 2     3   2      0.02 sec
+  2 : 0 2 3                                                               3     5   1      0.04 sec
+  3 : 0 1 82 148                                                          4   239   1      1.51 sec
+  4 : 0 1 54 184 1121                                                     5   272   1     27.90 sec
+  5 : 0 1 54 118 274 1043                                                 2   272   0     29.24 sec
+  6 : 0 1 54 118 270 3798 6675                                            5   272   0    237.59 sec
+  7 : 0 1 54 85 243 2350 6075 3818                                        3   272   0    275.20 sec
+----------------------------------------
+STATUS: TIMEOUT (exceeded 3600 seconds)
+Finished at: Tue 24 Jun 2025 06:23:07 AM CST
+========================================

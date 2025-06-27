@@ -1,0 +1,26 @@
+File: abc_unknown_cases/picorv32_mutBY_nomem-p8.aig
+Command: ~/coding_env/abc/abc -c "&r abc_unknown_cases/picorv32_mutBY_nomem-p8.aig; &put; fold; pdr -v -r -y -f -i -t -k"
+PDR Parameters: -r -y -f -i -t -k
+Parameter Set: 15 of 32
+Started at: Fri 27 Jun 2025 06:44:56 AM CST
+----------------------------------------
+ABC command line: "&r abc_unknown_cases/picorv32_mutBY_nomem-p8.aig; &put; fold; pdr -v -r -y -f -i -t -k".
+
+Warning: The last output is interpreted as a constraint.
+Converted 1 1-valued FFs and 1436 DC-valued FFs.
+Warning: The number of inputs does not match the number of input names.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 2                                                                 2     4   2      0.07 sec
+  2 : 0 21 14                                                             6    29   3      0.12 sec
+  3 : 0 19 26 162                                                         6   174  71      0.79 sec
+  4 : 0 19 26 120 124                                                     5   177   1      0.91 sec
+  5 : 0 2 8 18 166 127                                                    7   177   0      1.21 sec
+  6 : 0 103 21 139 226 671 565                                           61   456  14     15.41 sec
+  7 : 0 105 21 141 211 558 1181 681                                      20   571  50     27.70 sec
+  8 : 0 122 39 184 339 2920 6677 13267 10286                            276  3268 617   1045.01 sec
+  9 : 0 69 8 73 90 2395 5810 14449 29870 17843                          221  3293  15   2759.78 sec
+----------------------------------------
+STATUS: TIMEOUT (exceeded 3600 seconds)
+Finished at: Fri 27 Jun 2025 07:44:56 AM CST
+========================================

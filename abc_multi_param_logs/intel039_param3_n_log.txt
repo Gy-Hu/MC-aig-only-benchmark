@@ -1,0 +1,25 @@
+File: abc_unknown_cases/intel039.aig
+Command: ~/coding_env/abc/abc -c "&r abc_unknown_cases/intel039.aig; &put; fold; pdr -v -n"
+PDR Parameters: -n
+Parameter Set: 3 of 32
+Started at: Fri 13 Jun 2025 08:09:28 PM CST
+----------------------------------------
+ABC command line: "&r abc_unknown_cases/intel039.aig; &put; fold; pdr -v -n".
+
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 1                                                                 1     1      0.14 sec
+  2 : 0 2 2                                                               2     5      1.38 sec
+  3 : 0 3 60 200                                                          3   269    378.41 sec
+  4 : 0 3 57 2 199                                                        0   269    379.08 sec
+  5 : 0 3 57 2 7 228                                                      3   292    474.53 sec
+  6 : 0 3 57 2 3 6 224                                                    0   292    475.14 sec
+  7 : 0 3 57 2 3 5 18 857                                                 4   642   2318.49 sec
+  8 : 0 3 57 2 3 5 6 19 900                                               3   655   2484.45 sec
+  9 : 0 3 57 2 3 5 4 8 23 1126                                            4   702   3149.87 sec
+ 10 : 0 3 57 2 3 5 4 8 10 23 1243                                         3   714   3587.70 sec
+----------------------------------------
+STATUS: TIMEOUT (exceeded 3600 seconds)
+Finished at: Fri 13 Jun 2025 09:09:28 PM CST
+========================================

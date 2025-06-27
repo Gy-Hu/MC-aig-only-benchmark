@@ -1,0 +1,43 @@
+File: abc_unknown_cases/zipcpu-zipmmu-p39.aig
+Command: ~/coding_env/abc/abc -c "&r abc_unknown_cases/zipcpu-zipmmu-p39.aig; &put; fold; pdr -v -r -y -f -i -t -k"
+PDR Parameters: -r -y -f -i -t -k
+Parameter Set: 15 of 32
+Started at: Sat 21 Jun 2025 08:41:05 AM CST
+----------------------------------------
+ABC command line: "&r abc_unknown_cases/zipcpu-zipmmu-p39.aig; &put; fold; pdr -v -r -y -f -i -t -k".
+
+Converted 2 1-valued FFs and 684 DC-valued FFs.
+Warning: The number of inputs does not match the number of input names.
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 2                                                                 1     3   1      0.01 sec
+  2 : 0 3 7                                                               2     9   1      0.01 sec
+  3 : 0 10 14 24                                                          8    33   3      0.03 sec
+  4 : 0 11 13 86 92                                                      14   106  27      0.14 sec
+  5 : 0 11 13 80 91 331                                                   7   117   3      0.47 sec
+  6 : 0 11 4 81 80 9 277                                                  0   117   0      0.48 sec
+  7 : 0 11 4 81 80 9 123 154                                              0   117   0      0.49 sec
+  8 : 0 11 4 81 82 25 186 82 433                                         19   117   0      0.93 sec
+  9 : 0 11 4 81 82 22 170 47 3 387                                        0   117   0      0.95 sec
+ 10 : 0 11 4 81 82 22 170 47 3 4 383                                      0   117   0      0.95 sec
+ 11 : 0 11 4 81 82 22 170 47 3 4 4 379                                    0   117   0      0.96 sec
+ 12 : 0 11 4 81 82 22 170 47 3 4 4 0 379                                  0   117   0      0.96 sec
+Invariant F[11] : 379 clauses with 106 flops (out of 795) (cex = 35, ave = 43.54)
+Verification of invariant with 379 clauses was successful.  Time =     0.00 sec
+Block =   58  Oblig =  2029  Clause =   977  Call = 18582 (sat=76.7%)  Cex =  35  Start =  58
+SAT solving =     0.69 sec ( 71.13 %)
+  unsat     =     0.03 sec (  3.34 %)
+  sat       =     0.66 sec ( 67.79 %)
+Generalize  =     0.78 sec ( 79.95 %)
+Push clause =     0.06 sec (  5.66 %)
+Ternary sim =     0.12 sec ( 12.75 %)
+Containment =     0.00 sec (  0.40 %)
+CNF compute =     0.02 sec (  2.25 %)
+Refinement  =     0.00 sec (  0.00 %)
+TOTAL       =     0.97 sec (100.00 %)
+Property proved.  Time =     0.98 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Sat 21 Jun 2025 08:41:06 AM CST
+========================================

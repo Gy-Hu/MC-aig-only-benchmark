@@ -1,0 +1,42 @@
+File: abc_unknown_cases/zipcpu-zipmmu-p12.aig
+Command: ~/coding_env/abc/abc -c "&r abc_unknown_cases/zipcpu-zipmmu-p12.aig; &put; fold; pdr -v -n -t -k"
+PDR Parameters: -n -t -k
+Parameter Set: 6 of 32
+Started at: Fri 27 Jun 2025 02:25:20 PM CST
+----------------------------------------
+ABC command line: "&r abc_unknown_cases/zipcpu-zipmmu-p12.aig; &put; fold; pdr -v -n -t -k".
+
+Warning: The last 42 outputs are interpreted as constraints.
+Converted 2 1-valued FFs and 684 DC-valued FFs.
+Warning: The number of inputs does not match the number of input names.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 1                                                                 1     1   1      0.00 sec
+  2 : 0 2 3                                                               2     3   1      0.01 sec
+  3 : 0 3 3 9                                                             3    11   1      0.01 sec
+  4 : 0 10 14 14 32                                                      16    49   3      0.05 sec
+  5 : 0 11 11 17 29 53                                                   13    55   2      0.11 sec
+  6 : 0 15 25 27 45 43 54624                                             25   250   6    299.04 sec
+  7 : 0 15 21 22 34 19 19 54621                                           0   250   0    331.76 sec
+  8 : 0 15 21 22 34 19 19 20 54601                                        0   250   0    364.02 sec
+  9 : 0 15 21 22 34 19 19 20 10 54591                                     0   250   0    397.03 sec
+ 10 : 0 15 21 22 34 19 19 20 10 4 54587                                   0   250   0    429.14 sec
+ 11 : 0 15 21 22 34 19 19 20 10 4 0 54587                                 0   250   0    460.88 sec
+Invariant F[10] : 54587 clauses with 233 flops (out of 369) (cex = 14, ave = 33.51)
+Verification of invariant with 54587 clauses was successful.  Time =     0.16 sec
+Block =   30  Oblig =109724  Clause = 54803  Call =1702475 (sat=76.4%)  Cex =  14  Start =5669
+SAT solving =   103.79 sec ( 22.51 %)
+  unsat     =     3.61 sec (  0.78 %)
+  sat       =   100.18 sec ( 21.73 %)
+Generalize  =   216.51 sec ( 46.96 %)
+Push clause =   161.85 sec ( 35.10 %)
+Ternary sim =    78.91 sec ( 17.12 %)
+Containment =    56.06 sec ( 12.16 %)
+CNF compute =    34.35 sec (  7.45 %)
+Refinement  =     0.00 sec (  0.00 %)
+TOTAL       =   461.06 sec (100.00 %)
+Property proved.  Time =   461.08 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 27 Jun 2025 02:33:01 PM CST
+========================================

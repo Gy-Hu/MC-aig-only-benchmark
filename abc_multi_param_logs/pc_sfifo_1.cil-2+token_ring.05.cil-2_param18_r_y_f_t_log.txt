@@ -1,0 +1,34 @@
+File: abc_unknown_cases/pc_sfifo_1.cil-2+token_ring.05.cil-2.aig
+Command: ~/coding_env/abc/abc -c "&r abc_unknown_cases/pc_sfifo_1.cil-2+token_ring.05.cil-2.aig; &put; fold; pdr -v -r -y -f -t"
+PDR Parameters: -r -y -f -t
+Parameter Set: 18 of 32
+Started at: Wed 18 Jun 2025 10:16:32 PM CST
+----------------------------------------
+ABC command line: "&r abc_unknown_cases/pc_sfifo_1.cil-2+token_ring.05.cil-2.aig; &put; fold; pdr -v -r -y -f -t".
+
+Converted 0 1-valued FFs and 1572 DC-valued FFs.
+Warning: The number of inputs does not match the number of input names.
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 3                                                                 2     4   2      0.11 sec
+  2 : 0 2 4                                                               3     6   1      0.24 sec
+  3 : 0 2 4 4                                                             5     6   1      0.49 sec
+  4 : 0 2 310 521 528                                                    10   316   1     64.97 sec
+  5 : 0 2 846 1600 2340 1751                                             14  1050   1    402.02 sec
+Block =   24  Oblig = 18121  Clause = 10054  Call =142773 (sat=74.8%)  Cex =   7  Start = 473
+SAT solving =   397.78 sec ( 59.89 %)
+  unsat     =    14.45 sec (  2.18 %)
+  sat       =   383.33 sec ( 57.71 %)
+Generalize  =   539.26 sec ( 81.19 %)
+Push clause =    16.81 sec (  2.53 %)
+Ternary sim =    87.09 sec ( 13.11 %)
+Containment =    32.98 sec (  4.96 %)
+CNF compute =     8.11 sec (  1.22 %)
+Refinement  =     0.05 sec (  0.01 %)
+TOTAL       =   664.20 sec (100.00 %)
+Output 0 of miter "abc_unknown_cases/pc_sfifo_1.cil-2+token_ring.05.cil-2" was asserted in frame 6.  Time =   664.24 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Wed 18 Jun 2025 10:27:37 PM CST
+========================================

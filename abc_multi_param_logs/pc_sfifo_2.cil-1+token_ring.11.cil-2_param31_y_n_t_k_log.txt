@@ -1,0 +1,22 @@
+File: abc_unknown_cases/pc_sfifo_2.cil-1+token_ring.11.cil-2.aig
+Command: ~/coding_env/abc/abc -c "&r abc_unknown_cases/pc_sfifo_2.cil-1+token_ring.11.cil-2.aig; &put; fold; pdr -v -y -n -t -k"
+PDR Parameters: -y -n -t -k
+Parameter Set: 31 of 32
+Started at: Fri 27 Jun 2025 12:06:16 AM CST
+----------------------------------------
+ABC command line: "&r abc_unknown_cases/pc_sfifo_2.cil-1+token_ring.11.cil-2.aig; &put; fold; pdr -v -y -n -t -k".
+
+Converted 0 1-valued FFs and 2596 DC-valued FFs.
+Warning: The number of inputs does not match the number of input names.
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 3                                                                 2     4   2      0.45 sec
+  2 : 0 2 4                                                               3     6   1      0.97 sec
+  3 : 0 3 4 5                                                             5     7   1      1.89 sec
+  4 : 0 2 175 207 295                                                     6   181   1    144.54 sec
+  5 : 0 2 2016 781 4010 5735                                             26  2080   1   2640.61 sec
+----------------------------------------
+STATUS: TIMEOUT (exceeded 3600 seconds)
+Finished at: Fri 27 Jun 2025 01:06:16 AM CST
+========================================

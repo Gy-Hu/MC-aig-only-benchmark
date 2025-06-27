@@ -1,0 +1,37 @@
+File: abc_unknown_cases/yosyshq_appnote_123_cv32e40x-p426.aig
+Command: ~/coding_env/abc/abc -c "&r abc_unknown_cases/yosyshq_appnote_123_cv32e40x-p426.aig; &put; fold; pdr -v -y -i -t -k"
+PDR Parameters: -y -i -t -k
+Parameter Set: 30 of 32
+Started at: Fri 27 Jun 2025 05:03:00 PM CST
+----------------------------------------
+ABC command line: "&r abc_unknown_cases/yosyshq_appnote_123_cv32e40x-p426.aig; &put; fold; pdr -v -y -i -t -k".
+
+Warning: The last 18 outputs are interpreted as constraints.
+Converted 1499 1-valued FFs and 89725 DC-valued FFs.
+Warning: The number of inputs does not match the number of flop names.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 3                                                                 1     4   1      0.17 sec
+  2 : 0 3 4                                                               2     8   2      0.25 sec
+  3 : 0 3 1 4                                                             4     9   1      0.26 sec
+  4 : 0 3 1 2 4                                                           5    10   1      0.27 sec
+  5 : 0 3 1 2 3 7                                                         7    15   3      0.43 sec
+  6 : 0 3 1 2 3 3 4                                                       0    15   0      0.44 sec
+  7 : 0 3 1 2 3 20 8 13                                                  15    35   4      1.73 sec
+  8 : 0 3 1 2 3 20 2 1 18                                                 0    35   0      1.74 sec
+  9 : 0 3 1 2 3 22 3 3 8 13                                              12    36   3      2.08 sec
+ 10 : 0 3 1 2 3 22 3 3 1 1 18                                             0    36   0      2.09 sec
+ 11 : 0 3 1 2 3 36 18 12 4 4 8 20                                        31    60   5      3.72 sec
+ 12 : 0 3 1 2 3 36 18 12 4 4 1 1 25                                       0    60   0      3.74 sec
+ 13 : 0 3 1 2 3 37 21 26 21 21 12 12 13 28                               25    65   2      6.51 sec
+ 14 : 0 3 1 2 3 37 21 26 21 21 12 12 13 11 17                             0    65   0      6.51 sec
+ 15 : 0 3 1 2 3 37 21 26 21 21 14 13 15 12 3 18                          21    65   1      6.93 sec
+ 16 : 0 3 1 2 3 42 26 37 26 31 15 15 15 13 4 3 19                        32    99   3      8.19 sec
+ 17 : 0 3 1 2 3 43 32 84 71 143 150 211 180 265 194 243 76 146          208   356   4     46.24 sec
+ 18 : 0 3 1 2 3 43 32 84 71 143 150 211 180 265 194 243 76 40 85          0   356   0     46.28 sec
+ 19 : ... 32 124 139 338 364 836 895 1778 1634 1926 489 480 310 427    1109   573   8    234.11 sec
+ 20 : ... 124 139 338 364 836 895 1778 1634 1926 489 480 310 215 169      0   573   0    234.28 sec
+----------------------------------------
+STATUS: TIMEOUT (exceeded 3600 seconds)
+Finished at: Fri 27 Jun 2025 06:03:00 PM CST
+========================================

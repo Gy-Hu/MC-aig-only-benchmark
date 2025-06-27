@@ -1,0 +1,31 @@
+File: abc_unknown_cases/bob12s03.aig
+Command: ~/coding_env/abc/abc -c "&r abc_unknown_cases/bob12s03.aig; &put; fold; pdr -v -r -y -f -t"
+PDR Parameters: -r -y -f -t
+Parameter Set: 18 of 32
+Started at: Sun 15 Jun 2025 05:55:46 AM CST
+----------------------------------------
+ABC command line: "&r abc_unknown_cases/bob12s03.aig; &put; fold; pdr -v -r -y -f -t".
+
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 501                                                               2   503 260      1.35 sec
+  2 : 0 1008 1144                                                         5  1259 368      4.22 sec
+  3 : 0 469 568 941                                                      22  1401 167      5.61 sec
+  4 : 0 824 971 1595 2485                                                81  2599 522     22.82 sec
+Block = 3041  Oblig = 20010  Clause =  6895  Call = 54404 (sat=57.9%)  Cex =1359  Start = 169
+SAT solving =     7.49 sec ( 29.68 %)
+  unsat     =     0.58 sec (  2.31 %)
+  sat       =     6.91 sec ( 27.37 %)
+Generalize  =    11.05 sec ( 43.78 %)
+Push clause =     1.04 sec (  4.10 %)
+Ternary sim =     8.04 sec ( 31.87 %)
+Containment =     0.74 sec (  2.94 %)
+CNF compute =     0.44 sec (  1.73 %)
+Refinement  =     5.25 sec ( 20.80 %)
+TOTAL       =    25.24 sec (100.00 %)
+Output 0 of miter "abc_unknown_cases/bob12s03" was asserted in frame 14.  Time =    25.26 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Sun 15 Jun 2025 05:56:11 AM CST
+========================================

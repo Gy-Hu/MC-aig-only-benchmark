@@ -1,0 +1,28 @@
+File: abc_unknown_cases/pc_sfifo_2.cil-1+token_ring.11.cil-2.aig
+Command: ~/coding_env/abc/abc -c "&r abc_unknown_cases/pc_sfifo_2.cil-1+token_ring.11.cil-2.aig; &put; fold; pdr -v -y -i -n -c -t -k"
+PDR Parameters: -y -i -n -c -t -k
+Parameter Set: 27 of 32
+Started at: Fri 27 Jun 2025 12:00:32 AM CST
+----------------------------------------
+ABC command line: "&r abc_unknown_cases/pc_sfifo_2.cil-1+token_ring.11.cil-2.aig; &put; fold; pdr -v -y -i -n -c -t -k".
+
+Converted 0 1-valued FFs and 2596 DC-valued FFs.
+Warning: The number of inputs does not match the number of input names.
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 3                                                                 2     4   2      0.40 sec
+  2 : 0 2 4                                                               3     6   1      0.87 sec
+  3 : 0 3 4 6                                                             5     8   1      1.79 sec
+  4 : 0 3 53 1328 395                                                     6  1150   1    233.75 sec
+  5 : 0 3 82 153 3620 3214                                                9  2061   1   1582.56 sec
+  6 : 0 3 7 75 1363 3125 5351                                             5  2061   0   2593.55 sec
+  7 : 0 3 7 78 397 447 1715 7747                                         12  2209   1   3107.61 sec
+  8 : 0 3 7 72 338 151 86 457 8794                                        3  2209   0   3206.86 sec
+  9 : 0 3 7 72 338 151 74 296 226 8729                                    0  2209   0   3268.73 sec
+ 10 : 0 3 7 72 338 151 76 299 279 533 8557                                4  2209   0   3403.27 sec
+ 11 : 0 3 7 72 338 151 76 84 262 170 340 8864                            12  2209   0   3492.68 sec
+----------------------------------------
+STATUS: TIMEOUT (exceeded 3600 seconds)
+Finished at: Fri 27 Jun 2025 01:00:32 AM CST
+========================================

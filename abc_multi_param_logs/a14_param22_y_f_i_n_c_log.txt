@@ -1,0 +1,29 @@
+File: abc_unknown_cases/a14.aig
+Command: ~/coding_env/abc/abc -c "&r abc_unknown_cases/a14.aig; &put; fold; pdr -v -y -f -i -n -c"
+PDR Parameters: -y -f -i -n -c
+Parameter Set: 22 of 32
+Started at: Tue 17 Jun 2025 07:05:43 PM CST
+----------------------------------------
+ABC command line: "&r abc_unknown_cases/a14.aig; &put; fold; pdr -v -y -f -i -n -c".
+
+Warning: The last 71 outputs are interpreted as constraints.
+Converted 173 1-valued FFs and 503 DC-valued FFs.
+Warning: The number of inputs does not match the number of flop names.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 1                                                                 1     1      0.01 sec
+  2 : 0 2 2                                                               2     3      0.02 sec
+  3 : 0 23 455 370                                                        9   203      3.91 sec
+  4 : 0 55 638 1278 597                                                  26   380     11.24 sec
+  5 : 0 41 406 1682 3176 1885                                             5   477     46.27 sec
+  6 : 0 41 408 1627 4962 11242 5451                                      32   538    204.50 sec
+  7 : 0 41 408 1609 4705 13853 21751 12717                               89   545    749.21 sec
+  8 : 0 41 408 1609 4706 13140 24849 26121 19988                         43   567   1743.84 sec
+  9 : 0 41 408 1609 4706 13094 22816 21208 19462 21201                   10   567   2365.27 sec
+ 10 : 0 41 408 1609 4706 13094 22840 20857 18724 31416 19968            165   568   3100.56 sec
+ 11 : 0 41 408 1609 4706 13094 22840 19462 10615 4627 16007 34149         5   568   3384.11 sec
+ 12 : ... 408 1609 4706 13094 22840 19462 10615 3797 9774 16330 26452     7   568   3488.24 sec
+----------------------------------------
+STATUS: TIMEOUT (exceeded 3600 seconds)
+Finished at: Tue 17 Jun 2025 08:05:43 PM CST
+========================================

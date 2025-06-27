@@ -1,0 +1,30 @@
+File: abc_unknown_cases/picorv32-pcregs-p2.aig
+Command: ~/coding_env/abc/abc -c "&r abc_unknown_cases/picorv32-pcregs-p2.aig; &put; fold; pdr -v -r -y -f -i -n -t"
+PDR Parameters: -r -y -f -i -n -t
+Parameter Set: 13 of 32
+Started at: Tue 24 Jun 2025 02:00:09 AM CST
+----------------------------------------
+ABC command line: "&r abc_unknown_cases/picorv32-pcregs-p2.aig; &put; fold; pdr -v -r -y -f -i -n -t".
+
+Converted 0 1-valued FFs and 2113 DC-valued FFs.
+Warning: The number of inputs does not match the number of input names.
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 1                                                                 1     1   1      0.04 sec
+  2 : 0 3 3                                                               5     5   3      0.05 sec
+  3 : 0 3 2 3                                                             5     5   1      0.05 sec
+  4 : 0 5 3 2 6                                                           7    10   2      0.07 sec
+  5 : 0 10 5 6 8 10                                                      15    21   2      0.10 sec
+  6 : 0 10 5 7 6 7 10                                                    11    21   1      0.12 sec
+  7 : 0 10 5 7 7 7 2 10                                                  10    21   1      0.13 sec
+  8 : 0 10 7 12 13 25 20 7 22                                            26    33   3      0.32 sec
+  9 : 0 10 7 12 14 27 27 20 14 25                                        20    34   2      0.47 sec
+ 10 : 0 10 7 12 14 33 38 37 29 12 31                                     29    40   4      0.73 sec
+ 11 : 0 10 7 13 17 39 47 40 31 18 3 34                                   23    42   2      0.85 sec
+ 12 : 0 10 7 13 51 218 345 885 442 1314 3973 17425 21443                 73  1479 735    707.16 sec
+ 13 : 0 10 7 13 51 218 259 792 324 1038 1404 1253 10038 11372             0  1479   0    723.06 sec
+----------------------------------------
+STATUS: TIMEOUT (exceeded 3600 seconds)
+Finished at: Tue 24 Jun 2025 03:00:09 AM CST
+========================================

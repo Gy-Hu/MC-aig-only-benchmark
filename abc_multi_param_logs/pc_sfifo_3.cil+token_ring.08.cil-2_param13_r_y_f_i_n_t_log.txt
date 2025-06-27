@@ -1,0 +1,34 @@
+File: abc_unknown_cases/pc_sfifo_3.cil+token_ring.08.cil-2.aig
+Command: ~/coding_env/abc/abc -c "&r abc_unknown_cases/pc_sfifo_3.cil+token_ring.08.cil-2.aig; &put; fold; pdr -v -r -y -f -i -n -t"
+PDR Parameters: -r -y -f -i -n -t
+Parameter Set: 13 of 32
+Started at: Mon 16 Jun 2025 03:54:02 PM CST
+----------------------------------------
+ABC command line: "&r abc_unknown_cases/pc_sfifo_3.cil+token_ring.08.cil-2.aig; &put; fold; pdr -v -r -y -f -i -n -t".
+
+Converted 0 1-valued FFs and 2212 DC-valued FFs.
+Warning: The number of inputs does not match the number of input names.
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 3                                                                 2     4   2      0.32 sec
+  2 : 0 3 4                                                               3     7   1      0.92 sec
+  3 : 0 2 3 4                                                             5     7   1      1.57 sec
+  4 : 0 2 142 72 179                                                      5   146   1     81.58 sec
+  5 : 0 2 111 57 144 527                                                  6   566   1    326.41 sec
+Block =   19  Oblig =  3422  Clause =  1688  Call = 50641 (sat=65.1%)  Cex =   7  Start = 166
+SAT solving =   319.71 sec ( 38.17 %)
+  unsat     =    13.83 sec (  1.65 %)
+  sat       =   305.88 sec ( 36.52 %)
+Generalize  =   809.81 sec ( 96.68 %)
+Push clause =     6.29 sec (  0.75 %)
+Ternary sim =   475.37 sec ( 56.75 %)
+Containment =     1.07 sec (  0.13 %)
+CNF compute =     3.58 sec (  0.43 %)
+Refinement  =     0.07 sec (  0.01 %)
+TOTAL       =   837.60 sec (100.00 %)
+Output 0 of miter "abc_unknown_cases/pc_sfifo_3.cil+token_ring.08.cil-2" was asserted in frame 6.  Time =   837.65 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Mon 16 Jun 2025 04:07:59 PM CST
+========================================

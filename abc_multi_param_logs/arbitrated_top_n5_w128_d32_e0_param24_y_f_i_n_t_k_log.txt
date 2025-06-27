@@ -1,0 +1,28 @@
+File: abc_unknown_cases/arbitrated_top_n5_w128_d32_e0.aig
+Command: ~/coding_env/abc/abc -c "&r abc_unknown_cases/arbitrated_top_n5_w128_d32_e0.aig; &put; fold; pdr -v -y -f -i -n -t -k"
+PDR Parameters: -y -f -i -n -t -k
+Parameter Set: 24 of 32
+Started at: Mon 16 Jun 2025 04:43:30 PM CST
+----------------------------------------
+ABC command line: "&r abc_unknown_cases/arbitrated_top_n5_w128_d32_e0.aig; &put; fold; pdr -v -y -f -i -n -t -k".
+
+Warning: The last 16 outputs are interpreted as constraints.
+Converted 1 1-valued FFs and 20737 DC-valued FFs.
+Warning: The number of inputs does not match the number of input names.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 6                                                                 2     8   2      9.30 sec
+  2 : 0 16 27                                                             6    33   5     29.08 sec
+  3 : 0 36 75 312                                                         7   335 134    463.01 sec
+  4 : 0 36 57 58 437                                                      8   464 128    752.35 sec
+  5 : 0 36 57 59 70 566                                                   8   592 128   1051.45 sec
+  6 : 0 36 57 60 67 85 716                                                9   721 129   1368.71 sec
+  7 : 0 36 57 64 90 99 132 869                                           18   849 128   1715.01 sec
+  8 : 0 36 57 65 99 117 110 161 1039                                     13   977 128   2074.03 sec
+  9 : 0 36 57 68 104 122 107 162 213 1200                                16  1105 128   2453.73 sec
+ 10 : 0 36 58 70 109 143 125 153 201 299 1382                            27  1234 128   2871.25 sec
+ 11 : 0 13 39 35 65 94 117 145 206 266 357 1528                          32  1362 128   3312.02 sec
+----------------------------------------
+STATUS: TIMEOUT (exceeded 3600 seconds)
+Finished at: Mon 16 Jun 2025 05:43:30 PM CST
+========================================

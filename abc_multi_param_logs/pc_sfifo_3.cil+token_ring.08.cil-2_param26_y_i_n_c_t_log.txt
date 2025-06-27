@@ -1,0 +1,34 @@
+File: abc_unknown_cases/pc_sfifo_3.cil+token_ring.08.cil-2.aig
+Command: ~/coding_env/abc/abc -c "&r abc_unknown_cases/pc_sfifo_3.cil+token_ring.08.cil-2.aig; &put; fold; pdr -v -y -i -n -c -t"
+PDR Parameters: -y -i -n -c -t
+Parameter Set: 26 of 32
+Started at: Mon 16 Jun 2025 04:04:10 PM CST
+----------------------------------------
+ABC command line: "&r abc_unknown_cases/pc_sfifo_3.cil+token_ring.08.cil-2.aig; &put; fold; pdr -v -y -i -n -c -t".
+
+Converted 0 1-valued FFs and 2212 DC-valued FFs.
+Warning: The number of inputs does not match the number of input names.
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 3                                                                 2     4   2      0.34 sec
+  2 : 0 2 5                                                               3     6   1      0.94 sec
+  3 : 0 3 4 6                                                             5     7   1      1.74 sec
+  4 : 0 3 96 384 233                                                      5   336   1     74.32 sec
+  5 : 0 3 10 204 467 290                                                  6   428   1    130.13 sec
+Block =   20  Oblig =  4115  Clause =  9545  Call =432009 (sat=18.9%)  Cex =   7  Start =1437
+SAT solving =  1325.97 sec ( 52.65 %)
+  unsat     =   551.58 sec ( 21.90 %)
+  sat       =   774.39 sec ( 30.75 %)
+Generalize  =  2470.23 sec ( 98.09 %)
+Push clause =     7.81 sec (  0.31 %)
+Ternary sim =   523.74 sec ( 20.80 %)
+Containment =    11.54 sec (  0.46 %)
+CNF compute =    40.84 sec (  1.62 %)
+Refinement  =     0.07 sec (  0.00 %)
+TOTAL       =  2518.25 sec (100.00 %)
+Output 0 of miter "abc_unknown_cases/pc_sfifo_3.cil+token_ring.08.cil-2" was asserted in frame 6.  Time =  2518.32 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Mon 16 Jun 2025 04:46:09 PM CST
+========================================

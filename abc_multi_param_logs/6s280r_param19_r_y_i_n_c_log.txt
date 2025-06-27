@@ -1,0 +1,28 @@
+File: abc_unknown_cases/6s280r.aig
+Command: ~/coding_env/abc/abc -c "&r abc_unknown_cases/6s280r.aig; &put; fold; pdr -v -r -y -i -n -c"
+PDR Parameters: -r -y -i -n -c
+Parameter Set: 19 of 32
+Started at: Tue 17 Jun 2025 09:03:39 PM CST
+----------------------------------------
+ABC command line: "&r abc_unknown_cases/6s280r.aig; &put; fold; pdr -v -r -y -i -n -c".
+
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 1                                                                 1     1      0.01 sec
+  2 : 0 3 5                                                               3     7      0.01 sec
+  3 : 0 12 18 22                                                         10    27      0.01 sec
+  4 : 0 4 7 18 7                                                          1    27      0.01 sec
+  5 : 0 4 8 22 14 23                                                      8    32      0.02 sec
+  6 : 0 4 8 8 12 11 16                                                    1    32      0.02 sec
+  7 : 0 4 141 25 160 537 419 796                                         16   410      2.55 sec
+  8 : 0 4 141 14 157 404 224 530 411                                      3   410      2.81 sec
+  9 : 0 4 145 313 691 1474 1628 3167 4116 5040                           51   605     46.91 sec
+ 10 : 0 4 145 286 361 1341 1536 1867 2927 4882 1220                       0   605     48.67 sec
+ 11 : 0 4 145 308 424 1424 1641 2006 3215 5610 5327 3340                142   610     87.40 sec
+ 12 : ... 4 145 308 998 5430 3541 7518 11326 15763 18515 21105 22327    440   731   1399.40 sec
+ 13 : ... 308 1007 4433 2751 7676 10458 15388 16252 16487 30880 12498  1059   737   2222.09 sec
+----------------------------------------
+STATUS: TIMEOUT (exceeded 3600 seconds)
+Finished at: Tue 17 Jun 2025 10:03:39 PM CST
+========================================

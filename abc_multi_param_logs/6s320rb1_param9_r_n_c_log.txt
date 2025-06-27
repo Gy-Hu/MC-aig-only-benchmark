@@ -1,0 +1,35 @@
+File: abc_unknown_cases/6s320rb1.aig
+Command: ~/coding_env/abc/abc -c "&r abc_unknown_cases/6s320rb1.aig; &put; fold; pdr -v -r -n -c"
+PDR Parameters: -r -n -c
+Parameter Set: 9 of 32
+Started at: Sat 14 Jun 2025 01:55:20 PM CST
+----------------------------------------
+ABC command line: "&r abc_unknown_cases/6s320rb1.aig; &put; fold; pdr -v -r -n -c".
+
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 6                                                                 1     6      0.06 sec
+  2 : 0 61 59                                                             8    93      1.23 sec
+  3 : 0 87 270 197                                                       22   166      7.10 sec
+  4 : 0 70 189 566 270                                                   13   185     23.56 sec
+  5 : 0 72 168 541 1489 411                                              14   186     75.04 sec
+  6 : 0 70 162 478 1536 3087 772                                         12   187    259.91 sec
+  7 : 0 70 161 474 1287 2917 4603 1120                                   15   187    589.15 sec
+  8 : 0 69 157 462 1198 2117 3921 4057 1362                              14   187    900.38 sec
+Block =   43  Oblig =  4520  Clause = 14596  Call =311092 (sat=52.4%)  Cex =   0  Start =1033
+SAT solving =   755.51 sec ( 83.91 %)
+  unsat     =   339.22 sec ( 37.67 %)
+  sat       =   416.29 sec ( 46.23 %)
+Generalize  =   695.22 sec ( 77.21 %)
+Push clause =   196.49 sec ( 21.82 %)
+Ternary sim =   129.44 sec ( 14.38 %)
+Containment =     0.30 sec (  0.03 %)
+CNF compute =     9.69 sec (  1.08 %)
+Refinement  =     0.00 sec (  0.00 %)
+TOTAL       =   900.40 sec (100.00 %)
+Output 0 of miter "abc_unknown_cases/6s320rb1" was asserted in frame 13.  Time =   900.44 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Sat 14 Jun 2025 02:10:21 PM CST
+========================================

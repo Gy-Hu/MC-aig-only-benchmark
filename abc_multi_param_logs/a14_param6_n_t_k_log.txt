@@ -1,0 +1,29 @@
+File: abc_unknown_cases/a14.aig
+Command: ~/coding_env/abc/abc -c "&r abc_unknown_cases/a14.aig; &put; fold; pdr -v -n -t -k"
+PDR Parameters: -n -t -k
+Parameter Set: 6 of 32
+Started at: Tue 17 Jun 2025 06:37:26 PM CST
+----------------------------------------
+ABC command line: "&r abc_unknown_cases/a14.aig; &put; fold; pdr -v -n -t -k".
+
+Warning: The last 71 outputs are interpreted as constraints.
+Converted 173 1-valued FFs and 503 DC-valued FFs.
+Warning: The number of inputs does not match the number of flop names.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 1                                                                 1     1   1      0.01 sec
+  2 : 0 2 2                                                               2     3   1      0.02 sec
+  3 : 0 90 367 390                                                       37   283  66      2.47 sec
+  4 : 0 71 368 978 690                                                   31   375  79      9.11 sec
+  5 : 0 72 342 982 2667 2174                                             43   509  66     36.09 sec
+  6 : 0 72 346 973 3052 8171 6715                                       233   612  63    155.11 sec
+  7 : 0 71 345 963 2786 6717 16621 10801                                162   612   0    441.21 sec
+  8 : 0 71 345 963 2766 5595 14012 22218 14062                           74   612   0    895.48 sec
+  9 : 0 71 345 963 2757 5371 10367 15763 27950 11989                    161   612   0   1367.22 sec
+ 10 : 0 71 345 963 2755 5333 8893 8281 10583 26414 9193                  25   612   0   1628.29 sec
+ 11 : 0 71 345 963 2755 5330 7594 5013 4221 14555 23208 7370             11   612   0   1832.64 sec
+ 12 : ... 71 345 963 2755 5328 7589 4987 4156 9072 21489 41506 28333   1834   612   0   3505.44 sec
+----------------------------------------
+STATUS: TIMEOUT (exceeded 3600 seconds)
+Finished at: Tue 17 Jun 2025 07:37:26 PM CST
+========================================

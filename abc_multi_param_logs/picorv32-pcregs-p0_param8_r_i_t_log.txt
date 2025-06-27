@@ -1,0 +1,28 @@
+File: abc_unknown_cases/picorv32-pcregs-p0.aig
+Command: ~/coding_env/abc/abc -c "&r abc_unknown_cases/picorv32-pcregs-p0.aig; &put; fold; pdr -v -r -i -t"
+PDR Parameters: -r -i -t
+Parameter Set: 8 of 32
+Started at: Mon 16 Jun 2025 11:20:14 PM CST
+----------------------------------------
+ABC command line: "&r abc_unknown_cases/picorv32-pcregs-p0.aig; &put; fold; pdr -v -r -i -t".
+
+Converted 0 1-valued FFs and 2113 DC-valued FFs.
+Warning: The number of inputs does not match the number of input names.
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 1                                                                 1     1   1      0.04 sec
+  2 : 0 3 2                                                               5     5   3      0.05 sec
+  3 : 0 3 2 3                                                             5     5   1      0.06 sec
+  4 : 0 6 7 5 9                                                          10    21   3      0.09 sec
+  5 : 0 8 12 11 9 16                                                     17    26   2      0.14 sec
+  6 : 0 8 12 11 2 1 14                                                    0    26   0      0.14 sec
+  7 : 0 8 17 19 31 31 16 35                                              32    41   3      0.34 sec
+  8 : 0 8 17 19 33 35 20 8 37                                            19    41   1      0.39 sec
+  9 : 0 8 17 19 33 35 20 8 1 35                                           0    41   0      0.39 sec
+ 10 : 0 8 17 21 38 61 70 62 45 22 81                                     31    73   5      1.00 sec
+ 11 : 0 8 17 21 39 62 72 65 46 29 11 79                                  19    76   2      1.10 sec
+----------------------------------------
+STATUS: TIMEOUT (exceeded 3600 seconds)
+Finished at: Tue 17 Jun 2025 12:20:14 AM CST
+========================================

@@ -1,0 +1,27 @@
+File: abc_unknown_cases/pgm_protocol.7.prop2-back-serstep.aig
+Command: ~/coding_env/abc/abc -c "&r abc_unknown_cases/pgm_protocol.7.prop2-back-serstep.aig; &put; fold; pdr -v -n -c"
+PDR Parameters: -n -c
+Parameter Set: 4 of 32
+Started at: Thu 26 Jun 2025 07:14:32 PM CST
+----------------------------------------
+ABC command line: "&r abc_unknown_cases/pgm_protocol.7.prop2-back-serstep.aig; &put; fold; pdr -v -n -c".
+
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 1                                                                 1    14      0.07 sec
+  2 : 0 1 1                                                               1    17      0.16 sec
+  3 : 0 1 4 1                                                             1    36      0.41 sec
+  4 : 0 1 4 10 1                                                          1    45      0.91 sec
+  5 : 0 1 4 10 8 1                                                        1    46      1.45 sec
+  6 : 0 1 4 10 8 1 1                                                      1    47      1.92 sec
+  7 : 0 1 4 10 8 1 7 17                                                   1   111      3.49 sec
+  8 : 0 1 4 10 8 1 7 14 17                                                1   121      4.64 sec
+  9 : 0 1 4 10 8 1 7 11 9 25                                              1   163      6.48 sec
+ 10 : 0 1 4 10 8 1 7 11 9 37 25                                           1   178     10.58 sec
+ 11 : 0 1 4 10 8 1 7 11 9 36 24 31                                        1   225     14.16 sec
+ 12 : 0 1 4 10 8 1 7 11 9 36 22 23 37                                     1   256     19.10 sec
+----------------------------------------
+STATUS: TIMEOUT (exceeded 3600 seconds)
+Finished at: Thu 26 Jun 2025 08:14:32 PM CST
+========================================

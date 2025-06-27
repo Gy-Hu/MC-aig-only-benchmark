@@ -1,0 +1,28 @@
+File: abc_unknown_cases/fastfir-p017.aig
+Command: ~/coding_env/abc/abc -c "&r abc_unknown_cases/fastfir-p017.aig; &put; fold; pdr -v -i -g -n -t -k"
+PDR Parameters: -i -g -n -t -k
+Parameter Set: 2 of 32
+Started at: Fri 20 Jun 2025 08:17:24 PM CST
+----------------------------------------
+ABC command line: "&r abc_unknown_cases/fastfir-p017.aig; &put; fold; pdr -v -i -g -n -t -k".
+
+Warning: The last 342 outputs are interpreted as constraints.
+Converted 34 1-valued FFs and 39 DC-valued FFs.
+Warning: The number of inputs does not match the number of input names.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = yes. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 13                                                                1    13   1      0.09 sec
+  2 : 0 13 26                                                             3    30   1      0.19 sec
+  3 : 0 12 10 38                                                          5    40   1      0.34 sec
+  4 : 0 12 16 19 43                                                       7    45   1      0.47 sec
+  5 : 0 17 37 72 80 121                                                  19   140   2      1.30 sec
+  6 : 0 27 128 616 1128 1446 1596                                        59   164   5     15.20 sec
+  7 : 0 50 201 1254 3954 8683 9439 12729                                 91   285  52    186.72 sec
+  8 : 0 50 204 1296 4067 10278 10075 8392 11021                         620   326   4    271.33 sec
+  9 : 0 54 212 1323 3591 10850 11798 14598 11754 43045                  104   403  12    696.90 sec
+ 10 : 0 54 212 1331 3568 11135 11986 14931 8617 14820 48187             103   429   6   1154.48 sec
+ 11 : ... 55 223 1355 3626 12880 13474 17883 11670 18450 29730 88659    398   765  31   2660.56 sec
+----------------------------------------
+STATUS: TIMEOUT (exceeded 3600 seconds)
+Finished at: Fri 20 Jun 2025 09:17:24 PM CST
+========================================

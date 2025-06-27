@@ -1,0 +1,23 @@
+File: abc_unknown_cases/digits_bad_for.aig
+Command: ~/coding_env/abc/abc -c "&r abc_unknown_cases/digits_bad_for.aig; &put; fold; pdr -v -r -y -f -i -n -t"
+PDR Parameters: -r -y -f -i -n -t
+Parameter Set: 13 of 32
+Started at: Sun 15 Jun 2025 05:46:47 PM CST
+----------------------------------------
+ABC command line: "&r abc_unknown_cases/digits_bad_for.aig; &put; fold; pdr -v -r -y -f -i -n -t".
+
+Converted 0 1-valued FFs and 227 DC-valued FFs.
+Warning: The number of inputs does not match the number of input names.
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 2                                                                 2     3   2      0.18 sec
+  2 : 0 2 3                                                               3     5   1      0.45 sec
+  3 : 0 1 7 7                                                             4    11   1     16.77 sec
+  4 : 0 1 5 8 8                                                           5    35   1    342.27 sec
+  5 : 0 1 11 21 29 36                                                     9    40   1    660.63 sec
+  6 : 0 1 10 25 52 50 76                                                 10   179   1    790.02 sec
+----------------------------------------
+STATUS: TIMEOUT (exceeded 3600 seconds)
+Finished at: Sun 15 Jun 2025 06:46:47 PM CST
+========================================

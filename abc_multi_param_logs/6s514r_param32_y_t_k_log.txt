@@ -1,0 +1,28 @@
+File: abc_unknown_cases/6s514r.aig
+Command: ~/coding_env/abc/abc -c "&r abc_unknown_cases/6s514r.aig; &put; fold; pdr -v -y -t -k"
+PDR Parameters: -y -t -k
+Parameter Set: 32 of 32
+Started at: Mon 23 Jun 2025 11:30:50 PM CST
+----------------------------------------
+ABC command line: "&r abc_unknown_cases/6s514r.aig; &put; fold; pdr -v -y -t -k".
+
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 1                                                                 1     1   1      0.00 sec
+  2 : 0 3 3                                                               3     6   1      0.00 sec
+  3 : 0 11 13 14                                                          9    23   3      0.01 sec
+  4 : 0 4 6 6 12                                                          0    23   0      0.01 sec
+  5 : 0 4 7 8 12 13                                                       9    29   3      0.01 sec
+  6 : 0 4 7 6 10 13 17                                                    7    29   0      0.02 sec
+  7 : 0 4 69 39 98 252 257 387                                           26   218 146      0.47 sec
+  8 : 0 4 68 19 89 220 189 369 94                                         3   218   0      0.54 sec
+  9 : 0 4 71 95 384 960 1136 1914 2665 2516                              64   314  85      6.94 sec
+ 10 : 0 4 71 85 210 693 1086 1035 1412 2744 765                           5   314   0      7.75 sec
+ 11 : 0 4 71 107 259 830 1256 1343 1918 2913 2931 2401                  348   325   4     13.69 sec
+ 12 : 0 4 71 107 399 2846 2827 4996 7227 12817 17419 19787 17936       2261   380  55    378.15 sec
+ 13 : ... 107 396 2279 2620 6182 8411 15341 22373 29895 44618 34632     563   385   4   1830.64 sec
+----------------------------------------
+STATUS: TIMEOUT (exceeded 3600 seconds)
+Finished at: Tue 24 Jun 2025 12:30:51 AM CST
+========================================

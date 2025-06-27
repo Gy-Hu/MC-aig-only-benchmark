@@ -1,0 +1,34 @@
+File: abc_unknown_cases/arbitrated_top_n2_w32_d128_e0.aig
+Command: ~/coding_env/abc/abc -c "&r abc_unknown_cases/arbitrated_top_n2_w32_d128_e0.aig; &put; fold; pdr -v -y -t -k"
+PDR Parameters: -y -t -k
+Parameter Set: 32 of 32
+Started at: Tue 24 Jun 2025 10:30:51 AM CST
+----------------------------------------
+ABC command line: "&r abc_unknown_cases/arbitrated_top_n2_w32_d128_e0.aig; &put; fold; pdr -v -y -t -k".
+
+Warning: The last 7 outputs are interpreted as constraints.
+Converted 1 1-valued FFs and 8299 DC-valued FFs.
+Warning: The number of inputs does not match the number of input names.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 4                                                                 2     6   2      1.30 sec
+  2 : 0 14 23                                                             3    22   1      4.35 sec
+  3 : 0 26 52 116                                                         6   116  41     29.07 sec
+  4 : 0 7 26 47 152                                                       6   148  32     45.21 sec
+  5 : 0 7 24 41 104 258                                                   7   180  32     66.63 sec
+  6 : 0 7 24 31 96 204 298                                               10   219  33     96.27 sec
+  7 : 0 7 24 26 92 206 471 526                                           15   251  32    148.74 sec
+  8 : 0 7 24 25 87 192 271 783 631                                       21   283  32    220.82 sec
+  9 : 0 7 24 25 87 185 225 612 1078 1116                                 16   315  32    340.71 sec
+ 10 : 0 7 24 25 87 186 173 572 1162 1972 1328                            21   347  32    508.88 sec
+ 11 : 0 7 24 26 92 188 172 439 921 1657 2549 1864                        33   379  32    726.92 sec
+ 12 : 0 7 24 23 81 178 155 392 770 1433 2228 3000 1789                   21   411  32    947.24 sec
+ 13 : 0 7 24 23 81 176 154 389 676 1290 1983 2648 3102 2030              30   443  32   1223.89 sec
+ 14 : 0 7 24 23 81 175 154 381 665 1219 1803 2323 2830 3428 2152         36   475  32   1555.88 sec
+ 15 : ... 25 24 82 177 155 382 659 1175 1742 2239 2842 3539 3931 2797    38   507  32   2020.56 sec
+ 16 : ... 79 175 152 371 645 1126 1654 1900 2787 3592 4534 5991 3910     54   539  32   2797.20 sec
+ 17 : ... 152 370 642 1120 1615 1851 2572 3320 4331 5338 5928 3465       68   571  32   3549.40 sec
+----------------------------------------
+STATUS: TIMEOUT (exceeded 3600 seconds)
+Finished at: Tue 24 Jun 2025 11:30:51 AM CST
+========================================

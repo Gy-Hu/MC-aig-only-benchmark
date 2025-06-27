@@ -1,0 +1,33 @@
+File: abc_unknown_cases/fastfir-p035.aig
+Command: ~/coding_env/abc/abc -c "&r abc_unknown_cases/fastfir-p035.aig; &put; fold; pdr -v -n"
+PDR Parameters: -n
+Parameter Set: 3 of 32
+Started at: Fri 20 Jun 2025 12:29:15 AM CST
+----------------------------------------
+ABC command line: "&r abc_unknown_cases/fastfir-p035.aig; &put; fold; pdr -v -n".
+
+Warning: The last 342 outputs are interpreted as constraints.
+Converted 34 1-valued FFs and 39 DC-valued FFs.
+Warning: The number of inputs does not match the number of input names.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 35                                                                1    35      0.15 sec
+  2 : 0 39 30                                                             3    61      0.39 sec
+  3 : 0 128 128 314                                                       6   246      3.62 sec
+  4 : 0 146 126 231 344                                                   8   278      6.42 sec
+  5 : 0 164 162 304 355 684                                               8   345     16.49 sec
+  6 : 0 173 147 274 314 531 683                                          27   387     25.75 sec
+  7 : 0 191 164 286 331 656 858 1548                                     17   481     61.01 sec
+  8 : 0 210 177 290 347 691 851 1279 2175                                19   551    113.43 sec
+  9 : 0 231 188 265 243 467 417 645 744 1453                             27   585    129.81 sec
+ 10 : 0 239 197 267 268 473 463 611 707 969 2011                         33   618    170.88 sec
+ 11 : 0 250 200 250 274 490 475 593 689 895 1264 2320                    14   633    219.76 sec
+ 12 : 0 269 221 268 308 552 531 651 737 979 1093 1320 2525               24   648    279.07 sec
+ 13 : 0 278 230 280 324 598 563 706 799 1098 1243 1513 1890 3533         17   660    395.27 sec
+ 14 : ... 229 268 317 593 572 703 832 1144 1343 1642 2174 2686 5196      15   660    593.94 sec
+ 15 : ... 319 686 743 1052 1449 2228 3201 3985 5876 7625 11007 27430     16   660   2299.58 sec
+ 16 : ... 901 1293 1666 2499 3315 3976 5930 7201 10489 18990 27001       18   660   3420.39 sec
+----------------------------------------
+STATUS: TIMEOUT (exceeded 3600 seconds)
+Finished at: Fri 20 Jun 2025 01:29:15 AM CST
+========================================

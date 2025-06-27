@@ -1,0 +1,34 @@
+File: abc_unknown_cases/Problem05_label46+token_ring.12.cil-1.aig
+Command: ~/coding_env/abc/abc -c "&r abc_unknown_cases/Problem05_label46+token_ring.12.cil-1.aig; &put; fold; pdr -v -n -t -k"
+PDR Parameters: -n -t -k
+Parameter Set: 6 of 32
+Started at: Thu 26 Jun 2025 04:20:50 PM CST
+----------------------------------------
+ABC command line: "&r abc_unknown_cases/Problem05_label46+token_ring.12.cil-1.aig; &put; fold; pdr -v -n -t -k".
+
+Converted 0 1-valued FFs and 2468 DC-valued FFs.
+Warning: The number of inputs does not match the number of input names.
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 2                                                                 2     3   2      0.65 sec
+  2 : 0 3 5                                                               3     6   1      2.03 sec
+  3 : 0 2 72 72                                                           4    79   1     41.60 sec
+  4 : 0 2 71 114 489                                                      5   531   1    185.70 sec
+  5 : 0 2 37 86 977 604                                                   6   917   1    869.19 sec
+Block =   19  Oblig = 13356  Clause =  4651  Call =128308 (sat=41.8%)  Cex =   7  Start = 425
+SAT solving =  1800.62 sec ( 56.21 %)
+  unsat     =   647.74 sec ( 20.22 %)
+  sat       =  1152.88 sec ( 35.99 %)
+Generalize  =  2944.18 sec ( 91.92 %)
+Push clause =    41.63 sec (  1.30 %)
+Ternary sim =  1247.68 sec ( 38.95 %)
+Containment =    29.07 sec (  0.91 %)
+CNF compute =    22.03 sec (  0.69 %)
+Refinement  =     0.02 sec (  0.00 %)
+TOTAL       =  3203.11 sec (100.00 %)
+Output 0 of miter "abc_unknown_cases/Problem05_label46+token_ring.12.cil-1" was asserted in frame 6.  Time =  3203.32 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Thu 26 Jun 2025 05:14:13 PM CST
+========================================

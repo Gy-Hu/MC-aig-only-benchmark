@@ -1,0 +1,29 @@
+File: abc_unknown_cases/oski1rub10i.aig
+Command: ~/coding_env/abc/abc -c "&r abc_unknown_cases/oski1rub10i.aig; &put; fold; pdr -v -r -n -c"
+PDR Parameters: -r -n -c
+Parameter Set: 9 of 32
+Started at: Tue 17 Jun 2025 02:42:19 AM CST
+----------------------------------------
+ABC command line: "&r abc_unknown_cases/oski1rub10i.aig; &put; fold; pdr -v -r -n -c".
+
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 1                                                                 1     1      0.20 sec
+  2 : 0 1 1                                                               1     2      0.29 sec
+  3 : 0 1 1 5                                                             2     8      1.28 sec
+  4 : 0 1 1 4 10                                                          1    16      2.64 sec
+  5 : 0 1 1 5 64 146                                                      2   187     37.61 sec
+  6 : 0 1 1 2 1 1 199                                                     0   187     37.77 sec
+  7 : 0 1 1 2 1 1 21 178                                                  0   187     38.04 sec
+  8 : 0 1 1 2 1 1 22 67 145                                               2   201     44.63 sec
+  9 : 0 1 1 2 1 1 1 1 26 201                                              0   201     44.99 sec
+ 10 : 0 1 1 2 1 1 1 1 27 72 153                                           2   212     50.06 sec
+ 11 : 0 1 1 2 1 1 1 1 1 1 29 214                                          0   212     50.45 sec
+ 12 : 0 1 1 2 1 1 1 1 1 1 30 140 213                                      2   304     77.65 sec
+ 13 : 0 1 1 2 1 1 1 1 1 1 1 47 194 320                                    2   428    114.41 sec
+ 14 : 0 1 1 2 1 1 1 1 1 1 1 47 1017 3602 2882                             3  1071   2338.49 sec
+----------------------------------------
+STATUS: TIMEOUT (exceeded 3600 seconds)
+Finished at: Tue 17 Jun 2025 03:42:19 AM CST
+========================================

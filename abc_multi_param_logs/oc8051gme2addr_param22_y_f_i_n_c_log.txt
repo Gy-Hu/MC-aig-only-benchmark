@@ -1,0 +1,33 @@
+File: abc_unknown_cases/oc8051gme2addr.aig
+Command: ~/coding_env/abc/abc -c "&r abc_unknown_cases/oc8051gme2addr.aig; &put; fold; pdr -v -y -f -i -n -c"
+PDR Parameters: -y -f -i -n -c
+Parameter Set: 22 of 32
+Started at: Thu 19 Jun 2025 10:58:59 PM CST
+----------------------------------------
+ABC command line: "&r abc_unknown_cases/oc8051gme2addr.aig; &put; fold; pdr -v -y -f -i -n -c".
+
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 1                                                                 1     1      0.02 sec
+  2 : 0 3 4                                                               2     6      0.03 sec
+  3 : 0 11 5 19                                                           8    28      0.09 sec
+  4 : 0 8 1 4 15                                                          0    28      0.09 sec
+  5 : 0 11 18 61 96 80                                                   11    90      1.09 sec
+  6 : 0 5 11 29 139 282 234                                              18   169      3.30 sec
+  7 : 0 4 2 21 81 201 273 154                                            13   176      4.00 sec
+  8 : 0 4 2 10 51 109 213 245 129                                        11   183      4.72 sec
+  9 : 0 4 2 9 26 71 149 426 531 383                                      31   224     10.89 sec
+ 10 : 0 4 2 4 12 50 109 353 565 738 401                                  29   239     15.58 sec
+ 11 : 0 4 2 4 1 14 61 153 248 531 620 384                                17   260     18.97 sec
+ 12 : 0 4 2 4 1 12 58 130 174 313 420 577 377                            25   265     21.48 sec
+ 13 : 0 4 2 4 1 10 55 111 177 250 340 606 586 431                        17   270     25.28 sec
+ 14 : 0 4 2 4 1 10 56 115 186 243 348 647 1530 5474 2275                 26   478    124.15 sec
+ 15 : 0 4 2 4 1 10 56 115 160 167 242 642 1361 8976 16272 5990           52   620    517.85 sec
+ 16 : ... 2 4 1 10 56 115 157 160 236 625 1256 8233 19807 24650 8139     23   679   1213.31 sec
+ 17 : ... 10 56 116 158 162 237 634 1259 8139 20387 33183 23692 10225    57   699   2227.51 sec
+ 18 : ... 102 110 160 229 579 1082 7838 19982 31474 25687 13121 11896    31   736   2957.07 sec
+----------------------------------------
+STATUS: TIMEOUT (exceeded 3600 seconds)
+Finished at: Thu 19 Jun 2025 11:58:59 PM CST
+========================================

@@ -1,0 +1,29 @@
+File: abc_unknown_cases/processed_vector_add_cmp_split_8.aig
+Command: ~/coding_env/abc/abc -c "&r abc_unknown_cases/processed_vector_add_cmp_split_8.aig; &put; fold; pdr -v -r -y -f -i -t"
+PDR Parameters: -r -y -f -i -t
+Parameter Set: 14 of 32
+Started at: Thu 26 Jun 2025 01:00:33 AM CST
+----------------------------------------
+ABC command line: "&r abc_unknown_cases/processed_vector_add_cmp_split_8.aig; &put; fold; pdr -v -r -y -f -i -t".
+
+Converted 24 1-valued FFs and 186 DC-valued FFs.
+Warning: The number of inputs does not match the number of input names.
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 1                                                                 1     1   1      0.00 sec
+  2 : 0 2 2                                                               2     3   1      0.01 sec
+  3 : 0 4 2 5                                                             4     6   2      0.01 sec
+  4 : 0 16 14 18 22                                                      11    27   4      0.03 sec
+  5 : 0 16 15 21 7 19                                                    10    27   1      0.03 sec
+  6 : 0 36 68 88 110 74 50                                               71    72   4      0.23 sec
+  7 : 0 42 98 130 414 537 886 901                                       165   217  47      4.50 sec
+  8 : 0 42 98 130 281 127 132 488 499                                     0   217   0      4.69 sec
+  9 : 0 42 98 130 281 127 135 563 786 880                                38   233   8      7.76 sec
+ 10 : 0 42 98 130 281 127 56 507 774 658 240                              0   233   0      7.94 sec
+ 11 : 0 42 98 130 281 127 56 509 831 1543 2210 2154                     388   233   0     19.37 sec
+ 12 : 0 42 98 130 281 127 56 17 373 799 1690 2058 208                     0   233   0     20.11 sec
+----------------------------------------
+STATUS: TIMEOUT (exceeded 3600 seconds)
+Finished at: Thu 26 Jun 2025 02:00:33 AM CST
+========================================

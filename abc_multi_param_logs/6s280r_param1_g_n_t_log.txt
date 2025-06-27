@@ -1,0 +1,26 @@
+File: abc_unknown_cases/6s280r.aig
+Command: ~/coding_env/abc/abc -c "&r abc_unknown_cases/6s280r.aig; &put; fold; pdr -v -g -n -t"
+PDR Parameters: -g -n -t
+Parameter Set: 1 of 32
+Started at: Tue 17 Jun 2025 08:35:09 PM CST
+----------------------------------------
+ABC command line: "&r abc_unknown_cases/6s280r.aig; &put; fold; pdr -v -g -n -t".
+
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = yes. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 1                                                                 1     1   1      0.01 sec
+  2 : 0 3 3                                                               3     6   1      0.01 sec
+  3 : 0 10 11 10                                                          8    22   4      0.01 sec
+  4 : 0 5 11 14 11                                                        7    25   2      0.02 sec
+  5 : 0 4 7 11 20 17                                                     14    29   3      0.03 sec
+  6 : 0 4 7 9 21 10 9                                                    12    29   1      0.03 sec
+  7 : 0 4 86 290 710 1539 1963 2329                                      46   410 305      2.24 sec
+  8 : 0 4 85 87 337 589 697 1844 268                                     10   410   0      2.66 sec
+  9 : 0 4 88 523 1514 4058 9093 12492 19056 18441                       267   603 183     76.90 sec
+ 10 : 0 4 88 517 501 1438 3208 4068 9925 17334 2776                      15   603   0    103.69 sec
+ 11 : 0 4 88 538 551 1586 3458 4826 5727 13932 24884 18040             1522   613   5    173.01 sec
+----------------------------------------
+STATUS: TIMEOUT (exceeded 3600 seconds)
+Finished at: Tue 17 Jun 2025 09:35:09 PM CST
+========================================

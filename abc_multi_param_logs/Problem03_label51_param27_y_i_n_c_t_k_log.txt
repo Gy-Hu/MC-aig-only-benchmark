@@ -1,0 +1,40 @@
+File: abc_unknown_cases/Problem03_label51.aig
+Command: ~/coding_env/abc/abc -c "&r abc_unknown_cases/Problem03_label51.aig; &put; fold; pdr -v -y -i -n -c -t -k"
+PDR Parameters: -y -i -n -c -t -k
+Parameter Set: 27 of 32
+Started at: Sun 22 Jun 2025 05:53:05 PM CST
+----------------------------------------
+ABC command line: "&r abc_unknown_cases/Problem03_label51.aig; &put; fold; pdr -v -y -i -n -c -t -k".
+
+Converted 0 1-valued FFs and 995 DC-valued FFs.
+Warning: The number of inputs does not match the number of input names.
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 2                                                                 2     3   2      0.10 sec
+  2 : 0 2 3                                                               3     5   1      0.19 sec
+  3 : 0 1 4 98                                                            4   102   1      3.92 sec
+  4 : 0 1 12 33 251                                                       6   263   1     14.53 sec
+  5 : 0 1 14 201 486 1335                                                 7   734   1    156.18 sec
+  6 : 0 1 14 201 303 459 1585                                             3   734   0    249.43 sec
+  7 : 0 1 14 201 303 187 484 1459                                         2   734   0    328.04 sec
+  8 : 0 1 14 203 307 190 151 191 1535                                     7   734   0    388.35 sec
+  9 : 0 1 6 7 6 20 13 1 0 890                                             0   734   0    389.38 sec
+Invariant F[8] : 890 clauses with 717 flops (out of 998) (cex = 6, ave = 514.31)
+Verification of invariant with 890 clauses was successful.  Time =     0.25 sec
+Block =   15  Oblig =  1279  Clause =  4775  Call =284588 (sat=14.8%)  Cex =   6  Start = 944
+SAT solving =   265.23 sec ( 68.07 %)
+  unsat     =   164.36 sec ( 42.18 %)
+  sat       =   100.88 sec ( 25.89 %)
+Generalize  =   381.18 sec ( 97.83 %)
+Push clause =     6.11 sec (  1.57 %)
+Ternary sim =    82.36 sec ( 21.14 %)
+Containment =     0.44 sec (  0.11 %)
+CNF compute =     7.28 sec (  1.87 %)
+Refinement  =     0.00 sec (  0.00 %)
+TOTAL       =   389.64 sec (100.00 %)
+Property proved.  Time =   389.66 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Sun 22 Jun 2025 05:59:35 PM CST
+========================================

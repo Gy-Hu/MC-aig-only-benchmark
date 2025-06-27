@@ -1,0 +1,35 @@
+File: abc_unknown_cases/6s313r.aig
+Command: ~/coding_env/abc/abc -c "&r abc_unknown_cases/6s313r.aig; &put; fold; pdr -v -r -y -f -i -t -k"
+PDR Parameters: -r -y -f -i -t -k
+Parameter Set: 15 of 32
+Started at: Wed 18 Jun 2025 09:08:39 AM CST
+----------------------------------------
+ABC command line: "&r abc_unknown_cases/6s313r.aig; &put; fold; pdr -v -r -y -f -i -t -k".
+
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 9                                                                 1    11   1      0.07 sec
+  2 : 0 17 279                                                            3   170   3      3.79 sec
+  3 : 0 24 224 1069                                                       8   175   1     27.35 sec
+  4 : 0 24 209 506 1012                                                   2   175   0     41.30 sec
+  5 : 0 24 209 179 1 1192                                                 0   175   0     48.90 sec
+  6 : 0 24 209 179 1 0 1192                                               0   175   0     49.17 sec
+Invariant F[5] : 1192 clauses with 169 flops (out of 461) (cex = 5, ave = 96.48)
+Verification of invariant with 1192 clauses was successful.  Time =     0.10 sec
+Block = 1685  Oblig =  1840  Clause =  1761  Call = 34127 (sat=70.2%)  Cex =   5  Start = 105
+SAT solving =    42.37 sec ( 85.98 %)
+  unsat     =     9.52 sec ( 19.32 %)
+  sat       =    32.85 sec ( 66.65 %)
+Generalize  =    16.53 sec ( 33.55 %)
+Push clause =     1.80 sec (  3.65 %)
+Ternary sim =     4.91 sec (  9.96 %)
+Containment =     0.10 sec (  0.20 %)
+CNF compute =     0.11 sec (  0.23 %)
+Refinement  =     0.00 sec (  0.00 %)
+TOTAL       =    49.28 sec (100.00 %)
+Property proved.  Time =    49.29 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Wed 18 Jun 2025 09:09:29 AM CST
+========================================

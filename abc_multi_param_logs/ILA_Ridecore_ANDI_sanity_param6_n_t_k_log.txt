@@ -1,0 +1,23 @@
+File: abc_unknown_cases/ILA_Ridecore_ANDI_sanity.aig
+Command: ~/coding_env/abc/abc -c "&r abc_unknown_cases/ILA_Ridecore_ANDI_sanity.aig; &put; fold; pdr -v -n -t -k"
+PDR Parameters: -n -t -k
+Parameter Set: 6 of 32
+Started at: Wed 18 Jun 2025 06:16:39 PM CST
+----------------------------------------
+ABC command line: "&r abc_unknown_cases/ILA_Ridecore_ANDI_sanity.aig; &put; fold; pdr -v -n -t -k".
+
+Warning: The last output is interpreted as a constraint.
+Converted 9 1-valued FFs and 16374 DC-valued FFs.
+Warning: The number of inputs does not match the number of input names.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 8                                                                 1     9   1      1.09 sec
+  2 : 0 55 69                                                             8    84   3     13.77 sec
+  3 : 0 41 101 232                                                       10   227   3     57.77 sec
+  4 : 0 36 51 87 170                                                     12   235   2     67.21 sec
+  5 : 0 35 52 126 294 402                                                19   276   2    224.24 sec
+  6 : 0 33 45 127 431 1440 1446                                          19   379   3   1562.26 sec
+----------------------------------------
+STATUS: TIMEOUT (exceeded 3600 seconds)
+Finished at: Wed 18 Jun 2025 07:16:39 PM CST
+========================================

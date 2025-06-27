@@ -1,0 +1,37 @@
+File: abc_unknown_cases/intel066.aig
+Command: ~/coding_env/abc/abc -c "&r abc_unknown_cases/intel066.aig; &put; fold; pdr -v -y -f -i -n -t -k"
+PDR Parameters: -y -f -i -n -t -k
+Parameter Set: 24 of 32
+Started at: Fri 20 Jun 2025 03:02:48 AM CST
+----------------------------------------
+ABC command line: "&r abc_unknown_cases/intel066.aig; &put; fold; pdr -v -y -f -i -n -t -k".
+
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 1                                                                 1     1   1      0.01 sec
+  2 : 0 30 25                                                             7    48   3      0.89 sec
+  3 : 0 30 4 21                                                           0    48   0      0.93 sec
+  4 : 0 98 79 15 175                                                     68   217   1    901.91 sec
+  5 : 0 96 63 3 4 175                                                     0   217   0   1674.63 sec
+  6 : 0 96 63 3 4 11 164                                                  0   217   0   1674.69 sec
+  7 : 0 96 63 3 4 15 16 178                                              12   217   0   2754.10 sec
+  8 : 0 96 63 3 0 0 0 0 179                                               0   217   0   3268.85 sec
+Invariant F[4] : 179 clauses with 189 flops (out of 891) (cex = 5, ave = 270.79)
+Verification of invariant with 179 clauses was successful.  Time =   250.11 sec
+Block =   12  Oblig =   803  Clause =   401  Call =  4938 (sat=57.2%)  Cex =   5  Start =  13
+SAT solving =  3259.06 sec ( 92.61 %)
+  unsat     =  3255.51 sec ( 92.51 %)
+  sat       =     3.55 sec (  0.10 %)
+Generalize  =  1528.71 sec ( 43.44 %)
+Push clause =  1287.59 sec ( 36.59 %)
+Ternary sim =     8.94 sec (  0.25 %)
+Containment =     0.03 sec (  0.00 %)
+CNF compute =     0.09 sec (  0.00 %)
+Refinement  =     0.00 sec (  0.00 %)
+TOTAL       =  3518.97 sec (100.00 %)
+Property proved.  Time =  3518.99 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 20 Jun 2025 04:01:27 AM CST
+========================================

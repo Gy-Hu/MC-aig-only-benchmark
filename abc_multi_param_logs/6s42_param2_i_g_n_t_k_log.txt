@@ -1,0 +1,28 @@
+File: abc_unknown_cases/6s42.aig
+Command: ~/coding_env/abc/abc -c "&r abc_unknown_cases/6s42.aig; &put; fold; pdr -v -i -g -n -t -k"
+PDR Parameters: -i -g -n -t -k
+Parameter Set: 2 of 32
+Started at: Fri 27 Jun 2025 11:17:42 AM CST
+----------------------------------------
+ABC command line: "&r abc_unknown_cases/6s42.aig; &put; fold; pdr -v -i -g -n -t -k".
+
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = yes. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 1                                                                 1     1   1      0.01 sec
+  2 : 0 9 6                                                               5    14   3      0.01 sec
+  3 : 0 53 30 63                                                         21    83   4      0.07 sec
+  4 : 0 81 47 37 80                                                      20   133   4      0.14 sec
+  5 : 0 105 125 164 222 322                                              56   239  11      0.62 sec
+  6 : 0 43 133 262 1286 2092 1283                                       996   369   6      4.73 sec
+  7 : 0 48 134 274 1482 2672 1230 920                                   390   405   5      6.90 sec
+  8 : 0 48 134 274 1482 2022 896 545 790                                 18   405   0      7.59 sec
+  9 : 0 48 139 362 1866 2367 1009 581 744 1204                          338   431   2     11.04 sec
+ 10 : 0 48 139 362 1866 2154 925 397 490 729 930                         26   431   0     12.07 sec
+ 11 : 0 48 139 375 1992 2860 3061 1999 502 1014 1944 2798              2423   450   1     26.16 sec
+ 12 : 0 49 167 689 3780 8116 20128 17712 4797 3853 3120 797 6001      15997   503   2    325.39 sec
+ 13 : ... 167 689 3785 8182 20285 17818 4847 3901 3321 1011 1150 6443   484   505   1    333.69 sec
+----------------------------------------
+STATUS: TIMEOUT (exceeded 3600 seconds)
+Finished at: Fri 27 Jun 2025 12:17:42 PM CST
+========================================

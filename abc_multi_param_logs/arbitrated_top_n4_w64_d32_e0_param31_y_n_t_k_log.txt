@@ -1,0 +1,54 @@
+File: abc_unknown_cases/arbitrated_top_n4_w64_d32_e0.aig
+Command: ~/coding_env/abc/abc -c "&r abc_unknown_cases/arbitrated_top_n4_w64_d32_e0.aig; &put; fold; pdr -v -y -n -t -k"
+PDR Parameters: -y -n -t -k
+Parameter Set: 31 of 32
+Started at: Wed 25 Jun 2025 12:04:45 AM CST
+----------------------------------------
+ABC command line: "&r abc_unknown_cases/arbitrated_top_n4_w64_d32_e0.aig; &put; fold; pdr -v -y -n -t -k".
+
+Warning: The last 13 outputs are interpreted as constraints.
+Converted 1 1-valued FFs and 8361 DC-valued FFs.
+Warning: The number of inputs does not match the number of input names.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 2                                                                 2     4   2      0.94 sec
+  2 : 0 12 17                                                             5    20   5      4.07 sec
+  3 : 0 31 64 169                                                         8   190  70     46.13 sec
+  4 : 0 11 36 39 233                                                      6   261  65     73.91 sec
+  5 : 0 11 36 36 61 315                                                  11   325  64    107.03 sec
+  6 : 0 11 35 41 66 91 395                                               17   389  64    142.96 sec
+  7 : 0 11 35 37 50 89 140 489                                           12   453  64    184.53 sec
+  8 : 0 11 35 34 46 66 113 150 545                                       17   517  64    224.57 sec
+  9 : 0 11 35 34 46 65 117 143 216 656                                   17   581  64    280.37 sec
+ 10 : 0 11 35 36 53 76 123 133 209 298 752                               20   645  64    349.46 sec
+ 11 : 0 11 35 32 46 70 119 121 204 277 395 871                           18   709  64    426.93 sec
+ 12 : 0 11 35 34 50 73 134 137 219 295 361 441 934                       38   773  64    508.04 sec
+ 13 : 0 11 35 30 44 66 118 125 204 288 380 485 601 1190                  24   837  64    631.31 sec
+ 14 : 0 11 35 30 44 66 118 122 187 277 385 470 598 681 1163              28   901  64    751.74 sec
+ 15 : 0 11 35 30 44 67 119 123 188 272 369 444 542 599 668 1435          26   965  64    893.82 sec
+ 16 : ... 11 35 30 44 64 118 119 187 271 359 424 485 505 575 695 1370    27  1029  64   1011.10 sec
+ 17 : ... 30 44 64 118 120 199 295 402 473 558 564 613 860 1038 1663     48  1093  64   1252.46 sec
+ 18 : ... 44 64 118 120 190 284 383 417 475 460 460 592 741 911 1644     50  1157  64   1404.08 sec
+ 19 : ... 123 126 200 301 391 429 487 477 519 610 767 1022 1138 1782     65  1221  64   1677.22 sec
+ 20 : ... 117 170 249 343 368 434 426 436 450 585 610 888 897 1636       39  1285  64   1811.73 sec
+ 21 : ... 163 236 322 354 404 406 425 456 641 692 976 1176 1305 2187     78  1349  64   2175.15 sec
+ 22 : ... 236 321 358 411 400 390 403 508 540 784 739 818 1223 2008      25  1413  64   2331.10 sec
+ 23 : ... 313 350 419 407 385 376 499 535 762 679 739 1160 1257 2120     59  1477  64   2595.35 sec
+ 24 : ... 347 429 410 397 374 523 559 768 696 807 1103 1329 1647 2495   123  1541  64   3037.50 sec
+ 25 : ... 414 395 383 347 509 512 733 659 710 762 1016 1386 1554 2555    89  1605  64   3348.83 sec
+Block = 3818  Oblig = 81565  Clause = 22876  Call =750557 (sat=77.5%)  Cex =1487  Start =2475
+SAT solving =  2343.10 sec ( 68.71 %)
+  unsat     =    41.49 sec (  1.22 %)
+  sat       =  2301.61 sec ( 67.50 %)
+Generalize  =  2154.20 sec ( 63.17 %)
+Push clause =   314.09 sec (  9.21 %)
+Ternary sim =   789.74 sec ( 23.16 %)
+Containment =     7.61 sec (  0.22 %)
+CNF compute =     5.77 sec (  0.17 %)
+Refinement  =     0.04 sec (  0.00 %)
+TOTAL       =  3409.97 sec (100.00 %)
+Output 0 of miter "abc_unknown_cases/arbitrated_top_n4_w64_d32_e0" was asserted in frame 34.  Time =  3410.06 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Wed 25 Jun 2025 01:01:36 AM CST
+========================================

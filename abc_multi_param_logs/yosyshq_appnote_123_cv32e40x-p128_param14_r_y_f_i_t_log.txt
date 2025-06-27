@@ -1,0 +1,55 @@
+File: abc_unknown_cases/yosyshq_appnote_123_cv32e40x-p128.aig
+Command: ~/coding_env/abc/abc -c "&r abc_unknown_cases/yosyshq_appnote_123_cv32e40x-p128.aig; &put; fold; pdr -v -r -y -f -i -t"
+PDR Parameters: -r -y -f -i -t
+Parameter Set: 14 of 32
+Started at: Fri 27 Jun 2025 08:37:42 PM CST
+----------------------------------------
+ABC command line: "&r abc_unknown_cases/yosyshq_appnote_123_cv32e40x-p128.aig; &put; fold; pdr -v -r -y -f -i -t".
+
+Warning: The last 18 outputs are interpreted as constraints.
+Converted 1499 1-valued FFs and 89725 DC-valued FFs.
+Warning: The number of inputs does not match the number of flop names.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 3                                                                 1     5   1      0.10 sec
+  2 : 0 4 3                                                               2     6   1      0.11 sec
+  3 : 0 3 2 3                                                             4     8   1      0.13 sec
+  4 : 0 3 3 3 5                                                           6    11   2      0.17 sec
+  5 : 0 3 3 5 5 7                                                         9    16   2      0.22 sec
+  6 : 0 3 3 5 5 1 6                                                       0    16   0      0.22 sec
+  7 : 0 3 3 5 5 4 2 7                                                    11    21   4      0.36 sec
+  8 : 0 3 3 5 5 4 1 1 6                                                   0    21   0      0.36 sec
+  9 : 0 3 3 5 5 11 7 4 2 9                                               21    34   3      0.60 sec
+ 10 : 0 3 3 5 5 11 7 4 1 1 8                                              0    34   0      0.60 sec
+ 11 : 0 3 3 5 5 13 8 7 2 2 2 9                                           16    34   2      0.76 sec
+ 12 : 0 3 3 5 5 13 8 7 2 2 2 1 8                                          0    34   0      0.76 sec
+ 13 : 0 3 3 5 5 20 14 65 56 109 93 128 88 110                            67   148   5      4.99 sec
+ 14 : 0 3 3 5 5 20 14 39 31 56 48 64 33 31 112                            0   148   0      5.12 sec
+ 15 : 0 3 3 5 5 20 15 45 40 80 77 121 90 99 82 139                       66   148   0      6.99 sec
+ 16 : 0 3 3 5 5 9 7 35 25 41 36 36 12 7 11 26 118                         0   148   0      7.09 sec
+ 17 : 0 3 3 5 5 9 7 35 25 41 36 36 12 7 11 26 16 102                      0   148   0      7.09 sec
+ 18 : 0 3 3 5 5 9 7 35 25 41 36 36 12 7 11 26 16 16 92                    3   148   0      7.12 sec
+ 19 : 0 3 3 5 5 9 7 35 25 41 36 36 12 7 11 28 39 62 63 144               41   148   0      8.11 sec
+ 20 : 0 3 3 5 5 9 7 35 25 41 36 36 12 6 6 4 3 17 20 24 137                0   148   0      8.14 sec
+ 21 : 0 3 3 5 5 9 7 35 25 41 36 36 12 6 6 4 3 17 20 25 29 113             3   148   0      8.17 sec
+ 22 : 0 3 3 5 5 9 7 35 25 41 36 36 12 6 6 4 3 17 20 20 28 17 97           0   148   0      8.19 sec
+ 23 : ... 3 3 5 5 9 7 35 25 41 36 36 12 6 6 4 3 17 25 31 49 44 39 129    34   148   0      8.86 sec
+ 24 : 0 3 3 5 5 9 7 35 25 41 36 36 12 6 6 3 0 0 0 0 0 0 0 0 164           0   148   0      8.87 sec
+Invariant F[16] : 164 clauses with 102 flops (out of 6019) (cex = 21, ave = 46.66)
+Verification of invariant with 164 clauses was successful.  Time =     0.01 sec
+Block =   46  Oblig =  2876  Clause =  1399  Call = 22007 (sat=68.4%)  Cex =  21  Start =  62
+SAT solving =     5.07 sec ( 57.06 %)
+  unsat     =     0.23 sec (  2.55 %)
+  sat       =     4.85 sec ( 54.51 %)
+Generalize  =     6.13 sec ( 68.88 %)
+Push clause =     0.35 sec (  3.90 %)
+Ternary sim =     1.82 sec ( 20.52 %)
+Containment =     0.02 sec (  0.22 %)
+CNF compute =     0.19 sec (  2.14 %)
+Refinement  =     0.79 sec (  8.91 %)
+TOTAL       =     8.89 sec (100.00 %)
+Property proved.  Time =     8.93 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 27 Jun 2025 08:37:54 PM CST
+========================================

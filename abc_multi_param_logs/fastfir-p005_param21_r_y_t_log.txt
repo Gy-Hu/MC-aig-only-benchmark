@@ -1,0 +1,34 @@
+File: abc_unknown_cases/fastfir-p005.aig
+Command: ~/coding_env/abc/abc -c "&r abc_unknown_cases/fastfir-p005.aig; &put; fold; pdr -v -r -y -t"
+PDR Parameters: -r -y -t
+Parameter Set: 21 of 32
+Started at: Sun 15 Jun 2025 10:56:12 AM CST
+----------------------------------------
+ABC command line: "&r abc_unknown_cases/fastfir-p005.aig; &put; fold; pdr -v -r -y -t".
+
+Warning: The last 342 outputs are interpreted as constraints.
+Converted 34 1-valued FFs and 39 DC-valued FFs.
+Warning: The number of inputs does not match the number of input names.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 12                                                                1    12   1      0.08 sec
+  2 : 0 12 26                                                             3    28   1      0.22 sec
+  3 : 0 97 103 542                                                       14   232  49      5.46 sec
+  4 : 0 126 131 433 570                                                   9   319  15      9.68 sec
+  5 : 0 129 93 224 194 569                                               12   361  11     12.93 sec
+  6 : 0 158 120 233 175 248 657                                           9   403   7     16.92 sec
+  7 : 0 187 138 283 201 361 535 1193                                     13   444  17     28.52 sec
+  8 : 0 225 181 293 243 356 425 436 1089                                 13   486  18     37.81 sec
+  9 : 0 251 201 272 190 406 343 499 468 1384                             19   527  13     50.08 sec
+ 10 : 0 281 241 292 204 407 331 489 420 736 1312                         34   568  15     63.06 sec
+ 11 : 0 319 262 294 204 410 356 513 416 804 752 1506                     23   615  17     82.85 sec
+ 12 : 0 334 264 288 212 427 386 565 442 914 1021 1183 2192               22   650  12    123.60 sec
+ 13 : 0 354 287 328 267 541 461 671 547 1081 1305 1517 1728 3048         24   697  21    192.11 sec
+ 14 : ... 291 303 253 529 436 660 545 1101 1249 1586 1807 2007 3701      20   709  12    270.58 sec
+ 15 : ... 300 278 547 454 711 621 1174 1365 1773 2122 2379 3282 5799     19   709   0    427.27 sec
+ 16 : ... 687 1047 1234 2410 3243 4498 6059 7620 10540 13698 36202       21   709   0   2441.25 sec
+ 17 : ... 1320 1435 2711 2975 4419 5731 7145 9259 11703 19135 31229      22   709   0   3434.35 sec
+----------------------------------------
+STATUS: TIMEOUT (exceeded 3600 seconds)
+Finished at: Sun 15 Jun 2025 11:56:12 AM CST
+========================================

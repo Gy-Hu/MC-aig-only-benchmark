@@ -1,0 +1,36 @@
+File: abc_unknown_cases/bob12s03.aig
+Command: ~/coding_env/abc/abc -c "&r abc_unknown_cases/bob12s03.aig; &put; fold; pdr -v -r -y -f -n -c -t"
+PDR Parameters: -r -y -f -n -c -t
+Parameter Set: 16 of 32
+Started at: Sun 15 Jun 2025 05:55:21 AM CST
+----------------------------------------
+ABC command line: "&r abc_unknown_cases/bob12s03.aig; &put; fold; pdr -v -r -y -f -n -c -t".
+
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 501                                                               2   503 260      1.11 sec
+  2 : 0 1008 1144                                                         5  1259 368      3.75 sec
+  3 : 0 468 550 915                                                       8  1377 167      5.07 sec
+  4 : 0 853 974 1333 2334                                                44  2603 539     22.32 sec
+  5 : 0 524 724 835 577 2401                                             47  2647  42     25.37 sec
+  6 : 0 755 966 1074 3235 4822 3944                                     420  3160 240     98.94 sec
+  7 : 0 487 729 715 2248 3410 2130 2602                                   0  3160   0    103.40 sec
+  8 : 0 489 736 722 2355 3711 6534 4943 5095                           1581  3170   8    231.82 sec
+  9 : 0 486 733 719 2244 2560 4505 4279 1892 4040                         0  3170   0    241.22 sec
+Block = 4072  Oblig = 58480  Clause = 29270  Call =427531 (sat=67.2%)  Cex =1629  Start =1407
+SAT solving =   153.33 sec ( 61.45 %)
+  unsat     =    12.56 sec (  5.04 %)
+  sat       =   140.76 sec ( 56.42 %)
+Generalize  =   163.73 sec ( 65.62 %)
+Push clause =    24.13 sec (  9.67 %)
+Ternary sim =    42.31 sec ( 16.96 %)
+Containment =    15.89 sec (  6.37 %)
+CNF compute =     6.68 sec (  2.68 %)
+Refinement  =     6.76 sec (  2.71 %)
+TOTAL       =   249.51 sec (100.00 %)
+Output 0 of miter "abc_unknown_cases/bob12s03" was asserted in frame 12.  Time =   249.55 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Sun 15 Jun 2025 05:59:31 AM CST
+========================================

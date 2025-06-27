@@ -1,0 +1,35 @@
+File: abc_unknown_cases/pc_sfifo_3.cil+token_ring.08.cil-2.aig
+Command: ~/coding_env/abc/abc -c "&r abc_unknown_cases/pc_sfifo_3.cil+token_ring.08.cil-2.aig; &put; fold; pdr -v -n -c"
+PDR Parameters: -n -c
+Parameter Set: 4 of 32
+Started at: Mon 16 Jun 2025 03:42:30 PM CST
+----------------------------------------
+ABC command line: "&r abc_unknown_cases/pc_sfifo_3.cil+token_ring.08.cil-2.aig; &put; fold; pdr -v -n -c".
+
+Converted 0 1-valued FFs and 2212 DC-valued FFs.
+Warning: The number of inputs does not match the number of input names.
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 3                                                                 1     4      0.21 sec
+  2 : 0 2 5                                                               2     6      0.53 sec
+  3 : 0 3 5 8                                                             3     8      1.28 sec
+  4 : 0 2 226 760 464                                                     3   718    109.23 sec
+  5 : 0 2 2 380 842 589                                                   2   871    164.93 sec
+  6 : 0 2 2 93 1553 1417 3638                                             8  2182   1313.51 sec
+Block =   13  Oblig =  3719  Clause =  6988  Call =283092 (sat=20.2%)  Cex =   0  Start = 941
+SAT solving =   817.33 sec ( 62.22 %)
+  unsat     =   329.00 sec ( 25.05 %)
+  sat       =   488.33 sec ( 37.18 %)
+Generalize  =  1265.43 sec ( 96.34 %)
+Push clause =    14.30 sec (  1.09 %)
+Ternary sim =   228.46 sec ( 17.39 %)
+Containment =     6.70 sec (  0.51 %)
+CNF compute =    24.27 sec (  1.85 %)
+Refinement  =     0.00 sec (  0.00 %)
+TOTAL       =  1313.53 sec (100.00 %)
+Output 0 of miter "abc_unknown_cases/pc_sfifo_3.cil+token_ring.08.cil-2" was asserted in frame 7.  Time =  1313.60 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Mon 16 Jun 2025 04:04:23 PM CST
+========================================

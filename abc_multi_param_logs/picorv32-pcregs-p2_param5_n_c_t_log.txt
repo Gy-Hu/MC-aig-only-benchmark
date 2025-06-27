@@ -1,0 +1,30 @@
+File: abc_unknown_cases/picorv32-pcregs-p2.aig
+Command: ~/coding_env/abc/abc -c "&r abc_unknown_cases/picorv32-pcregs-p2.aig; &put; fold; pdr -v -n -c -t"
+PDR Parameters: -n -c -t
+Parameter Set: 5 of 32
+Started at: Tue 24 Jun 2025 01:42:23 AM CST
+----------------------------------------
+ABC command line: "&r abc_unknown_cases/picorv32-pcregs-p2.aig; &put; fold; pdr -v -n -c -t".
+
+Converted 0 1-valued FFs and 2113 DC-valued FFs.
+Warning: The number of inputs does not match the number of input names.
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 1                                                                 1     1   1      0.04 sec
+  2 : 0 3 3                                                               5     5   3      0.05 sec
+  3 : 0 1 1 2                                                             0     5   0      0.05 sec
+  4 : 0 2 2 2 4                                                           7     8   2      0.07 sec
+  5 : 0 1 1 1 1 3                                                         0     8   0      0.07 sec
+  6 : 0 1 1 3 2 2 9                                                       7    12   1      0.09 sec
+  7 : 0 1 1 2 1 1 1 7                                                     0    12   0      0.09 sec
+  8 : 0 6 12 21 27 32 25 15 68                                           24    36   3      0.39 sec
+  9 : 0 1 2 3 7 16 23 34 17 74                                           24    36   1      0.49 sec
+ 10 : 0 1 2 2 6 10 22 22 20 5 71                                          0    36   0      0.50 sec
+ 11 : 0 1 2 2 6 13 33 40 50 55 33 98                                     22    42   3      0.87 sec
+ 12 : 0 1 2 3 36 152 384 916 581 3156 7686 20843 22440                  113  1507 532    977.64 sec
+ 13 : 0 1 1 3 35 83 318 819 437 2456 4753 3226 12224 13939                0  1507   0   1009.32 sec
+----------------------------------------
+STATUS: TIMEOUT (exceeded 3600 seconds)
+Finished at: Tue 24 Jun 2025 02:42:23 AM CST
+========================================

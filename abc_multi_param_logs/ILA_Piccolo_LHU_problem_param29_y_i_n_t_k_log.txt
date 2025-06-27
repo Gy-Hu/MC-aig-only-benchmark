@@ -1,0 +1,27 @@
+File: abc_unknown_cases/ILA_Piccolo_LHU_problem.aig
+Command: ~/coding_env/abc/abc -c "&r abc_unknown_cases/ILA_Piccolo_LHU_problem.aig; &put; fold; pdr -v -y -i -n -t -k"
+PDR Parameters: -y -i -n -t -k
+Parameter Set: 29 of 32
+Started at: Mon 16 Jun 2025 02:44:49 AM CST
+----------------------------------------
+ABC command line: "&r abc_unknown_cases/ILA_Piccolo_LHU_problem.aig; &put; fold; pdr -v -y -i -n -t -k".
+
+Warning: The last output is interpreted as a constraint.
+Converted 31 1-valued FFs and 7754 DC-valued FFs.
+Warning: The number of inputs does not match the number of input names.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 1                                                                 1     1   1      0.35 sec
+  2 : 0 2 3                                                               2     3   1      0.88 sec
+  3 : 0 4 6 10                                                            8    12   1      2.41 sec
+  4 : 0 1 1 4 3                                                           0    12   0      2.46 sec
+  5 : 0 1 1 4 1 2                                                         0    12   0      2.47 sec
+  6 : 0 2 3 26 40 21 41                                                  34    57   1     28.60 sec
+  7 : 0 2 1 1 1 4 2 30                                                    0    57   0     28.64 sec
+  8 : 0 11 10 10 17 49 163 201 164                                       81   323   2   1763.19 sec
+  9 : 0 11 10 10 4 6 5 14 14 81                                           0   323   0   1763.35 sec
+ 10 : 0 11 10 10 4 6 5 14 14 5 76                                         0   323   0   1763.37 sec
+----------------------------------------
+STATUS: TIMEOUT (exceeded 3600 seconds)
+Finished at: Mon 16 Jun 2025 03:44:49 AM CST
+========================================

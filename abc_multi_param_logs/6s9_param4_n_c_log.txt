@@ -1,0 +1,42 @@
+File: abc_unknown_cases/6s9.aig
+Command: ~/coding_env/abc/abc -c "&r abc_unknown_cases/6s9.aig; &put; fold; pdr -v -n -c"
+PDR Parameters: -n -c
+Parameter Set: 4 of 32
+Started at: Sat 14 Jun 2025 10:55:20 AM CST
+----------------------------------------
+ABC command line: "&r abc_unknown_cases/6s9.aig; &put; fold; pdr -v -n -c".
+
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 47                                                                1    14      0.05 sec
+  2 : 0 247 1812                                                          4    93      1.75 sec
+  3 : 0 260 55 2072                                                       5   123      2.66 sec
+  4 : 0 239 83 60 2099                                                   14   157      3.52 sec
+  5 : 0 254 140 63 36 2665                                                9   188      8.92 sec
+  6 : 0 245 129 62 52 37 2687                                            13   189      9.91 sec
+  7 : 0 245 127 57 31 19 12 2741                                          5   189     10.58 sec
+  8 : 0 245 127 41 19 7 3 9 2756                                          2   189     10.84 sec
+  9 : 0 245 127 41 20 10 19 24 20 2775                                   11   198     12.04 sec
+ 10 : 0 245 127 41 20 7 11 26 21 16 2773                                  6   198     12.51 sec
+ 11 : 0 245 127 41 19 8 68 340 1002 1699 1305 5768                      120   441    178.33 sec
+ 12 : 0 244 128 42 19 12 217 614 1184 1017 918 795 5842                 187   447    242.66 sec
+ 13 : 0 244 128 41 18 6 7 10 1 1 0 0 0 5651                               0   447    243.55 sec
+Invariant F[10] : 5651 clauses with 418 flops (out of 607) (cex = 0, ave = 31.75)
+Verification of invariant with 5651 clauses was successful.  Time =     0.37 sec
+Block = 2649  Oblig = 11337  Clause = 12894  Call =364026 (sat=69.9%)  Cex =   0  Start =1197
+SAT solving =   185.80 sec ( 76.17 %)
+  unsat     =    15.29 sec (  6.27 %)
+  sat       =   170.51 sec ( 69.90 %)
+Generalize  =   226.71 sec ( 92.94 %)
+Push clause =     7.41 sec (  3.04 %)
+Ternary sim =    42.78 sec ( 17.54 %)
+Containment =     1.87 sec (  0.77 %)
+CNF compute =     6.07 sec (  2.49 %)
+Refinement  =     0.00 sec (  0.00 %)
+TOTAL       =   243.93 sec (100.00 %)
+Property proved.  Time =   243.97 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Sat 14 Jun 2025 10:59:24 AM CST
+========================================

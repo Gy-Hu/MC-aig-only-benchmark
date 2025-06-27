@@ -1,0 +1,28 @@
+File: abc_unknown_cases/digits_bad_for.aig
+Command: ~/coding_env/abc/abc -c "&r abc_unknown_cases/digits_bad_for.aig; &put; fold; pdr -v -r -i -n -c -t -k"
+PDR Parameters: -r -i -n -c -t -k
+Parameter Set: 7 of 32
+Started at: Sun 15 Jun 2025 05:25:16 PM CST
+----------------------------------------
+ABC command line: "&r abc_unknown_cases/digits_bad_for.aig; &put; fold; pdr -v -r -i -n -c -t -k".
+
+Converted 0 1-valued FFs and 227 DC-valued FFs.
+Warning: The number of inputs does not match the number of input names.
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 2                                                                 2     3   2      0.17 sec
+  2 : 0 2 3                                                               3     5   1      0.48 sec
+  3 : 0 1 10 9                                                            4    16   1     10.26 sec
+  4 : 0 1 4 7 6                                                           0    16   0     10.37 sec
+  5 : 0 1 4 11 12 7                                                       7    16   1     30.21 sec
+  6 : 0 1 4 23 50 76 55                                                   7   133   1    156.31 sec
+  7 : 0 1 4 23 15 18 59 56                                                0   133   0    157.24 sec
+  8 : 0 1 4 23 15 24 90 321 166                                           4   133   0    392.75 sec
+  9 : 0 1 4 23 15 24 27 279 180 64                                        0   133   0    398.22 sec
+ 10 : 0 1 4 23 15 24 27 410 275 348 242                                   3   133   0   1353.22 sec
+ 11 : 0 1 4 23 15 24 27 410 79 111 538 72                                 0   133   0   1466.24 sec
+----------------------------------------
+STATUS: TIMEOUT (exceeded 3600 seconds)
+Finished at: Sun 15 Jun 2025 06:25:16 PM CST
+========================================

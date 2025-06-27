@@ -1,0 +1,28 @@
+File: abc_unknown_cases/oski1rub01.aig
+Command: ~/coding_env/abc/abc -c "&r abc_unknown_cases/oski1rub01.aig; &put; fold; pdr -v -r -y -i -n -c"
+PDR Parameters: -r -y -i -n -c
+Parameter Set: 19 of 32
+Started at: Mon 16 Jun 2025 11:13:43 AM CST
+----------------------------------------
+ABC command line: "&r abc_unknown_cases/oski1rub01.aig; &put; fold; pdr -v -r -y -i -n -c".
+
+Converted 0 1-valued FFs and 2284 DC-valued FFs.
+Warning: The number of inputs does not match the number of flop names.
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 1                                                                 1     2      0.22 sec
+  2 : 0 1 6                                                               1     8      0.35 sec
+  3 : 0 1 1 8                                                             1    10      0.42 sec
+  4 : 0 1 1 1 12                                                          1    12      0.55 sec
+  5 : 0 1 1 1 1 11                                                        1    12      0.64 sec
+  6 : 0 1 1 1 1 1 32                                                      1    32      1.49 sec
+  7 : 0 1 1 1 1 1 6 26                                                    0    32      1.51 sec
+  8 : 0 1 1 1 1 1 19 401 375                                              3   428     50.69 sec
+  9 : 0 1 1 1 1 1 21 579 1245 1046                                        6   680    197.08 sec
+ 10 : 0 1 1 1 1 1 21 406 1534 3195 2335                                   8   865    666.86 sec
+ 11 : 0 1 1 1 1 1 21 406 1558 7381 10753 6259                            28  1511   3422.52 sec
+----------------------------------------
+STATUS: TIMEOUT (exceeded 3600 seconds)
+Finished at: Mon 16 Jun 2025 12:13:43 PM CST
+========================================

@@ -1,0 +1,34 @@
+File: abc_unknown_cases/pc_sfifo_1.cil-2+token_ring.05.cil-2.aig
+Command: ~/coding_env/abc/abc -c "&r abc_unknown_cases/pc_sfifo_1.cil-2+token_ring.05.cil-2.aig; &put; fold; pdr -v -r -y -f -n -c -t"
+PDR Parameters: -r -y -f -n -c -t
+Parameter Set: 16 of 32
+Started at: Wed 18 Jun 2025 10:15:32 PM CST
+----------------------------------------
+ABC command line: "&r abc_unknown_cases/pc_sfifo_1.cil-2+token_ring.05.cil-2.aig; &put; fold; pdr -v -r -y -f -n -c -t".
+
+Converted 0 1-valued FFs and 1572 DC-valued FFs.
+Warning: The number of inputs does not match the number of input names.
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 3                                                                 2     4   2      0.20 sec
+  2 : 0 2 4                                                               3     6   1      0.45 sec
+  3 : 0 2 4 13                                                            5    15   1      1.17 sec
+  4 : 0 2 25 39 108                                                       5    90   1     12.50 sec
+  5 : 0 2 127 213 544 1519                                                9   906   1    229.90 sec
+Block =   24  Oblig =  2774  Clause =  3588  Call = 97598 (sat=29.5%)  Cex =   7  Start = 322
+SAT solving =   146.47 sec ( 43.55 %)
+  unsat     =    32.27 sec (  9.60 %)
+  sat       =   114.20 sec ( 33.95 %)
+Generalize  =   320.90 sec ( 95.41 %)
+Push clause =     4.91 sec (  1.46 %)
+Ternary sim =   105.75 sec ( 31.44 %)
+Containment =     2.67 sec (  0.79 %)
+CNF compute =     4.99 sec (  1.48 %)
+Refinement  =     0.04 sec (  0.01 %)
+TOTAL       =   336.33 sec (100.00 %)
+Output 0 of miter "abc_unknown_cases/pc_sfifo_1.cil-2+token_ring.05.cil-2" was asserted in frame 6.  Time =   336.37 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Wed 18 Jun 2025 10:21:09 PM CST
+========================================

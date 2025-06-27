@@ -1,0 +1,35 @@
+File: abc_unknown_cases/zipcpu-zipmmu-p12.aig
+Command: ~/coding_env/abc/abc -c "&r abc_unknown_cases/zipcpu-zipmmu-p12.aig; &put; fold; pdr -v -y -f -i -n -c"
+PDR Parameters: -y -f -i -n -c
+Parameter Set: 22 of 32
+Started at: Fri 27 Jun 2025 02:30:35 PM CST
+----------------------------------------
+ABC command line: "&r abc_unknown_cases/zipcpu-zipmmu-p12.aig; &put; fold; pdr -v -y -f -i -n -c".
+
+Warning: The last 42 outputs are interpreted as constraints.
+Converted 2 1-valued FFs and 684 DC-valued FFs.
+Warning: The number of inputs does not match the number of input names.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 1                                                                 1     1      0.01 sec
+  2 : 0 2 4                                                               2     4      0.01 sec
+  3 : 0 1 20 308                                                          2   208      0.68 sec
+  4 : 0 1 19 0 309                                                        0   208      0.69 sec
+Invariant F[3] : 309 clauses with 204 flops (out of 369) (cex = 0, ave = 53.75)
+Verification of invariant with 309 clauses was successful.  Time =     0.00 sec
+Block =    8  Oblig =   613  Clause =   332  Call =  3748 (sat=74.8%)  Cex =   0  Start =  11
+SAT solving =     0.22 sec ( 31.71 %)
+  unsat     =     0.01 sec (  1.24 %)
+  sat       =     0.21 sec ( 30.47 %)
+Generalize  =     0.64 sec ( 91.17 %)
+Push clause =     0.01 sec (  0.98 %)
+Ternary sim =     0.41 sec ( 58.91 %)
+Containment =     0.00 sec (  0.12 %)
+CNF compute =     0.01 sec (  0.99 %)
+Refinement  =     0.00 sec (  0.00 %)
+TOTAL       =     0.70 sec (100.00 %)
+Property proved.  Time =     0.71 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 27 Jun 2025 02:30:35 PM CST
+========================================

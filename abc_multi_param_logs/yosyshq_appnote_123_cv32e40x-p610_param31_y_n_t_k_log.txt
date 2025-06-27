@@ -1,0 +1,60 @@
+File: abc_unknown_cases/yosyshq_appnote_123_cv32e40x-p610.aig
+Command: ~/coding_env/abc/abc -c "&r abc_unknown_cases/yosyshq_appnote_123_cv32e40x-p610.aig; &put; fold; pdr -v -y -n -t -k"
+PDR Parameters: -y -n -t -k
+Parameter Set: 31 of 32
+Started at: Wed 25 Jun 2025 04:42:43 AM CST
+----------------------------------------
+ABC command line: "&r abc_unknown_cases/yosyshq_appnote_123_cv32e40x-p610.aig; &put; fold; pdr -v -y -n -t -k".
+
+Warning: The last 18 outputs are interpreted as constraints.
+Converted 1499 1-valued FFs and 89725 DC-valued FFs.
+Warning: The number of inputs does not match the number of flop names.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 4                                                                 1     5   2      0.09 sec
+  2 : 0 3 3                                                               2     7   1      0.09 sec
+  3 : 0 3 1 4                                                             4    10   1      0.09 sec
+  4 : 0 3 1 1 4                                                           5    12   1      0.10 sec
+  5 : 0 3 1 1 2 7                                                         7    16   2      0.10 sec
+  6 : 0 3 1 1 1 2 6                                                       0    16   0      0.10 sec
+  7 : 0 3 1 1 1 4 4 8                                                    11    21   3      0.13 sec
+  8 : 0 3 1 1 1 4 4 4 9                                                  12    23   2      0.17 sec
+  9 : 0 3 1 1 1 4 1 1 2 11                                                0    23   0      0.17 sec
+ 10 : 0 3 1 1 1 4 1 1 2 1 10                                              0    23   0      0.17 sec
+ 11 : 0 3 1 1 1 30 19 26 14 15 9 49                                      37    89   3      1.73 sec
+ 12 : 0 3 1 1 1 27 14 23 7 9 5 2 48                                       0    89   0      1.77 sec
+ 13 : 0 3 1 1 1 27 15 57 40 66 52 46 12 64                               89   129   3      6.34 sec
+ 14 : 0 3 1 1 1 4 2 20 13 24 26 27 18 2 76                                0   129   0      6.47 sec
+ 15 : 0 3 1 1 1 4 2 20 13 23 27 28 21 6 4 76                             22   129   1      6.76 sec
+ 16 : 0 3 1 1 1 4 2 24 15 26 25 31 32 37 21 19 94                        32   136   2      8.63 sec
+ 17 : 0 3 1 1 1 7 3 47 21 40 30 43 48 52 42 33 24 175                    49   240   4     13.94 sec
+ 18 : 0 3 1 1 1 7 3 44 14 32 25 35 40 48 28 20 14 13 172                  0   240   0     14.13 sec
+ 19 : 0 3 1 1 1 7 3 44 14 32 25 35 40 48 28 18 14 13 5 167                0   240   0     14.31 sec
+ 20 : 0 3 1 1 1 11 7 58 32 59 42 63 59 74 50 44 42 47 28 23 190          57   273   4     22.34 sec
+ 21 : 0 3 1 1 1 11 6 50 20 43 29 48 45 52 34 33 29 27 18 14 5 204         0   273   0     22.62 sec
+ 22 : ... 64 38 78 63 133 166 305 375 535 474 584 464 451 457 430 598   310   283   1    168.34 sec
+ 23 : ... 27 58 38 87 106 157 154 141 116 130 97 125 140 174 236 450      0   283   0    169.57 sec
+ 24 : ... 58 38 87 106 155 151 133 96 121 93 122 134 170 227 133 316      0   283   0    170.44 sec
+ 25 : ... 38 87 106 155 151 133 96 120 93 122 134 170 227 133 16 300      0   283   0    171.30 sec
+ 26 : ... 113 176 179 215 201 293 269 444 485 642 733 742 577 495 622   380   283   0    290.31 sec
+ 27 : ... 62 51 70 115 102 98 129 94 117 121 121 93 89 50 47 27 800      42   283   0    296.08 sec
+ 28 : ... 29 62 51 70 115 99 98 118 91 107 113 95 66 58 28 16 9 2 791     0   283   0    296.76 sec
+ 29 : ... 62 51 70 115 99 98 118 90 106 110 93 64 56 28 16 9 2 0 780      0   283   0    297.38 sec
+Invariant F[28] : 780 clauses with 216 flops (out of 6021) (cex = 30, ave = 39.20)
+Verification of invariant with 780 clauses was successful.  Time =     0.03 sec
+Block =   51  Oblig = 18276  Clause = 10205  Call =185465 (sat=58.5%)  Cex =  30  Start = 604
+SAT solving =    85.68 sec ( 28.81 %)
+  unsat     =     4.93 sec (  1.66 %)
+  sat       =    80.75 sec ( 27.15 %)
+Generalize  =   268.76 sec ( 90.36 %)
+Push clause =     7.63 sec (  2.57 %)
+Ternary sim =   196.90 sec ( 66.20 %)
+Containment =     1.24 sec (  0.42 %)
+CNF compute =     2.56 sec (  0.86 %)
+Refinement  =     0.00 sec (  0.00 %)
+TOTAL       =   297.42 sec (100.00 %)
+Property proved.  Time =   297.52 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Wed 25 Jun 2025 04:47:43 AM CST
+========================================

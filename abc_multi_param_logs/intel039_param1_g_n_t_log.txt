@@ -1,0 +1,31 @@
+File: abc_unknown_cases/intel039.aig
+Command: ~/coding_env/abc/abc -c "&r abc_unknown_cases/intel039.aig; &put; fold; pdr -v -g -n -t"
+PDR Parameters: -g -n -t
+Parameter Set: 1 of 32
+Started at: Fri 13 Jun 2025 08:06:34 PM CST
+----------------------------------------
+ABC command line: "&r abc_unknown_cases/intel039.aig; &put; fold; pdr -v -g -n -t".
+
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = yes. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 1                                                                 1     1   1      0.12 sec
+  2 : 0 2 2                                                               3     5   2      0.81 sec
+  3 : 0 9 123 316                                                         9   405   2    104.73 sec
+  4 : 0 9 96 4 312                                                        0   405   0    105.60 sec
+  5 : 0 10 108 6 12 433                                                   8   435   1    143.89 sec
+  6 : 0 10 107 4 2 7 428                                                  2   435   0    145.57 sec
+  7 : 0 10 116 4 2 5 13 501                                               8   436   1    200.63 sec
+  8 : 0 10 116 4 2 4 7 7 496                                              0   436   0    201.82 sec
+  9 : 0 13 125 4 2 4 6 9 25 812                                          13   718   1    308.49 sec
+ 10 : 0 13 125 4 2 4 5 6 17 52 931                                        6   718   0    362.87 sec
+ 11 : 0 14 128 5 3 5 6 7 21 98 131 1350                                  23   721   1    523.58 sec
+ 12 : 0 14 128 4 2 2 3 5 11 51 77 56 1204                                 0   721   0    526.65 sec
+ 13 : 0 16 133 4 2 3 4 5 11 53 77 86 212 1735                            27   944   1    722.61 sec
+ 14 : 0 16 131 4 2 3 4 5 11 52 75 74 171 165 1754                         4   944   0    791.95 sec
+ 15 : 0 17 133 4 2 3 4 5 11 58 106 164 237 361 438 3976                  46  1176   1   1706.32 sec
+ 16 : 0 17 132 4 2 3 4 5 11 47 62 108 116 255 241 287 3142                3  1176   0   1861.00 sec
+----------------------------------------
+STATUS: TIMEOUT (exceeded 3600 seconds)
+Finished at: Fri 13 Jun 2025 09:06:34 PM CST
+========================================

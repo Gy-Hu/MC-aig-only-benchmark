@@ -1,0 +1,25 @@
+File: abc_unknown_cases/ridecore.aig
+Command: ~/coding_env/abc/abc -c "&r abc_unknown_cases/ridecore.aig; &put; fold; pdr -v -r -i -t"
+PDR Parameters: -r -i -t
+Parameter Set: 8 of 32
+Started at: Wed 18 Jun 2025 10:43:14 AM CST
+----------------------------------------
+ABC command line: "&r abc_unknown_cases/ridecore.aig; &put; fold; pdr -v -r -i -t".
+
+Warning: The last 3 outputs are interpreted as constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 67                                                                1    67  32      0.97 sec
+  2 : 0 73 121                                                            2    76   2      1.15 sec
+  3 : 0 3 68 144                                                          3    84   1      1.55 sec
+  4 : 0 3 67 70 139                                                       2    84   0      1.81 sec
+  5 : 0 3 67 7 78 169                                                     6   121   1      2.61 sec
+  6 : 0 3 67 2 16 88 254                                                  9   131   1      4.77 sec
+  7 : 0 9 67 2 32 123 215 207                                            13   173   2     12.25 sec
+  8 : 0 9 67 2 9 24 47 90 194                                             3   173   0     13.21 sec
+  9 : 0 11 67 2 20 92 151 201 416 517                                    88   357   3     69.88 sec
+ 10 : 0 11 67 2 20 19 39 68 279 657 649                                  22   370   1    133.99 sec
+----------------------------------------
+STATUS: TIMEOUT (exceeded 3600 seconds)
+Finished at: Wed 18 Jun 2025 11:43:14 AM CST
+========================================

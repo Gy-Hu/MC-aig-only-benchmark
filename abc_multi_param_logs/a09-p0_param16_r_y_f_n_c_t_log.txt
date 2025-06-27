@@ -1,0 +1,29 @@
+File: abc_unknown_cases/a09-p0.aig
+Command: ~/coding_env/abc/abc -c "&r abc_unknown_cases/a09-p0.aig; &put; fold; pdr -v -r -y -f -n -c -t"
+PDR Parameters: -r -y -f -n -c -t
+Parameter Set: 16 of 32
+Started at: Sun 22 Jun 2025 09:13:51 PM CST
+----------------------------------------
+ABC command line: "&r abc_unknown_cases/a09-p0.aig; &put; fold; pdr -v -r -y -f -n -c -t".
+
+Warning: The last 71 outputs are interpreted as constraints.
+Converted 173 1-valued FFs and 503 DC-valued FFs.
+Warning: The number of inputs does not match the number of flop names.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 1                                                                 1     1   1      0.01 sec
+  2 : 0 82 72                                                             5    99  38      0.39 sec
+  3 : 0 956 2425 1626                                                    32   171   3     21.66 sec
+  4 : 0 958 2509 4382 1194                                               18   224   3     42.52 sec
+  5 : 0 958 2438 7331 11243 3072                                         20   268   3    156.11 sec
+  6 : 0 985 2243 5670 11585 12464 3236                                   46   276   2    284.63 sec
+  7 : 0 921 1712 4977 9279 13390 15561 4409                              28   276   0    562.11 sec
+  8 : 0 921 1708 4896 9042 12046 14740 18056 5788                        32   276   0    948.57 sec
+  9 : 0 921 1708 4900 9050 11717 12319 16254 22244 7704                  38   276   0   1687.93 sec
+ 10 : 0 921 1708 4900 9023 11670 11301 11354 15667 24920 9727            39   276   0   2251.77 sec
+ 11 : ... 1708 4900 9021 11658 11106 10079 10579 14892 26127 10140       46   276   0   2851.31 sec
+ 12 : ... 1708 4900 9020 11641 10974 9480 9029 9201 11394 23680 11562    23   276   0   3232.92 sec
+----------------------------------------
+STATUS: TIMEOUT (exceeded 3600 seconds)
+Finished at: Sun 22 Jun 2025 10:13:51 PM CST
+========================================

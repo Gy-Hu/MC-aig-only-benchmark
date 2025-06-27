@@ -1,0 +1,28 @@
+File: abc_unknown_cases/6s516r.aig
+Command: ~/coding_env/abc/abc -c "&r abc_unknown_cases/6s516r.aig; &put; fold; pdr -v -y -i -n -c -t -k"
+PDR Parameters: -y -i -n -c -t -k
+Parameter Set: 27 of 32
+Started at: Sat 14 Jun 2025 08:47:59 AM CST
+----------------------------------------
+ABC command line: "&r abc_unknown_cases/6s516r.aig; &put; fold; pdr -v -y -i -n -c -t -k".
+
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 1                                                                 1     1   1      0.01 sec
+  2 : 0 3 3                                                               3     7   1      0.01 sec
+  3 : 0 8 6 6                                                             6    16   3      0.01 sec
+  4 : 0 11 11 12 14                                                       8    23   3      0.01 sec
+  5 : 0 4 5 3 4 13                                                        0    23   0      0.02 sec
+  6 : 0 4 5 3 4 10 12                                                     5    23   0      0.02 sec
+  7 : 0 6 137 48 161 525 415 790                                         17   407 307      2.24 sec
+  8 : 0 6 133 29 154 394 273 666 291                                      3   407   0      2.47 sec
+  9 : 0 6 137 357 724 1595 1751 3307 4678 4724                           44   596 175     41.47 sec
+ 10 : 0 6 137 328 327 1432 1555 2009 3288 4672 1262                       2   596   0     43.42 sec
+ 11 : 0 6 137 331 336 1437 1566 2032 3423 4994 4859 2884                 34   602   4     69.64 sec
+ 12 : ... 6 137 349 1033 5484 3583 7751 11412 15739 18686 21720 23600   438   725 123   1234.59 sec
+ 13 : ... 349 1023 4588 3074 8091 11010 17514 18503 20680 31748 17664  1141   733   5   2208.74 sec
+----------------------------------------
+STATUS: TIMEOUT (exceeded 3600 seconds)
+Finished at: Sat 14 Jun 2025 09:47:59 AM CST
+========================================

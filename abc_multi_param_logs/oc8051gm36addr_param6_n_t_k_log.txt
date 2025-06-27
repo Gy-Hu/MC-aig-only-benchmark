@@ -1,0 +1,28 @@
+File: abc_unknown_cases/oc8051gm36addr.aig
+Command: ~/coding_env/abc/abc -c "&r abc_unknown_cases/oc8051gm36addr.aig; &put; fold; pdr -v -n -t -k"
+PDR Parameters: -n -t -k
+Parameter Set: 6 of 32
+Started at: Wed 25 Jun 2025 01:12:22 AM CST
+----------------------------------------
+ABC command line: "&r abc_unknown_cases/oc8051gm36addr.aig; &put; fold; pdr -v -n -t -k".
+
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 2                                                                 1     2   1      0.02 sec
+  2 : 0 3 4                                                               2     5   1      0.03 sec
+  3 : 0 6 3 11                                                            4    11   1      0.05 sec
+  4 : 0 1 1 6 2                                                           0    11   0      0.05 sec
+  5 : 0 10 14 98 297 222                                                156   166   3      2.90 sec
+  6 : 0 4 2 13 116 124 122                                               12   172   2      3.14 sec
+  7 : 0 4 2 7 95 94 31 97                                                 0   172   0      3.20 sec
+  8 : 0 4 2 7 101 136 239 358 393                                        91   203   2      6.99 sec
+  9 : 0 4 2 5 75 64 121 371 471 386                                      74   223   2      9.86 sec
+ 10 : 0 4 2 5 5 9 51 158 273 327 186                                      1   223   0     10.11 sec
+ 11 : 0 4 2 5 5 9 66 202 377 825 1549 1618                              104   242   2     38.08 sec
+ 12 : 0 4 2 5 1 4 40 41 96 301 1027 2329 2175                            26   242   0     92.41 sec
+ 13 : 0 4 2 5 1 4 41 41 97 298 905 2700 4202 2984                       317   434   1    215.51 sec
+----------------------------------------
+STATUS: TIMEOUT (exceeded 3600 seconds)
+Finished at: Wed 25 Jun 2025 02:12:22 AM CST
+========================================

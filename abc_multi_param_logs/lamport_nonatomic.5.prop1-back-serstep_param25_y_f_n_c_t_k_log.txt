@@ -1,0 +1,21 @@
+File: abc_unknown_cases/lamport_nonatomic.5.prop1-back-serstep.aig
+Command: ~/coding_env/abc/abc -c "&r abc_unknown_cases/lamport_nonatomic.5.prop1-back-serstep.aig; &put; fold; pdr -v -y -f -n -c -t -k"
+PDR Parameters: -y -f -n -c -t -k
+Parameter Set: 25 of 32
+Started at: Sat 14 Jun 2025 11:13:41 PM CST
+----------------------------------------
+ABC command line: "&r abc_unknown_cases/lamport_nonatomic.5.prop1-back-serstep.aig; &put; fold; pdr -v -y -f -n -c -t -k".
+
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 1                                                                 1     5   1      0.01 sec
+  2 : 0 1 1                                                               3     9   1      0.03 sec
+  3 : 0 1 59 2                                                            4    57   1      0.39 sec
+  4 : 0 1 59 26 1                                                         1    57   0      0.57 sec
+  5 : 0 2 159 304 277 14                                                  7   143   1      5.68 sec
+  6 : 0 3 292 992 744 98 53                                              32   146   1     18.56 sec
+----------------------------------------
+STATUS: TIMEOUT (exceeded 3600 seconds)
+Finished at: Sun 15 Jun 2025 12:13:41 AM CST
+========================================

@@ -1,0 +1,34 @@
+File: abc_unknown_cases/6s20.aig
+Command: ~/coding_env/abc/abc -c "&r abc_unknown_cases/6s20.aig; &put; fold; pdr -v -y -i -n -c -t -k"
+PDR Parameters: -y -i -n -c -t -k
+Parameter Set: 27 of 32
+Started at: Wed 18 Jun 2025 01:09:11 PM CST
+----------------------------------------
+ABC command line: "&r abc_unknown_cases/6s20.aig; &put; fold; pdr -v -y -i -n -c -t -k".
+
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 7                                                                 2     7   5      0.08 sec
+  2 : 0 45 35                                                             7    54   4      0.57 sec
+  3 : 0 97 389 251                                                       13   158   8      7.18 sec
+  4 : 0 60 248 587 300                                                    9   169   3     16.74 sec
+  5 : 0 73 273 579 1266 443                                              18   172   2     53.24 sec
+  6 : 0 74 282 513 1586 2913 828                                         12   173   1    189.28 sec
+  7 : 0 74 198 499 1331 3165 4609 1230                                   15   173   0    427.46 sec
+Block =   70  Oblig =  5937  Clause = 16468  Call =336889 (sat=52.9%)  Cex =  23  Start =1117
+SAT solving =   543.55 sec ( 74.85 %)
+  unsat     =   199.93 sec ( 27.53 %)
+  sat       =   343.62 sec ( 47.32 %)
+Generalize  =   601.51 sec ( 82.84 %)
+Push clause =   115.29 sec ( 15.88 %)
+Ternary sim =   166.65 sec ( 22.95 %)
+Containment =     0.39 sec (  0.05 %)
+CNF compute =     9.35 sec (  1.29 %)
+Refinement  =     0.00 sec (  0.00 %)
+TOTAL       =   726.15 sec (100.00 %)
+Output 0 of miter "abc_unknown_cases/6s20" was asserted in frame 12.  Time =   726.19 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Wed 18 Jun 2025 01:21:17 PM CST
+========================================

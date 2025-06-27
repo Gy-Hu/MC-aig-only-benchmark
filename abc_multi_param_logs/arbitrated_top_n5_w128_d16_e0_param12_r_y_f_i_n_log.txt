@@ -1,0 +1,46 @@
+File: abc_unknown_cases/arbitrated_top_n5_w128_d16_e0.aig
+Command: ~/coding_env/abc/abc -c "&r abc_unknown_cases/arbitrated_top_n5_w128_d16_e0.aig; &put; fold; pdr -v -r -y -f -i -n"
+PDR Parameters: -r -y -f -i -n
+Parameter Set: 12 of 32
+Started at: Wed 25 Jun 2025 11:08:38 PM CST
+----------------------------------------
+ABC command line: "&r abc_unknown_cases/arbitrated_top_n5_w128_d16_e0.aig; &put; fold; pdr -v -r -y -f -i -n".
+
+Warning: The last 16 outputs are interpreted as constraints.
+Converted 1 1-valued FFs and 10476 DC-valued FFs.
+Warning: The number of inputs does not match the number of input names.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 3                                                                 1     5      1.06 sec
+  2 : 0 13 28                                                             4    39      7.36 sec
+  3 : 0 34 72 326                                                         8   330     92.50 sec
+  4 : 0 15 30 29 441                                                      3   457    134.80 sec
+  5 : 0 15 30 30 49 568                                                   5   585    180.42 sec
+  6 : 0 15 32 33 46 66 712                                                9   713    231.84 sec
+  7 : 0 15 30 30 53 62 99 844                                            12   838    285.92 sec
+  8 : 0 15 30 30 48 54 92 145 1003                                       10   966    347.73 sec
+  9 : 0 15 30 30 48 54 63 110 141 1156                                   10  1094    413.53 sec
+ 10 : 0 15 30 30 48 54 63 94 120 162 1286                                14  1222    483.81 sec
+ 11 : 0 15 30 30 48 54 62 93 123 157 220 1439                            12  1342    568.74 sec
+ 12 : 0 15 30 34 58 61 68 97 120 138 204 257 1580                        25  1470    659.15 sec
+ 13 : 0 15 30 34 55 56 67 99 114 139 176 258 304 1782                    31  1598    774.53 sec
+ 14 : 0 15 30 34 55 56 67 99 112 133 150 202 222 280 1881                17  1726    857.86 sec
+ 15 : 0 15 30 34 55 56 67 99 112 131 142 175 213 311 387 2173            20  1854   1006.70 sec
+ 16 : ... 15 30 37 63 66 85 116 132 149 159 168 187 243 231 368 2243     30  1984   1106.92 sec
+ 17 : ... 60 104 114 148 164 168 181 179 192 203 263 259 404 432 2378    76  2113   1295.76 sec
+Block = 2364  Oblig = 13190  Clause =  6313  Call =164806 (sat=75.1%)  Cex =   0  Start = 531
+SAT solving =   611.05 sec ( 47.16 %)
+  unsat     =     9.87 sec (  0.76 %)
+  sat       =   601.19 sec ( 46.40 %)
+Generalize  =   577.80 sec ( 44.59 %)
+Push clause =    42.42 sec (  3.27 %)
+Ternary sim =   618.18 sec ( 47.71 %)
+Containment =     1.05 sec (  0.08 %)
+CNF compute =     1.00 sec (  0.08 %)
+Refinement  =     0.01 sec (  0.00 %)
+TOTAL       =  1295.79 sec (100.00 %)
+Output 0 of miter "abc_unknown_cases/arbitrated_top_n5_w128_d16_e0" was asserted in frame 19.  Time =  1295.86 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Wed 25 Jun 2025 11:30:14 PM CST
+========================================

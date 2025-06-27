@@ -1,0 +1,56 @@
+File: abc_unknown_cases/a18-p0.aig
+Command: ~/coding_env/abc/abc -c "&r abc_unknown_cases/a18-p0.aig; &put; fold; pdr -v -y -i -n -c -t"
+PDR Parameters: -y -i -n -c -t
+Parameter Set: 26 of 32
+Started at: Mon 23 Jun 2025 03:44:26 AM CST
+----------------------------------------
+ABC command line: "&r abc_unknown_cases/a18-p0.aig; &put; fold; pdr -v -y -i -n -c -t".
+
+Warning: The last 71 outputs are interpreted as constraints.
+Converted 173 1-valued FFs and 503 DC-valued FFs.
+Warning: The number of inputs does not match the number of flop names.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 1                                                                 1     1   1      0.01 sec
+  2 : 0 2 2                                                               2     3   1      0.01 sec
+  3 : 0 61 228 84                                                        18   103  33      0.64 sec
+  4 : 0 51 255 586 235                                                   11   129   5      2.20 sec
+  5 : 0 53 261 623 1692 449                                              13   163   4      6.72 sec
+  6 : 0 54 211 493 1618 3642 1044                                        74   168   4     22.02 sec
+  7 : 0 54 211 493 1619 3984 6187 1739                                   29   168   0     57.25 sec
+  8 : 0 54 211 493 1621 3700 7198 6609 2210                              83   168   0    111.81 sec
+  9 : 0 54 211 493 1621 3665 6360 6305 5318 2253                         30   168   0    152.56 sec
+ 10 : 0 54 211 493 1621 3665 6330 5454 4075 4906 2680                   104   168   0    186.89 sec
+ 11 : 0 54 214 496 1623 3665 6330 5342 2418 2734 6537 1516               27   172   1    212.58 sec
+ 12 : 0 54 214 496 1623 3665 6330 5342 2272 603 1216 3608 4360            2   172   0    222.04 sec
+ 13 : ... 54 214 496 1623 3665 6330 5342 2283 633 1325 3899 4685 3054   238   172   0    249.24 sec
+ 14 : ... 54 214 496 1623 3665 6330 5342 2283 511 140 50 35 617 9801      2   172   0    262.63 sec
+ 15 : ... 496 1623 3665 6330 5342 2283 511 140 50 35 614 7420 2607        4   172   0    267.61 sec
+ 16 : ... 1623 3665 6330 5342 2283 511 140 50 35 614 5131 8138 2728      31   172   0    316.81 sec
+ 17 : ... 3665 6330 5342 2283 511 140 50 35 5 2557 4511 8935 5282         9   172   0    386.59 sec
+ 18 : ... 6330 5342 2283 511 140 50 35 5 2557 4511 6179 9022 5922        13   172   0    465.17 sec
+ 19 : ... 5342 2283 511 140 50 35 5 2557 4511 6229 6698 8905 5526        23   172   0    534.33 sec
+ 20 : ... 2283 511 140 50 35 5 2557 4511 5293 4089 2770 5617 9417         6   172   0    579.69 sec
+ 21 : ... 511 140 50 35 5 2557 4511 5293 4128 2930 4740 8126 7623        60   172   0    637.18 sec
+ 22 : ... 140 50 35 5 2557 4511 5293 4128 1856 667 1110 3997 13394        4   172   0    668.18 sec
+ 23 : ... 140 50 35 5 2557 4511 5293 4128 1856 667 962 3358 5122 9168     2   172   0    678.77 sec
+ 24 : ... 35 5 2557 4511 5293 4128 1863 673 978 3787 8420 9432 9433     391   172   0    831.05 sec
+ 25 : ... 140 50 35 5 2557 4511 5293 4128 1863 551 102 9 0 0 0 23299      0   172   0    885.95 sec
+Invariant F[22] : 23299 clauses with 166 flops (out of 442) (cex = 49, ave = 30.33)
+Verification of invariant with 23299 clauses was successful.  Time =     5.27 sec
+Block =   90  Oblig = 34774  Clause = 84786  Call =2551652 (sat=64.4%)  Cex =  49  Start =8492
+SAT solving =   665.39 sec ( 74.66 %)
+  unsat     =   238.77 sec ( 26.79 %)
+  sat       =   426.62 sec ( 47.87 %)
+Generalize  =   644.67 sec ( 72.33 %)
+Push clause =   222.43 sec ( 24.96 %)
+Ternary sim =   118.60 sec ( 13.31 %)
+Containment =     5.95 sec (  0.67 %)
+CNF compute =    33.69 sec (  3.78 %)
+Refinement  =     0.05 sec (  0.01 %)
+TOTAL       =   891.23 sec (100.00 %)
+Property proved.  Time =   891.30 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Mon 23 Jun 2025 03:59:17 AM CST
+========================================

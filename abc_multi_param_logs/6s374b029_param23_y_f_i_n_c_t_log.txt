@@ -1,0 +1,36 @@
+File: abc_unknown_cases/6s374b029.aig
+Command: ~/coding_env/abc/abc -c "&r abc_unknown_cases/6s374b029.aig; &put; fold; pdr -v -y -f -i -n -c -t"
+PDR Parameters: -y -f -i -n -c -t
+Parameter Set: 23 of 32
+Started at: Mon 16 Jun 2025 12:31:02 PM CST
+----------------------------------------
+ABC command line: "&r abc_unknown_cases/6s374b029.aig; &put; fold; pdr -v -y -f -i -n -c -t".
+
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 2                                                                 1     2   1      0.36 sec
+  2 : 0 4 3                                                               3     5   2      0.41 sec
+  3 : 0 14 7 3                                                            7    16   6      0.66 sec
+  4 : 0 14 8 3 3                                                          2    16   0      0.66 sec
+  5 : 0 20 12 7 8 3                                                      10    23   5      0.93 sec
+  6 : 0 27 18 12 8 6 2                                                   15    37   4      1.23 sec
+  7 : 0 45 39 17 12 7 5 7                                                26    63   4      1.62 sec
+  8 : 0 57 64 44 31 23 9 9 19                                            28    99   7      2.37 sec
+  9 : 0 71 94 72 42 37 30 52 5 48                                        27   153   6      3.41 sec
+Block =  396  Oblig = 76779  Clause = 61616  Call =1159667 (sat=69.6%)  Cex = 378  Start =3858
+SAT solving =   715.59 sec ( 52.24 %)
+  unsat     =    46.78 sec (  3.42 %)
+  sat       =   668.81 sec ( 48.83 %)
+Generalize  =  1107.40 sec ( 80.85 %)
+Push clause =     0.00 sec (  0.00 %)
+Ternary sim =   358.14 sec ( 26.15 %)
+Containment =   143.42 sec ( 10.47 %)
+CNF compute =    41.59 sec (  3.04 %)
+Refinement  =    34.88 sec (  2.55 %)
+TOTAL       =  1369.74 sec (100.00 %)
+Output 0 of miter "abc_unknown_cases/6s374b029" was asserted in frame 10.  Time =  1369.95 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Mon 16 Jun 2025 12:53:53 PM CST
+========================================

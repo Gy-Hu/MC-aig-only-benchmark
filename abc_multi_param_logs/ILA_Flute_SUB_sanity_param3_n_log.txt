@@ -1,0 +1,28 @@
+File: abc_unknown_cases/ILA_Flute_SUB_sanity.aig
+Command: ~/coding_env/abc/abc -c "&r abc_unknown_cases/ILA_Flute_SUB_sanity.aig; &put; fold; pdr -v -n"
+PDR Parameters: -n
+Parameter Set: 3 of 32
+Started at: Tue 24 Jun 2025 05:38:36 AM CST
+----------------------------------------
+ABC command line: "&r abc_unknown_cases/ILA_Flute_SUB_sanity.aig; &put; fold; pdr -v -n".
+
+Warning: The last output is interpreted as a constraint.
+Converted 548 1-valued FFs and 173794 DC-valued FFs.
+Warning: The number of inputs does not match the number of input names.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 24                                                                1    24      2.68 sec
+  2 : 0 5 26                                                              2    27      3.19 sec
+  3 : 0 4 4 25                                                            3    32      3.91 sec
+  4 : 0 3 2 1 22                                                          0    32      3.99 sec
+  5 : 0 3 2 1 1 21                                                        0    32      4.08 sec
+  6 : 0 5 10 39 144 117 302                                              30   405    501.88 sec
+  7 : 0 5 9 45 56 124 213 461                                            45   447    773.20 sec
+  8 : 0 7 13 53 109 252 812 812 1231                                    290   563   2546.91 sec
+  9 : 0 6 10 19 89 169 217 569 1006 532                                  17   584   2961.68 sec
+ 10 : 0 6 10 19 89 168 183 284 742 76 466                                 1   584   3000.77 sec
+ 11 : 0 6 10 19 89 168 183 284 737 71 46 430                              2   584   3016.94 sec
+----------------------------------------
+STATUS: TIMEOUT (exceeded 3600 seconds)
+Finished at: Tue 24 Jun 2025 06:38:37 AM CST
+========================================

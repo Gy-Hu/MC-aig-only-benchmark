@@ -1,0 +1,27 @@
+File: abc_unknown_cases/yosyshq_appnote_123_cv32e40x-p418.aig
+Command: ~/coding_env/abc/abc -c "&r abc_unknown_cases/yosyshq_appnote_123_cv32e40x-p418.aig; &put; fold; pdr -v -n"
+PDR Parameters: -n
+Parameter Set: 3 of 32
+Started at: Fri 20 Jun 2025 08:04:45 AM CST
+----------------------------------------
+ABC command line: "&r abc_unknown_cases/yosyshq_appnote_123_cv32e40x-p418.aig; &put; fold; pdr -v -n".
+
+Warning: The last 18 outputs are interpreted as constraints.
+Converted 1499 1-valued FFs and 89725 DC-valued FFs.
+Warning: The number of inputs does not match the number of flop names.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 2                                                                 1     2      0.12 sec
+  2 : 0 2 6                                                               2    10      0.13 sec
+  3 : 0 2 2 6                                                             1    10      0.13 sec
+  4 : 0 2 2 3 6                                                           1    10      0.13 sec
+  5 : 0 2 2 4 3 6                                                         3    13      0.14 sec
+  6 : 0 2 2 3 2 2 5                                                       1    13      0.15 sec
+  7 : 0 2 2 3 2 62 104 206                                               29   233      7.23 sec
+  8 : 0 2 2 3 2 50 38 70 145                                              0   233      7.35 sec
+  9 : 0 2 2 3 2 50 38 50 16 130                                           1   233      7.48 sec
+ 10 : 0 2 2 3 2 81 94 108 65 43 190                                      65   292     17.45 sec
+----------------------------------------
+STATUS: TIMEOUT (exceeded 3600 seconds)
+Finished at: Fri 20 Jun 2025 09:04:45 AM CST
+========================================

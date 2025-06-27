@@ -1,0 +1,25 @@
+File: abc_unknown_cases/zipcpu-zipmmu-p38.aig
+Command: ~/coding_env/abc/abc -c "&r abc_unknown_cases/zipcpu-zipmmu-p38.aig; &put; fold; pdr -v -r -y -f -i -t"
+PDR Parameters: -r -y -f -i -t
+Parameter Set: 14 of 32
+Started at: Sat 21 Jun 2025 03:31:09 PM CST
+----------------------------------------
+ABC command line: "&r abc_unknown_cases/zipcpu-zipmmu-p38.aig; &put; fold; pdr -v -r -y -f -i -t".
+
+Warning: The last 42 outputs are interpreted as constraints.
+Converted 2 1-valued FFs and 684 DC-valued FFs.
+Warning: The number of inputs does not match the number of input names.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 1                                                                 1     1   1      0.01 sec
+  2 : 0 2 10                                                              4     9   2      0.01 sec
+  3 : 0 10 9 15                                                          11    22   3      0.02 sec
+  4 : 0 10 11 5 19                                                        8    26   2      0.02 sec
+  5 : 0 10 11 6 2 22                                                      7    27   1      0.03 sec
+  6 : 0 11 13 10 6 6 33                                                  11    34   2      0.05 sec
+  7 : 0 11 15 21 37 49 114 292                                           14   211   2      1.11 sec
+  8 : 0 12 8 17 23 25 73 92 252                                          10   212   1      1.20 sec
+----------------------------------------
+STATUS: TIMEOUT (exceeded 3600 seconds)
+Finished at: Sat 21 Jun 2025 04:31:09 PM CST
+========================================

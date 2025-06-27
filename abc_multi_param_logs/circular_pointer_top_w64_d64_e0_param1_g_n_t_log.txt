@@ -1,0 +1,27 @@
+File: abc_unknown_cases/circular_pointer_top_w64_d64_e0.aig
+Command: ~/coding_env/abc/abc -c "&r abc_unknown_cases/circular_pointer_top_w64_d64_e0.aig; &put; fold; pdr -v -g -n -t"
+PDR Parameters: -g -n -t
+Parameter Set: 1 of 32
+Started at: Fri 27 Jun 2025 07:30:44 PM CST
+----------------------------------------
+ABC command line: "&r abc_unknown_cases/circular_pointer_top_w64_d64_e0.aig; &put; fold; pdr -v -g -n -t".
+
+Warning: The last 3 outputs are interpreted as constraints.
+Converted 1 1-valued FFs and 4258 DC-valued FFs.
+Warning: The number of inputs does not match the number of input names.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = yes. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 2                                                                 2     4   2      0.10 sec
+  2 : 0 19 157                                                            4   154  73      2.06 sec
+  3 : 0 11 173 348                                                        5   228  65      5.16 sec
+  4 : 0 4 133 446 1158                                                    5   292  64     14.29 sec
+  5 : 0 4 135 431 1827 2822                                              15   356  65     34.76 sec
+  6 : 0 4 134 421 1058 4692 5958                                         19   420  64     79.48 sec
+  7 : 0 4 134 420 717 3167 9858 9762                                     31   484  64    164.26 sec
+  8 : 0 4 134 420 715 2462 5912 16491 16625                              60   548  67    348.82 sec
+  9 : 0 4 134 421 700 2129 4535 8142 29341 28147                        123   612  67    769.90 sec
+ 10 : 0 4 134 421 704 2014 4192 7780 17636 61152 61283                  344   676  67   2160.00 sec
+----------------------------------------
+STATUS: TIMEOUT (exceeded 3600 seconds)
+Finished at: Fri 27 Jun 2025 08:30:44 PM CST
+========================================

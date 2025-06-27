@@ -1,0 +1,33 @@
+File: abc_unknown_cases/6s332rb118.aig
+Command: ~/coding_env/abc/abc -c "&r abc_unknown_cases/6s332rb118.aig; &put; fold; pdr -v -y -f -n -c -t -k"
+PDR Parameters: -y -f -n -c -t -k
+Parameter Set: 25 of 32
+Started at: Fri 27 Jun 2025 12:53:25 PM CST
+----------------------------------------
+ABC command line: "&r abc_unknown_cases/6s332rb118.aig; &put; fold; pdr -v -y -f -n -c -t -k".
+
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 2                                                                 1     2   1      1.62 sec
+  2 : 0 8 11571                                                           4   545  49   2839.02 sec
+  3 : 0 4 1 11573                                                         2   545   0   2840.98 sec
+  4 : 0 4 0 0 11573                                                       0   545   0   2842.16 sec
+Invariant F[2] : 11573 clauses with 543 flops (out of 83717) (cex = 50, ave = 81.90)
+Verification of invariant with 11573 clauses was successful.  Time =     0.18 sec
+Block =   55  Oblig = 23401  Clause = 11582  Call = 76813 (sat=39.3%)  Cex =  50  Start = 254
+SAT solving =    15.24 sec (  0.54 %)
+  unsat     =     1.15 sec (  0.04 %)
+  sat       =    14.09 sec (  0.50 %)
+Generalize  =  2811.98 sec ( 98.93 %)
+Push clause =     2.32 sec (  0.08 %)
+Ternary sim =  2794.24 sec ( 98.30 %)
+Containment =    13.22 sec (  0.46 %)
+CNF compute =     1.18 sec (  0.04 %)
+Refinement  =     0.00 sec (  0.00 %)
+TOTAL       =  2842.47 sec (100.00 %)
+Property proved.  Time =  2843.17 sec
+----------------------------------------
+STATUS: COMPLETED
+Finished at: Fri 27 Jun 2025 01:40:50 PM CST
+========================================

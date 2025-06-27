@@ -1,0 +1,27 @@
+File: abc_unknown_cases/oc8051gm2daddr.aig
+Command: ~/coding_env/abc/abc -c "&r abc_unknown_cases/oc8051gm2daddr.aig; &put; fold; pdr -v -g -n -t"
+PDR Parameters: -g -n -t
+Parameter Set: 1 of 32
+Started at: Thu 26 Jun 2025 06:38:50 AM CST
+----------------------------------------
+ABC command line: "&r abc_unknown_cases/oc8051gm2daddr.aig; &put; fold; pdr -v -g -n -t".
+
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = yes. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 5                                                                 1     5   1      0.02 sec
+  2 : 0 6 5                                                               3     9   1      0.04 sec
+  3 : 0 6 8 17                                                            4    10   1      0.07 sec
+  4 : 0 1 6 10 11                                                         9    12   2      0.12 sec
+  5 : 0 10 19 181 730 770                                               310   331   3      5.32 sec
+  6 : 0 4 2 13 28 73 146                                                  0   331   0      5.35 sec
+  7 : 0 4 2 13 29 101 192 356                                            17   348   2      6.00 sec
+  8 : 0 4 2 13 27 66 159 258 233                                         37   348   1      6.36 sec
+  9 : 0 5 5 16 39 102 349 2098 10442 13732                              419   403   2    135.71 sec
+ 10 : 0 4 2 7 11 43 189 1352 7689 21074 33870                           936   403   0    848.04 sec
+ 11 : 0 4 2 4 3 5 55 184 668 2015 4809 8533                             396   403   1    885.60 sec
+ 12 : 0 4 2 4 2 4 44 106 158 227 990 9298 13119                         527   626   1   1037.17 sec
+----------------------------------------
+STATUS: TIMEOUT (exceeded 3600 seconds)
+Finished at: Thu 26 Jun 2025 07:38:50 AM CST
+========================================

@@ -1,0 +1,20 @@
+File: abc_unknown_cases/loop3.aig
+Command: ~/coding_env/abc/abc -c "&r abc_unknown_cases/loop3.aig; &put; fold; pdr -v -y -i -n -t -k"
+PDR Parameters: -y -i -n -t -k
+Parameter Set: 29 of 32
+Started at: Mon 16 Jun 2025 07:13:19 AM CST
+----------------------------------------
+ABC command line: "&r abc_unknown_cases/loop3.aig; &put; fold; pdr -v -y -i -n -t -k".
+
+Converted 0 1-valued FFs and 195 DC-valued FFs.
+Warning: The number of inputs does not match the number of input names.
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 2                                                                 2     3   2      0.40 sec
+  2 : 0 2 3                                                               3     5   1      1.13 sec
+  3 : 0 1 130 170                                                         4   172   1    317.91 sec
+----------------------------------------
+STATUS: TIMEOUT (exceeded 3600 seconds)
+Finished at: Mon 16 Jun 2025 08:13:19 AM CST
+========================================

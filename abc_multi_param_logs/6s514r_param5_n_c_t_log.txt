@@ -1,0 +1,28 @@
+File: abc_unknown_cases/6s514r.aig
+Command: ~/coding_env/abc/abc -c "&r abc_unknown_cases/6s514r.aig; &put; fold; pdr -v -n -c -t"
+PDR Parameters: -n -c -t
+Parameter Set: 5 of 32
+Started at: Mon 23 Jun 2025 10:42:23 PM CST
+----------------------------------------
+ABC command line: "&r abc_unknown_cases/6s514r.aig; &put; fold; pdr -v -n -c -t".
+
+Warning: The network has no constraints.
+VarMax = 300. FrameMax = 10000. QueMax = 0. TimeMax = 0. MonoCNF = no. SkipGen = no. SolveAll = no.
+Frame Clauses                                                     Max Queue Flops Cex      Time
+  1 : 0 1                                                                 1     1   1      0.00 sec
+  2 : 0 3 3                                                               3     6   1      0.00 sec
+  3 : 0 12 11 8                                                           7    18   4      0.01 sec
+  4 : 0 6 13 16 23                                                        8    28   2      0.02 sec
+  5 : 0 4 9 9 24 24                                                       9    32   2      0.02 sec
+  6 : 0 4 9 6 16 12 15                                                    0    32   0      0.03 sec
+  7 : 0 4 70 16 95 286 283 415                                           21   218 145      1.06 sec
+  8 : 0 4 69 6 85 185 162 375 136                                         3   218   0      1.16 sec
+  9 : 0 4 73 177 383 715 789 1694 1965 2388                              29   314  86     12.49 sec
+ 10 : 0 4 73 167 205 647 654 931 1407 2556 365                            3   314   0     13.10 sec
+ 11 : 0 4 73 188 274 743 776 1127 1772 3298 2768 2098                   166   322   4     27.35 sec
+ 12 : 0 4 73 188 591 2452 1485 3558 5461 7744 8767 10465 10909          110   378  57    262.21 sec
+ 13 : ... 188 639 2388 2145 5334 7065 10452 12126 14526 21868 12610    2509   385   3    880.51 sec
+----------------------------------------
+STATUS: TIMEOUT (exceeded 3600 seconds)
+Finished at: Mon 23 Jun 2025 11:42:23 PM CST
+========================================
